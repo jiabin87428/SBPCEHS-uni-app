@@ -1,0 +1,1 @@
+<template name="3df31add"><view class="_view 3df31add m-icon {{['m-icon-' + type]}}" bindtap="handleProxy" data-eventid="{{'3df31add-0'}}" data-comkey="{{$k}}" style=" {{('color:' + color + ';' + 'font-size:' + fontSize + ';')}}"></view></template>
