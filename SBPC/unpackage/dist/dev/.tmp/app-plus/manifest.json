@@ -19,7 +19,10 @@
   },
   "permissions": {
     "OAuth": {},
-    "Push": {}
+    "Push": {},
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
   },
   "plus": {
     "useragent": {
@@ -39,7 +42,7 @@
     "statusbar": {
       "immersed": "supportedDevice",
       "style": "light",
-      "background": "#0faeff"
+      "background": "#2D68AA"
     },
     "distribute": {
       "icons": {

@@ -1,0 +1,26 @@
+.baseView{  
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #F1F1F1;
+}
+.cellTitleView {
+		width: 100%;
+		height: 60upx;
+		background-color: #F3F3F3;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+.cellTitle {
+	/* width: 300upx; */
+	margin-left: 20upx;
+	color: #BBBBBB;
+	font-size: 30upx;
+}
+.cellInfoView {
+	width: 100%;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+}

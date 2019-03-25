@@ -42,45 +42,13 @@
         },
         data() {
             return {
-                providerList: [],
-                hasProvider: false,
                 account: '',
-                password: '',
-                positionTop: 0
+                password: ''
             }
         },
         computed: mapState(['forcedLogin']),
         methods: {
             ...mapMutations(['login']),
-            initProvider() {
-                const filters = ['weixin', 'qq', 'sinaweibo'];
-                uni.getProvider({
-                    service: 'oauth',
-                    success: (res) => {
-                        if (res.provider && res.provider.length) {
-                            for (let i = 0; i < res.provider.length; i++) {
-                                if (~filters.indexOf(res.provider[i])) {
-                                    this.providerList.push({
-                                        value: res.provider[i],
-                                        image: '../../static/img/' + res.provider[i] + '.png'
-                                    });
-                                }
-                            }
-                            this.hasProvider = true;
-                        }
-                    },
-                    fail: (err) => {
-                        console.error('获取服务供应商失败：' + JSON.stringify(err));
-                    }
-                });
-            },
-            initPosition() {
-                /**
-                 * 使用 absolute 定位，并且设置 bottom 值进行定位。软键盘弹出时，底部会因为窗口变化而被顶上来。
-                 * 反向使用 top 进行定位，可以避免此问题。
-                 */
-                this.positionTop = uni.getSystemInfoSync().windowHeight - 100;
-            },
             bindLogin() {
 				var that = this
                 const data = {
@@ -100,7 +68,7 @@
 								}
 						});
 					},function(){
-						plus.nativeUI.alert('失败');
+						
 					},function(){
 						
 					}
@@ -143,8 +111,7 @@
             }
         },
         onLoad() {
-            this.initPosition();
-            this.initProvider();
+            
         }
     }
 </script>

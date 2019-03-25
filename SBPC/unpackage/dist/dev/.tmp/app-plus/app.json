@@ -4,12 +4,14 @@
     "pages/login/login",
     "pages/reg/reg",
     "pages/pwd/pwd",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/danger/dangerEdit",
+    "pages/common/inputPage"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#0faeff",
+    "navigationBarBackgroundColor": "#2D68AA",
     "backgroundColor": "#fbf9fe"
   },
   "usingComponents": {},
@@ -31,6 +33,24 @@
         "selectedIconPath": "static/img/userHL.png"
       }
     ]
+  },
+  "nvue": {
+    "pages": {
+      "pages/danger/dangerList.html": {
+        "window": {
+          "navigationBarTitleText": "隐患列表",
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "",
+                "fontSrc": "/static/aliIcon/iconfont.ttf",
+                "fontSize": "22px"
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   "splashscreen": {
     "alwaysShowBeforeRender": true,

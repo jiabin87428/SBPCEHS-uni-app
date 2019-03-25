@@ -1,1 +1,10 @@
+<import src="/components/list/uni-list/uni-list.vue.wxml" />
+<import src="/components/list/uni-list-item/uni-list-item.vue.wxml" />
+<import src="/components/m-input.vue.wxml" />
+<import src="/components/m-icon/m-icon.vue.wxml" />
+<import src="/common/slots.wxml" />
+<import src="/components/list/uni-icon/uni-icon.vue.wxml" />
+<import src="/components/list/uni-badge/uni-badge.vue.wxml" />
+
+<template name="5c0aa864-default-5c0aa864-2"><template title="隐患描述" show-arrow="true" bindtap="handleProxy" data-eventid="{{'5c0aa864-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'5c0aa864-0'],$root}}" is="30c48a99"></template><template title="检查人" subnote="obj.zrrmc" show-arrow="true" data="{{...$root['0'], ...$root[$kk+'5c0aa864-1'],$root}}" is="30c48a99"></template></template>
 

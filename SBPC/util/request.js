@@ -27,15 +27,17 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 					  uni.hideLoading()
 					}
 
-				// console.log('' + JSON.stringify(res));
-				if (res.data.success == 'true') {
+// 				uni.showToast({
+// 					icon: 'none',
+// 					title: res.data.repMsg
+// 				});
+				if (res.data.repCode == '200') {
 					success(res.data)
 				} else {
 					fail()
 				}
 			},
 			fail:(res) => {
-				// console.log('' + JSON.stringify(res))
 				if (message != "") {
 				  uni.hideLoading()  
 				}
