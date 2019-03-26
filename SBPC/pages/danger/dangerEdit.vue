@@ -18,7 +18,28 @@
 					<uni-list-item title="隐患来源" :subnote="yhly" show-arrow="true"></uni-list-item>
 				</picker>
 				<uni-list-item title="责任部门" :subnote="zrbm ? zrbm.name : ''" show-arrow="true" @click="jumpOrgChoose('zrbm')"></uni-list-item>
+				<uni-list-item title="发起人" :subnote="this.userInfo.username" show-arrow="false"></uni-list-item>
 			</uni-list>
+			<view class='cellImageBaseView'> 
+				<view class='cellImageTitleView'> 
+				  <text class='leftTextRow'>隐患照片</text>
+				  <text class='rightTextRow'>{{imageList.length}}</text>
+				</view>
+				<view id='imageView' class='imageView'>
+				  <block v-for="(imgObj,idx) in imageList" :key="idx">
+					<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
+					  <image class="littleImage" @click="viewPhoto" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+					  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage(imgObj,idx)" :id='idx' mode="aspectFit"></image>
+					</view>
+				  </block>
+				  <view class="littleImageView" @click='addPhoto' v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+					<image class="littleImage" src="../../static/assets/addImage.png"></image>
+				  </view>
+				</view>
+			</view>
+		</view>
+		<view class="btnView">
+		    <button class="saveBtn" @tap="saveClick">保存</button>
 		</view>
 	</view>
 </template>
@@ -39,6 +60,8 @@
 		components: {uniList,uniListItem,uniIcon},
 		data() {
 		    return {
+				instanceid: '',
+				recordid: '',
 				// 隐患描述
 				yhms: '',
 				// 隐患等级
@@ -54,6 +77,10 @@
 				// 责任部门
 				zrbm: null,
 				
+				// 照片相关
+				imageList: [],
+				littleImageWidth: 0,
+				
 				// 是否可编辑
 				editable: true,
 				
@@ -65,7 +92,7 @@
 			}
 		},
 		onLoad(option) {
-			
+			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
 		},
 		onNavigationBarButtonTap() {
 			
@@ -109,11 +136,135 @@
 			},
 			dateChange: function(key, e) {
 				this[key] = e.target.value
-			}
+			},
+			// 保存隐患
+			saveClick: function(e) {
+				var that = this;
+				let param = {
+					userid: that.userInfo.userid,
+					instanceid: that.instanceid,
+					recordid: that.recordid,
+					yhms: that.yhms,
+					yhdj: that.yhdj,
+					yhhg: that.yhhg,
+					yhlx: that.yhlx,
+					zgqx: that.zgqx,
+					yhly: that.yhly,
+					zrbmid: that.zrbm == null ? "" : that.zrbm.id,
+					zrbmmc: that.zrbm == null ? "" : that.zrbm.name,
+					
+					fqrid: that.userInfo.userid,
+					fqrmc: that.userInfo.username,
+					
+				}
+				request.requestLoading(config.addDanger, param, '添加隐患', 
+					function(res){
+						console.log('' + JSON.stringify(res));
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '添加失败'
+						});
+					}, function(){
+						
+					}
+				);
+			},
+			// 上传照片功能-添加照片
+			addPhoto() {
+				var that = this;
+				uni.chooseImage({
+					count: 9, //默认9
+					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+					sourceType: ['album', 'camera'], //从相册选择
+					success: function (res) {
+						console.log(JSON.stringify(res.tempFilePaths));
+						for (var i=0;i<res.tempFilePaths.length;i++) {
+							var imgObj = {//	type：1为新增需要上传，2为加载的，不需要上传
+								fileid: '',
+								src: res.tempFilePaths[i],
+								type: 1
+							}
+							that.imageList.push(imgObj);
+						}
+					}
+				});
+			},
+			// 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口
+			deleteImage(imgObj, index) {
+				var that = this;
+				if (imgObj.src.startsWith('http:')) {// 网络图片
+					let obj = {
+						item: that.item,
+						index: that.itemIndex
+					}
+					that.setSublistItem(obj);
+					
+					let param = {
+						from: 'jc',
+						yyid: that.item.id,
+						fileid: imgObj.fileid,
+						userid: that.userInfo.userid
+					};
+					request.requestLoading(config.deleteImage, param, '正在删除图片', 
+						function(res){
+							console.log('删除成功：' + JSON.stringify(res));
+							that.item.fj = res.fj
+							that.imageList.splice(index,1);
+						},function(){
+							uni.showToast({
+								icon: 'none',
+								title: '删除失败'
+							});
+						}, function(){
+							
+						}
+					);
+				}else {// 刚选择好，还未上传，非网络图片
+					that.imageList.splice(index,1);
+				}
+			},
+			// 浏览照片
+			viewPhoto() {
+				var that = this;
+				var imgList = []
+				for (var i=0 ; i<that.imageList.length; i++) {
+					let item = that.imageList[i]
+					imgList.push(item.src);
+				}
+				// 预览图片
+				uni.previewImage({
+					urls: imgList
+				});
+			},
 		}
 	}
 </script>
 
 <style>
 	@import url("../../css/common.css");
+	.btnView {
+		background-color: #FFFFFF;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+	}
+	.saveBtn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 1;
+		border-bottom-color: #F1F1F1;
+		border-top-color: #F1F1F1;
+		border-left-width: 0px;
+		border-right-width: 0px;
+		width: 100%;
+		height: 110upx;
+		text-align: center;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
 </style>

@@ -10,7 +10,7 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/global.__wcc_version__='v0.5vv_20181221_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -650,34 +650,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1060,7 +1058,7 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'5c0aa864-default-5c0aa864-7'])
+Z([3,'5c0aa864-default-5c0aa864-8'])
 Z([3,'handleProxy'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[7],[3,'$k']])
@@ -1119,6 +1117,10 @@ Z([1,'5c0aa864-6'])
 Z(z[5])
 Z(z[6])
 Z([3,'责任部门'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'false'])
+Z([3,'发起人'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1230,6 +1232,12 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'dd467128'])
+Z([3,'_view dd467128 baseView'])
+Z([3,'index'])
+Z([3,'org'])
+Z([[7],[3,'orgList']])
+Z(z[2])
+Z([[2,'=='],[[6],[[7],[3,'org']],[3,'hasChild']],[1,'Y']])
 Z([[2,'=='],[[7],[3,'mltiple']],[1,true]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
@@ -1246,7 +1254,7 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
 __WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'5c0aa864'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'5c0aa864-default-5c0aa864-7']]])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-8']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'5c0aa864-default-5c0aa864-8']]])
 Z([3,'3b6bb3ad'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
@@ -1391,10 +1399,10 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["5c0aa864-default-5c0aa864-7"]=function(e,s,r,gg){
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':5c0aa864-default-5c0aa864-7'
+var b=x[0]+':5c0aa864-default-5c0aa864-8'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -1402,7 +1410,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:4:47")
+cs.push("./common/slots.wxml:template:9:47")
 var xC=_oz(z,5,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1412,11 +1420,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],4,232)
+else _w(xC,x[0],9,232)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:4:255")
+cs.push("./common/slots.wxml:template:9:255")
 var hG=_oz(z,12,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1426,11 +1434,11 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],4,440)
+else _w(hG,x[0],9,440)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:4:463")
+cs.push("./common/slots.wxml:template:9:463")
 var lK=_oz(z,19,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
@@ -1440,13 +1448,13 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],4,648)
+else _w(lK,x[0],9,648)
 cs.pop()
-cs.push("./common/slots.wxml:picker:4:671")
+cs.push("./common/slots.wxml:picker:9:671")
 var eN=_mz(z,'picker',['bindchange',22,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:4:815")
+cs.push("./common/slots.wxml:template:9:815")
 var oP=_oz(z,29,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
@@ -1456,15 +1464,15 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],4,925)
+else _w(oP,x[0],9,925)
 cs.pop()
 cs.pop()
 _(r,eN)
-cs.push("./common/slots.wxml:picker:4:957")
+cs.push("./common/slots.wxml:picker:9:957")
 var fS=_mz(z,'picker',['bindchange',32,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:4:1097")
+cs.push("./common/slots.wxml:template:9:1097")
 var hU=_oz(z,39,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
@@ -1474,15 +1482,15 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],4,1207)
+else _w(hU,x[0],9,1207)
 cs.pop()
 cs.pop()
 _(r,fS)
-cs.push("./common/slots.wxml:picker:4:1239")
+cs.push("./common/slots.wxml:picker:9:1239")
 var oX=_mz(z,'picker',['bindchange',42,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:4:1385")
+cs.push("./common/slots.wxml:template:9:1385")
 var aZ=_oz(z,49,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
@@ -1492,13 +1500,13 @@ lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],4,1495)
+else _w(aZ,x[0],9,1495)
 cs.pop()
 cs.pop()
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:4:1527")
+cs.push("./common/slots.wxml:template:9:1527")
 var o4=_oz(z,56,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
@@ -1508,7 +1516,21 @@ b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],4,1712)
+else _w(o4,x[0],9,1712)
+cs.pop()
+var f7=_v()
+_(r,f7)
+cs.push("./common/slots.wxml:template:9:1735")
+var c8=_oz(z,60,e,s,gg)
+var h9=_gd(x[0],c8,e_,d_)
+if(h9){
+var o0=_1z(z,59,e,s,gg) || {}
+var cur_globalf=gg.f
+f7.wxXCkey=3
+h9(o0,o0,f7,gg)
+gg.f=cur_globalf
+}
+else _w(c8,x[0],9,1843)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1522,18 +1544,28 @@ var z=gz$gwx_1()
 var oB=e_[x[0]].i
 _ai(oB,x[1],e_,x[0],1,1)
 _ai(oB,x[2],e_,x[0],2,2)
+_ai(oB,x[3],e_,x[0],3,2)
+_ai(oB,x[4],e_,x[0],4,2)
+_ai(oB,x[5],e_,x[0],5,2)
+_ai(oB,x[6],e_,x[0],6,2)
+_ai(oB,x[7],e_,x[0],7,2)
+oB.pop()
+oB.pop()
+oB.pop()
+oB.pop()
+oB.pop()
 oB.pop()
 oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[3]]={}
-d_[x[3]]["68dcfa4a"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6],x[7]],ic:[]}
+d_[x[8]]={}
+d_[x[8]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[3]+':68dcfa4a'
+var b=x[8]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[3]);return}
+if(p_[b]){_wl(b,x[8]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -1554,14 +1586,14 @@ var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 return r
 }
-e_[x[3]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[4]]={}
-d_[x[4]]["346bda0d"]=function(e,s,r,gg){
+e_[x[8]]={f:m1,j:[],i:[],ti:[],ic:[]}
+d_[x[9]]={}
+d_[x[9]]["346bda0d"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[4]+':346bda0d'
+var b=x[9]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[4]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1575,14 +1607,14 @@ var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 return r
 }
-e_[x[4]]={f:m2,j:[],i:[],ti:[],ic:[]}
-d_[x[5]]={}
-d_[x[5]]["30c48a99"]=function(e,s,r,gg){
+e_[x[9]]={f:m2,j:[],i:[],ti:[],ic:[]}
+d_[x[10]]={}
+d_[x[10]]["30c48a99"]=function(e,s,r,gg){
 var z=gz$gwx_4()
-var b=x[5]+':30c48a99'
+var b=x[10]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[5]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
@@ -1602,7 +1634,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:805")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[5],oH,e_,d_)
+var cI=_gd(x[10],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1610,7 +1642,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[5],1,876)
+else _w(oH,x[10],1,876)
 cs.pop()
 cs.pop()
 }
@@ -1641,7 +1673,7 @@ var oP=_v()
 _(tM,oP)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1431")
 var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[5],xQ,e_,d_)
+var oR=_gd(x[10],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1649,7 +1681,7 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[5],1,1557)
+else _w(xQ,x[10],1,1557)
 cs.pop()
 cs.pop()
 }
@@ -1667,7 +1699,7 @@ var cT=_v()
 _(bO,cT)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1802")
 var hU=_oz(z,22,e,s,gg)
-var oV=_gd(x[5],hU,e_,d_)
+var oV=_gd(x[10],hU,e_,d_)
 if(oV){
 var cW=_1z(z,21,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1675,7 +1707,7 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[5],1,1969)
+else _w(hU,x[10],1,1969)
 cs.pop()
 cs.pop()
 }
@@ -1703,21 +1735,21 @@ return r
 }
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var cF=e_[x[5]].i
-_ai(cF,x[6],e_,x[5],1,1)
-_ai(cF,x[7],e_,x[5],1,61)
+var cF=e_[x[10]].i
+_ai(cF,x[6],e_,x[10],1,1)
+_ai(cF,x[7],e_,x[10],1,61)
 cF.pop()
 cF.pop()
 return r
 }
-e_[x[5]]={f:m3,j:[],i:[],ti:[x[6],x[7]],ic:[]}
-d_[x[8]]={}
-d_[x[8]]["3b6bb3ad"]=function(e,s,r,gg){
+e_[x[10]]={f:m3,j:[],i:[],ti:[x[6],x[7]],ic:[]}
+d_[x[11]]={}
+d_[x[11]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[8]+':3b6bb3ad'
+var b=x[11]+':3b6bb3ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[8]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list/uni-list.vue.wxml:view:1:62")
@@ -1727,7 +1759,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./components/list/uni-list/uni-list.vue.wxml:template:1:136")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[8],oD,e_,d_)
+var fE=_gd(x[11],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1735,7 +1767,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[8],1,194)
+else _w(oD,x[11],1,194)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -1746,12 +1778,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[8]]["default"]=function(e,s,r,gg){
+d_[x[11]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[8]+':default'
+var b=x[11]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[8]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1763,19 +1795,19 @@ return r
 }
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var oH=e_[x[8]].i
-_ai(oH,x[9],e_,x[8],1,1)
+var oH=e_[x[11]].i
+_ai(oH,x[5],e_,x[11],1,1)
 oH.pop()
 return r
 }
-e_[x[8]]={f:m4,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[10]]={}
-d_[x[10]]["2241d2a0"]=function(e,s,r,gg){
+e_[x[11]]={f:m4,j:[],i:[],ti:[x[5]],ic:[]}
+d_[x[12]]={}
+d_[x[12]]["2241d2a0"]=function(e,s,r,gg){
 var z=gz$gwx_6()
-var b=x[10]+':2241d2a0'
+var b=x[12]+':2241d2a0'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[10]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1789,14 +1821,14 @@ var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
 return r
 }
-e_[x[10]]={f:m5,j:[],i:[],ti:[],ic:[]}
-d_[x[11]]={}
-d_[x[11]]["7dcb1efb"]=function(e,s,r,gg){
+e_[x[12]]={f:m5,j:[],i:[],ti:[],ic:[]}
+d_[x[13]]={}
+d_[x[13]]["7dcb1efb"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[11]+':7dcb1efb'
+var b=x[13]+':7dcb1efb'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-input.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[13]);return}
 p_[b]=true
 try{
 cs.push("./components/m-input.vue.wxml:view:1:78")
@@ -1810,7 +1842,7 @@ var fE=_v()
 _(xC,fE)
 cs.push("./components/m-input.vue.wxml:template:1:521")
 var cF=_oz(z,8,e,s,gg)
-var hG=_gd(x[11],cF,e_,d_)
+var hG=_gd(x[13],cF,e_,d_)
 if(hG){
 var oH=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1818,7 +1850,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[11],1,706)
+else _w(cF,x[13],1,706)
 cs.pop()
 cs.pop()
 }
@@ -1830,7 +1862,7 @@ var cI=_v()
 _(oD,cI)
 cs.push("./components/m-input.vue.wxml:template:1:803")
 var oJ=_oz(z,16,e,s,gg)
-var lK=_gd(x[11],oJ,e_,d_)
+var lK=_gd(x[13],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,13,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1838,7 +1870,7 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[11],1,970)
+else _w(oJ,x[13],1,970)
 cs.pop()
 cs.pop()
 }
@@ -1855,19 +1887,19 @@ return r
 }
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var lK=e_[x[11]].i
-_ai(lK,x[12],e_,x[11],1,1)
+var lK=e_[x[13]].i
+_ai(lK,x[4],e_,x[13],1,1)
 lK.pop()
 return r
 }
-e_[x[11]]={f:m6,j:[],i:[],ti:[x[12]],ic:[]}
-d_[x[13]]={}
-d_[x[13]]["ab7aaa6c"]=function(e,s,r,gg){
+e_[x[13]]={f:m6,j:[],i:[],ti:[x[4]],ic:[]}
+d_[x[14]]={}
+d_[x[14]]["ab7aaa6c"]=function(e,s,r,gg){
 var z=gz$gwx_8()
-var b=x[13]+':ab7aaa6c'
+var b=x[14]+':ab7aaa6c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/inputPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[13]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1881,17 +1913,17 @@ var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
 return r
 }
-e_[x[13]]={f:m7,j:[],i:[],ti:[],ic:[]}
-d_[x[14]]={}
+e_[x[14]]={f:m7,j:[],i:[],ti:[],ic:[]}
+d_[x[15]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var eN=e_[x[14]].i
-_ai(eN,x[15],e_,x[14],1,1)
+var eN=e_[x[15]].i
+_ai(eN,x[16],e_,x[15],1,1)
 var bO=_v()
 _(r,bO)
 cs.push("./pages/common/inputPage.wxml:template:2:6")
 var oP=_oz(z,1,e,s,gg)
-var xQ=_gd(x[14],oP,e_,d_)
+var xQ=_gd(x[15],oP,e_,d_)
 if(xQ){
 var oR=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1899,28 +1931,49 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[14],2,18)
+else _w(oP,x[15],2,18)
 cs.pop()
 eN.pop()
 return r
 }
-e_[x[14]]={f:m8,j:[],i:[],ti:[x[15]],ic:[]}
-d_[x[16]]={}
-d_[x[16]]["dd467128"]=function(e,s,r,gg){
+e_[x[15]]={f:m8,j:[],i:[],ti:[x[16]],ic:[]}
+d_[x[17]]={}
+d_[x[17]]["dd467128"]=function(e,s,r,gg){
 var z=gz$gwx_10()
-var b=x[16]+':dd467128'
+var b=x[17]+':dd467128'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/orgChoose.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
+if(p_[b]){_wl(b,x[17]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-if(_oz(z,1,e,s,gg)){oB.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:739")
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:27")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var oD=_v()
+_(oB,oD)
+cs.push("./pages/common/orgChoose.vue.wxml:block:1:65")
+var fE=function(hG,cF,oH,gg){
+var oJ=_v()
+_(oH,oJ)
+if(_oz(z,6,hG,cF,gg)){oJ.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:347")
 cs.pop()
 }
-oB.wxXCkey=1
+oJ.wxXCkey=1
+return oH
+}
+oD.wxXCkey=2
+_2z(z,4,fE,e,s,gg,oD,'org','index','index')
+cs.pop()
+var xC=_v()
+_(oB,xC)
+if(_oz(z,7,e,s,gg)){xC.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:771")
+cs.pop()
+}
+xC.wxXCkey=1
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -1932,17 +1985,17 @@ var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
 return r
 }
-e_[x[16]]={f:m9,j:[],i:[],ti:[],ic:[]}
-d_[x[17]]={}
+e_[x[17]]={f:m9,j:[],i:[],ti:[],ic:[]}
+d_[x[18]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var hU=e_[x[17]].i
-_ai(hU,x[18],e_,x[17],1,1)
+var hU=e_[x[18]].i
+_ai(hU,x[19],e_,x[18],1,1)
 var oV=_v()
 _(r,oV)
 cs.push("./pages/common/orgChoose.wxml:template:2:6")
 var cW=_oz(z,1,e,s,gg)
-var oX=_gd(x[17],cW,e_,d_)
+var oX=_gd(x[18],cW,e_,d_)
 if(oX){
 var lY=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1950,26 +2003,26 @@ oV.wxXCkey=3
 oX(lY,lY,oV,gg)
 gg.f=cur_globalf
 }
-else _w(cW,x[17],2,18)
+else _w(cW,x[18],2,18)
 cs.pop()
 hU.pop()
 return r
 }
-e_[x[17]]={f:m10,j:[],i:[],ti:[x[18]],ic:[]}
-d_[x[19]]={}
-d_[x[19]]["5c0aa864"]=function(e,s,r,gg){
+e_[x[18]]={f:m10,j:[],i:[],ti:[x[19]],ic:[]}
+d_[x[20]]={}
+d_[x[20]]["5c0aa864"]=function(e,s,r,gg){
 var z=gz$gwx_12()
-var b=x[19]+':5c0aa864'
+var b=x[20]+':5c0aa864'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[19]);return}
+if(p_[b]){_wl(b,x[20]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:345")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[19],xC,e_,d_)
+var oD=_gd(x[20],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1977,7 +2030,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[19],1,460)
+else _w(xC,x[20],1,460)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1988,24 +2041,24 @@ return r
 }
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var t1=e_[x[19]].i
-_ai(t1,x[1],e_,x[19],1,1)
-_ai(t1,x[2],e_,x[19],1,61)
+var t1=e_[x[20]].i
+_ai(t1,x[1],e_,x[20],1,1)
+_ai(t1,x[2],e_,x[20],1,61)
 t1.pop()
 t1.pop()
 return r
 }
-e_[x[19]]={f:m11,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[20]]={}
+e_[x[20]]={f:m11,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[21]]={}
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b3=e_[x[20]].i
-_ai(b3,x[21],e_,x[20],1,1)
+var b3=e_[x[21]].i
+_ai(b3,x[22],e_,x[21],1,1)
 var o4=_v()
 _(r,o4)
 cs.push("./pages/danger/dangerEdit.wxml:template:2:6")
 var x5=_oz(z,1,e,s,gg)
-var o6=_gd(x[20],x5,e_,d_)
+var o6=_gd(x[21],x5,e_,d_)
 if(o6){
 var f7=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2013,19 +2066,19 @@ o4.wxXCkey=3
 o6(f7,f7,o4,gg)
 gg.f=cur_globalf
 }
-else _w(x5,x[20],2,18)
+else _w(x5,x[21],2,18)
 cs.pop()
 b3.pop()
 return r
 }
-e_[x[20]]={f:m12,j:[],i:[],ti:[x[21]],ic:[]}
-d_[x[22]]={}
-d_[x[22]]["2d8d4fae"]=function(e,s,r,gg){
+e_[x[21]]={f:m12,j:[],i:[],ti:[x[22]],ic:[]}
+d_[x[23]]={}
+d_[x[23]]["2d8d4fae"]=function(e,s,r,gg){
 var z=gz$gwx_14()
-var b=x[22]+':2d8d4fae'
+var b=x[23]+':2d8d4fae'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[22]);return}
+if(p_[b]){_wl(b,x[23]);return}
 p_[b]=true
 try{
 cs.push("./pages/login/login.vue.wxml:view:1:109")
@@ -2035,7 +2088,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/login/login.vue.wxml:template:1:247")
 var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[22],oD,e_,d_)
+var fE=_gd(x[23],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2043,13 +2096,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[22],1,474)
+else _w(oD,x[23],1,474)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/login/login.vue.wxml:template:1:594")
 var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[22],oH,e_,d_)
+var cI=_gd(x[23],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2057,7 +2110,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[22],1,822)
+else _w(oH,x[23],1,822)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -2070,12 +2123,12 @@ return r
 }
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var h9=e_[x[22]].i
-_ai(h9,x[23],e_,x[22],1,1)
+var h9=e_[x[23]].i
+_ai(h9,x[3],e_,x[23],1,1)
 h9.pop()
 return r
 }
-e_[x[22]]={f:m13,j:[],i:[],ti:[x[23]],ic:[]}
+e_[x[23]]={f:m13,j:[],i:[],ti:[x[3]],ic:[]}
 d_[x[24]]={}
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
@@ -2183,11 +2236,11 @@ return r
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
 var oNB=e_[x[29]].i
-_ai(oNB,x[23],e_,x[29],1,1)
+_ai(oNB,x[3],e_,x[29],1,1)
 oNB.pop()
 return r
 }
-e_[x[29]]={f:m17,j:[],i:[],ti:[x[23]],ic:[]}
+e_[x[29]]={f:m17,j:[],i:[],ti:[x[3]],ic:[]}
 d_[x[30]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
@@ -2277,11 +2330,11 @@ return r
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
 var oVB=e_[x[32]].i
-_ai(oVB,x[23],e_,x[32],1,1)
+_ai(oVB,x[3],e_,x[32],1,1)
 oVB.pop()
 return r
 }
-e_[x[32]]={f:m19,j:[],i:[],ti:[x[23]],ic:[]}
+e_[x[32]]={f:m19,j:[],i:[],ti:[x[3]],ic:[]}
 d_[x[33]]={}
 var m20=function(e,s,r,gg){
 var z=gz$gwx_21()
@@ -2779,7 +2832,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 待处理隐患\n  getDangerList: '/mobile/getYhzg.do',\n\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
+eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
 
 /***/ }),
 
@@ -3019,7 +3072,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: {},\n  data: function data() {\n    return {};\n\n\n  },\n  onLoad: function onLoad() {\n\n  },\n  methods: {\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/main/main.vue?vue&type=script&lang=js&?0524");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: {},\n  data: function data() {\n    return {};\n\n\n  },\n  onLoad: function onLoad() {\n\n  },\n  onShow: function onShow() {var _this = this;\n    this.login(_service.default.getUsers());\n    if (!this.hasLogin) {\n      uni.showModal({\n        title: '未登录',\n        content: '您未登录，需要登录后才能继续',\n        /**\n                                    * 如果需要强制登录，不显示取消按钮\n                                    */\n        showCancel: !this.forcedLogin,\n        success: function success(res) {\n          if (res.confirm) {\n            /**\n                             * 如果需要强制登录，使用reLaunch方式\n                             */\n            if (_this.forcedLogin) {\n              uni.reLaunch({\n                url: '../login/login' });\n\n            } else {\n              uni.navigateTo({\n                url: '../login/login' });\n\n            }\n          }\n        } });\n\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['login']), {\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/main/main.vue?vue&type=script&lang=js&?0524");
 
 /***/ }),
 
@@ -3042,7 +3095,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm.userType == 1\n      ? _c(\n          \"view\",\n          {\n            staticClass: \"topView_pc\",\n            attrs: { eventid: \"00cb397a-0\" },\n            on: {\n              tap: function($event) {\n                _vm.jumpPage(\"../statistics/statistics\")\n              }\n            }\n          },\n          [\n            _vm._m(0),\n            _vm._m(1),\n            _vm._m(2),\n            _c(\"image\", {\n              staticClass: \"arrow\",\n              attrs: {\n                src: \"../../static/img/rightArrow_white.png\",\n                mode: \"aspectFit\"\n              }\n            })\n          ]\n        )\n      : _vm._e(),\n    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-1\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../danger/dangerList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/jc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(3)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/yh.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(4)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-3\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/tj.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(5)\n        ]\n      )\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"隐患总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"1005\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"事故总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"600\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"检查次数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"2000\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"检查\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"隐患\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"统计\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/main/main.vue?vue&type=template&id=7f19db84&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm.userType == 1\n      ? _c(\n          \"view\",\n          {\n            staticClass: \"topView_pc\",\n            attrs: { eventid: \"00cb397a-0\" },\n            on: {\n              tap: function($event) {\n                _vm.jumpPage(\"../statistics/statistics\")\n              }\n            }\n          },\n          [\n            _vm._m(0),\n            _vm._m(1),\n            _vm._m(2),\n            _c(\"image\", {\n              staticClass: \"arrow\",\n              attrs: {\n                src: \"../../static/img/rightArrow_white.png\",\n                mode: \"aspectFit\"\n              }\n            })\n          ]\n        )\n      : _vm._e(),\n    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-1\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/jc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(3)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../danger/dangerList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/yh.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(4)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-3\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/tj.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(5)\n        ]\n      )\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"隐患总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"1005\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"事故总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"600\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"检查次数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"2000\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"检查\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"隐患\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"统计\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/main/main.vue?vue&type=template&id=7f19db84&");
 
 /***/ })
 
@@ -3717,7 +3770,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 隐患描述\n      yhms: '',\n      // 隐患等级\n      yhdj: '',\n      // 隐患后果\n      yhhg: '',\n      // 隐患类型\n      yhlx: '',\n      // 整改期限\n      zgqx: '',\n      // 隐患来源\n      yhly: '',\n      // 责任部门\n      zrbm: null,\n\n      // 是否可编辑\n      editable: true,\n\n      // 数据源\n      dangerLevel: _dataConfig.default.dangerLevel,\n      dangerResult: _dataConfig.default.dangerResult,\n      dangerType: _dataConfig.default.dangerType,\n      dangerSource: _dataConfig.default.dangerSource };\n\n  },\n  onLoad: function onLoad(option) {\n\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    jumpInput: function jumpInput(key, placeholder, text) {var _this = this;\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this[key] = result;\n      });\n    },\n    jumpOrgChoose: function jumpOrgChoose(key) {var _this2 = this;\n      var selected = [this.zrbm];\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify(selected) + \"&key=\" + key + \"&mltiple=false\" });\n\n      this.$fire.once(key, function (result) {\n        console.log('' + JSON.stringify(result));\n        _this2[key] = result;\n      });\n    },\n    alertSheetShow: function alertSheetShow(key, list) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          that[key] = list[res.tapIndex];\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n    pickerChange: function pickerChange(data, e) {\n      this[e.target.id] = data[e.target.value];\n    },\n    dateChange: function dateChange(key, e) {\n      this[key] = e.target.value;\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/dangerEdit.vue?vue&type=script&lang=js&?5347");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      instanceid: '',\n      recordid: '',\n      // 隐患描述\n      yhms: '',\n      // 隐患等级\n      yhdj: '',\n      // 隐患后果\n      yhhg: '',\n      // 隐患类型\n      yhlx: '',\n      // 整改期限\n      zgqx: '',\n      // 隐患来源\n      yhly: '',\n      // 责任部门\n      zrbm: null,\n\n      // 照片相关\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 是否可编辑\n      editable: true,\n\n      // 数据源\n      dangerLevel: _dataConfig.default.dangerLevel,\n      dangerResult: _dataConfig.default.dangerResult,\n      dangerType: _dataConfig.default.dangerType,\n      dangerSource: _dataConfig.default.dangerSource };\n\n  },\n  onLoad: function onLoad(option) {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    jumpInput: function jumpInput(key, placeholder, text) {var _this = this;\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this[key] = result;\n      });\n    },\n    jumpOrgChoose: function jumpOrgChoose(key) {var _this2 = this;\n      var selected = [this.zrbm];\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify(selected) + \"&key=\" + key + \"&mltiple=false\" });\n\n      this.$fire.once(key, function (result) {\n        console.log('' + JSON.stringify(result));\n        _this2[key] = result;\n      });\n    },\n    alertSheetShow: function alertSheetShow(key, list) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          that[key] = list[res.tapIndex];\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n    pickerChange: function pickerChange(data, e) {\n      this[e.target.id] = data[e.target.value];\n    },\n    dateChange: function dateChange(key, e) {\n      this[key] = e.target.value;\n    },\n    // 保存隐患\n    saveClick: function saveClick(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        instanceid: that.instanceid,\n        recordid: that.recordid,\n        yhms: that.yhms,\n        yhdj: that.yhdj,\n        yhhg: that.yhhg,\n        yhlx: that.yhlx,\n        zgqx: that.zgqx,\n        yhly: that.yhly,\n        zrbmid: that.zrbm == null ? \"\" : that.zrbm.id,\n        zrbmmc: that.zrbm == null ? \"\" : that.zrbm.name,\n\n        fqrid: that.userInfo.userid,\n        fqrmc: that.userInfo.username };\n\n\n      _request.default.requestLoading(_config.default.addDanger, param, '添加隐患',\n      function (res) {\n        console.log('' + JSON.stringify(res));\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '添加失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/dangerEdit.vue?vue&type=script&lang=js&?5347");
 
 /***/ }),
 
@@ -3832,7 +3885,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"5c0aa864-7\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患描述\",\n                note: _vm.yhms,\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-0\",\n                mpcomid: \"5c0aa864-0\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(\"yhms\", \"请输入隐患描述\", _vm.yhms)\n                }\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患等级\",\n                subnote: _vm.yhdj,\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-1\",\n                mpcomid: \"5c0aa864-1\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.alertSheetShow(\"yhdj\", _vm.dangerLevel)\n                }\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患后果\",\n                subnote: _vm.yhhg,\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-2\",\n                mpcomid: \"5c0aa864-2\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.alertSheetShow(\"yhhg\", _vm.dangerResult)\n                }\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  id: \"yhlx\",\n                  range: _vm.dangerType,\n                  eventid: \"5c0aa864-3\"\n                },\n                on: {\n                  change: function($event) {\n                    _vm.pickerChange(_vm.dangerType, $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"隐患类型\",\n                    subnote: _vm.yhlx,\n                    \"show-arrow\": \"true\",\n                    mpcomid: \"5c0aa864-3\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\n              \"picker\",\n              {\n                attrs: { mode: \"date\", value: _vm.zgqx, eventid: \"5c0aa864-4\" },\n                on: {\n                  change: function($event) {\n                    _vm.dateChange(\"zgqx\", $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改期限\",\n                    subnote: _vm.zgqx,\n                    \"show-arrow\": \"true\",\n                    mpcomid: \"5c0aa864-4\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  id: \"yhly\",\n                  range: _vm.dangerSource,\n                  eventid: \"5c0aa864-5\"\n                },\n                on: {\n                  change: function($event) {\n                    _vm.pickerChange(_vm.dangerSource, $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"隐患来源\",\n                    subnote: _vm.yhly,\n                    \"show-arrow\": \"true\",\n                    mpcomid: \"5c0aa864-5\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.zrbm ? _vm.zrbm.name : \"\",\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-6\",\n                mpcomid: \"5c0aa864-6\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpOrgChoose(\"zrbm\")\n                }\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/danger/dangerEdit.vue?vue&type=template&id=8a65dfb0&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"5c0aa864-8\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患描述\",\n                note: _vm.yhms,\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-0\",\n                mpcomid: \"5c0aa864-0\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(\"yhms\", \"请输入隐患描述\", _vm.yhms)\n                }\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患等级\",\n                subnote: _vm.yhdj,\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-1\",\n                mpcomid: \"5c0aa864-1\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.alertSheetShow(\"yhdj\", _vm.dangerLevel)\n                }\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患后果\",\n                subnote: _vm.yhhg,\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-2\",\n                mpcomid: \"5c0aa864-2\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.alertSheetShow(\"yhhg\", _vm.dangerResult)\n                }\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  id: \"yhlx\",\n                  range: _vm.dangerType,\n                  eventid: \"5c0aa864-3\"\n                },\n                on: {\n                  change: function($event) {\n                    _vm.pickerChange(_vm.dangerType, $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"隐患类型\",\n                    subnote: _vm.yhlx,\n                    \"show-arrow\": \"true\",\n                    mpcomid: \"5c0aa864-3\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\n              \"picker\",\n              {\n                attrs: { mode: \"date\", value: _vm.zgqx, eventid: \"5c0aa864-4\" },\n                on: {\n                  change: function($event) {\n                    _vm.dateChange(\"zgqx\", $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改期限\",\n                    subnote: _vm.zgqx,\n                    \"show-arrow\": \"true\",\n                    mpcomid: \"5c0aa864-4\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  id: \"yhly\",\n                  range: _vm.dangerSource,\n                  eventid: \"5c0aa864-5\"\n                },\n                on: {\n                  change: function($event) {\n                    _vm.pickerChange(_vm.dangerSource, $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"隐患来源\",\n                    subnote: _vm.yhly,\n                    \"show-arrow\": \"true\",\n                    mpcomid: \"5c0aa864-5\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.zrbm ? _vm.zrbm.name : \"\",\n                \"show-arrow\": \"true\",\n                eventid: \"5c0aa864-6\",\n                mpcomid: \"5c0aa864-6\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpOrgChoose(\"zrbm\")\n                }\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"发起人\",\n                subnote: this.userInfo.username,\n                \"show-arrow\": \"false\",\n                mpcomid: \"5c0aa864-7\"\n              }\n            })\n          ],\n          1\n        ),\n        _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"5c0aa864-7-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/assets/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"5c0aa864-8-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"5c0aa864-9\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/assets/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ])\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"5c0aa864-10\" },\n            on: { tap: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/danger/dangerEdit.vue?vue&type=template&id=8a65dfb0&");
 
 /***/ })
 
@@ -4015,7 +4068,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  data: function data() {\n    return {\n      // 复制的Key\n      key: '',\n      // 是否多选\n      mltiple: false,\n      // 已选内容\n      selected: [],\n      // 部门列表\n      orgList: [],\n\n      // 当前部门id\n      orgId: '' };\n\n  },\n  onLoad: function onLoad(option) {\n    this.key = option.key;\n    this.mltiple = option.mltiple == 'true' ? true : false;\n    this.selected = JSON.parse(option.selected);\n    this.orgId = option.orgId == null ? \"\" : option.orgId;\n    this.getOrgList();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    getOrgList: function getOrgList() {\n      var that = this;\n      var param = {\n        userid: that.userid,\n        orgid: that.orgId };\n\n      _request.default.requestLoading(_config.default.getOrgList, param, '正在加载',\n      function (res) {\n        that.orgList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '加载失败' });\n\n      }, function () {\n\n      });\n    },\n    // 选择当前项\n    chooseCurrent: function chooseCurrent(org) {\n      if (this.mltiple == false) {// 单选，直接返回\n        this.$fire.fire(this.key, org);\n        uni.navigateBack({\n          delta: 1 });\n\n      }\n    },\n    // 去下级\n    gotoNext: function gotoNext(e) {\n      console.log('去下级');\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/common/orgChoose.vue?vue&type=script&lang=js&?5dc0");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  data: function data() {\n    return {\n      // 复制的Key\n      key: '',\n      // 是否多选\n      mltiple: false,\n      // 已选内容\n      selected: [],\n      // 部门列表\n      orgList: [],\n\n      // 当前部门id\n      orgId: '',\n\n      // 返回层级-因为可能有多级\n      backLevel: 1 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.key = option.key;\n    this.mltiple = option.mltiple == 'true' ? true : false;\n    this.selected = JSON.parse(option.selected);\n    this.orgId = option.orgId == null ? \"\" : option.orgId;\n    this.backLevel = option.back == null ? 1 : parseInt(option.back);\n    this.getOrgList();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    getOrgList: function getOrgList() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        orgid: that.orgId };\n\n      _request.default.requestLoading(_config.default.getOrgList, param, '正在加载',\n      function (res) {\n        that.orgList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '加载失败' });\n\n      }, function () {\n\n      });\n    },\n    // 选择当前项\n    chooseCurrent: function chooseCurrent(org) {\n      if (this.mltiple == false) {// 单选，直接返回\n        this.$fire.fire(this.key, org);\n        uni.navigateBack({\n          delta: this.backLevel });\n\n      }\n    },\n    // 去下级\n    gotoNext: function gotoNext(org) {\n      var back = this.backLevel + 1;\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify(this.selected) + \"&key=\" + this.key + \"&mltiple=\" + this.mltiple + \"&orgId=\" + org.id + \"&back=\" + back });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/common/orgChoose.vue?vue&type=script&lang=js&?5dc0");
 
 /***/ }),
 
@@ -4038,7 +4091,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _vm._l(_vm.orgList, function(org, index) {\n        return _c(\"block\", { key: index }, [\n          _c(\"view\", { staticClass: \"cellBaseView_Row\" }, [\n            _c(\n              \"view\",\n              {\n                staticClass: \"orgName\",\n                attrs: { eventid: \"dd467128-0-\" + index },\n                on: {\n                  click: function($event) {\n                    _vm.chooseCurrent(org)\n                  }\n                }\n              },\n              [_vm._v(_vm._s(org.name))]\n            ),\n            _c(\n              \"view\",\n              {\n                staticClass: \"nextLevelView\",\n                attrs: { eventid: \"dd467128-1-\" + index },\n                on: { click: _vm.gotoNext }\n              },\n              [\n                _c(\"view\", { staticClass: \"columnLine\" }),\n                _c(\"image\", {\n                  staticClass: \"levelImg\",\n                  attrs: {\n                    mode: \"aspectFit\",\n                    src: \"../../static/assets/level.png\"\n                  }\n                }),\n                _c(\"view\", { staticClass: \"nextLevel\" }, [_vm._v(\"下级\")])\n              ]\n            )\n          ]),\n          _c(\"view\", { staticClass: \"cellLine\" })\n        ])\n      }),\n      _vm.mltiple == true\n        ? _c(\"view\", { staticClass: \"coverBottomView\" }, [_vm._v(\"确定\")])\n        : _vm._e()\n    ],\n    2\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/orgChoose.vue?vue&type=template&id=6ea7c758&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _vm._l(_vm.orgList, function(org, index) {\n        return _c(\"block\", { key: index }, [\n          _c(\"view\", { staticClass: \"cellBaseView_Row\" }, [\n            _c(\n              \"view\",\n              {\n                staticClass: \"orgName\",\n                attrs: { eventid: \"dd467128-0-\" + index },\n                on: {\n                  click: function($event) {\n                    _vm.chooseCurrent(org)\n                  }\n                }\n              },\n              [_vm._v(_vm._s(org.name))]\n            ),\n            org.hasChild == \"Y\"\n              ? _c(\n                  \"view\",\n                  {\n                    staticClass: \"nextLevelView\",\n                    attrs: { eventid: \"dd467128-1-\" + index },\n                    on: {\n                      click: function($event) {\n                        _vm.gotoNext(org)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"view\", { staticClass: \"columnLine\" }),\n                    _c(\"image\", {\n                      staticClass: \"levelImg\",\n                      attrs: {\n                        mode: \"aspectFit\",\n                        src: \"../../static/assets/level.png\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"nextLevel\" }, [_vm._v(\"下级\")])\n                  ]\n                )\n              : _vm._e()\n          ]),\n          _c(\"view\", { staticClass: \"cellLine\" })\n        ])\n      }),\n      _vm.mltiple == true\n        ? _c(\"view\", { staticClass: \"coverBottomView\" }, [_vm._v(\"确定\")])\n        : _vm._e()\n    ],\n    2\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/orgChoose.vue?vue&type=template&id=6ea7c758&");
 
 /***/ })
 

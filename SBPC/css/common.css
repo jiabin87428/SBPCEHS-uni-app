@@ -1,17 +1,17 @@
 .baseView{
 	width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #F1F1F1;
+	display: flex;
+	flex-direction: column;
+	background-color: #F1F1F1;
 }
 .cellTitleView {
-		width: 100%;
-		height: 60upx;
-		background-color: #F3F3F3;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
+	width: 100%;
+	height: 60upx;
+	background-color: #F3F3F3;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 .cellTitle {
 	/* width: 300upx; */
 	margin-left: 20upx;
@@ -22,7 +22,7 @@
 	width: 100%;
 	background-color: #FFFFFF;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .cellBaseView_Row {
@@ -30,7 +30,6 @@
 	width: 100%;
 	height: 120upx;
 	display: flex;
-	flex: 1;
 	flex-direction: row;
 	align-items: center;
 }
@@ -53,3 +52,71 @@
 	color: #FFFFFF;
 	font-size: 32upx;
 }
+
+/*添加照片的css样式*/
+	.cellImageBaseView {
+	  display:flex;
+	  flex-direction:column;
+	  width: 100%;
+	  background-color: white;
+	  /* margin-bottom: 10px; */
+	  border-bottom: 0.5rpx solid #E2E2E2;
+	  align-items:center;/*垂直居中*/
+	}
+	.cellImageTitleView {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		/* justify-content: center; */
+	}
+	.leftTextRow {
+		width: 100%;
+		margin-left: 30upx;
+		font-size: 28upx;
+		color: #333333;
+	}
+	.rightTextRow {
+		margin-top: 20upx;
+		margin-bottom: 20upx;
+		margin-right: 50upx;
+		text-align: right;
+		font-size: 28upx;
+		text-overflow: ellipsis;
+		white-space: normal;
+		color: inherit;
+		line-height: 1.5;
+		overflow: hidden;
+		color: #BBBBBB;
+	}
+	.imageView {
+	  display:flex;
+	  flex-direction:row;
+	  width: 100%;
+	  /* height: 100px; */
+	  background-color: white;
+	  align-items: flex-start;/*垂直居中*/
+	  /* justify-content: space-between; */
+	  flex-wrap: wrap;
+	  margin-bottom: 10upx;
+	}
+	
+	.littleImageView {
+	  display:flex;
+	  flex-direction:row;
+	  margin: 20px 5px 5px 20px;
+	}
+	
+	.littleImageDelete {
+	  /* position: absolute; */
+	  position: relative;
+	  margin-left: -50upx;
+	  margin-top: -15upx;
+	  width: 60upx;
+	  height: 60upx;
+	}
+	
+	.littleImage {
+	  width: 100%;
+	  height: 100%; 
+	}

@@ -11,7 +11,7 @@ var __WXML_GLOBAL__ = {
 };
 var $gwx;
 
-/*v0.5vv_20181116_syb_scopedata*/window.__wcc_version__='v0.5vv_20181116_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/window.__wcc_version__='v0.5vv_20181221_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -651,34 +651,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1064,7 +1062,7 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'5c0aa864-default-5c0aa864-7'])
+Z([3,'5c0aa864-default-5c0aa864-8'])
 Z([3,'handleProxy'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[7],[3,'$k']])
@@ -1123,6 +1121,10 @@ Z([1,'5c0aa864-6'])
 Z(z[5])
 Z(z[6])
 Z([3,'责任部门'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'false'])
+Z([3,'发起人'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1305,6 +1307,7 @@ Z([3,'_view dd467128 orgName'])
 Z([[7],[3,'$k']])
 Z([[2,'+'],[1,'dd467128-0-'],[[7],[3,'index']]])
 Z([a,[[6],[[7],[3,'org']],[3,'name']]])
+Z([[2,'=='],[[6],[[7],[3,'org']],[3,'hasChild']],[1,'Y']])
 Z(z[8])
 Z([3,'_view dd467128 nextLevelView'])
 Z(z[10])
@@ -1339,8 +1342,50 @@ Z([3,'_view 5c0aa864 cellTitleView'])
 Z([3,'_text 5c0aa864 cellTitle'])
 Z([3,'基础信息'])
 Z([3,'_view 5c0aa864 cellInfoView'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'5c0aa864-default-5c0aa864-7']]])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-8']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'5c0aa864-default-5c0aa864-8']]])
 Z([3,'3b6bb3ad'])
+Z([3,'_view 5c0aa864 cellImageBaseView'])
+Z([3,'_view 5c0aa864 cellImageTitleView'])
+Z([3,'_text 5c0aa864 leftTextRow'])
+Z([3,'隐患照片'])
+Z([3,'_text 5c0aa864 rightTextRow'])
+Z([a,[[6],[[7],[3,'imageList']],[3,'length']]])
+Z([3,'_view 5c0aa864 imageView'])
+Z([3,'imageView'])
+Z([3,'idx'])
+Z([3,'imgObj'])
+Z([[7],[3,'imageList']])
+Z(z[16])
+Z([[7],[3,'idx']])
+Z([3,'_view 5c0aa864 littleImageView'])
+Z([a,[3,' '],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'width:'],[[2,'+'],[[7],[3,'littleImageWidth']],[1,'px']]],[1,';']],[1,'height:']],[[2,'+'],[[7],[3,'littleImageWidth']],[1,'px']]],[1,';']]])
+Z([3,'handleProxy'])
+Z([3,'_image 5c0aa864 littleImage'])
+Z([[7],[3,'$k']])
+Z([[2,'+'],[1,'5c0aa864-7-'],[[7],[3,'idx']]])
+Z(z[20])
+Z([3,'aspectFit'])
+Z([[6],[[7],[3,'imgObj']],[3,'src']])
+Z(z[23])
+Z([3,'_image 5c0aa864 littleImageDelete'])
+Z(z[25])
+Z([[2,'+'],[1,'5c0aa864-8-'],[[7],[3,'idx']]])
+Z(z[20])
+Z(z[28])
+Z([3,'../../static/assets/delete.png'])
+Z(z[23])
+Z(z[21])
+Z(z[25])
+Z([1,'5c0aa864-9'])
+Z([a,z[22][1],z[22][2]])
+Z(z[24])
+Z([3,'../../static/assets/addImage.png'])
+Z([3,'_view 5c0aa864 btnView'])
+Z(z[23])
+Z([3,'_button 5c0aa864 saveBtn'])
+Z(z[25])
+Z([1,'5c0aa864-10'])
+Z([3,'保存'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
 function gz$gwx_13(){
@@ -1594,10 +1639,10 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["5c0aa864-default-5c0aa864-7"]=function(e,s,r,gg){
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':5c0aa864-default-5c0aa864-7'
+var b=x[0]+':5c0aa864-default-5c0aa864-8'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -1605,7 +1650,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:4:47")
+cs.push("./common/slots.wxml:template:9:47")
 var xC=_oz(z,5,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1615,11 +1660,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],4,232)
+else _w(xC,x[0],9,232)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:4:255")
+cs.push("./common/slots.wxml:template:9:255")
 var hG=_oz(z,12,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1629,11 +1674,11 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],4,440)
+else _w(hG,x[0],9,440)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:4:463")
+cs.push("./common/slots.wxml:template:9:463")
 var lK=_oz(z,19,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
@@ -1643,13 +1688,13 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],4,648)
+else _w(lK,x[0],9,648)
 cs.pop()
-cs.push("./common/slots.wxml:picker:4:671")
+cs.push("./common/slots.wxml:picker:9:671")
 var eN=_mz(z,'picker',['bindchange',22,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:4:815")
+cs.push("./common/slots.wxml:template:9:815")
 var oP=_oz(z,29,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
@@ -1659,15 +1704,15 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],4,925)
+else _w(oP,x[0],9,925)
 cs.pop()
 cs.pop()
 _(r,eN)
-cs.push("./common/slots.wxml:picker:4:957")
+cs.push("./common/slots.wxml:picker:9:957")
 var fS=_mz(z,'picker',['bindchange',32,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:4:1097")
+cs.push("./common/slots.wxml:template:9:1097")
 var hU=_oz(z,39,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
@@ -1677,15 +1722,15 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],4,1207)
+else _w(hU,x[0],9,1207)
 cs.pop()
 cs.pop()
 _(r,fS)
-cs.push("./common/slots.wxml:picker:4:1239")
+cs.push("./common/slots.wxml:picker:9:1239")
 var oX=_mz(z,'picker',['bindchange',42,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:4:1385")
+cs.push("./common/slots.wxml:template:9:1385")
 var aZ=_oz(z,49,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
@@ -1695,13 +1740,13 @@ lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],4,1495)
+else _w(aZ,x[0],9,1495)
 cs.pop()
 cs.pop()
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:4:1527")
+cs.push("./common/slots.wxml:template:9:1527")
 var o4=_oz(z,56,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
@@ -1711,7 +1756,21 @@ b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],4,1712)
+else _w(o4,x[0],9,1712)
+cs.pop()
+var f7=_v()
+_(r,f7)
+cs.push("./common/slots.wxml:template:9:1735")
+var c8=_oz(z,60,e,s,gg)
+var h9=_gd(x[0],c8,e_,d_)
+if(h9){
+var o0=_1z(z,59,e,s,gg) || {}
+var cur_globalf=gg.f
+f7.wxXCkey=3
+h9(o0,o0,f7,gg)
+gg.f=cur_globalf
+}
+else _w(c8,x[0],9,1843)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1725,18 +1784,28 @@ var z=gz$gwx_1()
 var oB=e_[x[0]].i
 _ai(oB,x[1],e_,x[0],1,1)
 _ai(oB,x[2],e_,x[0],2,2)
+_ai(oB,x[3],e_,x[0],3,2)
+_ai(oB,x[4],e_,x[0],4,2)
+_ai(oB,x[5],e_,x[0],5,2)
+_ai(oB,x[6],e_,x[0],6,2)
+_ai(oB,x[7],e_,x[0],7,2)
+oB.pop()
+oB.pop()
+oB.pop()
+oB.pop()
+oB.pop()
 oB.pop()
 oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[3]]={}
-d_[x[3]]["68dcfa4a"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6],x[7]],ic:[]}
+d_[x[8]]={}
+d_[x[8]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[3]+':68dcfa4a'
+var b=x[8]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[3]);return}
+if(p_[b]){_wl(b,x[8]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -1763,14 +1832,14 @@ var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 return r
 }
-e_[x[3]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[4]]={}
-d_[x[4]]["346bda0d"]=function(e,s,r,gg){
+e_[x[8]]={f:m1,j:[],i:[],ti:[],ic:[]}
+d_[x[9]]={}
+d_[x[9]]["346bda0d"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[4]+':346bda0d'
+var b=x[9]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[4]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-icon/uni-icon.vue.wxml:view:1:27")
@@ -1788,14 +1857,14 @@ var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 return r
 }
-e_[x[4]]={f:m2,j:[],i:[],ti:[],ic:[]}
-d_[x[5]]={}
-d_[x[5]]["30c48a99"]=function(e,s,r,gg){
+e_[x[9]]={f:m2,j:[],i:[],ti:[],ic:[]}
+d_[x[10]]={}
+d_[x[10]]["30c48a99"]=function(e,s,r,gg){
 var z=gz$gwx_4()
-var b=x[5]+':30c48a99'
+var b=x[10]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[5]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
@@ -1827,7 +1896,7 @@ var cI=_v()
 _(oH,cI)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:805")
 var oJ=_oz(z,14,e,s,gg)
-var lK=_gd(x[5],oJ,e_,d_)
+var lK=_gd(x[10],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,13,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1835,7 +1904,7 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[5],1,876)
+else _w(oJ,x[10],1,876)
 cs.pop()
 cs.pop()
 _(oD,oH)
@@ -1895,7 +1964,7 @@ var aZ=_v()
 _(hU,aZ)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1431")
 var t1=_oz(z,28,e,s,gg)
-var e2=_gd(x[5],t1,e_,d_)
+var e2=_gd(x[10],t1,e_,d_)
 if(e2){
 var b3=_1z(z,27,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1903,7 +1972,7 @@ aZ.wxXCkey=3
 e2(b3,b3,aZ,gg)
 gg.f=cur_globalf
 }
-else _w(t1,x[5],1,1557)
+else _w(t1,x[10],1,1557)
 cs.pop()
 cs.pop()
 }
@@ -1925,7 +1994,7 @@ var x5=_v()
 _(cW,x5)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1802")
 var o6=_oz(z,39,e,s,gg)
-var f7=_gd(x[5],o6,e_,d_)
+var f7=_gd(x[10],o6,e_,d_)
 if(f7){
 var c8=_1z(z,38,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1933,7 +2002,7 @@ x5.wxXCkey=3
 f7(c8,c8,x5,gg)
 gg.f=cur_globalf
 }
-else _w(o6,x[5],1,1969)
+else _w(o6,x[10],1,1969)
 cs.pop()
 cs.pop()
 }
@@ -1960,21 +2029,21 @@ return r
 }
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var cF=e_[x[5]].i
-_ai(cF,x[6],e_,x[5],1,1)
-_ai(cF,x[7],e_,x[5],1,61)
+var cF=e_[x[10]].i
+_ai(cF,x[6],e_,x[10],1,1)
+_ai(cF,x[7],e_,x[10],1,61)
 cF.pop()
 cF.pop()
 return r
 }
-e_[x[5]]={f:m3,j:[],i:[],ti:[x[6],x[7]],ic:[]}
-d_[x[8]]={}
-d_[x[8]]["3b6bb3ad"]=function(e,s,r,gg){
+e_[x[10]]={f:m3,j:[],i:[],ti:[x[6],x[7]],ic:[]}
+d_[x[11]]={}
+d_[x[11]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[8]+':3b6bb3ad'
+var b=x[11]+':3b6bb3ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[8]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list/uni-list.vue.wxml:view:1:62")
@@ -1984,7 +2053,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./components/list/uni-list/uni-list.vue.wxml:template:1:136")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[8],oD,e_,d_)
+var fE=_gd(x[11],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1992,7 +2061,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[8],1,194)
+else _w(oD,x[11],1,194)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -2003,12 +2072,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[8]]["default"]=function(e,s,r,gg){
+d_[x[11]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[8]+':default'
+var b=x[11]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[8]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2020,19 +2089,19 @@ return r
 }
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var oH=e_[x[8]].i
-_ai(oH,x[9],e_,x[8],1,1)
+var oH=e_[x[11]].i
+_ai(oH,x[5],e_,x[11],1,1)
 oH.pop()
 return r
 }
-e_[x[8]]={f:m4,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[10]]={}
-d_[x[10]]["2241d2a0"]=function(e,s,r,gg){
+e_[x[11]]={f:m4,j:[],i:[],ti:[x[5]],ic:[]}
+d_[x[12]]={}
+d_[x[12]]["2241d2a0"]=function(e,s,r,gg){
 var z=gz$gwx_6()
-var b=x[10]+':2241d2a0'
+var b=x[12]+':2241d2a0'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[10]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 cs.push("./components/m-icon/m-icon.vue.wxml:view:1:27")
@@ -2050,14 +2119,14 @@ var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
 return r
 }
-e_[x[10]]={f:m5,j:[],i:[],ti:[],ic:[]}
-d_[x[11]]={}
-d_[x[11]]["7dcb1efb"]=function(e,s,r,gg){
+e_[x[12]]={f:m5,j:[],i:[],ti:[],ic:[]}
+d_[x[13]]={}
+d_[x[13]]["7dcb1efb"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[11]+':7dcb1efb'
+var b=x[13]+':7dcb1efb'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-input.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[13]);return}
 p_[b]=true
 try{
 cs.push("./components/m-input.vue.wxml:view:1:78")
@@ -2078,7 +2147,7 @@ var hG=_v()
 _(cF,hG)
 cs.push("./components/m-input.vue.wxml:template:1:521")
 var oH=_oz(z,20,e,s,gg)
-var cI=_gd(x[11],oH,e_,d_)
+var cI=_gd(x[13],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,17,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2086,7 +2155,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[11],1,706)
+else _w(oH,x[13],1,706)
 cs.pop()
 cs.pop()
 _(xC,cF)
@@ -2103,7 +2172,7 @@ var aL=_v()
 _(lK,aL)
 cs.push("./components/m-input.vue.wxml:template:1:803")
 var tM=_oz(z,29,e,s,gg)
-var eN=_gd(x[11],tM,e_,d_)
+var eN=_gd(x[13],tM,e_,d_)
 if(eN){
 var bO=_1z(z,26,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2111,7 +2180,7 @@ aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[11],1,970)
+else _w(tM,x[13],1,970)
 cs.pop()
 cs.pop()
 _(oD,lK)
@@ -2130,19 +2199,19 @@ return r
 }
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var lK=e_[x[11]].i
-_ai(lK,x[12],e_,x[11],1,1)
+var lK=e_[x[13]].i
+_ai(lK,x[4],e_,x[13],1,1)
 lK.pop()
 return r
 }
-e_[x[11]]={f:m6,j:[],i:[],ti:[x[12]],ic:[]}
-d_[x[13]]={}
-d_[x[13]]["ab7aaa6c"]=function(e,s,r,gg){
+e_[x[13]]={f:m6,j:[],i:[],ti:[x[4]],ic:[]}
+d_[x[14]]={}
+d_[x[14]]["ab7aaa6c"]=function(e,s,r,gg){
 var z=gz$gwx_8()
-var b=x[13]+':ab7aaa6c'
+var b=x[14]+':ab7aaa6c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/inputPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[13]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 cs.push("./pages/common/inputPage.vue.wxml:view:1:27")
@@ -2176,17 +2245,17 @@ var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
 return r
 }
-e_[x[13]]={f:m7,j:[],i:[],ti:[],ic:[]}
-d_[x[14]]={}
+e_[x[14]]={f:m7,j:[],i:[],ti:[],ic:[]}
+d_[x[15]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var eN=e_[x[14]].i
-_ai(eN,x[15],e_,x[14],1,1)
+var eN=e_[x[15]].i
+_ai(eN,x[16],e_,x[15],1,1)
 var bO=_v()
 _(r,bO)
 cs.push("./pages/common/inputPage.wxml:template:2:6")
 var oP=_oz(z,1,e,s,gg)
-var xQ=_gd(x[14],oP,e_,d_)
+var xQ=_gd(x[15],oP,e_,d_)
 if(xQ){
 var oR=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2194,19 +2263,19 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[14],2,18)
+else _w(oP,x[15],2,18)
 cs.pop()
 eN.pop()
 return r
 }
-e_[x[14]]={f:m8,j:[],i:[],ti:[x[15]],ic:[]}
-d_[x[16]]={}
-d_[x[16]]["dd467128"]=function(e,s,r,gg){
+e_[x[15]]={f:m8,j:[],i:[],ti:[x[16]],ic:[]}
+d_[x[17]]={}
+d_[x[17]]["dd467128"]=function(e,s,r,gg){
 var z=gz$gwx_10()
-var b=x[16]+':dd467128'
+var b=x[17]+':dd467128'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/orgChoose.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
+if(p_[b]){_wl(b,x[17]);return}
 p_[b]=true
 try{
 cs.push("./pages/common/orgChoose.vue.wxml:view:1:27")
@@ -2221,38 +2290,45 @@ cs.push("./pages/common/orgChoose.vue.wxml:view:1:163")
 var oJ=_n('view')
 _rz(z,oJ,'class',7,hG,cF,gg)
 cs.push("./pages/common/orgChoose.vue.wxml:view:1:209")
-var lK=_mz(z,'view',['bindtap',8,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
-var aL=_oz(z,12,hG,cF,gg)
-_(lK,aL)
+var aL=_mz(z,'view',['bindtap',8,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
+var tM=_oz(z,12,hG,cF,gg)
+_(aL,tM)
 cs.pop()
+_(oJ,aL)
+var lK=_v()
 _(oJ,lK)
+if(_oz(z,13,hG,cF,gg)){lK.wxVkey=1
 cs.push("./pages/common/orgChoose.vue.wxml:view:1:347")
-var tM=_mz(z,'view',['bindtap',13,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:472")
-var eN=_n('view')
-_rz(z,eN,'class',17,hG,cF,gg)
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:347")
+var eN=_mz(z,'view',['bindtap',14,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:504")
+var bO=_n('view')
+_rz(z,bO,'class',18,hG,cF,gg)
 cs.pop()
-_(tM,eN)
-cs.push("./pages/common/orgChoose.vue.wxml:image:1:519")
-var bO=_mz(z,'image',['class',18,'mode',1,'src',2],[],hG,cF,gg)
+_(eN,bO)
+cs.push("./pages/common/orgChoose.vue.wxml:image:1:551")
+var oP=_mz(z,'image',['class',19,'mode',1,'src',2],[],hG,cF,gg)
 cs.pop()
-_(tM,bO)
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:620")
-var oP=_n('view')
-_rz(z,oP,'class',21,hG,cF,gg)
-var xQ=_oz(z,22,hG,cF,gg)
-_(oP,xQ)
+_(eN,oP)
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:652")
+var xQ=_n('view')
+_rz(z,xQ,'class',22,hG,cF,gg)
+var oR=_oz(z,23,hG,cF,gg)
+_(xQ,oR)
 cs.pop()
-_(tM,oP)
+_(eN,xQ)
 cs.pop()
-_(oJ,tM)
+_(lK,eN)
+cs.pop()
+}
+lK.wxXCkey=1
 cs.pop()
 _(oH,oJ)
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:686")
-var oR=_n('view')
-_rz(z,oR,'class',23,hG,cF,gg)
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:718")
+var fS=_n('view')
+_rz(z,fS,'class',24,hG,cF,gg)
 cs.pop()
-_(oH,oR)
+_(oH,fS)
 cs.pop()
 return oH
 }
@@ -2261,15 +2337,15 @@ _2z(z,4,fE,e,s,gg,oD,'org','index','index')
 cs.pop()
 var xC=_v()
 _(oB,xC)
-if(_oz(z,24,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:739")
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:739")
-var fS=_n('view')
-_rz(z,fS,'class',25,e,s,gg)
-var cT=_oz(z,26,e,s,gg)
-_(fS,cT)
+if(_oz(z,25,e,s,gg)){xC.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:771")
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:771")
+var cT=_n('view')
+_rz(z,cT,'class',26,e,s,gg)
+var hU=_oz(z,27,e,s,gg)
+_(cT,hU)
 cs.pop()
-_(xC,fS)
+_(xC,cT)
 cs.pop()
 }
 xC.wxXCkey=1
@@ -2286,17 +2362,17 @@ var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
 return r
 }
-e_[x[16]]={f:m9,j:[],i:[],ti:[],ic:[]}
-d_[x[17]]={}
+e_[x[17]]={f:m9,j:[],i:[],ti:[],ic:[]}
+d_[x[18]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var hU=e_[x[17]].i
-_ai(hU,x[18],e_,x[17],1,1)
+var hU=e_[x[18]].i
+_ai(hU,x[19],e_,x[18],1,1)
 var oV=_v()
 _(r,oV)
 cs.push("./pages/common/orgChoose.wxml:template:2:6")
 var cW=_oz(z,1,e,s,gg)
-var oX=_gd(x[17],cW,e_,d_)
+var oX=_gd(x[18],cW,e_,d_)
 if(oX){
 var lY=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2304,19 +2380,19 @@ oV.wxXCkey=3
 oX(lY,lY,oV,gg)
 gg.f=cur_globalf
 }
-else _w(cW,x[17],2,18)
+else _w(cW,x[18],2,18)
 cs.pop()
 hU.pop()
 return r
 }
-e_[x[17]]={f:m10,j:[],i:[],ti:[x[18]],ic:[]}
-d_[x[19]]={}
-d_[x[19]]["5c0aa864"]=function(e,s,r,gg){
+e_[x[18]]={f:m10,j:[],i:[],ti:[x[19]],ic:[]}
+d_[x[20]]={}
+d_[x[20]]["5c0aa864"]=function(e,s,r,gg){
 var z=gz$gwx_12()
-var b=x[19]+':5c0aa864'
+var b=x[20]+':5c0aa864'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[19]);return}
+if(p_[b]){_wl(b,x[20]);return}
 p_[b]=true
 try{
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:157")
@@ -2341,7 +2417,7 @@ var hG=_v()
 _(cF,hG)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:345")
 var oH=_oz(z,7,e,s,gg)
-var cI=_gd(x[19],oH,e_,d_)
+var cI=_gd(x[20],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2349,10 +2425,80 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[19],1,460)
+else _w(oH,x[20],1,460)
 cs.pop()
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:483")
+var lK=_n('view')
+_rz(z,lK,'class',8,e,s,gg)
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:530")
+var aL=_n('view')
+_rz(z,aL,'class',9,e,s,gg)
+cs.push("./pages/danger/dangerEdit.vue.wxml:text:1:578")
+var tM=_n('text')
+_rz(z,tM,'class',10,e,s,gg)
+var eN=_oz(z,11,e,s,gg)
+_(tM,eN)
+cs.pop()
+_(aL,tM)
+cs.push("./pages/danger/dangerEdit.vue.wxml:text:1:638")
+var bO=_n('text')
+_rz(z,bO,'class',12,e,s,gg)
+var oP=_oz(z,13,e,s,gg)
+_(bO,oP)
+cs.pop()
+_(aL,bO)
+cs.pop()
+_(lK,aL)
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:714")
+var xQ=_mz(z,'view',['class',14,'id',1],[],e,s,gg)
+var oR=_v()
+_(xQ,oR)
+cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:768")
+var fS=function(hU,cT,oV,gg){
+cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:768")
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:865")
+var oX=_mz(z,'view',['class',21,'style',1],[],hU,cT,gg)
+cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1021")
+var lY=_mz(z,'image',['bindtap',23,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'mode',5,'src',6],[],hU,cT,gg)
+cs.pop()
+_(oX,lY)
+cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1203")
+var aZ=_mz(z,'image',['bindtap',30,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'mode',5,'src',6],[],hU,cT,gg)
+cs.pop()
+_(oX,aZ)
+cs.pop()
+_(oV,oX)
+cs.pop()
+return oV
+}
+oR.wxXCkey=2
+_2z(z,18,fS,e,s,gg,oR,'imgObj','idx','idx')
+cs.pop()
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:1422")
+var t1=_mz(z,'view',['bindtap',37,'class',1,'data-comkey',2,'data-eventid',3,'style',4],[],e,s,gg)
+cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1653")
+var e2=_mz(z,'image',['class',42,'src',1],[],e,s,gg)
+cs.pop()
+_(t1,e2)
+cs.pop()
+_(xQ,t1)
+cs.pop()
+_(lK,xQ)
+cs.pop()
+_(cF,lK)
 cs.pop()
 _(oB,cF)
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:1771")
+var b3=_n('view')
+_rz(z,b3,'class',44,e,s,gg)
+cs.push("./pages/danger/dangerEdit.vue.wxml:button:1:1808")
+var o4=_mz(z,'button',['bindtap',45,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+var x5=_oz(z,49,e,s,gg)
+_(o4,x5)
+cs.pop()
+_(b3,o4)
+cs.pop()
+_(oB,b3)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -2364,24 +2510,24 @@ return r
 }
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var t1=e_[x[19]].i
-_ai(t1,x[1],e_,x[19],1,1)
-_ai(t1,x[2],e_,x[19],1,61)
+var t1=e_[x[20]].i
+_ai(t1,x[1],e_,x[20],1,1)
+_ai(t1,x[2],e_,x[20],1,61)
 t1.pop()
 t1.pop()
 return r
 }
-e_[x[19]]={f:m11,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[20]]={}
+e_[x[20]]={f:m11,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[21]]={}
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b3=e_[x[20]].i
-_ai(b3,x[21],e_,x[20],1,1)
+var b3=e_[x[21]].i
+_ai(b3,x[22],e_,x[21],1,1)
 var o4=_v()
 _(r,o4)
 cs.push("./pages/danger/dangerEdit.wxml:template:2:6")
 var x5=_oz(z,1,e,s,gg)
-var o6=_gd(x[20],x5,e_,d_)
+var o6=_gd(x[21],x5,e_,d_)
 if(o6){
 var f7=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2389,19 +2535,19 @@ o4.wxXCkey=3
 o6(f7,f7,o4,gg)
 gg.f=cur_globalf
 }
-else _w(x5,x[20],2,18)
+else _w(x5,x[21],2,18)
 cs.pop()
 b3.pop()
 return r
 }
-e_[x[20]]={f:m12,j:[],i:[],ti:[x[21]],ic:[]}
-d_[x[22]]={}
-d_[x[22]]["2d8d4fae"]=function(e,s,r,gg){
+e_[x[21]]={f:m12,j:[],i:[],ti:[x[22]],ic:[]}
+d_[x[23]]={}
+d_[x[23]]["2d8d4fae"]=function(e,s,r,gg){
 var z=gz$gwx_14()
-var b=x[22]+':2d8d4fae'
+var b=x[23]+':2d8d4fae'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[22]);return}
+if(p_[b]){_wl(b,x[23]);return}
 p_[b]=true
 try{
 cs.push("./pages/login/login.vue.wxml:view:1:72")
@@ -2424,7 +2570,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/login/login.vue.wxml:template:1:247")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[22],oH,e_,d_)
+var cI=_gd(x[23],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2432,7 +2578,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[22],1,474)
+else _w(oH,x[23],1,474)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -2450,7 +2596,7 @@ var eN=_v()
 _(lK,eN)
 cs.push("./pages/login/login.vue.wxml:template:1:594")
 var bO=_oz(z,21,e,s,gg)
-var oP=_gd(x[22],bO,e_,d_)
+var oP=_gd(x[23],bO,e_,d_)
 if(oP){
 var xQ=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2458,7 +2604,7 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[22],1,822)
+else _w(bO,x[23],1,822)
 cs.pop()
 cs.pop()
 _(xC,lK)
@@ -2486,12 +2632,12 @@ return r
 }
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var h9=e_[x[22]].i
-_ai(h9,x[23],e_,x[22],1,1)
+var h9=e_[x[23]].i
+_ai(h9,x[3],e_,x[23],1,1)
 h9.pop()
 return r
 }
-e_[x[22]]={f:m13,j:[],i:[],ti:[x[23]],ic:[]}
+e_[x[23]]={f:m13,j:[],i:[],ti:[x[3]],ic:[]}
 d_[x[24]]={}
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
@@ -2767,11 +2913,11 @@ return r
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
 var oNB=e_[x[29]].i
-_ai(oNB,x[23],e_,x[29],1,1)
+_ai(oNB,x[3],e_,x[29],1,1)
 oNB.pop()
 return r
 }
-e_[x[29]]={f:m17,j:[],i:[],ti:[x[23]],ic:[]}
+e_[x[29]]={f:m17,j:[],i:[],ti:[x[3]],ic:[]}
 d_[x[30]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
@@ -2913,11 +3059,11 @@ return r
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
 var oVB=e_[x[32]].i
-_ai(oVB,x[23],e_,x[32],1,1)
+_ai(oVB,x[3],e_,x[32],1,1)
 oVB.pop()
 return r
 }
-e_[x[32]]={f:m19,j:[],i:[],ti:[x[23]],ic:[]}
+e_[x[32]]={f:m19,j:[],i:[],ti:[x[3]],ic:[]}
 d_[x[33]]={}
 var m20=function(e,s,r,gg){
 var z=gz$gwx_21()

@@ -20,13 +20,13 @@
 			<text class="titleText_pc">目标职责</text>
 		</view> -->
 		<view class="menuBlockView">
-		  <view class='dangerView' @tap="jumpPage('../danger/dangerList')">
+		  <view class='dangerView' @tap="jumpPage('')">
 			<image class="dangerIcon" src="../../static/assets/jc.png" mode="widthFix"></image>
 			<view class='subView'>
 			  <text class='dangerText'>检查</text>
 			</view>
 		  </view>
-		  <view class='dangerView' @tap="jumpPage('')">
+		  <view class='dangerView' @tap="jumpPage('../danger/dangerList')">
 			<image class="dangerIcon" src="../../static/assets/yh.png" mode="widthFix"></image>
 			<view class='subView'>
 			  <text class='dangerText'>隐患</text>
@@ -44,6 +44,7 @@
 
 <script>
 	import config from '../../util/config.js';
+	import service from '../../service.js';
 	import {
 	    mapState,
 	    mapMutations
@@ -61,7 +62,37 @@
 		onLoad() {
 			
 		},
+		onShow() {
+			this.login(service.getUsers());
+			if (!this.hasLogin) {
+			    uni.showModal({
+			        title: '未登录',
+			        content: '您未登录，需要登录后才能继续',
+			        /**
+			         * 如果需要强制登录，不显示取消按钮
+			         */
+			        showCancel: !this.forcedLogin,
+			        success: (res) => {
+			            if (res.confirm) {
+							/**
+							 * 如果需要强制登录，使用reLaunch方式
+							 */
+			                if (this.forcedLogin) {
+			                    uni.reLaunch({
+			                        url: '../login/login'
+			                    });
+			                } else {
+			                    uni.navigateTo({
+			                        url: '../login/login'
+			                    });
+			                }
+			            }
+			        }
+			    });
+			}
+		},
 		methods:{
+			...mapMutations(['login']),
 			jumpPage(url) {
 				if (url == '') {
 					uni.showToast({

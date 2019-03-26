@@ -371,11 +371,12 @@ var config = {
   // 登录
   login: '/mobile/system/login.do',
 
-  // 待处理隐患
+  // 获取隐患列表
   getDangerList: '/mobile/getYhzg.do',
-
   // 获取隐患详情
   getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',
+  // 添加隐患
+  addDanger: '/mobile/getYhzg.do?action=insertYh',
 
   // 获取部门
   getOrgList: '/mobile/getUser.do?action=getOrgList ' };
