@@ -375,7 +375,10 @@ var config = {
   getDangerList: '/mobile/getYhzg.do',
 
   // 获取隐患详情
-  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh' };
+  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',
+
+  // 获取部门
+  getOrgList: '/mobile/getUser.do?action=getOrgList ' };
 
 
 //对外把对象config返回

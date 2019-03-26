@@ -6,7 +6,8 @@
     "pages/pwd/pwd",
     "pages/user/user",
     "pages/danger/dangerEdit",
-    "pages/common/inputPage"
+    "pages/common/inputPage",
+    "pages/common/orgChoose"
   ],
   "subPackages": [],
   "window": {

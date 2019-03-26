@@ -49,6 +49,11 @@
             "style": {
                 "navigationBarTitleText": "输入内容"
             }
+        }, {
+            "path": "pages/common/orgChoose",
+            "style": {
+                "navigationBarTitleText": "选择部门"
+            }
         }
     ],
     "tabBar": {

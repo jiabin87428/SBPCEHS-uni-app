@@ -47,7 +47,7 @@
     "distribute": {
       "icons": {
         "ios": {
-          "appstore": "/Users/lijiabin/个人/歌略/项目汇总/上海上药/图标/1024logo.png",
+          "appstore": "/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/图标/1024logo.png",
           "ipad": {
             "app": "unpackage/res/icons/76x76.png",
             "app@2x": "unpackage/res/icons/152x152.png",

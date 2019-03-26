@@ -1,6 +1,6 @@
-.baseView{  
+.baseView{
+	width: 100%;
   display: flex;
-  flex: 1;
   flex-direction: column;
   background-color: #F1F1F1;
 }
@@ -23,4 +23,33 @@
 	background-color: #FFFFFF;
 	display: flex;
 	flex-direction: row;
+}
+
+.cellBaseView_Row {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 120upx;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	align-items: center;
+}
+.cellLine {
+	/* width: 100%; */
+	height: 1upx;
+	margin-left: 30upx;
+	margin-right: 0upx;
+	background-color: #DDDDDD;
+}
+.coverBottomView {
+	width: 100%;
+	height: 110upx;
+	background: #3296FA;
+	position: fixed;
+	bottom: 0upx;
+	overflow: hidden;
+	text-align: center;
+	line-height: 110upx;
+	color: #FFFFFF;
+	font-size: 32upx;
 }
