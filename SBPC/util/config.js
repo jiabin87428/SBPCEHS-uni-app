@@ -20,6 +20,8 @@ var config = {
 	getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',
 	// 添加隐患
 	addDanger: '/mobile/getYhzg.do?action=insertYh',
+	// 隐患流转
+	flowDanger: '/mobile/getYhzg.do?action=flowYh',
 	
 	// 获取部门
 	getOrgList: '/mobile/getUser.do?action=getOrgList ',

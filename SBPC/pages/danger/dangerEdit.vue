@@ -40,6 +40,9 @@
 		</view>
 		<view class="btnView">
 		    <button class="saveBtn" @tap="saveClick">保存</button>
+			<block v-for="(btnObj,index) in flowbtnchooseflow" :key="index">
+				<button class="saveBtn" @tap="roamClick(btnObj)">{{btnObj.operationname}}</button>
+			</block>
 		</view>
 	</view>
 </template>
@@ -80,6 +83,9 @@
 				// 照片相关
 				imageList: [],
 				littleImageWidth: 0,
+				
+				// 流转按钮相关
+				flowbtnchooseflow:[],
 				
 				// 是否可编辑
 				editable: true,
@@ -140,7 +146,41 @@
 			// 保存隐患
 			saveClick: function(e) {
 				var that = this;
-				let param = {
+				var param = {
+					userid: that.userInfo.userid,
+					instanceid: that.instanceid,
+					recordid: that.recordid,
+					yhms: that.yhms,
+					yhdj: that.yhdj,
+					yhhg: that.yhhg,
+					yhlx: that.yhlx,
+					zgqx: that.zgqx,
+					yhly: that.yhly,
+					zrbmid: that.zrbm == null ? "" : that.zrbm.id,
+					zrbmmc: that.zrbm == null ? "" : that.zrbm.name,
+					
+					fqrid: that.userInfo.userid,
+					fqrmc: that.userInfo.username,
+				}
+				request.requestLoading(config.addDanger, param, '添加隐患', 
+					function(res){
+						that.instanceid = res.instanceid;
+						that.recordid = res.recordid;
+						that.flowbtnchooseflow = res.flowbtnchooseflow;
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '添加失败'
+						});
+					}, function(){
+						
+					}
+				);
+			},
+			// 流转隐患
+			roamClick: function(btnObj) {
+				var that = this;
+				var param = {
 					userid: that.userInfo.userid,
 					instanceid: that.instanceid,
 					recordid: that.recordid,
@@ -156,14 +196,18 @@
 					fqrid: that.userInfo.userid,
 					fqrmc: that.userInfo.username,
 					
+					operationname: btnObj.operationname,
+					nextstatusname: btnObj.nextstatusname,
+					prestatusname: btnObj.prestatusname,
+					flowtype: btnObj.flowtype,
 				}
-				request.requestLoading(config.addDanger, param, '添加隐患', 
+				request.requestLoading(config.flowDanger, param, '正在流转', 
 					function(res){
 						console.log('' + JSON.stringify(res));
 					},function(){
 						uni.showToast({
 							icon: 'none',
-							title: '添加失败'
+							title: '流转失败'
 						});
 					}, function(){
 						
@@ -263,8 +307,9 @@
 		height: 110upx;
 		text-align: center;
 		margin-top: 20px;
-		margin-left: 20px;
+		margin-left: 5px;
 		margin-bottom: 20px;
-		margin-right: 20px;
+		margin-right: 5px;
+		font-size: 26upx;
 	}
 </style>
