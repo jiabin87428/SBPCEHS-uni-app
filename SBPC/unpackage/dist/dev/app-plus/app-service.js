@@ -1237,7 +1237,14 @@ Z([3,'index'])
 Z([3,'org'])
 Z([[7],[3,'orgList']])
 Z(z[2])
+Z([3,'handleProxy'])
+Z([3,'_view dd467128 nextLevelView'])
+Z([[7],[3,'$k']])
+Z([[2,'+'],[1,'dd467128-1-'],[[7],[3,'index']]])
 Z([[2,'=='],[[6],[[7],[3,'org']],[3,'hasChild']],[1,'Y']])
+Z(z[10])
+Z([[2,'=='],[[6],[[7],[3,'org']],[3,'hasChild']],[1,'N']])
+Z(z[12])
 Z([[2,'=='],[[7],[3,'mltiple']],[1,true]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
@@ -1953,13 +1960,38 @@ var oD=_v()
 _(oB,oD)
 cs.push("./pages/common/orgChoose.vue.wxml:block:1:65")
 var fE=function(hG,cF,oH,gg){
-var oJ=_v()
-_(oH,oJ)
-if(_oz(z,6,hG,cF,gg)){oJ.wxVkey=1
 cs.push("./pages/common/orgChoose.vue.wxml:view:1:347")
+var oJ=_mz(z,'view',['bindtap',6,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
+var lK=_v()
+_(oJ,lK)
+if(_oz(z,10,hG,cF,gg)){lK.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:image:1:519")
 cs.pop()
 }
-oJ.wxXCkey=1
+var aL=_v()
+_(oJ,aL)
+if(_oz(z,11,hG,cF,gg)){aL.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:652")
+cs.pop()
+}
+var tM=_v()
+_(oJ,tM)
+if(_oz(z,12,hG,cF,gg)){tM.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:image:1:736")
+cs.pop()
+}
+var eN=_v()
+_(oJ,eN)
+if(_oz(z,13,hG,cF,gg)){eN.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:877")
+cs.pop()
+}
+lK.wxXCkey=1
+aL.wxXCkey=1
+tM.wxXCkey=1
+eN.wxXCkey=1
+cs.pop()
+_(oH,oJ)
 return oH
 }
 oD.wxXCkey=2
@@ -1967,8 +1999,8 @@ _2z(z,4,fE,e,s,gg,oD,'org','index','index')
 cs.pop()
 var xC=_v()
 _(oB,xC)
-if(_oz(z,7,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:771")
+if(_oz(z,14,e,s,gg)){xC.wxVkey=1
+cs.push("./pages/common/orgChoose.vue.wxml:view:1:1036")
 cs.pop()
 }
 xC.wxXCkey=1
@@ -4068,7 +4100,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  data: function data() {\n    return {\n      // 复制的Key\n      key: '',\n      // 是否多选\n      mltiple: false,\n      // 已选内容\n      selected: [],\n      // 部门列表\n      orgList: [],\n\n      // 当前部门id\n      orgId: '',\n\n      // 返回层级-因为可能有多级\n      backLevel: 1 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.key = option.key;\n    this.mltiple = option.mltiple == 'true' ? true : false;\n    this.selected = JSON.parse(option.selected);\n    this.orgId = option.orgId == null ? \"\" : option.orgId;\n    this.backLevel = option.back == null ? 1 : parseInt(option.back);\n    this.getOrgList();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    getOrgList: function getOrgList() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        orgid: that.orgId };\n\n      _request.default.requestLoading(_config.default.getOrgList, param, '正在加载',\n      function (res) {\n        that.orgList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '加载失败' });\n\n      }, function () {\n\n      });\n    },\n    // 选择当前项\n    chooseCurrent: function chooseCurrent(org) {\n      if (this.mltiple == false) {// 单选，直接返回\n        this.$fire.fire(this.key, org);\n        uni.navigateBack({\n          delta: this.backLevel });\n\n      }\n    },\n    // 去下级\n    gotoNext: function gotoNext(org) {\n      var back = this.backLevel + 1;\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify(this.selected) + \"&key=\" + this.key + \"&mltiple=\" + this.mltiple + \"&orgId=\" + org.id + \"&back=\" + back });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/common/orgChoose.vue?vue&type=script&lang=js&?5dc0");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  data: function data() {\n    return {\n      // 复制的Key\n      key: '',\n      // 是否多选\n      mltiple: false,\n      // 已选内容\n      selected: [],\n      // 部门列表\n      orgList: [],\n\n      // 当前部门id\n      orgId: '',\n\n      // 返回层级-因为可能有多级\n      backLevel: 1 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.key = option.key;\n    this.mltiple = option.mltiple == 'true' ? true : false;\n    this.selected = JSON.parse(option.selected);\n    this.orgId = option.orgId == null ? \"\" : option.orgId;\n    this.backLevel = option.back == null ? 1 : parseInt(option.back);\n    this.getOrgList();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    getOrgList: function getOrgList() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        orgid: that.orgId };\n\n      _request.default.requestLoading(_config.default.getOrgList, param, '正在加载',\n      function (res) {\n        that.orgList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '加载失败' });\n\n      }, function () {\n\n      });\n    },\n    // 选择当前项\n    chooseCurrent: function chooseCurrent(org) {\n      if (this.mltiple == false) {// 单选，直接返回\n        this.$fire.fire(this.key, org);\n        uni.navigateBack({\n          delta: this.backLevel });\n\n      }\n    },\n    // 去下级\n    gotoNext: function gotoNext(org) {\n      if (org.hasChild == \"N\") {\n        uni.showToast({\n          icon: 'none',\n          title: '该节点无下级' });\n\n        return;\n      }\n      var back = this.backLevel + 1;\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify(this.selected) + \"&key=\" + this.key + \"&mltiple=\" + this.mltiple + \"&orgId=\" + org.id + \"&back=\" + back });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/common/orgChoose.vue?vue&type=script&lang=js&?5dc0");
 
 /***/ }),
 
@@ -4091,7 +4123,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _vm._l(_vm.orgList, function(org, index) {\n        return _c(\"block\", { key: index }, [\n          _c(\"view\", { staticClass: \"cellBaseView_Row\" }, [\n            _c(\n              \"view\",\n              {\n                staticClass: \"orgName\",\n                attrs: { eventid: \"dd467128-0-\" + index },\n                on: {\n                  click: function($event) {\n                    _vm.chooseCurrent(org)\n                  }\n                }\n              },\n              [_vm._v(_vm._s(org.name))]\n            ),\n            org.hasChild == \"Y\"\n              ? _c(\n                  \"view\",\n                  {\n                    staticClass: \"nextLevelView\",\n                    attrs: { eventid: \"dd467128-1-\" + index },\n                    on: {\n                      click: function($event) {\n                        _vm.gotoNext(org)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"view\", { staticClass: \"columnLine\" }),\n                    _c(\"image\", {\n                      staticClass: \"levelImg\",\n                      attrs: {\n                        mode: \"aspectFit\",\n                        src: \"../../static/assets/level.png\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"nextLevel\" }, [_vm._v(\"下级\")])\n                  ]\n                )\n              : _vm._e()\n          ]),\n          _c(\"view\", { staticClass: \"cellLine\" })\n        ])\n      }),\n      _vm.mltiple == true\n        ? _c(\"view\", { staticClass: \"coverBottomView\" }, [_vm._v(\"确定\")])\n        : _vm._e()\n    ],\n    2\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/orgChoose.vue?vue&type=template&id=6ea7c758&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _vm._l(_vm.orgList, function(org, index) {\n        return _c(\"block\", { key: index }, [\n          _c(\"view\", { staticClass: \"cellBaseView_Row\" }, [\n            _c(\n              \"view\",\n              {\n                staticClass: \"orgName\",\n                attrs: { eventid: \"dd467128-0-\" + index },\n                on: {\n                  click: function($event) {\n                    _vm.chooseCurrent(org)\n                  }\n                }\n              },\n              [_vm._v(_vm._s(org.name))]\n            ),\n            _c(\n              \"view\",\n              {\n                staticClass: \"nextLevelView\",\n                attrs: { eventid: \"dd467128-1-\" + index },\n                on: {\n                  click: function($event) {\n                    _vm.gotoNext(org)\n                  }\n                }\n              },\n              [\n                _c(\"view\", { staticClass: \"columnLine\" }),\n                org.hasChild == \"Y\"\n                  ? _c(\"image\", {\n                      staticClass: \"levelImg\",\n                      attrs: {\n                        mode: \"aspectFit\",\n                        src: \"../../static/assets/level.png\"\n                      }\n                    })\n                  : _vm._e(),\n                org.hasChild == \"Y\"\n                  ? _c(\"view\", { staticClass: \"nextLevel\" }, [_vm._v(\"下级\")])\n                  : _vm._e(),\n                org.hasChild == \"N\"\n                  ? _c(\"image\", {\n                      staticClass: \"levelImg\",\n                      attrs: {\n                        mode: \"aspectFit\",\n                        src: \"../../static/assets/level_disable.png\"\n                      }\n                    })\n                  : _vm._e(),\n                org.hasChild == \"N\"\n                  ? _c(\"view\", { staticClass: \"nextLevel_disable\" }, [\n                      _vm._v(\"下级\")\n                    ])\n                  : _vm._e()\n              ]\n            )\n          ]),\n          _c(\"view\", { staticClass: \"cellLine\" })\n        ])\n      }),\n      _vm.mltiple == true\n        ? _c(\"view\", { staticClass: \"coverBottomView\" }, [_vm._v(\"确定\")])\n        : _vm._e()\n    ],\n    2\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/orgChoose.vue?vue&type=template&id=6ea7c758&");
 
 /***/ })
 

@@ -3,10 +3,12 @@
 		<block v-for="(org,index) in orgList" :key="index">
 			<view class="cellBaseView_Row">
 				<view class="orgName" @click="chooseCurrent(org)">{{org.name}}</view>
-				<view class="nextLevelView" @click="gotoNext(org)" v-if="org.hasChild == 'Y'">
+				<view class="nextLevelView" @click="gotoNext(org)">
 					<view class="columnLine"></view>
-					<image class="levelImg" mode="aspectFit" src="../../static/assets/level.png"></image>
-					<view class="nextLevel">下级</view>
+					<image class="levelImg" mode="aspectFit" src="../../static/assets/level.png" v-if="org.hasChild == 'Y'"></image>
+					<view class="nextLevel" v-if="org.hasChild == 'Y'">下级</view>
+					<image class="levelImg" mode="aspectFit" src="../../static/assets/level_disable.png" v-if="org.hasChild == 'N'"></image>
+					<view class="nextLevel_disable" v-if="org.hasChild == 'N'">下级</view>
 				</view>
 			</view>
 			<view class="cellLine"></view>
@@ -85,6 +87,13 @@
 			},
 			// 去下级
 			gotoNext: function(org) {
+				if (org.hasChild == "N") {
+					uni.showToast({
+						icon: 'none',
+						title: '该节点无下级'
+					});
+					return;
+				}
 				var back = this.backLevel + 1;
 				uni.navigateTo({
 					url: "../common/orgChoose?selected=" + JSON.stringify(this.selected) + "&key=" + this.key + "&mltiple=" + this.mltiple + "&orgId=" + org.id + "&back=" + back
@@ -122,7 +131,10 @@
 		width: 100upx;
 		color: #3296FA;
 		font-size: 34upx;
-		/* margin-right: 20upx; */
 	}
-	
+	.nextLevel_disable {
+		width: 100upx;
+		color: #BEBEBE;
+		font-size: 34upx;
+	}
 </style>
