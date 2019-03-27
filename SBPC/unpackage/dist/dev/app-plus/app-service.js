@@ -10,7 +10,7 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181221_syb_scopedata*/global.__wcc_version__='v0.5vv_20181221_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -650,32 +650,34 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
-var value = $gdc( raw, "", 2 );
-if ( o.ap && value && value.constructor===Function ) 
-{
-attrname = "$wxs:" + attrname; 
-node.attr["$gdc"] = $gdc;
-}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
+var value = $gdc( raw, "", 2 );
+return value;
 }
-node.attr[attrname] = value;
+else
+{
+var value = $gdc( raw, "", 2 );
+return value;
+}
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-_da( node, attrname, opindex, a, o );
+a = _da( node, attrname, opindex, a, o );
+node.attr[attrname] = a;
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-_da( node, attrname, opindex, a, o );
+a = _da( node, attrname, opindex, a, o );
+node.attr[attrname] = a;
 }
 function _o( opindex, env, scope, global )
 {
@@ -1260,9 +1262,22 @@ function gz$gwx_12(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
 __WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'5c0aa864'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-8']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'5c0aa864-default-5c0aa864-8']]])
-Z([3,'3b6bb3ad'])
+Z([3,'16742adb'])
+Z([3,'_view 16742adb baseView'])
+Z([3,'index'])
+Z([3,'obj'])
+Z([[7],[3,'personList']])
+Z(z[2])
+Z([[2,'=='],[[6],[[7],[3,'obj']],[3,'isUser']],[1,'N']])
+Z([3,'handleProxy'])
+Z([3,'_view 16742adb nextLevelView'])
+Z([[7],[3,'$k']])
+Z([[2,'+'],[1,'16742adb-1-'],[[7],[3,'index']]])
+Z([[2,'=='],[[6],[[7],[3,'obj']],[3,'hasChild']],[1,'Y']])
+Z(z[11])
+Z([[2,'=='],[[6],[[7],[3,'obj']],[3,'hasChild']],[1,'N']])
+Z(z[13])
+Z([[2,'=='],[[7],[3,'mltiple']],[1,true]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
 function gz$gwx_13(){
@@ -1270,12 +1285,29 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
 __WXML_GLOBAL__.ops_cached.$gwx_13=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'5c0aa864'])
+Z([3,'16742adb'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
 }
 function gz$gwx_14(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
 __WXML_GLOBAL__.ops_cached.$gwx_14=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'5c0aa864'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-8']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'5c0aa864-default-5c0aa864-8']]])
+Z([3,'3b6bb3ad'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
+}
+function gz$gwx_15(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
+__WXML_GLOBAL__.ops_cached.$gwx_15=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'5c0aa864'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
+}
+function gz$gwx_16(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
+__WXML_GLOBAL__.ops_cached.$gwx_16=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'2d8d4fae'])
 Z([3,'_view 2d8d4fae input-group'])
@@ -1295,22 +1327,6 @@ Z(z[6])
 Z([3,'请输入密码'])
 Z([3,'password'])
 Z([[7],[3,'password']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
-}
-function gz$gwx_15(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
-__WXML_GLOBAL__.ops_cached.$gwx_15=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'2d8d4fae'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
-}
-function gz$gwx_16(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
-__WXML_GLOBAL__.ops_cached.$gwx_16=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'00cb397a'])
-Z([[2,'=='],[[7],[3,'userType']],[1,1]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
 }
 function gz$gwx_17(){
@@ -1318,12 +1334,28 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_17)return __WXML_GLOBAL__.ops_cached.$gwx_17
 __WXML_GLOBAL__.ops_cached.$gwx_17=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'00cb397a'])
+Z([3,'2d8d4fae'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
 }
 function gz$gwx_18(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
 __WXML_GLOBAL__.ops_cached.$gwx_18=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'00cb397a'])
+Z([[2,'=='],[[7],[3,'userType']],[1,1]])
+})(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
+}
+function gz$gwx_19(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
+__WXML_GLOBAL__.ops_cached.$gwx_19=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'00cb397a'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
+}
+function gz$gwx_20(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
+__WXML_GLOBAL__.ops_cached.$gwx_20=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'6cbf6956'])
 Z([3,'handleProxy'])
@@ -1334,19 +1366,19 @@ Z([3,'7dcb1efb'])
 Z([3,'请输入邮箱'])
 Z([3,'text'])
 Z([[7],[3,'email']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
+})(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
 }
-function gz$gwx_19(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
-__WXML_GLOBAL__.ops_cached.$gwx_19=[];
+function gz$gwx_21(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_21)return __WXML_GLOBAL__.ops_cached.$gwx_21
+__WXML_GLOBAL__.ops_cached.$gwx_21=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'6cbf6956'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
+})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
 }
-function gz$gwx_20(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
-__WXML_GLOBAL__.ops_cached.$gwx_20=[];
+function gz$gwx_22(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
+__WXML_GLOBAL__.ops_cached.$gwx_22=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'90021ef8'])
 Z([3,'_view 90021ef8 input-group'])
@@ -1374,24 +1406,6 @@ Z(z[6])
 Z([3,'请输入邮箱'])
 Z(z[8])
 Z([[7],[3,'email']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
-}
-function gz$gwx_21(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_21)return __WXML_GLOBAL__.ops_cached.$gwx_21
-__WXML_GLOBAL__.ops_cached.$gwx_21=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'90021ef8'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
-}
-function gz$gwx_22(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
-__WXML_GLOBAL__.ops_cached.$gwx_22=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'240234ba'])
-Z([3,'_view 240234ba btn-row'])
-Z([[2,'!'],[[7],[3,'hasLogin']]])
-Z([[7],[3,'hasLogin']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_22);return __WXML_GLOBAL__.ops_cached.$gwx_22
 }
 function gz$gwx_23(){
@@ -1399,14 +1413,32 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_23)return __WXML_GLOBAL__.ops_cached.$gwx_23
 __WXML_GLOBAL__.ops_cached.$gwx_23=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'240234ba'])
+Z([3,'90021ef8'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_23);return __WXML_GLOBAL__.ops_cached.$gwx_23
+}
+function gz$gwx_24(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_24)return __WXML_GLOBAL__.ops_cached.$gwx_24
+__WXML_GLOBAL__.ops_cached.$gwx_24=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'240234ba'])
+Z([3,'_view 240234ba btn-row'])
+Z([[2,'!'],[[7],[3,'hasLogin']]])
+Z([[7],[3,'hasLogin']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_24);return __WXML_GLOBAL__.ops_cached.$gwx_24
+}
+function gz$gwx_25(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_25)return __WXML_GLOBAL__.ops_cached.$gwx_25
+__WXML_GLOBAL__.ops_cached.$gwx_25=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'240234ba'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_25);return __WXML_GLOBAL__.ops_cached.$gwx_25
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':5c0aa864-default-5c0aa864-8'
@@ -2032,28 +2064,74 @@ return r
 }
 e_[x[17]]={f:m10,j:[],i:[],ti:[x[18]],ic:[]}
 d_[x[19]]={}
-d_[x[19]]["5c0aa864"]=function(e,s,r,gg){
+d_[x[19]]["16742adb"]=function(e,s,r,gg){
 var z=gz$gwx_12()
-var b=x[19]+':5c0aa864'
+var b=x[19]+':16742adb'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/danger/dangerEdit.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/common/personChoose.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[19]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:345")
-var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[19],xC,e_,d_)
-if(oD){
-var fE=_1z(z,1,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[19],1,460)
+cs.push("./pages/common/personChoose.vue.wxml:view:1:27")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var oD=_v()
+_(oB,oD)
+cs.push("./pages/common/personChoose.vue.wxml:block:1:65")
+var fE=function(hG,cF,oH,gg){
+var oJ=_v()
+_(oH,oJ)
+if(_oz(z,6,hG,cF,gg)){oJ.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:350")
+cs.push("./pages/common/personChoose.vue.wxml:view:1:350")
+var lK=_mz(z,'view',['bindtap',7,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
+var aL=_v()
+_(lK,aL)
+if(_oz(z,11,hG,cF,gg)){aL.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:image:1:552")
 cs.pop()
+}
+var tM=_v()
+_(lK,tM)
+if(_oz(z,12,hG,cF,gg)){tM.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:685")
+cs.pop()
+}
+var eN=_v()
+_(lK,eN)
+if(_oz(z,13,hG,cF,gg)){eN.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:image:1:769")
+cs.pop()
+}
+var bO=_v()
+_(lK,bO)
+if(_oz(z,14,hG,cF,gg)){bO.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:910")
+cs.pop()
+}
+aL.wxXCkey=1
+tM.wxXCkey=1
+eN.wxXCkey=1
+bO.wxXCkey=1
+cs.pop()
+_(oJ,lK)
+cs.pop()
+}
+oJ.wxXCkey=1
+return oH
+}
+oD.wxXCkey=2
+_2z(z,4,fE,e,s,gg,oD,'obj','index','index')
+cs.pop()
+var xC=_v()
+_(oB,xC)
+if(_oz(z,15,e,s,gg)){xC.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:1069")
+cs.pop()
+}
+xC.wxXCkey=1
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -2063,79 +2141,55 @@ return r
 }
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var t1=e_[x[19]].i
-_ai(t1,x[1],e_,x[19],1,1)
-_ai(t1,x[2],e_,x[19],1,61)
-t1.pop()
-t1.pop()
 return r
 }
-e_[x[19]]={f:m11,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+e_[x[19]]={f:m11,j:[],i:[],ti:[],ic:[]}
 d_[x[20]]={}
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b3=e_[x[20]].i
-_ai(b3,x[21],e_,x[20],1,1)
-var o4=_v()
-_(r,o4)
-cs.push("./pages/danger/dangerEdit.wxml:template:2:6")
-var x5=_oz(z,1,e,s,gg)
-var o6=_gd(x[20],x5,e_,d_)
-if(o6){
-var f7=_1z(z,0,e,s,gg) || {}
+var e2=e_[x[20]].i
+_ai(e2,x[21],e_,x[20],1,1)
+var b3=_v()
+_(r,b3)
+cs.push("./pages/common/personChoose.wxml:template:2:6")
+var o4=_oz(z,1,e,s,gg)
+var x5=_gd(x[20],o4,e_,d_)
+if(x5){
+var o6=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-o4.wxXCkey=3
-o6(f7,f7,o4,gg)
+b3.wxXCkey=3
+x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(x5,x[20],2,18)
+else _w(o4,x[20],2,18)
 cs.pop()
-b3.pop()
+e2.pop()
 return r
 }
 e_[x[20]]={f:m12,j:[],i:[],ti:[x[21]],ic:[]}
 d_[x[22]]={}
-d_[x[22]]["2d8d4fae"]=function(e,s,r,gg){
+d_[x[22]]["5c0aa864"]=function(e,s,r,gg){
 var z=gz$gwx_14()
-var b=x[22]+':2d8d4fae'
+var b=x[22]+':5c0aa864'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/danger/dangerEdit.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[22]);return}
 p_[b]=true
 try{
-cs.push("./pages/login/login.vue.wxml:view:1:109")
-var oB=_n('view')
-_rz(z,oB,'class',1,e,s,gg)
-var xC=_v()
-_(oB,xC)
-cs.push("./pages/login/login.vue.wxml:template:1:247")
-var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[22],oD,e_,d_)
-if(fE){
-var cF=_1z(z,3,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[22],1,474)
-cs.pop()
-var hG=_v()
-_(oB,hG)
-cs.push("./pages/login/login.vue.wxml:template:1:594")
-var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[22],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,11,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[22],1,822)
-cs.pop()
-cs.pop()
+var oB=_v()
 _(r,oB)
+cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:345")
+var xC=_oz(z,2,e,s,gg)
+var oD=_gd(x[22],xC,e_,d_)
+if(oD){
+var fE=_1z(z,1,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[22],1,460)
+cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -2145,51 +2199,79 @@ return r
 }
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var h9=e_[x[22]].i
-_ai(h9,x[23],e_,x[22],1,1)
-h9.pop()
+var c8=e_[x[22]].i
+_ai(c8,x[1],e_,x[22],1,1)
+_ai(c8,x[2],e_,x[22],1,61)
+c8.pop()
+c8.pop()
 return r
 }
-e_[x[22]]={f:m13,j:[],i:[],ti:[x[23]],ic:[]}
-d_[x[24]]={}
+e_[x[22]]={f:m13,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[23]]={}
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
-var cAB=e_[x[24]].i
-_ai(cAB,x[25],e_,x[24],1,1)
-var oBB=_v()
-_(r,oBB)
-cs.push("./pages/login/login.wxml:template:2:6")
-var lCB=_oz(z,1,e,s,gg)
-var aDB=_gd(x[24],lCB,e_,d_)
-if(aDB){
-var tEB=_1z(z,0,e,s,gg) || {}
+var o0=e_[x[23]].i
+_ai(o0,x[24],e_,x[23],1,1)
+var cAB=_v()
+_(r,cAB)
+cs.push("./pages/danger/dangerEdit.wxml:template:2:6")
+var oBB=_oz(z,1,e,s,gg)
+var lCB=_gd(x[23],oBB,e_,d_)
+if(lCB){
+var aDB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oBB.wxXCkey=3
-aDB(tEB,tEB,oBB,gg)
+cAB.wxXCkey=3
+lCB(aDB,aDB,cAB,gg)
 gg.f=cur_globalf
 }
-else _w(lCB,x[24],2,18)
+else _w(oBB,x[23],2,18)
 cs.pop()
-cAB.pop()
+o0.pop()
 return r
 }
-e_[x[24]]={f:m14,j:[],i:[],ti:[x[25]],ic:[]}
-d_[x[26]]={}
-d_[x[26]]["00cb397a"]=function(e,s,r,gg){
+e_[x[23]]={f:m14,j:[],i:[],ti:[x[24]],ic:[]}
+d_[x[25]]={}
+d_[x[25]]["2d8d4fae"]=function(e,s,r,gg){
 var z=gz$gwx_16()
-var b=x[26]+':00cb397a'
+var b=x[25]+':2d8d4fae'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[26]);return}
+gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[25]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-if(_oz(z,1,e,s,gg)){oB.wxVkey=1
-cs.push("./pages/main/main.vue.wxml:view:1:65")
-cs.pop()
+cs.push("./pages/login/login.vue.wxml:view:1:109")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./pages/login/login.vue.wxml:template:1:247")
+var oD=_oz(z,6,e,s,gg)
+var fE=_gd(x[25],oD,e_,d_)
+if(fE){
+var cF=_1z(z,3,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
 }
-oB.wxXCkey=1
+else _w(oD,x[25],1,474)
+cs.pop()
+var hG=_v()
+_(oB,hG)
+cs.push("./pages/login/login.vue.wxml:template:1:594")
+var oH=_oz(z,14,e,s,gg)
+var cI=_gd(x[25],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,11,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[25],1,822)
+cs.pop()
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -2199,9 +2281,12 @@ return r
 }
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
+var eFB=e_[x[25]].i
+_ai(eFB,x[26],e_,x[25],1,1)
+eFB.pop()
 return r
 }
-e_[x[26]]={f:m15,j:[],i:[],ti:[],ic:[]}
+e_[x[25]]={f:m15,j:[],i:[],ti:[x[26]],ic:[]}
 d_[x[27]]={}
 var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
@@ -2209,7 +2294,7 @@ var oHB=e_[x[27]].i
 _ai(oHB,x[28],e_,x[27],1,1)
 var xIB=_v()
 _(r,xIB)
-cs.push("./pages/main/main.wxml:template:2:6")
+cs.push("./pages/login/login.wxml:template:2:6")
 var oJB=_oz(z,1,e,s,gg)
 var fKB=_gd(x[27],oJB,e_,d_)
 if(fKB){
@@ -2226,28 +2311,21 @@ return r
 }
 e_[x[27]]={f:m16,j:[],i:[],ti:[x[28]],ic:[]}
 d_[x[29]]={}
-d_[x[29]]["6cbf6956"]=function(e,s,r,gg){
+d_[x[29]]["00cb397a"]=function(e,s,r,gg){
 var z=gz$gwx_18()
-var b=x[29]+':6cbf6956'
+var b=x[29]+':00cb397a'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[29]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
-var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[29],xC,e_,d_)
-if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[29],1,465)
+if(_oz(z,1,e,s,gg)){oB.wxVkey=1
+cs.push("./pages/main/main.vue.wxml:view:1:65")
 cs.pop()
+}
+oB.wxXCkey=1
 }catch(err){
 p_[b]=false
 throw err
@@ -2257,42 +2335,100 @@ return r
 }
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
-var oNB=e_[x[29]].i
-_ai(oNB,x[23],e_,x[29],1,1)
-oNB.pop()
 return r
 }
-e_[x[29]]={f:m17,j:[],i:[],ti:[x[23]],ic:[]}
+e_[x[29]]={f:m17,j:[],i:[],ti:[],ic:[]}
 d_[x[30]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
-var oPB=e_[x[30]].i
-_ai(oPB,x[31],e_,x[30],1,1)
-var lQB=_v()
-_(r,lQB)
-cs.push("./pages/pwd/pwd.wxml:template:2:6")
-var aRB=_oz(z,1,e,s,gg)
-var tSB=_gd(x[30],aRB,e_,d_)
-if(tSB){
-var eTB=_1z(z,0,e,s,gg) || {}
+var cOB=e_[x[30]].i
+_ai(cOB,x[31],e_,x[30],1,1)
+var oPB=_v()
+_(r,oPB)
+cs.push("./pages/main/main.wxml:template:2:6")
+var lQB=_oz(z,1,e,s,gg)
+var aRB=_gd(x[30],lQB,e_,d_)
+if(aRB){
+var tSB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-lQB.wxXCkey=3
-tSB(eTB,eTB,lQB,gg)
+oPB.wxXCkey=3
+aRB(tSB,tSB,oPB,gg)
 gg.f=cur_globalf
 }
-else _w(aRB,x[30],2,18)
+else _w(lQB,x[30],2,18)
 cs.pop()
-oPB.pop()
+cOB.pop()
 return r
 }
 e_[x[30]]={f:m18,j:[],i:[],ti:[x[31]],ic:[]}
 d_[x[32]]={}
-d_[x[32]]["90021ef8"]=function(e,s,r,gg){
+d_[x[32]]["6cbf6956"]=function(e,s,r,gg){
 var z=gz$gwx_20()
-var b=x[32]+':90021ef8'
+var b=x[32]+':6cbf6956'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[32]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
+var xC=_oz(z,5,e,s,gg)
+var oD=_gd(x[32],xC,e_,d_)
+if(oD){
+var fE=_1z(z,2,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[32],1,465)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m19=function(e,s,r,gg){
+var z=gz$gwx_20()
+var bUB=e_[x[32]].i
+_ai(bUB,x[26],e_,x[32],1,1)
+bUB.pop()
+return r
+}
+e_[x[32]]={f:m19,j:[],i:[],ti:[x[26]],ic:[]}
+d_[x[33]]={}
+var m20=function(e,s,r,gg){
+var z=gz$gwx_21()
+var xWB=e_[x[33]].i
+_ai(xWB,x[34],e_,x[33],1,1)
+var oXB=_v()
+_(r,oXB)
+cs.push("./pages/pwd/pwd.wxml:template:2:6")
+var fYB=_oz(z,1,e,s,gg)
+var cZB=_gd(x[33],fYB,e_,d_)
+if(cZB){
+var h1B=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+oXB.wxXCkey=3
+cZB(h1B,h1B,oXB,gg)
+gg.f=cur_globalf
+}
+else _w(fYB,x[33],2,18)
+cs.pop()
+xWB.pop()
+return r
+}
+e_[x[33]]={f:m20,j:[],i:[],ti:[x[34]],ic:[]}
+d_[x[35]]={}
+d_[x[35]]["90021ef8"]=function(e,s,r,gg){
+var z=gz$gwx_22()
+var b=x[35]+':90021ef8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[32]);return}
+if(p_[b]){_wl(b,x[35]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:1:109")
@@ -2302,7 +2438,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/reg/reg.vue.wxml:template:1:247")
 var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[32],oD,e_,d_)
+var fE=_gd(x[35],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2310,13 +2446,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[32],1,474)
+else _w(oD,x[35],1,474)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/reg/reg.vue.wxml:template:1:601")
 var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[32],oH,e_,d_)
+var cI=_gd(x[35],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2324,13 +2460,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[32],1,829)
+else _w(oH,x[35],1,829)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/reg/reg.vue.wxml:template:1:949")
 var aL=_oz(z,22,e,s,gg)
-var tM=_gd(x[32],aL,e_,d_)
+var tM=_gd(x[35],aL,e_,d_)
 if(tM){
 var eN=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2338,7 +2474,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[32],1,1168)
+else _w(aL,x[35],1,1168)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -2349,44 +2485,44 @@ throw err
 p_[b]=false
 return r
 }
-var m19=function(e,s,r,gg){
-var z=gz$gwx_20()
-var oVB=e_[x[32]].i
-_ai(oVB,x[23],e_,x[32],1,1)
-oVB.pop()
+var m21=function(e,s,r,gg){
+var z=gz$gwx_22()
+var c3B=e_[x[35]].i
+_ai(c3B,x[26],e_,x[35],1,1)
+c3B.pop()
 return r
 }
-e_[x[32]]={f:m19,j:[],i:[],ti:[x[23]],ic:[]}
-d_[x[33]]={}
-var m20=function(e,s,r,gg){
-var z=gz$gwx_21()
-var oXB=e_[x[33]].i
-_ai(oXB,x[34],e_,x[33],1,1)
-var fYB=_v()
-_(r,fYB)
+e_[x[35]]={f:m21,j:[],i:[],ti:[x[26]],ic:[]}
+d_[x[36]]={}
+var m22=function(e,s,r,gg){
+var z=gz$gwx_23()
+var l5B=e_[x[36]].i
+_ai(l5B,x[37],e_,x[36],1,1)
+var a6B=_v()
+_(r,a6B)
 cs.push("./pages/reg/reg.wxml:template:2:6")
-var cZB=_oz(z,1,e,s,gg)
-var h1B=_gd(x[33],cZB,e_,d_)
-if(h1B){
-var o2B=_1z(z,0,e,s,gg) || {}
+var t7B=_oz(z,1,e,s,gg)
+var e8B=_gd(x[36],t7B,e_,d_)
+if(e8B){
+var b9B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-fYB.wxXCkey=3
-h1B(o2B,o2B,fYB,gg)
+a6B.wxXCkey=3
+e8B(b9B,b9B,a6B,gg)
 gg.f=cur_globalf
 }
-else _w(cZB,x[33],2,18)
+else _w(t7B,x[36],2,18)
 cs.pop()
-oXB.pop()
+l5B.pop()
 return r
 }
-e_[x[33]]={f:m20,j:[],i:[],ti:[x[34]],ic:[]}
-d_[x[35]]={}
-d_[x[35]]["240234ba"]=function(e,s,r,gg){
-var z=gz$gwx_22()
-var b=x[35]+':240234ba'
+e_[x[36]]={f:m22,j:[],i:[],ti:[x[37]],ic:[]}
+d_[x[38]]={}
+d_[x[38]]["240234ba"]=function(e,s,r,gg){
+var z=gz$gwx_24()
+var b=x[38]+':240234ba'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[35]);return}
+if(p_[b]){_wl(b,x[38]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/user.vue.wxml:view:1:64")
@@ -2415,34 +2551,34 @@ throw err
 p_[b]=false
 return r
 }
-var m21=function(e,s,r,gg){
-var z=gz$gwx_22()
+var m23=function(e,s,r,gg){
+var z=gz$gwx_24()
 return r
 }
-e_[x[35]]={f:m21,j:[],i:[],ti:[],ic:[]}
-d_[x[36]]={}
-var m22=function(e,s,r,gg){
-var z=gz$gwx_23()
-var l5B=e_[x[36]].i
-_ai(l5B,x[37],e_,x[36],1,1)
-var a6B=_v()
-_(r,a6B)
+e_[x[38]]={f:m23,j:[],i:[],ti:[],ic:[]}
+d_[x[39]]={}
+var m24=function(e,s,r,gg){
+var z=gz$gwx_25()
+var oBC=e_[x[39]].i
+_ai(oBC,x[40],e_,x[39],1,1)
+var fCC=_v()
+_(r,fCC)
 cs.push("./pages/user/user.wxml:template:2:6")
-var t7B=_oz(z,1,e,s,gg)
-var e8B=_gd(x[36],t7B,e_,d_)
-if(e8B){
-var b9B=_1z(z,0,e,s,gg) || {}
+var cDC=_oz(z,1,e,s,gg)
+var hEC=_gd(x[39],cDC,e_,d_)
+if(hEC){
+var oFC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-a6B.wxXCkey=3
-e8B(b9B,b9B,a6B,gg)
+fCC.wxXCkey=3
+hEC(oFC,oFC,fCC,gg)
 gg.f=cur_globalf
 }
-else _w(t7B,x[36],2,18)
+else _w(cDC,x[39],2,18)
 cs.pop()
-l5B.pop()
+oBC.pop()
 return r
 }
-e_[x[36]]={f:m22,j:[],i:[],ti:[x[37]],ic:[]}
+e_[x[39]]={f:m24,j:[],i:[],ti:[x[40]],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -2854,7 +2990,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
+eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n  // 选择完流转目标后继续流转\n  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',\n\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ',\n  // 获取人员\n  getPersonList: '/mobile/getUser.do?action=getUserList ' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
 
 /***/ }),
 
@@ -3792,7 +3928,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      instanceid: '',\n      recordid: '',\n      // 隐患描述\n      yhms: '',\n      // 隐患等级\n      yhdj: '',\n      // 隐患后果\n      yhhg: '',\n      // 隐患类型\n      yhlx: '',\n      // 整改期限\n      zgqx: '',\n      // 隐患来源\n      yhly: '',\n      // 责任部门\n      zrbm: null,\n\n      // 照片相关\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 流转按钮相关\n      flowbtnchooseflow: [],\n\n      // 是否可编辑\n      editable: true,\n\n      // 数据源\n      dangerLevel: _dataConfig.default.dangerLevel,\n      dangerResult: _dataConfig.default.dangerResult,\n      dangerType: _dataConfig.default.dangerType,\n      dangerSource: _dataConfig.default.dangerSource };\n\n  },\n  onLoad: function onLoad(option) {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    jumpInput: function jumpInput(key, placeholder, text) {var _this = this;\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this[key] = result;\n      });\n    },\n    jumpOrgChoose: function jumpOrgChoose(key) {var _this2 = this;\n      var selected = [this.zrbm];\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify(selected) + \"&key=\" + key + \"&mltiple=false\" });\n\n      this.$fire.once(key, function (result) {\n        console.log('' + JSON.stringify(result));\n        _this2[key] = result;\n      });\n    },\n    alertSheetShow: function alertSheetShow(key, list) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          that[key] = list[res.tapIndex];\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n    pickerChange: function pickerChange(data, e) {\n      this[e.target.id] = data[e.target.value];\n    },\n    dateChange: function dateChange(key, e) {\n      this[key] = e.target.value;\n    },\n    // 保存隐患\n    saveClick: function saveClick(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        instanceid: that.instanceid,\n        recordid: that.recordid,\n        yhms: that.yhms,\n        yhdj: that.yhdj,\n        yhhg: that.yhhg,\n        yhlx: that.yhlx,\n        zgqx: that.zgqx,\n        yhly: that.yhly,\n        zrbmid: that.zrbm == null ? \"\" : that.zrbm.id,\n        zrbmmc: that.zrbm == null ? \"\" : that.zrbm.name,\n\n        fqrid: that.userInfo.userid,\n        fqrmc: that.userInfo.username };\n\n      _request.default.requestLoading(_config.default.addDanger, param, '添加隐患',\n      function (res) {\n        that.instanceid = res.instanceid;\n        that.recordid = res.recordid;\n        that.flowbtnchooseflow = res.flowbtnchooseflow;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '添加失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 流转隐患\n    roamClick: function roamClick(btnObj) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        instanceid: that.instanceid,\n        recordid: that.recordid,\n        yhms: that.yhms,\n        yhdj: that.yhdj,\n        yhhg: that.yhhg,\n        yhlx: that.yhlx,\n        zgqx: that.zgqx,\n        yhly: that.yhly,\n        zrbmid: that.zrbm == null ? \"\" : that.zrbm.id,\n        zrbmmc: that.zrbm == null ? \"\" : that.zrbm.name,\n\n        fqrid: that.userInfo.userid,\n        fqrmc: that.userInfo.username,\n\n        operationname: btnObj.operationname,\n        nextstatusname: btnObj.nextstatusname,\n        prestatusname: btnObj.prestatusname,\n        flowtype: btnObj.flowtype };\n\n      _request.default.requestLoading(_config.default.flowDanger, param, '正在流转',\n      function (res) {\n        console.log('' + JSON.stringify(res));\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '流转失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/dangerEdit.vue?vue&type=script&lang=js&?5347");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      instanceid: '',\n      recordid: '',\n      // 隐患描述\n      yhms: '',\n      // 隐患等级\n      yhdj: '',\n      // 隐患后果\n      yhhg: '',\n      // 隐患类型\n      yhlx: '',\n      // 整改期限\n      zgqx: '',\n      // 隐患来源\n      yhly: '',\n      // 责任部门\n      zrbm: null,\n\n      // 照片相关\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 流转按钮相关\n      flowbtnchooseflow: [],\n\n      // 是否可编辑\n      editable: true,\n\n      // 数据源\n      dangerLevel: _dataConfig.default.dangerLevel,\n      dangerResult: _dataConfig.default.dangerResult,\n      dangerType: _dataConfig.default.dangerType,\n      dangerSource: _dataConfig.default.dangerSource };\n\n  },\n  onLoad: function onLoad(option) {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    jumpInput: function jumpInput(key, placeholder, text) {var _this = this;\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this[key] = result;\n      });\n    },\n    jumpOrgChoose: function jumpOrgChoose(key) {var _this2 = this;\n      var selected = [this.zrbm];\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify(selected) + \"&key=\" + key + \"&mltiple=false\" });\n\n      this.$fire.once(key, function (result) {\n        console.log('' + JSON.stringify(result));\n        _this2[key] = result;\n      });\n    },\n    alertSheetShow: function alertSheetShow(key, list) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          that[key] = list[res.tapIndex];\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n    pickerChange: function pickerChange(data, e) {\n      this[e.target.id] = data[e.target.value];\n    },\n    dateChange: function dateChange(key, e) {\n      this[key] = e.target.value;\n    },\n    // 保存隐患\n    saveClick: function saveClick(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        instanceid: that.instanceid,\n        recordid: that.recordid,\n        yhms: that.yhms,\n        yhdj: that.yhdj,\n        yhhg: that.yhhg,\n        yhlx: that.yhlx,\n        zgqx: that.zgqx,\n        yhly: that.yhly,\n        zrbmid: that.zrbm == null ? \"\" : that.zrbm.id,\n        zrbmmc: that.zrbm == null ? \"\" : that.zrbm.name,\n\n        fqrid: that.userInfo.userid,\n        fqrmc: that.userInfo.username };\n\n      _request.default.requestLoading(_config.default.addDanger, param, '添加隐患',\n      function (res) {\n        that.instanceid = res.instanceid;\n        that.recordid = res.recordid;\n        that.flowbtnchooseflow = res.flowbtnchooseflow;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '添加失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 流转隐患\n    roamClick: function roamClick(btnObj) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        instanceid: that.instanceid,\n        recordid: that.recordid,\n        yhms: that.yhms,\n        yhdj: that.yhdj,\n        yhhg: that.yhhg,\n        yhlx: that.yhlx,\n        zgqx: that.zgqx,\n        yhly: that.yhly,\n        zrbmid: that.zrbm == null ? \"\" : that.zrbm.id,\n        zrbmmc: that.zrbm == null ? \"\" : that.zrbm.name,\n\n        fqrid: that.userInfo.userid,\n        fqrmc: that.userInfo.username,\n\n        operationname: btnObj.operationname,\n        nextstatusname: btnObj.nextstatusname,\n        prestatusname: btnObj.prestatusname,\n        flowtype: btnObj.flowtype };\n\n      _request.default.requestLoading(_config.default.flowDanger, param, '正在流转',\n      function (res) {\n        var condition = res.data;\n        var key = \"DANGER_TRANSFER\";\n        uni.navigateTo({\n          url: \"../common/personChoose?key=\" + key + \"&condition=\" + condition + \"&mltiple=false\" });\n\n        that.$fire.once(key, function (person) {\n          that.flowDanger(person, btnObj);\n        });\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '流转失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 选完人后流转\n    flowDanger: function flowDanger(person, btnObj) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        receiverid: person.id,\n        instanceid: that.instanceid,\n        recordid: that.recordid,\n        yhms: that.yhms,\n        yhdj: that.yhdj,\n        yhhg: that.yhhg,\n        yhlx: that.yhlx,\n        zgqx: that.zgqx,\n        yhly: that.yhly,\n        zrbmid: that.zrbm == null ? \"\" : that.zrbm.id,\n        zrbmmc: that.zrbm == null ? \"\" : that.zrbm.name,\n\n        fqrid: that.userInfo.userid,\n        fqrmc: that.userInfo.username,\n\n        operationname: btnObj.operationname,\n        nextstatusname: btnObj.nextstatusname,\n        prestatusname: btnObj.prestatusname,\n        flowtype: btnObj.flowtype };\n\n      _request.default.requestLoading(_config.default.flowDangerAfterChooseTarget, param, '正在流转',\n      function (res) {\n        console.log('' + JSON.stringify(res));\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '流转失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/dangerEdit.vue?vue&type=script&lang=js&?5347");
 
 /***/ }),
 
@@ -4120,6 +4256,109 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 },[["../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fcommon%2ForgChoose\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/common/orgChoose.js');
+__wxRoute = 'pages/common/personChoose';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/common/personChoose.js';
+
+define('pages/common/personChoose.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/common/personChoose"],{
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fcommon%2FpersonChoose\"}":
+/*!**************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{"page":"pages%2Fcommon%2FpersonChoose"} ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__(/*! uni-pages */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages.json\");\nvar _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js\"));\nvar _personChoose = _interopRequireDefault(__webpack_require__(/*! ./pages/common/personChoose.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\nPage((0, _mpvuePageFactory.default)(_personChoose.default));\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?%7B%22page%22:%22pages%252Fcommon%252FpersonChoose%22%7D");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue":
+/*!*******************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _personChoose_vue_vue_type_template_id_dca537c2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./personChoose.vue?vue&type=template&id=dca537c2& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2&\");\n/* harmony import */ var _personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./personChoose.vue?vue&type=script&lang=js& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _personChoose_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./personChoose.vue?vue&type=style&index=0&lang=css& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(\n  _personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _personChoose_vue_vue_type_template_id_dca537c2___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _personChoose_vue_vue_type_template_id_dca537c2___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./personChoose.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=uni-app:///pages/common/personChoose.vue?vue&type=script&lang=js&?62ec");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--6-oneOf-1-2!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./personChoose.vue?vue&type=style&index=0&lang=css& */ \"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css&");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2&":
+/*!**************************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2& ***!
+  \**************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_template_id_dca537c2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./personChoose.vue?vue&type=template&id=dca537c2& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_template_id_dca537c2___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_personChoose_vue_vue_type_template_id_dca537c2___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2&");
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  data: function data() {\n    return {\n      // 复制的Key\n      key: '',\n      // 查询条件\n      condition: '',\n      // 是否多选\n      mltiple: false,\n      // 已选内容\n      selected: [],\n      // 部门列表\n      personList: [],\n\n      // 当前部门id\n      orgId: '',\n\n      // 返回层级-因为可能有多级\n      backLevel: 1 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.key = option.key;\n    this.mltiple = option.mltiple == 'true' ? true : false;\n    this.selected = option.selected == null ? [] : JSON.parse(option.selected);\n    this.orgId = option.orgId == null ? \"\" : option.orgId;\n    this.backLevel = option.back == null ? 1 : parseInt(option.back);\n    this.condition = option.condition == null ? \"\" : option.condition;\n    this.getOrgList();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n\n  },\n  methods: {\n    getOrgList: function getOrgList() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        orgid: that.orgId,\n        data: that.condition };\n\n      _request.default.requestLoading(_config.default.getPersonList, param, '正在加载',\n      function (res) {\n        that.personList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '加载失败' });\n\n      }, function () {\n\n      });\n    },\n    // 选择当前项\n    chooseCurrent: function chooseCurrent(person) {\n      if (this.mltiple == false && person.isUser == \"Y\") {// 单选，直接返回\n        this.$fire.fire(this.key, person);\n        uni.navigateBack({\n          delta: this.backLevel });\n\n      }\n    },\n    // 去下级\n    gotoNext: function gotoNext(person) {\n      if (person.hasChild == \"N\") {\n        uni.showToast({\n          icon: 'none',\n          title: '该节点无下级' });\n\n        return;\n      }\n      var back = this.backLevel + 1;\n      uni.navigateTo({\n        url: \"../common/personChoose?selected=\" + JSON.stringify(this.selected) + \"&key=\" + this.key + \"&condition=\" + this.condition + \"&mltiple=\" + this.mltiple + \"&orgId=\" + person.id + \"&back=\" + back });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/common/personChoose.vue?vue&type=script&lang=js&?295d");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=style&index=0&lang=css&");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _vm._l(_vm.personList, function(obj, index) {\n        return _c(\"block\", { key: index }, [\n          _c(\"view\", { staticClass: \"cellBaseView_Row\" }, [\n            _c(\n              \"view\",\n              {\n                staticClass: \"orgName\",\n                attrs: { eventid: \"16742adb-0-\" + index },\n                on: {\n                  click: function($event) {\n                    _vm.chooseCurrent(obj)\n                  }\n                }\n              },\n              [_vm._v(_vm._s(obj.name))]\n            ),\n            obj.isUser == \"N\"\n              ? _c(\n                  \"view\",\n                  {\n                    staticClass: \"nextLevelView\",\n                    attrs: { eventid: \"16742adb-1-\" + index },\n                    on: {\n                      click: function($event) {\n                        _vm.gotoNext(obj)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"view\", { staticClass: \"columnLine\" }),\n                    obj.hasChild == \"Y\"\n                      ? _c(\"image\", {\n                          staticClass: \"levelImg\",\n                          attrs: {\n                            mode: \"aspectFit\",\n                            src: \"../../static/assets/level.png\"\n                          }\n                        })\n                      : _vm._e(),\n                    obj.hasChild == \"Y\"\n                      ? _c(\"view\", { staticClass: \"nextLevel\" }, [\n                          _vm._v(\"下级\")\n                        ])\n                      : _vm._e(),\n                    obj.hasChild == \"N\"\n                      ? _c(\"image\", {\n                          staticClass: \"levelImg\",\n                          attrs: {\n                            mode: \"aspectFit\",\n                            src: \"../../static/assets/level_disable.png\"\n                          }\n                        })\n                      : _vm._e(),\n                    obj.hasChild == \"N\"\n                      ? _c(\"view\", { staticClass: \"nextLevel_disable\" }, [\n                          _vm._v(\"下级\")\n                        ])\n                      : _vm._e()\n                  ]\n                )\n              : _vm._e()\n          ]),\n          _c(\"view\", { staticClass: \"cellLine\" })\n        ])\n      }),\n      _vm.mltiple == true\n        ? _c(\"view\", { staticClass: \"coverBottomView\" }, [_vm._v(\"确定\")])\n        : _vm._e()\n    ],\n    2\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/common/personChoose.vue?vue&type=template&id=dca537c2&");
+
+/***/ })
+
+},[["../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fcommon%2FpersonChoose\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/common/personChoose.js');
 __wxRoute = 'pages/danger/dangerList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/danger/dangerList.js';
 
 define('pages/danger/dangerList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){

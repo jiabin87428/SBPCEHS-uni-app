@@ -203,6 +203,51 @@
 				}
 				request.requestLoading(config.flowDanger, param, '正在流转', 
 					function(res){
+						let condition = res.data;
+						let key = "DANGER_TRANSFER"
+						uni.navigateTo({
+							url: "../common/personChoose?key=" + key + "&condition=" + condition + "&mltiple=false"
+						})
+						that.$fire.once(key, person=>{
+							that.flowDanger(person, btnObj);
+						});
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '流转失败'
+						});
+					}, function(){
+						
+					}
+				);
+			},
+			// 选完人后流转
+			flowDanger: function(person, btnObj) {
+				var that = this;
+				var param = {
+					userid: that.userInfo.userid,
+					receiverid: person.id,
+					instanceid: that.instanceid,
+					recordid: that.recordid,
+					yhms: that.yhms,
+					yhdj: that.yhdj,
+					yhhg: that.yhhg,
+					yhlx: that.yhlx,
+					zgqx: that.zgqx,
+					yhly: that.yhly,
+					zrbmid: that.zrbm == null ? "" : that.zrbm.id,
+					zrbmmc: that.zrbm == null ? "" : that.zrbm.name,
+					
+					fqrid: that.userInfo.userid,
+					fqrmc: that.userInfo.username,
+					
+					operationname: btnObj.operationname,
+					nextstatusname: btnObj.nextstatusname,
+					prestatusname: btnObj.prestatusname,
+					flowtype: btnObj.flowtype,
+				}
+				request.requestLoading(config.flowDangerAfterChooseTarget, param, '正在流转', 
+					function(res){
 						console.log('' + JSON.stringify(res));
 					},function(){
 						uni.showToast({

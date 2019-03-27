@@ -22,9 +22,13 @@ var config = {
 	addDanger: '/mobile/getYhzg.do?action=insertYh',
 	// 隐患流转
 	flowDanger: '/mobile/getYhzg.do?action=flowYh',
+	// 选择完流转目标后继续流转
+	flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',
 	
 	// 获取部门
 	getOrgList: '/mobile/getUser.do?action=getOrgList ',
+	// 获取人员
+	getPersonList: '/mobile/getUser.do?action=getUserList ',
 	
 };
 //对外把对象config返回

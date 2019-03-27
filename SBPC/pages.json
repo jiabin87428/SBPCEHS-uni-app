@@ -54,6 +54,11 @@
             "style": {
                 "navigationBarTitleText": "选择部门"
             }
+        }, {
+            "path": "pages/common/personChoose",
+            "style": {
+                "navigationBarTitleText": "选择人员"
+            }
         }
     ],
     "tabBar": {
