@@ -23,16 +23,16 @@
 			<view class='cellImageBaseView'> 
 				<view class='cellImageTitleView'> 
 				  <text class='leftTextRow'>隐患照片</text>
-				  <text class='rightTextRow'>{{imageList.length}}</text>
+				  <text class='rightTextRow'>{{createImgList.length}}</text>
 				</view>
 				<view id='imageView' class='imageView'>
-				  <block v-for="(imgObj,idx) in imageList" :key="idx">
+				  <block v-for="(imgObj,idx) in createImgList" :key="idx">
 					<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
-					  <image class="littleImage" @click="viewPhoto" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
-					  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage(imgObj,idx)" :id='idx' mode="aspectFit"></image>
+					  <image class="littleImage" @click="viewPhoto('createImgList')" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+					  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage('createImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
 					</view>
 				  </block>
-				  <view class="littleImageView" @click='addPhoto' v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+				  <view class="littleImageView" @click="addPhoto('createImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
 					<image class="littleImage" src="../../static/assets/addImage.png"></image>
 				  </view>
 				</view>
@@ -55,6 +55,8 @@
 	import dataConfig from '../../util/dataConfig.js';
 	import request from '../../util/request.js';
 	import service from '../../service.js';
+	import photo from '../../util/photoUtil.js';
+	
 	import {
 	    mapState
 	} from 'vuex'
@@ -79,16 +81,22 @@
 				yhly: '',
 				// 责任部门
 				zrbm: null,
-				
-				// 照片相关
-				imageList: [],
-				littleImageWidth: 0,
-				
 				// 流转按钮相关
 				flowbtnchooseflow:[],
+				// 模型对象
+				model: {
+					instanceid: '',
+					recordid: '',
+				},
 				
-				// 是否可编辑
-				editable: true,
+				// 照片相关
+				littleImageWidth: 0,
+				createImgList: [],	// 新建隐患照片列表
+				changeImgList: [],	// 整改隐患照片列表
+				confirmImgList: [],	// 确认整改照片列表
+				
+				// 状态：1、隐患信息可编辑，2、整改情况可编辑，3、整改确认可编辑
+				pageState: 1,
 				
 				// 数据源
 				dangerLevel: dataConfig.dangerLevel,
@@ -99,50 +107,14 @@
 		},
 		onLoad(option) {
 			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
-		},
-		onNavigationBarButtonTap() {
-			
-		},
-		onShow() {
-			
+			this.instanceid = option.instanceid == null ? "" : option.instanceid;
+			this.recordid = option.recordid == null ? "" : option.recordid;
+			if(this.instanceid != "" || this.recordid != "") {
+				this.getDangerDetail();
+			}
 		},
 		methods:{
-			jumpInput: function(key, placeholder, text) {
-				uni.navigateTo({
-					url: "../common/inputPage?key=" + key + "&placeholder=" + placeholder + "&text=" + text
-				})
-				this.$fire.once(key, result=>{ 
-					this[key] = result 
-				});
-			},
-			jumpOrgChoose: function(key) {
-				let selected = [this.zrbm]
-				uni.navigateTo({
-					url: "../common/orgChoose?selected=" + JSON.stringify(selected) + "&key=" + key + "&mltiple=false"
-				})
-				this.$fire.once(key, result=>{ 
-					console.log('' + JSON.stringify(result))
-					this[key] = result;
-				});
-			},
-			alertSheetShow: function(key, list) {
-				var that = this;
-				uni.showActionSheet({
-					itemList: list,
-					success: function (res) {
-						that[key] = list[res.tapIndex];
-					},
-					fail: function (res) {
-						// console.log(res.errMsg);
-					}
-				});
-			},
-			pickerChange: function(data, e) {
-				this[e.target.id] = data[e.target.value];
-			},
-			dateChange: function(key, e) {
-				this[key] = e.target.value
-			},
+			/*新建隐患相关*/
 			// 保存隐患
 			saveClick: function(e) {
 				var that = this;
@@ -259,72 +231,83 @@
 					}
 				);
 			},
-			// 上传照片功能-添加照片
-			addPhoto() {
+			/*隐患详情相关*/
+			getDangerDetail: function() {
 				var that = this;
-				uni.chooseImage({
-					count: 9, //默认9
-					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
-					sourceType: ['album', 'camera'], //从相册选择
-					success: function (res) {
-						console.log(JSON.stringify(res.tempFilePaths));
-						for (var i=0;i<res.tempFilePaths.length;i++) {
-							var imgObj = {//	type：1为新增需要上传，2为加载的，不需要上传
-								fileid: '',
-								src: res.tempFilePaths[i],
-								type: 1
-							}
-							that.imageList.push(imgObj);
-						}
+				let param = {
+					instanceid: that.instanceid,
+					recordid: that.recordid
+				};
+				request.requestLoading(config.getDangerDetail, param, '正在加载', 
+					function(res){
+						console.log('' + JSON.stringify(res));
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '加载失败'
+						});
+					}, function(){
+						
 					}
+				);
+			}, 
+			
+			/*通用方法相关*/
+			
+			jumpInput: function(key, placeholder, text) {
+				uni.navigateTo({
+					url: "../common/inputPage?key=" + key + "&placeholder=" + placeholder + "&text=" + text
+				})
+				this.$fire.once(key, result=>{ 
+					this[key] = result 
+				});
+			},
+			jumpOrgChoose: function(key) {
+				let selected = [this.zrbm]
+				uni.navigateTo({
+					url: "../common/orgChoose?selected=" + JSON.stringify(selected) + "&key=" + key + "&mltiple=false"
+				})
+				this.$fire.once(key, result=>{ 
+					console.log('' + JSON.stringify(result))
+					this[key] = result;
+				});
+			},
+			alertSheetShow: function(key, list) {
+				var that = this;
+				uni.showActionSheet({
+					itemList: list,
+					success: function (res) {
+						that[key] = list[res.tapIndex];
+					},
+					fail: function (res) {
+						// console.log(res.errMsg);
+					}
+				});
+			},
+			pickerChange: function(data, e) {
+				this[e.target.id] = data[e.target.value];
+			},
+			dateChange: function(key, e) {
+				this[key] = e.target.value
+			},
+			
+			// 添加照片
+			addPhoto(imgListName) {
+				var that = this;
+				photo.addPhoto(function(photoList) {
+					that[imgListName] = that[imgListName].concat(photoList);
 				});
 			},
 			// 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口
-			deleteImage(imgObj, index) {
+			deleteImage(imgListName, imgObj, index) {
 				var that = this;
-				if (imgObj.src.startsWith('http:')) {// 网络图片
-					let obj = {
-						item: that.item,
-						index: that.itemIndex
-					}
-					that.setSublistItem(obj);
-					
-					let param = {
-						from: 'jc',
-						yyid: that.item.id,
-						fileid: imgObj.fileid,
-						userid: that.userInfo.userid
-					};
-					request.requestLoading(config.deleteImage, param, '正在删除图片', 
-						function(res){
-							console.log('删除成功：' + JSON.stringify(res));
-							that.item.fj = res.fj
-							that.imageList.splice(index,1);
-						},function(){
-							uni.showToast({
-								icon: 'none',
-								title: '删除失败'
-							});
-						}, function(){
-							
-						}
-					);
-				}else {// 刚选择好，还未上传，非网络图片
-					that.imageList.splice(index,1);
-				}
+				photo.deletePhoto(that[imgListName], imgObj, index, function(photoList){
+					that[imgListName] = photoList;
+				});
 			},
 			// 浏览照片
-			viewPhoto() {
-				var that = this;
-				var imgList = []
-				for (var i=0 ; i<that.imageList.length; i++) {
-					let item = that.imageList[i]
-					imgList.push(item.src);
-				}
-				// 预览图片
-				uni.previewImage({
-					urls: imgList
-				});
+			viewPhoto(imgListName) {
+				photo.viewPhoto(this[imgListName])
 			},
 		}
 	}

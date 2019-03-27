@@ -11,7 +11,7 @@ var __WXML_GLOBAL__ = {
 };
 var $gwx;
 
-/*v0.5vv_20181116_syb_scopedata*/window.__wcc_version__='v0.5vv_20181116_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/window.__wcc_version__='v0.5vv_20181221_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -651,34 +651,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1410,12 +1408,12 @@ Z([3,'_view 5c0aa864 cellImageTitleView'])
 Z([3,'_text 5c0aa864 leftTextRow'])
 Z([3,'隐患照片'])
 Z([3,'_text 5c0aa864 rightTextRow'])
-Z([a,[[6],[[7],[3,'imageList']],[3,'length']]])
+Z([a,[[6],[[7],[3,'createImgList']],[3,'length']]])
 Z([3,'_view 5c0aa864 imageView'])
 Z([3,'imageView'])
 Z([3,'idx'])
 Z([3,'imgObj'])
-Z([[7],[3,'imageList']])
+Z([[7],[3,'createImgList']])
 Z(z[16])
 Z([[7],[3,'idx']])
 Z([3,'_view 5c0aa864 littleImageView'])
@@ -2698,20 +2696,20 @@ cs.pop()
 _(aL,bO)
 cs.pop()
 _(lK,aL)
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:714")
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:718")
 var xQ=_mz(z,'view',['class',14,'id',1],[],e,s,gg)
 var oR=_v()
 _(xQ,oR)
-cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:768")
+cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:772")
 var fS=function(hU,cT,oV,gg){
-cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:768")
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:865")
+cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:772")
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:873")
 var oX=_mz(z,'view',['class',21,'style',1],[],hU,cT,gg)
-cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1021")
+cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1029")
 var lY=_mz(z,'image',['bindtap',23,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'mode',5,'src',6],[],hU,cT,gg)
 cs.pop()
 _(oX,lY)
-cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1203")
+cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1211")
 var aZ=_mz(z,'image',['bindtap',30,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'mode',5,'src',6],[],hU,cT,gg)
 cs.pop()
 _(oX,aZ)
@@ -2723,9 +2721,9 @@ return oV
 oR.wxXCkey=2
 _2z(z,18,fS,e,s,gg,oR,'imgObj','idx','idx')
 cs.pop()
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:1422")
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:1430")
 var t1=_mz(z,'view',['bindtap',37,'class',1,'data-comkey',2,'data-eventid',3,'style',4],[],e,s,gg)
-cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1653")
+cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1661")
 var e2=_mz(z,'image',['class',42,'src',1],[],e,s,gg)
 cs.pop()
 _(t1,e2)
@@ -2737,10 +2735,10 @@ cs.pop()
 _(cF,lK)
 cs.pop()
 _(oB,cF)
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:1771")
+cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:1779")
 var b3=_n('view')
 _rz(z,b3,'class',44,e,s,gg)
-cs.push("./pages/danger/dangerEdit.vue.wxml:button:1:1808")
+cs.push("./pages/danger/dangerEdit.vue.wxml:button:1:1816")
 var o4=_mz(z,'button',['bindtap',45,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
 var x5=_oz(z,49,e,s,gg)
 _(o4,x5)
@@ -2748,10 +2746,10 @@ cs.pop()
 _(b3,o4)
 var o6=_v()
 _(b3,o6)
-cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:1940")
+cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:1948")
 var f7=function(h9,c8,o0,gg){
-cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:1940")
-cs.push("./pages/danger/dangerEdit.vue.wxml:button:1:2051")
+cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:1948")
+cs.push("./pages/danger/dangerEdit.vue.wxml:button:1:2059")
 var oBB=_mz(z,'button',['bindtap',55,'class',1,'data-comkey',2,'data-eventid',3],[],h9,c8,gg)
 var lCB=_oz(z,59,h9,c8,gg)
 _(oBB,lCB)
