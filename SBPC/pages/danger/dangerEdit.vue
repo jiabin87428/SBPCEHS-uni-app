@@ -1,23 +1,23 @@
 <template>
 	<view class="baseView">
 		<view class="cellTitleView">
-			<text class="cellTitle">基础信息</text>
+			<text class="cellTitle">隐患信息</text>
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item title="隐患描述" :note="yhms" show-arrow="true" @click="jumpInput('yhms', '请输入隐患描述', yhms)"></uni-list-item>
-				<uni-list-item title="隐患等级" :subnote="yhdj" show-arrow="true" @click="alertSheetShow('yhdj', dangerLevel)"></uni-list-item>
-				<uni-list-item title="隐患后果" :subnote="yhhg" show-arrow="true" @click="alertSheetShow('yhhg', dangerResult)"></uni-list-item>
+				<uni-list-item title="隐患描述" :note="model.yhms" show-arrow="true" @click="jumpInput('yhms', '请输入隐患描述', model.yhms)"></uni-list-item>
+				<uni-list-item title="隐患等级" :subnote="model.yhdj" show-arrow="true" @click="alertSheetShow('yhdj', dangerLevel)"></uni-list-item>
+				<uni-list-item title="隐患后果" :subnote="model.yhhg" show-arrow="true" @click="alertSheetShow('yhhg', dangerResult)"></uni-list-item>
 				<picker id="yhlx" @change="pickerChange(dangerType, $event)" v-bind:range="dangerType">
-					<uni-list-item title="隐患类型" :subnote="yhlx" show-arrow="true"></uni-list-item>
+					<uni-list-item title="隐患类型" :subnote="model.yhlx" show-arrow="true"></uni-list-item>
 				</picker>
-				<picker mode="date" :value="zgqx" @change="dateChange('zgqx', $event)">
-					<uni-list-item title="整改期限" :subnote="zgqx" show-arrow="true"></uni-list-item>
+				<picker mode="date" :value="model.zgqx" @change="dateChange('zgqx', $event)">
+					<uni-list-item title="整改期限" :subnote="model.zgqx" show-arrow="true"></uni-list-item>
 				</picker>
 				<picker id="yhly" @change="pickerChange(dangerSource, $event)" v-bind:range="dangerSource">
-					<uni-list-item title="隐患来源" :subnote="yhly" show-arrow="true"></uni-list-item>
+					<uni-list-item title="隐患来源" :subnote="model.yhly" show-arrow="true"></uni-list-item>
 				</picker>
-				<uni-list-item title="责任部门" :subnote="zrbm ? zrbm.name : ''" show-arrow="true" @click="jumpOrgChoose('zrbm')"></uni-list-item>
+				<uni-list-item title="责任部门" :subnote="model.zrbm ? model.zrbm.name : ''" show-arrow="true" @click="jumpOrgChoose('zrbm')"></uni-list-item>
 				<uni-list-item title="发起人" :subnote="this.userInfo.username" show-arrow="false"></uni-list-item>
 			</uni-list>
 			<view class='cellImageBaseView'> 
@@ -38,9 +38,43 @@
 				</view>
 			</view>
 		</view>
+		<block v-if="pageState != 1">
+			<view class="cellTitleView">
+				<text class="cellTitle">整改情况</text>
+			</view>
+			<view class="cellInfoView">
+				<uni-list>
+					<uni-list-item title="隐患因素" :note="model.rwhg" show-arrow="true" @click="alertSheetShow('rwhg', dangerLevel)"></uni-list-item>
+					<uni-list-item title="原因分析" :subnote="model.yyfx" show-arrow="true" @click="jumpInput('yyfx', '请输入原因分析', model.yyfx)"></uni-list-item>
+					<uni-list-item title="整改情况" :subnote="model.yhzgqk" show-arrow="true" @click="jumpInput('yhzgqk', '请输入原因分析', model.yhzgqk)"></uni-list-item>
+					<picker mode="date" :value="model.zgwcrq" @change="dateChange('zgwcrq', $event)">
+						<uni-list-item title="完成日期" :subnote="model.zgwcrq" show-arrow="true"></uni-list-item>
+					</picker>
+					<uni-list-item title="整改人" :subnote="this.userInfo.username" show-arrow="false"></uni-list-item>
+				</uni-list>
+				<view class='cellImageBaseView'> 
+					<view class='cellImageTitleView'> 
+					  <text class='leftTextRow'>整改照片</text>
+					  <text class='rightTextRow'>{{changeImgList.length}}</text>
+					</view>
+					<view id='imageView' class='imageView'>
+					  <block v-for="(imgObj,idx) in changeImgList" :key="idx">
+						<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
+						  <image class="littleImage" @click="viewPhoto('changeImgList')" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+						  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage('changeImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
+						</view>
+					  </block>
+					  <view class="littleImageView" @click="addPhoto('changeImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+						<image class="littleImage" src="../../static/assets/addImage.png"></image>
+					  </view>
+					</view>
+				</view>
+			</view>
+		</block>
+		
 		<view class="btnView">
 		    <button class="saveBtn" @tap="saveClick">保存</button>
-			<block v-for="(btnObj,index) in flowbtnchooseflow" :key="index">
+			<block v-for="(btnObj,index) in model.flowbtnchooseflow" :key="index">
 				<button class="saveBtn" @tap="roamClick(btnObj)">{{btnObj.operationname}}</button>
 			</block>
 		</view>
@@ -65,28 +99,24 @@
 		components: {uniList,uniListItem,uniIcon},
 		data() {
 		    return {
-				instanceid: '',
-				recordid: '',
-				// 隐患描述
-				yhms: '',
-				// 隐患等级
-				yhdj: '',
-				// 隐患后果
-				yhhg: '',
-				// 隐患类型
-				yhlx: '',
-				// 整改期限
-				zgqx: '',
-				// 隐患来源
-				yhly: '',
-				// 责任部门
-				zrbm: null,
-				// 流转按钮相关
-				flowbtnchooseflow:[],
 				// 模型对象
 				model: {
 					instanceid: '',
 					recordid: '',
+					// 隐患描述
+					yhms: '',
+					// 隐患等级
+					yhdj: '',
+					// 隐患后果
+					yhhg: '',
+					// 隐患类型
+					yhlx: '',
+					// 整改期限
+					zgqx: '',
+					// 隐患来源
+					yhly: '',
+					// 责任部门
+					zrbm: null,
 				},
 				
 				// 照片相关
@@ -96,6 +126,7 @@
 				confirmImgList: [],	// 确认整改照片列表
 				
 				// 状态：1、隐患信息可编辑，2、整改情况可编辑，3、整改确认可编辑
+				// 包含start：只能填写隐患信息，包含zzzg：只能填写整改情况，包含zzyz：只能填写整改确认
 				pageState: 1,
 				
 				// 数据源
@@ -107,9 +138,9 @@
 		},
 		onLoad(option) {
 			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
-			this.instanceid = option.instanceid == null ? "" : option.instanceid;
-			this.recordid = option.recordid == null ? "" : option.recordid;
-			if(this.instanceid != "" || this.recordid != "") {
+			this.model.instanceid = option.instanceid == null ? "" : option.instanceid;
+			this.model.recordid = option.recordid == null ? "" : option.recordid;
+			if(this.model.instanceid != "" || this.model.recordid != "") {
 				this.getDangerDetail();
 			}
 		},
@@ -118,27 +149,15 @@
 			// 保存隐患
 			saveClick: function(e) {
 				var that = this;
-				var param = {
-					userid: that.userInfo.userid,
-					instanceid: that.instanceid,
-					recordid: that.recordid,
-					yhms: that.yhms,
-					yhdj: that.yhdj,
-					yhhg: that.yhhg,
-					yhlx: that.yhlx,
-					zgqx: that.zgqx,
-					yhly: that.yhly,
-					zrbmid: that.zrbm == null ? "" : that.zrbm.id,
-					zrbmmc: that.zrbm == null ? "" : that.zrbm.name,
-					
-					fqrid: that.userInfo.userid,
-					fqrmc: that.userInfo.username,
-				}
-				request.requestLoading(config.addDanger, param, '添加隐患', 
+				that.model.userid = that.userInfo.userid;
+				that.model.fqrid = that.userInfo.userid;
+				that.model.fqrmc = that.userInfo.username;
+				that.model.zrbmid = that.model.zrbm == null ? "" : that.model.zrbm.id;
+				that.model.zrbmmc = that.model.zrbm == null ? "" : that.model.zrbm.name;
+				
+				request.requestLoading(config.addDanger, that.model, '添加隐患', 
 					function(res){
-						that.instanceid = res.instanceid;
-						that.recordid = res.recordid;
-						that.flowbtnchooseflow = res.flowbtnchooseflow;
+						that.model = res;
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -152,28 +171,14 @@
 			// 流转隐患
 			roamClick: function(btnObj) {
 				var that = this;
-				var param = {
-					userid: that.userInfo.userid,
-					instanceid: that.instanceid,
-					recordid: that.recordid,
-					yhms: that.yhms,
-					yhdj: that.yhdj,
-					yhhg: that.yhhg,
-					yhlx: that.yhlx,
-					zgqx: that.zgqx,
-					yhly: that.yhly,
-					zrbmid: that.zrbm == null ? "" : that.zrbm.id,
-					zrbmmc: that.zrbm == null ? "" : that.zrbm.name,
-					
-					fqrid: that.userInfo.userid,
-					fqrmc: that.userInfo.username,
-					
-					operationname: btnObj.operationname,
-					nextstatusname: btnObj.nextstatusname,
-					prestatusname: btnObj.prestatusname,
-					flowtype: btnObj.flowtype,
-				}
-				request.requestLoading(config.flowDanger, param, '正在流转', 
+				
+				that.model.userid = that.userInfo.userid;
+				that.model.operationname = btnObj.operationname;
+				that.model.nextstatusname = btnObj.nextstatusname;
+				that.model.prestatusname = btnObj.prestatusname;
+				that.model.flowtype = btnObj.flowtype;
+
+				request.requestLoading(config.flowDanger, that.model, '正在流转', 
 					function(res){
 						let condition = res.data;
 						let key = "DANGER_TRANSFER"
@@ -196,31 +201,18 @@
 			// 选完人后流转
 			flowDanger: function(person, btnObj) {
 				var that = this;
-				var param = {
-					userid: that.userInfo.userid,
-					receiverid: person.id,
-					instanceid: that.instanceid,
-					recordid: that.recordid,
-					yhms: that.yhms,
-					yhdj: that.yhdj,
-					yhhg: that.yhhg,
-					yhlx: that.yhlx,
-					zgqx: that.zgqx,
-					yhly: that.yhly,
-					zrbmid: that.zrbm == null ? "" : that.zrbm.id,
-					zrbmmc: that.zrbm == null ? "" : that.zrbm.name,
-					
-					fqrid: that.userInfo.userid,
-					fqrmc: that.userInfo.username,
-					
-					operationname: btnObj.operationname,
-					nextstatusname: btnObj.nextstatusname,
-					prestatusname: btnObj.prestatusname,
-					flowtype: btnObj.flowtype,
-				}
-				request.requestLoading(config.flowDangerAfterChooseTarget, param, '正在流转', 
+				that.model.receiverid = person.id;
+				request.requestLoading(config.flowDangerAfterChooseTarget, that.model, '正在流转', 
 					function(res){
-						console.log('' + JSON.stringify(res));
+						uni.showToast({
+							icon: 'none',
+							title: res.repMsg,
+						});
+						setTimeout(() => {
+							uni.navigateBack({
+								delta: 1
+							})
+						}, 1000)
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -234,13 +226,17 @@
 			/*隐患详情相关*/
 			getDangerDetail: function() {
 				var that = this;
-				let param = {
-					instanceid: that.instanceid,
-					recordid: that.recordid
-				};
-				request.requestLoading(config.getDangerDetail, param, '正在加载', 
+				request.requestLoading(config.getDangerDetail, that.model, '正在加载', 
 					function(res){
-						console.log('' + JSON.stringify(res));
+						// console.log('' + JSON.stringify(res));
+						that.model = res;
+						if (that.model.controlcode.indexOf("start") != -1) {// 包含start
+							that.pageState = 1;
+						}else if (that.model.controlcode.indexOf("zzzg") != -1) {// 包含zzzg
+							that.pageState = 2;
+						}else if (that.model.controlcode.indexOf("zzyz") != -1) {// 包含zzyz
+							that.pageState = 3;
+						}
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -253,23 +249,22 @@
 			}, 
 			
 			/*通用方法相关*/
-			
 			jumpInput: function(key, placeholder, text) {
 				uni.navigateTo({
 					url: "../common/inputPage?key=" + key + "&placeholder=" + placeholder + "&text=" + text
 				})
-				this.$fire.once(key, result=>{ 
-					this[key] = result 
+				this.$fire.once(key, result=>{
+					this.model[key] = result 
+					console.log('' + JSON.stringify(this.model));
 				});
 			},
 			jumpOrgChoose: function(key) {
-				let selected = [this.zrbm]
 				uni.navigateTo({
-					url: "../common/orgChoose?selected=" + JSON.stringify(selected) + "&key=" + key + "&mltiple=false"
+					url: "../common/orgChoose?selected=" + JSON.stringify([]) + "&key=" + key + "&mltiple=false"
 				})
 				this.$fire.once(key, result=>{ 
 					console.log('' + JSON.stringify(result))
-					this[key] = result;
+					this.model[key] = result;
 				});
 			},
 			alertSheetShow: function(key, list) {
@@ -277,7 +272,7 @@
 				uni.showActionSheet({
 					itemList: list,
 					success: function (res) {
-						that[key] = list[res.tapIndex];
+						that.model[key] = list[res.tapIndex];
 					},
 					fail: function (res) {
 						// console.log(res.errMsg);
@@ -285,10 +280,10 @@
 				});
 			},
 			pickerChange: function(data, e) {
-				this[e.target.id] = data[e.target.value];
+				this.model[e.target.id] = data[e.target.value];
 			},
 			dateChange: function(key, e) {
-				this[key] = e.target.value
+				this.model[key] = e.target.value
 			},
 			
 			// 添加照片

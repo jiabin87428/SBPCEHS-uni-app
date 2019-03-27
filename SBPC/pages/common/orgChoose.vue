@@ -126,6 +126,7 @@
 		margin-left: 30upx;
 		margin-right: 5upx;
 		width: 40upx;
+		height: 100%;
 	}
 	.nextLevel {
 		width: 100upx;

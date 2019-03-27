@@ -374,9 +374,13 @@ var config = {
   addDanger: '/mobile/getYhzg.do?action=insertYh',
   // 隐患流转
   flowDanger: '/mobile/getYhzg.do?action=flowYh',
+  // 选择完流转目标后继续流转
+  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',
 
   // 获取部门
-  getOrgList: '/mobile/getUser.do?action=getOrgList ' };
+  getOrgList: '/mobile/getUser.do?action=getOrgList ',
+  // 获取人员
+  getPersonList: '/mobile/getUser.do?action=getUserList ' };
 
 
 //对外把对象config返回
@@ -2351,27 +2355,12 @@ var _default =
   },
   methods: {
     // 获取隐患详情
-    goDetail: function goDetail(e) {
+    goDetail: function goDetail(item) {
       var that = this;
-      // 				let params = {
-      // 					id: e.id,
-      // 					userid: that.userid,
-      // 					taskDefKey: e.taskDefKey,
-      // 					name: e.name,
-      // 					actDefId:e.actDefId,
-      // 					taskId:e.id,
-      // 					instId:e.instId,
-      // 					owner:e.owner,//默认操作人
-      // 					pkId:e.pkId,
-      // 					solId:e.solId,
-      // 					lx:that.lx,
-      // 					showFlow:that.lx == '待审批' ? false : true,//按钮展示权限
-      // 					commonFlow:that.lx == '已审批' ? true : false//流程图按钮展示权限
-      // 				};
-      // 				//跳转到详情页面
-      // 				uni.navigateTo({
-      // 					url:'../danger/detailDanger?params='+JSON.stringify(params)
-      // 				});
+      //跳转到详情页面
+      uni.navigateTo({
+        url: 'dangerEdit?instanceid=' + item.instanceid + '&recordid=' + item.recordid });
+
     },
     close: function close(index1, index2) {var _this = this;
       uni.showModal({
@@ -2428,7 +2417,8 @@ var _default =
         obj['title'] = item.notesubject;
         obj['source'] = '检查时间：' + item.createtime;
         obj['datetime'] = '';
-        obj['id'] = item.recordid;
+        obj['instanceid'] = item.instanceid;
+        obj['recordid'] = item.recordid;
         obj['article_type'] = 0;
         obj['comment_count'] = '';
         this.newsitems[index].data.push(obj);

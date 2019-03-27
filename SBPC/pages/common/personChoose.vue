@@ -91,6 +91,7 @@
 			},
 			// 去下级
 			gotoNext: function(person) {
+				console.log('' + JSON.stringify(person));
 				if (person.hasChild == "N") {
 					uni.showToast({
 						icon: 'none',
@@ -130,6 +131,7 @@
 		margin-left: 30upx;
 		margin-right: 5upx;
 		width: 40upx;
+		height: 100%;
 	}
 	.nextLevel {
 		width: 100upx;
