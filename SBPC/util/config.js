@@ -30,6 +30,9 @@ var config = {
 	// 获取人员
 	getPersonList: '/mobile/getUser.do?action=getUserList ',
 	
+	// 上传照片
+	uploadImage: '/uploadImg.do'
+	
 };
 //对外把对象config返回
 module.exports = config

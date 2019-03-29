@@ -94,12 +94,6 @@ const requestLoadingNew = function(url, params, message, success, fail, complete
 
 
 const request = function(url, message, success, fail) {
-//   wx.showNavigationBarLoading()
-//   if (message != "") {
-//     wx.showLoading({
-//       title: message,
-//     })
-//   }
 	uni.request({
 			url: url, 
 			header: {
@@ -108,10 +102,6 @@ const request = function(url, message, success, fail) {
 			},
 			method: 'GET',
 			success: (res) => {
-// 					wx.hideNavigationBarLoading()
-// 					if (message != "") {
-// 					  wx.hideLoading()
-// 					}
 					if (res.success == 'true') {
 						success(res.data)
 					} else {
@@ -123,43 +113,8 @@ const request = function(url, message, success, fail) {
 			}
 	});
 }
-// 上传图片
-const uploadImage = function(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {
-	uni.uploadFile({
-	  url: config.host + url,
-	  filePath: filePaths[i],
-	  name: 'fileData',
-	  formData: {
-
-	  },
-	  success: (resp) => {
-			successUp++;
-			successFun(resp);
-	  },
-	  fail: (res) => {
-			failUp++;
-	  },
-	  complete: () => {
-			i++;
-			if (i == length) {
-				uni.showToast({
-					title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
-					icon: 'none',
-					duration: 2000
-				})
-				if (completeFun != null) {
-					completeFun('200');
-				}
-			}
-			else {  //递归调用uploadImage函数
-				this.uploadImage(url,filePaths, successUp, failUp, i, length, successFun, completeFun);
-			}
-	  },
-	});
-}
 export default {
     request,
     requestLoading,
-	requestLoadingNew,
-	uploadImage
+	requestLoadingNew
 }

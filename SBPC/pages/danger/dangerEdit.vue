@@ -5,20 +5,20 @@
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item title="隐患描述" :note="model.yhms" show-arrow="true" @click="jumpInput('yhms', '请输入隐患描述', model.yhms)"></uni-list-item>
-				<uni-list-item title="隐患等级" :subnote="model.yhdj" show-arrow="true" @click="alertSheetShow('yhdj', dangerLevel)"></uni-list-item>
-				<uni-list-item title="隐患后果" :subnote="model.yhhg" show-arrow="true" @click="alertSheetShow('yhhg', dangerResult)"></uni-list-item>
-				<picker id="yhlx" @change="pickerChange(dangerType, $event)" v-bind:range="dangerType">
-					<uni-list-item title="隐患类型" :subnote="model.yhlx" show-arrow="true"></uni-list-item>
+				<uni-list-item title="隐患描述" :note="model.yhms" :show-arrow="pageState == 1 ? true : false" @click="jumpInput('yhms', '请输入隐患描述', model.yhms, 1)"></uni-list-item>
+				<uni-list-item title="隐患等级" :subnote="model.yhdj" :show-arrow="pageState == 1 ? true : false" @click="alertSheetShow('yhdj', dangerLevel, 1)"></uni-list-item>
+				<uni-list-item title="隐患后果" :subnote="model.yhhg" :show-arrow="pageState == 1 ? true : false" @click="alertSheetShow('yhhg', dangerResult, 1)"></uni-list-item>
+				<picker id="yhlx" @change="pickerChange(dangerType, $event, 1)" v-bind:range="dangerType" :disabled="pageState == 1 ? false : true">
+					<uni-list-item title="隐患类型" :subnote="model.yhlx" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
 				</picker>
-				<picker mode="date" :value="model.zgqx" @change="dateChange('zgqx', $event)">
-					<uni-list-item title="整改期限" :subnote="model.zgqx" show-arrow="true"></uni-list-item>
+				<picker mode="date" :value="model.zgqx" @change="dateChange('zgqx', $event, 1)" :disabled="pageState == 1 ? false : true">
+					<uni-list-item title="整改期限" :subnote="model.zgqx" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
 				</picker>
-				<picker id="yhly" @change="pickerChange(dangerSource, $event)" v-bind:range="dangerSource">
-					<uni-list-item title="隐患来源" :subnote="model.yhly" show-arrow="true"></uni-list-item>
+				<picker id="yhly" @change="pickerChange(dangerSource, $event, 1)" v-bind:range="dangerSource" :disabled="pageState == 1 ? false : true">
+					<uni-list-item title="隐患来源" :subnote="model.yhly" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
 				</picker>
-				<uni-list-item title="责任部门" :subnote="model.zrbm ? model.zrbm.name : ''" show-arrow="true" @click="jumpOrgChoose('zrbm')"></uni-list-item>
-				<uni-list-item title="发起人" :subnote="this.userInfo.username" show-arrow="false"></uni-list-item>
+				<uni-list-item title="责任部门" :subnote="model.zrbm ? model.zrbm.name : ''" :show-arrow="pageState == 1 ? true : false" @click="jumpOrgChoose('zrbm', 1)"></uni-list-item>
+				<uni-list-item title="发起人" :subnote="model.fqrmc" show-arrow="false"></uni-list-item>
 			</uni-list>
 			<view class='cellImageBaseView'> 
 				<view class='cellImageTitleView'> 
@@ -44,13 +44,13 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<uni-list-item title="隐患因素" :note="model.rwhg" show-arrow="true" @click="alertSheetShow('rwhg', dangerLevel)"></uni-list-item>
-					<uni-list-item title="原因分析" :subnote="model.yyfx" show-arrow="true" @click="jumpInput('yyfx', '请输入原因分析', model.yyfx)"></uni-list-item>
-					<uni-list-item title="整改情况" :subnote="model.yhzgqk" show-arrow="true" @click="jumpInput('yhzgqk', '请输入原因分析', model.yhzgqk)"></uni-list-item>
-					<picker mode="date" :value="model.zgwcrq" @change="dateChange('zgwcrq', $event)">
-						<uni-list-item title="完成日期" :subnote="model.zgwcrq" show-arrow="true"></uni-list-item>
+					<uni-list-item title="隐患因素" :subnote="model.rwhg" :show-arrow="pageState == 2 ? true : false" @click="alertSheetShow('rwhg', dangerReason, 2)"></uni-list-item>
+					<uni-list-item title="原因分析" :subnote="model.yyfx" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yyfx', '请输入原因分析', model.yyfx, 2)"></uni-list-item>
+					<uni-list-item title="整改情况" :subnote="model.yhzgqk" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yhzgqk', '请输入原因分析', model.yhzgqk, 2)"></uni-list-item>
+					<picker mode="date" :value="model.zgwcrq" @change="dateChange('zgwcrq', $event, 2)" :disabled="pageState == 2 ? false : true">
+						<uni-list-item title="完成日期" :subnote="model.zgwcrq" :show-arrow="pageState == 2 ? true : false"></uni-list-item>
 					</picker>
-					<uni-list-item title="整改人" :subnote="this.userInfo.username" show-arrow="false"></uni-list-item>
+					<uni-list-item title="整改人" :subnote="model.zgrmc" show-arrow="false"></uni-list-item>
 				</uni-list>
 				<view class='cellImageBaseView'> 
 					<view class='cellImageTitleView'> 
@@ -72,7 +72,39 @@
 			</view>
 		</block>
 		
-		<view class="btnView">
+		<block v-if="pageState == 3 || pageState == 0">
+			<view class="cellTitleView">
+				<text class="cellTitle">整改确认</text>
+			</view>
+			<view class="cellInfoView">
+				<uni-list>
+					<uni-list-item title="完成情况" :subnote="model.yzqk" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yzqk', '请输入完成情况', model.yzqk, 3)"></uni-list-item>
+					<uni-list-item title="确认人" :subnote="model.yzrmc" show-arrow="false"></uni-list-item>
+					<picker mode="date" :value="model.yzrtxrq" @change="dateChange('yzrtxrq', $event, 3)" :disabled="pageState == 3 ? false : true">
+						<uni-list-item title="填报日期" :subnote="model.yzrtxrq" :show-arrow="pageState == 2 ? true : false"></uni-list-item>
+					</picker>
+				</uni-list>
+				<view class='cellImageBaseView'> 
+					<view class='cellImageTitleView'> 
+					  <text class='leftTextRow'>验证照片</text>
+					  <text class='rightTextRow'>{{confirmImgList.length}}</text>
+					</view>
+					<view id='imageView' class='imageView'>
+					  <block v-for="(imgObj,idx) in confirmImgList" :key="idx">
+						<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
+						  <image class="littleImage" @click="viewPhoto('confirmImgList')" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+						  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage('confirmImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
+						</view>
+					  </block>
+					  <view class="littleImageView" @click="addPhoto('confirmImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+						<image class="littleImage" src="../../static/assets/addImage.png"></image>
+					  </view>
+					</view>
+				</view>
+			</view>
+		</block>
+		
+		<view class="btnView" v-if="pageState != 0">
 		    <button class="saveBtn" @tap="saveClick">保存</button>
 			<block v-for="(btnObj,index) in model.flowbtnchooseflow" :key="index">
 				<button class="saveBtn" @tap="roamClick(btnObj)">{{btnObj.operationname}}</button>
@@ -125,7 +157,7 @@
 				changeImgList: [],	// 整改隐患照片列表
 				confirmImgList: [],	// 确认整改照片列表
 				
-				// 状态：1、隐患信息可编辑，2、整改情况可编辑，3、整改确认可编辑
+				// 状态：1、隐患信息可编辑，2、整改情况可编辑，3、整改确认可编辑，0，已整改，三个都不能编辑
 				// 包含start：只能填写隐患信息，包含zzzg：只能填写整改情况，包含zzyz：只能填写整改确认
 				pageState: 1,
 				
@@ -134,15 +166,28 @@
 				dangerResult: dataConfig.dangerResult,
 				dangerType: dataConfig.dangerType,
 				dangerSource: dataConfig.dangerSource,
+				
+				dangerReason: dataConfig.dangerReason,
 			}
 		},
 		onLoad(option) {
 			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
 			this.model.instanceid = option.instanceid == null ? "" : option.instanceid;
 			this.model.recordid = option.recordid == null ? "" : option.recordid;
-			if(this.model.instanceid != "" || this.model.recordid != "") {
+			if(this.model.instanceid != "" || this.model.recordid != "") {// 非新建
 				this.getDangerDetail();
+			}else {// 新建，发起人名称为当前userid
+				this.model.fqrid = this.userInfo.userid;
+				this.model.fqrmc = this.userInfo.username;
 			}
+		},
+		onUnload() {
+			var pages = getCurrentPages();
+			var page = pages[pages.length - 2];
+			var currentWebview = page.$getAppWebview();
+			plus.webview.postMessageToUniNView({
+				refreshCode: "REFRESH"
+			}, currentWebview.id);
 		},
 		methods:{
 			/*新建隐患相关*/
@@ -150,18 +195,30 @@
 			saveClick: function(e) {
 				var that = this;
 				that.model.userid = that.userInfo.userid;
-				that.model.fqrid = that.userInfo.userid;
-				that.model.fqrmc = that.userInfo.username;
+// 				that.model.fqrid = that.userInfo.userid;
+// 				that.model.fqrmc = that.userInfo.username;
 				that.model.zrbmid = that.model.zrbm == null ? "" : that.model.zrbm.id;
 				that.model.zrbmmc = that.model.zrbm == null ? "" : that.model.zrbm.name;
 				
-				request.requestLoading(config.addDanger, that.model, '添加隐患', 
+				request.requestLoading(config.addDanger, that.model, '保存隐患', 
 					function(res){
 						that.model = res;
+						let attachtype = that.getAttachtypeAndPhotoList().type;
+						let photoList = that.getAttachtypeAndPhotoList().photoList;
+// 						photo.uploadPhoto(that.userInfo.userid, res.recordid, attachtype, photoList, function(res){
+// 							uni.showToast({
+// 								icon: 'none',
+// 								title: '保存成功'
+// 							});
+// 						});
+						uni.showToast({
+							icon: 'none',
+							title: '保存成功'
+						});
 					},function(){
 						uni.showToast({
 							icon: 'none',
-							title: '添加失败'
+							title: '保存失败'
 						});
 					}, function(){
 						
@@ -180,6 +237,18 @@
 
 				request.requestLoading(config.flowDanger, that.model, '正在流转', 
 					function(res){
+						if (res.data == null && res.repCode == "200") {
+							uni.showToast({
+								icon: 'none',
+								title: res.repMsg
+							});
+							setTimeout(() => {
+								uni.navigateBack({
+									delta: 1
+								})
+							}, 1000);
+							return;
+						}
 						let condition = res.data;
 						let key = "DANGER_TRANSFER"
 						uni.navigateTo({
@@ -230,12 +299,25 @@
 					function(res){
 						// console.log('' + JSON.stringify(res));
 						that.model = res;
+						let zrbm = {
+							name: res.zrbmmc,
+							id: res.zrbmid
+						}
+						that.model.zrbm = zrbm;
+						if (that.model.controlcode == null) {
+							that.pageState = 0;
+							return;
+						}
 						if (that.model.controlcode.indexOf("start") != -1) {// 包含start
 							that.pageState = 1;
 						}else if (that.model.controlcode.indexOf("zzzg") != -1) {// 包含zzzg
 							that.pageState = 2;
-						}else if (that.model.controlcode.indexOf("zzyz") != -1) {// 包含zzyz
+							that.model.zgrmc = that.userInfo.username;
+							that.model.zgrid = that.userInfo.userid;
+						}else if (that.model.controlcode.indexOf("yzfj") != -1) {// 包含zzyz
 							that.pageState = 3;
+							that.model.yzrmc = that.userInfo.username;
+							that.model.yzrid = that.userInfo.userid;
 						}
 					},function(){
 						uni.showToast({
@@ -249,16 +331,22 @@
 			}, 
 			
 			/*通用方法相关*/
-			jumpInput: function(key, placeholder, text) {
+			jumpInput: function(key, placeholder, text, editableState) {
+				if(this.pageState != editableState) {
+					return
+				}
 				uni.navigateTo({
 					url: "../common/inputPage?key=" + key + "&placeholder=" + placeholder + "&text=" + text
 				})
 				this.$fire.once(key, result=>{
 					this.model[key] = result 
-					console.log('' + JSON.stringify(this.model));
+					// console.log('' + JSON.stringify(this.model));
 				});
 			},
-			jumpOrgChoose: function(key) {
+			jumpOrgChoose: function(key, editableState) {
+				if(this.pageState != editableState) {
+					return
+				}
 				uni.navigateTo({
 					url: "../common/orgChoose?selected=" + JSON.stringify([]) + "&key=" + key + "&mltiple=false"
 				})
@@ -267,8 +355,11 @@
 					this.model[key] = result;
 				});
 			},
-			alertSheetShow: function(key, list) {
+			alertSheetShow: function(key, list, editableState) {
 				var that = this;
+				if(that.pageState != editableState) {
+					return
+				}
 				uni.showActionSheet({
 					itemList: list,
 					success: function (res) {
@@ -279,10 +370,17 @@
 					}
 				});
 			},
-			pickerChange: function(data, e) {
+			pickerChange: function(data, e, editableState) {
+				if(this.pageState != editableState) {
+					return
+				}
 				this.model[e.target.id] = data[e.target.value];
 			},
-			dateChange: function(key, e) {
+			dateChange: function(key, e, editableState) {
+				if(this.pageState != editableState) {
+					return
+				}
+				console.log('key:' + key + ",value:" + e.target.value);
 				this.model[key] = e.target.value
 			},
 			
@@ -303,6 +401,24 @@
 			// 浏览照片
 			viewPhoto(imgListName) {
 				photo.viewPhoto(this[imgListName])
+			},
+			// 获取上传图片用的attachtype和照片列表
+			getAttachtypeAndPhotoList() {
+				var obj = {};
+				if(this.pageState == 1) {
+					obj.type = "fxwt";
+					obj.photoList = this.createImgList;
+				}else if(this.pageState == 2) {
+					obj.type = "zzwt";
+					obj.photoList = this.changeImgList;
+				}else if(this.pageState == 3) {
+					obj.type = "yzwt";
+					obj.photoList = this.confirmImgList;
+				}else {
+					obj.type = "";
+					obj.photoList = [];
+				}
+				return obj;
 			},
 		}
 	}

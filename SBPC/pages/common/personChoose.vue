@@ -5,10 +5,8 @@
 				<view class="orgName" @click="chooseCurrent(obj)">{{obj.name}}</view>
 				<view class="nextLevelView" @click="gotoNext(obj)" v-if="obj.isUser == 'N'">
 					<view class="columnLine"></view>
-					<image class="levelImg" mode="aspectFit" src="../../static/assets/level.png" v-if="obj.hasChild == 'Y'"></image>
-					<view class="nextLevel" v-if="obj.hasChild == 'Y'">下级</view>
-					<image class="levelImg" mode="aspectFit" src="../../static/assets/level_disable.png" v-if="obj.hasChild == 'N'"></image>
-					<view class="nextLevel_disable" v-if="obj.hasChild == 'N'">下级</view>
+					<image class="levelImg" mode="aspectFit" src="../../static/assets/level.png"></image>
+					<view class="nextLevel">下级</view>
 				</view>
 			</view>
 			<view class="cellLine"></view>
@@ -91,14 +89,6 @@
 			},
 			// 去下级
 			gotoNext: function(person) {
-				console.log('' + JSON.stringify(person));
-				if (person.hasChild == "N") {
-					uni.showToast({
-						icon: 'none',
-						title: '该节点无下级'
-					});
-					return;
-				}
 				var back = this.backLevel + 1;
 				uni.navigateTo({
 					url: "../common/personChoose?selected=" + JSON.stringify(this.selected) + "&key=" + this.key + "&condition=" + this.condition + "&mltiple=" + this.mltiple + "&orgId=" + person.id + "&back=" + back

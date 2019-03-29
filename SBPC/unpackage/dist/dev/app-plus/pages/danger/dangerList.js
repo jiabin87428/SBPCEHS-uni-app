@@ -264,6 +264,115 @@ module.exports = __vue_exports__
 
 /***/ }),
 
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js":
+/*!*************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * mini (~300 b) version for event-emitter.
+ */
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * const ee = new OnFire();
+ *
+ * ee.on('click', () => {});
+ *
+ * ee.on('mouseover', () => {});
+ *
+ * ee.emit('click', 1, 2, 3);
+ * ee.fire('mouseover', {}); // same with emit
+ *
+ * ee.off();
+ */
+
+var OnFire =
+/** @class */
+function () {
+  function OnFire() {
+    // 所有事件的监听器
+    this.es = {}; // cname of fire
+
+    this.emit = this.fire;
+  }
+
+  OnFire.prototype.on = function (eventName, cb, once) {
+    if (once === void 0) {
+      once = false;
+    }
+
+    if (!this.es[eventName]) {
+      this.es[eventName] = [];
+    }
+
+    this.es[eventName].push({
+      cb: cb,
+      once: once
+    });
+  };
+
+  OnFire.prototype.once = function (eventName, cb) {
+    this.on(eventName, cb, true);
+  };
+
+  OnFire.prototype.fire = function (eventName) {
+    var params = [];
+
+    for (var _i = 1; _i < arguments.length; _i++) {
+      params[_i - 1] = arguments[_i];
+    }
+
+    var listeners = this.es[eventName] || [];
+
+    for (var i = 0; i < listeners.length; i++) {
+      var _a = listeners[i],
+          cb = _a.cb,
+          once = _a.once;
+      cb.apply(this, params);
+
+      if (once) {
+        listeners.splice(i, 1);
+        i--;
+      }
+    }
+  };
+
+  OnFire.prototype.off = function (eventName, cb) {
+    // clean all
+    if (eventName === undefined) {
+      this.es = {};
+    } else {
+      if (cb === undefined) {
+        // clean the eventName's listeners
+        delete this.es[eventName];
+      } else {
+        var listeners = this.es[eventName] || []; // clean the event and listener
+
+        for (var i = 0; i < listeners.length; i++) {
+          if (listeners[i].cb === cb) {
+            listeners.splice(i, 1);
+            i--;
+          }
+        }
+      }
+    }
+  };
+
+  OnFire.ver = "2.0.0";
+  return OnFire;
+}();
+
+exports.default = OnFire;
+
+/***/ }),
+
 /***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/danger/dangerList.nvue?entry":
 /*!************************************************************************************************!*\
   !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/danger/dangerList.nvue?entry ***!
@@ -385,7 +494,10 @@ var config = {
   // 获取部门
   getOrgList: '/mobile/getUser.do?action=getOrgList ',
   // 获取人员
-  getPersonList: '/mobile/getUser.do?action=getUserList ' };
+  getPersonList: '/mobile/getUser.do?action=getUserList ',
+
+  // 上传照片
+  uploadImage: '/uploadImg.do' };
 
 
 //对外把对象config返回
@@ -497,12 +609,6 @@ var requestLoadingNew = function requestLoadingNew(url, params, message, _succes
 
 
 var request = function request(url, message, _success3, _fail3) {
-  //   wx.showNavigationBarLoading()
-  //   if (message != "") {
-  //     wx.showLoading({
-  //       title: message,
-  //     })
-  //   }
   uni.request({
     url: url,
     header: {
@@ -511,10 +617,6 @@ var request = function request(url, message, _success3, _fail3) {
 
     method: 'GET',
     success: function success(res) {
-      // 					wx.hideNavigationBarLoading()
-      // 					if (message != "") {
-      // 					  wx.hideLoading()
-      // 					}
       if (res.success == 'true') {
         _success3(res.data);
       } else {
@@ -525,46 +627,11 @@ var request = function request(url, message, _success3, _fail3) {
       _fail3();
     } });
 
-};
-// 上传图片
-var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {var _this = this;
-  uni.uploadFile({
-    url: config.host + url,
-    filePath: filePaths[i],
-    name: 'fileData',
-    formData: {},
-
-
-    success: function success(resp) {
-      successUp++;
-      successFun(resp);
-    },
-    fail: function fail(res) {
-      failUp++;
-    },
-    complete: function complete() {
-      i++;
-      if (i == length) {
-        uni.showToast({
-          title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
-          icon: 'none',
-          duration: 2000 });
-
-        if (completeFun != null) {
-          completeFun('200');
-        }
-      } else
-      {//递归调用uploadImage函数
-        _this.uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun);
-      }
-    } });
-
 };var _default =
 {
   request: request,
   requestLoading: requestLoading,
-  requestLoadingNew: requestLoadingNew,
-  uploadImage: uploadImage };exports.default = _default;
+  requestLoadingNew: requestLoadingNew };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -2305,9 +2372,11 @@ var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/nvueC
 var _uniMediaList = _interopRequireDefault(__webpack_require__(/*! @/components/nvueComponents/uni-media-list/uni-media-list.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/nvueComponents/uni-media-list/uni-media-list.nvue"));
 var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js"));
 var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js"));
-var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js"));
+var _onfire = _interopRequireDefault(__webpack_require__(/*! onfire.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 
 var dom = weex.requireModule('dom');
+var globalEvent = weex.requireModule('globalEvent');
 // const animation = weex.requireModule('animation')
 var _default =
 {
@@ -2356,6 +2425,12 @@ var _default =
       uni.navigateTo({
         url: 'dangerEdit' });
 
+    });
+
+    globalEvent.addEventListener("plusMessage", function (e) {
+      if (e.data.refreshCode) {
+        that.onrefresh(that.tabIndex);
+      }
     });
   },
   methods: {
