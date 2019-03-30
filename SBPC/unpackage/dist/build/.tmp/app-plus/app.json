@@ -8,7 +8,8 @@
     "pages/danger/dangerEdit",
     "pages/common/inputPage",
     "pages/common/orgChoose",
-    "pages/common/personChoose"
+    "pages/common/personChoose",
+    "pages/danger/dangerLog"
   ],
   "subPackages": [],
   "window": {
@@ -40,6 +41,7 @@
     "pages": {
       "pages/danger/dangerList.html": {
         "window": {
+          "usingComponents": {},
           "navigationBarTitleText": "隐患列表",
           "titleNView": {
             "buttons": [
@@ -58,5 +60,6 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "SBPC-EHS"
+  "appname": "SBPC-EHS",
+  "compilerVersion": "1.8.0"
 }

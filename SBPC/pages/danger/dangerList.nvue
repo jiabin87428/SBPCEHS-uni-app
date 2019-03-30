@@ -83,7 +83,11 @@
 			
 			globalEvent.addEventListener("plusMessage", e => {
                 if (e.data.refreshCode) {
-                    that.onrefresh(that.tabIndex);
+					// 处理完隐患返回列表页刷新暂时遇到问题，刷新完成后，上拉加载更多没反应，先搁置
+// 					setTimeout(() => {
+// 					    that.newsitems = that.randomfn();
+// 						that.onrefresh(that.tabIndex);
+// 					}, 50)
                 }
             });
 		},
@@ -107,6 +111,7 @@
                 })
             },
             loadMore(index) {
+				console.log('123123123')
                 setTimeout(() => {
                     this.addData(index);
                 }, 50);

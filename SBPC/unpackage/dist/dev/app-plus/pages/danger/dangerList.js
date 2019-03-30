@@ -2433,7 +2433,11 @@ var _default =
 
     globalEvent.addEventListener("plusMessage", function (e) {
       if (e.data.refreshCode) {
-        that.onrefresh(that.tabIndex);
+        // 处理完隐患返回列表页刷新暂时遇到问题，刷新完成后，上拉加载更多没反应，先搁置
+        // 					setTimeout(() => {
+        // 					    that.newsitems = that.randomfn();
+        // 						that.onrefresh(that.tabIndex);
+        // 					}, 50)
       }
     });
   },
@@ -2457,6 +2461,7 @@ var _default =
 
     },
     loadMore: function loadMore(index) {var _this2 = this;
+      console.log('123123123');
       setTimeout(function () {
         _this2.addData(index);
       }, 50);

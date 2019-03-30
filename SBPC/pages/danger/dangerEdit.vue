@@ -1,7 +1,8 @@
 <template>
 	<view class="baseView" id="baseView">
 		<view class="cellTitleView">
-			<text class="cellTitle">隐患信息</text>
+			<text class="cellTitle" v-if="model.docstatus == null || model.docstatus == ''">隐患信息</text>
+			<text class="cellTitle" v-if="model.docstatus != null && model.docstatus != ''">隐患信息（当前状态：{{model.docstatus}}）</text>
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
@@ -195,6 +196,11 @@
 				uni.navigateTo({
 					url: "dangerLog?logList=" + JSON.stringify(this.model.logList)
 				})
+			}else {
+				uni.showToast({
+					icon: 'none',
+					title: '暂无日志'
+				});
 			}
 		},
 		onUnload() {
@@ -477,17 +483,16 @@
 				let attachtype = that.getAttachtypeAndPhotoList().type;
 				let photoList = that.getAttachtypeAndPhotoList().photoList;
 				photo.uploadPhoto(that.userInfo.userid, that.model.recordid, attachtype, photoList, function(photoListOnServer){
-					uni.showToast({
-						icon: 'none',
-						title: '照片上传成功',
-					});
-					that.createImgList = [];
-					that.changeImgList = [];
-					that.confirmImgList = [];
-					that.classifyPhotos(photoListOnServer);
-// 					console.log('createImgList: ' + JSON.stringify(that.createImgList));
-// 					console.log('changeImgList: ' + JSON.stringify(that.changeImgList));
-// 					console.log('confirmImgList: ' + JSON.stringify(that.confirmImgList));
+					if(photoListOnServer.length > 0) {
+						uni.showToast({
+							icon: 'none',
+							title: '照片上传成功',
+						});
+						that.createImgList = [];
+						that.changeImgList = [];
+						that.confirmImgList = [];
+						that.classifyPhotos(photoListOnServer);
+					}
 					complete();
 				});
 			},

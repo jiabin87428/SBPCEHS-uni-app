@@ -1,0 +1,2 @@
+<import src="./dangerLog.vue.wxml" />
+    <template is="4508b5aa" data="{{ ...$root['0'], $root }}"/>
