@@ -1,5 +1,5 @@
 <template>
-	<view class="baseView">
+	<view class="baseView" id="baseView">
 		<view class="cellTitleView">
 			<text class="cellTitle">隐患信息</text>
 		</view>
@@ -29,10 +29,10 @@
 				  <block v-for="(imgObj,idx) in createImgList" :key="idx">
 					<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
 					  <image class="littleImage" @click="viewPhoto('createImgList')" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
-					  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage('createImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
+					  <image class='littleImageDelete' src='../../static/assets/delete.png' v-if="pageState == 1" @click="deleteImage('createImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
 					</view>
 				  </block>
-				  <view class="littleImageView" @click="addPhoto('createImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+				  <view class="littleImageView" v-if="pageState == 1" @click="addPhoto('createImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
 					<image class="littleImage" src="../../static/assets/addImage.png"></image>
 				  </view>
 				</view>
@@ -61,10 +61,10 @@
 					  <block v-for="(imgObj,idx) in changeImgList" :key="idx">
 						<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
 						  <image class="littleImage" @click="viewPhoto('changeImgList')" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
-						  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage('changeImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
+						  <image class='littleImageDelete' src='../../static/assets/delete.png' v-if="pageState == 2" @click="deleteImage('changeImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
 						</view>
 					  </block>
-					  <view class="littleImageView" @click="addPhoto('changeImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+					  <view class="littleImageView" v-if="pageState == 2" @click="addPhoto('changeImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
 						<image class="littleImage" src="../../static/assets/addImage.png"></image>
 					  </view>
 					</view>
@@ -78,10 +78,10 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<uni-list-item title="完成情况" :subnote="model.yzqk" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yzqk', '请输入完成情况', model.yzqk, 3)"></uni-list-item>
+					<uni-list-item title="完成情况" :subnote="model.yzqk" :show-arrow="pageState == 3 ? true : false" @click="jumpInput('yzqk', '请输入完成情况', model.yzqk, 3)"></uni-list-item>
 					<uni-list-item title="确认人" :subnote="model.yzrmc" show-arrow="false"></uni-list-item>
 					<picker mode="date" :value="model.yzrtxrq" @change="dateChange('yzrtxrq', $event, 3)" :disabled="pageState == 3 ? false : true">
-						<uni-list-item title="填报日期" :subnote="model.yzrtxrq" :show-arrow="pageState == 2 ? true : false"></uni-list-item>
+						<uni-list-item title="填报日期" :subnote="model.yzrtxrq" :show-arrow="pageState == 3 ? true : false"></uni-list-item>
 					</picker>
 				</uni-list>
 				<view class='cellImageBaseView'> 
@@ -93,10 +93,10 @@
 					  <block v-for="(imgObj,idx) in confirmImgList" :key="idx">
 						<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
 						  <image class="littleImage" @click="viewPhoto('confirmImgList')" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
-						  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage('confirmImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
+						  <image class='littleImageDelete' src='../../static/assets/delete.png' v-if="pageState == 3" @click="deleteImage('confirmImgList', imgObj, idx)" :id='idx' mode="aspectFit"></image>
 						</view>
 					  </block>
-					  <view class="littleImageView" @click="addPhoto('confirmImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+					  <view class="littleImageView" v-if="pageState == 3" @click="addPhoto('confirmImgList')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
 						<image class="littleImage" src="../../static/assets/addImage.png"></image>
 					  </view>
 					</view>
@@ -168,6 +168,9 @@
 				dangerSource: dataConfig.dangerSource,
 				
 				dangerReason: dataConfig.dangerReason,
+				
+				// 页面UI相关
+				viewTop: null,
 			}
 		},
 		onLoad(option) {
@@ -180,6 +183,11 @@
 				this.model.fqrid = this.userInfo.userid;
 				this.model.fqrmc = this.userInfo.username;
 			}
+		},
+		onNavigationBarButtonTap() {
+			uni.navigateTo({
+				url: "dangerLog?logList=" + JSON.stringify(this.model.logList)
+			})
 		},
 		onUnload() {
 			var pages = getCurrentPages();
@@ -203,18 +211,21 @@
 				request.requestLoading(config.addDanger, that.model, '保存隐患', 
 					function(res){
 						that.model = res;
-						let attachtype = that.getAttachtypeAndPhotoList().type;
-						let photoList = that.getAttachtypeAndPhotoList().photoList;
+						uni.showToast({
+							icon: 'none',
+							title: '保存成功'
+						});
+						that.uploadPhoto(false, function(){
+							
+						});
+// 						let attachtype = that.getAttachtypeAndPhotoList().type;
+// 						let photoList = that.getAttachtypeAndPhotoList().photoList;
 // 						photo.uploadPhoto(that.userInfo.userid, res.recordid, attachtype, photoList, function(res){
 // 							uni.showToast({
 // 								icon: 'none',
 // 								title: '保存成功'
 // 							});
 // 						});
-						uni.showToast({
-							icon: 'none',
-							title: '保存成功'
-						});
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -238,15 +249,19 @@
 				request.requestLoading(config.flowDanger, that.model, '正在流转', 
 					function(res){
 						if (res.data == null && res.repCode == "200") {
-							uni.showToast({
-								icon: 'none',
-								title: res.repMsg
+							that.uploadPhoto(true, function(){
+								uni.showToast({
+									icon: 'none',
+									title: res.repMsg
+								});
+								
+								setTimeout(() => {
+									uni.navigateBack({
+										delta: 1
+									})
+								}, 1000);
 							});
-							setTimeout(() => {
-								uni.navigateBack({
-									delta: 1
-								})
-							}, 1000);
+							
 							return;
 						}
 						let condition = res.data;
@@ -273,15 +288,17 @@
 				that.model.receiverid = person.id;
 				request.requestLoading(config.flowDangerAfterChooseTarget, that.model, '正在流转', 
 					function(res){
-						uni.showToast({
-							icon: 'none',
-							title: res.repMsg,
+						that.uploadPhoto(true, function(){
+							uni.showToast({
+								icon: 'none',
+								title: res.repMsg,
+							});
+							setTimeout(() => {
+								uni.navigateBack({
+									delta: 1
+								})
+							}, 1000)
 						});
-						setTimeout(() => {
-							uni.navigateBack({
-								delta: 1
-							})
-						}, 1000)
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -304,6 +321,7 @@
 							id: res.zrbmid
 						}
 						that.model.zrbm = zrbm;
+						that.classifyPhotos(that.model.zplist);
 						if (that.model.controlcode == null) {
 							that.pageState = 0;
 							return;
@@ -319,6 +337,7 @@
 							that.model.yzrmc = that.userInfo.username;
 							that.model.yzrid = that.userInfo.userid;
 						}
+						
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -329,6 +348,31 @@
 					}
 				);
 			}, 
+			
+			// 加载完隐患详情后把照片加到对应的List中
+			classifyPhotos: function(photoList) {
+				if (photoList == null) {
+					return;
+				}
+				for(var i = 0 ; i < photoList.length; i++) {
+					let item = photoList[i];
+					let photoModel = {
+						fileid: item.attid,
+						src: config.host + config.loadImage + '&attid=' + item.attid,
+						type: 2,
+						yhid: item.D6EFED153CBC4DB19DFC70FDC2F29C3A,
+						attachtype: item.attachtype
+					};
+					
+					if (photoModel.attachtype == 'fxwt') {// 属于隐患信息的照片
+						this.createImgList.push(photoModel);
+					}else if (photoModel.attachtype == 'zzwt') {// 属于整改情况的照片
+						this.changeImgList.push(photoModel);
+					}else if (photoModel.attachtype == 'yzwt') {// 属于整改确认的照片
+						this.confirmImgList.push(photoModel);
+					}
+				}
+			},
 			
 			/*通用方法相关*/
 			jumpInput: function(key, placeholder, text, editableState) {
@@ -401,6 +445,19 @@
 			// 浏览照片
 			viewPhoto(imgListName) {
 				photo.viewPhoto(this[imgListName])
+			},
+			// 上传照片
+			uploadPhoto (needBack = false, complete) {
+				var that = this;
+				let attachtype = that.getAttachtypeAndPhotoList().type;
+				let photoList = that.getAttachtypeAndPhotoList().photoList;
+				photo.uploadPhoto(that.userInfo.userid, that.model.recordid, attachtype, photoList, function(res){
+					uni.showToast({
+						icon: 'none',
+						title: '照片上传成功',
+					});
+					complete();
+				});
 			},
 			// 获取上传图片用的attachtype和照片列表
 			getAttachtypeAndPhotoList() {

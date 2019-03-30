@@ -40,6 +40,7 @@
     "pages": {
       "pages/danger/dangerList.html": {
         "window": {
+          "usingComponents": {},
           "navigationBarTitleText": "隐患列表",
           "titleNView": {
             "buttons": [
@@ -58,5 +59,6 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "SBPC-EHS"
+  "appname": "SBPC-EHS",
+  "compilerVersion": "1.8.0"
 }

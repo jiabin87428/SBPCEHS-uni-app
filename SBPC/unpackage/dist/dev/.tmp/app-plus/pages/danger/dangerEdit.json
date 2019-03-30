@@ -1,3 +1,13 @@
 {
-  "navigationBarTitleText": "隐患编辑"
+  "usingComponents": {},
+  "navigationBarTitleText": "隐患编辑",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "",
+        "fontSrc": "/static/aliIcon/iconfont.ttf",
+        "fontSize": "22px"
+      }
+    ]
+  }
 }

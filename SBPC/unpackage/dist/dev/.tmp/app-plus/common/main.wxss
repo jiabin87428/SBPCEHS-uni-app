@@ -106,7 +106,7 @@ page {
     margin-top: 50rpx;
     padding: 20rpx;
 }
-._button.primary {
+button.primary {
     background-color: #0faeff;
 }
 

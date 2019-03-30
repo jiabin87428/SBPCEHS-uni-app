@@ -115,8 +115,6 @@ const uploadPhoto = function(userid, zpsgrecordid, attachtype, photoList, comple
 
 // 上传图片
 const uploadImage = function(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {
-	console.log('url:' + url);
-	console.log('filePaths:' + JSON.stringify(filePaths));
 	uni.uploadFile({
 	  url: config.host + url,
 	  filePath: filePaths[i],
@@ -142,9 +140,8 @@ const uploadImage = function(url, filePaths, successUp, failUp, i, length, succe
 				if (completeFun != null) {
 					completeFun('200');
 				}
-			}
-			else {  //递归调用uploadImage函数
-				this.uploadImage(url,filePaths, successUp, failUp, i, length, successFun, completeFun);
+			}else {  //递归调用uploadImage函数
+				uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun);
 			}
 	  },
 	});

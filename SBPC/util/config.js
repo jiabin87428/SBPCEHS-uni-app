@@ -31,7 +31,9 @@ var config = {
 	getPersonList: '/mobile/getUser.do?action=getUserList ',
 	
 	// 上传照片
-	uploadImage: '/uploadImg.do'
+	uploadImage: '/uploadImg',
+	// 加载照片
+	loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',
 	
 };
 //对外把对象config返回

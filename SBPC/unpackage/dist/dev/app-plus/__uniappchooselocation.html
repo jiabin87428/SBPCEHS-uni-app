@@ -307,7 +307,6 @@
       var serviceWebview;
       var back = function() {
         var webview = plus.webview.currentWebview()
-        console.log('webview.__uniapp_statusbar_style:::' + webview.__uniapp_statusbar_style)
         if (webview.__uniapp_statusbar_style === 'dark') {
           plus.navigator.setStatusBarStyle('dark')
         }
@@ -444,8 +443,6 @@
                 return;
               }
             }
-            console.log('onstatuschanged:centerPoint', centerPoint, evt
-              .center)
             centerPoint = evt.center
             if (nativeMarker) {
               nativeMarker.setPoint(centerPoint);
@@ -553,10 +550,6 @@
             } else {
               showSuggestionPoiNoResults();
             }
-            console.log(JSON.stringify({
-              state:state,
-              res:res
-            }));
           };
 
           searchNearbyPoi.onPoiSearchComplete = function(state, res) {
@@ -569,14 +562,12 @@
             } else {
               showNearbyPoiNoResults();
             }
-            console.log(state, res);
           };
 
           var getSuggestion = debounce(function(q) {
             if (q.trim()) {
               searchPoi.poiSearchNearBy(q, centerPoint, 50000)
             } else {
-              console.log('清空')
             }
           }, 10);
 

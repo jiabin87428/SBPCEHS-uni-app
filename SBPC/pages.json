@@ -42,7 +42,16 @@
         }, {
             "path": "pages/danger/dangerEdit",
             "style": {
-                "navigationBarTitleText": "隐患编辑"
+                "navigationBarTitleText": "隐患编辑",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue649",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				} 
             }
         }, {
             "path": "pages/common/inputPage",
