@@ -485,9 +485,9 @@
 					that.changeImgList = [];
 					that.confirmImgList = [];
 					that.classifyPhotos(photoListOnServer);
-					console.log('createImgList: ' + JSON.stringify(that.createImgList));
-					console.log('changeImgList: ' + JSON.stringify(that.changeImgList));
-					console.log('confirmImgList: ' + JSON.stringify(that.confirmImgList));
+// 					console.log('createImgList: ' + JSON.stringify(that.createImgList));
+// 					console.log('changeImgList: ' + JSON.stringify(that.changeImgList));
+// 					console.log('confirmImgList: ' + JSON.stringify(that.confirmImgList));
 					complete();
 				});
 			},
