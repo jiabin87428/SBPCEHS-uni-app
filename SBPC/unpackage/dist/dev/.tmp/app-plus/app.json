@@ -8,7 +8,8 @@
     "pages/danger/dangerEdit",
     "pages/common/inputPage",
     "pages/common/orgChoose",
-    "pages/common/personChoose"
+    "pages/common/personChoose",
+    "pages/danger/dangerLog"
   ],
   "subPackages": [],
   "window": {

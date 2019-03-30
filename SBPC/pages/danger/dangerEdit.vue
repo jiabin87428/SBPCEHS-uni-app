@@ -45,8 +45,8 @@
 			<view class="cellInfoView">
 				<uni-list>
 					<uni-list-item title="隐患因素" :subnote="model.rwhg" :show-arrow="pageState == 2 ? true : false" @click="alertSheetShow('rwhg', dangerReason, 2)"></uni-list-item>
-					<uni-list-item title="原因分析" :subnote="model.yyfx" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yyfx', '请输入原因分析', model.yyfx, 2)"></uni-list-item>
-					<uni-list-item title="整改情况" :subnote="model.yhzgqk" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yhzgqk', '请输入原因分析', model.yhzgqk, 2)"></uni-list-item>
+					<uni-list-item title="原因分析" :note="model.yyfx" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yyfx', '请输入原因分析', model.yyfx, 2)"></uni-list-item>
+					<uni-list-item title="整改情况" :note="model.yhzgqk" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yhzgqk', '请输入原因分析', model.yhzgqk, 2)"></uni-list-item>
 					<picker mode="date" :value="model.zgwcrq" @change="dateChange('zgwcrq', $event, 2)" :disabled="pageState == 2 ? false : true">
 						<uni-list-item title="完成日期" :subnote="model.zgwcrq" :show-arrow="pageState == 2 ? true : false"></uni-list-item>
 					</picker>
@@ -78,7 +78,7 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<uni-list-item title="完成情况" :subnote="model.yzqk" :show-arrow="pageState == 3 ? true : false" @click="jumpInput('yzqk', '请输入完成情况', model.yzqk, 3)"></uni-list-item>
+					<uni-list-item title="完成情况" :note="model.yzqk" :show-arrow="pageState == 3 ? true : false" @click="jumpInput('yzqk', '请输入完成情况', model.yzqk, 3)"></uni-list-item>
 					<uni-list-item title="确认人" :subnote="model.yzrmc" show-arrow="false"></uni-list-item>
 					<picker mode="date" :value="model.yzrtxrq" @change="dateChange('yzrtxrq', $event, 3)" :disabled="pageState == 3 ? false : true">
 						<uni-list-item title="填报日期" :subnote="model.yzrtxrq" :show-arrow="pageState == 3 ? true : false"></uni-list-item>
@@ -103,6 +103,11 @@
 				</view>
 			</view>
 		</block>
+		<view class="cellInfoView">
+			<uni-list>
+				<uni-list-item title="审批意见" :subnote="model.signature" :show-arrow="true" @click="opinionSheetShow('signature', changeOpinion)" v-if="model.signclass != ''"></uni-list-item>
+			</uni-list>
+		</view>
 		
 		<view class="btnView" v-if="pageState != 0">
 		    <button class="saveBtn" @tap="saveClick">保存</button>
@@ -166,6 +171,7 @@
 				dangerResult: dataConfig.dangerResult,
 				dangerType: dataConfig.dangerType,
 				dangerSource: dataConfig.dangerSource,
+				changeOpinion: dataConfig.changeOpinion,
 				
 				dangerReason: dataConfig.dangerReason,
 				
@@ -185,9 +191,11 @@
 			}
 		},
 		onNavigationBarButtonTap() {
-			uni.navigateTo({
-				url: "dangerLog?logList=" + JSON.stringify(this.model.logList)
-			})
+			if (this.model.logList != null) {
+				uni.navigateTo({
+					url: "dangerLog?logList=" + JSON.stringify(this.model.logList)
+				})
+			}
 		},
 		onUnload() {
 			var pages = getCurrentPages();
@@ -426,6 +434,23 @@
 				}
 				console.log('key:' + key + ",value:" + e.target.value);
 				this.model[key] = e.target.value
+			},
+			// 特殊的pickerChange，审批意见的选择
+			opinionSheetShow: function(key, list) {
+				var that = this;
+				uni.showActionSheet({
+					itemList: list,
+					success: function (res) {
+						if (res.tapIndex != 3) {
+							that.model[key] = list[res.tapIndex];
+						}else {
+							that.jumpInput(key, "请输入审批意见", that.model[key], that.pageState);
+						}
+					},
+					fail: function (res) {
+						// console.log(res.errMsg);
+					}
+				});
 			},
 			
 			// 添加照片

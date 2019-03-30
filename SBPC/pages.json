@@ -68,6 +68,11 @@
             "style": {
                 "navigationBarTitleText": "选择人员"
             }
+        }, {
+            "path": "pages/danger/dangerLog",
+            "style": {
+                "navigationBarTitleText": "日志"
+            }
         }
     ],
     "tabBar": {

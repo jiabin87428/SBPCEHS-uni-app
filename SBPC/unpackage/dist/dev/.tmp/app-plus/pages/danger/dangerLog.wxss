@@ -189,48 +189,4 @@
 	  width: 100%;
 	  height: 100%;
 }
-.btnView {
-	background-color: #FFFFFF;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	width: 100%;
-}
-.saveBtn {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	border-width: 1;
-	border-bottom-color: #F1F1F1;
-	border-top-color: #F1F1F1;
-	border-left-width: 0px;
-	border-right-width: 0px;
-	width: 100%;
-	height: 110rpx;
-	text-align: center;
-	margin-top: 20px;
-	margin-left: 5px;
-	margin-bottom: 20px;
-	margin-right: 5px;
-	font-size: 26rpx;
-}
 

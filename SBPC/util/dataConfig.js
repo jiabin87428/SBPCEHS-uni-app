@@ -11,6 +11,8 @@ var dataConfig = {
 	
 	// 隐患因素
 	dangerReason: ["人", "物", "环", "管"],
+	// 整改意见
+	changeOpinion: ["同意", "不同意", "已阅", "自行输入意见"],
 };
 //对外把对象config返回
 module.exports = dataConfig
