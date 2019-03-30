@@ -498,6 +498,8 @@ var config = {
 
   // 上传照片
   uploadImage: '/uploadImg',
+  // 删除照片
+  deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',
   // 加载照片
   loadImage: '/mobile/getYhzg.do?action=loadYhPhoto' };
 

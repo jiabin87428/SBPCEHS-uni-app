@@ -105,7 +105,7 @@
 		</block>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item title="审批意见" :subnote="model.signature" :show-arrow="true" @click="opinionSheetShow('signature', changeOpinion)" v-if="model.signclass != ''"></uni-list-item>
+				<uni-list-item title="审批意见" :subnote="model.signature" :show-arrow="true" @click="opinionSheetShow('signature', changeOpinion)" v-if="model.signclass != '' && model.signclass != null"></uni-list-item>
 			</uni-list>
 		</view>
 		
@@ -368,7 +368,7 @@
 						fileid: item.attid,
 						src: config.host + config.loadImage + '&attid=' + item.attid,
 						type: 2,
-						yhid: item.D6EFED153CBC4DB19DFC70FDC2F29C3A,
+						yhid: item.zpsgrecordid,
 						attachtype: item.attachtype
 					};
 					
@@ -476,11 +476,18 @@
 				var that = this;
 				let attachtype = that.getAttachtypeAndPhotoList().type;
 				let photoList = that.getAttachtypeAndPhotoList().photoList;
-				photo.uploadPhoto(that.userInfo.userid, that.model.recordid, attachtype, photoList, function(res){
+				photo.uploadPhoto(that.userInfo.userid, that.model.recordid, attachtype, photoList, function(photoListOnServer){
 					uni.showToast({
 						icon: 'none',
 						title: '照片上传成功',
 					});
+					that.createImgList = [];
+					that.changeImgList = [];
+					that.confirmImgList = [];
+					that.classifyPhotos(photoListOnServer);
+					console.log('createImgList: ' + JSON.stringify(that.createImgList));
+					console.log('changeImgList: ' + JSON.stringify(that.changeImgList));
+					console.log('confirmImgList: ' + JSON.stringify(that.confirmImgList));
 					complete();
 				});
 			},

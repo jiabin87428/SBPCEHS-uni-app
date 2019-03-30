@@ -33,15 +33,20 @@ const addPhoto = function(complete) {
 const deletePhoto = function(imgList, imgObj, index, complete) {
 	if (imgObj.src.startsWith('http:')) {// 网络图片
 		let param = {
-			from: 'jc',
-			yyid: '',
-			fileid: imgObj.fileid,
-			userid: ''
+// 			from: 'jc',
+// 			yyid: '',
+// 			fileid: imgObj.fileid,
+// 			userid: ''
+			attid: imgObj.fileid,
 		};
-		request.requestLoading(config.deleteImage, param, '正在删除图片', 
+		deleteImage(config.deleteImage, param, '正在删除图片', 
 			function(res){
 				imgList.splice(index,1);
 				complete(imgList);
+				uni.showToast({
+					icon: 'none',
+					title: '删除成功'
+				});
 			},function(){
 				uni.showToast({
 					icon: 'none',
@@ -72,7 +77,7 @@ const viewPhoto = function(imgList) {
 	});
 }
 
-/*
+/* 上传照片接口
  * userid：			用户id
  * zpsgrecordid：	对应的隐患id
  * attachtype：		不同阶段的照片：fxwt-新建隐患，zzwt-整改阶段，yzwt-验证阶段
@@ -91,7 +96,7 @@ const uploadPhoto = function(userid, zpsgrecordid, attachtype, photoList, comple
 	}
 	
 	if(imgList.length == 0) {
-		complete();
+		complete([]);
 		return;
 	}
 	uni.showLoading({
@@ -102,19 +107,21 @@ const uploadPhoto = function(userid, zpsgrecordid, attachtype, photoList, comple
 // 		let data = JSON.parse(res.data);
 // 		let fj = data.fj;
 // 		that.fj = fj;
-	}, function(result){
+	}, function(res){
+		let resJson = JSON.parse(res);
 		uni.hideLoading();
-		if (result == '200') {
+		if (resJson.repCode == '200') {
 			uni.showToast({
 			  title: '上传成功',
 			})
-			complete();
+			complete(resJson.zplist);
 		}
 	});
 }
 
-// 上传图片
+// 上传图片方法
 const uploadImage = function(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {
+	var lastSuccessRes = null;
 	uni.uploadFile({
 	  url: config.host + url,
 	  filePath: filePaths[i],
@@ -124,6 +131,7 @@ const uploadImage = function(url, filePaths, successUp, failUp, i, length, succe
 	  },
 	  success: (resp) => {
 			successUp++;
+			lastSuccessRes = resp.data;
 			successFun(resp);
 	  },
 	  fail: (res) => {
@@ -138,13 +146,56 @@ const uploadImage = function(url, filePaths, successUp, failUp, i, length, succe
 					duration: 2000
 				})
 				if (completeFun != null) {
-					completeFun('200');
+					// completeFun('200');
+					if (lastSuccessRes != null) {
+						completeFun(lastSuccessRes);
+					}
 				}
 			}else {  //递归调用uploadImage函数
 				uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun);
 			}
 	  },
 	});
+}
+
+// 删除图片方法
+const deleteImage = function(url, params, message, success, fail, complete) {
+	if (message != "") {
+		  uni.showLoading({
+		  	title: message,
+		  });
+		}
+		console.log('删除照片url' + config.host + url)
+		uni.request({
+				url: config.host + url, 
+				data: params,
+				header: {
+						'Content-type': 'application/x-www-form-urlencoded'
+				},
+				method: 'POST',
+				success: (res) => {
+						if (message != "") {
+						  uni.hideLoading()
+						}
+					if (res.data.repCode == '200') {
+						success(res.data)
+					} else {
+						fail()
+					}
+				},
+				fail:(res) => {
+					if (message != "") {
+					  uni.hideLoading()  
+					}
+					fail()
+				},
+				complete:() => {
+					if (message != "") {
+					  uni.hideLoading()
+					}
+					complete()
+				}
+		});
 }
 
 export default {

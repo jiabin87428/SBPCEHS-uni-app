@@ -7,7 +7,7 @@
 
 <template name="5c0aa864-default-5c0aa864-18"><template title="完成情况" bindtap="handleProxy" data-eventid="{{'5c0aa864-17'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'5c0aa864-15'],$root}}" is="30c48a99"></template><template title="确认人" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'5c0aa864-16'],$root}}" is="30c48a99"></template><picker mode="date" value="{{model.yzrtxrq}}" bindchange="handleProxy" disabled="{{pageState == 3 ? false : true}}" data-eventid="{{'5c0aa864-18'}}" data-comkey="{{$k}}" class="_picker 5c0aa864"><template title="填报日期" data="{{...$root['0'], ...$root[$kk+'5c0aa864-17'],$root}}" is="30c48a99"></template></picker></template>
 
-<template name="5c0aa864-default-5c0aa864-20"><template title="审批意见" bindtap="handleProxy" wx:if="{{model.signclass != ''}}" data-eventid="{{'5c0aa864-22'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'5c0aa864-19'],$root}}" is="30c48a99"></template></template>
+<template name="5c0aa864-default-5c0aa864-20"><template title="审批意见" bindtap="handleProxy" wx:if="{{model.signclass != '' && model.signclass != null}}" data-eventid="{{'5c0aa864-22'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'5c0aa864-19'],$root}}" is="30c48a99"></template></template>
 
 <template name="4508b5aa-default-4508b5aa-1"><block wx:key="idx" key="{{idx}}" wx:for="{{logList}}" wx:for-index="idx" wx:for-item="logItem"><template data="{{...$root['0'], ...$root[$kk+'4508b5aa-0-'+idx],$root}}" is="30c48a99"></template></block></template>
 
