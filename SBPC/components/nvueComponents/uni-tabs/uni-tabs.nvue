@@ -31,7 +31,7 @@
 							'class': vnode.data['class'],
 							style: vnode.data.style
 						}, vnode.componentOptions.children)
-
+						
 						if (!newVNode.data) {
 							newVNode.data = Object.create(null)
 						}

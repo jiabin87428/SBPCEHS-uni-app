@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="baseView">
         <uni-tabs @change="changeTab" :index="tabIndex">
             <uni-tab-bar :drag="false" :tab-bars="tabBars" :tab-index="tabIndex"></uni-tab-bar>
             <uni-tab-content>
@@ -16,6 +16,9 @@
                 </list> 
             </uni-tab-content>
         </uni-tabs>
+		<div class="bottomBtnView" @click="newCheck">
+			<text class="bottomBtnText">新增检查</text>
+		</div>
     </div>
 </template>
 
@@ -49,14 +52,14 @@
                 tabIndex: 0,
                 newsitems: [],
                 tabBars: [{
-                    name: '待处理',
-					action: 'getMyYhList',
+                    name: '待检查',
+					action: 'getMyJcList',
                 },{
-                    name: '整改中',
-					action: 'getZgzyhList',
+                    name: '待整改',
+					action: 'getDzgJcList',
                 }, {
-                    name: '已整改',
-					action: 'getYzgyhList',
+                    name: '已完成',
+					action: 'getYwcJcList',
                 }],
             }
         },
@@ -76,28 +79,22 @@
 				that.onrefresh(that.tabIndex);
 			}, 50)
 			uni.onNavigationBarButtonTap((e) => {
-				uni.navigateTo({
-					url: 'dangerEdit'
-				});
+				
 			})
-			
-			globalEvent.addEventListener("plusMessage", e => {
-                if (e.data.refreshCode) {
-					// 处理完隐患返回列表页刷新暂时遇到问题，刷新完成后，上拉加载更多没反应，先搁置
-// 					setTimeout(() => {
-// 					    that.newsitems = that.randomfn();
-// 						that.onrefresh(that.tabIndex);
-// 					}, 50)
-                }
-            });
 		},
         methods: {
-			// 获取隐患详情
+			// 新建检查
+			newCheck() {
+				uni.navigateTo({
+					url:'checkEdit'
+				});
+			},
+			// 获取检查详情
             goDetail(item) {
 				var that = this;
 				//跳转到详情页面
 				uni.navigateTo({
-					url:'dangerEdit?instanceid='+item.instanceid + '&recordid=' + item.recordid
+					url:'checkEdit?instanceid='+item.instanceid + '&recordid=' + item.recordid
 				});
             },
             close(index1, index2) {
@@ -191,7 +188,7 @@
 				if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
 					that.newsitems[index].loadingText = '正在加载...';
 				}
-				request.requestLoading(config.getDangerList, data, '正在加载', function(res){
+				request.requestLoading(config.getCheckList, data, '正在加载', function(res){
 // 						uni.showToast({
 // 							icon: 'success',
 // 							title: '获取数据成功'
@@ -225,6 +222,9 @@
 </script>
 
 <style>
+	.baseView {
+		padding-bottom: 110px;
+	}
     .tab-bar-item {
         width: 150px;
         height: 100px;
@@ -315,5 +315,26 @@
 	.submitText {
 		font-size: 28px;
 		color: #FFFFFF;
+	}
+	
+	.bottomBtnView {
+		width: 750px;
+		height: 110px;
+		background-color: #3296FA;
+		position: fixed;
+		bottom: 0px;
+		overflow: hidden;
+		text-align: center;
+		line-height: 110px;
+		color: #FFFFFF;
+		font-size: 32px;
+	}
+	.bottomBtnText {
+		width: 750px;
+		height: 110px;
+		line-height: 110px;
+	    text-align: center;
+	    font-size: 30px;
+	    color: #FFFFFF;
 	}
 </style>

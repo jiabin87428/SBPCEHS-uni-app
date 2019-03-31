@@ -20,7 +20,7 @@
 			<text class="titleText_pc">目标职责</text>
 		</view> -->
 		<view class="menuBlockView">
-		  <view class='dangerView' @tap="jumpPage('')">
+		  <view class='dangerView' @tap="jumpPage('../check/checkList')">
 			<image class="dangerIcon" src="../../static/assets/jc.png" mode="widthFix"></image>
 			<view class='subView'>
 			  <text class='dangerText'>检查</text>

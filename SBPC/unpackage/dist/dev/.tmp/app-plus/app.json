@@ -9,7 +9,8 @@
     "pages/common/inputPage",
     "pages/common/orgChoose",
     "pages/common/personChoose",
-    "pages/danger/dangerLog"
+    "pages/danger/dangerLog",
+    "pages/check/checkEdit"
   ],
   "subPackages": [],
   "window": {
@@ -39,6 +40,21 @@
   },
   "nvue": {
     "pages": {
+      "pages/check/checkList.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "检查列表",
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "",
+                "fontSrc": "/static/aliIcon/iconfont.ttf",
+                "fontSize": "22px"
+              }
+            ]
+          }
+        }
+      },
       "pages/danger/dangerList.html": {
         "window": {
           "usingComponents": {},
@@ -61,5 +77,5 @@
     "autoclose": false
   },
   "appname": "SBPC-EHS",
-  "compilerVersion": "1.8.0"
+  "compilerVersion": "1.8.1"
 }

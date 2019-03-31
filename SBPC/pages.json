@@ -73,6 +73,25 @@
             "style": {
                 "navigationBarTitleText": "日志"
             }
+        }, {
+            "path": "pages/check/checkList",
+            "style": {
+                "navigationBarTitleText": "检查列表",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue647",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				} 
+            }
+        }, {
+            "path": "pages/check/checkEdit",
+            "style": {
+                "navigationBarTitleText": "检查编辑"
+            }
         }
     ],
     "tabBar": {

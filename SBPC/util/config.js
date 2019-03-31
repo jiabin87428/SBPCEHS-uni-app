@@ -14,6 +14,7 @@ var config = {
 	// 登录
 	login: '/mobile/system/login.do',
 
+	/*隐患相关*/
 	// 获取隐患列表
 	getDangerList: '/mobile/getYhzg.do',
 	// 获取隐患详情
@@ -25,11 +26,15 @@ var config = {
 	// 选择完流转目标后继续流转
 	flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',
 	
+	/*检查相关*/
+	// 获取检查列表
+	getCheckList: '/mobile/getAqjc.do',
+	
+	/*通用接口*/
 	// 获取部门
 	getOrgList: '/mobile/getUser.do?action=getOrgList ',
 	// 获取人员
 	getPersonList: '/mobile/getUser.do?action=getUserList ',
-	
 	// 上传照片
 	uploadImage: '/uploadImg',
 	// 删除照片
