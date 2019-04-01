@@ -495,6 +495,8 @@ var config = {
   /*检查相关*/
   // 获取检查列表
   getCheckList: '/mobile/getAqjc.do',
+  // 获取检查类型
+  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',
 
   /*通用接口*/
   // 获取部门
