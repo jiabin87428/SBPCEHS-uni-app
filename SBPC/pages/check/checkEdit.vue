@@ -8,6 +8,11 @@
 				<picker id="jclx" @change="pickerChange(checkTypes, $event)" v-bind:range="checkTypes" range-key="dictvalue">
 					<uni-list-item title="检查类型" :subnote="model.jclx.dictvalue" :show-arrow="true"></uni-list-item>
 				</picker>
+				<uni-list-item title="检查人" :note="model.jcr" show-arrow="false"></uni-list-item>
+				<picker mode="date" :value="model.jcrq" @change="dateChange('jcrq', $event)">
+					<uni-list-item title="检查日期" :subnote="model.jcrq" :show-arrow="true"></uni-list-item>
+				</picker>
+				<uni-list-item title="检查组成员" :subnote="model.qtcy" :show-arrow="true" @click="jumpPersonChoose('zrbm', 1)"></uni-list-item>
 			</uni-list>
 		</view>
 	</view>
@@ -33,6 +38,11 @@
 			return {
 				model: {
 					jclx: '',
+					llrid: '',
+					llrmc: '',
+					jcrq: '',
+					qtcyid: '',
+					qtcy: '',
 				},
 				
 				// 页面状态，0-新建 1-编辑
@@ -40,6 +50,7 @@
 				
 				// 数据源
 				checkTypes:[],
+				selectedPersons: [],
 			}
 		},
 		onLoad(option) {
@@ -81,7 +92,35 @@
 			pickerChange: function(data, e) {
 				this.model[e.target.id] = data[e.target.value];
 			},
-			
+			dateChange: function(key, e, editableState) {
+				if(this.pageState != editableState) {
+					return
+				}
+				this.model[key] = e.target.value
+			},
+			jumpPersonChoose: function() {
+				var that = this;
+				let key = "CHECK_PERSONS"
+				uni.navigateTo({
+					url: "../common/personChoose?key=" + key + "&mltiple=true" + "&selected=" + JSON.stringify(this.selectedPersons)
+				})
+				that.$fire.once(key, personList=>{
+					that.selectedPersons = personList;
+					that.formatPersons();
+				});
+			},
+			// 格式化检查组成员，变成接口需要的用；隔开的字符串
+			formatPersons: function() {
+				var qtcyid = "";
+				var qtcy = "";
+				for(var i = 0 ; i < this.selectedPersons.length; i++) {
+					let person = this.selectedPersons[i];
+					qtcyid = person.id + ";" + qtcyid;
+					qtcy = person.name + ";" + qtcy;
+				}
+				this.model.qtcy = qtcy;
+				this.model.qtcyid = qtcyid;
+			},
 		}
 	}
 </script>

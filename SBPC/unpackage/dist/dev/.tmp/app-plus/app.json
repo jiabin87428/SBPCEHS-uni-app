@@ -10,7 +10,8 @@
     "pages/common/orgChoose",
     "pages/common/personChoose",
     "pages/danger/dangerLog",
-    "pages/check/checkEdit"
+    "pages/check/checkEdit",
+    "pages/common/selectedPersonPage"
   ],
   "subPackages": [],
   "window": {
@@ -77,5 +78,5 @@
     "autoclose": false
   },
   "appname": "SBPC-EHS",
-  "compilerVersion": "1.8.1"
+  "compilerVersion": "1.8.2"
 }

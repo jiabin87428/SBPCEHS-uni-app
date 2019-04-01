@@ -1,0 +1,13 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "已选成员",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "",
+        "fontSrc": "/static/aliIcon/iconfont.ttf",
+        "fontSize": "22px"
+      }
+    ]
+  }
+}

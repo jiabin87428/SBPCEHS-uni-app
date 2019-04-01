@@ -11,7 +11,7 @@ var __WXML_GLOBAL__ = {
 };
 var $gwx;
 
-/*v0.5vv_20181116_syb_scopedata*/window.__wcc_version__='v0.5vv_20181116_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/window.__wcc_version__='v0.5vv_20181221_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -651,34 +651,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1064,146 +1062,165 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'5c0aa864-default-5c0aa864-8'])
-Z([3,'handleProxy'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z([[7],[3,'$k']])
-Z([1,'5c0aa864-0'])
-Z([3,'30c48a99'])
-Z([3,'隐患描述'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-1'])
-Z(z[5])
-Z([3,'隐患等级'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-2'])
-Z(z[5])
-Z([3,'隐患后果'])
-Z(z[1])
-Z([3,'_picker 5c0aa864'])
-Z(z[3])
-Z([1,'5c0aa864-3'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
-Z([3,'yhlx'])
-Z([[7],[3,'dangerType']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'隐患类型'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
-Z([1,'5c0aa864-4'])
-Z(z[23])
-Z([3,'date'])
-Z([[6],[[7],[3,'model']],[3,'zgqx']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'整改期限'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
-Z([1,'5c0aa864-5'])
-Z(z[23])
-Z([3,'yhly'])
-Z([[7],[3,'dangerSource']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'隐患来源'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-6'])
-Z(z[5])
-Z([3,'责任部门'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'false'])
-Z([3,'发起人'])
-Z([3,'5c0aa864-default-5c0aa864-14'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-10'])
-Z(z[5])
-Z([3,'隐患因素'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-11'])
-Z(z[5])
-Z([3,'原因分析'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-12'])
-Z(z[5])
-Z([3,'整改情况'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
-Z([1,'5c0aa864-13'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
-Z(z[34])
-Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'完成日期'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
-Z([3,'整改人'])
-Z([3,'5c0aa864-default-5c0aa864-18'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-17'])
-Z(z[5])
-Z([3,'完成情况'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
-Z([3,'确认人'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
-Z([1,'5c0aa864-18'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
-Z(z[34])
-Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'填报日期'])
-Z([3,'5c0aa864-default-5c0aa864-20'])
-Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-22'])
-Z(z[5])
-Z([3,'审批意见'])
 Z([3,'4508b5aa-default-4508b5aa-1'])
 Z([3,'idx'])
 Z([3,'logItem'])
 Z([[7],[3,'logList']])
-Z(z[122])
+Z(z[1])
 Z([[7],[3,'idx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'609973d6-default-609973d6-1'])
-Z(z[1])
+Z([3,'30c48a99'])
+Z([3,'609973d6-default-609973d6-4'])
+Z([3,'handleProxy'])
 Z([3,'_picker 609973d6'])
-Z(z[3])
+Z([[7],[3,'$k']])
 Z([1,'609973d6-0'])
 Z([3,'jclx'])
 Z([[7],[3,'checkTypes']])
 Z([3,'dictvalue'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'检查类型'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'false'])
+Z([3,'检查人'])
+Z(z[9])
+Z(z[10])
+Z(z[11])
+Z([1,'609973d6-1'])
+Z([3,'date'])
+Z([[6],[[7],[3,'model']],[3,'jcrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'检查日期'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'609973d6-2'])
+Z(z[7])
+Z([3,'检查组成员'])
+Z([3,'5c0aa864-default-5c0aa864-8'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-0'])
+Z(z[7])
+Z([3,'隐患描述'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-1'])
+Z(z[7])
+Z([3,'隐患等级'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-2'])
+Z(z[7])
+Z([3,'隐患后果'])
+Z(z[9])
+Z([3,'_picker 5c0aa864'])
+Z(z[11])
+Z([1,'5c0aa864-3'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
+Z([3,'yhlx'])
+Z([[7],[3,'dangerType']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'隐患类型'])
+Z(z[9])
+Z(z[58])
+Z(z[11])
+Z([1,'5c0aa864-4'])
+Z(z[61])
+Z(z[27])
+Z([[6],[[7],[3,'model']],[3,'zgqx']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'整改期限'])
+Z(z[9])
+Z(z[58])
+Z(z[11])
+Z([1,'5c0aa864-5'])
+Z(z[61])
+Z([3,'yhly'])
+Z([[7],[3,'dangerSource']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'隐患来源'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-6'])
+Z(z[7])
+Z([3,'责任部门'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z(z[21])
+Z([3,'发起人'])
+Z([3,'5c0aa864-default-5c0aa864-14'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-10'])
+Z(z[7])
+Z([3,'隐患因素'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-11'])
+Z(z[7])
+Z([3,'原因分析'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-12'])
+Z(z[7])
+Z([3,'整改情况'])
+Z(z[9])
+Z(z[58])
+Z(z[11])
+Z([1,'5c0aa864-13'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
+Z(z[27])
+Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'完成日期'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z(z[21])
+Z([3,'整改人'])
+Z([3,'5c0aa864-default-5c0aa864-18'])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-17'])
+Z(z[7])
+Z([3,'完成情况'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z(z[21])
+Z([3,'确认人'])
+Z(z[9])
+Z(z[58])
+Z(z[11])
+Z([1,'5c0aa864-18'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
+Z(z[27])
+Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'填报日期'])
+Z([3,'5c0aa864-default-5c0aa864-20'])
+Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'5c0aa864-22'])
+Z(z[7])
+Z([3,'审批意见'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1350,7 +1367,7 @@ Z([3,'_view 609973d6 cellTitleView'])
 Z([3,'_text 609973d6 cellTitle'])
 Z([3,'基础信息'])
 Z([3,'_view 609973d6 cellInfoView'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'609973d6-default-609973d6-1']]])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'609973d6-default-609973d6-4']]])
 Z([3,'3b6bb3ad'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
@@ -1447,22 +1464,37 @@ __WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'16742adb'])
 Z([3,'_view 16742adb baseView'])
+Z([3,'_scroll-view 16742adb personScrollView'])
+Z([3,'true'])
 Z([3,'index'])
 Z([3,'obj'])
 Z([[7],[3,'personList']])
-Z(z[2])
+Z(z[4])
 Z([[7],[3,'index']])
 Z([3,'_view 16742adb cellBaseView_Row'])
+Z([[2,'&&'],[[2,'&&'],[[2,'=='],[[7],[3,'mltiple']],[1,true]],[[2,'=='],[[6],[[7],[3,'obj']],[3,'selected']],[1,true]]],[[2,'=='],[[6],[[7],[3,'obj']],[3,'isUser']],[1,'Y']]])
+Z([3,'_image 16742adb selectedImg'])
+Z([3,'../../static/assets/selected.png'])
+Z([[2,'&&'],[[2,'&&'],[[2,'=='],[[7],[3,'mltiple']],[1,true]],[[2,'=='],[[6],[[7],[3,'obj']],[3,'isUser']],[1,'Y']]],[[2,'||'],[[2,'=='],[[6],[[7],[3,'obj']],[3,'selected']],[1,false]],[[2,'=='],[[6],[[7],[3,'obj']],[3,'selected']],[1,null]]]])
+Z([3,'_image 16742adb unSelectedImg'])
+Z([3,'../../static/assets/unselected.png'])
+Z([[2,'=='],[[7],[3,'mltiple']],[1,false]])
 Z([3,'handleProxy'])
 Z([3,'_view 16742adb orgName'])
 Z([[7],[3,'$k']])
 Z([[2,'+'],[1,'16742adb-0-'],[[7],[3,'index']]])
 Z([a,[[6],[[7],[3,'obj']],[3,'name']]])
-Z([[2,'=='],[[6],[[7],[3,'obj']],[3,'isUser']],[1,'N']])
-Z(z[8])
-Z([3,'_view 16742adb nextLevelView'])
-Z(z[10])
+Z([[2,'=='],[[7],[3,'mltiple']],[1,true]])
+Z(z[17])
+Z(z[18])
+Z(z[19])
 Z([[2,'+'],[1,'16742adb-1-'],[[7],[3,'index']]])
+Z([a,z[21][1]])
+Z([[2,'=='],[[6],[[7],[3,'obj']],[3,'isUser']],[1,'N']])
+Z(z[17])
+Z([3,'_view 16742adb nextLevelView'])
+Z(z[19])
+Z([[2,'+'],[1,'16742adb-2-'],[[7],[3,'index']]])
 Z([3,'_view 16742adb columnLine'])
 Z([3,'_image 16742adb levelImg'])
 Z([3,'aspectFit'])
@@ -1471,7 +1503,16 @@ Z([3,'_view 16742adb nextLevel'])
 Z([3,'下级'])
 Z([3,'_view 16742adb cellLine'])
 Z([[2,'=='],[[7],[3,'mltiple']],[1,true]])
-Z([3,'_view 16742adb coverBottomView'])
+Z([3,'_view 16742adb bottomView'])
+Z(z[17])
+Z([3,'_text 16742adb hasChoose'])
+Z(z[19])
+Z([1,'16742adb-3'])
+Z([a,[3,'已选择:'],[[6],[[7],[3,'selectedList']],[3,'length']],[3,'人']])
+Z(z[17])
+Z([3,'_view 16742adb confirmButtom'])
+Z(z[19])
+Z([1,'16742adb-4'])
 Z([3,'确定'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
@@ -1486,6 +1527,40 @@ Z([3,'16742adb'])
 function gz$gwx_16(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
 __WXML_GLOBAL__.ops_cached.$gwx_16=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'23e0c24e'])
+Z([3,'_view 23e0c24e baseView'])
+Z([3,'index'])
+Z([3,'obj'])
+Z([[7],[3,'selectedList']])
+Z(z[2])
+Z([[7],[3,'index']])
+Z([3,'_view 23e0c24e cellBaseView_Row'])
+Z([3,'_view 23e0c24e cellTextView'])
+Z([3,'_text 23e0c24e titleLabel'])
+Z([a,[[6],[[7],[3,'obj']],[3,'name']]])
+Z([3,'_text 23e0c24e subTitleLabel'])
+Z([a,[[6],[[7],[3,'obj']],[3,'orgName']]])
+Z([3,'handleProxy'])
+Z([3,'_image 23e0c24e deleteImg'])
+Z([[7],[3,'$k']])
+Z([[2,'+'],[1,'23e0c24e-0-'],[[7],[3,'index']]])
+Z([3,'aspectFit'])
+Z([3,'../../static/assets/delete_gray.png'])
+Z([3,'_view 23e0c24e cellLine'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
+}
+function gz$gwx_17(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_17)return __WXML_GLOBAL__.ops_cached.$gwx_17
+__WXML_GLOBAL__.ops_cached.$gwx_17=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'23e0c24e'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
+}
+function gz$gwx_18(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
+__WXML_GLOBAL__.ops_cached.$gwx_18=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'5c0aa864'])
 Z([3,'_view 5c0aa864 baseView'])
@@ -1648,26 +1723,6 @@ Z(z[147])
 Z(z[30])
 Z([[2,'+'],[1,'5c0aa864-24-'],[[7],[3,'index']]])
 Z([a,[[6],[[7],[3,'btnObj']],[3,'operationname']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
-}
-function gz$gwx_17(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_17)return __WXML_GLOBAL__.ops_cached.$gwx_17
-__WXML_GLOBAL__.ops_cached.$gwx_17=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'5c0aa864'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
-}
-function gz$gwx_18(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
-__WXML_GLOBAL__.ops_cached.$gwx_18=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'4508b5aa'])
-Z([3,'_view 4508b5aa baseView'])
-Z([3,'baseView'])
-Z([3,'_view 4508b5aa cellInfoView'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'4508b5aa-default-4508b5aa-1']]])
-Z([3,'3b6bb3ad'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
 }
 function gz$gwx_19(){
@@ -1675,12 +1730,32 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
 __WXML_GLOBAL__.ops_cached.$gwx_19=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'4508b5aa'])
+Z([3,'5c0aa864'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
 }
 function gz$gwx_20(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
 __WXML_GLOBAL__.ops_cached.$gwx_20=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'4508b5aa'])
+Z([3,'_view 4508b5aa baseView'])
+Z([3,'baseView'])
+Z([3,'_view 4508b5aa cellInfoView'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'4508b5aa-default-4508b5aa-1']]])
+Z([3,'3b6bb3ad'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
+}
+function gz$gwx_21(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_21)return __WXML_GLOBAL__.ops_cached.$gwx_21
+__WXML_GLOBAL__.ops_cached.$gwx_21=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'4508b5aa'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
+}
+function gz$gwx_22(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
+__WXML_GLOBAL__.ops_cached.$gwx_22=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'2d8d4fae'])
 Z([3,'_view 2d8d4fae content'])
@@ -1714,19 +1789,19 @@ Z(z[8])
 Z([1,'2d8d4fae-2'])
 Z([3,'primary'])
 Z([3,'登录'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
+})(__WXML_GLOBAL__.ops_cached.$gwx_22);return __WXML_GLOBAL__.ops_cached.$gwx_22
 }
-function gz$gwx_21(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_21)return __WXML_GLOBAL__.ops_cached.$gwx_21
-__WXML_GLOBAL__.ops_cached.$gwx_21=[];
+function gz$gwx_23(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_23)return __WXML_GLOBAL__.ops_cached.$gwx_23
+__WXML_GLOBAL__.ops_cached.$gwx_23=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'2d8d4fae'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
+})(__WXML_GLOBAL__.ops_cached.$gwx_23);return __WXML_GLOBAL__.ops_cached.$gwx_23
 }
-function gz$gwx_22(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
-__WXML_GLOBAL__.ops_cached.$gwx_22=[];
+function gz$gwx_24(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_24)return __WXML_GLOBAL__.ops_cached.$gwx_24
+__WXML_GLOBAL__.ops_cached.$gwx_24=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'00cb397a'])
 Z([3,'_view 00cb397a baseView'])
@@ -1784,19 +1859,19 @@ Z([3,'../../static/assets/tj.png'])
 Z(z[33])
 Z(z[34])
 Z([3,'统计'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_22);return __WXML_GLOBAL__.ops_cached.$gwx_22
+})(__WXML_GLOBAL__.ops_cached.$gwx_24);return __WXML_GLOBAL__.ops_cached.$gwx_24
 }
-function gz$gwx_23(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_23)return __WXML_GLOBAL__.ops_cached.$gwx_23
-__WXML_GLOBAL__.ops_cached.$gwx_23=[];
+function gz$gwx_25(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_25)return __WXML_GLOBAL__.ops_cached.$gwx_25
+__WXML_GLOBAL__.ops_cached.$gwx_25=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'00cb397a'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_23);return __WXML_GLOBAL__.ops_cached.$gwx_23
+})(__WXML_GLOBAL__.ops_cached.$gwx_25);return __WXML_GLOBAL__.ops_cached.$gwx_25
 }
-function gz$gwx_24(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_24)return __WXML_GLOBAL__.ops_cached.$gwx_24
-__WXML_GLOBAL__.ops_cached.$gwx_24=[];
+function gz$gwx_26(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_26)return __WXML_GLOBAL__.ops_cached.$gwx_26
+__WXML_GLOBAL__.ops_cached.$gwx_26=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'6cbf6956'])
 Z([3,'_view 6cbf6956 content'])
@@ -1819,19 +1894,19 @@ Z(z[8])
 Z([1,'6cbf6956-1'])
 Z([3,'primary'])
 Z([3,'提交'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_24);return __WXML_GLOBAL__.ops_cached.$gwx_24
+})(__WXML_GLOBAL__.ops_cached.$gwx_26);return __WXML_GLOBAL__.ops_cached.$gwx_26
 }
-function gz$gwx_25(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_25)return __WXML_GLOBAL__.ops_cached.$gwx_25
-__WXML_GLOBAL__.ops_cached.$gwx_25=[];
+function gz$gwx_27(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_27)return __WXML_GLOBAL__.ops_cached.$gwx_27
+__WXML_GLOBAL__.ops_cached.$gwx_27=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'6cbf6956'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_25);return __WXML_GLOBAL__.ops_cached.$gwx_25
+})(__WXML_GLOBAL__.ops_cached.$gwx_27);return __WXML_GLOBAL__.ops_cached.$gwx_27
 }
-function gz$gwx_26(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_26)return __WXML_GLOBAL__.ops_cached.$gwx_26
-__WXML_GLOBAL__.ops_cached.$gwx_26=[];
+function gz$gwx_28(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_28)return __WXML_GLOBAL__.ops_cached.$gwx_28
+__WXML_GLOBAL__.ops_cached.$gwx_28=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'90021ef8'])
 Z([3,'_view 90021ef8 content'])
@@ -1876,19 +1951,19 @@ Z(z[8])
 Z([1,'90021ef8-3'])
 Z([3,'primary'])
 Z([3,'注册'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_26);return __WXML_GLOBAL__.ops_cached.$gwx_26
+})(__WXML_GLOBAL__.ops_cached.$gwx_28);return __WXML_GLOBAL__.ops_cached.$gwx_28
 }
-function gz$gwx_27(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_27)return __WXML_GLOBAL__.ops_cached.$gwx_27
-__WXML_GLOBAL__.ops_cached.$gwx_27=[];
+function gz$gwx_29(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_29)return __WXML_GLOBAL__.ops_cached.$gwx_29
+__WXML_GLOBAL__.ops_cached.$gwx_29=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'90021ef8'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_27);return __WXML_GLOBAL__.ops_cached.$gwx_27
+})(__WXML_GLOBAL__.ops_cached.$gwx_29);return __WXML_GLOBAL__.ops_cached.$gwx_29
 }
-function gz$gwx_28(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_28)return __WXML_GLOBAL__.ops_cached.$gwx_28
-__WXML_GLOBAL__.ops_cached.$gwx_28=[];
+function gz$gwx_30(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_30)return __WXML_GLOBAL__.ops_cached.$gwx_30
+__WXML_GLOBAL__.ops_cached.$gwx_30=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'240234ba'])
 Z([3,'_view 240234ba content'])
@@ -1907,21 +1982,140 @@ Z(z[6])
 Z([1,'240234ba-1'])
 Z([3,'default'])
 Z([3,'退出登录'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_28);return __WXML_GLOBAL__.ops_cached.$gwx_28
+})(__WXML_GLOBAL__.ops_cached.$gwx_30);return __WXML_GLOBAL__.ops_cached.$gwx_30
 }
-function gz$gwx_29(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_29)return __WXML_GLOBAL__.ops_cached.$gwx_29
-__WXML_GLOBAL__.ops_cached.$gwx_29=[];
+function gz$gwx_31(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_31)return __WXML_GLOBAL__.ops_cached.$gwx_31
+__WXML_GLOBAL__.ops_cached.$gwx_31=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'240234ba'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_29);return __WXML_GLOBAL__.ops_cached.$gwx_29
+})(__WXML_GLOBAL__.ops_cached.$gwx_31);return __WXML_GLOBAL__.ops_cached.$gwx_31
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':4508b5aa-default-4508b5aa-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:4:47")
+var xC=function(fE,oD,cF,gg){
+cs.push("./common/slots.wxml:block:4:47")
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:4:143")
+var cI=_oz(z,7,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,6,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],4,219)
+cs.pop()
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,3,xC,e,s,gg,oB,'logItem','idx','idx')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["609973d6-default-609973d6-4"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':609973d6-default-609973d6-4'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:6:47")
+var oB=_mz(z,'picker',['bindchange',9,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5,'rangeKey',6],[],e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./common/slots.wxml:template:6:213")
+var oD=_oz(z,17,e,s,gg)
+var fE=_gd(x[0],oD,e_,d_)
+if(fE){
+var cF=_1z(z,16,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
+}
+else _w(oD,x[0],6,305)
+cs.pop()
+cs.pop()
+_(r,oB)
+var hG=_v()
+_(r,hG)
+cs.push("./common/slots.wxml:template:6:337")
+var oH=_oz(z,20,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,19,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],6,445)
+cs.pop()
+cs.push("./common/slots.wxml:picker:6:468")
+var lK=_mz(z,'picker',['bindchange',23,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var aL=_v()
+_(lK,aL)
+cs.push("./common/slots.wxml:template:6:614")
+var tM=_oz(z,30,e,s,gg)
+var eN=_gd(x[0],tM,e_,d_)
+if(eN){
+var bO=_1z(z,29,e,s,gg) || {}
+var cur_globalf=gg.f
+aL.wxXCkey=3
+eN(bO,bO,aL,gg)
+gg.f=cur_globalf
+}
+else _w(tM,x[0],6,706)
+cs.pop()
+cs.pop()
+_(r,lK)
+var oP=_v()
+_(r,oP)
+cs.push("./common/slots.wxml:template:6:738")
+var xQ=_oz(z,36,e,s,gg)
+var oR=_gd(x[0],xQ,e_,d_)
+if(oR){
+var fS=_1z(z,33,e,s,gg) || {}
+var cur_globalf=gg.f
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
+gg.f=cur_globalf
+}
+else _w(xQ,x[0],6,908)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':5c0aa864-default-5c0aa864-8'
@@ -1932,127 +2126,127 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:4:47")
-var xC=_oz(z,5,e,s,gg)
+cs.push("./common/slots.wxml:template:8:47")
+var xC=_oz(z,43,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+var fE=_1z(z,40,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],4,214)
+else _w(xC,x[0],8,214)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:4:237")
-var hG=_oz(z,11,e,s,gg)
+cs.push("./common/slots.wxml:template:8:237")
+var hG=_oz(z,49,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,8,e,s,gg) || {}
+var cI=_1z(z,46,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],4,404)
+else _w(hG,x[0],8,404)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:4:427")
-var lK=_oz(z,17,e,s,gg)
+cs.push("./common/slots.wxml:template:8:427")
+var lK=_oz(z,55,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,14,e,s,gg) || {}
+var tM=_1z(z,52,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],4,594)
+else _w(lK,x[0],8,594)
 cs.pop()
-cs.push("./common/slots.wxml:picker:4:617")
-var eN=_mz(z,'picker',['bindchange',19,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:617")
+var eN=_mz(z,'picker',['bindchange',57,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:4:806")
-var oP=_oz(z,27,e,s,gg)
+cs.push("./common/slots.wxml:template:8:806")
+var oP=_oz(z,65,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,26,e,s,gg) || {}
+var oR=_1z(z,64,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],4,898)
+else _w(oP,x[0],8,898)
 cs.pop()
 cs.pop()
 _(r,eN)
-cs.push("./common/slots.wxml:picker:4:930")
-var fS=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:930")
+var fS=_mz(z,'picker',['bindchange',67,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:4:1121")
-var hU=_oz(z,37,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1121")
+var hU=_oz(z,75,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
-var cW=_1z(z,36,e,s,gg) || {}
+var cW=_1z(z,74,e,s,gg) || {}
 var cur_globalf=gg.f
 cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],4,1213)
+else _w(hU,x[0],8,1213)
 cs.pop()
 cs.pop()
 _(r,fS)
-cs.push("./common/slots.wxml:picker:4:1245")
-var oX=_mz(z,'picker',['bindchange',39,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:1245")
+var oX=_mz(z,'picker',['bindchange',77,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:4:1436")
-var aZ=_oz(z,47,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1436")
+var aZ=_oz(z,85,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
-var e2=_1z(z,46,e,s,gg) || {}
+var e2=_1z(z,84,e,s,gg) || {}
 var cur_globalf=gg.f
 lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],4,1528)
+else _w(aZ,x[0],8,1528)
 cs.pop()
 cs.pop()
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:4:1560")
-var o4=_oz(z,53,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1560")
+var o4=_oz(z,91,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
-var o6=_1z(z,50,e,s,gg) || {}
+var o6=_1z(z,88,e,s,gg) || {}
 var cur_globalf=gg.f
 b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],4,1727)
+else _w(o4,x[0],8,1727)
 cs.pop()
 var f7=_v()
 _(r,f7)
-cs.push("./common/slots.wxml:template:4:1750")
-var c8=_oz(z,56,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1750")
+var c8=_oz(z,94,e,s,gg)
 var h9=_gd(x[0],c8,e_,d_)
 if(h9){
-var o0=_1z(z,55,e,s,gg) || {}
+var o0=_1z(z,93,e,s,gg) || {}
 var cur_globalf=gg.f
 f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[0],4,1858)
+else _w(c8,x[0],8,1858)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2071,77 +2265,77 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:6:48")
-var xC=_oz(z,64,e,s,gg)
+cs.push("./common/slots.wxml:template:10:48")
+var xC=_oz(z,102,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,61,e,s,gg) || {}
+var fE=_1z(z,99,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],6,216)
+else _w(xC,x[0],10,216)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:6:239")
-var hG=_oz(z,70,e,s,gg)
+cs.push("./common/slots.wxml:template:10:239")
+var hG=_oz(z,108,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,67,e,s,gg) || {}
+var cI=_1z(z,105,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],6,408)
+else _w(hG,x[0],10,408)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:6:431")
-var lK=_oz(z,76,e,s,gg)
+cs.push("./common/slots.wxml:template:10:431")
+var lK=_oz(z,114,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,73,e,s,gg) || {}
+var tM=_1z(z,111,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],6,600)
+else _w(lK,x[0],10,600)
 cs.pop()
-cs.push("./common/slots.wxml:picker:6:623")
-var eN=_mz(z,'picker',['bindchange',78,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:10:623")
+var eN=_mz(z,'picker',['bindchange',116,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:6:817")
-var oP=_oz(z,86,e,s,gg)
+cs.push("./common/slots.wxml:template:10:817")
+var oP=_oz(z,124,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,85,e,s,gg) || {}
+var oR=_1z(z,123,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],6,910)
+else _w(oP,x[0],10,910)
 cs.pop()
 cs.pop()
 _(r,eN)
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:6:942")
-var cT=_oz(z,89,e,s,gg)
+cs.push("./common/slots.wxml:template:10:942")
+var cT=_oz(z,127,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,88,e,s,gg) || {}
+var oV=_1z(z,126,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],6,1051)
+else _w(cT,x[0],10,1051)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2160,47 +2354,47 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:8:48")
-var xC=_oz(z,97,e,s,gg)
+cs.push("./common/slots.wxml:template:12:48")
+var xC=_oz(z,135,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,94,e,s,gg) || {}
+var fE=_1z(z,132,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],8,217)
+else _w(xC,x[0],12,217)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:8:240")
-var hG=_oz(z,100,e,s,gg)
+cs.push("./common/slots.wxml:template:12:240")
+var hG=_oz(z,138,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,99,e,s,gg) || {}
+var cI=_1z(z,137,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],8,349)
+else _w(hG,x[0],12,349)
 cs.pop()
-cs.push("./common/slots.wxml:picker:8:372")
-var oJ=_mz(z,'picker',['bindchange',103,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:12:372")
+var oJ=_mz(z,'picker',['bindchange',141,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:8:567")
-var aL=_oz(z,111,e,s,gg)
+cs.push("./common/slots.wxml:template:12:567")
+var aL=_oz(z,149,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,110,e,s,gg) || {}
+var eN=_1z(z,148,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],8,660)
+else _w(aL,x[0],12,660)
 cs.pop()
 cs.pop()
 _(r,oJ)
@@ -2221,98 +2415,25 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-if(_oz(z,114,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:10:48")
+if(_oz(z,152,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:14:48")
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:10:48")
-var oD=_oz(z,119,e,s,gg)
+cs.push("./common/slots.wxml:template:14:48")
+var oD=_oz(z,157,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,116,e,s,gg) || {}
+var cF=_1z(z,154,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],10,278)
+else _w(oD,x[0],14,278)
 cs.pop()
 cs.pop()
 }
 oB.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':4508b5aa-default-4508b5aa-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:12:47")
-var xC=function(fE,oD,cF,gg){
-cs.push("./common/slots.wxml:block:12:47")
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:12:143")
-var cI=_oz(z,128,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,127,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],12,219)
-cs.pop()
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,124,xC,e,s,gg,oB,'logItem','idx','idx')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["609973d6-default-609973d6-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':609973d6-default-609973d6-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-cs.push("./common/slots.wxml:picker:14:47")
-var oB=_mz(z,'picker',['bindchange',130,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5,'rangeKey',6],[],e,s,gg)
-var xC=_v()
-_(oB,xC)
-cs.push("./common/slots.wxml:template:14:213")
-var oD=_oz(z,138,e,s,gg)
-var fE=_gd(x[0],oD,e_,d_)
-if(fE){
-var cF=_1z(z,137,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[0],14,305)
-cs.pop()
-cs.pop()
-_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -3046,71 +3167,127 @@ try{
 cs.push("./pages/common/personChoose.vue.wxml:view:1:27")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
-var oD=_v()
-_(oB,oD)
-cs.push("./pages/common/personChoose.vue.wxml:block:1:65")
-var fE=function(hG,cF,oH,gg){
-cs.push("./pages/common/personChoose.vue.wxml:block:1:65")
-cs.push("./pages/common/personChoose.vue.wxml:view:1:166")
-var oJ=_n('view')
-_rz(z,oJ,'class',7,hG,cF,gg)
-cs.push("./pages/common/personChoose.vue.wxml:view:1:212")
-var aL=_mz(z,'view',['bindtap',8,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
-var tM=_oz(z,12,hG,cF,gg)
-_(aL,tM)
+cs.push("./pages/common/personChoose.vue.wxml:scroll-view:1:65")
+var oD=_mz(z,'scroll-view',['class',2,'scrollY',1],[],e,s,gg)
+var fE=_v()
+_(oD,fE)
+cs.push("./pages/common/personChoose.vue.wxml:block:1:141")
+var cF=function(oH,hG,cI,gg){
+cs.push("./pages/common/personChoose.vue.wxml:block:1:141")
+cs.push("./pages/common/personChoose.vue.wxml:view:1:242")
+var lK=_n('view')
+_rz(z,lK,'class',9,oH,hG,gg)
+var aL=_v()
+_(lK,aL)
+if(_oz(z,10,oH,hG,gg)){aL.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:image:1:288")
+cs.push("./pages/common/personChoose.vue.wxml:image:1:288")
+var xQ=_mz(z,'image',['class',11,'src',1],[],oH,hG,gg)
 cs.pop()
-_(oJ,aL)
-var lK=_v()
-_(oJ,lK)
-if(_oz(z,13,hG,cF,gg)){lK.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:view:1:350")
-cs.push("./pages/common/personChoose.vue.wxml:view:1:350")
-var eN=_mz(z,'view',['bindtap',14,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
-cs.push("./pages/common/personChoose.vue.wxml:view:1:505")
-var bO=_n('view')
-_rz(z,bO,'class',18,hG,cF,gg)
+_(aL,xQ)
 cs.pop()
-_(eN,bO)
-cs.push("./pages/common/personChoose.vue.wxml:image:1:552")
-var oP=_mz(z,'image',['class',19,'mode',1,'src',2],[],hG,cF,gg)
+}
+var tM=_v()
+_(lK,tM)
+if(_oz(z,13,oH,hG,gg)){tM.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:image:1:451")
+cs.push("./pages/common/personChoose.vue.wxml:image:1:451")
+var oR=_mz(z,'image',['class',14,'src',1],[],oH,hG,gg)
 cs.pop()
-_(eN,oP)
-cs.push("./pages/common/personChoose.vue.wxml:view:1:653")
-var xQ=_n('view')
-_rz(z,xQ,'class',22,hG,cF,gg)
-var oR=_oz(z,23,hG,cF,gg)
-_(xQ,oR)
+_(tM,oR)
 cs.pop()
-_(eN,xQ)
-cs.pop()
+}
+var eN=_v()
 _(lK,eN)
+if(_oz(z,16,oH,hG,gg)){eN.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:645")
+cs.push("./pages/common/personChoose.vue.wxml:view:1:645")
+var fS=_mz(z,'view',['bindtap',17,'class',1,'data-comkey',2,'data-eventid',3],[],oH,hG,gg)
+var cT=_oz(z,21,oH,hG,gg)
+_(fS,cT)
+cs.pop()
+_(eN,fS)
 cs.pop()
 }
-lK.wxXCkey=1
+var bO=_v()
+_(lK,bO)
+if(_oz(z,22,oH,hG,gg)){bO.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:812")
+cs.push("./pages/common/personChoose.vue.wxml:view:1:812")
+var hU=_mz(z,'view',['bindtap',23,'class',1,'data-comkey',2,'data-eventid',3],[],oH,hG,gg)
+var oV=_oz(z,27,oH,hG,gg)
+_(hU,oV)
 cs.pop()
-_(oH,oJ)
-cs.push("./pages/common/personChoose.vue.wxml:view:1:719")
-var fS=_n('view')
-_rz(z,fS,'class',24,hG,cF,gg)
+_(bO,hU)
 cs.pop()
-_(oH,fS)
-cs.pop()
-return oH
 }
-oD.wxXCkey=2
-_2z(z,4,fE,e,s,gg,oD,'obj','index','index')
+var oP=_v()
+_(lK,oP)
+if(_oz(z,28,oH,hG,gg)){oP.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:978")
+cs.push("./pages/common/personChoose.vue.wxml:view:1:978")
+var cW=_mz(z,'view',['bindtap',29,'class',1,'data-comkey',2,'data-eventid',3],[],oH,hG,gg)
+cs.push("./pages/common/personChoose.vue.wxml:view:1:1133")
+var oX=_n('view')
+_rz(z,oX,'class',33,oH,hG,gg)
 cs.pop()
+_(cW,oX)
+cs.push("./pages/common/personChoose.vue.wxml:image:1:1180")
+var lY=_mz(z,'image',['class',34,'mode',1,'src',2],[],oH,hG,gg)
+cs.pop()
+_(cW,lY)
+cs.push("./pages/common/personChoose.vue.wxml:view:1:1281")
+var aZ=_n('view')
+_rz(z,aZ,'class',37,oH,hG,gg)
+var t1=_oz(z,38,oH,hG,gg)
+_(aZ,t1)
+cs.pop()
+_(cW,aZ)
+cs.pop()
+_(oP,cW)
+cs.pop()
+}
+aL.wxXCkey=1
+tM.wxXCkey=1
+eN.wxXCkey=1
+bO.wxXCkey=1
+oP.wxXCkey=1
+cs.pop()
+_(cI,lK)
+cs.push("./pages/common/personChoose.vue.wxml:view:1:1347")
+var e2=_n('view')
+_rz(z,e2,'class',39,oH,hG,gg)
+cs.pop()
+_(cI,e2)
+cs.pop()
+return cI
+}
+fE.wxXCkey=2
+_2z(z,6,cF,e,s,gg,fE,'obj','index','index')
+cs.pop()
+cs.pop()
+_(oB,oD)
 var xC=_v()
 _(oB,xC)
-if(_oz(z,25,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:view:1:772")
-cs.push("./pages/common/personChoose.vue.wxml:view:1:772")
-var cT=_n('view')
-_rz(z,cT,'class',26,e,s,gg)
-var hU=_oz(z,27,e,s,gg)
-_(cT,hU)
+if(_oz(z,40,e,s,gg)){xC.wxVkey=1
+cs.push("./pages/common/personChoose.vue.wxml:view:1:1414")
+cs.push("./pages/common/personChoose.vue.wxml:view:1:1414")
+var b3=_n('view')
+_rz(z,b3,'class',41,e,s,gg)
+cs.push("./pages/common/personChoose.vue.wxml:text:1:1480")
+var o4=_mz(z,'text',['bindtap',42,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+var x5=_oz(z,46,e,s,gg)
+_(o4,x5)
 cs.pop()
-_(xC,cT)
+_(b3,o4)
+cs.push("./pages/common/personChoose.vue.wxml:view:1:1637")
+var o6=_mz(z,'view',['bindtap',47,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+var f7=_oz(z,51,e,s,gg)
+_(o6,f7)
+cs.pop()
+_(b3,o6)
+cs.pop()
+_(xC,b3)
 cs.pop()
 }
 xC.wxXCkey=1
@@ -3152,12 +3329,105 @@ return r
 }
 e_[x[23]]={f:m14,j:[],i:[],ti:[x[24]],ic:[]}
 d_[x[25]]={}
-d_[x[25]]["5c0aa864"]=function(e,s,r,gg){
+d_[x[25]]["23e0c24e"]=function(e,s,r,gg){
 var z=gz$gwx_16()
-var b=x[25]+':5c0aa864'
+var b=x[25]+':23e0c24e'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/common/selectedPersonPage.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[25]);return}
+p_[b]=true
+try{
+cs.push("./pages/common/selectedPersonPage.vue.wxml:view:1:27")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./pages/common/selectedPersonPage.vue.wxml:block:1:65")
+var oD=function(cF,fE,hG,gg){
+cs.push("./pages/common/selectedPersonPage.vue.wxml:block:1:65")
+cs.push("./pages/common/selectedPersonPage.vue.wxml:view:1:168")
+var cI=_n('view')
+_rz(z,cI,'class',7,cF,fE,gg)
+cs.push("./pages/common/selectedPersonPage.vue.wxml:view:1:214")
+var oJ=_n('view')
+_rz(z,oJ,'class',8,cF,fE,gg)
+cs.push("./pages/common/selectedPersonPage.vue.wxml:text:1:256")
+var lK=_n('text')
+_rz(z,lK,'class',9,cF,fE,gg)
+var aL=_oz(z,10,cF,fE,gg)
+_(lK,aL)
+cs.pop()
+_(oJ,lK)
+cs.push("./pages/common/selectedPersonPage.vue.wxml:text:1:315")
+var tM=_n('text')
+_rz(z,tM,'class',11,cF,fE,gg)
+var eN=_oz(z,12,cF,fE,gg)
+_(tM,eN)
+cs.pop()
+_(oJ,tM)
+cs.pop()
+_(cI,oJ)
+cs.push("./pages/common/selectedPersonPage.vue.wxml:image:1:387")
+var bO=_mz(z,'image',['bindtap',13,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'src',5],[],cF,fE,gg)
+cs.pop()
+_(cI,bO)
+cs.pop()
+_(hG,cI)
+cs.push("./pages/common/selectedPersonPage.vue.wxml:view:1:584")
+var oP=_n('view')
+_rz(z,oP,'class',19,cF,fE,gg)
+cs.pop()
+_(hG,oP)
+cs.pop()
+return hG
+}
+xC.wxXCkey=2
+_2z(z,4,oD,e,s,gg,xC,'obj','index','index')
+cs.pop()
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m15=function(e,s,r,gg){
+var z=gz$gwx_16()
+return r
+}
+e_[x[25]]={f:m15,j:[],i:[],ti:[],ic:[]}
+d_[x[26]]={}
+var m16=function(e,s,r,gg){
+var z=gz$gwx_17()
+var bGB=e_[x[26]].i
+_ai(bGB,x[27],e_,x[26],1,1)
+var oHB=_v()
+_(r,oHB)
+cs.push("./pages/common/selectedPersonPage.wxml:template:2:6")
+var xIB=_oz(z,1,e,s,gg)
+var oJB=_gd(x[26],xIB,e_,d_)
+if(oJB){
+var fKB=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+oHB.wxXCkey=3
+oJB(fKB,fKB,oHB,gg)
+gg.f=cur_globalf
+}
+else _w(xIB,x[26],2,18)
+cs.pop()
+bGB.pop()
+return r
+}
+e_[x[26]]={f:m16,j:[],i:[],ti:[x[27]],ic:[]}
+d_[x[28]]={}
+d_[x[28]]["5c0aa864"]=function(e,s,r,gg){
+var z=gz$gwx_18()
+var b=x[28]+':5c0aa864'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[25]);return}
+if(p_[b]){_wl(b,x[28]);return}
 p_[b]=true
 try{
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:157")
@@ -3202,7 +3472,7 @@ var eN=_v()
 _(tM,eN)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:579")
 var bO=_oz(z,12,e,s,gg)
-var oP=_gd(x[25],bO,e_,d_)
+var oP=_gd(x[28],bO,e_,d_)
 if(oP){
 var xQ=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3210,7 +3480,7 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[25],1,694)
+else _w(bO,x[28],1,694)
 cs.pop()
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:717")
 var oR=_n('view')
@@ -3310,7 +3580,7 @@ var eFB=_v()
 _(tEB,eFB)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:2251")
 var bGB=_oz(z,57,e,s,gg)
-var oHB=_gd(x[25],bGB,e_,d_)
+var oHB=_gd(x[28],bGB,e_,d_)
 if(oHB){
 var xIB=_1z(z,56,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3318,7 +3588,7 @@ eFB.wxXCkey=3
 oHB(xIB,xIB,eFB,gg)
 gg.f=cur_globalf
 }
-else _w(bGB,x[25],1,2368)
+else _w(bGB,x[28],1,2368)
 cs.pop()
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:2391")
 var oJB=_n('view')
@@ -3420,7 +3690,7 @@ var e8B=_v()
 _(t7B,e8B)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:3954")
 var b9B=_oz(z,102,e,s,gg)
-var o0B=_gd(x[25],b9B,e_,d_)
+var o0B=_gd(x[28],b9B,e_,d_)
 if(o0B){
 var xAC=_1z(z,101,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3428,7 +3698,7 @@ e8B.wxXCkey=3
 o0B(xAC,xAC,e8B,gg)
 gg.f=cur_globalf
 }
-else _w(b9B,x[25],1,4071)
+else _w(b9B,x[28],1,4071)
 cs.pop()
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:4094")
 var oBC=_n('view')
@@ -3514,7 +3784,7 @@ var lWC=_v()
 _(oVC,lWC)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:5499")
 var aXC=_oz(z,143,e,s,gg)
-var tYC=_gd(x[25],aXC,e_,d_)
+var tYC=_gd(x[28],aXC,e_,d_)
 if(tYC){
 var eZC=_1z(z,142,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3522,7 +3792,7 @@ lWC.wxXCkey=3
 tYC(eZC,eZC,lWC,gg)
 gg.f=cur_globalf
 }
-else _w(aXC,x[25],1,5616)
+else _w(aXC,x[28],1,5616)
 cs.pop()
 cs.pop()
 _(oB,oVC)
@@ -3572,46 +3842,46 @@ throw err
 p_[b]=false
 return r
 }
-var m15=function(e,s,r,gg){
-var z=gz$gwx_16()
-var eFB=e_[x[25]].i
-_ai(eFB,x[1],e_,x[25],1,1)
-_ai(eFB,x[2],e_,x[25],1,61)
-eFB.pop()
-eFB.pop()
+var m17=function(e,s,r,gg){
+var z=gz$gwx_18()
+var hMB=e_[x[28]].i
+_ai(hMB,x[1],e_,x[28],1,1)
+_ai(hMB,x[2],e_,x[28],1,61)
+hMB.pop()
+hMB.pop()
 return r
 }
-e_[x[25]]={f:m15,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[26]]={}
-var m16=function(e,s,r,gg){
-var z=gz$gwx_17()
-var oHB=e_[x[26]].i
-_ai(oHB,x[27],e_,x[26],1,1)
-var xIB=_v()
-_(r,xIB)
+e_[x[28]]={f:m17,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[29]]={}
+var m18=function(e,s,r,gg){
+var z=gz$gwx_19()
+var cOB=e_[x[29]].i
+_ai(cOB,x[30],e_,x[29],1,1)
+var oPB=_v()
+_(r,oPB)
 cs.push("./pages/danger/dangerEdit.wxml:template:2:6")
-var oJB=_oz(z,1,e,s,gg)
-var fKB=_gd(x[26],oJB,e_,d_)
-if(fKB){
-var cLB=_1z(z,0,e,s,gg) || {}
+var lQB=_oz(z,1,e,s,gg)
+var aRB=_gd(x[29],lQB,e_,d_)
+if(aRB){
+var tSB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-xIB.wxXCkey=3
-fKB(cLB,cLB,xIB,gg)
+oPB.wxXCkey=3
+aRB(tSB,tSB,oPB,gg)
 gg.f=cur_globalf
 }
-else _w(oJB,x[26],2,18)
+else _w(lQB,x[29],2,18)
 cs.pop()
-oHB.pop()
+cOB.pop()
 return r
 }
-e_[x[26]]={f:m16,j:[],i:[],ti:[x[27]],ic:[]}
-d_[x[28]]={}
-d_[x[28]]["4508b5aa"]=function(e,s,r,gg){
-var z=gz$gwx_18()
-var b=x[28]+':4508b5aa'
+e_[x[29]]={f:m18,j:[],i:[],ti:[x[30]],ic:[]}
+d_[x[31]]={}
+d_[x[31]]["4508b5aa"]=function(e,s,r,gg){
+var z=gz$gwx_20()
+var b=x[31]+':4508b5aa'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerLog.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[28]);return}
+if(p_[b]){_wl(b,x[31]);return}
 p_[b]=true
 try{
 cs.push("./pages/danger/dangerLog.vue.wxml:view:1:157")
@@ -3623,7 +3893,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./pages/danger/dangerLog.vue.wxml:template:1:251")
 var fE=_oz(z,5,e,s,gg)
-var cF=_gd(x[28],fE,e_,d_)
+var cF=_gd(x[31],fE,e_,d_)
 if(cF){
 var hG=_1z(z,4,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3631,7 +3901,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[28],1,366)
+else _w(fE,x[31],1,366)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -3644,46 +3914,46 @@ throw err
 p_[b]=false
 return r
 }
-var m17=function(e,s,r,gg){
-var z=gz$gwx_18()
-var oNB=e_[x[28]].i
-_ai(oNB,x[1],e_,x[28],1,1)
-_ai(oNB,x[2],e_,x[28],1,61)
-oNB.pop()
-oNB.pop()
+var m19=function(e,s,r,gg){
+var z=gz$gwx_20()
+var bUB=e_[x[31]].i
+_ai(bUB,x[1],e_,x[31],1,1)
+_ai(bUB,x[2],e_,x[31],1,61)
+bUB.pop()
+bUB.pop()
 return r
 }
-e_[x[28]]={f:m17,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[29]]={}
-var m18=function(e,s,r,gg){
-var z=gz$gwx_19()
-var oPB=e_[x[29]].i
-_ai(oPB,x[30],e_,x[29],1,1)
-var lQB=_v()
-_(r,lQB)
+e_[x[31]]={f:m19,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[32]]={}
+var m20=function(e,s,r,gg){
+var z=gz$gwx_21()
+var xWB=e_[x[32]].i
+_ai(xWB,x[33],e_,x[32],1,1)
+var oXB=_v()
+_(r,oXB)
 cs.push("./pages/danger/dangerLog.wxml:template:2:6")
-var aRB=_oz(z,1,e,s,gg)
-var tSB=_gd(x[29],aRB,e_,d_)
-if(tSB){
-var eTB=_1z(z,0,e,s,gg) || {}
+var fYB=_oz(z,1,e,s,gg)
+var cZB=_gd(x[32],fYB,e_,d_)
+if(cZB){
+var h1B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-lQB.wxXCkey=3
-tSB(eTB,eTB,lQB,gg)
+oXB.wxXCkey=3
+cZB(h1B,h1B,oXB,gg)
 gg.f=cur_globalf
 }
-else _w(aRB,x[29],2,18)
+else _w(fYB,x[32],2,18)
 cs.pop()
-oPB.pop()
+xWB.pop()
 return r
 }
-e_[x[29]]={f:m18,j:[],i:[],ti:[x[30]],ic:[]}
-d_[x[31]]={}
-d_[x[31]]["2d8d4fae"]=function(e,s,r,gg){
-var z=gz$gwx_20()
-var b=x[31]+':2d8d4fae'
+e_[x[32]]={f:m20,j:[],i:[],ti:[x[33]],ic:[]}
+d_[x[34]]={}
+d_[x[34]]["2d8d4fae"]=function(e,s,r,gg){
+var z=gz$gwx_22()
+var b=x[34]+':2d8d4fae'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[31]);return}
+if(p_[b]){_wl(b,x[34]);return}
 p_[b]=true
 try{
 cs.push("./pages/login/login.vue.wxml:view:1:72")
@@ -3706,7 +3976,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/login/login.vue.wxml:template:1:247")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[31],oH,e_,d_)
+var cI=_gd(x[34],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3714,7 +3984,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[31],1,474)
+else _w(oH,x[34],1,474)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -3732,7 +4002,7 @@ var eN=_v()
 _(lK,eN)
 cs.push("./pages/login/login.vue.wxml:template:1:594")
 var bO=_oz(z,21,e,s,gg)
-var oP=_gd(x[31],bO,e_,d_)
+var oP=_gd(x[34],bO,e_,d_)
 if(oP){
 var xQ=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3740,7 +4010,7 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[31],1,822)
+else _w(bO,x[34],1,822)
 cs.pop()
 cs.pop()
 _(xC,lK)
@@ -3766,44 +4036,44 @@ throw err
 p_[b]=false
 return r
 }
-var m19=function(e,s,r,gg){
-var z=gz$gwx_20()
-var oVB=e_[x[31]].i
-_ai(oVB,x[32],e_,x[31],1,1)
-oVB.pop()
+var m21=function(e,s,r,gg){
+var z=gz$gwx_22()
+var c3B=e_[x[34]].i
+_ai(c3B,x[35],e_,x[34],1,1)
+c3B.pop()
 return r
 }
-e_[x[31]]={f:m19,j:[],i:[],ti:[x[32]],ic:[]}
-d_[x[33]]={}
-var m20=function(e,s,r,gg){
-var z=gz$gwx_21()
-var oXB=e_[x[33]].i
-_ai(oXB,x[34],e_,x[33],1,1)
-var fYB=_v()
-_(r,fYB)
+e_[x[34]]={f:m21,j:[],i:[],ti:[x[35]],ic:[]}
+d_[x[36]]={}
+var m22=function(e,s,r,gg){
+var z=gz$gwx_23()
+var l5B=e_[x[36]].i
+_ai(l5B,x[37],e_,x[36],1,1)
+var a6B=_v()
+_(r,a6B)
 cs.push("./pages/login/login.wxml:template:2:6")
-var cZB=_oz(z,1,e,s,gg)
-var h1B=_gd(x[33],cZB,e_,d_)
-if(h1B){
-var o2B=_1z(z,0,e,s,gg) || {}
+var t7B=_oz(z,1,e,s,gg)
+var e8B=_gd(x[36],t7B,e_,d_)
+if(e8B){
+var b9B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-fYB.wxXCkey=3
-h1B(o2B,o2B,fYB,gg)
+a6B.wxXCkey=3
+e8B(b9B,b9B,a6B,gg)
 gg.f=cur_globalf
 }
-else _w(cZB,x[33],2,18)
+else _w(t7B,x[36],2,18)
 cs.pop()
-oXB.pop()
+l5B.pop()
 return r
 }
-e_[x[33]]={f:m20,j:[],i:[],ti:[x[34]],ic:[]}
-d_[x[35]]={}
-d_[x[35]]["00cb397a"]=function(e,s,r,gg){
-var z=gz$gwx_22()
-var b=x[35]+':00cb397a'
+e_[x[36]]={f:m22,j:[],i:[],ti:[x[37]],ic:[]}
+d_[x[38]]={}
+d_[x[38]]["00cb397a"]=function(e,s,r,gg){
+var z=gz$gwx_24()
+var b=x[38]+':00cb397a'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[35]);return}
+if(p_[b]){_wl(b,x[38]);return}
 p_[b]=true
 try{
 cs.push("./pages/main/main.vue.wxml:view:1:27")
@@ -3955,41 +4225,41 @@ throw err
 p_[b]=false
 return r
 }
-var m21=function(e,s,r,gg){
-var z=gz$gwx_22()
+var m23=function(e,s,r,gg){
+var z=gz$gwx_24()
 return r
 }
-e_[x[35]]={f:m21,j:[],i:[],ti:[],ic:[]}
-d_[x[36]]={}
-var m22=function(e,s,r,gg){
-var z=gz$gwx_23()
-var l5B=e_[x[36]].i
-_ai(l5B,x[37],e_,x[36],1,1)
-var a6B=_v()
-_(r,a6B)
+e_[x[38]]={f:m23,j:[],i:[],ti:[],ic:[]}
+d_[x[39]]={}
+var m24=function(e,s,r,gg){
+var z=gz$gwx_25()
+var oBC=e_[x[39]].i
+_ai(oBC,x[40],e_,x[39],1,1)
+var fCC=_v()
+_(r,fCC)
 cs.push("./pages/main/main.wxml:template:2:6")
-var t7B=_oz(z,1,e,s,gg)
-var e8B=_gd(x[36],t7B,e_,d_)
-if(e8B){
-var b9B=_1z(z,0,e,s,gg) || {}
+var cDC=_oz(z,1,e,s,gg)
+var hEC=_gd(x[39],cDC,e_,d_)
+if(hEC){
+var oFC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-a6B.wxXCkey=3
-e8B(b9B,b9B,a6B,gg)
+fCC.wxXCkey=3
+hEC(oFC,oFC,fCC,gg)
 gg.f=cur_globalf
 }
-else _w(t7B,x[36],2,18)
+else _w(cDC,x[39],2,18)
 cs.pop()
-l5B.pop()
+oBC.pop()
 return r
 }
-e_[x[36]]={f:m22,j:[],i:[],ti:[x[37]],ic:[]}
-d_[x[38]]={}
-d_[x[38]]["6cbf6956"]=function(e,s,r,gg){
-var z=gz$gwx_24()
-var b=x[38]+':6cbf6956'
+e_[x[39]]={f:m24,j:[],i:[],ti:[x[40]],ic:[]}
+d_[x[41]]={}
+d_[x[41]]["6cbf6956"]=function(e,s,r,gg){
+var z=gz$gwx_26()
+var b=x[41]+':6cbf6956'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[38]);return}
+if(p_[b]){_wl(b,x[41]);return}
 p_[b]=true
 try{
 cs.push("./pages/pwd/pwd.vue.wxml:view:1:72")
@@ -4012,7 +4282,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[38],oH,e_,d_)
+var cI=_gd(x[41],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4020,7 +4290,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[38],1,465)
+else _w(oH,x[41],1,465)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -4046,44 +4316,44 @@ throw err
 p_[b]=false
 return r
 }
-var m23=function(e,s,r,gg){
-var z=gz$gwx_24()
-var xAC=e_[x[38]].i
-_ai(xAC,x[32],e_,x[38],1,1)
-xAC.pop()
+var m25=function(e,s,r,gg){
+var z=gz$gwx_26()
+var oHC=e_[x[41]].i
+_ai(oHC,x[35],e_,x[41],1,1)
+oHC.pop()
 return r
 }
-e_[x[38]]={f:m23,j:[],i:[],ti:[x[32]],ic:[]}
-d_[x[39]]={}
-var m24=function(e,s,r,gg){
-var z=gz$gwx_25()
-var fCC=e_[x[39]].i
-_ai(fCC,x[40],e_,x[39],1,1)
-var cDC=_v()
-_(r,cDC)
+e_[x[41]]={f:m25,j:[],i:[],ti:[x[35]],ic:[]}
+d_[x[42]]={}
+var m26=function(e,s,r,gg){
+var z=gz$gwx_27()
+var aJC=e_[x[42]].i
+_ai(aJC,x[43],e_,x[42],1,1)
+var tKC=_v()
+_(r,tKC)
 cs.push("./pages/pwd/pwd.wxml:template:2:6")
-var hEC=_oz(z,1,e,s,gg)
-var oFC=_gd(x[39],hEC,e_,d_)
-if(oFC){
-var cGC=_1z(z,0,e,s,gg) || {}
+var eLC=_oz(z,1,e,s,gg)
+var bMC=_gd(x[42],eLC,e_,d_)
+if(bMC){
+var oNC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-cDC.wxXCkey=3
-oFC(cGC,cGC,cDC,gg)
+tKC.wxXCkey=3
+bMC(oNC,oNC,tKC,gg)
 gg.f=cur_globalf
 }
-else _w(hEC,x[39],2,18)
+else _w(eLC,x[42],2,18)
 cs.pop()
-fCC.pop()
+aJC.pop()
 return r
 }
-e_[x[39]]={f:m24,j:[],i:[],ti:[x[40]],ic:[]}
-d_[x[41]]={}
-d_[x[41]]["90021ef8"]=function(e,s,r,gg){
-var z=gz$gwx_26()
-var b=x[41]+':90021ef8'
+e_[x[42]]={f:m26,j:[],i:[],ti:[x[43]],ic:[]}
+d_[x[44]]={}
+d_[x[44]]["90021ef8"]=function(e,s,r,gg){
+var z=gz$gwx_28()
+var b=x[44]+':90021ef8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[41]);return}
+if(p_[b]){_wl(b,x[44]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:1:72")
@@ -4106,7 +4376,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/reg/reg.vue.wxml:template:1:247")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[41],oH,e_,d_)
+var cI=_gd(x[44],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4114,7 +4384,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[41],1,474)
+else _w(oH,x[44],1,474)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -4132,7 +4402,7 @@ var eN=_v()
 _(lK,eN)
 cs.push("./pages/reg/reg.vue.wxml:template:1:601")
 var bO=_oz(z,21,e,s,gg)
-var oP=_gd(x[41],bO,e_,d_)
+var oP=_gd(x[44],bO,e_,d_)
 if(oP){
 var xQ=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4140,7 +4410,7 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[41],1,829)
+else _w(bO,x[44],1,829)
 cs.pop()
 cs.pop()
 _(xC,lK)
@@ -4158,7 +4428,7 @@ var hU=_v()
 _(oR,hU)
 cs.push("./pages/reg/reg.vue.wxml:template:1:949")
 var oV=_oz(z,32,e,s,gg)
-var cW=_gd(x[41],oV,e_,d_)
+var cW=_gd(x[44],oV,e_,d_)
 if(cW){
 var oX=_1z(z,29,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4166,7 +4436,7 @@ hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[41],1,1168)
+else _w(oV,x[44],1,1168)
 cs.pop()
 cs.pop()
 _(xC,oR)
@@ -4192,44 +4462,44 @@ throw err
 p_[b]=false
 return r
 }
-var m25=function(e,s,r,gg){
-var z=gz$gwx_26()
-var lIC=e_[x[41]].i
-_ai(lIC,x[32],e_,x[41],1,1)
-lIC.pop()
+var m27=function(e,s,r,gg){
+var z=gz$gwx_28()
+var oPC=e_[x[44]].i
+_ai(oPC,x[35],e_,x[44],1,1)
+oPC.pop()
 return r
 }
-e_[x[41]]={f:m25,j:[],i:[],ti:[x[32]],ic:[]}
-d_[x[42]]={}
-var m26=function(e,s,r,gg){
-var z=gz$gwx_27()
-var tKC=e_[x[42]].i
-_ai(tKC,x[43],e_,x[42],1,1)
-var eLC=_v()
-_(r,eLC)
+e_[x[44]]={f:m27,j:[],i:[],ti:[x[35]],ic:[]}
+d_[x[45]]={}
+var m28=function(e,s,r,gg){
+var z=gz$gwx_29()
+var cRC=e_[x[45]].i
+_ai(cRC,x[46],e_,x[45],1,1)
+var hSC=_v()
+_(r,hSC)
 cs.push("./pages/reg/reg.wxml:template:2:6")
-var bMC=_oz(z,1,e,s,gg)
-var oNC=_gd(x[42],bMC,e_,d_)
-if(oNC){
-var xOC=_1z(z,0,e,s,gg) || {}
+var oTC=_oz(z,1,e,s,gg)
+var cUC=_gd(x[45],oTC,e_,d_)
+if(cUC){
+var oVC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-eLC.wxXCkey=3
-oNC(xOC,xOC,eLC,gg)
+hSC.wxXCkey=3
+cUC(oVC,oVC,hSC,gg)
 gg.f=cur_globalf
 }
-else _w(bMC,x[42],2,18)
+else _w(oTC,x[45],2,18)
 cs.pop()
-tKC.pop()
+cRC.pop()
 return r
 }
-e_[x[42]]={f:m26,j:[],i:[],ti:[x[43]],ic:[]}
-d_[x[44]]={}
-d_[x[44]]["240234ba"]=function(e,s,r,gg){
-var z=gz$gwx_28()
-var b=x[44]+':240234ba'
+e_[x[45]]={f:m28,j:[],i:[],ti:[x[46]],ic:[]}
+d_[x[47]]={}
+d_[x[47]]["240234ba"]=function(e,s,r,gg){
+var z=gz$gwx_30()
+var b=x[47]+':240234ba'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[44]);return}
+if(p_[b]){_wl(b,x[47]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/user.vue.wxml:view:1:27")
@@ -4275,34 +4545,34 @@ throw err
 p_[b]=false
 return r
 }
-var m27=function(e,s,r,gg){
-var z=gz$gwx_28()
+var m29=function(e,s,r,gg){
+var z=gz$gwx_30()
 return r
 }
-e_[x[44]]={f:m27,j:[],i:[],ti:[],ic:[]}
-d_[x[45]]={}
-var m28=function(e,s,r,gg){
-var z=gz$gwx_29()
-var cRC=e_[x[45]].i
-_ai(cRC,x[46],e_,x[45],1,1)
-var hSC=_v()
-_(r,hSC)
+e_[x[47]]={f:m29,j:[],i:[],ti:[],ic:[]}
+d_[x[48]]={}
+var m30=function(e,s,r,gg){
+var z=gz$gwx_31()
+var tYC=e_[x[48]].i
+_ai(tYC,x[49],e_,x[48],1,1)
+var eZC=_v()
+_(r,eZC)
 cs.push("./pages/user/user.wxml:template:2:6")
-var oTC=_oz(z,1,e,s,gg)
-var cUC=_gd(x[45],oTC,e_,d_)
-if(cUC){
-var oVC=_1z(z,0,e,s,gg) || {}
+var b1C=_oz(z,1,e,s,gg)
+var o2C=_gd(x[48],b1C,e_,d_)
+if(o2C){
+var x3C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hSC.wxXCkey=3
-cUC(oVC,oVC,hSC,gg)
+eZC.wxXCkey=3
+o2C(x3C,x3C,eZC,gg)
 gg.f=cur_globalf
 }
-else _w(oTC,x[45],2,18)
+else _w(b1C,x[48],2,18)
 cs.pop()
-cRC.pop()
+tYC.pop()
 return r
 }
-e_[x[45]]={f:m28,j:[],i:[],ti:[x[46]],ic:[]}
+e_[x[48]]={f:m30,j:[],i:[],ti:[x[49]],ic:[]}
 if(path&&e_[path]){
 window.__wxml_comp_version__=0.02
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
@@ -4430,28 +4700,31 @@ setCssToHead([])();setCssToHead([[2,0]],undefined,{path:"./app.wxss"})();
 __wxAppCode__['app.wxss']=setCssToHead([[2,0]],undefined,{path:"./app.wxss"});    
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
-__wxAppCode__['pages/check/checkEdit.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n",],undefined,{path:"./pages/check/checkEdit.wxss"});    
+__wxAppCode__['pages/check/checkEdit.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n",],undefined,{path:"./pages/check/checkEdit.wxss"});    
 __wxAppCode__['pages/check/checkEdit.wxml']=$gwx('./pages/check/checkEdit.wxml');
 
 __wxAppCode__['pages/common/inputPage.wxss']=setCssToHead([".",[1],"baseView{ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #efeff4; }\n.",[1],"myText{ width: 100%; height: ",[0,500],"; font-size: ",[0,30],"; background-color: #FFFFFF; }\n",],undefined,{path:"./pages/common/inputPage.wxss"});    
 __wxAppCode__['pages/common/inputPage.wxml']=$gwx('./pages/common/inputPage.wxml');
 
-__wxAppCode__['pages/common/orgChoose.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"orgName { width: 100%; margin-left: ",[0,20],"; color: #666666; font-size: ",[0,34],"; }\n.",[1],"nextLevelView { height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"columnLine { width: ",[0,1],"; height: 60%; background-color: #DDDDDD; }\n.",[1],"levelImg { margin-left: ",[0,30],"; margin-right: ",[0,5],"; width: ",[0,40],"; height: 100%; }\n.",[1],"nextLevel { width: ",[0,100],"; color: #3296FA; font-size: ",[0,34],"; }\n.",[1],"nextLevel_disable { width: ",[0,100],"; color: #BEBEBE; font-size: ",[0,34],"; }\n",],undefined,{path:"./pages/common/orgChoose.wxss"});    
+__wxAppCode__['pages/common/orgChoose.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"orgName { width: 100%; margin-left: ",[0,20],"; color: #666666; font-size: ",[0,34],"; }\n.",[1],"nextLevelView { height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"columnLine { width: ",[0,1],"; height: 60%; background-color: #DDDDDD; }\n.",[1],"levelImg { margin-left: ",[0,30],"; margin-right: ",[0,5],"; width: ",[0,40],"; height: 100%; }\n.",[1],"nextLevel { width: ",[0,100],"; color: #3296FA; font-size: ",[0,34],"; }\n.",[1],"nextLevel_disable { width: ",[0,100],"; color: #BEBEBE; font-size: ",[0,34],"; }\n",],undefined,{path:"./pages/common/orgChoose.wxss"});    
 __wxAppCode__['pages/common/orgChoose.wxml']=$gwx('./pages/common/orgChoose.wxml');
 
-__wxAppCode__['pages/common/personChoose.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"orgName { width: 100%; margin-left: ",[0,20],"; color: #666666; font-size: ",[0,34],"; }\n.",[1],"nextLevelView { height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"columnLine { width: ",[0,1],"; height: 60%; background-color: #DDDDDD; }\n.",[1],"levelImg { margin-left: ",[0,30],"; margin-right: ",[0,5],"; width: ",[0,40],"; height: 100%; }\n.",[1],"nextLevel { width: ",[0,100],"; color: #3296FA; font-size: ",[0,34],"; }\n.",[1],"nextLevel_disable { width: ",[0,100],"; color: #BEBEBE; font-size: ",[0,34],"; }\n",],undefined,{path:"./pages/common/personChoose.wxss"});    
+__wxAppCode__['pages/common/personChoose.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"personScrollView { width: 100%; margin-bottom: ",[0,110],"; }\n.",[1],"orgName { width: 100%; margin-left: ",[0,20],"; color: #666666; font-size: ",[0,34],"; }\n.",[1],"nextLevelView { height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"columnLine { width: ",[0,1],"; height: 60%; background-color: #DDDDDD; }\n.",[1],"levelImg { margin-left: ",[0,30],"; margin-right: ",[0,5],"; width: ",[0,40],"; height: 100%; }\n.",[1],"nextLevel { width: ",[0,100],"; color: #3296FA; font-size: ",[0,34],"; }\n.",[1],"nextLevel_disable { width: ",[0,100],"; color: #BEBEBE; font-size: ",[0,34],"; }\n.",[1],"bottomView { width: 100%; height: ",[0,110],"; background: #FFFFFF; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"hasChoose { width: 100%; margin-left: ",[0,20],"; color: #3296FA; font-size: ",[0,30],"; text-align: left; }\n.",[1],"confirmButtom { background-color: #3296FA; width: ",[0,300],"; margin-top: ",[0,5],"; margin-bottom: ",[0,5],"; }\n",],undefined,{path:"./pages/common/personChoose.wxss"});    
 __wxAppCode__['pages/common/personChoose.wxml']=$gwx('./pages/common/personChoose.wxml');
 
-__wxAppCode__['pages/danger/dangerEdit.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"btnView { background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; }\n.",[1],"saveBtn { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; border-width: 1; border-bottom-color: #F1F1F1; border-top-color: #F1F1F1; border-left-width: 0px; border-right-width: 0px; width: 100%; height: ",[0,110],"; text-align: center; margin-top: 20px; margin-left: 5px; margin-bottom: 20px; margin-right: 5px; font-size: ",[0,26],"; }\n",],undefined,{path:"./pages/danger/dangerEdit.wxss"});    
+__wxAppCode__['pages/common/selectedPersonPage.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"cellTextView { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"titleLabel { width: 100%; margin-left: ",[0,20],"; color: #333333; font-size: ",[0,34],"; }\n.",[1],"subTitleLabel { width: 100%; margin-left: ",[0,20],"; color: #888888; font-size: ",[0,28],"; }\n.",[1],"deleteImg { margin-right: ",[0,20],"; width: ",[0,45],"; height: ",[0,45],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n",],undefined,{path:"./pages/common/selectedPersonPage.wxss"});    
+__wxAppCode__['pages/common/selectedPersonPage.wxml']=$gwx('./pages/common/selectedPersonPage.wxml');
+
+__wxAppCode__['pages/danger/dangerEdit.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"btnView { background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; }\n.",[1],"saveBtn { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; border-width: 1; border-bottom-color: #F1F1F1; border-top-color: #F1F1F1; border-left-width: 0px; border-right-width: 0px; width: 100%; height: ",[0,110],"; text-align: center; margin-top: 20px; margin-left: 5px; margin-bottom: 20px; margin-right: 5px; font-size: ",[0,26],"; }\n",],undefined,{path:"./pages/danger/dangerEdit.wxss"});    
 __wxAppCode__['pages/danger/dangerEdit.wxml']=$gwx('./pages/danger/dangerEdit.wxml');
 
-__wxAppCode__['pages/danger/dangerLog.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n",],undefined,{path:"./pages/danger/dangerLog.wxss"});    
+__wxAppCode__['pages/danger/dangerLog.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n",],undefined,{path:"./pages/danger/dangerLog.wxss"});    
 __wxAppCode__['pages/danger/dangerLog.wxml']=$gwx('./pages/danger/dangerLog.wxml');
 
 __wxAppCode__['pages/login/login.wxss']=setCssToHead([".",[1],"action-row { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"action-row wx-navigator { color: #007aff; padding: 0 ",[0,20],"; }\n.",[1],"oauth-row { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; position: absolute; top: 0; left: 0; width: 100%; }\n.",[1],"oauth-image { width: ",[0,100],"; height: ",[0,100],"; border: ",[0,1]," solid #dddddd; border-radius: ",[0,100],"; margin: 0 ",[0,40],"; background-color: #ffffff; }\n.",[1],"oauth-image wx-image { width: ",[0,60],"; height: ",[0,60],"; margin: ",[0,20],"; }\n",],undefined,{path:"./pages/login/login.wxss"});    
 __wxAppCode__['pages/login/login.wxml']=$gwx('./pages/login/login.wxml');
 
-__wxAppCode__['pages/main/main.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"menuBlockView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; padding-bottom: ",[0,30],"; }\n.",[1],"dangerView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 30%; margin-top: 50px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerIcon { width: ",[0,80],"; height: ",[0,80],"; }\n.",[1],"subView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; margin-top: 10px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerText { width: 100%; font-size: 16; color: #898989; text-align: center; }\n.",[1],"titleView_pc { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: ",[0,20],"; width: 100%; height: ",[0,80],"; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #F1F1F1; }\n.",[1],"titleText_pc { margin-left: ",[0,30],"; color: #666666; width: 100%; text-align: left; font-size: ",[0,32],"; }\n.",[1],"topView_pc { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; background-color: #2D68AA; }\n.",[1],"topItemView { width: 30%; height: ",[0,240],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"topTextTitle { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,30],"; }\n.",[1],"topTextNum { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,40],"; }\n.",[1],"arrow { width: ",[0,15],"; height: ",[0,240],"; margin-right: ",[0,10],"; }\n",],undefined,{path:"./pages/main/main.wxss"});    
+__wxAppCode__['pages/main/main.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,60],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; color: #BBBBBB; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"menuBlockView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; padding-bottom: ",[0,30],"; }\n.",[1],"dangerView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 30%; margin-top: 50px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerIcon { width: ",[0,80],"; height: ",[0,80],"; }\n.",[1],"subView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; margin-top: 10px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerText { width: 100%; font-size: 16; color: #898989; text-align: center; }\n.",[1],"titleView_pc { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: ",[0,20],"; width: 100%; height: ",[0,80],"; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #F1F1F1; }\n.",[1],"titleText_pc { margin-left: ",[0,30],"; color: #666666; width: 100%; text-align: left; font-size: ",[0,32],"; }\n.",[1],"topView_pc { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; background-color: #2D68AA; }\n.",[1],"topItemView { width: 30%; height: ",[0,240],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"topTextTitle { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,30],"; }\n.",[1],"topTextNum { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,40],"; }\n.",[1],"arrow { width: ",[0,15],"; height: ",[0,240],"; margin-right: ",[0,10],"; }\n",],undefined,{path:"./pages/main/main.wxss"});    
 __wxAppCode__['pages/main/main.wxml']=$gwx('./pages/main/main.wxml');
 
 __wxAppCode__['pages/pwd/pwd.wxss']=undefined;    

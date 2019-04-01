@@ -27,7 +27,7 @@
 		computed: mapState(['userInfo']),
 		data() {
 		    return {
-				// 复制的Key
+				// 赋值的Key
 				key: '',
 				// 是否多选
 				mltiple: false,

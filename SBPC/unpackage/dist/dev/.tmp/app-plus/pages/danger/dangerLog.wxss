@@ -66,6 +66,22 @@
 	    -ms-flex-align: center;
 	        align-items: center;
 }
+.selectedImg {
+	margin-left: 20rpx;
+	width: 40rpx;
+	height: 40rpx;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0; /*等比例不压缩*/
+}
+.unSelectedImg {
+	margin-left: 20rpx;
+	width: 40rpx;
+	height: 40rpx;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0; /*等比例不压缩*/
+}
 .cellLine {
 	/* width: 100%; */
 	height: 1rpx;

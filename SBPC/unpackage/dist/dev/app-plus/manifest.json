@@ -127,7 +127,7 @@
       }
     },
     "uni-app": {
-      "compilerVersion": "1.8.1",
+      "compilerVersion": "1.8.2",
       "control": "webview"
     }
   }
