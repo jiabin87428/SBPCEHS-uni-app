@@ -1,0 +1,2 @@
+<import src="./checkInfoEdit.vue.wxml" />
+    <template is="77ae7fa4" data="{{ ...$root['0'], $root }}"/>

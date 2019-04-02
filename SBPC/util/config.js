@@ -31,6 +31,10 @@ var config = {
 	getCheckList: '/mobile/getAqjc.do',
 	// 获取检查类型
 	getCheckTypes: '/mobile/getAqjc.do?action=getJclx',
+	// 获取检查模板
+	getCheckModule: '/mobile/getAqjc.do?action=getMb',
+	// 根据检查模板查询检查项
+	getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
 	
 	/*通用接口*/
 	// 获取部门

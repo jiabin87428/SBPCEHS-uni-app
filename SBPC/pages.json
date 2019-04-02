@@ -93,6 +93,11 @@
                 "navigationBarTitleText": "检查编辑"
             }
         }, {
+            "path": "pages/check/checkInfoEdit",
+            "style": {
+                "navigationBarTitleText": "检查结论"
+            }
+        }, {
             "path": "pages/common/selectedPersonPage",
             "style": {
                 "navigationBarTitleText": "已选成员",

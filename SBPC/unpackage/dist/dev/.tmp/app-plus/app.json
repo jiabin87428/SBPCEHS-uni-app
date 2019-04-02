@@ -11,6 +11,7 @@
     "pages/common/personChoose",
     "pages/danger/dangerLog",
     "pages/check/checkEdit",
+    "pages/check/checkInfoEdit",
     "pages/common/selectedPersonPage"
   ],
   "subPackages": [],

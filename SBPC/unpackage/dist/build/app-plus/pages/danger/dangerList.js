@@ -475,6 +475,7 @@ var config = {
   // 登录
   login: '/mobile/system/login.do',
 
+  /*隐患相关*/
   // 获取隐患列表
   getDangerList: '/mobile/getYhzg.do',
   // 获取隐患详情
@@ -486,11 +487,21 @@ var config = {
   // 选择完流转目标后继续流转
   flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',
 
+  /*检查相关*/
+  // 获取检查列表
+  getCheckList: '/mobile/getAqjc.do',
+  // 获取检查类型
+  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',
+  // 获取检查模板
+  getCheckModule: '/mobile/getAqjc.do?action=getMb',
+  // 根据检查模板查询检查项
+  getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
+
+  /*通用接口*/
   // 获取部门
   getOrgList: '/mobile/getUser.do?action=getOrgList ',
   // 获取人员
   getPersonList: '/mobile/getUser.do?action=getUserList ',
-
   // 上传照片
   uploadImage: '/uploadImg',
   // 删除照片
@@ -2456,7 +2467,6 @@ var _default =
 
     },
     loadMore: function loadMore(index) {var _this2 = this;
-      console.log('123123123');
       setTimeout(function () {
         _this2.addData(index);
       }, 50);
