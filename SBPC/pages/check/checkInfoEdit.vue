@@ -5,27 +5,27 @@
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<picker id="ifwt" @change="pickerChange(typeArray, $event)" v-bind:range="typeArray">
-					<uni-list-item title="检查结论" :subnote="item.ifwt" :show-arrow="true"></uni-list-item>
+				<picker id="ifwt" @change="resultPickerChange(typeArray, $event)" v-bind:range="typeArray">
+					<uni-list-item title="检查结论" :subnote="typeArray[parseInt(item.ifwt)-1]" :show-arrow="true"></uni-list-item>
 				</picker>
-				<uni-list-item id="wtms" title="问题描述" :note="item.wtms" :show-arrow="true" @click="jumpInput('wtms', '请输入问题描述', item.wtms)"></uni-list-item>
-				<picker id="zgqk" @change="pickerChange(rectifyTypes, $event)" v-bind:range="rectifyTypes">
-					<uni-list-item title="检查方式" :subnote="item.zgqk" :show-arrow="true"></uni-list-item>
+				<uni-list-item id="wtms" title="问题描述" :note="item.wtms" :show-arrow="true" @click="jumpInput('wtms', '请输入问题描述', item.wtms)" v-if="item.ifwt != '1'"></uni-list-item>
+				<picker id="zgqk" @change="pickerChange(rectifyTypes, $event)" v-bind:range="rectifyTypes" v-if="item.ifwt != '1'">
+					<uni-list-item title="检查方式" :subnote="rectifyTypes[parseInt(item.zgqk)-1]" :show-arrow="true"></uni-list-item>
 				</picker>
 			</uni-list>
-			<view class='cellImageBaseView' v-if="item.id != ''"> 
+			<view class='cellImageBaseView' v-if="item.ifwt != '1'"> 
 				<view class='cellImageTitleView'>
 				  <text class='leftTextRow'>检查照片</text>
-				  <text class='rightTextRow'>{{imageList.length}}</text>
+				  <text class='rightTextRow'>{{item.zplist.length}}</text>
 				</view>
 				<view id='imageView' class='imageView'>
-				  <block v-for="(imgObj,idx) in imageList" :key="idx">
+				  <block v-for="(imgObj,idx) in item.zplist" :key="idx">
 					<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
-					  <image class="littleImage" @click="viewPhoto" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
-					  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage(imgObj,idx)" :id='idx' mode="aspectFit"></image>
+					  <image class="littleImage" @click="viewPhoto('zplist')" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+					  <image class='littleImageDelete' src='../../static/assets/delete.png' @click="deleteImage('zplist', imgObj, idx)" :id='idx' mode="aspectFit"></image>
 					</view>
 				  </block>
-				  <view class="littleImageView" @click='addPhoto' v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+				  <view class="littleImageView" @click="addPhoto('zplist')" v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
 					<image class="littleImage" src="../../static/assets/addImage.png"></image>
 				  </view>
 				</view>
@@ -42,6 +42,7 @@
 	import uniListItem from '@/components/list/uni-list-item/uni-list-item.vue'
 	import config from '../../util/config.js';
 	import request from '../../util/request.js';
+	import photo from '../../util/photoUtil.js';
 	import {
 	    mapState,
 		mapMutations
@@ -61,7 +62,6 @@
 				
 				// 上传照片相关
 				imageViewHeight: 100,
-				imageList: [],
 				littleImageWidth: 0,
 		    }
 		},
@@ -96,7 +96,7 @@
 			...mapMutations(['setSublistItem']),
 			/*通用方法相关*/
 			pickerChange: function(data, e) {
-				this.item[e.target.id] = data[e.target.value];
+				this.item[e.target.id] = parseInt(e.target.value) + 1;
 			},
 			jumpInput: function(key, placeholder, text) {
 				uni.navigateTo({
@@ -107,6 +107,26 @@
 				});
 			},
 			
+			// 检查结论选择
+			resultPickerChange: function(data, e) {
+				if (e.target.value == '0' && (this.item.wtms != '' || this.item.zgqk != '' || this.item.zplist.length > 0)) {
+					uni.showModal({
+					    content: '选择[正常]将要清除问题描述、检查方式、检查照片，是否确认？',
+					    success: (res) => {
+					        if (res.confirm) {
+					            this.item.wtms = "";
+								this.item.zgqk = "";
+								this.item.zplist = [];
+								this.item[e.target.id] = parseInt(e.target.value) + 1;
+					        }else {
+								return;
+							}
+					    }
+					})
+				}else {
+					this.item[e.target.id] = parseInt(e.target.value) + 1;
+				}
+			},
 			saveItem() {
 				var that = this;
 				var result = {
@@ -115,48 +135,26 @@
 				}
 				that.$fire.fire(that.key, result);
 				uni.navigateBack()
-				
-				// 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口
-// 				let url = config.uploadImage + '?from=jc&yyid=' + that.item.id + '&userid=' + that.userInfo.userid
-// 				var imgList = []
-// 				for (var i=0 ; i<that.imageList.length; i++) {
-// 					let item = that.imageList[i]
-// 					if (item.type == 1 && !item.src.startsWith('http:')) {
-// 						imgList.push(item.src);
-// 					}
-// 				}
-// 				
-// 				if(imgList.length == 0) {
-// 					that.saveLocalItem();
-// 					uni.navigateBack({
-// 						delta: 1
-// 					})
-// 					return;
-// 				}
-// 				uni.showLoading({
-// 					title: '正在上传图片'
-// 				})
-// 				request.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {
-// 					let data = JSON.parse(res.data);
-// 					let fj = data.fj;
-// 					that.item.fj = fj;
-// 					console.log('Item:',JSON.stringify(that.item));
-// 				}, function(result){
-// 					uni.hideLoading();
-// 					if (result == '200') {
-// 						that.saveLocalItem();
-// 						uni.showToast({
-// 						  title: '上传成功',
-// 						  complete: setTimeout(function () {
-// 							uni.navigateBack({
-// 								delta: 1
-// 							})
-// 						  }, 1500)
-// 						})
-// 					}
-// 				});
 			},
 			
+			// 添加照片
+			addPhoto(imgListName) {
+				var that = this;
+				photo.addPhoto(function(photoList) {
+					that.item[imgListName] = that.item[imgListName].concat(photoList);
+				});
+			},
+			// 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口
+			deleteImage(imgListName, imgObj, index) {
+				var that = this;
+				photo.deletePhoto(that.item[imgListName], imgObj, index, function(photoList){
+					that.item[imgListName] = photoList;
+				});
+			},
+			// 浏览照片
+			viewPhoto(imgListName) {
+				photo.viewPhoto(this.item[imgListName])
+			},
 		}
 	}
 </script>

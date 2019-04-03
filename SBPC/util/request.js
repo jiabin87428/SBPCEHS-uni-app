@@ -12,19 +12,22 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 	  	title: message,
 	  });
 	}
+	params = formatParam(params);
 	console.log('request.js :' + url);
 	uni.request({
 			url: config.host + url, 
 			data: params,
 			header: {
-					// 'Content-Type': 'application/json'
+					// 'Content-Type': 'application/json;charset=utf-8'
 					'Content-type': 'application/x-www-form-urlencoded'
 			},
 			method: 'POST',
 			success: (res) => {
 // 					wx.hideNavigationBarLoading()
+					console.log("请求成功");
 					if (message != "") {
-					  uni.hideLoading()
+						console.log("成功后隐藏Loading");
+						uni.hideLoading()
 					}
 
 // 				uni.showToast({
@@ -32,6 +35,7 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 // 					title: res.data.repMsg
 // 				});
 				if (res.data.repCode == '200') {
+					console.log("200");
 					success(res.data)
 				} else {
 					fail()
@@ -39,13 +43,15 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 			},
 			fail:(res) => {
 				if (message != "") {
-				  uni.hideLoading()  
+					console.log("失败后隐藏Loading");
+					uni.hideLoading()  
 				}
 				fail()
 			},
 			complete:() => {
 				if (message != "") {
-				  uni.hideLoading()
+					console.log("完成后隐藏Loading");
+					uni.hideLoading()
 				}
 				complete()
 			}
@@ -113,6 +119,21 @@ const request = function(url, message, success, fail) {
 			}
 	});
 }
+
+// 复杂对象中的对象数组需要转成jsonString
+const formatParam = function(param) {
+	console.log("formatParam");
+	// console.log(Object.keys(param));
+	Object.keys(param).forEach(function(key){
+		 // console.log(key,param[key]);
+		 if (typeof param[key] == "object") {
+			 param[key] = JSON.stringify(param[key]);
+		 }
+	});
+	console.log(JSON.stringify(param));
+	return param;
+}
+
 export default {
     request,
     requestLoading,

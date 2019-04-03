@@ -35,6 +35,8 @@ var config = {
 	getCheckModule: '/mobile/getAqjc.do?action=getMb',
 	// 根据检查模板查询检查项
 	getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
+	// 保存检查
+	saveCheck: '/mobile/getAqjc.do?action=insertJc',
 	
 	/*通用接口*/
 	// 获取部门

@@ -90,7 +90,18 @@
         }, {
             "path": "pages/check/checkEdit",
             "style": {
-                "navigationBarTitleText": "检查编辑"
+                "navigationBarTitleText": "检查编辑",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "一键正常",  
+							"fontSrc": "/static/uni.ttf",  
+							"fontSize": "14px",
+							"width": "70px"
+						}]  
+					}  
+				} 
+				
             }
         }, {
             "path": "pages/check/checkInfoEdit",

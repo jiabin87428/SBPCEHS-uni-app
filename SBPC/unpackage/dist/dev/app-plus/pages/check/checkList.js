@@ -501,6 +501,8 @@ var config = {
   getCheckModule: '/mobile/getAqjc.do?action=getMb',
   // 根据检查模板查询检查项
   getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
+  // 保存检查
+  saveCheck: '/mobile/getAqjc.do?action=insertJc',
 
   /*通用接口*/
   // 获取部门
@@ -542,18 +544,21 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       title: message });
 
   }
+  params = formatParam(params);
   console.log('request.js :' + url);
   uni.request({
     url: config.host + url,
     data: params,
     header: {
-      // 'Content-Type': 'application/json'
+      // 'Content-Type': 'application/json;charset=utf-8'
       'Content-type': 'application/x-www-form-urlencoded' },
 
     method: 'POST',
     success: function success(res) {
       // 					wx.hideNavigationBarLoading()
+      console.log("请求成功");
       if (message != "") {
+        console.log("成功后隐藏Loading");
         uni.hideLoading();
       }
 
@@ -562,6 +567,7 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       // 					title: res.data.repMsg
       // 				});
       if (res.data.repCode == '200') {
+        console.log("200");
         _success(res.data);
       } else {
         _fail();
@@ -569,12 +575,14 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     },
     fail: function fail(res) {
       if (message != "") {
+        console.log("失败后隐藏Loading");
         uni.hideLoading();
       }
       _fail();
     },
     complete: function complete() {
       if (message != "") {
+        console.log("完成后隐藏Loading");
         uni.hideLoading();
       }
       _complete();
@@ -642,7 +650,22 @@ var request = function request(url, message, _success3, _fail3) {
       _fail3();
     } });
 
+};
+
+// 复杂对象中的对象数组需要转成jsonString
+var formatParam = function formatParam(param) {
+  console.log("formatParam");
+  // console.log(Object.keys(param));
+  Object.keys(param).forEach(function (key) {
+    // console.log(key,param[key]);
+    if (typeof param[key] == "object") {
+      param[key] = JSON.stringify(param[key]);
+    }
+  });
+  console.log(JSON.stringify(param));
+  return param;
 };var _default =
+
 {
   request: request,
   requestLoading: requestLoading,

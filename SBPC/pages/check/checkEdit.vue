@@ -6,10 +6,10 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<picker id="jclx" @change="pickerChange(checkTypes, $event)" v-bind:range="checkTypes" range-key="dictvalue">
-						<uni-list-item title="检查类型" :subnote="model.jclx.dictvalue" :show-arrow="true"></uni-list-item>
+					<picker id="jclx" @change="typePickerChange(checkTypes, $event)" v-bind:range="checkTypes" range-key="dictvalue">
+						<uni-list-item title="检查类型" :subnote="model.jclx" :show-arrow="true"></uni-list-item>
 					</picker>
-					<uni-list-item title="检查人" :note="model.jcr" show-arrow="false"></uni-list-item>
+					<uni-list-item title="检查人" :subnote="model.llrmc" show-arrow="false"></uni-list-item>
 					<picker mode="date" :value="model.jcrq" @change="dateChange('jcrq', $event)">
 						<uni-list-item title="检查日期" :subnote="model.jcrq" :show-arrow="true"></uni-list-item>
 					</picker>
@@ -77,6 +77,8 @@
 		data() {
 			return {
 				model: {
+					recordid: '',	// 主键，有值更新，没值插入
+					userid: '',
 					jclx: '',
 					llrid: '',
 					llrmc: '',
@@ -123,12 +125,14 @@
 			}
 		},
 		onLoad(option) {
-			
+			this.model.userid = this.userInfo.userid;
 			if (this.pageState == 0) {
 				// 获取检查类型
 				this.getCheckTypes();
 				// 获取检查模板
 				this.getCheckModule();
+				this.model.llrid = this.userInfo.userid;
+				this.model.llrmc = this.userInfo.username;
 			}
 		},
 		onNavigationBarButtonTap() {
@@ -179,21 +183,36 @@
 			},
 			// 保存
 			saveClick: function(e) {
-				
+				var that = this;
+				var param = that.model;
+				// param.jcjlList = JSON.stringify(param.jcjlList);	// 复杂对象中的对象数组需要转成jsonString
+				request.requestLoading(config.saveCheck, param, '正在保存检查', 
+					function(res){
+						console.log('' + JSON.stringify(res));
+						uni.showToast({
+							icon: 'none',
+							title: '保存成功'
+						});
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '保存失败'
+						});
+					}, function(){
+						
+					}
+				);
 			},
 			// 完成检查
 			completeClick: function(e) {
 				
 			},
 			
-			/*通用方法相关*/
-			pickerChange: function(data, e) {
-				this.model[e.target.id] = data[e.target.value];
+			typePickerChange: function(data, e) {// 目前只有检查类型用
+				this.model[e.target.id] = data[e.target.value].dictvalue;
+				this.model['jclxbm'] = data[e.target.value].dictvalue;
 			},
-			dateChange: function(key, e, editableState) {
-				if(this.pageState != editableState) {
-					return
-				}
+			dateChange: function(key, e) {
 				this.model[key] = e.target.value
 			},
 			// 多选成员
@@ -264,7 +283,7 @@
 			  }
 			  var newItem = {
 				  bzlx: '1',
-				  ifwt: '',
+				  ifwt: '2',
 				  jcbz: val,
 				  jcbzid: '',
 				  wtms: '',
@@ -298,11 +317,11 @@
 			},
 			// 获取检查项状态图标
 			getIcon(item) {
-				if (item.ifwt == '正常') {
+				if (item.ifwt == '1') {// 正常图标
 					return this.normal;
-				}else if (item.ifwt == '异常') {
+				}else if (item.ifwt == '3') {// 异常图标
 					return this.abnormal;
-				}else {
+				}else {// 未检图标
 					return this.undetected;
 				}
 			},

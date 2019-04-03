@@ -10,7 +10,7 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181221_syb_scopedata*/global.__wcc_version__='v0.5vv_20181221_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -650,32 +650,34 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
-var value = $gdc( raw, "", 2 );
-if ( o.ap && value && value.constructor===Function ) 
-{
-attrname = "$wxs:" + attrname; 
-node.attr["$gdc"] = $gdc;
-}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
+var value = $gdc( raw, "", 2 );
+return value;
 }
-node.attr[attrname] = value;
+else
+{
+var value = $gdc( raw, "", 2 );
+return value;
+}
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-_da( node, attrname, opindex, a, o );
+a = _da( node, attrname, opindex, a, o );
+node.attr[attrname] = a;
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-_da( node, attrname, opindex, a, o );
+a = _da( node, attrname, opindex, a, o );
+node.attr[attrname] = a;
 }
 function _o( opindex, env, scope, global )
 {
@@ -1179,6 +1181,13 @@ Z(z[3])
 Z([1,'5c0aa864-22'])
 Z(z[5])
 Z([3,'审批意见'])
+Z([3,'4508b5aa-default-4508b5aa-1'])
+Z([3,'idx'])
+Z([3,'logItem'])
+Z([[7],[3,'logList']])
+Z(z[122])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
 Z([3,'609973d6-default-609973d6-5'])
 Z(z[1])
 Z([3,'_picker 609973d6'])
@@ -1195,7 +1204,7 @@ Z(z[5])
 Z(z[57])
 Z([3,'检查人'])
 Z(z[1])
-Z(z[123])
+Z(z[130])
 Z(z[3])
 Z([1,'609973d6-1'])
 Z(z[34])
@@ -1210,7 +1219,7 @@ Z([1,'609973d6-2'])
 Z(z[5])
 Z([3,'检查组成员'])
 Z(z[1])
-Z(z[123])
+Z(z[130])
 Z(z[3])
 Z([1,'609973d6-3'])
 Z([3,'mb'])
@@ -1223,20 +1232,13 @@ Z([3,'609973d6-default-609973d6-10'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'model']],[3,'jcjlList']])
-Z(z[162])
+Z(z[169])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
 Z(z[5])
 Z([3,'true'])
-Z([3,'4508b5aa-default-4508b5aa-1'])
-Z([3,'idx'])
-Z([3,'logItem'])
-Z([[7],[3,'logList']])
-Z(z[173])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
 Z([3,'77ae7fa4-default-77ae7fa4-3'])
 Z(z[1])
 Z([3,'_picker 77ae7fa4'])
@@ -1247,6 +1249,7 @@ Z([[7],[3,'typeArray']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
 Z([3,'检查结论'])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
@@ -1254,6 +1257,7 @@ Z([1,'77ae7fa4-1'])
 Z([3,'wtms'])
 Z(z[5])
 Z([3,'问题描述'])
+Z(z[189])
 Z(z[1])
 Z(z[181])
 Z(z[3])
@@ -1426,7 +1430,7 @@ Z([3,'77ae7fa4'])
 Z([3,'_view 77ae7fa4 cellInfoView'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-3']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77ae7fa4-default-77ae7fa4-3']]])
 Z([3,'3b6bb3ad'])
-Z([[2,'!='],[[6],[[7],[3,'item']],[3,'id']],[1,'']])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
 function gz$gwx_12(){
@@ -1731,7 +1735,7 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','/common/slots.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':5c0aa864-default-5c0aa864-8'
@@ -1742,7 +1746,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:7:47")
+cs.push("./common/slots.wxml:template:10:47")
 var xC=_oz(z,5,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1752,11 +1756,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],7,214)
+else _w(xC,x[0],10,214)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:7:237")
+cs.push("./common/slots.wxml:template:10:237")
 var hG=_oz(z,11,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1766,11 +1770,11 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],7,404)
+else _w(hG,x[0],10,404)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:7:427")
+cs.push("./common/slots.wxml:template:10:427")
 var lK=_oz(z,17,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
@@ -1780,13 +1784,13 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],7,594)
+else _w(lK,x[0],10,594)
 cs.pop()
-cs.push("./common/slots.wxml:picker:7:617")
+cs.push("./common/slots.wxml:picker:10:617")
 var eN=_mz(z,'picker',['bindchange',19,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:7:806")
+cs.push("./common/slots.wxml:template:10:806")
 var oP=_oz(z,27,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
@@ -1796,15 +1800,15 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],7,898)
+else _w(oP,x[0],10,898)
 cs.pop()
 cs.pop()
 _(r,eN)
-cs.push("./common/slots.wxml:picker:7:930")
+cs.push("./common/slots.wxml:picker:10:930")
 var fS=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:7:1121")
+cs.push("./common/slots.wxml:template:10:1121")
 var hU=_oz(z,37,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
@@ -1814,15 +1818,15 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],7,1213)
+else _w(hU,x[0],10,1213)
 cs.pop()
 cs.pop()
 _(r,fS)
-cs.push("./common/slots.wxml:picker:7:1245")
+cs.push("./common/slots.wxml:picker:10:1245")
 var oX=_mz(z,'picker',['bindchange',39,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:7:1436")
+cs.push("./common/slots.wxml:template:10:1436")
 var aZ=_oz(z,47,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
@@ -1832,13 +1836,13 @@ lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],7,1528)
+else _w(aZ,x[0],10,1528)
 cs.pop()
 cs.pop()
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:7:1560")
+cs.push("./common/slots.wxml:template:10:1560")
 var o4=_oz(z,53,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
@@ -1848,11 +1852,11 @@ b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],7,1727)
+else _w(o4,x[0],10,1727)
 cs.pop()
 var f7=_v()
 _(r,f7)
-cs.push("./common/slots.wxml:template:7:1750")
+cs.push("./common/slots.wxml:template:10:1750")
 var c8=_oz(z,56,e,s,gg)
 var h9=_gd(x[0],c8,e_,d_)
 if(h9){
@@ -1862,7 +1866,7 @@ f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[0],7,1858)
+else _w(c8,x[0],10,1858)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1881,7 +1885,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:9:48")
+cs.push("./common/slots.wxml:template:12:48")
 var xC=_oz(z,64,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1891,11 +1895,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],9,216)
+else _w(xC,x[0],12,216)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:9:239")
+cs.push("./common/slots.wxml:template:12:239")
 var hG=_oz(z,70,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1905,11 +1909,11 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],9,408)
+else _w(hG,x[0],12,408)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:9:431")
+cs.push("./common/slots.wxml:template:12:431")
 var lK=_oz(z,76,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
@@ -1919,13 +1923,13 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],9,600)
+else _w(lK,x[0],12,600)
 cs.pop()
-cs.push("./common/slots.wxml:picker:9:623")
+cs.push("./common/slots.wxml:picker:12:623")
 var eN=_mz(z,'picker',['bindchange',78,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:9:817")
+cs.push("./common/slots.wxml:template:12:817")
 var oP=_oz(z,86,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
@@ -1935,13 +1939,13 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],9,910)
+else _w(oP,x[0],12,910)
 cs.pop()
 cs.pop()
 _(r,eN)
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:9:942")
+cs.push("./common/slots.wxml:template:12:942")
 var cT=_oz(z,89,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
@@ -1951,7 +1955,7 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],9,1051)
+else _w(cT,x[0],12,1051)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1970,7 +1974,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:11:48")
+cs.push("./common/slots.wxml:template:14:48")
 var xC=_oz(z,97,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1980,11 +1984,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],11,217)
+else _w(xC,x[0],14,217)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:11:240")
+cs.push("./common/slots.wxml:template:14:240")
 var hG=_oz(z,100,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1994,13 +1998,13 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],11,349)
+else _w(hG,x[0],14,349)
 cs.pop()
-cs.push("./common/slots.wxml:picker:11:372")
+cs.push("./common/slots.wxml:picker:14:372")
 var oJ=_mz(z,'picker',['bindchange',103,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:11:567")
+cs.push("./common/slots.wxml:template:14:567")
 var aL=_oz(z,111,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
@@ -2010,7 +2014,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],11,660)
+else _w(aL,x[0],14,660)
 cs.pop()
 cs.pop()
 _(r,oJ)
@@ -2032,10 +2036,10 @@ try{
 var oB=_v()
 _(r,oB)
 if(_oz(z,114,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:13:48")
+cs.push("./common/slots.wxml:template:16:48")
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:13:48")
+cs.push("./common/slots.wxml:template:16:48")
 var oD=_oz(z,119,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
@@ -2045,11 +2049,49 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],13,278)
+else _w(oD,x[0],16,278)
 cs.pop()
 cs.pop()
 }
 oB.wxXCkey=1
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':4508b5aa-default-4508b5aa-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:18:47")
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:18:143")
+var cI=_oz(z,127,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,126,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],18,219)
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,124,xC,e,s,gg,oB,'logItem','idx','idx')
+cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -2065,85 +2107,85 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-cs.push("./common/slots.wxml:picker:15:47")
-var oB=_mz(z,'picker',['bindchange',122,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5,'rangeKey',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:20:47")
+var oB=_mz(z,'picker',['bindchange',129,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5,'rangeKey',6],[],e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:15:213")
-var oD=_oz(z,130,e,s,gg)
+cs.push("./common/slots.wxml:template:20:213")
+var oD=_oz(z,137,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,129,e,s,gg) || {}
+var cF=_1z(z,136,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],15,305)
+else _w(oD,x[0],20,305)
 cs.pop()
 cs.pop()
 _(r,oB)
 var hG=_v()
 _(r,hG)
-cs.push("./common/slots.wxml:template:15:337")
-var oH=_oz(z,133,e,s,gg)
+cs.push("./common/slots.wxml:template:20:337")
+var oH=_oz(z,140,e,s,gg)
 var cI=_gd(x[0],oH,e_,d_)
 if(cI){
-var oJ=_1z(z,132,e,s,gg) || {}
+var oJ=_1z(z,139,e,s,gg) || {}
 var cur_globalf=gg.f
 hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],15,445)
+else _w(oH,x[0],20,445)
 cs.pop()
-cs.push("./common/slots.wxml:picker:15:468")
-var lK=_mz(z,'picker',['bindchange',136,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:20:468")
+var lK=_mz(z,'picker',['bindchange',143,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var aL=_v()
 _(lK,aL)
-cs.push("./common/slots.wxml:template:15:614")
-var tM=_oz(z,143,e,s,gg)
+cs.push("./common/slots.wxml:template:20:614")
+var tM=_oz(z,150,e,s,gg)
 var eN=_gd(x[0],tM,e_,d_)
 if(eN){
-var bO=_1z(z,142,e,s,gg) || {}
+var bO=_1z(z,149,e,s,gg) || {}
 var cur_globalf=gg.f
 aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],15,706)
+else _w(tM,x[0],20,706)
 cs.pop()
 cs.pop()
 _(r,lK)
 var oP=_v()
 _(r,oP)
-cs.push("./common/slots.wxml:template:15:738")
-var xQ=_oz(z,149,e,s,gg)
+cs.push("./common/slots.wxml:template:20:738")
+var xQ=_oz(z,156,e,s,gg)
 var oR=_gd(x[0],xQ,e_,d_)
 if(oR){
-var fS=_1z(z,146,e,s,gg) || {}
+var fS=_1z(z,153,e,s,gg) || {}
 var cur_globalf=gg.f
 oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[0],15,908)
+else _w(xQ,x[0],20,908)
 cs.pop()
-cs.push("./common/slots.wxml:picker:15:931")
-var cT=_mz(z,'picker',['bindchange',151,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5,'rangeKey',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:20:931")
+var cT=_mz(z,'picker',['bindchange',158,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5,'rangeKey',6],[],e,s,gg)
 var hU=_v()
 _(cT,hU)
-cs.push("./common/slots.wxml:template:15:1094")
-var oV=_oz(z,159,e,s,gg)
+cs.push("./common/slots.wxml:template:20:1094")
+var oV=_oz(z,166,e,s,gg)
 var cW=_gd(x[0],oV,e_,d_)
 if(cW){
-var oX=_1z(z,158,e,s,gg) || {}
+var oX=_1z(z,165,e,s,gg) || {}
 var cur_globalf=gg.f
 hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[0],15,1186)
+else _w(oV,x[0],20,1186)
 cs.pop()
 cs.pop()
 _(r,cT)
@@ -2164,64 +2206,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:17:48")
+cs.push("./common/slots.wxml:template:22:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:17:48")
-var cI=_oz(z,170,fE,oD,gg)
+cs.push("./common/slots.wxml:template:22:48")
+var cI=_oz(z,177,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,167,fE,oD,gg) || {}
+var lK=_1z(z,174,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],17,246)
+else _w(cI,x[0],22,246)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,164,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':4508b5aa-default-4508b5aa-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:19:47")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:19:143")
-var cI=_oz(z,178,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,177,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],19,219)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,175,xC,e,s,gg,oB,'logItem','idx','idx')
+_2z(z,171,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2238,56 +2242,70 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-cs.push("./common/slots.wxml:picker:21:47")
-var oB=_mz(z,'picker',['bindchange',180,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var xC=_v()
-_(oB,xC)
-cs.push("./common/slots.wxml:template:21:190")
-var oD=_oz(z,187,e,s,gg)
-var fE=_gd(x[0],oD,e_,d_)
-if(fE){
-var cF=_1z(z,186,e,s,gg) || {}
+cs.push("./common/slots.wxml:picker:24:47")
+var oD=_mz(z,'picker',['bindchange',180,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var fE=_v()
+_(oD,fE)
+cs.push("./common/slots.wxml:template:24:190")
+var cF=_oz(z,187,e,s,gg)
+var hG=_gd(x[0],cF,e_,d_)
+if(hG){
+var oH=_1z(z,186,e,s,gg) || {}
 var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
+fE.wxXCkey=3
+hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],21,282)
+else _w(cF,x[0],24,282)
 cs.pop()
 cs.pop()
+_(r,oD)
+var oB=_v()
 _(r,oB)
-var hG=_v()
-_(r,hG)
-cs.push("./common/slots.wxml:template:21:314")
-var oH=_oz(z,194,e,s,gg)
-var cI=_gd(x[0],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,190,e,s,gg) || {}
+if(_oz(z,189,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:24:314")
+var cI=_v()
+_(oB,cI)
+cs.push("./common/slots.wxml:template:24:314")
+var oJ=_oz(z,195,e,s,gg)
+var lK=_gd(x[0],oJ,e_,d_)
+if(lK){
+var aL=_1z(z,191,e,s,gg) || {}
 var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
+cI.wxXCkey=3
+lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],21,491)
+else _w(oJ,x[0],24,520)
 cs.pop()
-cs.push("./common/slots.wxml:picker:21:514")
-var lK=_mz(z,'picker',['bindchange',196,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var aL=_v()
-_(lK,aL)
-cs.push("./common/slots.wxml:template:21:660")
-var tM=_oz(z,203,e,s,gg)
-var eN=_gd(x[0],tM,e_,d_)
-if(eN){
-var bO=_1z(z,202,e,s,gg) || {}
+cs.pop()
+}
+var xC=_v()
+_(r,xC)
+if(_oz(z,197,e,s,gg)){xC.wxVkey=1
+cs.push("./common/slots.wxml:picker:24:543")
+cs.push("./common/slots.wxml:picker:24:543")
+var tM=_mz(z,'picker',['bindchange',198,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var eN=_v()
+_(tM,eN)
+cs.push("./common/slots.wxml:template:24:718")
+var bO=_oz(z,205,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,204,e,s,gg) || {}
 var cur_globalf=gg.f
-aL.wxXCkey=3
-eN(bO,bO,aL,gg)
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],21,752)
+else _w(bO,x[0],24,810)
 cs.pop()
 cs.pop()
-_(r,lK)
+_(xC,tM)
+cs.pop()
+}
+oB.wxXCkey=1
+xC.wxXCkey=1
 }catch(err){
 p_[b]=false
 throw err
@@ -2303,6 +2321,12 @@ _ai(oB,x[2],e_,x[0],2,2)
 _ai(oB,x[3],e_,x[0],3,2)
 _ai(oB,x[4],e_,x[0],4,2)
 _ai(oB,x[5],e_,x[0],5,2)
+_ai(oB,x[6],e_,x[0],6,2)
+_ai(oB,x[7],e_,x[0],7,2)
+_ai(oB,x[8],e_,x[0],8,2)
+oB.pop()
+oB.pop()
+oB.pop()
 oB.pop()
 oB.pop()
 oB.pop()
@@ -2310,14 +2334,14 @@ oB.pop()
 oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5]],ic:[]}
-d_[x[6]]={}
-d_[x[6]]["68dcfa4a"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8]],ic:[]}
+d_[x[9]]={}
+d_[x[9]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[6]+':68dcfa4a'
+var b=x[9]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[6]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -2338,14 +2362,14 @@ var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 return r
 }
-e_[x[6]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[7]]={}
-d_[x[7]]["346bda0d"]=function(e,s,r,gg){
+e_[x[9]]={f:m1,j:[],i:[],ti:[],ic:[]}
+d_[x[10]]={}
+d_[x[10]]["346bda0d"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[7]+':346bda0d'
+var b=x[10]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[7]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2359,14 +2383,14 @@ var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 return r
 }
-e_[x[7]]={f:m2,j:[],i:[],ti:[],ic:[]}
-d_[x[8]]={}
-d_[x[8]]["30c48a99"]=function(e,s,r,gg){
+e_[x[10]]={f:m2,j:[],i:[],ti:[],ic:[]}
+d_[x[11]]={}
+d_[x[11]]["30c48a99"]=function(e,s,r,gg){
 var z=gz$gwx_4()
-var b=x[8]+':30c48a99'
+var b=x[11]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[8]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
@@ -2386,7 +2410,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:805")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[8],oH,e_,d_)
+var cI=_gd(x[11],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2394,7 +2418,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[8],1,876)
+else _w(oH,x[11],1,876)
 cs.pop()
 cs.pop()
 }
@@ -2425,7 +2449,7 @@ var oP=_v()
 _(tM,oP)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1431")
 var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[8],xQ,e_,d_)
+var oR=_gd(x[11],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2433,7 +2457,7 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[8],1,1557)
+else _w(xQ,x[11],1,1557)
 cs.pop()
 cs.pop()
 }
@@ -2451,7 +2475,7 @@ var cT=_v()
 _(bO,cT)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1802")
 var hU=_oz(z,22,e,s,gg)
-var oV=_gd(x[8],hU,e_,d_)
+var oV=_gd(x[11],hU,e_,d_)
 if(oV){
 var cW=_1z(z,21,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2459,7 +2483,7 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[8],1,1969)
+else _w(hU,x[11],1,1969)
 cs.pop()
 cs.pop()
 }
@@ -2487,21 +2511,21 @@ return r
 }
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var cF=e_[x[8]].i
-_ai(cF,x[3],e_,x[8],1,1)
-_ai(cF,x[9],e_,x[8],1,61)
+var cF=e_[x[11]].i
+_ai(cF,x[3],e_,x[11],1,1)
+_ai(cF,x[8],e_,x[11],1,61)
 cF.pop()
 cF.pop()
 return r
 }
-e_[x[8]]={f:m3,j:[],i:[],ti:[x[3],x[9]],ic:[]}
-d_[x[10]]={}
-d_[x[10]]["3b6bb3ad"]=function(e,s,r,gg){
+e_[x[11]]={f:m3,j:[],i:[],ti:[x[3],x[8]],ic:[]}
+d_[x[12]]={}
+d_[x[12]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[10]+':3b6bb3ad'
+var b=x[12]+':3b6bb3ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[10]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list/uni-list.vue.wxml:view:1:62")
@@ -2511,7 +2535,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./components/list/uni-list/uni-list.vue.wxml:template:1:136")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[10],oD,e_,d_)
+var fE=_gd(x[12],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2519,7 +2543,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[10],1,194)
+else _w(oD,x[12],1,194)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -2530,12 +2554,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[10]]["default"]=function(e,s,r,gg){
+d_[x[12]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[10]+':default'
+var b=x[12]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[10]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2547,19 +2571,19 @@ return r
 }
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var oH=e_[x[10]].i
-_ai(oH,x[5],e_,x[10],1,1)
+var oH=e_[x[12]].i
+_ai(oH,x[7],e_,x[12],1,1)
 oH.pop()
 return r
 }
-e_[x[10]]={f:m4,j:[],i:[],ti:[x[5]],ic:[]}
-d_[x[11]]={}
-d_[x[11]]["2241d2a0"]=function(e,s,r,gg){
+e_[x[12]]={f:m4,j:[],i:[],ti:[x[7]],ic:[]}
+d_[x[13]]={}
+d_[x[13]]["2241d2a0"]=function(e,s,r,gg){
 var z=gz$gwx_6()
-var b=x[11]+':2241d2a0'
+var b=x[13]+':2241d2a0'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[13]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2573,14 +2597,14 @@ var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
 return r
 }
-e_[x[11]]={f:m5,j:[],i:[],ti:[],ic:[]}
-d_[x[12]]={}
-d_[x[12]]["7dcb1efb"]=function(e,s,r,gg){
+e_[x[13]]={f:m5,j:[],i:[],ti:[],ic:[]}
+d_[x[14]]={}
+d_[x[14]]["7dcb1efb"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[12]+':7dcb1efb'
+var b=x[14]+':7dcb1efb'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-input.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 cs.push("./components/m-input.vue.wxml:view:1:78")
@@ -2594,7 +2618,7 @@ var fE=_v()
 _(xC,fE)
 cs.push("./components/m-input.vue.wxml:template:1:521")
 var cF=_oz(z,8,e,s,gg)
-var hG=_gd(x[12],cF,e_,d_)
+var hG=_gd(x[14],cF,e_,d_)
 if(hG){
 var oH=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2602,7 +2626,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[12],1,706)
+else _w(cF,x[14],1,706)
 cs.pop()
 cs.pop()
 }
@@ -2614,7 +2638,7 @@ var cI=_v()
 _(oD,cI)
 cs.push("./components/m-input.vue.wxml:template:1:803")
 var oJ=_oz(z,16,e,s,gg)
-var lK=_gd(x[12],oJ,e_,d_)
+var lK=_gd(x[14],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,13,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2622,7 +2646,7 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[12],1,970)
+else _w(oJ,x[14],1,970)
 cs.pop()
 cs.pop()
 }
@@ -2639,19 +2663,19 @@ return r
 }
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var lK=e_[x[12]].i
-_ai(lK,x[13],e_,x[12],1,1)
+var lK=e_[x[14]].i
+_ai(lK,x[6],e_,x[14],1,1)
 lK.pop()
 return r
 }
-e_[x[12]]={f:m6,j:[],i:[],ti:[x[13]],ic:[]}
-d_[x[14]]={}
-d_[x[14]]["15605040"]=function(e,s,r,gg){
+e_[x[14]]={f:m6,j:[],i:[],ti:[x[6]],ic:[]}
+d_[x[15]]={}
+d_[x[15]]["15605040"]=function(e,s,r,gg){
 var z=gz$gwx_8()
-var b=x[14]+':15605040'
+var b=x[15]+':15605040'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/prompt/prompt.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[14]);return}
+if(p_[b]){_wl(b,x[15]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -2664,7 +2688,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./components/prompt/prompt.vue.wxml:template:1:599")
 var fE=_oz(z,8,e,s,gg)
-var cF=_gd(x[14],fE,e_,d_)
+var cF=_gd(x[15],fE,e_,d_)
 if(cF){
 var hG=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2672,7 +2696,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[14],1,657)
+else _w(fE,x[15],1,657)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -2686,12 +2710,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[14]]["default"]=function(e,s,r,gg){
+d_[x[15]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_8()
-var b=x[14]+':default'
+var b=x[15]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/prompt/prompt.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[14]);return}
+if(p_[b]){_wl(b,x[15]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2703,19 +2727,19 @@ return r
 }
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var tM=e_[x[14]].i
-_ai(tM,x[5],e_,x[14],1,1)
+var tM=e_[x[15]].i
+_ai(tM,x[7],e_,x[15],1,1)
 tM.pop()
 return r
 }
-e_[x[14]]={f:m7,j:[],i:[],ti:[x[5]],ic:[]}
-d_[x[15]]={}
-d_[x[15]]["609973d6"]=function(e,s,r,gg){
+e_[x[15]]={f:m7,j:[],i:[],ti:[x[7]],ic:[]}
+d_[x[16]]={}
+d_[x[16]]["609973d6"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[15]+':609973d6'
+var b=x[16]+':609973d6'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/check/checkEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[15]);return}
+if(p_[b]){_wl(b,x[16]);return}
 p_[b]=true
 try{
 cs.push("./pages/check/checkEdit.vue.wxml:view:1:268")
@@ -2727,7 +2751,7 @@ var cF=_v()
 _(oD,cF)
 cs.push("./pages/check/checkEdit.vue.wxml:template:1:526")
 var hG=_oz(z,5,e,s,gg)
-var oH=_gd(x[15],hG,e_,d_)
+var oH=_gd(x[16],hG,e_,d_)
 if(oH){
 var cI=_1z(z,4,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2735,7 +2759,7 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[15],1,641)
+else _w(hG,x[16],1,641)
 cs.pop()
 var fE=_v()
 _(oD,fE)
@@ -2748,7 +2772,7 @@ var lK=_v()
 _(oJ,lK)
 cs.push("./pages/check/checkEdit.vue.wxml:template:1:870")
 var aL=_oz(z,10,e,s,gg)
-var tM=_gd(x[15],aL,e_,d_)
+var tM=_gd(x[16],aL,e_,d_)
 if(tM){
 var eN=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2756,13 +2780,13 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[15],1,990)
+else _w(aL,x[16],1,990)
 cs.pop()
 var bO=_v()
 _(oJ,bO)
 cs.push("./pages/check/checkEdit.vue.wxml:template:1:1066")
 var oP=_oz(z,15,e,s,gg)
-var xQ=_gd(x[15],oP,e_,d_)
+var xQ=_gd(x[16],oP,e_,d_)
 if(xQ){
 var oR=_1z(z,14,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2770,13 +2794,13 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[15],1,1182)
+else _w(oP,x[16],1,1182)
 cs.pop()
 var fS=_v()
 _(oJ,fS)
 cs.push("./pages/check/checkEdit.vue.wxml:template:1:1258")
 var cT=_oz(z,20,e,s,gg)
-var hU=_gd(x[15],cT,e_,d_)
+var hU=_gd(x[16],cT,e_,d_)
 if(hU){
 var oV=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2784,7 +2808,7 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[15],1,1368)
+else _w(cT,x[16],1,1368)
 cs.pop()
 cs.pop()
 _(fE,oJ)
@@ -2792,7 +2816,7 @@ var cW=_v()
 _(fE,cW)
 cs.push("./pages/check/checkEdit.vue.wxml:template:1:1440")
 var oX=_oz(z,24,e,s,gg)
-var lY=_gd(x[15],oX,e_,d_)
+var lY=_gd(x[16],oX,e_,d_)
 if(lY){
 var aZ=_1z(z,23,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2800,7 +2824,7 @@ cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[15],1,1557)
+else _w(oX,x[16],1,1557)
 cs.pop()
 cs.pop()
 }
@@ -2815,7 +2839,7 @@ var t1=_v()
 _(xC,t1)
 cs.push("./pages/check/checkEdit.vue.wxml:template:1:2099")
 var e2=_oz(z,31,e,s,gg)
-var b3=_gd(x[15],e2,e_,d_)
+var b3=_gd(x[16],e2,e_,d_)
 if(b3){
 var o4=_1z(z,28,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2823,7 +2847,7 @@ t1.wxXCkey=3
 b3(o4,o4,t1,gg)
 gg.f=cur_globalf
 }
-else _w(e2,x[15],1,2397)
+else _w(e2,x[16],1,2397)
 cs.pop()
 cs.pop()
 }
@@ -2839,28 +2863,28 @@ return r
 }
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var bO=e_[x[15]].i
-_ai(bO,x[1],e_,x[15],1,1)
-_ai(bO,x[2],e_,x[15],1,61)
-_ai(bO,x[3],e_,x[15],1,131)
-_ai(bO,x[4],e_,x[15],1,191)
+var bO=e_[x[16]].i
+_ai(bO,x[1],e_,x[16],1,1)
+_ai(bO,x[2],e_,x[16],1,61)
+_ai(bO,x[3],e_,x[16],1,131)
+_ai(bO,x[4],e_,x[16],1,191)
 bO.pop()
 bO.pop()
 bO.pop()
 bO.pop()
 return r
 }
-e_[x[15]]={f:m8,j:[],i:[],ti:[x[1],x[2],x[3],x[4]],ic:[]}
-d_[x[16]]={}
+e_[x[16]]={f:m8,j:[],i:[],ti:[x[1],x[2],x[3],x[4]],ic:[]}
+d_[x[17]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var xQ=e_[x[16]].i
-_ai(xQ,x[17],e_,x[16],1,1)
+var xQ=e_[x[17]].i
+_ai(xQ,x[18],e_,x[17],1,1)
 var oR=_v()
 _(r,oR)
 cs.push("./pages/check/checkEdit.wxml:template:2:6")
 var fS=_oz(z,1,e,s,gg)
-var cT=_gd(x[16],fS,e_,d_)
+var cT=_gd(x[17],fS,e_,d_)
 if(cT){
 var hU=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2868,19 +2892,19 @@ oR.wxXCkey=3
 cT(hU,hU,oR,gg)
 gg.f=cur_globalf
 }
-else _w(fS,x[16],2,18)
+else _w(fS,x[17],2,18)
 cs.pop()
 xQ.pop()
 return r
 }
-e_[x[16]]={f:m9,j:[],i:[],ti:[x[17]],ic:[]}
-d_[x[18]]={}
-d_[x[18]]["77ae7fa4"]=function(e,s,r,gg){
+e_[x[17]]={f:m9,j:[],i:[],ti:[x[18]],ic:[]}
+d_[x[19]]={}
+d_[x[19]]["77ae7fa4"]=function(e,s,r,gg){
 var z=gz$gwx_11()
-var b=x[18]+':77ae7fa4'
+var b=x[19]+':77ae7fa4'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/check/checkInfoEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[18]);return}
+if(p_[b]){_wl(b,x[19]);return}
 p_[b]=true
 try{
 cs.push("./pages/check/checkInfoEdit.vue.wxml:view:1:304")
@@ -2890,7 +2914,7 @@ var oD=_v()
 _(oB,oD)
 cs.push("./pages/check/checkInfoEdit.vue.wxml:template:1:346")
 var fE=_oz(z,3,e,s,gg)
-var cF=_gd(x[18],fE,e_,d_)
+var cF=_gd(x[19],fE,e_,d_)
 if(cF){
 var hG=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2898,7 +2922,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[18],1,461)
+else _w(fE,x[19],1,461)
 cs.pop()
 var xC=_v()
 _(oB,xC)
@@ -2918,24 +2942,24 @@ return r
 }
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var cW=e_[x[18]].i
-_ai(cW,x[1],e_,x[18],1,1)
-_ai(cW,x[2],e_,x[18],1,61)
+var cW=e_[x[19]].i
+_ai(cW,x[1],e_,x[19],1,1)
+_ai(cW,x[2],e_,x[19],1,61)
 cW.pop()
 cW.pop()
 return r
 }
-e_[x[18]]={f:m10,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[19]]={}
+e_[x[19]]={f:m10,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[20]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var lY=e_[x[19]].i
-_ai(lY,x[20],e_,x[19],1,1)
+var lY=e_[x[20]].i
+_ai(lY,x[21],e_,x[20],1,1)
 var aZ=_v()
 _(r,aZ)
 cs.push("./pages/check/checkInfoEdit.wxml:template:2:6")
 var t1=_oz(z,1,e,s,gg)
-var e2=_gd(x[19],t1,e_,d_)
+var e2=_gd(x[20],t1,e_,d_)
 if(e2){
 var b3=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2943,19 +2967,19 @@ aZ.wxXCkey=3
 e2(b3,b3,aZ,gg)
 gg.f=cur_globalf
 }
-else _w(t1,x[19],2,18)
+else _w(t1,x[20],2,18)
 cs.pop()
 lY.pop()
 return r
 }
-e_[x[19]]={f:m11,j:[],i:[],ti:[x[20]],ic:[]}
-d_[x[21]]={}
-d_[x[21]]["ab7aaa6c"]=function(e,s,r,gg){
+e_[x[20]]={f:m11,j:[],i:[],ti:[x[21]],ic:[]}
+d_[x[22]]={}
+d_[x[22]]["ab7aaa6c"]=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b=x[21]+':ab7aaa6c'
+var b=x[22]+':ab7aaa6c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/inputPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[21]);return}
+if(p_[b]){_wl(b,x[22]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2969,17 +2993,17 @@ var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
 return r
 }
-e_[x[21]]={f:m12,j:[],i:[],ti:[],ic:[]}
-d_[x[22]]={}
+e_[x[22]]={f:m12,j:[],i:[],ti:[],ic:[]}
+d_[x[23]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var o6=e_[x[22]].i
-_ai(o6,x[23],e_,x[22],1,1)
+var o6=e_[x[23]].i
+_ai(o6,x[24],e_,x[23],1,1)
 var f7=_v()
 _(r,f7)
 cs.push("./pages/common/inputPage.wxml:template:2:6")
 var c8=_oz(z,1,e,s,gg)
-var h9=_gd(x[22],c8,e_,d_)
+var h9=_gd(x[23],c8,e_,d_)
 if(h9){
 var o0=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2987,19 +3011,19 @@ f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[22],2,18)
+else _w(c8,x[23],2,18)
 cs.pop()
 o6.pop()
 return r
 }
-e_[x[22]]={f:m13,j:[],i:[],ti:[x[23]],ic:[]}
-d_[x[24]]={}
-d_[x[24]]["dd467128"]=function(e,s,r,gg){
+e_[x[23]]={f:m13,j:[],i:[],ti:[x[24]],ic:[]}
+d_[x[25]]={}
+d_[x[25]]["dd467128"]=function(e,s,r,gg){
 var z=gz$gwx_15()
-var b=x[24]+':dd467128'
+var b=x[25]+':dd467128'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/orgChoose.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[24]);return}
+if(p_[b]){_wl(b,x[25]);return}
 p_[b]=true
 try{
 cs.push("./pages/common/orgChoose.vue.wxml:view:1:27")
@@ -3066,17 +3090,17 @@ var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
 return r
 }
-e_[x[24]]={f:m14,j:[],i:[],ti:[],ic:[]}
-d_[x[25]]={}
+e_[x[25]]={f:m14,j:[],i:[],ti:[],ic:[]}
+d_[x[26]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
-var lCB=e_[x[25]].i
-_ai(lCB,x[26],e_,x[25],1,1)
+var lCB=e_[x[26]].i
+_ai(lCB,x[27],e_,x[26],1,1)
 var aDB=_v()
 _(r,aDB)
 cs.push("./pages/common/orgChoose.wxml:template:2:6")
 var tEB=_oz(z,1,e,s,gg)
-var eFB=_gd(x[25],tEB,e_,d_)
+var eFB=_gd(x[26],tEB,e_,d_)
 if(eFB){
 var bGB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3084,19 +3108,19 @@ aDB.wxXCkey=3
 eFB(bGB,bGB,aDB,gg)
 gg.f=cur_globalf
 }
-else _w(tEB,x[25],2,18)
+else _w(tEB,x[26],2,18)
 cs.pop()
 lCB.pop()
 return r
 }
-e_[x[25]]={f:m15,j:[],i:[],ti:[x[26]],ic:[]}
-d_[x[27]]={}
-d_[x[27]]["16742adb"]=function(e,s,r,gg){
+e_[x[26]]={f:m15,j:[],i:[],ti:[x[27]],ic:[]}
+d_[x[28]]={}
+d_[x[28]]["16742adb"]=function(e,s,r,gg){
 var z=gz$gwx_17()
-var b=x[27]+':16742adb'
+var b=x[28]+':16742adb'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/personChoose.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[27]);return}
+if(p_[b]){_wl(b,x[28]);return}
 p_[b]=true
 try{
 cs.push("./pages/common/personChoose.vue.wxml:view:1:27")
@@ -3171,17 +3195,17 @@ var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
 return r
 }
-e_[x[27]]={f:m16,j:[],i:[],ti:[],ic:[]}
-d_[x[28]]={}
+e_[x[28]]={f:m16,j:[],i:[],ti:[],ic:[]}
+d_[x[29]]={}
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
-var oJB=e_[x[28]].i
-_ai(oJB,x[29],e_,x[28],1,1)
+var oJB=e_[x[29]].i
+_ai(oJB,x[30],e_,x[29],1,1)
 var fKB=_v()
 _(r,fKB)
 cs.push("./pages/common/personChoose.wxml:template:2:6")
 var cLB=_oz(z,1,e,s,gg)
-var hMB=_gd(x[28],cLB,e_,d_)
+var hMB=_gd(x[29],cLB,e_,d_)
 if(hMB){
 var oNB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3189,19 +3213,19 @@ fKB.wxXCkey=3
 hMB(oNB,oNB,fKB,gg)
 gg.f=cur_globalf
 }
-else _w(cLB,x[28],2,18)
+else _w(cLB,x[29],2,18)
 cs.pop()
 oJB.pop()
 return r
 }
-e_[x[28]]={f:m17,j:[],i:[],ti:[x[29]],ic:[]}
-d_[x[30]]={}
-d_[x[30]]["23e0c24e"]=function(e,s,r,gg){
+e_[x[29]]={f:m17,j:[],i:[],ti:[x[30]],ic:[]}
+d_[x[31]]={}
+d_[x[31]]["23e0c24e"]=function(e,s,r,gg){
 var z=gz$gwx_19()
-var b=x[30]+':23e0c24e'
+var b=x[31]+':23e0c24e'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/selectedPersonPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[30]);return}
+if(p_[b]){_wl(b,x[31]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3215,17 +3239,17 @@ var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
 return r
 }
-e_[x[30]]={f:m18,j:[],i:[],ti:[],ic:[]}
-d_[x[31]]={}
+e_[x[31]]={f:m18,j:[],i:[],ti:[],ic:[]}
+d_[x[32]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var lQB=e_[x[31]].i
-_ai(lQB,x[32],e_,x[31],1,1)
+var lQB=e_[x[32]].i
+_ai(lQB,x[33],e_,x[32],1,1)
 var aRB=_v()
 _(r,aRB)
 cs.push("./pages/common/selectedPersonPage.wxml:template:2:6")
 var tSB=_oz(z,1,e,s,gg)
-var eTB=_gd(x[31],tSB,e_,d_)
+var eTB=_gd(x[32],tSB,e_,d_)
 if(eTB){
 var bUB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3233,19 +3257,19 @@ aRB.wxXCkey=3
 eTB(bUB,bUB,aRB,gg)
 gg.f=cur_globalf
 }
-else _w(tSB,x[31],2,18)
+else _w(tSB,x[32],2,18)
 cs.pop()
 lQB.pop()
 return r
 }
-e_[x[31]]={f:m19,j:[],i:[],ti:[x[32]],ic:[]}
-d_[x[33]]={}
-d_[x[33]]["5c0aa864"]=function(e,s,r,gg){
+e_[x[32]]={f:m19,j:[],i:[],ti:[x[33]],ic:[]}
+d_[x[34]]={}
+d_[x[34]]["5c0aa864"]=function(e,s,r,gg){
 var z=gz$gwx_21()
-var b=x[33]+':5c0aa864'
+var b=x[34]+':5c0aa864'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[33]);return}
+if(p_[b]){_wl(b,x[34]);return}
 p_[b]=true
 try{
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:157")
@@ -3276,7 +3300,7 @@ var oJ=_v()
 _(cI,oJ)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:579")
 var lK=_oz(z,8,e,s,gg)
-var aL=_gd(x[33],lK,e_,d_)
+var aL=_gd(x[34],lK,e_,d_)
 if(aL){
 var tM=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3284,7 +3308,7 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[33],1,694)
+else _w(lK,x[34],1,694)
 cs.pop()
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:952")
 var eN=_mz(z,'view',['class',9,'id',1],[],e,s,gg)
@@ -3326,7 +3350,7 @@ var oX=_v()
 _(cW,oX)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:2251")
 var lY=_oz(z,20,e,s,gg)
-var aZ=_gd(x[33],lY,e_,d_)
+var aZ=_gd(x[34],lY,e_,d_)
 if(aZ){
 var t1=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3334,7 +3358,7 @@ oX.wxXCkey=3
 aZ(t1,t1,oX,gg)
 gg.f=cur_globalf
 }
-else _w(lY,x[33],1,2368)
+else _w(lY,x[34],1,2368)
 cs.pop()
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:2626")
 var e2=_mz(z,'view',['class',21,'id',1],[],e,s,gg)
@@ -3378,7 +3402,7 @@ var oBB=_v()
 _(cAB,oBB)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:3954")
 var lCB=_oz(z,32,e,s,gg)
-var aDB=_gd(x[33],lCB,e_,d_)
+var aDB=_gd(x[34],lCB,e_,d_)
 if(aDB){
 var tEB=_1z(z,31,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3386,7 +3410,7 @@ oBB.wxXCkey=3
 aDB(tEB,tEB,oBB,gg)
 gg.f=cur_globalf
 }
-else _w(lCB,x[33],1,4071)
+else _w(lCB,x[34],1,4071)
 cs.pop()
 cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:4330")
 var eFB=_mz(z,'view',['class',33,'id',1],[],e,s,gg)
@@ -3423,7 +3447,7 @@ var cOB=_v()
 _(oB,cOB)
 cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:5499")
 var oPB=_oz(z,42,e,s,gg)
-var lQB=_gd(x[33],oPB,e_,d_)
+var lQB=_gd(x[34],oPB,e_,d_)
 if(lQB){
 var aRB=_1z(z,41,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3431,7 +3455,7 @@ cOB.wxXCkey=3
 lQB(aRB,aRB,cOB,gg)
 gg.f=cur_globalf
 }
-else _w(oPB,x[33],1,5616)
+else _w(oPB,x[34],1,5616)
 cs.pop()
 var fE=_v()
 _(oB,fE)
@@ -3453,24 +3477,24 @@ return r
 }
 var m20=function(e,s,r,gg){
 var z=gz$gwx_21()
-var xWB=e_[x[33]].i
-_ai(xWB,x[1],e_,x[33],1,1)
-_ai(xWB,x[2],e_,x[33],1,61)
+var xWB=e_[x[34]].i
+_ai(xWB,x[1],e_,x[34],1,1)
+_ai(xWB,x[2],e_,x[34],1,61)
 xWB.pop()
 xWB.pop()
 return r
 }
-e_[x[33]]={f:m20,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[34]]={}
+e_[x[34]]={f:m20,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[35]]={}
 var m21=function(e,s,r,gg){
 var z=gz$gwx_22()
-var fYB=e_[x[34]].i
-_ai(fYB,x[35],e_,x[34],1,1)
+var fYB=e_[x[35]].i
+_ai(fYB,x[36],e_,x[35],1,1)
 var cZB=_v()
 _(r,cZB)
 cs.push("./pages/danger/dangerEdit.wxml:template:2:6")
 var h1B=_oz(z,1,e,s,gg)
-var o2B=_gd(x[34],h1B,e_,d_)
+var o2B=_gd(x[35],h1B,e_,d_)
 if(o2B){
 var c3B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3478,26 +3502,26 @@ cZB.wxXCkey=3
 o2B(c3B,c3B,cZB,gg)
 gg.f=cur_globalf
 }
-else _w(h1B,x[34],2,18)
+else _w(h1B,x[35],2,18)
 cs.pop()
 fYB.pop()
 return r
 }
-e_[x[34]]={f:m21,j:[],i:[],ti:[x[35]],ic:[]}
-d_[x[36]]={}
-d_[x[36]]["4508b5aa"]=function(e,s,r,gg){
+e_[x[35]]={f:m21,j:[],i:[],ti:[x[36]],ic:[]}
+d_[x[37]]={}
+d_[x[37]]["4508b5aa"]=function(e,s,r,gg){
 var z=gz$gwx_23()
-var b=x[36]+':4508b5aa'
+var b=x[37]+':4508b5aa'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerLog.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[36]);return}
+if(p_[b]){_wl(b,x[37]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/danger/dangerLog.vue.wxml:template:1:251")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[36],xC,e_,d_)
+var oD=_gd(x[37],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3505,7 +3529,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[36],1,366)
+else _w(xC,x[37],1,366)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3516,24 +3540,24 @@ return r
 }
 var m22=function(e,s,r,gg){
 var z=gz$gwx_23()
-var l5B=e_[x[36]].i
-_ai(l5B,x[1],e_,x[36],1,1)
-_ai(l5B,x[2],e_,x[36],1,61)
+var l5B=e_[x[37]].i
+_ai(l5B,x[1],e_,x[37],1,1)
+_ai(l5B,x[2],e_,x[37],1,61)
 l5B.pop()
 l5B.pop()
 return r
 }
-e_[x[36]]={f:m22,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[37]]={}
+e_[x[37]]={f:m22,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[38]]={}
 var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
-var t7B=e_[x[37]].i
-_ai(t7B,x[38],e_,x[37],1,1)
+var t7B=e_[x[38]].i
+_ai(t7B,x[39],e_,x[38],1,1)
 var e8B=_v()
 _(r,e8B)
 cs.push("./pages/danger/dangerLog.wxml:template:2:6")
 var b9B=_oz(z,1,e,s,gg)
-var o0B=_gd(x[37],b9B,e_,d_)
+var o0B=_gd(x[38],b9B,e_,d_)
 if(o0B){
 var xAC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3541,19 +3565,19 @@ e8B.wxXCkey=3
 o0B(xAC,xAC,e8B,gg)
 gg.f=cur_globalf
 }
-else _w(b9B,x[37],2,18)
+else _w(b9B,x[38],2,18)
 cs.pop()
 t7B.pop()
 return r
 }
-e_[x[37]]={f:m23,j:[],i:[],ti:[x[38]],ic:[]}
-d_[x[39]]={}
-d_[x[39]]["2d8d4fae"]=function(e,s,r,gg){
+e_[x[38]]={f:m23,j:[],i:[],ti:[x[39]],ic:[]}
+d_[x[40]]={}
+d_[x[40]]["2d8d4fae"]=function(e,s,r,gg){
 var z=gz$gwx_25()
-var b=x[39]+':2d8d4fae'
+var b=x[40]+':2d8d4fae'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[39]);return}
+if(p_[b]){_wl(b,x[40]);return}
 p_[b]=true
 try{
 cs.push("./pages/login/login.vue.wxml:view:1:109")
@@ -3563,7 +3587,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/login/login.vue.wxml:template:1:247")
 var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[39],oD,e_,d_)
+var fE=_gd(x[40],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3571,13 +3595,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[39],1,474)
+else _w(oD,x[40],1,474)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/login/login.vue.wxml:template:1:594")
 var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[39],oH,e_,d_)
+var cI=_gd(x[40],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3585,7 +3609,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[39],1,822)
+else _w(oH,x[40],1,822)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -3598,12 +3622,12 @@ return r
 }
 var m24=function(e,s,r,gg){
 var z=gz$gwx_25()
-var fCC=e_[x[39]].i
-_ai(fCC,x[40],e_,x[39],1,1)
+var fCC=e_[x[40]].i
+_ai(fCC,x[5],e_,x[40],1,1)
 fCC.pop()
 return r
 }
-e_[x[39]]={f:m24,j:[],i:[],ti:[x[40]],ic:[]}
+e_[x[40]]={f:m24,j:[],i:[],ti:[x[5]],ic:[]}
 d_[x[41]]={}
 var m25=function(e,s,r,gg){
 var z=gz$gwx_26()
@@ -3711,11 +3735,11 @@ return r
 var m28=function(e,s,r,gg){
 var z=gz$gwx_29()
 var cRC=e_[x[46]].i
-_ai(cRC,x[40],e_,x[46],1,1)
+_ai(cRC,x[5],e_,x[46],1,1)
 cRC.pop()
 return r
 }
-e_[x[46]]={f:m28,j:[],i:[],ti:[x[40]],ic:[]}
+e_[x[46]]={f:m28,j:[],i:[],ti:[x[5]],ic:[]}
 d_[x[47]]={}
 var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
@@ -3805,11 +3829,11 @@ return r
 var m30=function(e,s,r,gg){
 var z=gz$gwx_31()
 var eZC=e_[x[49]].i
-_ai(eZC,x[40],e_,x[49],1,1)
+_ai(eZC,x[5],e_,x[49],1,1)
 eZC.pop()
 return r
 }
-e_[x[49]]={f:m30,j:[],i:[],ti:[x[40]],ic:[]}
+e_[x[49]]={f:m30,j:[],i:[],ti:[x[5]],ic:[]}
 d_[x[50]]={}
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
@@ -3916,10 +3940,10 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/reg/reg","pages/pwd/pwd","pages/user/user","pages/danger/dangerEdit","pages/common/inputPage","pages/common/orgChoose","pages/common/personChoose","pages/danger/dangerLog","pages/check/checkEdit","pages/common/selectedPersonPage"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/check/checkList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"检查列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}},"pages/danger/dangerList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"隐患列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"SBPC-EHS","compilerVersion":"1.8.2"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/reg/reg","pages/pwd/pwd","pages/user/user","pages/danger/dangerEdit","pages/common/inputPage","pages/common/orgChoose","pages/common/personChoose","pages/danger/dangerLog","pages/check/checkEdit","pages/check/checkInfoEdit","pages/common/selectedPersonPage"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/check/checkList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"检查列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}},"pages/danger/dangerList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"隐患列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"SBPC-EHS","compilerVersion":"1.8.2"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
-__wxAppCode__['pages/check/checkEdit.json']={"usingComponents":{},"navigationBarTitleText":"检查编辑"};
+__wxAppCode__['pages/check/checkEdit.json']={"usingComponents":{},"navigationBarTitleText":"检查编辑","titleNView":{"buttons":[{"text":"一键正常","fontSrc":"/static/uni.ttf","fontSize":"14px","width":"70px"}]}};
 __wxAppCode__['pages/check/checkEdit.wxml']=$gwx('./pages/check/checkEdit.wxml');
 
 __wxAppCode__['pages/check/checkInfoEdit.json']={"usingComponents":{},"navigationBarTitleText":"检查结论"};
@@ -4538,7 +4562,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  /*隐患相关*/\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n  // 选择完流转目标后继续流转\n  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',\n\n  /*检查相关*/\n  // 获取检查列表\n  getCheckList: '/mobile/getAqjc.do',\n  // 获取检查类型\n  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',\n  // 获取检查模板\n  getCheckModule: '/mobile/getAqjc.do?action=getMb',\n  // 根据检查模板查询检查项\n  getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',\n\n  /*通用接口*/\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ',\n  // 获取人员\n  getPersonList: '/mobile/getUser.do?action=getUserList ',\n  // 上传照片\n  uploadImage: '/uploadImg',\n  // 删除照片\n  deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',\n  // 加载照片\n  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
+eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  /*隐患相关*/\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n  // 选择完流转目标后继续流转\n  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',\n\n  /*检查相关*/\n  // 获取检查列表\n  getCheckList: '/mobile/getAqjc.do',\n  // 获取检查类型\n  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',\n  // 获取检查模板\n  getCheckModule: '/mobile/getAqjc.do?action=getMb',\n  // 根据检查模板查询检查项\n  getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',\n  // 保存检查\n  saveCheck: '/mobile/getAqjc.do?action=insertJc',\n\n  /*通用接口*/\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ',\n  // 获取人员\n  getPersonList: '/mobile/getUser.do?action=getUserList ',\n  // 上传照片\n  uploadImage: '/uploadImg',\n  // 删除照片\n  deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',\n  // 加载照片\n  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
 
 /***/ }),
 
@@ -4574,7 +4598,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\");\n// 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {\n  // \twx.showNavigationBarLoading()\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  console.log('request.js :' + url);\n  uni.request({\n    url: config.host + url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n\n      // \t\t\t\tuni.showToast({\n      // \t\t\t\t\ticon: 'none',\n      // \t\t\t\t\ttitle: res.data.repMsg\n      // \t\t\t\t});\n      if (res.data.repCode == '200') {\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _fail();\n    },\n    complete: function complete() {\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _complete();\n    } });\n\n};\n\n\n\n// 展示进度条的网络请求(新版)\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息 \n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoadingNew = function requestLoadingNew(url, params, message, _success2, _fail2, _complete2) {\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  uni.request({\n    url: config.host + url,\n    data: params,\n    header: {\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      uni.hideLoading();\n      if (res.statusCode == '200') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      uni.hideLoading();\n      _fail2();\n    },\n    complete: function complete() {\n      uni.hideLoading();\n      _complete2();\n    } });\n\n};\n\n\nvar request = function request(url, message, _success3, _fail3) {\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      if (res.success == 'true') {\n        _success3(res.data);\n      } else {\n        _fail3();\n      }\n    },\n    fail: function fail(res) {\n      _fail3();\n    } });\n\n};var _default =\n{\n  request: request,\n  requestLoading: requestLoading,\n  requestLoadingNew: requestLoadingNew };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?8a77");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\");\n// 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {\n  // \twx.showNavigationBarLoading()\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  params = formatParam(params);\n  console.log('request.js :' + url);\n  uni.request({\n    url: config.host + url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json;charset=utf-8'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      console.log(\"请求成功\");\n      if (message != \"\") {\n        console.log(\"成功后隐藏Loading\");\n        uni.hideLoading();\n      }\n\n      // \t\t\t\tuni.showToast({\n      // \t\t\t\t\ticon: 'none',\n      // \t\t\t\t\ttitle: res.data.repMsg\n      // \t\t\t\t});\n      if (res.data.repCode == '200') {\n        console.log(\"200\");\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      if (message != \"\") {\n        console.log(\"失败后隐藏Loading\");\n        uni.hideLoading();\n      }\n      _fail();\n    },\n    complete: function complete() {\n      if (message != \"\") {\n        console.log(\"完成后隐藏Loading\");\n        uni.hideLoading();\n      }\n      _complete();\n    } });\n\n};\n\n\n\n// 展示进度条的网络请求(新版)\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息 \n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoadingNew = function requestLoadingNew(url, params, message, _success2, _fail2, _complete2) {\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  uni.request({\n    url: config.host + url,\n    data: params,\n    header: {\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      uni.hideLoading();\n      if (res.statusCode == '200') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      uni.hideLoading();\n      _fail2();\n    },\n    complete: function complete() {\n      uni.hideLoading();\n      _complete2();\n    } });\n\n};\n\n\nvar request = function request(url, message, _success3, _fail3) {\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      if (res.success == 'true') {\n        _success3(res.data);\n      } else {\n        _fail3();\n      }\n    },\n    fail: function fail(res) {\n      _fail3();\n    } });\n\n};\n\n// 复杂对象中的对象数组需要转成jsonString\nvar formatParam = function formatParam(param) {\n  console.log(\"formatParam\");\n  // console.log(Object.keys(param));\n  Object.keys(param).forEach(function (key) {\n    // console.log(key,param[key]);\n    if (typeof param[key] == \"object\") {\n      param[key] = JSON.stringify(param[key]);\n    }\n  });\n  console.log(JSON.stringify(param));\n  return param;\n};var _default =\n\n{\n  request: request,\n  requestLoading: requestLoading,\n  requestLoadingNew: requestLoadingNew };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?8a77");
 
 /***/ }),
 
@@ -5963,7 +5987,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _prompt = _interopRequireDefault(__webpack_require__(/*! @/components/prompt/prompt.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/prompt/prompt.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _photoUtil = _interopRequireDefault(__webpack_require__(/*! ../../util/photoUtil.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/photoUtil.js\"));\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default, prompt: _prompt.default },\n  data: function data() {\n    return {\n      model: {\n        jclx: '',\n        llrid: '',\n        llrmc: '',\n        jcrq: '',\n        qtcyid: '',\n        qtcy: '',\n        mb: '',\n        jcjlList: [] },\n\n\n      // 页面状态，0-新建 1-编辑\n      pageState: 0,\n      // 选中的模板\n      currentModule: null,\n\n      // 数据源\n      checkTypes: [],\n      // 选中的成员对象集合\n      selectedPersons: [],\n      // 选择的模板内容\n      selectedModule: [],\n\n      // 是否可编辑\n      editable: true,\n\n      // 控制弹框输入框显示, 在需要的地方调用this.promptVisible = true\n      promptVisible: false,\n      // 图标\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n\n    if (this.pageState == 0) {\n      // 获取检查类型\n      this.getCheckTypes();\n      // 获取检查模板\n      this.getCheckModule();\n    }\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onUnload: function onUnload() {\n\n  },\n  methods: {\n\n    // 获取检查类型\n    getCheckTypes: function getCheckTypes(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckTypes, param, '正在获取检查类型',\n      function (res) {\n        that.checkTypes = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 获取检查模板\n    getCheckModule: function getCheckModule(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckModule, param, '正在获取检查模板',\n      function (res) {\n        that.selectedModule = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 保存\n    saveClick: function saveClick(e) {\n\n    },\n    // 完成检查\n    completeClick: function completeClick(e) {\n\n    },\n\n    /*通用方法相关*/\n    pickerChange: function pickerChange(data, e) {\n      this.model[e.target.id] = data[e.target.value];\n    },\n    dateChange: function dateChange(key, e, editableState) {\n      if (this.pageState != editableState) {\n        return;\n      }\n      this.model[key] = e.target.value;\n    },\n    // 多选成员\n    jumpPersonChoose: function jumpPersonChoose(e) {\n      var that = this;\n      var key = \"CHECK_PERSONS\";\n      uni.navigateTo({\n        url: \"../common/personChoose?key=\" + key + \"&mltiple=true\" + \"&selected=\" + JSON.stringify(this.selectedPersons) });\n\n      that.$fire.once(key, function (personList) {\n        that.selectedPersons = personList;\n        that.formatPersons();\n      });\n    },\n    // 选择模板\n    mbChange: function mbChange(data, e) {\n      this.currentModule = data[e.target.value];\n      this.model[e.target.id] = data[e.target.value].mbmc;\n      this.getCheckInfoByMb();\n    },\n    // 根据模板获取检查项\n    getCheckInfoByMb: function getCheckInfoByMb() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        mbid: that.currentModule.mbid };\n\n      _request.default.requestLoading(_config.default.getCheckInfo, param, '正在获取检查项',\n      function (res) {\n        that.model.jcjlList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 跳转检查项编辑\n    jumpEdit: function jumpEdit(item, index) {var _this = this;\n      if (this.editable == false) {\n        return;\n      }\n      var key = \"INFO_EDIT\";\n      uni.navigateTo({\n        url: 'checkInfoEdit?item=' + JSON.stringify(item) + '&index=' + index + '&key=' + key });\n\n      this.$fire.once(key, function (result) {\n        // 替换personList中的元素为未选中\n        _this.model.jcjlList.splice(result.index, 1, result.item);\n      });\n    },\n    // 添加自定义检查项\n    addCheck: function addCheck(e) {\n      this.promptVisible = true;\n    },\n    // 点击弹出输入框确定\n    clickPromptConfirm: function clickPromptConfirm(val) {\n      // console.log(val)\n      if (val == \"\") {\n        uni.showToast({\n          icon: 'none',\n          title: '请输入检查标题内容' });\n\n        return;\n      }\n      var newItem = {\n        bzlx: '1',\n        ifwt: '',\n        jcbz: val,\n        jcbzid: '',\n        wtms: '',\n        zgqk: '',\n\n        zplist: [] };\n\n      this.model.jcjlList.push(newItem);\n      // 滚动到底部，效果不好\n      // \t\t\t  uni.pageScrollTo({\n      // \t\t\t\tscrollTop: 100,\n      // \t\t\t\tduration: 100\n      // \t\t\t});\n      this.promptVisible = false;\n    },\n    // 点击弹出输入框取消\n    clickCancel: function clickCancel(e) {\n      this.promptVisible = false;\n    },\n    // 格式化检查组成员，变成接口需要的用；隔开的字符串\n    formatPersons: function formatPersons() {\n      var qtcyid = \"\";\n      var qtcy = \"\";\n      for (var i = 0; i < this.selectedPersons.length; i++) {\n        var person = this.selectedPersons[i];\n        qtcyid = person.id + \";\" + qtcyid;\n        qtcy = person.name + \";\" + qtcy;\n      }\n      this.model.qtcy = qtcy;\n      this.model.qtcyid = qtcyid;\n    },\n    // 获取检查项状态图标\n    getIcon: function getIcon(item) {\n      if (item.ifwt == '正常') {\n        return this.normal;\n      } else if (item.ifwt == '异常') {\n        return this.abnormal;\n      } else {\n        return this.undetected;\n      }\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/check/checkEdit.vue?vue&type=script&lang=js&?d349");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _prompt = _interopRequireDefault(__webpack_require__(/*! @/components/prompt/prompt.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/prompt/prompt.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _photoUtil = _interopRequireDefault(__webpack_require__(/*! ../../util/photoUtil.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/photoUtil.js\"));\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default, prompt: _prompt.default },\n  data: function data() {\n    return {\n      model: {\n        recordid: '', // 主键，有值更新，没值插入\n        userid: '',\n        jclx: '',\n        llrid: '',\n        llrmc: '',\n        jcrq: '',\n        qtcyid: '',\n        qtcy: '',\n        mb: '',\n        jcjlList: [] },\n\n\n      // 页面状态，0-新建 1-编辑\n      pageState: 0,\n      // 选中的模板\n      currentModule: null,\n\n      // 数据源\n      checkTypes: [],\n      // 选中的成员对象集合\n      selectedPersons: [],\n      // 选择的模板内容\n      selectedModule: [],\n\n      // 是否可编辑\n      editable: true,\n\n      // 控制弹框输入框显示, 在需要的地方调用this.promptVisible = true\n      promptVisible: false,\n      // 图标\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    this.model.userid = this.userInfo.userid;\n    if (this.pageState == 0) {\n      // 获取检查类型\n      this.getCheckTypes();\n      // 获取检查模板\n      this.getCheckModule();\n      this.model.llrid = this.userInfo.userid;\n      this.model.llrmc = this.userInfo.username;\n    }\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onUnload: function onUnload() {\n\n  },\n  methods: {\n\n    // 获取检查类型\n    getCheckTypes: function getCheckTypes(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckTypes, param, '正在获取检查类型',\n      function (res) {\n        that.checkTypes = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 获取检查模板\n    getCheckModule: function getCheckModule(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckModule, param, '正在获取检查模板',\n      function (res) {\n        that.selectedModule = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 保存\n    saveClick: function saveClick(e) {\n      var that = this;\n      var param = that.model;\n      // param.jcjlList = JSON.stringify(param.jcjlList);\t// 复杂对象中的对象数组需要转成jsonString\n      _request.default.requestLoading(_config.default.saveCheck, param, '正在保存检查',\n      function (res) {\n        console.log('' + JSON.stringify(res));\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功' });\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 完成检查\n    completeClick: function completeClick(e) {\n\n    },\n\n    typePickerChange: function typePickerChange(data, e) {// 目前只有检查类型用\n      this.model[e.target.id] = data[e.target.value].dictvalue;\n      this.model['jclxbm'] = data[e.target.value].dictvalue;\n    },\n    dateChange: function dateChange(key, e) {\n      this.model[key] = e.target.value;\n    },\n    // 多选成员\n    jumpPersonChoose: function jumpPersonChoose(e) {\n      var that = this;\n      var key = \"CHECK_PERSONS\";\n      uni.navigateTo({\n        url: \"../common/personChoose?key=\" + key + \"&mltiple=true\" + \"&selected=\" + JSON.stringify(this.selectedPersons) });\n\n      that.$fire.once(key, function (personList) {\n        that.selectedPersons = personList;\n        that.formatPersons();\n      });\n    },\n    // 选择模板\n    mbChange: function mbChange(data, e) {\n      this.currentModule = data[e.target.value];\n      this.model[e.target.id] = data[e.target.value].mbmc;\n      this.getCheckInfoByMb();\n    },\n    // 根据模板获取检查项\n    getCheckInfoByMb: function getCheckInfoByMb() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        mbid: that.currentModule.mbid };\n\n      _request.default.requestLoading(_config.default.getCheckInfo, param, '正在获取检查项',\n      function (res) {\n        that.model.jcjlList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 跳转检查项编辑\n    jumpEdit: function jumpEdit(item, index) {var _this = this;\n      if (this.editable == false) {\n        return;\n      }\n      var key = \"INFO_EDIT\";\n      uni.navigateTo({\n        url: 'checkInfoEdit?item=' + JSON.stringify(item) + '&index=' + index + '&key=' + key });\n\n      this.$fire.once(key, function (result) {\n        // 替换personList中的元素为未选中\n        _this.model.jcjlList.splice(result.index, 1, result.item);\n      });\n    },\n    // 添加自定义检查项\n    addCheck: function addCheck(e) {\n      this.promptVisible = true;\n    },\n    // 点击弹出输入框确定\n    clickPromptConfirm: function clickPromptConfirm(val) {\n      // console.log(val)\n      if (val == \"\") {\n        uni.showToast({\n          icon: 'none',\n          title: '请输入检查标题内容' });\n\n        return;\n      }\n      var newItem = {\n        bzlx: '1',\n        ifwt: '2',\n        jcbz: val,\n        jcbzid: '',\n        wtms: '',\n        zgqk: '',\n\n        zplist: [] };\n\n      this.model.jcjlList.push(newItem);\n      // 滚动到底部，效果不好\n      // \t\t\t  uni.pageScrollTo({\n      // \t\t\t\tscrollTop: 100,\n      // \t\t\t\tduration: 100\n      // \t\t\t});\n      this.promptVisible = false;\n    },\n    // 点击弹出输入框取消\n    clickCancel: function clickCancel(e) {\n      this.promptVisible = false;\n    },\n    // 格式化检查组成员，变成接口需要的用；隔开的字符串\n    formatPersons: function formatPersons() {\n      var qtcyid = \"\";\n      var qtcy = \"\";\n      for (var i = 0; i < this.selectedPersons.length; i++) {\n        var person = this.selectedPersons[i];\n        qtcyid = person.id + \";\" + qtcyid;\n        qtcy = person.name + \";\" + qtcy;\n      }\n      this.model.qtcy = qtcy;\n      this.model.qtcyid = qtcyid;\n    },\n    // 获取检查项状态图标\n    getIcon: function getIcon(item) {\n      if (item.ifwt == '1') {// 正常图标\n        return this.normal;\n      } else if (item.ifwt == '3') {// 异常图标\n        return this.abnormal;\n      } else {// 未检图标\n        return this.undetected;\n      }\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/check/checkEdit.vue?vue&type=script&lang=js&?d349");
 
 /***/ }),
 
@@ -6009,7 +6033,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _c(\n        \"scroll-view\",\n        { staticClass: \"scrollView\", attrs: { \"scroll-y\": \"true\" } },\n        [\n          _c(\"view\", { staticClass: \"cellTitleView\" }, [\n            _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"cellInfoView\" },\n            [\n              _c(\n                \"uni-list\",\n                { attrs: { mpcomid: \"609973d6-5\" } },\n                [\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"jclx\",\n                        range: _vm.checkTypes,\n                        \"range-key\": \"dictvalue\",\n                        eventid: \"609973d6-0\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.pickerChange(_vm.checkTypes, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查类型\",\n                          subnote: _vm.model.jclx.dictvalue,\n                          \"show-arrow\": true,\n                          mpcomid: \"609973d6-0\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查人\",\n                      note: _vm.model.jcr,\n                      \"show-arrow\": \"false\",\n                      mpcomid: \"609973d6-1\"\n                    }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        mode: \"date\",\n                        value: _vm.model.jcrq,\n                        eventid: \"609973d6-1\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.dateChange(\"jcrq\", $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查日期\",\n                          subnote: _vm.model.jcrq,\n                          \"show-arrow\": true,\n                          mpcomid: \"609973d6-2\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查组成员\",\n                      subnote: _vm.model.qtcy,\n                      \"show-arrow\": true,\n                      eventid: \"609973d6-2\",\n                      mpcomid: \"609973d6-3\"\n                    },\n                    on: { click: _vm.jumpPersonChoose }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"mb\",\n                        range: _vm.selectedModule,\n                        \"range-key\": \"mbmc\",\n                        eventid: \"609973d6-3\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.mbChange(_vm.selectedModule, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查模板\",\n                          subnote: _vm.model.mb,\n                          \"show-arrow\": true,\n                          mpcomid: \"609973d6-4\"\n                        }\n                      })\n                    ],\n                    1\n                  )\n                ],\n                1\n              )\n            ],\n            1\n          ),\n          _vm.model.jcjlList.length > 0\n            ? _c(\"block\", [\n                _c(\n                  \"view\",\n                  { staticClass: \"cellTitleView\" },\n                  [\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [\n                      _vm._v(\"检查内容\")\n                    ]),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"checkbox-filled\",\n                        size: \"22\",\n                        color: \"#24BE41\",\n                        mpcomid: \"609973d6-6\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"info-filled\",\n                        size: \"22\",\n                        color: \"#FFDE52\",\n                        mpcomid: \"609973d6-7\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"clear\",\n                        size: \"22\",\n                        color: \"#C11E1E\",\n                        mpcomid: \"609973d6-8\"\n                      }\n                    })\n                  ],\n                  1\n                ),\n                _c(\n                  \"view\",\n                  { staticClass: \"cellInfoView\" },\n                  [\n                    _c(\n                      \"uni-list\",\n                      { attrs: { mpcomid: \"609973d6-10\" } },\n                      _vm._l(_vm.model.jcjlList, function(item, index) {\n                        return _c(\"uni-list-item\", {\n                          key: index,\n                          attrs: {\n                            title: item.jcbz,\n                            note: item.wtms,\n                            \"show-extra-icon\": \"true\",\n                            \"show-arrow\": _vm.editable,\n                            \"extra-icon\": _vm.getIcon(item),\n                            eventid: \"609973d6-4-\" + index,\n                            mpcomid: \"609973d6-9-\" + index\n                          },\n                          on: {\n                            click: function($event) {\n                              _vm.jumpEdit(item, index)\n                            }\n                          }\n                        })\n                      })\n                    )\n                  ],\n                  1\n                ),\n                _c(\"image\", {\n                  staticClass: \"addCheck\",\n                  attrs: {\n                    mode: \"aspectFit\",\n                    src: \"../../static/assets/addCheck.png\",\n                    eventid: \"609973d6-5\"\n                  },\n                  on: { click: _vm.addCheck }\n                })\n              ])\n            : _vm._e()\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"bottomView\" }, [\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-6\" },\n            on: { click: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-7\" },\n            on: { click: _vm.completeClick }\n          },\n          [_vm._v(\"完成检查\")]\n        )\n      ]),\n      _vm.promptVisible\n        ? _c(\"prompt\", {\n            attrs: {\n              title: \"添加检查内容\",\n              placeholder: \"请输入检查标题\",\n              defaultValue: \"\",\n              mainColor: \"#3296FA\",\n              eventid: \"609973d6-8\",\n              mpcomid: \"609973d6-11\"\n            },\n            on: { cancel: _vm.clickCancel, confirm: _vm.clickPromptConfirm }\n          })\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/check/checkEdit.vue?vue&type=template&id=1556a4cc&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _c(\n        \"scroll-view\",\n        { staticClass: \"scrollView\", attrs: { \"scroll-y\": \"true\" } },\n        [\n          _c(\"view\", { staticClass: \"cellTitleView\" }, [\n            _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"cellInfoView\" },\n            [\n              _c(\n                \"uni-list\",\n                { attrs: { mpcomid: \"609973d6-5\" } },\n                [\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"jclx\",\n                        range: _vm.checkTypes,\n                        \"range-key\": \"dictvalue\",\n                        eventid: \"609973d6-0\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.typePickerChange(_vm.checkTypes, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查类型\",\n                          subnote: _vm.model.jclx,\n                          \"show-arrow\": true,\n                          mpcomid: \"609973d6-0\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查人\",\n                      subnote: _vm.model.llrmc,\n                      \"show-arrow\": \"false\",\n                      mpcomid: \"609973d6-1\"\n                    }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        mode: \"date\",\n                        value: _vm.model.jcrq,\n                        eventid: \"609973d6-1\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.dateChange(\"jcrq\", $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查日期\",\n                          subnote: _vm.model.jcrq,\n                          \"show-arrow\": true,\n                          mpcomid: \"609973d6-2\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查组成员\",\n                      subnote: _vm.model.qtcy,\n                      \"show-arrow\": true,\n                      eventid: \"609973d6-2\",\n                      mpcomid: \"609973d6-3\"\n                    },\n                    on: { click: _vm.jumpPersonChoose }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"mb\",\n                        range: _vm.selectedModule,\n                        \"range-key\": \"mbmc\",\n                        eventid: \"609973d6-3\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.mbChange(_vm.selectedModule, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查模板\",\n                          subnote: _vm.model.mb,\n                          \"show-arrow\": true,\n                          mpcomid: \"609973d6-4\"\n                        }\n                      })\n                    ],\n                    1\n                  )\n                ],\n                1\n              )\n            ],\n            1\n          ),\n          _vm.model.jcjlList.length > 0\n            ? _c(\"block\", [\n                _c(\n                  \"view\",\n                  { staticClass: \"cellTitleView\" },\n                  [\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [\n                      _vm._v(\"检查内容\")\n                    ]),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"checkbox-filled\",\n                        size: \"22\",\n                        color: \"#24BE41\",\n                        mpcomid: \"609973d6-6\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"info-filled\",\n                        size: \"22\",\n                        color: \"#FFDE52\",\n                        mpcomid: \"609973d6-7\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"clear\",\n                        size: \"22\",\n                        color: \"#C11E1E\",\n                        mpcomid: \"609973d6-8\"\n                      }\n                    })\n                  ],\n                  1\n                ),\n                _c(\n                  \"view\",\n                  { staticClass: \"cellInfoView\" },\n                  [\n                    _c(\n                      \"uni-list\",\n                      { attrs: { mpcomid: \"609973d6-10\" } },\n                      _vm._l(_vm.model.jcjlList, function(item, index) {\n                        return _c(\"uni-list-item\", {\n                          key: index,\n                          attrs: {\n                            title: item.jcbz,\n                            note: item.wtms,\n                            \"show-extra-icon\": \"true\",\n                            \"show-arrow\": _vm.editable,\n                            \"extra-icon\": _vm.getIcon(item),\n                            eventid: \"609973d6-4-\" + index,\n                            mpcomid: \"609973d6-9-\" + index\n                          },\n                          on: {\n                            click: function($event) {\n                              _vm.jumpEdit(item, index)\n                            }\n                          }\n                        })\n                      })\n                    )\n                  ],\n                  1\n                ),\n                _c(\"image\", {\n                  staticClass: \"addCheck\",\n                  attrs: {\n                    mode: \"aspectFit\",\n                    src: \"../../static/assets/addCheck.png\",\n                    eventid: \"609973d6-5\"\n                  },\n                  on: { click: _vm.addCheck }\n                })\n              ])\n            : _vm._e()\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"bottomView\" }, [\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-6\" },\n            on: { click: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-7\" },\n            on: { click: _vm.completeClick }\n          },\n          [_vm._v(\"完成检查\")]\n        )\n      ]),\n      _vm.promptVisible\n        ? _c(\"prompt\", {\n            attrs: {\n              title: \"添加检查内容\",\n              placeholder: \"请输入检查标题\",\n              defaultValue: \"\",\n              mainColor: \"#3296FA\",\n              eventid: \"609973d6-8\",\n              mpcomid: \"609973d6-11\"\n            },\n            on: { cancel: _vm.clickCancel, confirm: _vm.clickPromptConfirm }\n          })\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/check/checkEdit.vue?vue&type=template&id=1556a4cc&");
 
 /***/ })
 
@@ -6089,7 +6113,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['inputPageText', 'key', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default },\n  data: function data() {\n    return {\n      // 返回赋值的Key\n      key: '',\n\n      typeArray: ['正常', '未检', '异常'],\n      rectifyTypes: ['立即整改', '整改通知', '整改中'],\n      item: '', // subList中的对象\n      itemIndex: 0, // subList中的第几个数据，用于确定后替换原数据\n\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.key = option.key;\n    this.item = JSON.parse(option.item);\n    this.itemIndex = JSON.parse(option.index);\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n\n    // \t\t\tif(this.item.fj == null) {\n    // \t\t\t\treturn;\n    // \t\t\t}\n    // \t\t\tif (this.item.fj != \"\") {\n    // \t\t\t\tconsole.log('FJ:' + this.item.fj);\n    // \t\t\t\tlet imgList = JSON.parse(this.item.fj);\n    // \t\t\t\tfor(var i=0; i<imgList.length; i++) {\n    // \t\t\t\t\tlet imgObj = imgList[i];\n    // \t\t\t\t\tlet imgUrl = config.host + config.loadImage + imgObj.fileId + \"&userid=\" + this.userInfo.userid;\n    // \t\t\t\t\tlet imgItem = {\n    // \t\t\t\t\t\tfileid: imgObj.fileId,\n    // \t\t\t\t\t\tsrc: imgUrl,\n    // \t\t\t\t\t\ttype: 2\n    // \t\t\t\t\t}\n    // \t\t\t\t\tthis.imageList.push(imgItem);\n    // \t\t\t\t}\n    // \t\t\t}\n  },\n  onShow: function onShow() {\n\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['setSublistItem']), {\n    /*通用方法相关*/\n    pickerChange: function pickerChange(data, e) {\n      this.item[e.target.id] = data[e.target.value];\n    },\n    jumpInput: function jumpInput(key, placeholder, text) {var _this = this;\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this.item[key] = result;\n      });\n    },\n\n    saveItem: function saveItem() {\n      var that = this;\n      var result = {\n        item: that.item,\n        index: that.itemIndex };\n\n      that.$fire.fire(that.key, result);\n      uni.navigateBack();\n\n      // 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口\n      // \t\t\t\tlet url = config.uploadImage + '?from=jc&yyid=' + that.item.id + '&userid=' + that.userInfo.userid\n      // \t\t\t\tvar imgList = []\n      // \t\t\t\tfor (var i=0 ; i<that.imageList.length; i++) {\n      // \t\t\t\t\tlet item = that.imageList[i]\n      // \t\t\t\t\tif (item.type == 1 && !item.src.startsWith('http:')) {\n      // \t\t\t\t\t\timgList.push(item.src);\n      // \t\t\t\t\t}\n      // \t\t\t\t}\n      // \t\t\t\t\n      // \t\t\t\tif(imgList.length == 0) {\n      // \t\t\t\t\tthat.saveLocalItem();\n      // \t\t\t\t\tuni.navigateBack({\n      // \t\t\t\t\t\tdelta: 1\n      // \t\t\t\t\t})\n      // \t\t\t\t\treturn;\n      // \t\t\t\t}\n      // \t\t\t\tuni.showLoading({\n      // \t\t\t\t\ttitle: '正在上传图片'\n      // \t\t\t\t})\n      // \t\t\t\trequest.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {\n      // \t\t\t\t\tlet data = JSON.parse(res.data);\n      // \t\t\t\t\tlet fj = data.fj;\n      // \t\t\t\t\tthat.item.fj = fj;\n      // \t\t\t\t\tconsole.log('Item:',JSON.stringify(that.item));\n      // \t\t\t\t}, function(result){\n      // \t\t\t\t\tuni.hideLoading();\n      // \t\t\t\t\tif (result == '200') {\n      // \t\t\t\t\t\tthat.saveLocalItem();\n      // \t\t\t\t\t\tuni.showToast({\n      // \t\t\t\t\t\t  title: '上传成功',\n      // \t\t\t\t\t\t  complete: setTimeout(function () {\n      // \t\t\t\t\t\t\tuni.navigateBack({\n      // \t\t\t\t\t\t\t\tdelta: 1\n      // \t\t\t\t\t\t\t})\n      // \t\t\t\t\t\t  }, 1500)\n      // \t\t\t\t\t\t})\n      // \t\t\t\t\t}\n      // \t\t\t\t});\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/check/checkInfoEdit.vue?vue&type=script&lang=js&?1b98");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _photoUtil = _interopRequireDefault(__webpack_require__(/*! ../../util/photoUtil.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/photoUtil.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['inputPageText', 'key', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default },\n  data: function data() {\n    return {\n      // 返回赋值的Key\n      key: '',\n\n      typeArray: ['正常', '未检', '异常'],\n      rectifyTypes: ['立即整改', '整改通知', '整改中'],\n      item: '', // subList中的对象\n      itemIndex: 0, // subList中的第几个数据，用于确定后替换原数据\n\n      // 上传照片相关\n      imageViewHeight: 100,\n      littleImageWidth: 0 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.key = option.key;\n    this.item = JSON.parse(option.item);\n    this.itemIndex = JSON.parse(option.index);\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n\n    // \t\t\tif(this.item.fj == null) {\n    // \t\t\t\treturn;\n    // \t\t\t}\n    // \t\t\tif (this.item.fj != \"\") {\n    // \t\t\t\tconsole.log('FJ:' + this.item.fj);\n    // \t\t\t\tlet imgList = JSON.parse(this.item.fj);\n    // \t\t\t\tfor(var i=0; i<imgList.length; i++) {\n    // \t\t\t\t\tlet imgObj = imgList[i];\n    // \t\t\t\t\tlet imgUrl = config.host + config.loadImage + imgObj.fileId + \"&userid=\" + this.userInfo.userid;\n    // \t\t\t\t\tlet imgItem = {\n    // \t\t\t\t\t\tfileid: imgObj.fileId,\n    // \t\t\t\t\t\tsrc: imgUrl,\n    // \t\t\t\t\t\ttype: 2\n    // \t\t\t\t\t}\n    // \t\t\t\t\tthis.imageList.push(imgItem);\n    // \t\t\t\t}\n    // \t\t\t}\n  },\n  onShow: function onShow() {\n\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['setSublistItem']), {\n    /*通用方法相关*/\n    pickerChange: function pickerChange(data, e) {\n      this.item[e.target.id] = parseInt(e.target.value) + 1;\n    },\n    jumpInput: function jumpInput(key, placeholder, text) {var _this = this;\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this.item[key] = result;\n      });\n    },\n\n    // 检查结论选择\n    resultPickerChange: function resultPickerChange(data, e) {var _this2 = this;\n      if (e.target.value == '0' && (this.item.wtms != '' || this.item.zgqk != '' || this.item.zplist.length > 0)) {\n        uni.showModal({\n          content: '选择[正常]将要清除问题描述、检查方式、检查照片，是否确认？',\n          success: function success(res) {\n            if (res.confirm) {\n              _this2.item.wtms = \"\";\n              _this2.item.zgqk = \"\";\n              _this2.item.zplist = [];\n              _this2.item[e.target.id] = parseInt(e.target.value) + 1;\n            } else {\n              return;\n            }\n          } });\n\n      } else {\n        this.item[e.target.id] = parseInt(e.target.value) + 1;\n      }\n    },\n    saveItem: function saveItem() {\n      var that = this;\n      var result = {\n        item: that.item,\n        index: that.itemIndex };\n\n      that.$fire.fire(that.key, result);\n      uni.navigateBack();\n    },\n\n    // 添加照片\n    addPhoto: function addPhoto(imgListName) {\n      var that = this;\n      _photoUtil.default.addPhoto(function (photoList) {\n        that.item[imgListName] = that.item[imgListName].concat(photoList);\n      });\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgListName, imgObj, index) {\n      var that = this;\n      _photoUtil.default.deletePhoto(that.item[imgListName], imgObj, index, function (photoList) {\n        that.item[imgListName] = photoList;\n      });\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto(imgListName) {\n      _photoUtil.default.viewPhoto(this.item[imgListName]);\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/check/checkInfoEdit.vue?vue&type=script&lang=js&?1b98");
 
 /***/ }),
 
@@ -6112,7 +6136,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(_vm._s(_vm.item.jcbz))])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77ae7fa4-3\" } },\n          [\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  id: \"ifwt\",\n                  range: _vm.typeArray,\n                  eventid: \"77ae7fa4-0\"\n                },\n                on: {\n                  change: function($event) {\n                    _vm.pickerChange(_vm.typeArray, $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查结论\",\n                    subnote: _vm.item.ifwt,\n                    \"show-arrow\": true,\n                    mpcomid: \"77ae7fa4-0\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                id: \"wtms\",\n                title: \"问题描述\",\n                note: _vm.item.wtms,\n                \"show-arrow\": true,\n                eventid: \"77ae7fa4-1\",\n                mpcomid: \"77ae7fa4-1\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(\"wtms\", \"请输入问题描述\", _vm.item.wtms)\n                }\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  id: \"zgqk\",\n                  range: _vm.rectifyTypes,\n                  eventid: \"77ae7fa4-2\"\n                },\n                on: {\n                  change: function($event) {\n                    _vm.pickerChange(_vm.rectifyTypes, $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查方式\",\n                    subnote: _vm.item.zgqk,\n                    \"show-arrow\": true,\n                    mpcomid: \"77ae7fa4-2\"\n                  }\n                })\n              ],\n              1\n            )\n          ],\n          1\n        ),\n        _vm.item.id != \"\"\n          ? _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n              _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n                _c(\"text\", { staticClass: \"leftTextRow\" }, [\n                  _vm._v(\"检查照片\")\n                ]),\n                _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                  _vm._v(_vm._s(_vm.imageList.length))\n                ])\n              ]),\n              _c(\n                \"view\",\n                { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n                [\n                  _vm._l(_vm.imageList, function(imgObj, idx) {\n                    return _c(\"block\", { key: idx }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: {\n                              id: idx,\n                              src: imgObj.src,\n                              mode: \"aspectFit\",\n                              eventid: \"77ae7fa4-3-\" + idx\n                            },\n                            on: { click: _vm.viewPhoto }\n                          }),\n                          _c(\"image\", {\n                            staticClass: \"littleImageDelete\",\n                            attrs: {\n                              src: \"../../static/assets/delete.png\",\n                              id: idx,\n                              mode: \"aspectFit\",\n                              eventid: \"77ae7fa4-4-\" + idx\n                            },\n                            on: {\n                              click: function($event) {\n                                _vm.deleteImage(imgObj, idx)\n                              }\n                            }\n                          })\n                        ]\n                      )\n                    ])\n                  }),\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      },\n                      attrs: { eventid: \"77ae7fa4-5\" },\n                      on: { click: _vm.addPhoto }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: { src: \"../../static/assets/addImage.png\" }\n                      })\n                    ]\n                  )\n                ],\n                2\n              )\n            ])\n          : _vm._e()\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"77ae7fa4-6\" },\n            on: { tap: _vm.saveItem }\n          },\n          [_vm._v(\"确定\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/check/checkInfoEdit.vue?vue&type=template&id=70ae2c68&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(_vm._s(_vm.item.jcbz))])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77ae7fa4-3\" } },\n          [\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  id: \"ifwt\",\n                  range: _vm.typeArray,\n                  eventid: \"77ae7fa4-0\"\n                },\n                on: {\n                  change: function($event) {\n                    _vm.resultPickerChange(_vm.typeArray, $event)\n                  }\n                }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查结论\",\n                    subnote: _vm.typeArray[parseInt(_vm.item.ifwt) - 1],\n                    \"show-arrow\": true,\n                    mpcomid: \"77ae7fa4-0\"\n                  }\n                })\n              ],\n              1\n            ),\n            _vm.item.ifwt != \"1\"\n              ? _c(\"uni-list-item\", {\n                  attrs: {\n                    id: \"wtms\",\n                    title: \"问题描述\",\n                    note: _vm.item.wtms,\n                    \"show-arrow\": true,\n                    eventid: \"77ae7fa4-1\",\n                    mpcomid: \"77ae7fa4-1\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.jumpInput(\"wtms\", \"请输入问题描述\", _vm.item.wtms)\n                    }\n                  }\n                })\n              : _vm._e(),\n            _vm.item.ifwt != \"1\"\n              ? _c(\n                  \"picker\",\n                  {\n                    attrs: {\n                      id: \"zgqk\",\n                      range: _vm.rectifyTypes,\n                      eventid: \"77ae7fa4-2\"\n                    },\n                    on: {\n                      change: function($event) {\n                        _vm.pickerChange(_vm.rectifyTypes, $event)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"uni-list-item\", {\n                      attrs: {\n                        title: \"检查方式\",\n                        subnote: _vm.rectifyTypes[parseInt(_vm.item.zgqk) - 1],\n                        \"show-arrow\": true,\n                        mpcomid: \"77ae7fa4-2\"\n                      }\n                    })\n                  ],\n                  1\n                )\n              : _vm._e()\n          ],\n          1\n        ),\n        _vm.item.ifwt != \"1\"\n          ? _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n              _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n                _c(\"text\", { staticClass: \"leftTextRow\" }, [\n                  _vm._v(\"检查照片\")\n                ]),\n                _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                  _vm._v(_vm._s(_vm.item.zplist.length))\n                ])\n              ]),\n              _c(\n                \"view\",\n                { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n                [\n                  _vm._l(_vm.item.zplist, function(imgObj, idx) {\n                    return _c(\"block\", { key: idx }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: {\n                              id: idx,\n                              src: imgObj.src,\n                              mode: \"aspectFit\",\n                              eventid: \"77ae7fa4-3-\" + idx\n                            },\n                            on: {\n                              click: function($event) {\n                                _vm.viewPhoto(\"zplist\")\n                              }\n                            }\n                          }),\n                          _c(\"image\", {\n                            staticClass: \"littleImageDelete\",\n                            attrs: {\n                              src: \"../../static/assets/delete.png\",\n                              id: idx,\n                              mode: \"aspectFit\",\n                              eventid: \"77ae7fa4-4-\" + idx\n                            },\n                            on: {\n                              click: function($event) {\n                                _vm.deleteImage(\"zplist\", imgObj, idx)\n                              }\n                            }\n                          })\n                        ]\n                      )\n                    ])\n                  }),\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      },\n                      attrs: { eventid: \"77ae7fa4-5\" },\n                      on: {\n                        click: function($event) {\n                          _vm.addPhoto(\"zplist\")\n                        }\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: { src: \"../../static/assets/addImage.png\" }\n                      })\n                    ]\n                  )\n                ],\n                2\n              )\n            ])\n          : _vm._e()\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"77ae7fa4-6\" },\n            on: { tap: _vm.saveItem }\n          },\n          [_vm._v(\"确定\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/check/checkInfoEdit.vue?vue&type=template&id=70ae2c68&");
 
 /***/ })
 
