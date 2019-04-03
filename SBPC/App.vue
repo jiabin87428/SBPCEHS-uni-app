@@ -1,7 +1,17 @@
 <script>
+	import config from 'util/config.js';
     export default {
         onLaunch: function() {
             console.log('App Launch');
+			var host = config.host
+			uni.getStorage({
+				key: "LOCAL_URL",
+				success: function (res) {
+					host = res.data;
+					config.host = host;
+					console.log('基础URL：' + config.host); 
+				}
+			});
         },
         onShow: function() {
             console.log('App Show');

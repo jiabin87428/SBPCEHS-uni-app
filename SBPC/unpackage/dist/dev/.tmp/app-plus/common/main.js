@@ -80,7 +80,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n{\n  onLaunch: function onLaunch() {\n    console.log('App Launch');\n  },\n  onShow: function onShow() {\n    console.log('App Show');\n  },\n  onHide: function onHide() {\n    console.log('App Hide');\n  } };exports.default = _default;\n\n//# sourceURL=uni-app:///App.vue?vue&type=script&lang=js&?bff6");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\nvar _config = _interopRequireDefault(__webpack_require__(/*! util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  onLaunch: function onLaunch() {\n    console.log('App Launch');\n    var host = _config.default.host;\n    uni.getStorage({\n      key: \"LOCAL_URL\",\n      success: function success(res) {\n        host = res.data;\n        _config.default.host = host;\n        console.log('基础URL：' + _config.default.host);\n      } });\n\n  },\n  onShow: function onShow() {\n    console.log('App Show');\n  },\n  onHide: function onHide() {\n    console.log('App Hide');\n  } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///App.vue?vue&type=script&lang=js&?bff6");
 
 /***/ }),
 

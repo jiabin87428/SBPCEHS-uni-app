@@ -9,11 +9,11 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 // 	wx.showNavigationBarLoading()
 	if (message != "") {
 	  uni.showLoading({
-	  	title: message,
+	  	title: message, 
 	  });
 	}
-	params = formatParam(params);
-	console.log('request.js :' + url);
+	// params = formatParam(params);
+	console.log('request.js :' + config.host + url);
 	uni.request({
 			url: config.host + url, 
 			data: params,

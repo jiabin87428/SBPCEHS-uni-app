@@ -11,6 +11,11 @@
                 "navigationBarTitleText": "登录"
             }
         }, {
+            "path": "pages/login/diyHost",
+            "style": {
+                "navigationBarTitleText": "自定义域名"
+            }
+        }, {
             "path": "pages/reg/reg",
             "style": {
                 "navigationBarTitleText": "注册"

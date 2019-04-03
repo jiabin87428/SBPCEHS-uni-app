@@ -470,7 +470,7 @@ var addUser = function addUser(userInfo) {
   * 登录名和密码: root GelureM1
   * 
   */
-var host = "http://112.124.14.5/sbpc"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+var host = "http://112.124.14.5/sbpc111"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
 
 var config = {
@@ -544,8 +544,8 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       title: message });
 
   }
-  params = formatParam(params);
-  console.log('request.js :' + url);
+  // params = formatParam(params);
+  console.log('request.js :' + config.host + url);
   uni.request({
     url: config.host + url,
     data: params,
@@ -2456,6 +2456,14 @@ var _default =
       },
       complete: function complete() {
 
+      } });
+
+    var host = _config.default.host;
+    uni.getStorage({
+      key: "LOCAL_URL",
+      success: function success(res) {
+        host = res.data;
+        _config.default.host = host;
       } });
 
     setTimeout(function () {

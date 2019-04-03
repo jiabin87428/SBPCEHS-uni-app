@@ -13,11 +13,11 @@
         <view class="btn-row">
             <button type="primary" class="primary" @tap="bindLogin">登录</button>
         </view>
-        <!-- <view class="action-row">
+        <view class="action-row">
             <navigator url="diyHost">自定义域</navigator>
-            <text>|</text>
-            <navigator url="../pwd/pwd">忘记密码</navigator>
-        </view> -->
+            <!-- <text>|</text>
+            <navigator url="../pwd/pwd">忘记密码</navigator> -->
+        </view>
 <!--        <view class="oauth-row" v-if="hasProvider" v-bind:style="{top: positionTop + 'px'}">
             <view class="oauth-image" v-for="provider in providerList" :key="provider.value">
                 <image :src="provider.image" @tap="oauth(provider.value)"></image>

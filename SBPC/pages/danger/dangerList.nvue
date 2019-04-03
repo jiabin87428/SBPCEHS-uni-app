@@ -70,7 +70,15 @@
 				complete() {
 					
 				}
-			})
+			});
+			var host = config.host
+			uni.getStorage({
+				key: "LOCAL_URL",
+				success: function (res) {
+					host = res.data;
+					config.host = host;
+				}
+			});
 			setTimeout(() => {
 			    that.newsitems = that.randomfn();
 				that.onrefresh(that.tabIndex);

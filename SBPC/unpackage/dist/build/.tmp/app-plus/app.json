@@ -2,6 +2,7 @@
   "pages": [
     "pages/main/main",
     "pages/login/login",
+    "pages/login/diyHost",
     "pages/reg/reg",
     "pages/pwd/pwd",
     "pages/user/user",

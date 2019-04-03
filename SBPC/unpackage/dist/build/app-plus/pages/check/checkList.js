@@ -465,7 +465,7 @@ var addUser = function addUser(userInfo) {
   * 登录名和密码: root GelureM1
   * 
   */
-var host = "http://112.124.14.5/sbpc"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+var host = "http://112.124.14.5/sbpc111"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
 
 var config = {
@@ -496,6 +496,8 @@ var config = {
   getCheckModule: '/mobile/getAqjc.do?action=getMb',
   // 根据检查模板查询检查项
   getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
+  // 保存检查
+  saveCheck: '/mobile/getAqjc.do?action=insertJc',
 
   /*通用接口*/
   // 获取部门
@@ -537,18 +539,21 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       title: message });
 
   }
-  console.log('request.js :' + url);
+  // params = formatParam(params);
+  console.log('request.js :' + config.host + url);
   uni.request({
     url: config.host + url,
     data: params,
     header: {
-      // 'Content-Type': 'application/json'
+      // 'Content-Type': 'application/json;charset=utf-8'
       'Content-type': 'application/x-www-form-urlencoded' },
 
     method: 'POST',
     success: function success(res) {
       // 					wx.hideNavigationBarLoading()
+      console.log("请求成功");
       if (message != "") {
+        console.log("成功后隐藏Loading");
         uni.hideLoading();
       }
 
@@ -557,6 +562,7 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       // 					title: res.data.repMsg
       // 				});
       if (res.data.repCode == '200') {
+        console.log("200");
         _success(res.data);
       } else {
         _fail();
@@ -564,12 +570,14 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     },
     fail: function fail(res) {
       if (message != "") {
+        console.log("失败后隐藏Loading");
         uni.hideLoading();
       }
       _fail();
     },
     complete: function complete() {
       if (message != "") {
+        console.log("完成后隐藏Loading");
         uni.hideLoading();
       }
       _complete();
@@ -637,7 +645,22 @@ var request = function request(url, message, _success3, _fail3) {
       _fail3();
     } });
 
+};
+
+// 复杂对象中的对象数组需要转成jsonString
+var formatParam = function formatParam(param) {
+  console.log("formatParam");
+  // console.log(Object.keys(param));
+  Object.keys(param).forEach(function (key) {
+    // console.log(key,param[key]);
+    if (typeof param[key] == "object") {
+      param[key] = JSON.stringify(param[key]);
+    }
+  });
+  console.log(JSON.stringify(param));
+  return param;
 };var _default =
+
 {
   request: request,
   requestLoading: requestLoading,
@@ -2428,6 +2451,14 @@ var _default =
       },
       complete: function complete() {
 
+      } });
+
+    var host = _config.default.host;
+    uni.getStorage({
+      key: "LOCAL_URL",
+      success: function success(res) {
+        host = res.data;
+        _config.default.host = host;
       } });
 
     setTimeout(function () {

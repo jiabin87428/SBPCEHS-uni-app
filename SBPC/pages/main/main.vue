@@ -45,6 +45,7 @@
 <script>
 	import config from '../../util/config.js';
 	import service from '../../service.js';
+	import request from '../../util/request.js';
 	import {
 	    mapState,
 	    mapMutations

@@ -1,4 +1,14 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "检查编辑"
+  "navigationBarTitleText": "检查编辑",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "一键正常",
+        "fontSrc": "/static/uni.ttf",
+        "fontSize": "14px",
+        "width": "70px"
+      }
+    ]
+  }
 }
