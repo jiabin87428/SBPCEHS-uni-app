@@ -29,6 +29,8 @@ var config = {
 	/*检查相关*/
 	// 获取检查列表
 	getCheckList: '/mobile/getAqjc.do',
+	// 获取检查详情
+	getCheckDetail: '/mobile/getAqjc.do?action=getOneJc',
 	// 获取检查类型
 	getCheckTypes: '/mobile/getAqjc.do?action=getJclx',
 	// 获取检查模板

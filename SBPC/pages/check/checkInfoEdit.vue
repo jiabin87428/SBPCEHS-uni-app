@@ -57,7 +57,9 @@
 				
 				typeArray: ['正常', '未检', '异常'],
 				rectifyTypes: ['立即整改', '整改通知', '整改中'],
-		        item: '',		// subList中的对象
+		        item: {
+					zplist: [],
+				},		// subList中的对象
 				itemIndex: 0,	// subList中的第几个数据，用于确定后替换原数据
 				
 				// 上传照片相关
@@ -66,10 +68,18 @@
 		    }
 		},
 		onLoad(option) {
-			this.key = option.key;
-			this.item = JSON.parse(option.item);
-			this.itemIndex = JSON.parse(option.index);
-			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
+			var that = this;
+			that.key = option.key;
+			// that.item = JSON.parse(option.item);
+			that.itemIndex = JSON.parse(option.index);
+			that.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
+			
+			uni.getStorage({
+				key: "LOCAL_ITEM",
+				success: function (res) {
+					that.item = res.data
+				}
+			});
 			
 // 			if(this.item.fj == null) {
 // 				return;

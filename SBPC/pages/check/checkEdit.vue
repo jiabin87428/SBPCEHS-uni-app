@@ -6,16 +6,16 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<picker id="jclx" @change="typePickerChange(checkTypes, $event)" v-bind:range="checkTypes" range-key="dictvalue">
-						<uni-list-item title="检查类型" :subnote="model.jclx" :show-arrow="true"></uni-list-item>
+					<picker id="jclx" @change="typePickerChange(checkTypes, $event)" v-bind:range="checkTypes" range-key="dictvalue" :disabled="!editable">
+						<uni-list-item title="检查类型" :subnote="model.jclx" :show-arrow="editable"></uni-list-item>
 					</picker>
 					<uni-list-item title="检查人" :subnote="model.llrmc" show-arrow="false"></uni-list-item>
-					<picker mode="date" :value="model.jcrq" @change="dateChange('jcrq', $event)">
-						<uni-list-item title="检查日期" :subnote="model.jcrq" :show-arrow="true"></uni-list-item>
+					<picker mode="date" :value="model.jcrq" @change="dateChange('jcrq', $event)" :disabled="!editable">
+						<uni-list-item title="检查日期" :subnote="model.jcrq" :show-arrow="editable"></uni-list-item>
 					</picker>
-					<uni-list-item title="检查组成员" :subnote="model.qtcy" :show-arrow="true" @click="jumpPersonChoose"></uni-list-item>
-					<picker id="mb" @change="mbChange(selectedModule, $event)" v-bind:range="selectedModule" range-key="mbmc">
-						<uni-list-item title="检查模板" :subnote="model.mb" :show-arrow="true"></uni-list-item>
+					<uni-list-item title="检查组成员" :subnote="model.qtcy" :show-arrow="editable" @click="jumpPersonChoose"></uni-list-item>
+					<picker id="mb" @change="mbChange(selectedModule, $event)" v-bind:range="selectedModule" range-key="mbmc" :disabled="!editable">
+						<uni-list-item title="检查模板" :subnote="model.mb" :show-arrow="editable"></uni-list-item>
 					</picker>
 				</uni-list>
 			</view>
@@ -90,8 +90,6 @@
 					jcjlList: [],
 				},
 				
-				// 页面状态，0-新建 1-编辑
-				pageState: 0,
 				// 选中的模板
 				currentModule: null,
 				
@@ -129,24 +127,46 @@
 			}
 		},
 		onLoad(option) {
-			this.model.userid = this.userInfo.userid;
-			if (this.pageState == 0) {
-				// 获取检查类型
-				this.getCheckTypes();
-				// 获取检查模板
-				this.getCheckModule();
+			let recordid = option.recordid == null ? "" : option.recordid;
+			
+			if (recordid == "") {// 新建
 				this.model.llrid = this.userInfo.userid;
 				this.model.llrmc = this.userInfo.username;
+			}else {// 获取详情
+				this.model.recordid = recordid;
+				this.getDetail();
 			}
+			
+			// 获取检查类型
+			this.getCheckTypes();
+			// 获取检查模板
+			this.getCheckModule();
 		},
 		onNavigationBarButtonTap() {
-			
+			uni.showModal({
+			    content: '选择[一键正常]将要清除所有问题描述、检查方式、检查照片，是否确认？',
+			    success: (res) => {
+			        if (res.confirm) {
+			            this.setAllOk();
+			        }else {
+						return;
+					}
+			    }
+			})
 		},
 		onUnload() {
 			
 		},
 		methods: {
-			
+			// 设置一键正常
+			setAllOk: function(e) {
+				for (var i = 0; i < this.model.jcjlList.length; i++) {
+					this.model.jcjlList[i].wtms = "";
+					this.model.jcjlList[i].zgqk = "";
+					this.model.jcjlList[i].zplist = [];
+					this.model.jcjlList[i].ifwt = "1";
+				}
+			},
 			// 获取检查类型
 			getCheckTypes: function(e) {
 				var that = this;
@@ -175,6 +195,36 @@
 				request.requestLoading(config.getCheckModule, param, '正在获取检查模板', 
 					function(res){
 						that.selectedModule = res.data;
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '获取失败'
+						});
+					}, function(){
+						
+					}
+				);
+			},
+			// 获取检查详情
+			getDetail: function(e) {
+				var that = this;
+				let param = {
+					userid: that.userInfo.userid,
+					recordid: that.model.recordid
+				}
+				request.requestLoading(config.getCheckDetail, param, '正在获取检查详情', 
+					function(res){
+						that.model = res;
+						if (that.model.jcdzt == "5") {
+							editable = false;
+						}
+						// 处理照片
+						var zplists = [];
+						for (var i = 0; i < res.jcjlList.length; i++) {
+							zplists = zplists.concat(res.jcjlList[i].zplist);
+						}
+						// console.log('zplists' + JSON.stringify(zplists));
+						that.classifyPhotos(zplists);
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -264,6 +314,7 @@
 				// 2、再循环返回的photoList，把zpsgrecordid对应jcjlrecordid的照片加入zplist。。。
 				for(var i = 0 ; i < photoList.length; i++) {
 					let item = photoList[i];
+
 					let photoModel = {
 						fileid: item.attid,
 						src: config.host + config.loadImage + '&attid=' + item.attid,
@@ -279,6 +330,8 @@
 						}
 					}
 				}
+				
+				// console.log("jcjlList:" + JSON.stringify(this.model.jcjlList))
 			},
 			typePickerChange: function(data, e) {// 目前只有检查类型用
 				this.model[e.target.id] = data[e.target.value].dictvalue;
@@ -327,16 +380,24 @@
 			},
 			// 跳转检查项编辑
 			jumpEdit: function(item, index) {
-				if (this.editable == false) {
+				var that = this;
+				if (that.editable == false) {
 					return;
 				}
-				let key = "INFO_EDIT"
-				uni.navigateTo({
-					url: 'checkInfoEdit?item=' + JSON.stringify(item) + '&index=' + index + '&key=' + key
-				});
-				this.$fire.once(key, result=>{
-					// 替换personList中的元素为未选中
-					this.model.jcjlList.splice(result.index, 1, result.item);
+				// item太长，只能存本地，不能放入URL，到下个页面再取出来
+				uni.setStorage({
+						key: "LOCAL_ITEM",
+						data: item,
+						success: function () {
+							let key = "INFO_EDIT"
+							uni.navigateTo({
+								url: 'checkInfoEdit?index=' + index + '&key=' + key
+							});
+							that.$fire.once(key, result=>{
+								// 替换personList中的元素为未选中
+								that.model.jcjlList.splice(result.index, 1, result.item);
+							});
+						}
 				});
 			},
 			// 添加自定义检查项

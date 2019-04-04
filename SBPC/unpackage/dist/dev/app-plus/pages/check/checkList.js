@@ -508,6 +508,8 @@ var config = {
   /*检查相关*/
   // 获取检查列表
   getCheckList: '/mobile/getAqjc.do',
+  // 获取检查详情
+  getCheckDetail: '/mobile/getAqjc.do?action=getOneJc',
   // 获取检查类型
   getCheckTypes: '/mobile/getAqjc.do?action=getJclx',
   // 获取检查模板
@@ -2498,7 +2500,7 @@ var _default =
       var that = this;
       //跳转到详情页面
       uni.navigateTo({
-        url: 'checkEdit?instanceid=' + item.instanceid + '&recordid=' + item.recordid });
+        url: 'checkEdit?recordid=' + item.recordid });
 
     },
     close: function close(index1, index2) {var _this = this;

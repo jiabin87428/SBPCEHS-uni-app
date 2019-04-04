@@ -102,7 +102,7 @@
 				var that = this;
 				//跳转到详情页面
 				uni.navigateTo({
-					url:'checkEdit?instanceid='+item.instanceid + '&recordid=' + item.recordid
+					url:'checkEdit?recordid=' + item.recordid
 				});
             },
             close(index1, index2) {
