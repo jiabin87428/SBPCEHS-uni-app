@@ -5,6 +5,7 @@
     "pages/login/diyHost",
     "pages/reg/reg",
     "pages/pwd/pwd",
+    "pages/user/accountEdit",
     "pages/user/user",
     "pages/danger/dangerEdit",
     "pages/common/inputPage",

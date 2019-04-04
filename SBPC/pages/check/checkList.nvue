@@ -154,6 +154,7 @@
 				if (isRefresh) {
 					this.newsitems[index].data = [];
 				}
+				console.log('请求列表：' + JSON.stringify(list));
 				for(var i = 0; i < list.length; i++){					
 					var obj = {};
 					var item = list[i];

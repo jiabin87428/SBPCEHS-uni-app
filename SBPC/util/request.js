@@ -1,4 +1,6 @@
+import service from '../service.js'
 const config = require('./config')
+
 // 展示进度条的网络请求
 // url:网络请求的url
 // params:请求参数
@@ -12,11 +14,14 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 	  	title: message, 
 	  });
 	}
-	// params = formatParam(params);
+	// 将参数克隆一份，不影响传过来的参数，不然转jsonString会影响UI显示，界面可能会卡住
+	var copyParam = service.copyObj(params);
+	// 格式化参数，Form表单形式，需要将type为对象的值转为jsonString
+	copyParam = formatParam(copyParam);
 	console.log('request.js :' + config.host + url);
 	uni.request({
 			url: config.host + url, 
-			data: params,
+			data: copyParam,
 			header: {
 					// 'Content-Type': 'application/json;charset=utf-8'
 					'Content-type': 'application/x-www-form-urlencoded'
@@ -24,9 +29,7 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 			method: 'POST',
 			success: (res) => {
 // 					wx.hideNavigationBarLoading()
-					console.log("请求成功");
 					if (message != "") {
-						console.log("成功后隐藏Loading");
 						uni.hideLoading()
 					}
 
@@ -43,14 +46,12 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 			},
 			fail:(res) => {
 				if (message != "") {
-					console.log("失败后隐藏Loading");
 					uni.hideLoading()  
 				}
 				fail()
 			},
 			complete:() => {
 				if (message != "") {
-					console.log("完成后隐藏Loading");
 					uni.hideLoading()
 				}
 				complete()
@@ -125,12 +126,10 @@ const formatParam = function(param) {
 	console.log("formatParam");
 	// console.log(Object.keys(param));
 	Object.keys(param).forEach(function(key){
-		 // console.log(key,param[key]);
 		 if (typeof param[key] == "object") {
 			 param[key] = JSON.stringify(param[key]);
 		 }
 	});
-	console.log(JSON.stringify(param));
 	return param;
 }
 

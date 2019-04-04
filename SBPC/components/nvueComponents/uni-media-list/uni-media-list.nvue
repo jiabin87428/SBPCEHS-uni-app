@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="list-cell" @click="bindClick">
-            <div class="media-list" v-if="data.title">
+            <div class="media-list">
                 <div :class="[isImgRight?'media-image-right':'',isImgLeft?'media-image-left':'']">
                     <text :class="['media-title',isImgRight||isImgLeft?'media-title2':'']">{{data.title}}</text>
                     <div v-if="showImg" :class="['image-section',isImgRight?'image-section-right':'',isImgLeft?'image-section-left':'']">
@@ -87,6 +87,7 @@
     }
 
     .media-title {
+		height: 40upx;
         flex: 1;
     }
 

@@ -84,6 +84,7 @@ const viewPhoto = function(imgList) {
  * complete:		上传完成函数
  */
 const uploadPhoto = function(userid, zpsgrecordid, attachtype, photoList, complete) {
+	console.log('zpsgrecordid:' + zpsgrecordid)
 	var that = this;
 	// 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口
 	let url = config.uploadImage + '?userid=' + userid + '&zpsgrecordid=' + zpsgrecordid + '&attachtype=' + attachtype;

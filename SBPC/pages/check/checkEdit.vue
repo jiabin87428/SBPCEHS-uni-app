@@ -79,6 +79,7 @@
 				model: {
 					recordid: '',	// 主键，有值更新，没值插入
 					userid: '',
+					jcdzt: '1',		// 状态：1-新建，5-完成，其他时候就按后台传的来
 					jclx: '',
 					llrid: '',
 					llrmc: '',
@@ -122,6 +123,9 @@
 					size: '22',
 					type: 'clear'
 				},
+				
+				// 备用的照片List
+				zplists: [],
 			}
 		},
 		onLoad(option) {
@@ -183,15 +187,39 @@
 			},
 			// 保存
 			saveClick: function(e) {
+				this.doSave(1)
+			},
+			// 完成检查
+			completeClick: function(e) {
+				this.doSave(5)
+			},
+			// 保存接口,保存的时候state为1，完成检查的时候state为5
+			doSave: function(state) {
 				var that = this;
+				// 先清除zplists
+				that.zplists = [];
+				that.model.userid = that.userInfo.userid;
+				that.model.jcdzt = state;
 				var param = that.model;
-				// param.jcjlList = JSON.stringify(param.jcjlList);	// 复杂对象中的对象数组需要转成jsonString
+				// 抽出模型jcjlList里的所有zplist备用，因为保存成功后替换模型会把zplist置空
+				for (var i = 0; i < that.model.jcjlList.length; i++) {
+					let item = that.model.jcjlList[i];
+					that.zplists.push(item.zplist);
+				}
+				
 				request.requestLoading(config.saveCheck, param, '正在保存检查', 
 					function(res){
-						console.log('' + JSON.stringify(res));
-						uni.showToast({
-							icon: 'none',
-							title: '保存成功'
+						that.model = res;
+						// 把抽出的zplist放回去
+						for (var i = 0; i < that.model.jcjlList.length; i++) {
+							let item = that.model.jcjlList[i];
+							item.zplist = that.zplists[i];
+						}
+						that.uploadPhoto(false, function(){
+							uni.showToast({
+								icon: 'none',
+								title: '保存成功'
+							});
 						});
 					},function(){
 						uni.showToast({
@@ -203,11 +231,55 @@
 					}
 				);
 			},
-			// 完成检查
-			completeClick: function(e) {
-				
+			// 上传照片
+			uploadPhoto (needBack = false, complete) {
+				var that = this;
+				for(var i = 0; i<that.model.jcjlList.length; i++) {
+					let item = that.model.jcjlList[i];
+					console.log('item:' + JSON.stringify(item));
+					let recordid = item.jcjlrecordid;
+					let photoList = item.zplist;
+					photo.uploadPhoto(that.userInfo.userid, recordid, "", photoList, function(photoListOnServer){
+						if(photoListOnServer.length > 0) {
+							uni.showToast({
+								icon: 'none',
+								title: '照片上传成功',
+							});
+							that.classifyPhotos(photoListOnServer);
+						}
+						complete();
+					});
+				}
 			},
-			
+			// 加载完隐患详情后把照片加到对应的List中
+			classifyPhotos: function(photoList) {
+				if (photoList == null) {
+					return;
+				}
+				// 1、先把模型里的zplist全部清空。。。
+				for (var i = 0 ; i < this.model.jcjlList.length; i++) {
+					this.model.jcjlList[i].zplist = [];
+				}
+				
+				// 2、再循环返回的photoList，把zpsgrecordid对应jcjlrecordid的照片加入zplist。。。
+				for(var i = 0 ; i < photoList.length; i++) {
+					let item = photoList[i];
+					let photoModel = {
+						fileid: item.attid,
+						src: config.host + config.loadImage + '&attid=' + item.attid,
+						type: 2,
+						yhid: item.zpsgrecordid,
+						attachtype: item.attachtype
+					};
+					
+					for (var j = 0 ; j < this.model.jcjlList.length; j++) {
+						let mod = this.model.jcjlList[j];
+						if (mod.jcjlrecordid == item.zpsgrecordid) {
+							this.model.jcjlList[j].zplist.push(photoModel);
+						}
+					}
+				}
+			},
 			typePickerChange: function(data, e) {// 目前只有检查类型用
 				this.model[e.target.id] = data[e.target.value].dictvalue;
 				this.model['jclxbm'] = data[e.target.value].dictvalue;
@@ -282,13 +354,20 @@
 				  return;
 			  }
 			  var newItem = {
-				  bzlx: '1',
-				  ifwt: '2',
+				  bzlx: '',
+				  idx: '',
+				  ifwt: '',
 				  jcbz: val,
 				  jcbzid: '',
+				  jcjlrecordid: '',
+				  precordid: '',
 				  wtms: '',
+				  xmhfl: '',
+				  xmhflid: '',
 				  zgqk: '',
-				  
+				  zgtzdid: '',
+				  zgtzdmoduleid: '',
+				  zgzt: '',
 				  zplist: [],
 			  }
 			  this.model.jcjlList.push(newItem);

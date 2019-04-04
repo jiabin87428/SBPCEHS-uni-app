@@ -25,6 +25,11 @@
             "style": {
                 "navigationBarTitleText": "找回密码"
             }
+        },{
+            "path": "pages/user/accountEdit",
+            "style": {
+                "navigationBarTitleText": "账号管理"
+            }
         }, {
             "path": "pages/user/user",
             "style": {

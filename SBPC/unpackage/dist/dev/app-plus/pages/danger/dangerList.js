@@ -447,11 +447,24 @@ var getUsers = function getUsers() {
 
 var addUser = function addUser(userInfo) {
   uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
+};
+var removeUser = function removeUser() {
+  uni.removeStorageSync(USERS_KEY);
+  //把给nvue文件用的另一份userInfo也清空
+  uni.removeStorageSync('userInfo');
+};
+
+var copyObj = function copyObj(a) {
+  var c = {};
+  c = JSON.parse(JSON.stringify(a));
+  return c;
 };var _default =
 
 {
   getUsers: getUsers,
-  addUser: addUser };exports.default = _default;
+  addUser: addUser,
+  removeUser: removeUser,
+  copyObj: copyObj };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -470,7 +483,7 @@ var addUser = function addUser(userInfo) {
   * 登录名和密码: root GelureM1
   * 
   */
-var host = "http://112.124.14.5/sbpc111"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+var host = "http://112.124.14.5/sbpc"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
 
 var config = {
@@ -530,7 +543,9 @@ module.exports = config;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js");
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _service = _interopRequireDefault(__webpack_require__(/*! ../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var config = __webpack_require__(/*! ./config */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js");
+
 // 展示进度条的网络请求
 // url:网络请求的url
 // params:请求参数
@@ -544,11 +559,14 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       title: message });
 
   }
-  // params = formatParam(params);
+  // 将参数克隆一份，不影响传过来的参数，不然转jsonString会影响UI显示，界面可能会卡住
+  var copyParam = _service.default.copyObj(params);
+  // 格式化参数，Form表单形式，需要将type为对象的值转为jsonString
+  copyParam = formatParam(copyParam);
   console.log('request.js :' + config.host + url);
   uni.request({
     url: config.host + url,
-    data: params,
+    data: copyParam,
     header: {
       // 'Content-Type': 'application/json;charset=utf-8'
       'Content-type': 'application/x-www-form-urlencoded' },
@@ -556,9 +574,7 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     method: 'POST',
     success: function success(res) {
       // 					wx.hideNavigationBarLoading()
-      console.log("请求成功");
       if (message != "") {
-        console.log("成功后隐藏Loading");
         uni.hideLoading();
       }
 
@@ -575,14 +591,12 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     },
     fail: function fail(res) {
       if (message != "") {
-        console.log("失败后隐藏Loading");
         uni.hideLoading();
       }
       _fail();
     },
     complete: function complete() {
       if (message != "") {
-        console.log("完成后隐藏Loading");
         uni.hideLoading();
       }
       _complete();
@@ -657,12 +671,10 @@ var formatParam = function formatParam(param) {
   console.log("formatParam");
   // console.log(Object.keys(param));
   Object.keys(param).forEach(function (key) {
-    // console.log(key,param[key]);
     if (typeof param[key] == "object") {
       param[key] = JSON.stringify(param[key]);
     }
   });
-  console.log(JSON.stringify(param));
   return param;
 };var _default =
 
@@ -2793,6 +2805,7 @@ module.exports = {
     "flexDirection": "row-reverse"
   },
   "media-title": {
+    "height": 40,
     "flex": 1,
     "lines": 3,
     "textOverflow": "ellipsis",
@@ -3020,7 +3033,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.bindClick
     }
-  }, [(_vm.data.title) ? _c('div', {
+  }, [_c('div', {
     staticClass: ["media-list"]
   }, [_c('div', {
     class: [_vm.isImgRight ? 'media-image-right' : '', _vm.isImgLeft ? 'media-image-left' : '']
@@ -3051,7 +3064,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["info-text"]
   }, [_vm._v(_vm._s(_vm.data.comment_count))]), _c('text', {
     staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.datetime))])])])]) : _vm._e()])])
+  }, [_vm._v(_vm._s(_vm.data.datetime))])])])])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
