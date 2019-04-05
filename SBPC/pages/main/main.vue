@@ -38,6 +38,12 @@
 			  <text class='dangerText'>统计</text>
 			</view>
 		  </view>
+		  <view class='dangerView' @tap="jumpPage('../ZhongHua/peixun/peixunForZh')">
+		  			<image class="dangerIcon" src="../../static/assets/tj.png" mode="widthFix"></image>
+		  			<view class='subView'>
+		  			  <text class='dangerText'>培训</text>
+		  			</view>
+		  </view>
 		</view>
 	</view>
 </template>

@@ -132,7 +132,12 @@
 					}  
 				} 
             }
-        }
+        }, {
+			"path":"pages/ZhongHua/peixun/peixunForZh",
+			"style": {
+			    "navigationBarTitleText": "培训"
+			}
+		}
     ],
     "tabBar": {
         "color": "#7a7e83",

@@ -18,6 +18,7 @@
         },
         onHide: function() {
             console.log('App Hide');
+			this.$fire.fire("APP_HIDE", "hihihihihihihi");
         }
     }
 </script>
