@@ -1,0 +1,19 @@
+提供这些APP的Logo，还有用于HBuilderX的发布的证书，我用HBuilder发布APP演示方便。
+1、SPBC-EHS 。 com.gelure.sbpc，已有logo
+2、CPH环保+。 com.gelure.cphenvi
+3、CPH安全+。com.gelure.cphsafety，已有logo
+4、三友纯碱。com.gelure.sycj
+5、三友化纤。 com.gelure.syhx，已有logo
+6、三友硅业。 com.gelure.syhx
+7、三友氯碱。 com.gelure.syhx
+8、三友热电。 com.gelure.syhx
+9、赛科PSM。 com.gelure.seccopsm
+10、CATL-EHS。com.gelure.catl
+11、霍尼韦尔HSE com.gelure.honeywell
+12、中化蓝天HSE .com.gelure.sinochem
+13、中远EAP. com.gelure.scksteel
+14、移动安全专家， com.gelure.gehsq
+15、EHSQ新版后台产品[移动安全管家] com.gelure.ehsq
+16、Sharrix com.gelure.sharrix
+17、汉洁OA。 com.gelure.hjoa
+18、京东方消防安全. com.gelure.boeb9
