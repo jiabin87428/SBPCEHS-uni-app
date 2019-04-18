@@ -778,11 +778,15 @@ var callbacks = {};
 
 var WEBVIEW_ID = '';
 
-storage && storage.getItem && storage.getItem(UNIAPP_LAUNCH_WEBVIEW_ID, function (evt) {
-  if (evt.result === 'success' && evt.data) {
-    WEBVIEW_ID = evt.data;
-  }
-});
+if (weex.config.plus_appid) {
+  WEBVIEW_ID = weex.config.plus_appid;
+} else {
+  storage && storage.getItem && storage.getItem(UNIAPP_LAUNCH_WEBVIEW_ID, function (evt) {
+    if (evt.result === 'success' && evt.data) {
+      WEBVIEW_ID = evt.data;
+    }
+  });
+}
 
 globalEvent.addEventListener('plusMessage', function (e) {
   if (e.data.type === 'UniAppJsApi') {

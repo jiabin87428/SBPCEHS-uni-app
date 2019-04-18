@@ -39,7 +39,8 @@
 				</view>
 			</view>
 		</view>
-		<block v-if="pageState != 1">
+		<!--整改情况 pageState >= 1-->
+		<block>
 			<view class="cellTitleView">
 				<text class="cellTitle">整改情况</text>
 			</view>
@@ -72,8 +73,8 @@
 				</view>
 			</view>
 		</block>
-		
-		<block v-if="pageState == 3 || pageState == 0">
+		<!--整改情况 pageState >= 3-->
+		<block>
 			<view class="cellTitleView">
 				<text class="cellTitle">整改确认</text>
 			</view>
