@@ -140,6 +140,9 @@
 			},
 			// 多选添加或删除 index为personList中的位置，非selected中的位置
 			addOrDeleteCurrent: function(person, index) {
+				if(person.isUser == "N") {
+					return;
+				}
 				if (person.selected == true) {
 					for(var i = 0 ; i < this.selectedList.length; i++) {
 						var model = this.selectedList[i];
