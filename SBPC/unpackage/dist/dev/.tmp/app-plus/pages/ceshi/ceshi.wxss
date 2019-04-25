@@ -1,0 +1,632 @@
+.uni-countdown {
+  width: 100%;
+  padding: 2rpx 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.uni-countdown__splitor {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 44rpx;
+    padding: 0 5rpx;
+    font-size: 28rpx;
+}
+.uni-countdown__number {
+    width: 30rpx;
+    height: 30rpx;
+    line-height: 44rpx;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 44rpx;
+    border-radius: 6rpx;
+    margin: 0 5rpx;
+    font-size: 28rpx;
+    border: 1px solid #000000;
+    font-size: 24rpx;
+    padding: 0 10rpx;
+}
+
+@charset "UTF-8";
+.baseView{
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background-color: #F1F1F1;
+}
+.cellTitleView {
+	width: 100%;
+	height: 100rpx;
+	background-color: #F3F3F3;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.cellTitle {
+	/* width: 300upx; */
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+	color: #6F6F6F;
+	font-size: 30rpx;
+}
+.cellInfoView {
+	width: 100%;
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.cellBaseView_Row {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 120rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.selectedImg {
+	margin-left: 20rpx;
+	width: 40rpx;
+	height: 40rpx;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0; /*等比例不压缩*/
+}
+.unSelectedImg {
+	margin-left: 20rpx;
+	width: 40rpx;
+	height: 40rpx;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0; /*等比例不压缩*/
+}
+.cellLine {
+	/* width: 100%; */
+	height: 1rpx;
+	margin-left: 30rpx;
+	margin-right: 0rpx;
+	background-color: #DDDDDD;
+}
+.coverBottomView {
+	width: 100%;
+	height: 110rpx;
+	background: #3296FA;
+	position: fixed;
+	bottom: 0rpx;
+	overflow: hidden;
+	text-align: center;
+	line-height: 110rpx;
+	color: #FFFFFF;
+	font-size: 32rpx;
+}
+/*按钮样式*/
+.buttonStyle {
+	width: 100%;
+	height: 80rpx;
+	line-height: 80rpx;
+	background-color: #3296FA;
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+	border-radius: 5rpx;
+}
+/*vue顶部Tab页css样式*/
+.TopTabView {
+	width: 100%;
+	height: 110rpx;
+	background: #3296FA;
+	position: fixed;
+	top: 0rpx;
+	overflow: hidden;
+	text-align: center;
+	line-height: 110rpx;
+	color: #FFFFFF;
+	font-size: 32rpx;
+}
+/*添加照片的css样式*/
+.cellImageBaseView {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  width: 100%;
+  background-color: white;
+  /* margin-bottom: 10px; */
+  border-bottom: 0.5rpx solid #E2E2E2;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;/*垂直居中*/
+}
+.cellImageTitleView {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	/* justify-content: center; */
+}
+.leftTextRow {
+	width: 100%;
+	margin-left: 30rpx;
+	font-size: 28rpx;
+	color: #333333;
+}
+.rightTextRow {
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	margin-right: 50rpx;
+	text-align: right;
+	font-size: 28rpx;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	white-space: normal;
+	color: inherit;
+	line-height: 1.5;
+	overflow: hidden;
+	color: #BBBBBB;
+}
+.imageView {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:row;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  width: 100%;
+  /* height: 100px; */
+  background-color: white;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;/*垂直居中*/
+  /* justify-content: space-between; */
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 10rpx;
+}
+.littleImageView {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:row;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  margin: 20px 5px 5px 20px;
+}
+.littleImageDelete {
+  /* position: absolute; */
+  position: relative;
+  margin-left: -50rpx;
+  margin-top: -15rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.littleImage {
+  width: 100%;
+  height: 100%;
+}
+.timeImage {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  /*等比例不压缩*/
+}
+.timeLabel {
+  width: 150rpx;
+  color: #898989;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 60rpx;
+}
+.examScrollView {
+  width: 95%;
+  margin-top: 80rpx;
+  margin-bottom: 0rpx;
+}
+.pxTitleView {
+  width: 100%;
+  height: 120rpx;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pxTitleLabel {
+  width: 100%;
+  /* height: 120upx; */
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 60rpx;
+}
+.pxSubTitleLabel {
+  width: 100%;
+  /* height: 120upx; */
+  font-size: 22rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 30rpx;
+  color: #BBBBBB;
+}
+.classImage {
+  width: 100%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  /*等比例不压缩*/
+}
+.controlBtnView {
+  width: 100%;
+  height: 120rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.countLabel {
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  color: #888888;
+  line-height: 60rpx;
+}
+.titleView_ceshi {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 80rpx;
+  background-color: #FFFFFF;
+}
+.titleText_ceshi {
+  margin-left: 30rpx;
+  color: #666666;
+  width: 100%;
+  text-align: left;
+  font-size: 32rpx;
+}
+.subjectBaseView {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #E2E2E2;
+}
+.subjectLeftView {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: center; */
+  padding: 10rpx;
+}
+.subjectRightView {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.scoreView {
+  padding: 5rpx 20rpx 5rpx 20rpx;
+  color: #999999;
+  width: 30rpx;
+  font-size: 20rpx;
+  background-color: #EEEEEE;
+  border-radius: 10rpx;
+}
+.subjectCount {
+  font-size: 30rpx;
+  color: #2D68AA;
+}
+.subjectTitle {
+  color: #555555;
+  font-size: 26rpx;
+  margin-right: 30rpx;
+  padding: 10rpx;
+}
+.subjectTitleGreen {
+  color: #159722;
+  font-size: 26rpx;
+  margin-right: 30rpx;
+  padding: 10rpx;
+}
+.unChooseItemView {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rpx;
+  margin-bottom: 1rpx;
+}
+.choosedItemView {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rpx;
+  background-color: #EEEEEE;
+  margin-bottom: 3rpx;
+}
+.pxTitleView {
+  width: 100%;
+  height: 120rpx;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pxTitleLabel {
+  width: 100%;
+  /* height: 120upx; */
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 60rpx;
+}
+.pxSubTitleLabel {
+  width: 100%;
+  /* height: 120upx; */
+  font-size: 22rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 30rpx;
+  color: #BBBBBB;
+}
+.lineView {
+  width: 100%;
+  height: 1rpx;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.rowLine1 {
+  width: 95%;
+  height: 100%;
+  /* background-color: #F1F1F1; */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #F1F1F1;
+}
+.rowLine2 {
+  width: 95%;
+  height: 100%;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: #F1F1F1;
+}
+.rowLine3 {
+  width: 95%;
+  height: 100%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #E2E2E2;
+}
+.scoreLabelRed {
+  width: 100%;
+  color: #E60000;
+  font-size: 34rpx;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+}
+.scoreLabelGreen {
+  width: 100%;
+  color: #159722;
+  font-size: 34rpx;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+}
+.ceshiButtonStyle {
+  position: fixed;
+  right: 10rpx;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  background-color: #3296FA;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 5rpx;
+  color: #FFFFFF;
+}
+.answerView {
+  width: 100%;
+  padding: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: center; */
+}
+.answerLabelNormal {
+  color: #666666;
+  font-size: 24rpx;
+}
+.answerLabelGreen {
+  color: #159722;
+  font-size: 30rpx;
+}
+.answerLabelRed {
+  color: #E60000;
+  font-size: 30rpx;
+}
+

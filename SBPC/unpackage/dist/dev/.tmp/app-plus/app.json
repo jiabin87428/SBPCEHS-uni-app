@@ -15,7 +15,9 @@
     "pages/check/checkEdit",
     "pages/check/checkInfoEdit",
     "pages/common/selectedPersonPage",
-    "pages/ZhongHua/peixun/peixunForZh"
+    "pages/peixun/peixun",
+    "pages/ceshi/ceshi",
+    "pages/gonggao/gonggaoList"
   ],
   "subPackages": [],
   "window": {
@@ -45,6 +47,12 @@
   },
   "nvue": {
     "pages": {
+      "pages/peixun/peixunList.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "培训列表"
+        }
+      },
       "pages/check/checkList.html": {
         "window": {
           "usingComponents": {},
@@ -82,5 +90,5 @@
     "autoclose": false
   },
   "appname": "SBPC-EHS",
-  "compilerVersion": "1.9.2"
+  "compilerVersion": "1.9.3"
 }

@@ -1,0 +1,2 @@
+<import src="./ceshi.vue.wxml" />
+    <template is="2e136f80" data="{{ ...$root['0'], $root }}"/>

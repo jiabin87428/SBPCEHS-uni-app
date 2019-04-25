@@ -1,6 +1,6 @@
 <template> 
 	<view class="baseView">  
-		<view class="topView_pc" @tap="jumpPage('../statistics/statistics')"  v-if="userType == 1">
+		<view class="topView_pc" @tap="jumpPage('../statistics/statistics')">
 			<view class="topItemView">
 				<text class="topTextTitle">隐患总数</text>
 				<text class="topTextNum">1005</text>
@@ -38,11 +38,35 @@
 			  <text class='dangerText'>统计</text>
 			</view>
 		  </view>
-		  <view class='dangerView' @tap="jumpPage('../ZhongHua/peixun/peixunForZh')">
-		  			<image class="dangerIcon" src="../../static/assets/tj.png" mode="widthFix"></image>
-		  			<view class='subView'>
-		  			  <text class='dangerText'>培训</text>
-		  			</view>
+		  <view class='dangerView' @tap="jumpPage('../peixun/peixunList')">
+			<image class="dangerIcon" src="../../static/assets/pxkc.png" mode="widthFix"></image>
+			<view class='subView'>
+			  <text class='dangerText'>培训</text>
+			</view>
+		  </view>
+		  <view class='dangerView' @tap="jumpPage('../gonggao/gonggaoList')">
+			<image class="dangerIcon" src="../../static/assets/gg.png" mode="widthFix"></image>
+			<view class='subView'>
+			  <text class='dangerText'>通知公告</text>
+			</view>
+		  </view>
+		  <view class='dangerView' @tap="jumpPage('')">
+			<image class="dangerIcon" src="../../static/assets/xw.png" mode="widthFix"></image>
+			<view class='subView'>
+			  <text class='dangerText'>公司新闻</text>
+			</view>
+		  </view>
+		  <view class='dangerView' @tap="jumpPage('')">
+			<image class="dangerIcon" src="../../static/assets/cn.png" mode="widthFix"></image>
+			<view class='subView'>
+			  <text class='dangerText'>积分排名</text>
+			</view>
+		  </view>
+		  <view class='dangerView'>
+
+		  </view>
+		  <view class='dangerView'>
+
 		  </view>
 		</view>
 	</view>

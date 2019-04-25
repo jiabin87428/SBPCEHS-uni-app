@@ -454,17 +454,30 @@ var removeUser = function removeUser() {
   uni.removeStorageSync('userInfo');
 };
 
+// 拷贝对象
 var copyObj = function copyObj(a) {
   var c = {};
   c = JSON.parse(JSON.stringify(a));
   return c;
+};
+
+// 获取当前日期
+var getCurrentDate = function getCurrentDate(timeStamp) {
+  var year = new Date(timeStamp).getFullYear();
+  var month = new Date(timeStamp).getMonth() + 1 < 10 ? "0" + (new Date(timeStamp).getMonth() + 1) : new Date(timeStamp).getMonth() + 1;
+  var date = new Date(timeStamp).getDate() < 10 ? "0" + new Date(timeStamp).getDate() : new Date(timeStamp).getDate();
+  var hh = new Date(timeStamp).getHours() < 10 ? "0" + new Date(timeStamp).getHours() : new Date(timeStamp).getHours();
+  var mm = new Date(timeStamp).getMinutes() < 10 ? "0" + new Date(timeStamp).getMinutes() : new Date(timeStamp).getMinutes();
+  // this.nowTime = year + "年" + month + "月" + date +"日"+" "+hh+":"+mm ;
+  return year + "-" + month + "-" + date;
 };var _default =
 
 {
   getUsers: getUsers,
   addUser: addUser,
   removeUser: removeUser,
-  copyObj: copyObj };exports.default = _default;
+  copyObj: copyObj,
+  getCurrentDate: getCurrentDate };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -492,6 +505,10 @@ var config = {
   host: host,
   // 登录
   login: '/mobile/system/login.do',
+  // 获取公告列表
+  getGgList: '/mobile/getOther.do?action=getTzList',
+  // 获取公告详情
+  getGgDetail: '/mobile/getOther.do?action=getOneTz',
 
   /*隐患相关*/
   // 获取隐患列表
@@ -518,6 +535,20 @@ var config = {
   getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
   // 保存检查
   saveCheck: '/mobile/getAqjc.do?action=insertJc',
+
+  /*培训相关*/
+  // 获取培训列表
+  getClassList: '/mobile/getTrain.do?action=getPxzlList',
+  // 获取培训内容
+  getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',
+
+  /*考试相关*/
+  // 获取考试说明
+  getExamDesc: '/mobile/getExam.do?action=getMyKskm',
+  // 获取考试内容
+  getExamInfo: '/mobile/getExam.do?action=createGrsj',
+  // 提交考卷
+  submitExam: '/mobile/getExam.do?action=submitGrsj',
 
   /*通用接口*/
   // 获取部门

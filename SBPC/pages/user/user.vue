@@ -1,48 +1,3 @@
-<!-- <template>
-    <view class="content">
-        <view class="btn-row">
-            <button v-if="!hasLogin" type="primary" class="primary" @tap="bindLogin">登录</button>
-            <button v-if="hasLogin" type="default" @tap="bindLogout">退出登录</button>
-        </view>
-    </view>
-</template>
-
-<script>
-    import {
-        mapState,
-        mapMutations
-    } from 'vuex'
-
-    export default {
-        computed: {
-            ...mapState(['hasLogin', 'forcedLogin'])
-        },
-        methods: {
-            ...mapMutations(['logout']),
-            bindLogin() {
-                uni.navigateTo({
-                    url: '../login/login',
-                });
-            },
-            bindLogout() {
-                this.logout();
-                /**
-                 * 如果需要强制登录跳转回登录页面
-                 */
-                if (this.forcedLogin) {
-                    uni.reLaunch({
-                        url: '../login/login',
-                    });
-                }
-            }
-        }
-    }
-</script>
-
-<style>
-
-</style> -->
-
 <template>
 	<view class="center">
 		<view class="logo" :hover-class="logo-hover">
@@ -60,36 +15,6 @@
 		    <image class="dangerIcon" src="../../static/img/setting.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>设置</text>
-		    </view>
-		  </view>
-		  <view class='dangerView' @tap="jumpAccountEdit()">
-		    <image class="dangerIcon" src="../../static/img/wdkc.png" mode="widthFix"></image>
-		    <view class='subView'>
-		      <text class='dangerText'>我的课程</text>
-		    </view>
-		  </view>
-		  <view class='dangerView' @tap="jumpAccountEdit()">
-		    <image class="dangerIcon" src="../../static/img/wdsc.png" mode="widthFix"></image>
-		    <view class='subView'>
-		      <text class='dangerText'>我的收藏</text>
-		    </view>
-		  </view>
-		  <view class='dangerView' @tap="jumpAccountEdit()">
-		    <image class="dangerIcon" src="../../static/img/wdpc.png" mode="widthFix"></image>
-		    <view class='subView'>
-		      <text class='dangerText'>我的评测</text>
-		    </view>
-		  </view>
-		  <view class='dangerView' @tap="jumpAccountEdit()">
-		    <image class="dangerIcon" src="../../static/img/wdks.png" mode="widthFix"></image>
-		    <view class='subView'>
-		      <text class='dangerText'>我的考试</text>
-		    </view>
-		  </view>
-		  <view class='dangerView' @tap="jumpAccountEdit()">
-		    <image class="dangerIcon" src="../../static/img/wdsx.png" mode="widthFix"></image>
-		    <view class='subView'>
-		      <text class='dangerText'>我的私信</text>
 		    </view>
 		  </view>
 		</view>
@@ -273,6 +198,7 @@
 	  flex-wrap: wrap;
 	  flex-direction: row;
 	  justify-content: space-around;
+	  background-color: #fff;
 	}
 	.dangerView {
 	  display:flex;

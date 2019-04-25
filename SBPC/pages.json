@@ -133,9 +133,24 @@
 				} 
             }
         }, {
-			"path":"pages/ZhongHua/peixun/peixunForZh",
+            "path": "pages/peixun/peixunList",
+            "style": {
+                "navigationBarTitleText": "培训列表"
+            }
+        }, {
+            "path": "pages/peixun/peixun",
+            "style": {
+                "navigationBarTitleText": "培训"
+            }
+        }, {
+			"path": "pages/ceshi/ceshi",
 			"style": {
-			    "navigationBarTitleText": "培训"
+				"navigationBarTitleText": "考试"
+			}
+		}, {
+			"path": "pages/gonggao/gonggaoList",
+			"style": {
+				"navigationBarTitleText": "通知公告列表"
 			}
 		}
     ],

@@ -13,6 +13,10 @@ var config = {
 	host,
 	// 登录
 	login: '/mobile/system/login.do',
+	// 获取公告列表
+	getGgList: '/mobile/getOther.do?action=getTzList',
+	// 获取公告详情
+	getGgDetail: '/mobile/getOther.do?action=getOneTz',
 
 	/*隐患相关*/
 	// 获取隐患列表
@@ -39,6 +43,20 @@ var config = {
 	getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
 	// 保存检查
 	saveCheck: '/mobile/getAqjc.do?action=insertJc',
+	
+	/*培训相关*/
+	// 获取培训列表
+	getClassList: '/mobile/getTrain.do?action=getPxzlList',
+	// 获取培训内容
+	getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',
+	
+	/*考试相关*/
+	// 获取考试说明
+	getExamDesc: '/mobile/getExam.do?action=getMyKskm',
+	// 获取考试内容
+	getExamInfo: '/mobile/getExam.do?action=createGrsj',
+	// 提交考卷
+	submitExam: '/mobile/getExam.do?action=submitGrsj',
 	
 	/*通用接口*/
 	// 获取部门
