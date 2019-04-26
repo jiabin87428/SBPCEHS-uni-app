@@ -2,18 +2,17 @@
 	<view class="baseView">  
 		<view class="topView_pc" @tap="jumpPage('../statistics/statistics')">
 			<view class="topItemView">
-				<text class="topTextTitle">隐患总数</text>
-				<text class="topTextNum">1005</text>
+				<text class="topTextTitle">积分排名</text>
+				<text class="topTextNum">{{pointModel.jfpm}}</text>
 			</view>
 			<view class="topItemView">
-				<text class="topTextTitle">事故总数</text>
-				<text class="topTextNum">600</text>
+				<text class="topTextTitle">获固定积分</text>
+				<text class="topTextNum">{{pointModel.gdjf}}</text>
 			</view>
 			<view class="topItemView">
-				<text class="topTextTitle">检查次数</text>
-				<text class="topTextNum">2000</text>
+				<text class="topTextTitle">获主动积分</text>
+				<text class="topTextNum">{{pointModel.zdjf}}</text>
 			</view>
-			<image class="arrow" src="../../static/img/rightArrow_white.png" mode="aspectFit"></image>
 		</view>
 		
 		<!-- <view class="titleView_pc">
@@ -44,19 +43,19 @@
 			  <text class='dangerText'>培训</text>
 			</view>
 		  </view>
-		  <view class='dangerView' @tap="jumpPage('../gonggao/gonggaoList')">
+		  <view class='dangerView' @tap="jumpPage('../other/gonggaoList')">
 			<image class="dangerIcon" src="../../static/assets/gg.png" mode="widthFix"></image>
 			<view class='subView'>
 			  <text class='dangerText'>通知公告</text>
 			</view>
 		  </view>
-		  <view class='dangerView' @tap="jumpPage('')">
+		  <view class='dangerView' @tap="jumpPage('../other/newsList')">
 			<image class="dangerIcon" src="../../static/assets/xw.png" mode="widthFix"></image>
 			<view class='subView'>
 			  <text class='dangerText'>公司新闻</text>
 			</view>
 		  </view>
-		  <view class='dangerView' @tap="jumpPage('')">
+		  <view class='dangerView' @tap="jumpPage('../other/pointRank')">
 			<image class="dangerIcon" src="../../static/assets/cn.png" mode="widthFix"></image>
 			<view class='subView'>
 			  <text class='dangerText'>积分排名</text>
@@ -87,7 +86,18 @@
 		components: {},
 		data() {
 			return {
-				
+				pointModel: {
+					// 需要的固定积分
+					xyjf: 0,
+					// 已获得主动学习积分
+					zdjf: 0,
+					// 已获得固定学习积分
+					gdjf: 0,
+					// 积分排名
+					jfpm: "0/0",
+					// 总积分
+					zf: 0
+				},
 			}
 		},
 		onLoad() {
@@ -120,10 +130,12 @@
 			            }
 			        }
 			    });
+			}else {
+				this.getPoints();
 			}
 		},
 		methods:{
-			...mapMutations(['login']),
+			...mapMutations(['login', 'setPoints']),
 			jumpPage(url) {
 				if (url == '') {
 					uni.showToast({
@@ -136,6 +148,26 @@
 						url: url
 					});
 				}
+			},
+			// 获取积分统计
+			getPoints: function() {
+				var that = this;
+				let param = {
+					userid: that.userInfo.userid
+				};
+				request.requestLoading(config.getPoints, param, '', function(res){
+						that.pointModel = res;
+						that.pointModel.zf = parseInt(res.zdjf) + parseInt(res.gdjf);
+						that.setPoints(that.pointModel);
+					},function(){//fail function
+						uni.showToast({
+							icon: 'none',
+							title: '网络异常，请重试'
+						});
+					}, function(){//complete function
+					
+					}
+				);
 			},
 		},
 	}

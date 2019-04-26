@@ -12,6 +12,7 @@ const store = new Vuex.Store({
         hasLogin: false,
         userName: "",
 		userInfo: null,
+		pointModel: null,
     },
     mutations: {
         login(state, user) {
@@ -26,6 +27,9 @@ const store = new Vuex.Store({
 			state.userInfo = null;
             state.hasLogin = false;
         },
+		setPoints(state, pointModel) {
+			state.pointModel = pointModel;
+		},
     }
 })
 

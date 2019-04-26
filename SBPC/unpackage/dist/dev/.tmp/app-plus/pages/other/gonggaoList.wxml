@@ -1,0 +1,2 @@
+<import src="./gonggaoList.vue.wxml" />
+    <template is="f40cc204" data="{{ ...$root['0'], $root }}"/>

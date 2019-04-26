@@ -148,9 +148,19 @@
 				"navigationBarTitleText": "考试"
 			}
 		}, {
-			"path": "pages/gonggao/gonggaoList",
+			"path": "pages/other/gonggaoList",
 			"style": {
 				"navigationBarTitleText": "通知公告列表"
+			}
+		}, {
+			"path": "pages/other/newsList",
+			"style": {
+				"navigationBarTitleText": "新闻列表"
+			}
+		}, {
+			"path": "pages/other/pointRank",
+			"style": {
+				"navigationBarTitleText": "积分排名"
 			}
 		}, {
 			"path": "pages/common/webView",

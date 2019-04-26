@@ -17,6 +17,12 @@ var config = {
 	getGgList: '/mobile/getOther.do?action=getTzList',
 	// 获取公告详情
 	getGgDetail: '/mobile/getOther.do?action=getOneTz',
+	// 获取新闻列表
+	getNewsList: '/mobile/getOther.do?action=getXwList',
+	// 获取积分排名
+	getPointList: '/mobile/getOther.do?action=getJfpmList',
+	// 获取积分统计
+	getPoints: '/mobile/getTrain.do?action=getJftj',
 
 	/*隐患相关*/
 	// 获取隐患列表
@@ -69,6 +75,8 @@ var config = {
 	deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',
 	// 加载照片
 	loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',
+	// 加载用户头像
+	loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=',
 	
 };
 //对外把对象config返回

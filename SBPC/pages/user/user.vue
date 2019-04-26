@@ -1,11 +1,12 @@
 <template>
 	<view class="center">
 		<view class="logo" :hover-class="logo-hover">
-			<image class="logo-img" :src="avatarUrl"></image>
+			<image class="logo-img" :src="avatarUrl" @click="changeUserPhoto"></image>
 			<view class="logo-title">
 				<view class="infoView" v-if="hasLogin">
 					<text class="uer-name">你好，{{userInfo.username}}</text>
 					<text class="uer-code">工号：{{userInfo.usercode}}</text>
+					<text class="uer-code">{{'积分：' + pointModel.zf + '分 | 排名：' + pointModel.jfpm}}</text>
 				</view>
 				<button v-if="!hasLogin" type="primary" class="primary" @tap="bindLogin">点击登录</button>
 			</view>
@@ -22,24 +23,27 @@
 </template>
 
 <script>
+	import config from '../../util/config.js';
+	import request from '../../util/request.js';
+	import photo from '../../util/photoUtil.js';
 	import {
 	    mapState,
 	    mapMutations
 	} from 'vuex'
 	export default {
 		computed: {
-		    ...mapState(['hasLogin', 'forcedLogin', 'userInfo'])
+		    ...mapState(['hasLogin', 'forcedLogin', 'userInfo', 'pointModel'])
 		},
 		data() {
 			return {
 				userid: "",
 				avatarUrl: "../../static/img/head.png",
-				uerInfo: {}
+				uerInfo: {},
 			}
 		},
 		onLoad() {
 			this.userid = this.userInfo.userid;
-			console.log('' + JSON.stringify(this.userInfo));
+			this.uploadUserPhoto();
 		},
 		methods: {
 			...mapMutations(['logout']),
@@ -52,6 +56,32 @@
 			jumpAccountEdit() {
 				uni.navigateTo({
 				    url: './accountEdit',
+				});
+			},
+			// 加载用户头像
+			uploadUserPhoto: function() {
+				this.avatarUrl = config.host + config.loadUserPhoto + this.userInfo.userid;
+			},
+			// 上传用户头像
+			changeUserPhoto: function(e){
+				var that = this;
+				photo.addPhoto(function(photoList) {
+					if (photoList.length <= 0) {
+						return;
+					}
+					that.avatarUrl = photoList[0].src;
+					var photoModel = photoList[0];
+					that.uploadPhoto(photoList);
+				}, 1);
+			},
+			// 上传照片
+			uploadPhoto (photoList) {
+				var that = this;
+				photo.uploadPhoto(that.userInfo.userid, "", "rytx", photoList, function(photoListOnServer){
+					uni.showToast({
+						icon: 'none',
+						title: '头像上传成功',
+					});
 				});
 			},
 		}
@@ -193,12 +223,12 @@
 	/*九宫格*/
 	/* 菜单按钮 */
 	.userinfo {
-	  width: 99%;
-	  display: flex;
-	  flex-wrap: wrap;
-	  flex-direction: row;
-	  justify-content: space-around;
-	  background-color: #fff;
+		background-color: #FFFFFF;
+		width: 99%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
 	}
 	.dangerView {
 	  display:flex;

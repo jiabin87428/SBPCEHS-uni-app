@@ -11,7 +11,7 @@ var __WXML_GLOBAL__ = {
 };
 var $gwx;
 
-/*v0.5vv_20181116_syb_scopedata*/window.__wcc_version__='v0.5vv_20181116_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/window.__wcc_version__='v0.5vv_20181221_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -651,34 +651,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1064,34 +1062,135 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'77ae7fa4-default-77ae7fa4-3'])
+Z([3,'5c0aa864-default-5c0aa864-8'])
 Z([3,'handleProxy'])
-Z([3,'_picker 77ae7fa4'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[7],[3,'$k']])
-Z([1,'77ae7fa4-0'])
-Z([3,'ifwt'])
-Z([[7],[3,'typeArray']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([1,'5c0aa864-0'])
 Z([3,'30c48a99'])
-Z([3,'检查结论'])
-Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
+Z([3,'隐患描述'])
 Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
-Z([1,'77ae7fa4-1'])
-Z([3,'wtms'])
-Z(z[8])
-Z([3,'问题描述'])
-Z(z[10])
+Z([1,'5c0aa864-1'])
+Z(z[5])
+Z([3,'隐患等级'])
 Z(z[1])
-Z(z[2])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
-Z([1,'77ae7fa4-2'])
-Z([3,'zgqk'])
-Z([[7],[3,'rectifyTypes']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z([3,'检查方式'])
+Z([1,'5c0aa864-2'])
+Z(z[5])
+Z([3,'隐患后果'])
+Z(z[1])
+Z([3,'_picker 5c0aa864'])
+Z(z[3])
+Z([1,'5c0aa864-3'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
+Z([3,'yhlx'])
+Z([[7],[3,'dangerType']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'隐患类型'])
+Z(z[1])
+Z(z[20])
+Z(z[3])
+Z([1,'5c0aa864-4'])
+Z(z[23])
+Z([3,'date'])
+Z([[6],[[7],[3,'model']],[3,'zgqx']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'整改期限'])
+Z(z[1])
+Z(z[20])
+Z(z[3])
+Z([1,'5c0aa864-5'])
+Z(z[23])
+Z([3,'yhly'])
+Z([[7],[3,'dangerSource']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'隐患来源'])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([1,'5c0aa864-6'])
+Z(z[5])
+Z([3,'责任部门'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'false'])
+Z([3,'发起人'])
+Z([3,'5c0aa864-default-5c0aa864-14'])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([1,'5c0aa864-10'])
+Z(z[5])
+Z([3,'隐患因素'])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([1,'5c0aa864-11'])
+Z(z[5])
+Z([3,'原因分析'])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([1,'5c0aa864-12'])
+Z(z[5])
+Z([3,'整改情况'])
+Z(z[1])
+Z(z[20])
+Z(z[3])
+Z([1,'5c0aa864-13'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
+Z(z[34])
+Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'完成日期'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z(z[57])
+Z([3,'整改人'])
+Z([3,'5c0aa864-default-5c0aa864-18'])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([1,'5c0aa864-17'])
+Z(z[5])
+Z([3,'完成情况'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z(z[57])
+Z([3,'确认人'])
+Z(z[1])
+Z(z[20])
+Z(z[3])
+Z([1,'5c0aa864-18'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
+Z(z[34])
+Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'填报日期'])
+Z([3,'5c0aa864-default-5c0aa864-20'])
+Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([1,'5c0aa864-22'])
+Z(z[5])
+Z([3,'审批意见'])
+Z([3,'4508b5aa-default-4508b5aa-1'])
+Z([3,'idx'])
+Z([3,'logItem'])
+Z([[7],[3,'logList']])
+Z(z[122])
+Z([[7],[3,'idx']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
 Z([3,'609973d6-default-609973d6-5'])
 Z(z[1])
 Z([3,'_picker 609973d6'])
@@ -1102,190 +1201,119 @@ Z([3,'jclx'])
 Z([[7],[3,'checkTypes']])
 Z([3,'dictvalue'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
+Z(z[5])
 Z([3,'检查类型'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z([3,'false'])
+Z(z[5])
+Z(z[57])
 Z([3,'检查人'])
 Z(z[1])
-Z(z[30])
+Z(z[131])
 Z(z[3])
 Z([1,'609973d6-1'])
-Z(z[33])
-Z([3,'date'])
+Z(z[134])
+Z(z[34])
 Z([[6],[[7],[3,'model']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
+Z(z[5])
 Z([3,'检查日期'])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([1,'609973d6-2'])
-Z(z[8])
+Z(z[5])
 Z([3,'检查组成员'])
 Z(z[1])
-Z(z[30])
+Z(z[131])
 Z(z[3])
 Z([1,'609973d6-3'])
-Z(z[33])
+Z(z[134])
 Z([3,'mb'])
 Z([[7],[3,'selectedModule']])
 Z([3,'mbmc'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
+Z(z[5])
 Z([3,'检查模板'])
 Z([3,'609973d6-default-609973d6-10'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'model']],[3,'jcjlList']])
-Z(z[72])
+Z(z[173])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
-Z(z[8])
+Z(z[5])
 Z([3,'true'])
-Z([3,'4508b5aa-default-4508b5aa-1'])
-Z([3,'idx'])
-Z([3,'logItem'])
-Z([[7],[3,'logList']])
-Z(z[83])
-Z([[7],[3,'idx']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
 Z([3,'b8ab4c7c-default-b8ab4c7c-1'])
-Z(z[72])
-Z(z[73])
+Z(z[173])
+Z(z[174])
 Z([[7],[3,'ggList']])
-Z(z[72])
+Z(z[173])
 Z([[7],[3,'index']])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'b8ab4c7c-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([[2,'+'],[1,'b8ab4c7c-0-'],[[7],[3,'index']]])
-Z(z[8])
-Z([3,'5c0aa864-default-5c0aa864-8'])
+Z(z[5])
+Z([3,'77ae7fa4-default-77ae7fa4-3'])
 Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'_picker 77ae7fa4'])
 Z(z[3])
-Z([1,'5c0aa864-0'])
-Z(z[8])
-Z([3,'隐患描述'])
+Z([1,'77ae7fa4-0'])
+Z([3,'ifwt'])
+Z([[7],[3,'typeArray']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'检查结论'])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
 Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
-Z([1,'5c0aa864-1'])
-Z(z[8])
-Z([3,'隐患等级'])
+Z([1,'77ae7fa4-1'])
+Z([3,'wtms'])
+Z(z[5])
+Z([3,'问题描述'])
+Z(z[204])
 Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[196])
 Z(z[3])
-Z([1,'5c0aa864-2'])
-Z(z[8])
-Z([3,'隐患后果'])
+Z([1,'77ae7fa4-2'])
+Z([3,'zgqk'])
+Z([[7],[3,'rectifyTypes']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'检查方式'])
+Z([3,'f40cc204-default-f40cc204-1'])
+Z(z[173])
+Z(z[174])
+Z(z[186])
+Z(z[173])
+Z(z[188])
 Z(z[1])
-Z([3,'_picker 5c0aa864'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
-Z([1,'5c0aa864-3'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
-Z([3,'yhlx'])
-Z([[7],[3,'dangerType']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z([3,'隐患类型'])
+Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
+Z(z[5])
+Z([3,'c4edb036-default-c4edb036-1'])
+Z(z[173])
+Z(z[174])
+Z(z[186])
+Z(z[173])
+Z(z[188])
 Z(z[1])
-Z(z[121])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
-Z([1,'5c0aa864-4'])
-Z(z[124])
-Z(z[49])
-Z([[6],[[7],[3,'model']],[3,'zgqx']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z([3,'整改期限'])
-Z(z[1])
-Z(z[121])
-Z(z[3])
-Z([1,'5c0aa864-5'])
-Z(z[124])
-Z([3,'yhly'])
-Z([[7],[3,'dangerSource']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z([3,'隐患来源'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-6'])
-Z(z[8])
-Z([3,'责任部门'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z(z[42])
-Z([3,'发起人'])
-Z([3,'5c0aa864-default-5c0aa864-14'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-10'])
-Z(z[8])
-Z([3,'隐患因素'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-11'])
-Z(z[8])
-Z([3,'原因分析'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-12'])
-Z(z[8])
-Z([3,'整改情况'])
-Z(z[1])
-Z(z[121])
-Z(z[3])
-Z([1,'5c0aa864-13'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
-Z(z[49])
-Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z([3,'完成日期'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z(z[42])
-Z([3,'整改人'])
-Z([3,'5c0aa864-default-5c0aa864-18'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-17'])
-Z(z[8])
-Z([3,'完成情况'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z(z[42])
-Z([3,'确认人'])
-Z(z[1])
-Z(z[121])
-Z(z[3])
-Z([1,'5c0aa864-18'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
-Z(z[49])
-Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[8])
-Z([3,'填报日期'])
-Z([3,'5c0aa864-default-5c0aa864-20'])
-Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-22'])
-Z(z[8])
-Z([3,'审批意见'])
+Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
+Z(z[5])
+Z([3,'5ff9ee88-default-5ff9ee88-1'])
+Z(z[173])
+Z(z[174])
+Z(z[186])
+Z(z[173])
+Z(z[188])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -2390,22 +2418,19 @@ Z([[7],[3,'$k']])
 Z([1,'00cb397a-0'])
 Z([3,'_view 00cb397a topItemView'])
 Z([3,'_text 00cb397a topTextTitle'])
-Z([3,'隐患总数'])
+Z([3,'积分排名'])
 Z([3,'_text 00cb397a topTextNum'])
-Z([3,'1005'])
+Z([a,[[6],[[7],[3,'pointModel']],[3,'jfpm']]])
 Z(z[6])
 Z(z[7])
-Z([3,'事故总数'])
+Z([3,'获固定积分'])
 Z(z[9])
-Z([3,'600'])
+Z([a,[[6],[[7],[3,'pointModel']],[3,'gdjf']]])
 Z(z[6])
 Z(z[7])
-Z([3,'检查次数'])
+Z([3,'获主动积分'])
 Z(z[9])
-Z([3,'2000'])
-Z([3,'_image 00cb397a arrow'])
-Z([3,'aspectFit'])
-Z([3,'../../static/img/rightArrow_white.png'])
+Z([a,[[6],[[7],[3,'pointModel']],[3,'zdjf']]])
 Z([3,'_view 00cb397a menuBlockView'])
 Z(z[2])
 Z([3,'_view 00cb397a dangerView'])
@@ -2418,67 +2443,67 @@ Z([3,'_view 00cb397a subView'])
 Z([3,'_text 00cb397a dangerText'])
 Z([3,'检查'])
 Z(z[2])
-Z(z[26])
+Z(z[23])
 Z(z[4])
 Z([1,'00cb397a-2'])
+Z(z[26])
+Z(z[27])
+Z([3,'../../static/assets/yh.png'])
 Z(z[29])
 Z(z[30])
-Z([3,'../../static/assets/yh.png'])
-Z(z[32])
-Z(z[33])
 Z([3,'隐患'])
 Z(z[2])
-Z(z[26])
+Z(z[23])
 Z(z[4])
 Z([1,'00cb397a-3'])
+Z(z[26])
+Z(z[27])
+Z([3,'../../static/assets/tj.png'])
 Z(z[29])
 Z(z[30])
-Z([3,'../../static/assets/tj.png'])
-Z(z[32])
-Z(z[33])
 Z([3,'统计'])
 Z(z[2])
-Z(z[26])
+Z(z[23])
 Z(z[4])
 Z([1,'00cb397a-4'])
+Z(z[26])
+Z(z[27])
+Z([3,'../../static/assets/pxkc.png'])
 Z(z[29])
 Z(z[30])
-Z([3,'../../static/assets/pxkc.png'])
-Z(z[32])
-Z(z[33])
 Z([3,'培训'])
 Z(z[2])
-Z(z[26])
+Z(z[23])
 Z(z[4])
 Z([1,'00cb397a-5'])
+Z(z[26])
+Z(z[27])
+Z([3,'../../static/assets/gg.png'])
 Z(z[29])
 Z(z[30])
-Z([3,'../../static/assets/gg.png'])
-Z(z[32])
-Z(z[33])
 Z([3,'通知公告'])
 Z(z[2])
-Z(z[26])
+Z(z[23])
 Z(z[4])
 Z([1,'00cb397a-6'])
+Z(z[26])
+Z(z[27])
+Z([3,'../../static/assets/xw.png'])
 Z(z[29])
 Z(z[30])
-Z([3,'../../static/assets/xw.png'])
-Z(z[32])
-Z(z[33])
 Z([3,'公司新闻'])
 Z(z[2])
-Z(z[26])
+Z(z[23])
 Z(z[4])
 Z([1,'00cb397a-7'])
+Z(z[26])
+Z(z[27])
+Z([3,'../../static/assets/cn.png'])
 Z(z[29])
 Z(z[30])
-Z([3,'../../static/assets/cn.png'])
-Z(z[32])
-Z(z[33])
-Z([3,'积分排名'])
-Z(z[26])
-Z(z[26])
+Z(z[8])
+Z(z[23])
+Z(z[23])
 })(__WXML_GLOBAL__.ops_cached.$gwx_36);return __WXML_GLOBAL__.ops_cached.$gwx_36
 }
 function gz$gwx_37(){
@@ -2492,6 +2517,63 @@ Z([3,'00cb397a'])
 function gz$gwx_38(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_38)return __WXML_GLOBAL__.ops_cached.$gwx_38
 __WXML_GLOBAL__.ops_cached.$gwx_38=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'f40cc204'])
+Z([3,'_view f40cc204 baseView'])
+Z([3,'_view f40cc204 cellInfoView'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'f40cc204-default-f40cc204-1']]])
+Z([3,'3b6bb3ad'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_38);return __WXML_GLOBAL__.ops_cached.$gwx_38
+}
+function gz$gwx_39(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_39)return __WXML_GLOBAL__.ops_cached.$gwx_39
+__WXML_GLOBAL__.ops_cached.$gwx_39=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'f40cc204'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_39);return __WXML_GLOBAL__.ops_cached.$gwx_39
+}
+function gz$gwx_40(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_40)return __WXML_GLOBAL__.ops_cached.$gwx_40
+__WXML_GLOBAL__.ops_cached.$gwx_40=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'c4edb036'])
+Z([3,'_view c4edb036 baseView'])
+Z([3,'_view c4edb036 cellInfoView'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'c4edb036-default-c4edb036-1']]])
+Z([3,'3b6bb3ad'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_40);return __WXML_GLOBAL__.ops_cached.$gwx_40
+}
+function gz$gwx_41(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_41)return __WXML_GLOBAL__.ops_cached.$gwx_41
+__WXML_GLOBAL__.ops_cached.$gwx_41=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'c4edb036'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_41);return __WXML_GLOBAL__.ops_cached.$gwx_41
+}
+function gz$gwx_42(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_42)return __WXML_GLOBAL__.ops_cached.$gwx_42
+__WXML_GLOBAL__.ops_cached.$gwx_42=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'5ff9ee88'])
+Z([3,'_view 5ff9ee88 baseView'])
+Z([3,'_view 5ff9ee88 cellInfoView'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'5ff9ee88-default-5ff9ee88-1']]])
+Z([3,'3b6bb3ad'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_42);return __WXML_GLOBAL__.ops_cached.$gwx_42
+}
+function gz$gwx_43(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_43)return __WXML_GLOBAL__.ops_cached.$gwx_43
+__WXML_GLOBAL__.ops_cached.$gwx_43=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'5ff9ee88'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_43);return __WXML_GLOBAL__.ops_cached.$gwx_43
+}
+function gz$gwx_44(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_44)return __WXML_GLOBAL__.ops_cached.$gwx_44
+__WXML_GLOBAL__.ops_cached.$gwx_44=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'289ecc0c'])
 Z([3,'_view 289ecc0c baseView'])
@@ -2519,19 +2601,19 @@ Z([a,z[17][1],[[2,'?:'],[[7],[3,'isCountFinish']],[1,'buttonStyle'],[1,'buttonSt
 Z(z[9])
 Z([1,'289ecc0c-2'])
 Z([a,[[7],[3,'nextPage']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_38);return __WXML_GLOBAL__.ops_cached.$gwx_38
+})(__WXML_GLOBAL__.ops_cached.$gwx_44);return __WXML_GLOBAL__.ops_cached.$gwx_44
 }
-function gz$gwx_39(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_39)return __WXML_GLOBAL__.ops_cached.$gwx_39
-__WXML_GLOBAL__.ops_cached.$gwx_39=[];
+function gz$gwx_45(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_45)return __WXML_GLOBAL__.ops_cached.$gwx_45
+__WXML_GLOBAL__.ops_cached.$gwx_45=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'289ecc0c'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_39);return __WXML_GLOBAL__.ops_cached.$gwx_39
+})(__WXML_GLOBAL__.ops_cached.$gwx_45);return __WXML_GLOBAL__.ops_cached.$gwx_45
 }
-function gz$gwx_40(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_40)return __WXML_GLOBAL__.ops_cached.$gwx_40
-__WXML_GLOBAL__.ops_cached.$gwx_40=[];
+function gz$gwx_46(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_46)return __WXML_GLOBAL__.ops_cached.$gwx_46
+__WXML_GLOBAL__.ops_cached.$gwx_46=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'6cbf6956'])
 Z([3,'_view 6cbf6956 content'])
@@ -2554,19 +2636,19 @@ Z(z[8])
 Z([1,'6cbf6956-1'])
 Z([3,'primary'])
 Z([3,'提交'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_40);return __WXML_GLOBAL__.ops_cached.$gwx_40
+})(__WXML_GLOBAL__.ops_cached.$gwx_46);return __WXML_GLOBAL__.ops_cached.$gwx_46
 }
-function gz$gwx_41(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_41)return __WXML_GLOBAL__.ops_cached.$gwx_41
-__WXML_GLOBAL__.ops_cached.$gwx_41=[];
+function gz$gwx_47(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_47)return __WXML_GLOBAL__.ops_cached.$gwx_47
+__WXML_GLOBAL__.ops_cached.$gwx_47=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'6cbf6956'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_41);return __WXML_GLOBAL__.ops_cached.$gwx_41
+})(__WXML_GLOBAL__.ops_cached.$gwx_47);return __WXML_GLOBAL__.ops_cached.$gwx_47
 }
-function gz$gwx_42(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_42)return __WXML_GLOBAL__.ops_cached.$gwx_42
-__WXML_GLOBAL__.ops_cached.$gwx_42=[];
+function gz$gwx_48(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_48)return __WXML_GLOBAL__.ops_cached.$gwx_48
+__WXML_GLOBAL__.ops_cached.$gwx_48=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'90021ef8'])
 Z([3,'_view 90021ef8 content'])
@@ -2611,19 +2693,19 @@ Z(z[8])
 Z([1,'90021ef8-3'])
 Z([3,'primary'])
 Z([3,'注册'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_42);return __WXML_GLOBAL__.ops_cached.$gwx_42
+})(__WXML_GLOBAL__.ops_cached.$gwx_48);return __WXML_GLOBAL__.ops_cached.$gwx_48
 }
-function gz$gwx_43(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_43)return __WXML_GLOBAL__.ops_cached.$gwx_43
-__WXML_GLOBAL__.ops_cached.$gwx_43=[];
+function gz$gwx_49(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_49)return __WXML_GLOBAL__.ops_cached.$gwx_49
+__WXML_GLOBAL__.ops_cached.$gwx_49=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'90021ef8'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_43);return __WXML_GLOBAL__.ops_cached.$gwx_43
+})(__WXML_GLOBAL__.ops_cached.$gwx_49);return __WXML_GLOBAL__.ops_cached.$gwx_49
 }
-function gz$gwx_44(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_44)return __WXML_GLOBAL__.ops_cached.$gwx_44
-__WXML_GLOBAL__.ops_cached.$gwx_44=[];
+function gz$gwx_50(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_50)return __WXML_GLOBAL__.ops_cached.$gwx_50
+__WXML_GLOBAL__.ops_cached.$gwx_50=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'d573abf0'])
 Z([3,'_view d573abf0 center'])
@@ -2642,25 +2724,28 @@ Z([[7],[3,'$k']])
 Z([1,'d573abf0-0'])
 Z([3,'primary'])
 Z([3,'退出登录'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_44);return __WXML_GLOBAL__.ops_cached.$gwx_44
+})(__WXML_GLOBAL__.ops_cached.$gwx_50);return __WXML_GLOBAL__.ops_cached.$gwx_50
 }
-function gz$gwx_45(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_45)return __WXML_GLOBAL__.ops_cached.$gwx_45
-__WXML_GLOBAL__.ops_cached.$gwx_45=[];
+function gz$gwx_51(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_51)return __WXML_GLOBAL__.ops_cached.$gwx_51
+__WXML_GLOBAL__.ops_cached.$gwx_51=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'d573abf0'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_45);return __WXML_GLOBAL__.ops_cached.$gwx_45
+})(__WXML_GLOBAL__.ops_cached.$gwx_51);return __WXML_GLOBAL__.ops_cached.$gwx_51
 }
-function gz$gwx_46(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_46)return __WXML_GLOBAL__.ops_cached.$gwx_46
-__WXML_GLOBAL__.ops_cached.$gwx_46=[];
+function gz$gwx_52(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_52)return __WXML_GLOBAL__.ops_cached.$gwx_52
+__WXML_GLOBAL__.ops_cached.$gwx_52=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'240234ba'])
 Z([3,'_view 240234ba center'])
 Z([3,'_view 240234ba logo'])
 Z([[2,'-'],[[7],[3,'logo']],[[7],[3,'hover']]])
+Z([3,'handleProxy'])
 Z([3,'_image 240234ba logo-img'])
+Z([[7],[3,'$k']])
+Z([1,'240234ba-0'])
 Z([[7],[3,'avatarUrl']])
 Z([3,'_view 240234ba logo-title'])
 Z([[7],[3,'hasLogin']])
@@ -2669,333 +2754,41 @@ Z([3,'_text 240234ba uer-name'])
 Z([a,[3,'你好，'],[[6],[[7],[3,'userInfo']],[3,'username']]])
 Z([3,'_text 240234ba uer-code'])
 Z([a,[3,'工号：'],[[6],[[7],[3,'userInfo']],[3,'usercode']]])
+Z(z[14])
+Z([a,[[2,'+'],[[2,'+'],[[2,'+'],[1,'积分：'],[[6],[[7],[3,'pointModel']],[3,'zf']]],[1,'分 | 排名：']],[[6],[[7],[3,'pointModel']],[3,'jfpm']]]])
 Z([[2,'!'],[[7],[3,'hasLogin']]])
-Z([3,'handleProxy'])
+Z(z[4])
 Z([3,'_button 240234ba primary'])
-Z([[7],[3,'$k']])
-Z([1,'240234ba-0'])
+Z(z[6])
+Z([1,'240234ba-1'])
 Z([3,'primary'])
 Z([3,'点击登录'])
 Z([3,'_view 240234ba userinfo'])
-Z(z[14])
+Z(z[4])
 Z([3,'_view 240234ba dangerView'])
-Z(z[16])
-Z([1,'240234ba-1'])
+Z(z[6])
+Z([1,'240234ba-2'])
 Z([3,'_image 240234ba dangerIcon'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/setting.png'])
 Z([3,'_view 240234ba subView'])
 Z([3,'_text 240234ba dangerText'])
 Z([3,'设置'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_46);return __WXML_GLOBAL__.ops_cached.$gwx_46
+})(__WXML_GLOBAL__.ops_cached.$gwx_52);return __WXML_GLOBAL__.ops_cached.$gwx_52
 }
-function gz$gwx_47(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_47)return __WXML_GLOBAL__.ops_cached.$gwx_47
-__WXML_GLOBAL__.ops_cached.$gwx_47=[];
+function gz$gwx_53(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_53)return __WXML_GLOBAL__.ops_cached.$gwx_53
+__WXML_GLOBAL__.ops_cached.$gwx_53=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'240234ba'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_47);return __WXML_GLOBAL__.ops_cached.$gwx_47
+})(__WXML_GLOBAL__.ops_cached.$gwx_53);return __WXML_GLOBAL__.ops_cached.$gwx_53
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/gonggao/gonggaoList.vue.wxml','./pages/gonggao/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-cs.push("./common/slots.wxml:picker:6:47")
-var oD=_mz(z,'picker',['bindchange',1,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var fE=_v()
-_(oD,fE)
-cs.push("./common/slots.wxml:template:6:190")
-var cF=_oz(z,8,e,s,gg)
-var hG=_gd(x[0],cF,e_,d_)
-if(hG){
-var oH=_1z(z,7,e,s,gg) || {}
-var cur_globalf=gg.f
-fE.wxXCkey=3
-hG(oH,oH,fE,gg)
-gg.f=cur_globalf
-}
-else _w(cF,x[0],6,282)
-cs.pop()
-cs.pop()
-_(r,oD)
-var oB=_v()
-_(r,oB)
-if(_oz(z,10,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:6:314")
-var cI=_v()
-_(oB,cI)
-cs.push("./common/slots.wxml:template:6:314")
-var oJ=_oz(z,16,e,s,gg)
-var lK=_gd(x[0],oJ,e_,d_)
-if(lK){
-var aL=_1z(z,12,e,s,gg) || {}
-var cur_globalf=gg.f
-cI.wxXCkey=3
-lK(aL,aL,cI,gg)
-gg.f=cur_globalf
-}
-else _w(oJ,x[0],6,520)
-cs.pop()
-cs.pop()
-}
-var xC=_v()
-_(r,xC)
-if(_oz(z,18,e,s,gg)){xC.wxVkey=1
-cs.push("./common/slots.wxml:picker:6:543")
-cs.push("./common/slots.wxml:picker:6:543")
-var tM=_mz(z,'picker',['bindchange',19,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var eN=_v()
-_(tM,eN)
-cs.push("./common/slots.wxml:template:6:718")
-var bO=_oz(z,26,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,25,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],6,810)
-cs.pop()
-cs.pop()
-_(xC,tM)
-cs.pop()
-}
-oB.wxXCkey=1
-xC.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["609973d6-default-609973d6-5"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':609973d6-default-609973d6-5'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-cs.push("./common/slots.wxml:picker:8:47")
-var oB=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
-var xC=_v()
-_(oB,xC)
-cs.push("./common/slots.wxml:template:8:238")
-var oD=_oz(z,38,e,s,gg)
-var fE=_gd(x[0],oD,e_,d_)
-if(fE){
-var cF=_1z(z,37,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[0],8,330)
-cs.pop()
-cs.pop()
-_(r,oB)
-var hG=_v()
-_(r,hG)
-cs.push("./common/slots.wxml:template:8:362")
-var oH=_oz(z,41,e,s,gg)
-var cI=_gd(x[0],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,40,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[0],8,470)
-cs.pop()
-cs.push("./common/slots.wxml:picker:8:493")
-var lK=_mz(z,'picker',['bindchange',44,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
-var aL=_v()
-_(lK,aL)
-cs.push("./common/slots.wxml:template:8:664")
-var tM=_oz(z,52,e,s,gg)
-var eN=_gd(x[0],tM,e_,d_)
-if(eN){
-var bO=_1z(z,51,e,s,gg) || {}
-var cur_globalf=gg.f
-aL.wxXCkey=3
-eN(bO,bO,aL,gg)
-gg.f=cur_globalf
-}
-else _w(tM,x[0],8,756)
-cs.pop()
-cs.pop()
-_(r,lK)
-var oP=_v()
-_(r,oP)
-cs.push("./common/slots.wxml:template:8:788")
-var xQ=_oz(z,58,e,s,gg)
-var oR=_gd(x[0],xQ,e_,d_)
-if(oR){
-var fS=_1z(z,55,e,s,gg) || {}
-var cur_globalf=gg.f
-oP.wxXCkey=3
-oR(fS,fS,oP,gg)
-gg.f=cur_globalf
-}
-else _w(xQ,x[0],8,958)
-cs.pop()
-cs.push("./common/slots.wxml:picker:8:981")
-var cT=_mz(z,'picker',['bindchange',60,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
-var hU=_v()
-_(cT,hU)
-cs.push("./common/slots.wxml:template:8:1169")
-var oV=_oz(z,69,e,s,gg)
-var cW=_gd(x[0],oV,e_,d_)
-if(cW){
-var oX=_1z(z,68,e,s,gg) || {}
-var cur_globalf=gg.f
-hU.wxXCkey=3
-cW(oX,oX,hU,gg)
-gg.f=cur_globalf
-}
-else _w(oV,x[0],8,1261)
-cs.pop()
-cs.pop()
-_(r,cT)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["609973d6-default-609973d6-10"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':609973d6-default-609973d6-10'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:10:48")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:10:48")
-var cI=_oz(z,80,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,77,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],10,246)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,74,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':4508b5aa-default-4508b5aa-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:12:47")
-var xC=function(fE,oD,cF,gg){
-cs.push("./common/slots.wxml:block:12:47")
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:12:143")
-var cI=_oz(z,89,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,88,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],12,219)
-cs.pop()
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,85,xC,e,s,gg,oB,'logItem','idx','idx')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["b8ab4c7c-default-b8ab4c7c-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':b8ab4c7c-default-b8ab4c7c-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:14:47")
-var xC=function(fE,oD,cF,gg){
-cs.push("./common/slots.wxml:block:14:47")
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:14:145")
-var cI=_oz(z,100,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,97,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],14,305)
-cs.pop()
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,93,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/gonggao/gonggaoList.vue.wxml','./pages/gonggao/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':5c0aa864-default-5c0aa864-8'
@@ -3006,127 +2799,127 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:16:47")
-var xC=_oz(z,106,e,s,gg)
+cs.push("./common/slots.wxml:template:6:47")
+var xC=_oz(z,5,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,103,e,s,gg) || {}
+var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],16,214)
+else _w(xC,x[0],6,214)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:16:237")
-var hG=_oz(z,112,e,s,gg)
+cs.push("./common/slots.wxml:template:6:237")
+var hG=_oz(z,11,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,109,e,s,gg) || {}
+var cI=_1z(z,8,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],16,404)
+else _w(hG,x[0],6,404)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:16:427")
-var lK=_oz(z,118,e,s,gg)
+cs.push("./common/slots.wxml:template:6:427")
+var lK=_oz(z,17,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,115,e,s,gg) || {}
+var tM=_1z(z,14,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],16,594)
+else _w(lK,x[0],6,594)
 cs.pop()
-cs.push("./common/slots.wxml:picker:16:617")
-var eN=_mz(z,'picker',['bindchange',120,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:6:617")
+var eN=_mz(z,'picker',['bindchange',19,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:16:806")
-var oP=_oz(z,128,e,s,gg)
+cs.push("./common/slots.wxml:template:6:806")
+var oP=_oz(z,27,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,127,e,s,gg) || {}
+var oR=_1z(z,26,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],16,898)
+else _w(oP,x[0],6,898)
 cs.pop()
 cs.pop()
 _(r,eN)
-cs.push("./common/slots.wxml:picker:16:930")
-var fS=_mz(z,'picker',['bindchange',130,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:6:930")
+var fS=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:16:1121")
-var hU=_oz(z,138,e,s,gg)
+cs.push("./common/slots.wxml:template:6:1121")
+var hU=_oz(z,37,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
-var cW=_1z(z,137,e,s,gg) || {}
+var cW=_1z(z,36,e,s,gg) || {}
 var cur_globalf=gg.f
 cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],16,1213)
+else _w(hU,x[0],6,1213)
 cs.pop()
 cs.pop()
 _(r,fS)
-cs.push("./common/slots.wxml:picker:16:1245")
-var oX=_mz(z,'picker',['bindchange',140,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:6:1245")
+var oX=_mz(z,'picker',['bindchange',39,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:16:1436")
-var aZ=_oz(z,148,e,s,gg)
+cs.push("./common/slots.wxml:template:6:1436")
+var aZ=_oz(z,47,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
-var e2=_1z(z,147,e,s,gg) || {}
+var e2=_1z(z,46,e,s,gg) || {}
 var cur_globalf=gg.f
 lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],16,1528)
+else _w(aZ,x[0],6,1528)
 cs.pop()
 cs.pop()
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:16:1560")
-var o4=_oz(z,154,e,s,gg)
+cs.push("./common/slots.wxml:template:6:1560")
+var o4=_oz(z,53,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
-var o6=_1z(z,151,e,s,gg) || {}
+var o6=_1z(z,50,e,s,gg) || {}
 var cur_globalf=gg.f
 b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],16,1727)
+else _w(o4,x[0],6,1727)
 cs.pop()
 var f7=_v()
 _(r,f7)
-cs.push("./common/slots.wxml:template:16:1750")
-var c8=_oz(z,157,e,s,gg)
+cs.push("./common/slots.wxml:template:6:1750")
+var c8=_oz(z,56,e,s,gg)
 var h9=_gd(x[0],c8,e_,d_)
 if(h9){
-var o0=_1z(z,156,e,s,gg) || {}
+var o0=_1z(z,55,e,s,gg) || {}
 var cur_globalf=gg.f
 f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[0],16,1858)
+else _w(c8,x[0],6,1858)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3145,77 +2938,77 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:18:48")
-var xC=_oz(z,165,e,s,gg)
+cs.push("./common/slots.wxml:template:8:48")
+var xC=_oz(z,64,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,162,e,s,gg) || {}
+var fE=_1z(z,61,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],18,216)
+else _w(xC,x[0],8,216)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:18:239")
-var hG=_oz(z,171,e,s,gg)
+cs.push("./common/slots.wxml:template:8:239")
+var hG=_oz(z,70,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,168,e,s,gg) || {}
+var cI=_1z(z,67,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],18,408)
+else _w(hG,x[0],8,408)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:18:431")
-var lK=_oz(z,177,e,s,gg)
+cs.push("./common/slots.wxml:template:8:431")
+var lK=_oz(z,76,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,174,e,s,gg) || {}
+var tM=_1z(z,73,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],18,600)
+else _w(lK,x[0],8,600)
 cs.pop()
-cs.push("./common/slots.wxml:picker:18:623")
-var eN=_mz(z,'picker',['bindchange',179,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:623")
+var eN=_mz(z,'picker',['bindchange',78,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:18:817")
-var oP=_oz(z,187,e,s,gg)
+cs.push("./common/slots.wxml:template:8:817")
+var oP=_oz(z,86,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,186,e,s,gg) || {}
+var oR=_1z(z,85,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],18,910)
+else _w(oP,x[0],8,910)
 cs.pop()
 cs.pop()
 _(r,eN)
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:18:942")
-var cT=_oz(z,190,e,s,gg)
+cs.push("./common/slots.wxml:template:8:942")
+var cT=_oz(z,89,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,189,e,s,gg) || {}
+var oV=_1z(z,88,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],18,1051)
+else _w(cT,x[0],8,1051)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3234,47 +3027,47 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:20:48")
-var xC=_oz(z,198,e,s,gg)
+cs.push("./common/slots.wxml:template:10:48")
+var xC=_oz(z,97,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,195,e,s,gg) || {}
+var fE=_1z(z,94,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],20,217)
+else _w(xC,x[0],10,217)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:20:240")
-var hG=_oz(z,201,e,s,gg)
+cs.push("./common/slots.wxml:template:10:240")
+var hG=_oz(z,100,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,200,e,s,gg) || {}
+var cI=_1z(z,99,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],20,349)
+else _w(hG,x[0],10,349)
 cs.pop()
-cs.push("./common/slots.wxml:picker:20:372")
-var oJ=_mz(z,'picker',['bindchange',204,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:10:372")
+var oJ=_mz(z,'picker',['bindchange',103,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:20:567")
-var aL=_oz(z,212,e,s,gg)
+cs.push("./common/slots.wxml:template:10:567")
+var aL=_oz(z,111,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,211,e,s,gg) || {}
+var eN=_1z(z,110,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],20,660)
+else _w(aL,x[0],10,660)
 cs.pop()
 cs.pop()
 _(r,oJ)
@@ -3295,25 +3088,439 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-if(_oz(z,215,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:22:48")
+if(_oz(z,114,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:12:48")
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:22:48")
-var oD=_oz(z,220,e,s,gg)
+cs.push("./common/slots.wxml:template:12:48")
+var oD=_oz(z,119,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,217,e,s,gg) || {}
+var cF=_1z(z,116,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],22,278)
+else _w(oD,x[0],12,278)
 cs.pop()
 cs.pop()
 }
 oB.wxXCkey=1
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':4508b5aa-default-4508b5aa-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:14:47")
+var xC=function(fE,oD,cF,gg){
+cs.push("./common/slots.wxml:block:14:47")
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:14:143")
+var cI=_oz(z,128,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,127,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],14,219)
+cs.pop()
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,124,xC,e,s,gg,oB,'logItem','idx','idx')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["609973d6-default-609973d6-5"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':609973d6-default-609973d6-5'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:16:47")
+var oB=_mz(z,'picker',['bindchange',130,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./common/slots.wxml:template:16:238")
+var oD=_oz(z,139,e,s,gg)
+var fE=_gd(x[0],oD,e_,d_)
+if(fE){
+var cF=_1z(z,138,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
+}
+else _w(oD,x[0],16,330)
+cs.pop()
+cs.pop()
+_(r,oB)
+var hG=_v()
+_(r,hG)
+cs.push("./common/slots.wxml:template:16:362")
+var oH=_oz(z,142,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,141,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],16,470)
+cs.pop()
+cs.push("./common/slots.wxml:picker:16:493")
+var lK=_mz(z,'picker',['bindchange',145,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var aL=_v()
+_(lK,aL)
+cs.push("./common/slots.wxml:template:16:664")
+var tM=_oz(z,153,e,s,gg)
+var eN=_gd(x[0],tM,e_,d_)
+if(eN){
+var bO=_1z(z,152,e,s,gg) || {}
+var cur_globalf=gg.f
+aL.wxXCkey=3
+eN(bO,bO,aL,gg)
+gg.f=cur_globalf
+}
+else _w(tM,x[0],16,756)
+cs.pop()
+cs.pop()
+_(r,lK)
+var oP=_v()
+_(r,oP)
+cs.push("./common/slots.wxml:template:16:788")
+var xQ=_oz(z,159,e,s,gg)
+var oR=_gd(x[0],xQ,e_,d_)
+if(oR){
+var fS=_1z(z,156,e,s,gg) || {}
+var cur_globalf=gg.f
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
+gg.f=cur_globalf
+}
+else _w(xQ,x[0],16,958)
+cs.pop()
+cs.push("./common/slots.wxml:picker:16:981")
+var cT=_mz(z,'picker',['bindchange',161,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+var hU=_v()
+_(cT,hU)
+cs.push("./common/slots.wxml:template:16:1169")
+var oV=_oz(z,170,e,s,gg)
+var cW=_gd(x[0],oV,e_,d_)
+if(cW){
+var oX=_1z(z,169,e,s,gg) || {}
+var cur_globalf=gg.f
+hU.wxXCkey=3
+cW(oX,oX,hU,gg)
+gg.f=cur_globalf
+}
+else _w(oV,x[0],16,1261)
+cs.pop()
+cs.pop()
+_(r,cT)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["609973d6-default-609973d6-10"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':609973d6-default-609973d6-10'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:18:48")
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:18:48")
+var cI=_oz(z,181,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,178,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],18,246)
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,175,xC,e,s,gg,oB,'item','index','index')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["b8ab4c7c-default-b8ab4c7c-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':b8ab4c7c-default-b8ab4c7c-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:20:47")
+var xC=function(fE,oD,cF,gg){
+cs.push("./common/slots.wxml:block:20:47")
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:20:145")
+var cI=_oz(z,193,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,190,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],20,305)
+cs.pop()
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,186,xC,e,s,gg,oB,'item','index','index')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:22:47")
+var oD=_mz(z,'picker',['bindchange',195,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var fE=_v()
+_(oD,fE)
+cs.push("./common/slots.wxml:template:22:190")
+var cF=_oz(z,202,e,s,gg)
+var hG=_gd(x[0],cF,e_,d_)
+if(hG){
+var oH=_1z(z,201,e,s,gg) || {}
+var cur_globalf=gg.f
+fE.wxXCkey=3
+hG(oH,oH,fE,gg)
+gg.f=cur_globalf
+}
+else _w(cF,x[0],22,282)
+cs.pop()
+cs.pop()
+_(r,oD)
+var oB=_v()
+_(r,oB)
+if(_oz(z,204,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:22:314")
+var cI=_v()
+_(oB,cI)
+cs.push("./common/slots.wxml:template:22:314")
+var oJ=_oz(z,210,e,s,gg)
+var lK=_gd(x[0],oJ,e_,d_)
+if(lK){
+var aL=_1z(z,206,e,s,gg) || {}
+var cur_globalf=gg.f
+cI.wxXCkey=3
+lK(aL,aL,cI,gg)
+gg.f=cur_globalf
+}
+else _w(oJ,x[0],22,520)
+cs.pop()
+cs.pop()
+}
+var xC=_v()
+_(r,xC)
+if(_oz(z,212,e,s,gg)){xC.wxVkey=1
+cs.push("./common/slots.wxml:picker:22:543")
+cs.push("./common/slots.wxml:picker:22:543")
+var tM=_mz(z,'picker',['bindchange',213,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var eN=_v()
+_(tM,eN)
+cs.push("./common/slots.wxml:template:22:718")
+var bO=_oz(z,220,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,219,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],22,810)
+cs.pop()
+cs.pop()
+_(xC,tM)
+cs.pop()
+}
+oB.wxXCkey=1
+xC.wxXCkey=1
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["f40cc204-default-f40cc204-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':f40cc204-default-f40cc204-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:24:47")
+var xC=function(fE,oD,cF,gg){
+cs.push("./common/slots.wxml:block:24:47")
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:24:145")
+var cI=_oz(z,232,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,229,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],24,305)
+cs.pop()
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,225,xC,e,s,gg,oB,'item','index','index')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["c4edb036-default-c4edb036-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':c4edb036-default-c4edb036-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:26:47")
+var xC=function(fE,oD,cF,gg){
+cs.push("./common/slots.wxml:block:26:47")
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:26:145")
+var cI=_oz(z,243,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,240,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],26,305)
+cs.pop()
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,236,xC,e,s,gg,oB,'item','index','index')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["5ff9ee88-default-5ff9ee88-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':5ff9ee88-default-5ff9ee88-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:28:47")
+var xC=function(fE,oD,cF,gg){
+cs.push("./common/slots.wxml:block:28:47")
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:28:145")
+var cI=_oz(z,251,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,250,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],28,223)
+cs.pop()
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,247,xC,e,s,gg,oB,'item','index','index')
+cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -6574,17 +6781,17 @@ cs.pop()
 _(oD,hG)
 cs.pop()
 _(xC,oD)
-cs.push("./pages/main/main.vue.wxml:view:1:340")
+cs.push("./pages/main/main.vue.wxml:view:1:355")
 var cI=_n('view')
 _rz(z,cI,'class',11,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:381")
+cs.push("./pages/main/main.vue.wxml:text:1:396")
 var oJ=_n('text')
 _rz(z,oJ,'class',12,e,s,gg)
 var lK=_oz(z,13,e,s,gg)
 _(oJ,lK)
 cs.pop()
 _(cI,oJ)
-cs.push("./pages/main/main.vue.wxml:text:1:442")
+cs.push("./pages/main/main.vue.wxml:text:1:460")
 var aL=_n('text')
 _rz(z,aL,'class',14,e,s,gg)
 var tM=_oz(z,15,e,s,gg)
@@ -6593,17 +6800,17 @@ cs.pop()
 _(cI,aL)
 cs.pop()
 _(xC,cI)
-cs.push("./pages/main/main.vue.wxml:view:1:499")
+cs.push("./pages/main/main.vue.wxml:view:1:533")
 var eN=_n('view')
 _rz(z,eN,'class',16,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:540")
+cs.push("./pages/main/main.vue.wxml:text:1:574")
 var bO=_n('text')
 _rz(z,bO,'class',17,e,s,gg)
 var oP=_oz(z,18,e,s,gg)
 _(bO,oP)
 cs.pop()
 _(eN,bO)
-cs.push("./pages/main/main.vue.wxml:text:1:601")
+cs.push("./pages/main/main.vue.wxml:text:1:638")
 var xQ=_n('text')
 _rz(z,xQ,'class',19,e,s,gg)
 var oR=_oz(z,20,e,s,gg)
@@ -6612,167 +6819,163 @@ cs.pop()
 _(eN,xQ)
 cs.pop()
 _(xC,eN)
-cs.push("./pages/main/main.vue.wxml:image:1:659")
-var fS=_mz(z,'image',['class',21,'mode',1,'src',2],[],e,s,gg)
-cs.pop()
-_(xC,fS)
 cs.pop()
 _(oB,xC)
-cs.push("./pages/main/main.vue.wxml:view:1:772")
-var cT=_n('view')
-_rz(z,cT,'class',24,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:view:1:815")
-var hU=_mz(z,'view',['bindtap',25,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/main/main.vue.wxml:image:1:930")
-var oV=_mz(z,'image',['class',29,'mode',1,'src',2],[],e,s,gg)
-cs.pop()
-_(hU,oV)
-cs.push("./pages/main/main.vue.wxml:view:1:1029")
-var cW=_n('view')
-_rz(z,cW,'class',32,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:1066")
-var oX=_n('text')
-_rz(z,oX,'class',33,e,s,gg)
-var lY=_oz(z,34,e,s,gg)
-_(oX,lY)
-cs.pop()
-_(cW,oX)
-cs.pop()
-_(hU,cW)
+cs.push("./pages/main/main.vue.wxml:view:1:718")
+var fS=_n('view')
+_rz(z,fS,'class',21,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:view:1:761")
+var cT=_mz(z,'view',['bindtap',22,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:image:1:876")
+var hU=_mz(z,'image',['class',26,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
 _(cT,hU)
-cs.push("./pages/main/main.vue.wxml:view:1:1133")
-var aZ=_mz(z,'view',['bindtap',35,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/main/main.vue.wxml:image:1:1248")
-var t1=_mz(z,'image',['class',39,'mode',1,'src',2],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:view:1:975")
+var oV=_n('view')
+_rz(z,oV,'class',29,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:text:1:1012")
+var cW=_n('text')
+_rz(z,cW,'class',30,e,s,gg)
+var oX=_oz(z,31,e,s,gg)
+_(cW,oX)
 cs.pop()
-_(aZ,t1)
-cs.push("./pages/main/main.vue.wxml:view:1:1347")
-var e2=_n('view')
-_rz(z,e2,'class',42,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:1384")
-var b3=_n('text')
-_rz(z,b3,'class',43,e,s,gg)
-var o4=_oz(z,44,e,s,gg)
-_(b3,o4)
+_(oV,cW)
 cs.pop()
+_(cT,oV)
+cs.pop()
+_(fS,cT)
+cs.push("./pages/main/main.vue.wxml:view:1:1079")
+var lY=_mz(z,'view',['bindtap',32,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:image:1:1194")
+var aZ=_mz(z,'image',['class',36,'mode',1,'src',2],[],e,s,gg)
+cs.pop()
+_(lY,aZ)
+cs.push("./pages/main/main.vue.wxml:view:1:1293")
+var t1=_n('view')
+_rz(z,t1,'class',39,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:text:1:1330")
+var e2=_n('text')
+_rz(z,e2,'class',40,e,s,gg)
+var b3=_oz(z,41,e,s,gg)
 _(e2,b3)
 cs.pop()
-_(aZ,e2)
+_(t1,e2)
 cs.pop()
-_(cT,aZ)
-cs.push("./pages/main/main.vue.wxml:view:1:1451")
-var x5=_mz(z,'view',['bindtap',45,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/main/main.vue.wxml:image:1:1566")
-var o6=_mz(z,'image',['class',49,'mode',1,'src',2],[],e,s,gg)
+_(lY,t1)
 cs.pop()
-_(x5,o6)
-cs.push("./pages/main/main.vue.wxml:view:1:1665")
-var f7=_n('view')
-_rz(z,f7,'class',52,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:1702")
-var c8=_n('text')
-_rz(z,c8,'class',53,e,s,gg)
-var h9=_oz(z,54,e,s,gg)
-_(c8,h9)
+_(fS,lY)
+cs.push("./pages/main/main.vue.wxml:view:1:1397")
+var o4=_mz(z,'view',['bindtap',42,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:image:1:1512")
+var x5=_mz(z,'image',['class',46,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
+_(o4,x5)
+cs.push("./pages/main/main.vue.wxml:view:1:1611")
+var o6=_n('view')
+_rz(z,o6,'class',49,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:text:1:1648")
+var f7=_n('text')
+_rz(z,f7,'class',50,e,s,gg)
+var c8=_oz(z,51,e,s,gg)
 _(f7,c8)
 cs.pop()
-_(x5,f7)
+_(o6,f7)
 cs.pop()
-_(cT,x5)
-cs.push("./pages/main/main.vue.wxml:view:1:1769")
-var o0=_mz(z,'view',['bindtap',55,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/main/main.vue.wxml:image:1:1884")
-var cAB=_mz(z,'image',['class',59,'mode',1,'src',2],[],e,s,gg)
+_(o4,o6)
 cs.pop()
-_(o0,cAB)
-cs.push("./pages/main/main.vue.wxml:view:1:1985")
-var oBB=_n('view')
-_rz(z,oBB,'class',62,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:2022")
-var lCB=_n('text')
-_rz(z,lCB,'class',63,e,s,gg)
-var aDB=_oz(z,64,e,s,gg)
-_(lCB,aDB)
+_(fS,o4)
+cs.push("./pages/main/main.vue.wxml:view:1:1715")
+var h9=_mz(z,'view',['bindtap',52,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:image:1:1830")
+var o0=_mz(z,'image',['class',56,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
+_(h9,o0)
+cs.push("./pages/main/main.vue.wxml:view:1:1931")
+var cAB=_n('view')
+_rz(z,cAB,'class',59,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:text:1:1968")
+var oBB=_n('text')
+_rz(z,oBB,'class',60,e,s,gg)
+var lCB=_oz(z,61,e,s,gg)
 _(oBB,lCB)
 cs.pop()
-_(o0,oBB)
+_(cAB,oBB)
 cs.pop()
-_(cT,o0)
-cs.push("./pages/main/main.vue.wxml:view:1:2089")
-var tEB=_mz(z,'view',['bindtap',65,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/main/main.vue.wxml:image:1:2204")
-var eFB=_mz(z,'image',['class',69,'mode',1,'src',2],[],e,s,gg)
+_(h9,cAB)
 cs.pop()
-_(tEB,eFB)
-cs.push("./pages/main/main.vue.wxml:view:1:2303")
-var bGB=_n('view')
-_rz(z,bGB,'class',72,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:2340")
-var oHB=_n('text')
-_rz(z,oHB,'class',73,e,s,gg)
-var xIB=_oz(z,74,e,s,gg)
-_(oHB,xIB)
+_(fS,h9)
+cs.push("./pages/main/main.vue.wxml:view:1:2035")
+var aDB=_mz(z,'view',['bindtap',62,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:image:1:2150")
+var tEB=_mz(z,'image',['class',66,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
+_(aDB,tEB)
+cs.push("./pages/main/main.vue.wxml:view:1:2249")
+var eFB=_n('view')
+_rz(z,eFB,'class',69,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:text:1:2286")
+var bGB=_n('text')
+_rz(z,bGB,'class',70,e,s,gg)
+var oHB=_oz(z,71,e,s,gg)
 _(bGB,oHB)
 cs.pop()
-_(tEB,bGB)
+_(eFB,bGB)
 cs.pop()
-_(cT,tEB)
-cs.push("./pages/main/main.vue.wxml:view:1:2413")
-var oJB=_mz(z,'view',['bindtap',75,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/main/main.vue.wxml:image:1:2528")
-var fKB=_mz(z,'image',['class',79,'mode',1,'src',2],[],e,s,gg)
+_(aDB,eFB)
 cs.pop()
-_(oJB,fKB)
-cs.push("./pages/main/main.vue.wxml:view:1:2627")
-var cLB=_n('view')
-_rz(z,cLB,'class',82,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:2664")
-var hMB=_n('text')
-_rz(z,hMB,'class',83,e,s,gg)
-var oNB=_oz(z,84,e,s,gg)
-_(hMB,oNB)
+_(fS,aDB)
+cs.push("./pages/main/main.vue.wxml:view:1:2359")
+var xIB=_mz(z,'view',['bindtap',72,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:image:1:2474")
+var oJB=_mz(z,'image',['class',76,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
+_(xIB,oJB)
+cs.push("./pages/main/main.vue.wxml:view:1:2573")
+var fKB=_n('view')
+_rz(z,fKB,'class',79,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:text:1:2610")
+var cLB=_n('text')
+_rz(z,cLB,'class',80,e,s,gg)
+var hMB=_oz(z,81,e,s,gg)
 _(cLB,hMB)
 cs.pop()
-_(oJB,cLB)
+_(fKB,cLB)
 cs.pop()
-_(cT,oJB)
-cs.push("./pages/main/main.vue.wxml:view:1:2737")
-var cOB=_mz(z,'view',['bindtap',85,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/main/main.vue.wxml:image:1:2852")
-var oPB=_mz(z,'image',['class',89,'mode',1,'src',2],[],e,s,gg)
+_(xIB,fKB)
 cs.pop()
-_(cOB,oPB)
-cs.push("./pages/main/main.vue.wxml:view:1:2951")
-var lQB=_n('view')
-_rz(z,lQB,'class',92,e,s,gg)
-cs.push("./pages/main/main.vue.wxml:text:1:2988")
-var aRB=_n('text')
-_rz(z,aRB,'class',93,e,s,gg)
-var tSB=_oz(z,94,e,s,gg)
-_(aRB,tSB)
+_(fS,xIB)
+cs.push("./pages/main/main.vue.wxml:view:1:2683")
+var oNB=_mz(z,'view',['bindtap',82,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/main.vue.wxml:image:1:2798")
+var cOB=_mz(z,'image',['class',86,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
+_(oNB,cOB)
+cs.push("./pages/main/main.vue.wxml:view:1:2897")
+var oPB=_n('view')
+_rz(z,oPB,'class',89,e,s,gg)
+cs.push("./pages/main/main.vue.wxml:text:1:2934")
+var lQB=_n('text')
+_rz(z,lQB,'class',90,e,s,gg)
+var aRB=_oz(z,91,e,s,gg)
 _(lQB,aRB)
 cs.pop()
-_(cOB,lQB)
+_(oPB,lQB)
 cs.pop()
-_(cT,cOB)
-cs.push("./pages/main/main.vue.wxml:view:1:3061")
+_(oNB,oPB)
+cs.pop()
+_(fS,oNB)
+cs.push("./pages/main/main.vue.wxml:view:1:3007")
+var tSB=_n('view')
+_rz(z,tSB,'class',92,e,s,gg)
+cs.pop()
+_(fS,tSB)
+cs.push("./pages/main/main.vue.wxml:view:1:3054")
 var eTB=_n('view')
-_rz(z,eTB,'class',95,e,s,gg)
+_rz(z,eTB,'class',93,e,s,gg)
 cs.pop()
-_(cT,eTB)
-cs.push("./pages/main/main.vue.wxml:view:1:3108")
-var bUB=_n('view')
-_rz(z,bUB,'class',96,e,s,gg)
+_(fS,eTB)
 cs.pop()
-_(cT,bUB)
-cs.pop()
-_(oB,cT)
+_(oB,fS)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -6811,12 +7014,231 @@ return r
 }
 e_[x[58]]={f:m36,j:[],i:[],ti:[x[59]],ic:[]}
 d_[x[60]]={}
-d_[x[60]]["289ecc0c"]=function(e,s,r,gg){
+d_[x[60]]["f40cc204"]=function(e,s,r,gg){
 var z=gz$gwx_38()
-var b=x[60]+':289ecc0c'
+var b=x[60]+':f40cc204'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/other/gonggaoList.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[60]);return}
+p_[b]=true
+try{
+cs.push("./pages/other/gonggaoList.vue.wxml:view:1:157")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+cs.push("./pages/other/gonggaoList.vue.wxml:view:1:195")
+var xC=_n('view')
+_rz(z,xC,'class',2,e,s,gg)
+var oD=_v()
+_(xC,oD)
+cs.push("./pages/other/gonggaoList.vue.wxml:template:1:237")
+var fE=_oz(z,4,e,s,gg)
+var cF=_gd(x[60],fE,e_,d_)
+if(cF){
+var hG=_1z(z,3,e,s,gg) || {}
+var cur_globalf=gg.f
+oD.wxXCkey=3
+cF(hG,hG,oD,gg)
+gg.f=cur_globalf
+}
+else _w(fE,x[60],1,352)
+cs.pop()
+cs.pop()
+_(oB,xC)
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m37=function(e,s,r,gg){
+var z=gz$gwx_38()
+var oND=e_[x[60]].i
+_ai(oND,x[1],e_,x[60],1,1)
+_ai(oND,x[2],e_,x[60],1,61)
+oND.pop()
+oND.pop()
+return r
+}
+e_[x[60]]={f:m37,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[61]]={}
+var m38=function(e,s,r,gg){
+var z=gz$gwx_39()
+var aPD=e_[x[61]].i
+_ai(aPD,x[49],e_,x[61],1,1)
+var tQD=_v()
+_(r,tQD)
+cs.push("./pages/other/gonggaoList.wxml:template:2:6")
+var eRD=_oz(z,1,e,s,gg)
+var bSD=_gd(x[61],eRD,e_,d_)
+if(bSD){
+var oTD=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+tQD.wxXCkey=3
+bSD(oTD,oTD,tQD,gg)
+gg.f=cur_globalf
+}
+else _w(eRD,x[61],2,18)
+cs.pop()
+aPD.pop()
+return r
+}
+e_[x[61]]={f:m38,j:[],i:[],ti:[x[49]],ic:[]}
+d_[x[62]]={}
+d_[x[62]]["c4edb036"]=function(e,s,r,gg){
+var z=gz$gwx_40()
+var b=x[62]+':c4edb036'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/other/newsList.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[62]);return}
+p_[b]=true
+try{
+cs.push("./pages/other/newsList.vue.wxml:view:1:157")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+cs.push("./pages/other/newsList.vue.wxml:view:1:195")
+var xC=_n('view')
+_rz(z,xC,'class',2,e,s,gg)
+var oD=_v()
+_(xC,oD)
+cs.push("./pages/other/newsList.vue.wxml:template:1:237")
+var fE=_oz(z,4,e,s,gg)
+var cF=_gd(x[62],fE,e_,d_)
+if(cF){
+var hG=_1z(z,3,e,s,gg) || {}
+var cur_globalf=gg.f
+oD.wxXCkey=3
+cF(hG,hG,oD,gg)
+gg.f=cur_globalf
+}
+else _w(fE,x[62],1,352)
+cs.pop()
+cs.pop()
+_(oB,xC)
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m39=function(e,s,r,gg){
+var z=gz$gwx_40()
+var oVD=e_[x[62]].i
+_ai(oVD,x[1],e_,x[62],1,1)
+_ai(oVD,x[2],e_,x[62],1,61)
+oVD.pop()
+oVD.pop()
+return r
+}
+e_[x[62]]={f:m39,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[63]]={}
+var m40=function(e,s,r,gg){
+var z=gz$gwx_41()
+var cXD=e_[x[63]].i
+_ai(cXD,x[64],e_,x[63],1,1)
+var hYD=_v()
+_(r,hYD)
+cs.push("./pages/other/newsList.wxml:template:2:6")
+var oZD=_oz(z,1,e,s,gg)
+var c1D=_gd(x[63],oZD,e_,d_)
+if(c1D){
+var o2D=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+hYD.wxXCkey=3
+c1D(o2D,o2D,hYD,gg)
+gg.f=cur_globalf
+}
+else _w(oZD,x[63],2,18)
+cs.pop()
+cXD.pop()
+return r
+}
+e_[x[63]]={f:m40,j:[],i:[],ti:[x[64]],ic:[]}
+d_[x[65]]={}
+d_[x[65]]["5ff9ee88"]=function(e,s,r,gg){
+var z=gz$gwx_42()
+var b=x[65]+':5ff9ee88'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/other/pointRank.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[65]);return}
+p_[b]=true
+try{
+cs.push("./pages/other/pointRank.vue.wxml:view:1:157")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+cs.push("./pages/other/pointRank.vue.wxml:view:1:195")
+var xC=_n('view')
+_rz(z,xC,'class',2,e,s,gg)
+var oD=_v()
+_(xC,oD)
+cs.push("./pages/other/pointRank.vue.wxml:template:1:237")
+var fE=_oz(z,4,e,s,gg)
+var cF=_gd(x[65],fE,e_,d_)
+if(cF){
+var hG=_1z(z,3,e,s,gg) || {}
+var cur_globalf=gg.f
+oD.wxXCkey=3
+cF(hG,hG,oD,gg)
+gg.f=cur_globalf
+}
+else _w(fE,x[65],1,352)
+cs.pop()
+cs.pop()
+_(oB,xC)
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m41=function(e,s,r,gg){
+var z=gz$gwx_42()
+var a4D=e_[x[65]].i
+_ai(a4D,x[1],e_,x[65],1,1)
+_ai(a4D,x[2],e_,x[65],1,61)
+a4D.pop()
+a4D.pop()
+return r
+}
+e_[x[65]]={f:m41,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[66]]={}
+var m42=function(e,s,r,gg){
+var z=gz$gwx_43()
+var e6D=e_[x[66]].i
+_ai(e6D,x[67],e_,x[66],1,1)
+var b7D=_v()
+_(r,b7D)
+cs.push("./pages/other/pointRank.wxml:template:2:6")
+var o8D=_oz(z,1,e,s,gg)
+var x9D=_gd(x[66],o8D,e_,d_)
+if(x9D){
+var o0D=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+b7D.wxXCkey=3
+x9D(o0D,o0D,b7D,gg)
+gg.f=cur_globalf
+}
+else _w(o8D,x[66],2,18)
+cs.pop()
+e6D.pop()
+return r
+}
+e_[x[66]]={f:m42,j:[],i:[],ti:[x[67]],ic:[]}
+d_[x[68]]={}
+d_[x[68]]["289ecc0c"]=function(e,s,r,gg){
+var z=gz$gwx_44()
+var b=x[68]+':289ecc0c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/peixun/peixun.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[60]);return}
+if(p_[b]){_wl(b,x[68]);return}
 p_[b]=true
 try{
 cs.push("./pages/peixun/peixun.vue.wxml:view:1:27")
@@ -6878,41 +7300,41 @@ throw err
 p_[b]=false
 return r
 }
-var m37=function(e,s,r,gg){
-var z=gz$gwx_38()
+var m43=function(e,s,r,gg){
+var z=gz$gwx_44()
 return r
 }
-e_[x[60]]={f:m37,j:[],i:[],ti:[],ic:[]}
-d_[x[61]]={}
-var m38=function(e,s,r,gg){
-var z=gz$gwx_39()
-var lOD=e_[x[61]].i
-_ai(lOD,x[62],e_,x[61],1,1)
-var aPD=_v()
-_(r,aPD)
+e_[x[68]]={f:m43,j:[],i:[],ti:[],ic:[]}
+d_[x[69]]={}
+var m44=function(e,s,r,gg){
+var z=gz$gwx_45()
+var hCE=e_[x[69]].i
+_ai(hCE,x[70],e_,x[69],1,1)
+var oDE=_v()
+_(r,oDE)
 cs.push("./pages/peixun/peixun.wxml:template:2:6")
-var tQD=_oz(z,1,e,s,gg)
-var eRD=_gd(x[61],tQD,e_,d_)
-if(eRD){
-var bSD=_1z(z,0,e,s,gg) || {}
+var cEE=_oz(z,1,e,s,gg)
+var oFE=_gd(x[69],cEE,e_,d_)
+if(oFE){
+var lGE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-aPD.wxXCkey=3
-eRD(bSD,bSD,aPD,gg)
+oDE.wxXCkey=3
+oFE(lGE,lGE,oDE,gg)
 gg.f=cur_globalf
 }
-else _w(tQD,x[61],2,18)
+else _w(cEE,x[69],2,18)
 cs.pop()
-lOD.pop()
+hCE.pop()
 return r
 }
-e_[x[61]]={f:m38,j:[],i:[],ti:[x[62]],ic:[]}
-d_[x[63]]={}
-d_[x[63]]["6cbf6956"]=function(e,s,r,gg){
-var z=gz$gwx_40()
-var b=x[63]+':6cbf6956'
+e_[x[69]]={f:m44,j:[],i:[],ti:[x[70]],ic:[]}
+d_[x[71]]={}
+d_[x[71]]["6cbf6956"]=function(e,s,r,gg){
+var z=gz$gwx_46()
+var b=x[71]+':6cbf6956'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[63]);return}
+if(p_[b]){_wl(b,x[71]);return}
 p_[b]=true
 try{
 cs.push("./pages/pwd/pwd.vue.wxml:view:1:72")
@@ -6935,7 +7357,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[63],oH,e_,d_)
+var cI=_gd(x[71],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -6943,7 +7365,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[63],1,465)
+else _w(oH,x[71],1,465)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -6969,44 +7391,44 @@ throw err
 p_[b]=false
 return r
 }
-var m39=function(e,s,r,gg){
-var z=gz$gwx_40()
-var xUD=e_[x[63]].i
-_ai(xUD,x[51],e_,x[63],1,1)
-xUD.pop()
+var m45=function(e,s,r,gg){
+var z=gz$gwx_46()
+var tIE=e_[x[71]].i
+_ai(tIE,x[51],e_,x[71],1,1)
+tIE.pop()
 return r
 }
-e_[x[63]]={f:m39,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[64]]={}
-var m40=function(e,s,r,gg){
-var z=gz$gwx_41()
-var fWD=e_[x[64]].i
-_ai(fWD,x[65],e_,x[64],1,1)
-var cXD=_v()
-_(r,cXD)
+e_[x[71]]={f:m45,j:[],i:[],ti:[x[51]],ic:[]}
+d_[x[72]]={}
+var m46=function(e,s,r,gg){
+var z=gz$gwx_47()
+var bKE=e_[x[72]].i
+_ai(bKE,x[73],e_,x[72],1,1)
+var oLE=_v()
+_(r,oLE)
 cs.push("./pages/pwd/pwd.wxml:template:2:6")
-var hYD=_oz(z,1,e,s,gg)
-var oZD=_gd(x[64],hYD,e_,d_)
-if(oZD){
-var c1D=_1z(z,0,e,s,gg) || {}
+var xME=_oz(z,1,e,s,gg)
+var oNE=_gd(x[72],xME,e_,d_)
+if(oNE){
+var fOE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-cXD.wxXCkey=3
-oZD(c1D,c1D,cXD,gg)
+oLE.wxXCkey=3
+oNE(fOE,fOE,oLE,gg)
 gg.f=cur_globalf
 }
-else _w(hYD,x[64],2,18)
+else _w(xME,x[72],2,18)
 cs.pop()
-fWD.pop()
+bKE.pop()
 return r
 }
-e_[x[64]]={f:m40,j:[],i:[],ti:[x[65]],ic:[]}
-d_[x[66]]={}
-d_[x[66]]["90021ef8"]=function(e,s,r,gg){
-var z=gz$gwx_42()
-var b=x[66]+':90021ef8'
+e_[x[72]]={f:m46,j:[],i:[],ti:[x[73]],ic:[]}
+d_[x[74]]={}
+d_[x[74]]["90021ef8"]=function(e,s,r,gg){
+var z=gz$gwx_48()
+var b=x[74]+':90021ef8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[66]);return}
+if(p_[b]){_wl(b,x[74]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:1:72")
@@ -7029,7 +7451,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/reg/reg.vue.wxml:template:1:247")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[66],oH,e_,d_)
+var cI=_gd(x[74],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7037,7 +7459,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[66],1,474)
+else _w(oH,x[74],1,474)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -7055,7 +7477,7 @@ var eN=_v()
 _(lK,eN)
 cs.push("./pages/reg/reg.vue.wxml:template:1:601")
 var bO=_oz(z,21,e,s,gg)
-var oP=_gd(x[66],bO,e_,d_)
+var oP=_gd(x[74],bO,e_,d_)
 if(oP){
 var xQ=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7063,7 +7485,7 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[66],1,829)
+else _w(bO,x[74],1,829)
 cs.pop()
 cs.pop()
 _(xC,lK)
@@ -7081,7 +7503,7 @@ var hU=_v()
 _(oR,hU)
 cs.push("./pages/reg/reg.vue.wxml:template:1:949")
 var oV=_oz(z,32,e,s,gg)
-var cW=_gd(x[66],oV,e_,d_)
+var cW=_gd(x[74],oV,e_,d_)
 if(cW){
 var oX=_1z(z,29,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7089,7 +7511,7 @@ hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[66],1,1168)
+else _w(oV,x[74],1,1168)
 cs.pop()
 cs.pop()
 _(xC,oR)
@@ -7115,44 +7537,44 @@ throw err
 p_[b]=false
 return r
 }
-var m41=function(e,s,r,gg){
-var z=gz$gwx_42()
-var l3D=e_[x[66]].i
-_ai(l3D,x[51],e_,x[66],1,1)
-l3D.pop()
+var m47=function(e,s,r,gg){
+var z=gz$gwx_48()
+var hQE=e_[x[74]].i
+_ai(hQE,x[51],e_,x[74],1,1)
+hQE.pop()
 return r
 }
-e_[x[66]]={f:m41,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[67]]={}
-var m42=function(e,s,r,gg){
-var z=gz$gwx_43()
-var t5D=e_[x[67]].i
-_ai(t5D,x[68],e_,x[67],1,1)
-var e6D=_v()
-_(r,e6D)
+e_[x[74]]={f:m47,j:[],i:[],ti:[x[51]],ic:[]}
+d_[x[75]]={}
+var m48=function(e,s,r,gg){
+var z=gz$gwx_49()
+var cSE=e_[x[75]].i
+_ai(cSE,x[76],e_,x[75],1,1)
+var oTE=_v()
+_(r,oTE)
 cs.push("./pages/reg/reg.wxml:template:2:6")
-var b7D=_oz(z,1,e,s,gg)
-var o8D=_gd(x[67],b7D,e_,d_)
-if(o8D){
-var x9D=_1z(z,0,e,s,gg) || {}
+var lUE=_oz(z,1,e,s,gg)
+var aVE=_gd(x[75],lUE,e_,d_)
+if(aVE){
+var tWE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-e6D.wxXCkey=3
-o8D(x9D,x9D,e6D,gg)
+oTE.wxXCkey=3
+aVE(tWE,tWE,oTE,gg)
 gg.f=cur_globalf
 }
-else _w(b7D,x[67],2,18)
+else _w(lUE,x[75],2,18)
 cs.pop()
-t5D.pop()
+cSE.pop()
 return r
 }
-e_[x[67]]={f:m42,j:[],i:[],ti:[x[68]],ic:[]}
-d_[x[69]]={}
-d_[x[69]]["d573abf0"]=function(e,s,r,gg){
-var z=gz$gwx_44()
-var b=x[69]+':d573abf0'
+e_[x[75]]={f:m48,j:[],i:[],ti:[x[76]],ic:[]}
+d_[x[77]]={}
+d_[x[77]]["d573abf0"]=function(e,s,r,gg){
+var z=gz$gwx_50()
+var b=x[77]+':d573abf0'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/accountEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[69]);return}
+if(p_[b]){_wl(b,x[77]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/accountEdit.vue.wxml:view:1:27")
@@ -7209,41 +7631,41 @@ throw err
 p_[b]=false
 return r
 }
-var m43=function(e,s,r,gg){
-var z=gz$gwx_44()
+var m49=function(e,s,r,gg){
+var z=gz$gwx_50()
 return r
 }
-e_[x[69]]={f:m43,j:[],i:[],ti:[],ic:[]}
-d_[x[70]]={}
-var m44=function(e,s,r,gg){
-var z=gz$gwx_45()
-var cBE=e_[x[70]].i
-_ai(cBE,x[71],e_,x[70],1,1)
-var hCE=_v()
-_(r,hCE)
+e_[x[77]]={f:m49,j:[],i:[],ti:[],ic:[]}
+d_[x[78]]={}
+var m50=function(e,s,r,gg){
+var z=gz$gwx_51()
+var oZE=e_[x[78]].i
+_ai(oZE,x[79],e_,x[78],1,1)
+var x1E=_v()
+_(r,x1E)
 cs.push("./pages/user/accountEdit.wxml:template:2:6")
-var oDE=_oz(z,1,e,s,gg)
-var cEE=_gd(x[70],oDE,e_,d_)
-if(cEE){
-var oFE=_1z(z,0,e,s,gg) || {}
+var o2E=_oz(z,1,e,s,gg)
+var f3E=_gd(x[78],o2E,e_,d_)
+if(f3E){
+var c4E=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hCE.wxXCkey=3
-cEE(oFE,oFE,hCE,gg)
+x1E.wxXCkey=3
+f3E(c4E,c4E,x1E,gg)
 gg.f=cur_globalf
 }
-else _w(oDE,x[70],2,18)
+else _w(o2E,x[78],2,18)
 cs.pop()
-cBE.pop()
+oZE.pop()
 return r
 }
-e_[x[70]]={f:m44,j:[],i:[],ti:[x[71]],ic:[]}
-d_[x[72]]={}
-d_[x[72]]["240234ba"]=function(e,s,r,gg){
-var z=gz$gwx_46()
-var b=x[72]+':240234ba'
+e_[x[78]]={f:m50,j:[],i:[],ti:[x[79]],ic:[]}
+d_[x[80]]={}
+d_[x[80]]["240234ba"]=function(e,s,r,gg){
+var z=gz$gwx_52()
+var b=x[80]+':240234ba'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[72]);return}
+if(p_[b]){_wl(b,x[80]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/user.vue.wxml:view:1:27")
@@ -7252,47 +7674,54 @@ _rz(z,oB,'class',1,e,s,gg)
 cs.push("./pages/user/user.vue.wxml:view:1:63")
 var xC=_mz(z,'view',['class',2,'hoverClass',1],[],e,s,gg)
 cs.push("./pages/user/user.vue.wxml:image:1:126")
-var oD=_mz(z,'image',['class',4,'src',1],[],e,s,gg)
+var oD=_mz(z,'image',['bindtap',4,'class',1,'data-comkey',2,'data-eventid',3,'src',4],[],e,s,gg)
 cs.pop()
 _(xC,oD)
-cs.push("./pages/user/user.vue.wxml:view:1:194")
+cs.push("./pages/user/user.vue.wxml:view:1:269")
 var fE=_n('view')
-_rz(z,fE,'class',6,e,s,gg)
+_rz(z,fE,'class',9,e,s,gg)
 var cF=_v()
 _(fE,cF)
-if(_oz(z,7,e,s,gg)){cF.wxVkey=1
-cs.push("./pages/user/user.vue.wxml:view:1:234")
-cs.push("./pages/user/user.vue.wxml:view:1:234")
+if(_oz(z,10,e,s,gg)){cF.wxVkey=1
+cs.push("./pages/user/user.vue.wxml:view:1:309")
+cs.push("./pages/user/user.vue.wxml:view:1:309")
 var oH=_n('view')
-_rz(z,oH,'class',8,e,s,gg)
-cs.push("./pages/user/user.vue.wxml:text:1:293")
+_rz(z,oH,'class',11,e,s,gg)
+cs.push("./pages/user/user.vue.wxml:text:1:368")
 var cI=_n('text')
-_rz(z,cI,'class',9,e,s,gg)
-var oJ=_oz(z,10,e,s,gg)
+_rz(z,cI,'class',12,e,s,gg)
+var oJ=_oz(z,13,e,s,gg)
 _(cI,oJ)
 cs.pop()
 _(oH,cI)
-cs.push("./pages/user/user.vue.wxml:text:1:368")
+cs.push("./pages/user/user.vue.wxml:text:1:443")
 var lK=_n('text')
-_rz(z,lK,'class',11,e,s,gg)
-var aL=_oz(z,12,e,s,gg)
+_rz(z,lK,'class',14,e,s,gg)
+var aL=_oz(z,15,e,s,gg)
 _(lK,aL)
 cs.pop()
 _(oH,lK)
+cs.push("./pages/user/user.vue.wxml:text:1:518")
+var tM=_n('text')
+_rz(z,tM,'class',16,e,s,gg)
+var eN=_oz(z,17,e,s,gg)
+_(tM,eN)
+cs.pop()
+_(oH,tM)
 cs.pop()
 _(cF,oH)
 cs.pop()
 }
 var hG=_v()
 _(fE,hG)
-if(_oz(z,13,e,s,gg)){hG.wxVkey=1
-cs.push("./pages/user/user.vue.wxml:button:1:450")
-cs.push("./pages/user/user.vue.wxml:button:1:450")
-var tM=_mz(z,'button',['bindtap',14,'class',1,'data-comkey',2,'data-eventid',3,'type',4],[],e,s,gg)
-var eN=_oz(z,19,e,s,gg)
-_(tM,eN)
+if(_oz(z,18,e,s,gg)){hG.wxVkey=1
+cs.push("./pages/user/user.vue.wxml:button:1:639")
+cs.push("./pages/user/user.vue.wxml:button:1:639")
+var bO=_mz(z,'button',['bindtap',19,'class',1,'data-comkey',2,'data-eventid',3,'type',4],[],e,s,gg)
+var oP=_oz(z,24,e,s,gg)
+_(bO,oP)
 cs.pop()
-_(hG,tM)
+_(hG,bO)
 cs.pop()
 }
 cF.wxXCkey=1
@@ -7301,31 +7730,31 @@ cs.pop()
 _(xC,fE)
 cs.pop()
 _(oB,xC)
-cs.push("./pages/user/user.vue.wxml:view:1:638")
-var bO=_n('view')
-_rz(z,bO,'class',20,e,s,gg)
-cs.push("./pages/user/user.vue.wxml:view:1:676")
-var oP=_mz(z,'view',['bindtap',21,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/user/user.vue.wxml:image:1:791")
-var xQ=_mz(z,'image',['class',25,'mode',1,'src',2],[],e,s,gg)
-cs.pop()
-_(oP,xQ)
-cs.push("./pages/user/user.vue.wxml:view:1:892")
-var oR=_n('view')
-_rz(z,oR,'class',28,e,s,gg)
-cs.push("./pages/user/user.vue.wxml:text:1:929")
-var fS=_n('text')
-_rz(z,fS,'class',29,e,s,gg)
-var cT=_oz(z,30,e,s,gg)
-_(fS,cT)
+cs.push("./pages/user/user.vue.wxml:view:1:827")
+var xQ=_n('view')
+_rz(z,xQ,'class',25,e,s,gg)
+cs.push("./pages/user/user.vue.wxml:view:1:865")
+var oR=_mz(z,'view',['bindtap',26,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/user/user.vue.wxml:image:1:980")
+var fS=_mz(z,'image',['class',30,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
 _(oR,fS)
+cs.push("./pages/user/user.vue.wxml:view:1:1081")
+var cT=_n('view')
+_rz(z,cT,'class',33,e,s,gg)
+cs.push("./pages/user/user.vue.wxml:text:1:1118")
+var hU=_n('text')
+_rz(z,hU,'class',34,e,s,gg)
+var oV=_oz(z,35,e,s,gg)
+_(hU,oV)
 cs.pop()
-_(oP,oR)
+_(cT,hU)
 cs.pop()
-_(bO,oP)
+_(oR,cT)
 cs.pop()
-_(oB,bO)
+_(xQ,oR)
+cs.pop()
+_(oB,xQ)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -7335,34 +7764,34 @@ throw err
 p_[b]=false
 return r
 }
-var m45=function(e,s,r,gg){
-var z=gz$gwx_46()
+var m51=function(e,s,r,gg){
+var z=gz$gwx_52()
 return r
 }
-e_[x[72]]={f:m45,j:[],i:[],ti:[],ic:[]}
-d_[x[73]]={}
-var m46=function(e,s,r,gg){
-var z=gz$gwx_47()
-var tIE=e_[x[73]].i
-_ai(tIE,x[74],e_,x[73],1,1)
-var eJE=_v()
-_(r,eJE)
+e_[x[80]]={f:m51,j:[],i:[],ti:[],ic:[]}
+d_[x[81]]={}
+var m52=function(e,s,r,gg){
+var z=gz$gwx_53()
+var c7E=e_[x[81]].i
+_ai(c7E,x[82],e_,x[81],1,1)
+var o8E=_v()
+_(r,o8E)
 cs.push("./pages/user/user.wxml:template:2:6")
-var bKE=_oz(z,1,e,s,gg)
-var oLE=_gd(x[73],bKE,e_,d_)
-if(oLE){
-var xME=_1z(z,0,e,s,gg) || {}
+var l9E=_oz(z,1,e,s,gg)
+var a0E=_gd(x[81],l9E,e_,d_)
+if(a0E){
+var tAF=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-eJE.wxXCkey=3
-oLE(xME,xME,eJE,gg)
+o8E.wxXCkey=3
+a0E(tAF,tAF,o8E,gg)
 gg.f=cur_globalf
 }
-else _w(bKE,x[73],2,18)
+else _w(l9E,x[81],2,18)
 cs.pop()
-tIE.pop()
+c7E.pop()
 return r
 }
-e_[x[73]]={f:m46,j:[],i:[],ti:[x[74]],ic:[]}
+e_[x[81]]={f:m52,j:[],i:[],ti:[x[82]],ic:[]}
 if(path&&e_[path]){
 window.__wxml_comp_version__=0.02
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
@@ -7532,6 +7961,15 @@ __wxAppCode__['pages/login/login.wxml']=$gwx('./pages/login/login.wxml');
 __wxAppCode__['pages/main/main.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"menuBlockView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; padding-bottom: ",[0,30],"; }\n.",[1],"dangerView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 30%; margin-top: 50px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerIcon { width: ",[0,80],"; height: ",[0,80],"; }\n.",[1],"subView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; margin-top: 10px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerText { width: 100%; font-size: 16; color: #898989; text-align: center; }\n.",[1],"titleView_pc { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: ",[0,20],"; width: 100%; height: ",[0,80],"; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #F1F1F1; }\n.",[1],"titleText_pc { margin-left: ",[0,30],"; color: #666666; width: 100%; text-align: left; font-size: ",[0,32],"; }\n.",[1],"topView_pc { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; background-color: #2D68AA; }\n.",[1],"topItemView { width: 30%; height: ",[0,240],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"topTextTitle { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,30],"; }\n.",[1],"topTextNum { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,40],"; }\n.",[1],"arrow { width: ",[0,15],"; height: ",[0,240],"; margin-right: ",[0,10],"; }\n",],undefined,{path:"./pages/main/main.wxss"});    
 __wxAppCode__['pages/main/main.wxml']=$gwx('./pages/main/main.wxml');
 
+__wxAppCode__['pages/other/gonggaoList.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"scrollView { width: 100%; margin-bottom: ",[0,110],"; }\n.",[1],"bottomView { width: 100%; height: ",[0,110],"; background: #FFFFFF; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"addCheck { background-color: #FFFFFF; width: 100%; height: ",[0,80],"; padding-top: ",[0,20],"; padding-bottom: ",[0,20],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n",],undefined,{path:"./pages/other/gonggaoList.wxss"});    
+__wxAppCode__['pages/other/gonggaoList.wxml']=$gwx('./pages/other/gonggaoList.wxml');
+
+__wxAppCode__['pages/other/newsList.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"scrollView { width: 100%; margin-bottom: ",[0,110],"; }\n.",[1],"bottomView { width: 100%; height: ",[0,110],"; background: #FFFFFF; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"addCheck { background-color: #FFFFFF; width: 100%; height: ",[0,80],"; padding-top: ",[0,20],"; padding-bottom: ",[0,20],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n",],undefined,{path:"./pages/other/newsList.wxss"});    
+__wxAppCode__['pages/other/newsList.wxml']=$gwx('./pages/other/newsList.wxml');
+
+__wxAppCode__['pages/other/pointRank.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"scrollView { width: 100%; margin-bottom: ",[0,110],"; }\n.",[1],"bottomView { width: 100%; height: ",[0,110],"; background: #FFFFFF; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"addCheck { background-color: #FFFFFF; width: 100%; height: ",[0,80],"; padding-top: ",[0,20],"; padding-bottom: ",[0,20],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n",],undefined,{path:"./pages/other/pointRank.wxss"});    
+__wxAppCode__['pages/other/pointRank.wxml']=$gwx('./pages/other/pointRank.wxml');
+
 __wxAppCode__['pages/peixun/peixun.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"pxTitleView { width: 100%; height: ",[0,120],"; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"pxTitleLabel { width: 100%; font-size: ",[0,32],"; margin-left: ",[0,20],"; margin-right: ",[0,20],"; line-height: ",[0,60],"; }\n.",[1],"pxSubTitleLabel { width: 100%; font-size: ",[0,22],"; margin-left: ",[0,20],"; margin-right: ",[0,20],"; line-height: ",[0,30],"; color: #BBBBBB; }\n.",[1],"classImage { width: 100%; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"controlBtnView { width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"countLabel { width: 100%; height: ",[0,60],"; text-align: center; color: #888888; line-height: ",[0,60],"; }\n",],undefined,{path:"./pages/peixun/peixun.wxss"});    
 __wxAppCode__['pages/peixun/peixun.wxml']=$gwx('./pages/peixun/peixun.wxml');
 
@@ -7544,7 +7982,7 @@ __wxAppCode__['pages/reg/reg.wxml']=$gwx('./pages/reg/reg.wxml');
 __wxAppCode__['pages/user/accountEdit.wxss']=setCssToHead(["@font-face { font-family: texticons; font-weight: normal; font-style: normal; src: url(\x27https://at.alicdn.com/t/font_984210_5cs13ndgqsn.ttf\x27) format(\x27truetype\x27); }\nbody, wx-view { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }\nbody { background-color: #f8f8f8; }\n.",[1],"center { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-color: #FFFFFF; }\n.",[1],"login-title { height: ",[0,150],"; -webkit-box-align: self-start; -webkit-align-items: self-start; -ms-flex-align: self-start; align-items: self-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-left: ",[0,20],"; }\n.",[1],"center-list { background-color: #FFFFFF; margin-top: ",[0,20],"; width: ",[0,750],"; height: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"btnView { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; height: ",[0,200],"; }\n.",[1],"btn { width: 95%; background-color: #4CD964; }\n.",[1],"center-list-item { height: ",[0,90],"; width: ",[0,750],"; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: ",[0,0]," ",[0,20],"; }\n.",[1],"border-bottom { border-bottom-width: ",[0,1],"; border-color: #c8c7cc; border-bottom-style: solid; }\n.",[1],"list-icon { width: ",[0,40],"; height: ",[0,90],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #4cd964; text-align: center; font-family: texticons; margin-right: ",[0,20],"; }\n.",[1],"list-text { height: ",[0,90],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #555; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: left; }\n.",[1],"navigat-arrow { height: ",[0,90],"; width: ",[0,40],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #555; text-align: right; font-family: texticons; }\n",],undefined,{path:"./pages/user/accountEdit.wxss"});    
 __wxAppCode__['pages/user/accountEdit.wxml']=$gwx('./pages/user/accountEdit.wxml');
 
-__wxAppCode__['pages/user/user.wxss']=setCssToHead(["@font-face { font-family: texticons; font-weight: normal; font-style: normal; src: url(\x27https://at.alicdn.com/t/font_984210_5cs13ndgqsn.ttf\x27) format(\x27truetype\x27); }\nbody, wx-view { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }\nbody { background-color: #f8f8f8; }\n.",[1],"center { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"logo { width: ",[0,750],"; height: ",[0,240],"; padding: ",[0,20],"; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #2D68AA; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"logo-hover { opacity: 0.8; }\n.",[1],"logo-img { width: ",[0,150],"; height: ",[0,150],"; border-radius: ",[0,150],"; }\n.",[1],"logo-title { height: ",[0,150],"; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; margin-left: ",[0,20],"; }\n.",[1],"infoView { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"uer-name { height: ",[0,60],"; line-height: ",[0,60],"; font-size: ",[0,38],"; color: #FFFFFF; }\n.",[1],"uer-code { height: ",[0,60],"; line-height: ",[0,60],"; font-size: ",[0,22],"; color: #FFFFFF; }\n.",[1],"go-login.",[1],"navigat-arrow { font-size: ",[0,38],"; color: #FFFFFF; }\n.",[1],"login-title { height: ",[0,150],"; -webkit-box-align: self-start; -webkit-align-items: self-start; -ms-flex-align: self-start; align-items: self-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-left: ",[0,20],"; }\n.",[1],"center-list { background-color: #FFFFFF; margin-top: ",[0,20],"; width: ",[0,750],"; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"center-list-item { height: ",[0,90],"; width: ",[0,750],"; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: ",[0,0]," ",[0,20],"; }\n.",[1],"border-bottom { border-bottom-width: ",[0,1],"; border-color: #c8c7cc; border-bottom-style: solid; }\n.",[1],"list-icon { width: ",[0,40],"; height: ",[0,90],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #4cd964; text-align: center; font-family: texticons; margin-right: ",[0,20],"; }\n.",[1],"list-text { height: ",[0,90],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #555; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: left; }\n.",[1],"navigat-arrow { height: ",[0,90],"; width: ",[0,40],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #555; text-align: right; font-family: texticons; }\n.",[1],"userinfo { width: 99%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; background-color: #fff; }\n.",[1],"dangerView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 33%; margin-top: 5px; background-color: #FFFFFF; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerIcon { width: ",[0,80],"; height: ",[0,80],"; margin-top: ",[0,50],"; }\n.",[1],"subView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; margin-top: 10px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerText { width: 100%; font-size: 16; color: #898989; text-align: center; margin-bottom: ",[0,50],"; }\n",],undefined,{path:"./pages/user/user.wxss"});    
+__wxAppCode__['pages/user/user.wxss']=setCssToHead(["@font-face { font-family: texticons; font-weight: normal; font-style: normal; src: url(\x27https://at.alicdn.com/t/font_984210_5cs13ndgqsn.ttf\x27) format(\x27truetype\x27); }\nbody, wx-view { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }\nbody { background-color: #f8f8f8; }\n.",[1],"center { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"logo { width: ",[0,750],"; height: ",[0,240],"; padding: ",[0,20],"; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #2D68AA; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"logo-hover { opacity: 0.8; }\n.",[1],"logo-img { width: ",[0,150],"; height: ",[0,150],"; border-radius: ",[0,150],"; }\n.",[1],"logo-title { height: ",[0,150],"; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; margin-left: ",[0,20],"; }\n.",[1],"infoView { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"uer-name { height: ",[0,60],"; line-height: ",[0,60],"; font-size: ",[0,38],"; color: #FFFFFF; }\n.",[1],"uer-code { height: ",[0,60],"; line-height: ",[0,60],"; font-size: ",[0,22],"; color: #FFFFFF; }\n.",[1],"go-login.",[1],"navigat-arrow { font-size: ",[0,38],"; color: #FFFFFF; }\n.",[1],"login-title { height: ",[0,150],"; -webkit-box-align: self-start; -webkit-align-items: self-start; -ms-flex-align: self-start; align-items: self-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-left: ",[0,20],"; }\n.",[1],"center-list { background-color: #FFFFFF; margin-top: ",[0,20],"; width: ",[0,750],"; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"center-list-item { height: ",[0,90],"; width: ",[0,750],"; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: ",[0,0]," ",[0,20],"; }\n.",[1],"border-bottom { border-bottom-width: ",[0,1],"; border-color: #c8c7cc; border-bottom-style: solid; }\n.",[1],"list-icon { width: ",[0,40],"; height: ",[0,90],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #4cd964; text-align: center; font-family: texticons; margin-right: ",[0,20],"; }\n.",[1],"list-text { height: ",[0,90],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #555; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: left; }\n.",[1],"navigat-arrow { height: ",[0,90],"; width: ",[0,40],"; line-height: ",[0,90],"; font-size: ",[0,34],"; color: #555; text-align: right; font-family: texticons; }\n.",[1],"userinfo { background-color: #FFFFFF; width: 99%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }\n.",[1],"dangerView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 33%; margin-top: 5px; background-color: #FFFFFF; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerIcon { width: ",[0,80],"; height: ",[0,80],"; margin-top: ",[0,50],"; }\n.",[1],"subView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; margin-top: 10px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerText { width: 100%; font-size: 16; color: #898989; text-align: center; margin-bottom: ",[0,50],"; }\n",],undefined,{path:"./pages/user/user.wxss"});    
 __wxAppCode__['pages/user/user.wxml']=$gwx('./pages/user/user.wxml');
 
 ;var __pageFrameEndTime__ = Date.now();

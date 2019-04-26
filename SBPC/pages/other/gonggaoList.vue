@@ -59,26 +59,9 @@
 			},
 			// 获取公告详情
 			getDetail: function(item) {
-				var that = this;
-				let param = {
-					userid: that.userInfo.userid,
-					recordid: item.recordid
-				}
-				request.requestLoading(config.getGgDetail, param, '正在获取公告详情', 
-					function(res){
-						// that.ggList = res.data;
-						uni.navigateTo({
-							url: '../common/webView?src=' + config.host + item.src
-						})
-					},function(){
-						uni.showToast({
-							icon: 'none',
-							title: '获取失败'
-						});
-					}, function(){
-						
-					}
-				);
+				uni.navigateTo({
+					url: '../common/webView?src=' + config.host + item.src
+				})
 			},
 			// 格式化接口数据，让数据变成组件需要的内容
 			formatData(list){
