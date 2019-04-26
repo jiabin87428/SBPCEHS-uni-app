@@ -2,8 +2,8 @@
 	<view class="baseView">
 		<view class="cellInfoView">
 			<uni-list>
-				<block v-for="(index, item) in ggList" :key="index">
-					<uni-list-item :title="item.notesobject" :subnote="item.createtime" :show-arrow="true" @click="getDetail(item)"></uni-list-item>
+				<block v-for="(item, index) in ggList" :key="index">
+					<uni-list-item :title="item.title" :note="item.source" :show-arrow="true" @click="getDetail(item)"></uni-list-item>
 				</block>
 			</uni-list>
 		</view>
@@ -45,7 +45,8 @@
 				}
 				request.requestLoading(config.getGgList, param, '正在获取通知公告', 
 					function(res){
-						that.ggList = res.data;
+						// that.ggList = res.data;
+						that.formatData(res.data);
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -66,6 +67,9 @@
 				request.requestLoading(config.getGgDetail, param, '正在获取公告详情', 
 					function(res){
 						// that.ggList = res.data;
+						uni.navigateTo({
+							url: '../common/webView?src=' + config.host + item.src
+						})
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -75,6 +79,23 @@
 						
 					}
 				);
+			},
+			// 格式化接口数据，让数据变成组件需要的内容
+			formatData(list){
+				this.ggList = []
+				for(var i = 0; i < list.length; i++){					
+					var obj = {};
+					var item = list[i];
+					obj['title'] = item.notesubject;
+					obj['source'] = item.createtime;
+					obj['datetime'] = '';
+					obj['instanceid'] = item.instanceid;
+					obj['recordid'] = item.recordid;
+					obj['article_type'] = 0;
+					obj['comment_count'] = '';
+					obj['src'] = item.src;
+					this.ggList.push(obj);
+				}
 			},
 		}
 	}

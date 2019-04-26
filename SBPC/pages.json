@@ -152,6 +152,11 @@
 			"style": {
 				"navigationBarTitleText": "通知公告列表"
 			}
+		}, {
+			"path": "pages/common/webView",
+			"style": {
+				"navigationBarTitleText": "网页"
+			}
 		}
     ],
     "tabBar": {

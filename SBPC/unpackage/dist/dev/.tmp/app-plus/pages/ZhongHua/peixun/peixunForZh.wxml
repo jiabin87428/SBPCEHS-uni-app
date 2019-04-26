@@ -1,2 +1,0 @@
-<import src="./peixunForZh.vue.wxml" />
-    <template is="5c07b1b0" data="{{ ...$root['0'], $root }}"/>

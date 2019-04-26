@@ -17,7 +17,8 @@
     "pages/common/selectedPersonPage",
     "pages/peixun/peixun",
     "pages/ceshi/ceshi",
-    "pages/gonggao/gonggaoList"
+    "pages/gonggao/gonggaoList",
+    "pages/common/webView"
   ],
   "subPackages": [],
   "window": {
