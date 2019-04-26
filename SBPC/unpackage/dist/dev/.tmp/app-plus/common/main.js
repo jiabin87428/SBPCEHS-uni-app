@@ -48,18 +48,6 @@ eval("__webpack_require__(/*! uni-pages */ \"../../../../../../Users/lijiabin/Do
 
 /***/ }),
 
-/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js":
-/*!*************************************************************************************************!*\
-  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n/**\n               * mini (~300 b) version for event-emitter.\n               */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true });\n\n/**\n                   * const ee = new OnFire();\n                   *\n                   * ee.on('click', () => {});\n                   *\n                   * ee.on('mouseover', () => {});\n                   *\n                   * ee.emit('click', 1, 2, 3);\n                   * ee.fire('mouseover', {}); // same with emit\n                   *\n                   * ee.off();\n                   */\n\nvar OnFire =\n/** @class */\nfunction () {\n  function OnFire() {\n    // 所有事件的监听器\n    this.es = {}; // cname of fire\n\n    this.emit = this.fire;\n  }\n\n  OnFire.prototype.on = function (eventName, cb, once) {\n    if (once === void 0) {\n      once = false;\n    }\n\n    if (!this.es[eventName]) {\n      this.es[eventName] = [];\n    }\n\n    this.es[eventName].push({\n      cb: cb,\n      once: once });\n\n  };\n\n  OnFire.prototype.once = function (eventName, cb) {\n    this.on(eventName, cb, true);\n  };\n\n  OnFire.prototype.fire = function (eventName) {\n    var params = [];\n\n    for (var _i = 1; _i < arguments.length; _i++) {\n      params[_i - 1] = arguments[_i];\n    }\n\n    var listeners = this.es[eventName] || [];\n\n    for (var i = 0; i < listeners.length; i++) {\n      var _a = listeners[i],\n      cb = _a.cb,\n      once = _a.once;\n      cb.apply(this, params);\n\n      if (once) {\n        listeners.splice(i, 1);\n        i--;\n      }\n    }\n  };\n\n  OnFire.prototype.off = function (eventName, cb) {\n    // clean all\n    if (eventName === undefined) {\n      this.es = {};\n    } else {\n      if (cb === undefined) {\n        // clean the eventName's listeners\n        delete this.es[eventName];\n      } else {\n        var listeners = this.es[eventName] || []; // clean the event and listener\n\n        for (var i = 0; i < listeners.length; i++) {\n          if (listeners[i].cb === cb) {\n            listeners.splice(i, 1);\n            i--;\n          }\n        }\n      }\n    }\n  };\n\n  OnFire.ver = \"2.0.0\";\n  return OnFire;\n}();\n\nexports.default = OnFire;\n\n//# sourceURL=uni-app:///node_modules/onfire.js/lib/index.js?1502");
-
-/***/ }),
-
 /***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/store/index.js":
 /*!****************************************************************************!*\
   !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/store/index.js ***!

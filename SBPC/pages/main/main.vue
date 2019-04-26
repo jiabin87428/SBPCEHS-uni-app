@@ -31,7 +31,7 @@
 			  <text class='dangerText'>隐患</text>
 			</view>
 		  </view>
-		  <view class='dangerView' @tap="jumpPage('')">
+		  <view class='dangerView' @tap="jumpPage('../other/charts')">
 			<image class="dangerIcon" src="../../static/assets/tj.png" mode="widthFix"></image>
 			<view class='subView'>
 			  <text class='dangerText'>统计</text>

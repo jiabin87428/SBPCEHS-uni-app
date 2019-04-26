@@ -1061,253 +1061,252 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'4508b5aa-default-4508b5aa-1'])
+Z([3,'idx'])
+Z([3,'logItem'])
+Z([[7],[3,'logList']])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'30c48a99'])
 Z([3,'5c0aa864-default-5c0aa864-8'])
 Z([3,'handleProxy'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[7],[3,'$k']])
 Z([1,'5c0aa864-0'])
-Z([3,'30c48a99'])
+Z(z[6])
 Z([3,'隐患描述'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-1'])
-Z(z[5])
+Z(z[6])
 Z([3,'隐患等级'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-2'])
-Z(z[5])
+Z(z[6])
 Z([3,'隐患后果'])
-Z(z[1])
+Z(z[8])
 Z([3,'_picker 5c0aa864'])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-3'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
 Z([3,'yhlx'])
 Z([[7],[3,'dangerType']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'隐患类型'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[8])
+Z(z[27])
+Z(z[10])
 Z([1,'5c0aa864-4'])
-Z(z[23])
+Z(z[30])
 Z([3,'date'])
 Z([[6],[[7],[3,'model']],[3,'zgqx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'整改期限'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[8])
+Z(z[27])
+Z(z[10])
 Z([1,'5c0aa864-5'])
-Z(z[23])
+Z(z[30])
 Z([3,'yhly'])
 Z([[7],[3,'dangerSource']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'隐患来源'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-6'])
-Z(z[5])
+Z(z[6])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'false'])
 Z([3,'发起人'])
 Z([3,'5c0aa864-default-5c0aa864-14'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-10'])
-Z(z[5])
+Z(z[6])
 Z([3,'隐患因素'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-11'])
-Z(z[5])
+Z(z[6])
 Z([3,'原因分析'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-12'])
-Z(z[5])
+Z(z[6])
 Z([3,'整改情况'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[8])
+Z(z[27])
+Z(z[10])
 Z([1,'5c0aa864-13'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
-Z(z[34])
+Z(z[41])
 Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'完成日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
+Z(z[6])
+Z(z[64])
 Z([3,'整改人'])
 Z([3,'5c0aa864-default-5c0aa864-18'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-17'])
-Z(z[5])
+Z(z[6])
 Z([3,'完成情况'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
+Z(z[6])
+Z(z[64])
 Z([3,'确认人'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[8])
+Z(z[27])
+Z(z[10])
 Z([1,'5c0aa864-18'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
-Z(z[34])
+Z(z[41])
 Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'填报日期'])
 Z([3,'5c0aa864-default-5c0aa864-20'])
 Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-22'])
-Z(z[5])
+Z(z[6])
 Z([3,'审批意见'])
-Z([3,'4508b5aa-default-4508b5aa-1'])
-Z([3,'idx'])
-Z([3,'logItem'])
-Z([[7],[3,'logList']])
-Z(z[122])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
 Z([3,'609973d6-default-609973d6-5'])
-Z(z[1])
+Z(z[8])
 Z([3,'_picker 609973d6'])
-Z(z[3])
+Z(z[10])
 Z([1,'609973d6-0'])
 Z([[2,'!'],[[7],[3,'editable']]])
 Z([3,'jclx'])
 Z([[7],[3,'checkTypes']])
 Z([3,'dictvalue'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查类型'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
+Z(z[6])
+Z(z[64])
 Z([3,'检查人'])
-Z(z[1])
+Z(z[8])
 Z(z[130])
-Z(z[3])
+Z(z[10])
 Z([1,'609973d6-1'])
 Z(z[133])
-Z(z[34])
+Z(z[41])
 Z([[6],[[7],[3,'model']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查日期'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'609973d6-2'])
-Z(z[5])
+Z(z[6])
 Z([3,'检查组成员'])
-Z(z[1])
+Z(z[8])
 Z(z[130])
-Z(z[3])
+Z(z[10])
 Z([1,'609973d6-3'])
 Z(z[133])
 Z([3,'mb'])
 Z([[7],[3,'selectedModule']])
 Z([3,'mbmc'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查模板'])
 Z([3,'609973d6-default-609973d6-10'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'model']],[3,'jcjlList']])
 Z(z[172])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
-Z(z[5])
+Z(z[6])
 Z([3,'true'])
-Z([3,'b8ab4c7c-default-b8ab4c7c-1'])
+Z([3,'f40cc204-default-f40cc204-1'])
 Z(z[172])
 Z(z[173])
 Z([[7],[3,'ggList']])
 Z(z[172])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'b8ab4c7c-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'b8ab4c7c-0-'],[[7],[3,'index']]])
-Z(z[5])
-Z([3,'77ae7fa4-default-77ae7fa4-3'])
-Z(z[1])
-Z([3,'_picker 77ae7fa4'])
-Z(z[3])
-Z([1,'77ae7fa4-0'])
-Z([3,'ifwt'])
-Z([[7],[3,'typeArray']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'检查结论'])
-Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'77ae7fa4-1'])
-Z([3,'wtms'])
-Z(z[5])
-Z([3,'问题描述'])
-Z(z[202])
-Z(z[1])
-Z(z[194])
-Z(z[3])
-Z([1,'77ae7fa4-2'])
-Z([3,'zgqk'])
-Z([[7],[3,'rectifyTypes']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'检查方式'])
-Z([3,'f40cc204-default-f40cc204-1'])
-Z(z[172])
-Z(z[173])
-Z(z[185])
-Z(z[172])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
-Z(z[5])
+Z(z[6])
 Z([3,'c4edb036-default-c4edb036-1'])
 Z(z[172])
 Z(z[173])
 Z(z[185])
 Z(z[172])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
-Z(z[5])
+Z(z[6])
 Z([3,'5ff9ee88-default-5ff9ee88-1'])
 Z(z[172])
 Z(z[173])
 Z(z[185])
 Z(z[172])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
+Z([3,'92b6b9ae-default-92b6b9ae-1'])
+Z(z[8])
+Z([3,'_picker 92b6b9ae'])
+Z(z[10])
+Z([1,'92b6b9ae-0'])
+Z([[7],[3,'typeData']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'92b6b9ae-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'统计类型'])
+Z([3,'77ae7fa4-default-77ae7fa4-3'])
+Z(z[8])
+Z([3,'_picker 77ae7fa4'])
+Z(z[10])
+Z([1,'77ae7fa4-0'])
+Z([3,'ifwt'])
+Z([[7],[3,'typeArray']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'检查结论'])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'77ae7fa4-1'])
+Z([3,'wtms'])
+Z(z[6])
+Z([3,'问题描述'])
+Z(z[228])
+Z(z[8])
+Z(z[220])
+Z(z[10])
+Z([1,'77ae7fa4-2'])
+Z([3,'zgqk'])
+Z([[7],[3,'rectifyTypes']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'检查方式'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1775,23 +1774,6 @@ function gz$gwx_30(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_30)return __WXML_GLOBAL__.ops_cached.$gwx_30
 __WXML_GLOBAL__.ops_cached.$gwx_30=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'b8ab4c7c'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'b8ab4c7c-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'b8ab4c7c-default-b8ab4c7c-1']]])
-Z([3,'3b6bb3ad'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_30);return __WXML_GLOBAL__.ops_cached.$gwx_30
-}
-function gz$gwx_31(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_31)return __WXML_GLOBAL__.ops_cached.$gwx_31
-__WXML_GLOBAL__.ops_cached.$gwx_31=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'b8ab4c7c'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_31);return __WXML_GLOBAL__.ops_cached.$gwx_31
-}
-function gz$gwx_32(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_32)return __WXML_GLOBAL__.ops_cached.$gwx_32
-__WXML_GLOBAL__.ops_cached.$gwx_32=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'4ef7e761'])
 Z([3,'handleProxy'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'4ef7e761-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
@@ -1801,19 +1783,19 @@ Z([3,'7dcb1efb'])
 Z([3,'请输入域名'])
 Z([3,'text'])
 Z([[7],[3,'host']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_32);return __WXML_GLOBAL__.ops_cached.$gwx_32
+})(__WXML_GLOBAL__.ops_cached.$gwx_30);return __WXML_GLOBAL__.ops_cached.$gwx_30
 }
-function gz$gwx_33(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_33)return __WXML_GLOBAL__.ops_cached.$gwx_33
-__WXML_GLOBAL__.ops_cached.$gwx_33=[];
+function gz$gwx_31(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_31)return __WXML_GLOBAL__.ops_cached.$gwx_31
+__WXML_GLOBAL__.ops_cached.$gwx_31=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'4ef7e761'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_33);return __WXML_GLOBAL__.ops_cached.$gwx_33
+})(__WXML_GLOBAL__.ops_cached.$gwx_31);return __WXML_GLOBAL__.ops_cached.$gwx_31
 }
-function gz$gwx_34(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_34)return __WXML_GLOBAL__.ops_cached.$gwx_34
-__WXML_GLOBAL__.ops_cached.$gwx_34=[];
+function gz$gwx_32(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_32)return __WXML_GLOBAL__.ops_cached.$gwx_32
+__WXML_GLOBAL__.ops_cached.$gwx_32=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'2d8d4fae'])
 Z([3,'_view 2d8d4fae input-group'])
@@ -1833,6 +1815,21 @@ Z(z[6])
 Z([3,'请输入密码'])
 Z([3,'password'])
 Z([[7],[3,'password']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_32);return __WXML_GLOBAL__.ops_cached.$gwx_32
+}
+function gz$gwx_33(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_33)return __WXML_GLOBAL__.ops_cached.$gwx_33
+__WXML_GLOBAL__.ops_cached.$gwx_33=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'2d8d4fae'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_33);return __WXML_GLOBAL__.ops_cached.$gwx_33
+}
+function gz$gwx_34(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_34)return __WXML_GLOBAL__.ops_cached.$gwx_34
+__WXML_GLOBAL__.ops_cached.$gwx_34=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'00cb397a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_34);return __WXML_GLOBAL__.ops_cached.$gwx_34
 }
 function gz$gwx_35(){
@@ -1840,14 +1837,20 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_35)return __WXML_GLOBAL__.ops_cached.$gwx_35
 __WXML_GLOBAL__.ops_cached.$gwx_35=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'2d8d4fae'])
+Z([3,'00cb397a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_35);return __WXML_GLOBAL__.ops_cached.$gwx_35
 }
 function gz$gwx_36(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_36)return __WXML_GLOBAL__.ops_cached.$gwx_36
 __WXML_GLOBAL__.ops_cached.$gwx_36=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'00cb397a'])
+Z([3,'92b6b9ae'])
+Z([3,'_view 92b6b9ae qiun-columns'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'92b6b9ae-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'92b6b9ae-default-92b6b9ae-1']]])
+Z([3,'3b6bb3ad'])
+Z([3,'_view 92b6b9ae qiun-charts'])
+Z([[2,'=='],[[7],[3,'currentType']],[1,'隐患原因']])
+Z([[2,'=='],[[7],[3,'currentType']],[1,'隐患类型']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_36);return __WXML_GLOBAL__.ops_cached.$gwx_36
 }
 function gz$gwx_37(){
@@ -1855,7 +1858,7 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_37)return __WXML_GLOBAL__.ops_cached.$gwx_37
 __WXML_GLOBAL__.ops_cached.$gwx_37=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'00cb397a'])
+Z([3,'92b6b9ae'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_37);return __WXML_GLOBAL__.ops_cached.$gwx_37
 }
 function gz$gwx_38(){
@@ -2024,7 +2027,45 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/gonggao/gonggaoList.vue.wxml','./pages/gonggao/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/charts.vue.wxml','./pages/other/charts.wxml','./charts.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':4508b5aa-default-4508b5aa-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:6:47")
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:6:143")
+var cI=_oz(z,6,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,5,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],6,219)
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,3,xC,e,s,gg,oB,'logItem','idx','idx')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':5c0aa864-default-5c0aa864-8'
@@ -2035,127 +2076,127 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:6:47")
-var xC=_oz(z,5,e,s,gg)
+cs.push("./common/slots.wxml:template:8:47")
+var xC=_oz(z,12,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+var fE=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],6,214)
+else _w(xC,x[0],8,214)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:6:237")
-var hG=_oz(z,11,e,s,gg)
+cs.push("./common/slots.wxml:template:8:237")
+var hG=_oz(z,18,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,8,e,s,gg) || {}
+var cI=_1z(z,15,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],6,404)
+else _w(hG,x[0],8,404)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:6:427")
-var lK=_oz(z,17,e,s,gg)
+cs.push("./common/slots.wxml:template:8:427")
+var lK=_oz(z,24,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,14,e,s,gg) || {}
+var tM=_1z(z,21,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],6,594)
+else _w(lK,x[0],8,594)
 cs.pop()
-cs.push("./common/slots.wxml:picker:6:617")
-var eN=_mz(z,'picker',['bindchange',19,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:617")
+var eN=_mz(z,'picker',['bindchange',26,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:6:806")
-var oP=_oz(z,27,e,s,gg)
+cs.push("./common/slots.wxml:template:8:806")
+var oP=_oz(z,34,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,26,e,s,gg) || {}
+var oR=_1z(z,33,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],6,898)
+else _w(oP,x[0],8,898)
 cs.pop()
 cs.pop()
 _(r,eN)
-cs.push("./common/slots.wxml:picker:6:930")
-var fS=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:930")
+var fS=_mz(z,'picker',['bindchange',36,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:6:1121")
-var hU=_oz(z,37,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1121")
+var hU=_oz(z,44,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
-var cW=_1z(z,36,e,s,gg) || {}
+var cW=_1z(z,43,e,s,gg) || {}
 var cur_globalf=gg.f
 cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],6,1213)
+else _w(hU,x[0],8,1213)
 cs.pop()
 cs.pop()
 _(r,fS)
-cs.push("./common/slots.wxml:picker:6:1245")
-var oX=_mz(z,'picker',['bindchange',39,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:1245")
+var oX=_mz(z,'picker',['bindchange',46,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:6:1436")
-var aZ=_oz(z,47,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1436")
+var aZ=_oz(z,54,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
-var e2=_1z(z,46,e,s,gg) || {}
+var e2=_1z(z,53,e,s,gg) || {}
 var cur_globalf=gg.f
 lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],6,1528)
+else _w(aZ,x[0],8,1528)
 cs.pop()
 cs.pop()
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:6:1560")
-var o4=_oz(z,53,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1560")
+var o4=_oz(z,60,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
-var o6=_1z(z,50,e,s,gg) || {}
+var o6=_1z(z,57,e,s,gg) || {}
 var cur_globalf=gg.f
 b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],6,1727)
+else _w(o4,x[0],8,1727)
 cs.pop()
 var f7=_v()
 _(r,f7)
-cs.push("./common/slots.wxml:template:6:1750")
-var c8=_oz(z,56,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1750")
+var c8=_oz(z,63,e,s,gg)
 var h9=_gd(x[0],c8,e_,d_)
 if(h9){
-var o0=_1z(z,55,e,s,gg) || {}
+var o0=_1z(z,62,e,s,gg) || {}
 var cur_globalf=gg.f
 f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[0],6,1858)
+else _w(c8,x[0],8,1858)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2174,77 +2215,77 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:8:48")
-var xC=_oz(z,64,e,s,gg)
+cs.push("./common/slots.wxml:template:10:48")
+var xC=_oz(z,71,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,61,e,s,gg) || {}
+var fE=_1z(z,68,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],8,216)
+else _w(xC,x[0],10,216)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:8:239")
-var hG=_oz(z,70,e,s,gg)
+cs.push("./common/slots.wxml:template:10:239")
+var hG=_oz(z,77,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,67,e,s,gg) || {}
+var cI=_1z(z,74,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],8,408)
+else _w(hG,x[0],10,408)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:8:431")
-var lK=_oz(z,76,e,s,gg)
+cs.push("./common/slots.wxml:template:10:431")
+var lK=_oz(z,83,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,73,e,s,gg) || {}
+var tM=_1z(z,80,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],8,600)
+else _w(lK,x[0],10,600)
 cs.pop()
-cs.push("./common/slots.wxml:picker:8:623")
-var eN=_mz(z,'picker',['bindchange',78,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:10:623")
+var eN=_mz(z,'picker',['bindchange',85,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:8:817")
-var oP=_oz(z,86,e,s,gg)
+cs.push("./common/slots.wxml:template:10:817")
+var oP=_oz(z,93,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,85,e,s,gg) || {}
+var oR=_1z(z,92,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],8,910)
+else _w(oP,x[0],10,910)
 cs.pop()
 cs.pop()
 _(r,eN)
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:8:942")
-var cT=_oz(z,89,e,s,gg)
+cs.push("./common/slots.wxml:template:10:942")
+var cT=_oz(z,96,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,88,e,s,gg) || {}
+var oV=_1z(z,95,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],8,1051)
+else _w(cT,x[0],10,1051)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2263,47 +2304,47 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:10:48")
-var xC=_oz(z,97,e,s,gg)
+cs.push("./common/slots.wxml:template:12:48")
+var xC=_oz(z,104,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,94,e,s,gg) || {}
+var fE=_1z(z,101,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],10,217)
+else _w(xC,x[0],12,217)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:10:240")
-var hG=_oz(z,100,e,s,gg)
+cs.push("./common/slots.wxml:template:12:240")
+var hG=_oz(z,107,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,99,e,s,gg) || {}
+var cI=_1z(z,106,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],10,349)
+else _w(hG,x[0],12,349)
 cs.pop()
-cs.push("./common/slots.wxml:picker:10:372")
-var oJ=_mz(z,'picker',['bindchange',103,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:12:372")
+var oJ=_mz(z,'picker',['bindchange',110,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:10:567")
-var aL=_oz(z,111,e,s,gg)
+cs.push("./common/slots.wxml:template:12:567")
+var aL=_oz(z,118,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,110,e,s,gg) || {}
+var eN=_1z(z,117,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],10,660)
+else _w(aL,x[0],12,660)
 cs.pop()
 cs.pop()
 _(r,oJ)
@@ -2324,63 +2365,25 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-if(_oz(z,114,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:12:48")
+if(_oz(z,121,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:14:48")
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:12:48")
-var oD=_oz(z,119,e,s,gg)
+cs.push("./common/slots.wxml:template:14:48")
+var oD=_oz(z,126,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,116,e,s,gg) || {}
+var cF=_1z(z,123,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],12,278)
+else _w(oD,x[0],14,278)
 cs.pop()
 cs.pop()
 }
 oB.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':4508b5aa-default-4508b5aa-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:14:47")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:14:143")
-var cI=_oz(z,127,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,126,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],14,219)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,124,xC,e,s,gg,oB,'logItem','idx','idx')
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -2523,9 +2526,9 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["b8ab4c7c-default-b8ab4c7c-1"]=function(e,s,r,gg){
+d_[x[0]]["f40cc204-default-f40cc204-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':b8ab4c7c-default-b8ab4c7c-1'
+var b=x[0]+':f40cc204-default-f40cc204-1'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -2561,123 +2564,6 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-cs.push("./common/slots.wxml:picker:22:47")
-var oD=_mz(z,'picker',['bindchange',193,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var fE=_v()
-_(oD,fE)
-cs.push("./common/slots.wxml:template:22:190")
-var cF=_oz(z,200,e,s,gg)
-var hG=_gd(x[0],cF,e_,d_)
-if(hG){
-var oH=_1z(z,199,e,s,gg) || {}
-var cur_globalf=gg.f
-fE.wxXCkey=3
-hG(oH,oH,fE,gg)
-gg.f=cur_globalf
-}
-else _w(cF,x[0],22,282)
-cs.pop()
-cs.pop()
-_(r,oD)
-var oB=_v()
-_(r,oB)
-if(_oz(z,202,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:22:314")
-var cI=_v()
-_(oB,cI)
-cs.push("./common/slots.wxml:template:22:314")
-var oJ=_oz(z,208,e,s,gg)
-var lK=_gd(x[0],oJ,e_,d_)
-if(lK){
-var aL=_1z(z,204,e,s,gg) || {}
-var cur_globalf=gg.f
-cI.wxXCkey=3
-lK(aL,aL,cI,gg)
-gg.f=cur_globalf
-}
-else _w(oJ,x[0],22,520)
-cs.pop()
-cs.pop()
-}
-var xC=_v()
-_(r,xC)
-if(_oz(z,210,e,s,gg)){xC.wxVkey=1
-cs.push("./common/slots.wxml:picker:22:543")
-cs.push("./common/slots.wxml:picker:22:543")
-var tM=_mz(z,'picker',['bindchange',211,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var eN=_v()
-_(tM,eN)
-cs.push("./common/slots.wxml:template:22:718")
-var bO=_oz(z,218,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,217,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],22,810)
-cs.pop()
-cs.pop()
-_(xC,tM)
-cs.pop()
-}
-oB.wxXCkey=1
-xC.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["f40cc204-default-f40cc204-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':f40cc204-default-f40cc204-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:24:47")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:24:145")
-var cI=_oz(z,229,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,226,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],24,305)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,223,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
 d_[x[0]]["c4edb036-default-c4edb036-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':c4edb036-default-c4edb036-1'
@@ -2688,26 +2574,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:block:26:47")
+cs.push("./common/slots.wxml:block:22:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:26:145")
-var cI=_oz(z,239,fE,oD,gg)
+cs.push("./common/slots.wxml:template:22:145")
+var cI=_oz(z,201,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,236,fE,oD,gg) || {}
+var lK=_1z(z,198,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],26,305)
+else _w(cI,x[0],22,305)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,233,xC,e,s,gg,oB,'item','index','index')
+_2z(z,195,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2726,27 +2612,139 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:block:28:47")
+cs.push("./common/slots.wxml:block:24:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:28:145")
-var cI=_oz(z,246,fE,oD,gg)
+cs.push("./common/slots.wxml:template:24:145")
+var cI=_oz(z,208,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,245,fE,oD,gg) || {}
+var lK=_1z(z,207,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],28,223)
+else _w(cI,x[0],24,223)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,243,xC,e,s,gg,oB,'item','index','index')
+_2z(z,205,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["92b6b9ae-default-92b6b9ae-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':92b6b9ae-default-92b6b9ae-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:26:47")
+var oB=_mz(z,'picker',['bindchange',210,'class',1,'data-comkey',2,'data-eventid',3,'range',4],[],e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./common/slots.wxml:template:26:179")
+var oD=_oz(z,216,e,s,gg)
+var fE=_gd(x[0],oD,e_,d_)
+if(fE){
+var cF=_1z(z,215,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
+}
+else _w(oD,x[0],26,271)
+cs.pop()
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:28:47")
+var oD=_mz(z,'picker',['bindchange',219,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var fE=_v()
+_(oD,fE)
+cs.push("./common/slots.wxml:template:28:190")
+var cF=_oz(z,226,e,s,gg)
+var hG=_gd(x[0],cF,e_,d_)
+if(hG){
+var oH=_1z(z,225,e,s,gg) || {}
+var cur_globalf=gg.f
+fE.wxXCkey=3
+hG(oH,oH,fE,gg)
+gg.f=cur_globalf
+}
+else _w(cF,x[0],28,282)
+cs.pop()
+cs.pop()
+_(r,oD)
+var oB=_v()
+_(r,oB)
+if(_oz(z,228,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:28:314")
+var cI=_v()
+_(oB,cI)
+cs.push("./common/slots.wxml:template:28:314")
+var oJ=_oz(z,234,e,s,gg)
+var lK=_gd(x[0],oJ,e_,d_)
+if(lK){
+var aL=_1z(z,230,e,s,gg) || {}
+var cur_globalf=gg.f
+cI.wxXCkey=3
+lK(aL,aL,cI,gg)
+gg.f=cur_globalf
+}
+else _w(oJ,x[0],28,520)
+cs.pop()
+cs.pop()
+}
+var xC=_v()
+_(r,xC)
+if(_oz(z,236,e,s,gg)){xC.wxVkey=1
+cs.push("./common/slots.wxml:picker:28:543")
+cs.push("./common/slots.wxml:picker:28:543")
+var tM=_mz(z,'picker',['bindchange',237,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var eN=_v()
+_(tM,eN)
+cs.push("./common/slots.wxml:template:28:718")
+var bO=_oz(z,244,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,243,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],28,810)
+cs.pop()
+cs.pop()
+_(xC,tM)
+cs.pop()
+}
+oB.wxXCkey=1
+xC.wxXCkey=1
 }catch(err){
 p_[b]=false
 throw err
@@ -4479,27 +4477,27 @@ return r
 }
 e_[x[45]]={f:m28,j:[],i:[],ti:[x[46]],ic:[]}
 d_[x[47]]={}
-d_[x[47]]["b8ab4c7c"]=function(e,s,r,gg){
+d_[x[47]]["4ef7e761"]=function(e,s,r,gg){
 var z=gz$gwx_30()
-var b=x[47]+':b8ab4c7c'
+var b=x[47]+':4ef7e761'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/gonggao/gonggaoList.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/login/diyHost.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[47]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/gonggao/gonggaoList.vue.wxml:template:1:237")
-var xC=_oz(z,2,e,s,gg)
+cs.push("./pages/login/diyHost.vue.wxml:template:1:247")
+var xC=_oz(z,5,e,s,gg)
 var oD=_gd(x[47],xC,e_,d_)
 if(oD){
-var fE=_1z(z,1,e,s,gg) || {}
+var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[47],1,352)
+else _w(xC,x[47],1,471)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -4511,23 +4509,21 @@ return r
 var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
 var hSC=e_[x[47]].i
-_ai(hSC,x[1],e_,x[47],1,1)
-_ai(hSC,x[2],e_,x[47],1,61)
-hSC.pop()
+_ai(hSC,x[48],e_,x[47],1,1)
 hSC.pop()
 return r
 }
-e_[x[47]]={f:m29,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[48]]={}
+e_[x[47]]={f:m29,j:[],i:[],ti:[x[48]],ic:[]}
+d_[x[49]]={}
 var m30=function(e,s,r,gg){
 var z=gz$gwx_31()
-var cUC=e_[x[48]].i
-_ai(cUC,x[49],e_,x[48],1,1)
+var cUC=e_[x[49]].i
+_ai(cUC,x[50],e_,x[49],1,1)
 var oVC=_v()
 _(r,oVC)
-cs.push("./pages/gonggao/gonggaoList.wxml:template:2:6")
+cs.push("./pages/login/diyHost.wxml:template:2:6")
 var lWC=_oz(z,1,e,s,gg)
-var aXC=_gd(x[48],lWC,e_,d_)
+var aXC=_gd(x[49],lWC,e_,d_)
 if(aXC){
 var tYC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4535,35 +4531,54 @@ oVC.wxXCkey=3
 aXC(tYC,tYC,oVC,gg)
 gg.f=cur_globalf
 }
-else _w(lWC,x[48],2,18)
+else _w(lWC,x[49],2,18)
 cs.pop()
 cUC.pop()
 return r
 }
-e_[x[48]]={f:m30,j:[],i:[],ti:[x[49]],ic:[]}
-d_[x[50]]={}
-d_[x[50]]["4ef7e761"]=function(e,s,r,gg){
+e_[x[49]]={f:m30,j:[],i:[],ti:[x[50]],ic:[]}
+d_[x[51]]={}
+d_[x[51]]["2d8d4fae"]=function(e,s,r,gg){
 var z=gz$gwx_32()
-var b=x[50]+':4ef7e761'
+var b=x[51]+':2d8d4fae'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/login/diyHost.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[50]);return}
+gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[51]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-cs.push("./pages/login/diyHost.vue.wxml:template:1:247")
-var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[50],xC,e_,d_)
-if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+cs.push("./pages/login/login.vue.wxml:view:1:109")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./pages/login/login.vue.wxml:template:1:247")
+var oD=_oz(z,6,e,s,gg)
+var fE=_gd(x[51],oD,e_,d_)
+if(fE){
+var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[50],1,471)
+else _w(oD,x[51],1,474)
 cs.pop()
+var hG=_v()
+_(oB,hG)
+cs.push("./pages/login/login.vue.wxml:template:1:594")
+var oH=_oz(z,14,e,s,gg)
+var cI=_gd(x[51],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,11,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[51],1,822)
+cs.pop()
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -4573,12 +4588,12 @@ return r
 }
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
-var b1C=e_[x[50]].i
-_ai(b1C,x[51],e_,x[50],1,1)
+var b1C=e_[x[51]].i
+_ai(b1C,x[48],e_,x[51],1,1)
 b1C.pop()
 return r
 }
-e_[x[50]]={f:m31,j:[],i:[],ti:[x[51]],ic:[]}
+e_[x[51]]={f:m31,j:[],i:[],ti:[x[48]],ic:[]}
 d_[x[52]]={}
 var m32=function(e,s,r,gg){
 var z=gz$gwx_33()
@@ -4586,7 +4601,7 @@ var x3C=e_[x[52]].i
 _ai(x3C,x[53],e_,x[52],1,1)
 var o4C=_v()
 _(r,o4C)
-cs.push("./pages/login/diyHost.wxml:template:2:6")
+cs.push("./pages/login/login.wxml:template:2:6")
 var f5C=_oz(z,1,e,s,gg)
 var c6C=_gd(x[52],f5C,e_,d_)
 if(c6C){
@@ -4603,47 +4618,14 @@ return r
 }
 e_[x[52]]={f:m32,j:[],i:[],ti:[x[53]],ic:[]}
 d_[x[54]]={}
-d_[x[54]]["2d8d4fae"]=function(e,s,r,gg){
+d_[x[54]]["00cb397a"]=function(e,s,r,gg){
 var z=gz$gwx_34()
-var b=x[54]+':2d8d4fae'
+var b=x[54]+':00cb397a'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[54]);return}
 p_[b]=true
 try{
-cs.push("./pages/login/login.vue.wxml:view:1:109")
-var oB=_n('view')
-_rz(z,oB,'class',1,e,s,gg)
-var xC=_v()
-_(oB,xC)
-cs.push("./pages/login/login.vue.wxml:template:1:247")
-var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[54],oD,e_,d_)
-if(fE){
-var cF=_1z(z,3,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[54],1,474)
-cs.pop()
-var hG=_v()
-_(oB,hG)
-cs.push("./pages/login/login.vue.wxml:template:1:594")
-var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[54],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,11,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[54],1,822)
-cs.pop()
-cs.pop()
-_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -4653,44 +4635,79 @@ return r
 }
 var m33=function(e,s,r,gg){
 var z=gz$gwx_34()
-var c9C=e_[x[54]].i
-_ai(c9C,x[51],e_,x[54],1,1)
-c9C.pop()
 return r
 }
-e_[x[54]]={f:m33,j:[],i:[],ti:[x[51]],ic:[]}
+e_[x[54]]={f:m33,j:[],i:[],ti:[],ic:[]}
 d_[x[55]]={}
 var m34=function(e,s,r,gg){
 var z=gz$gwx_35()
-var lAD=e_[x[55]].i
-_ai(lAD,x[56],e_,x[55],1,1)
-var aBD=_v()
-_(r,aBD)
-cs.push("./pages/login/login.wxml:template:2:6")
-var tCD=_oz(z,1,e,s,gg)
-var eDD=_gd(x[55],tCD,e_,d_)
-if(eDD){
-var bED=_1z(z,0,e,s,gg) || {}
+var o0C=e_[x[55]].i
+_ai(o0C,x[56],e_,x[55],1,1)
+var lAD=_v()
+_(r,lAD)
+cs.push("./pages/main/main.wxml:template:2:6")
+var aBD=_oz(z,1,e,s,gg)
+var tCD=_gd(x[55],aBD,e_,d_)
+if(tCD){
+var eDD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-aBD.wxXCkey=3
-eDD(bED,bED,aBD,gg)
+lAD.wxXCkey=3
+tCD(eDD,eDD,lAD,gg)
 gg.f=cur_globalf
 }
-else _w(tCD,x[55],2,18)
+else _w(aBD,x[55],2,18)
 cs.pop()
-lAD.pop()
+o0C.pop()
 return r
 }
 e_[x[55]]={f:m34,j:[],i:[],ti:[x[56]],ic:[]}
 d_[x[57]]={}
-d_[x[57]]["00cb397a"]=function(e,s,r,gg){
+d_[x[57]]["92b6b9ae"]=function(e,s,r,gg){
 var z=gz$gwx_36()
-var b=x[57]+':00cb397a'
+var b=x[57]+':92b6b9ae'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/other/charts.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[57]);return}
 p_[b]=true
 try{
+cs.push("./pages/other/charts.vue.wxml:view:1:157")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./pages/other/charts.vue.wxml:template:1:300")
+var oD=_oz(z,3,e,s,gg)
+var fE=_gd(x[57],oD,e_,d_)
+if(fE){
+var cF=_1z(z,2,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
+}
+else _w(oD,x[57],1,415)
+cs.pop()
+cs.push("./pages/other/charts.vue.wxml:view:1:611")
+var hG=_n('view')
+_rz(z,hG,'class',4,e,s,gg)
+var oH=_v()
+_(hG,oH)
+if(_oz(z,5,e,s,gg)){oH.wxVkey=1
+cs.push("./pages/other/charts.vue.wxml:block:1:652")
+cs.pop()
+}
+var cI=_v()
+_(hG,cI)
+if(_oz(z,6,e,s,gg)){cI.wxVkey=1
+cs.push("./pages/other/charts.vue.wxml:block:1:795")
+cs.pop()
+}
+oH.wxXCkey=1
+cI.wxXCkey=1
+cs.pop()
+_(oB,hG)
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -4700,9 +4717,14 @@ return r
 }
 var m35=function(e,s,r,gg){
 var z=gz$gwx_36()
+var oFD=e_[x[57]].i
+_ai(oFD,x[1],e_,x[57],1,1)
+_ai(oFD,x[2],e_,x[57],1,61)
+oFD.pop()
+oFD.pop()
 return r
 }
-e_[x[57]]={f:m35,j:[],i:[],ti:[],ic:[]}
+e_[x[57]]={f:m35,j:[],i:[],ti:[x[1],x[2]],ic:[]}
 d_[x[58]]={}
 var m36=function(e,s,r,gg){
 var z=gz$gwx_37()
@@ -4710,7 +4732,7 @@ var oHD=e_[x[58]].i
 _ai(oHD,x[59],e_,x[58],1,1)
 var fID=_v()
 _(r,fID)
-cs.push("./pages/main/main.wxml:template:2:6")
+cs.push("./pages/other/charts.wxml:template:2:6")
 var cJD=_oz(z,1,e,s,gg)
 var hKD=_gd(x[58],cJD,e_,d_)
 if(hKD){
@@ -4770,7 +4792,7 @@ d_[x[61]]={}
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
 var aPD=e_[x[61]].i
-_ai(aPD,x[49],e_,x[61],1,1)
+_ai(aPD,x[62],e_,x[61],1,1)
 var tQD=_v()
 _(r,tQD)
 cs.push("./pages/other/gonggaoList.wxml:template:2:6")
@@ -4788,21 +4810,21 @@ cs.pop()
 aPD.pop()
 return r
 }
-e_[x[61]]={f:m38,j:[],i:[],ti:[x[49]],ic:[]}
-d_[x[62]]={}
-d_[x[62]]["c4edb036"]=function(e,s,r,gg){
+e_[x[61]]={f:m38,j:[],i:[],ti:[x[62]],ic:[]}
+d_[x[63]]={}
+d_[x[63]]["c4edb036"]=function(e,s,r,gg){
 var z=gz$gwx_40()
-var b=x[62]+':c4edb036'
+var b=x[63]+':c4edb036'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/other/newsList.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[62]);return}
+if(p_[b]){_wl(b,x[63]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/other/newsList.vue.wxml:template:1:237")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[62],xC,e_,d_)
+var oD=_gd(x[63],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4810,7 +4832,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[62],1,352)
+else _w(xC,x[63],1,352)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -4821,24 +4843,24 @@ return r
 }
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
-var oVD=e_[x[62]].i
-_ai(oVD,x[1],e_,x[62],1,1)
-_ai(oVD,x[2],e_,x[62],1,61)
+var oVD=e_[x[63]].i
+_ai(oVD,x[1],e_,x[63],1,1)
+_ai(oVD,x[2],e_,x[63],1,61)
 oVD.pop()
 oVD.pop()
 return r
 }
-e_[x[62]]={f:m39,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[63]]={}
+e_[x[63]]={f:m39,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[64]]={}
 var m40=function(e,s,r,gg){
 var z=gz$gwx_41()
-var cXD=e_[x[63]].i
-_ai(cXD,x[64],e_,x[63],1,1)
+var cXD=e_[x[64]].i
+_ai(cXD,x[65],e_,x[64],1,1)
 var hYD=_v()
 _(r,hYD)
 cs.push("./pages/other/newsList.wxml:template:2:6")
 var oZD=_oz(z,1,e,s,gg)
-var c1D=_gd(x[63],oZD,e_,d_)
+var c1D=_gd(x[64],oZD,e_,d_)
 if(c1D){
 var o2D=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4846,26 +4868,26 @@ hYD.wxXCkey=3
 c1D(o2D,o2D,hYD,gg)
 gg.f=cur_globalf
 }
-else _w(oZD,x[63],2,18)
+else _w(oZD,x[64],2,18)
 cs.pop()
 cXD.pop()
 return r
 }
-e_[x[63]]={f:m40,j:[],i:[],ti:[x[64]],ic:[]}
-d_[x[65]]={}
-d_[x[65]]["5ff9ee88"]=function(e,s,r,gg){
+e_[x[64]]={f:m40,j:[],i:[],ti:[x[65]],ic:[]}
+d_[x[66]]={}
+d_[x[66]]["5ff9ee88"]=function(e,s,r,gg){
 var z=gz$gwx_42()
-var b=x[65]+':5ff9ee88'
+var b=x[66]+':5ff9ee88'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/other/pointRank.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[65]);return}
+if(p_[b]){_wl(b,x[66]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/other/pointRank.vue.wxml:template:1:237")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[65],xC,e_,d_)
+var oD=_gd(x[66],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4873,7 +4895,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[65],1,352)
+else _w(xC,x[66],1,352)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -4884,24 +4906,24 @@ return r
 }
 var m41=function(e,s,r,gg){
 var z=gz$gwx_42()
-var a4D=e_[x[65]].i
-_ai(a4D,x[1],e_,x[65],1,1)
-_ai(a4D,x[2],e_,x[65],1,61)
+var a4D=e_[x[66]].i
+_ai(a4D,x[1],e_,x[66],1,1)
+_ai(a4D,x[2],e_,x[66],1,61)
 a4D.pop()
 a4D.pop()
 return r
 }
-e_[x[65]]={f:m41,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[66]]={}
+e_[x[66]]={f:m41,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[67]]={}
 var m42=function(e,s,r,gg){
 var z=gz$gwx_43()
-var e6D=e_[x[66]].i
-_ai(e6D,x[67],e_,x[66],1,1)
+var e6D=e_[x[67]].i
+_ai(e6D,x[68],e_,x[67],1,1)
 var b7D=_v()
 _(r,b7D)
 cs.push("./pages/other/pointRank.wxml:template:2:6")
 var o8D=_oz(z,1,e,s,gg)
-var x9D=_gd(x[66],o8D,e_,d_)
+var x9D=_gd(x[67],o8D,e_,d_)
 if(x9D){
 var o0D=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4909,19 +4931,19 @@ b7D.wxXCkey=3
 x9D(o0D,o0D,b7D,gg)
 gg.f=cur_globalf
 }
-else _w(o8D,x[66],2,18)
+else _w(o8D,x[67],2,18)
 cs.pop()
 e6D.pop()
 return r
 }
-e_[x[66]]={f:m42,j:[],i:[],ti:[x[67]],ic:[]}
-d_[x[68]]={}
-d_[x[68]]["289ecc0c"]=function(e,s,r,gg){
+e_[x[67]]={f:m42,j:[],i:[],ti:[x[68]],ic:[]}
+d_[x[69]]={}
+d_[x[69]]["289ecc0c"]=function(e,s,r,gg){
 var z=gz$gwx_44()
-var b=x[68]+':289ecc0c'
+var b=x[69]+':289ecc0c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/peixun/peixun.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[68]);return}
+if(p_[b]){_wl(b,x[69]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -4935,17 +4957,17 @@ var m43=function(e,s,r,gg){
 var z=gz$gwx_44()
 return r
 }
-e_[x[68]]={f:m43,j:[],i:[],ti:[],ic:[]}
-d_[x[69]]={}
+e_[x[69]]={f:m43,j:[],i:[],ti:[],ic:[]}
+d_[x[70]]={}
 var m44=function(e,s,r,gg){
 var z=gz$gwx_45()
-var hCE=e_[x[69]].i
-_ai(hCE,x[70],e_,x[69],1,1)
+var hCE=e_[x[70]].i
+_ai(hCE,x[71],e_,x[70],1,1)
 var oDE=_v()
 _(r,oDE)
 cs.push("./pages/peixun/peixun.wxml:template:2:6")
 var cEE=_oz(z,1,e,s,gg)
-var oFE=_gd(x[69],cEE,e_,d_)
+var oFE=_gd(x[70],cEE,e_,d_)
 if(oFE){
 var lGE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4953,26 +4975,26 @@ oDE.wxXCkey=3
 oFE(lGE,lGE,oDE,gg)
 gg.f=cur_globalf
 }
-else _w(cEE,x[69],2,18)
+else _w(cEE,x[70],2,18)
 cs.pop()
 hCE.pop()
 return r
 }
-e_[x[69]]={f:m44,j:[],i:[],ti:[x[70]],ic:[]}
-d_[x[71]]={}
-d_[x[71]]["6cbf6956"]=function(e,s,r,gg){
+e_[x[70]]={f:m44,j:[],i:[],ti:[x[71]],ic:[]}
+d_[x[72]]={}
+d_[x[72]]["6cbf6956"]=function(e,s,r,gg){
 var z=gz$gwx_46()
-var b=x[71]+':6cbf6956'
+var b=x[72]+':6cbf6956'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[71]);return}
+if(p_[b]){_wl(b,x[72]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
 var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[71],xC,e_,d_)
+var oD=_gd(x[72],xC,e_,d_)
 if(oD){
 var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4980,7 +5002,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[71],1,465)
+else _w(xC,x[72],1,465)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -4991,22 +5013,22 @@ return r
 }
 var m45=function(e,s,r,gg){
 var z=gz$gwx_46()
-var tIE=e_[x[71]].i
-_ai(tIE,x[51],e_,x[71],1,1)
+var tIE=e_[x[72]].i
+_ai(tIE,x[48],e_,x[72],1,1)
 tIE.pop()
 return r
 }
-e_[x[71]]={f:m45,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[72]]={}
+e_[x[72]]={f:m45,j:[],i:[],ti:[x[48]],ic:[]}
+d_[x[73]]={}
 var m46=function(e,s,r,gg){
 var z=gz$gwx_47()
-var bKE=e_[x[72]].i
-_ai(bKE,x[73],e_,x[72],1,1)
+var bKE=e_[x[73]].i
+_ai(bKE,x[74],e_,x[73],1,1)
 var oLE=_v()
 _(r,oLE)
 cs.push("./pages/pwd/pwd.wxml:template:2:6")
 var xME=_oz(z,1,e,s,gg)
-var oNE=_gd(x[72],xME,e_,d_)
+var oNE=_gd(x[73],xME,e_,d_)
 if(oNE){
 var fOE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5014,19 +5036,19 @@ oLE.wxXCkey=3
 oNE(fOE,fOE,oLE,gg)
 gg.f=cur_globalf
 }
-else _w(xME,x[72],2,18)
+else _w(xME,x[73],2,18)
 cs.pop()
 bKE.pop()
 return r
 }
-e_[x[72]]={f:m46,j:[],i:[],ti:[x[73]],ic:[]}
-d_[x[74]]={}
-d_[x[74]]["90021ef8"]=function(e,s,r,gg){
+e_[x[73]]={f:m46,j:[],i:[],ti:[x[74]],ic:[]}
+d_[x[75]]={}
+d_[x[75]]["90021ef8"]=function(e,s,r,gg){
 var z=gz$gwx_48()
-var b=x[74]+':90021ef8'
+var b=x[75]+':90021ef8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[74]);return}
+if(p_[b]){_wl(b,x[75]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:1:109")
@@ -5036,7 +5058,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/reg/reg.vue.wxml:template:1:247")
 var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[74],oD,e_,d_)
+var fE=_gd(x[75],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5044,13 +5066,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[74],1,474)
+else _w(oD,x[75],1,474)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/reg/reg.vue.wxml:template:1:601")
 var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[74],oH,e_,d_)
+var cI=_gd(x[75],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5058,13 +5080,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[74],1,829)
+else _w(oH,x[75],1,829)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/reg/reg.vue.wxml:template:1:949")
 var aL=_oz(z,22,e,s,gg)
-var tM=_gd(x[74],aL,e_,d_)
+var tM=_gd(x[75],aL,e_,d_)
 if(tM){
 var eN=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5072,7 +5094,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[74],1,1168)
+else _w(aL,x[75],1,1168)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -5085,22 +5107,22 @@ return r
 }
 var m47=function(e,s,r,gg){
 var z=gz$gwx_48()
-var hQE=e_[x[74]].i
-_ai(hQE,x[51],e_,x[74],1,1)
+var hQE=e_[x[75]].i
+_ai(hQE,x[48],e_,x[75],1,1)
 hQE.pop()
 return r
 }
-e_[x[74]]={f:m47,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[75]]={}
+e_[x[75]]={f:m47,j:[],i:[],ti:[x[48]],ic:[]}
+d_[x[76]]={}
 var m48=function(e,s,r,gg){
 var z=gz$gwx_49()
-var cSE=e_[x[75]].i
-_ai(cSE,x[76],e_,x[75],1,1)
+var cSE=e_[x[76]].i
+_ai(cSE,x[77],e_,x[76],1,1)
 var oTE=_v()
 _(r,oTE)
 cs.push("./pages/reg/reg.wxml:template:2:6")
 var lUE=_oz(z,1,e,s,gg)
-var aVE=_gd(x[75],lUE,e_,d_)
+var aVE=_gd(x[76],lUE,e_,d_)
 if(aVE){
 var tWE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5108,19 +5130,19 @@ oTE.wxXCkey=3
 aVE(tWE,tWE,oTE,gg)
 gg.f=cur_globalf
 }
-else _w(lUE,x[75],2,18)
+else _w(lUE,x[76],2,18)
 cs.pop()
 cSE.pop()
 return r
 }
-e_[x[75]]={f:m48,j:[],i:[],ti:[x[76]],ic:[]}
-d_[x[77]]={}
-d_[x[77]]["d573abf0"]=function(e,s,r,gg){
+e_[x[76]]={f:m48,j:[],i:[],ti:[x[77]],ic:[]}
+d_[x[78]]={}
+d_[x[78]]["d573abf0"]=function(e,s,r,gg){
 var z=gz$gwx_50()
-var b=x[77]+':d573abf0'
+var b=x[78]+':d573abf0'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/accountEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[77]);return}
+if(p_[b]){_wl(b,x[78]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5134,17 +5156,17 @@ var m49=function(e,s,r,gg){
 var z=gz$gwx_50()
 return r
 }
-e_[x[77]]={f:m49,j:[],i:[],ti:[],ic:[]}
-d_[x[78]]={}
+e_[x[78]]={f:m49,j:[],i:[],ti:[],ic:[]}
+d_[x[79]]={}
 var m50=function(e,s,r,gg){
 var z=gz$gwx_51()
-var oZE=e_[x[78]].i
-_ai(oZE,x[79],e_,x[78],1,1)
+var oZE=e_[x[79]].i
+_ai(oZE,x[80],e_,x[79],1,1)
 var x1E=_v()
 _(r,x1E)
 cs.push("./pages/user/accountEdit.wxml:template:2:6")
 var o2E=_oz(z,1,e,s,gg)
-var f3E=_gd(x[78],o2E,e_,d_)
+var f3E=_gd(x[79],o2E,e_,d_)
 if(f3E){
 var c4E=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5152,19 +5174,19 @@ x1E.wxXCkey=3
 f3E(c4E,c4E,x1E,gg)
 gg.f=cur_globalf
 }
-else _w(o2E,x[78],2,18)
+else _w(o2E,x[79],2,18)
 cs.pop()
 oZE.pop()
 return r
 }
-e_[x[78]]={f:m50,j:[],i:[],ti:[x[79]],ic:[]}
-d_[x[80]]={}
-d_[x[80]]["240234ba"]=function(e,s,r,gg){
+e_[x[79]]={f:m50,j:[],i:[],ti:[x[80]],ic:[]}
+d_[x[81]]={}
+d_[x[81]]["240234ba"]=function(e,s,r,gg){
 var z=gz$gwx_52()
-var b=x[80]+':240234ba'
+var b=x[81]+':240234ba'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[80]);return}
+if(p_[b]){_wl(b,x[81]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/user.vue.wxml:view:1:269")
@@ -5197,17 +5219,17 @@ var m51=function(e,s,r,gg){
 var z=gz$gwx_52()
 return r
 }
-e_[x[80]]={f:m51,j:[],i:[],ti:[],ic:[]}
-d_[x[81]]={}
+e_[x[81]]={f:m51,j:[],i:[],ti:[],ic:[]}
+d_[x[82]]={}
 var m52=function(e,s,r,gg){
 var z=gz$gwx_53()
-var c7E=e_[x[81]].i
-_ai(c7E,x[82],e_,x[81],1,1)
+var c7E=e_[x[82]].i
+_ai(c7E,x[83],e_,x[82],1,1)
 var o8E=_v()
 _(r,o8E)
 cs.push("./pages/user/user.wxml:template:2:6")
 var l9E=_oz(z,1,e,s,gg)
-var a0E=_gd(x[81],l9E,e_,d_)
+var a0E=_gd(x[82],l9E,e_,d_)
 if(a0E){
 var tAF=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5215,12 +5237,12 @@ o8E.wxXCkey=3
 a0E(tAF,tAF,o8E,gg)
 gg.f=cur_globalf
 }
-else _w(l9E,x[81],2,18)
+else _w(l9E,x[82],2,18)
 cs.pop()
 c7E.pop()
 return r
 }
-e_[x[81]]={f:m52,j:[],i:[],ti:[x[82]],ic:[]}
+e_[x[82]]={f:m52,j:[],i:[],ti:[x[83]],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -5241,7 +5263,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/danger/dangerEdit","pages/common/inputPage","pages/common/orgChoose","pages/common/personChoose","pages/danger/dangerLog","pages/check/checkEdit","pages/check/checkInfoEdit","pages/common/selectedPersonPage","pages/peixun/peixun","pages/ceshi/ceshi","pages/gonggao/gonggaoList","pages/common/webView"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/peixun/peixunList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"培训列表"}},"pages/check/checkList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"检查列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}},"pages/danger/dangerList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"隐患列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"SBPC-EHS","compilerVersion":"1.9.3"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/danger/dangerEdit","pages/common/inputPage","pages/common/orgChoose","pages/common/personChoose","pages/danger/dangerLog","pages/check/checkEdit","pages/check/checkInfoEdit","pages/common/selectedPersonPage","pages/peixun/peixun","pages/ceshi/ceshi","pages/other/gonggaoList","pages/other/newsList","pages/other/pointRank","pages/other/charts","pages/common/webView"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/peixun/peixunList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"培训列表"}},"pages/check/checkList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"检查列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}},"pages/danger/dangerList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"隐患列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"SBPC-EHS","compilerVersion":"1.9.3"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['pages/ceshi/ceshi.json']={"usingComponents":{},"navigationBarTitleText":"考试"};
@@ -5274,9 +5296,6 @@ __wxAppCode__['pages/danger/dangerEdit.wxml']=$gwx('./pages/danger/dangerEdit.wx
 __wxAppCode__['pages/danger/dangerLog.json']={"usingComponents":{},"navigationBarTitleText":"日志"};
 __wxAppCode__['pages/danger/dangerLog.wxml']=$gwx('./pages/danger/dangerLog.wxml');
 
-__wxAppCode__['pages/gonggao/gonggaoList.json']={"usingComponents":{},"navigationBarTitleText":"通知公告列表"};
-__wxAppCode__['pages/gonggao/gonggaoList.wxml']=$gwx('./pages/gonggao/gonggaoList.wxml');
-
 __wxAppCode__['pages/login/diyHost.json']={"usingComponents":{},"navigationBarTitleText":"自定义域名"};
 __wxAppCode__['pages/login/diyHost.wxml']=$gwx('./pages/login/diyHost.wxml');
 
@@ -5285,6 +5304,9 @@ __wxAppCode__['pages/login/login.wxml']=$gwx('./pages/login/login.wxml');
 
 __wxAppCode__['pages/main/main.json']={"usingComponents":{},"navigationBarTitleText":"首页"};
 __wxAppCode__['pages/main/main.wxml']=$gwx('./pages/main/main.wxml');
+
+__wxAppCode__['pages/other/charts.json']={"usingComponents":{},"navigationBarTitleText":"统计"};
+__wxAppCode__['pages/other/charts.wxml']=$gwx('./pages/other/charts.wxml');
 
 __wxAppCode__['pages/other/gonggaoList.json']={"usingComponents":{},"navigationBarTitleText":"通知公告列表"};
 __wxAppCode__['pages/other/gonggaoList.wxml']=$gwx('./pages/other/gonggaoList.wxml');
@@ -5360,18 +5382,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 
 "use strict";
 eval("__webpack_require__(/*! uni-pages */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages.json\");\nvar _vue = _interopRequireDefault(__webpack_require__(/*! vue */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js\"));\nvar _App = _interopRequireDefault(__webpack_require__(/*! ./App */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/App.vue\"));\n\nvar _store = _interopRequireDefault(__webpack_require__(/*! ./store */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/store/index.js\"));\nvar _onfire = _interopRequireDefault(__webpack_require__(/*! onfire.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}\n\n_vue.default.config.productionTip = false;\n\n_vue.default.prototype.$store = _store.default;\n_vue.default.prototype.$fire = new _onfire.default();\n\n_App.default.mpType = 'app';\n\nvar app = new _vue.default(_objectSpread({\n  store: _store.default },\n_App.default));\n\napp.$mount();\n\n//# sourceURL=uni-app:///main.js?8626");
-
-/***/ }),
-
-/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js":
-/*!*************************************************************************************************!*\
-  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n/**\n               * mini (~300 b) version for event-emitter.\n               */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true });\n\n/**\n                   * const ee = new OnFire();\n                   *\n                   * ee.on('click', () => {});\n                   *\n                   * ee.on('mouseover', () => {});\n                   *\n                   * ee.emit('click', 1, 2, 3);\n                   * ee.fire('mouseover', {}); // same with emit\n                   *\n                   * ee.off();\n                   */\n\nvar OnFire =\n/** @class */\nfunction () {\n  function OnFire() {\n    // 所有事件的监听器\n    this.es = {}; // cname of fire\n\n    this.emit = this.fire;\n  }\n\n  OnFire.prototype.on = function (eventName, cb, once) {\n    if (once === void 0) {\n      once = false;\n    }\n\n    if (!this.es[eventName]) {\n      this.es[eventName] = [];\n    }\n\n    this.es[eventName].push({\n      cb: cb,\n      once: once });\n\n  };\n\n  OnFire.prototype.once = function (eventName, cb) {\n    this.on(eventName, cb, true);\n  };\n\n  OnFire.prototype.fire = function (eventName) {\n    var params = [];\n\n    for (var _i = 1; _i < arguments.length; _i++) {\n      params[_i - 1] = arguments[_i];\n    }\n\n    var listeners = this.es[eventName] || [];\n\n    for (var i = 0; i < listeners.length; i++) {\n      var _a = listeners[i],\n      cb = _a.cb,\n      once = _a.once;\n      cb.apply(this, params);\n\n      if (once) {\n        listeners.splice(i, 1);\n        i--;\n      }\n    }\n  };\n\n  OnFire.prototype.off = function (eventName, cb) {\n    // clean all\n    if (eventName === undefined) {\n      this.es = {};\n    } else {\n      if (cb === undefined) {\n        // clean the eventName's listeners\n        delete this.es[eventName];\n      } else {\n        var listeners = this.es[eventName] || []; // clean the event and listener\n\n        for (var i = 0; i < listeners.length; i++) {\n          if (listeners[i].cb === cb) {\n            listeners.splice(i, 1);\n            i--;\n          }\n        }\n      }\n    }\n  };\n\n  OnFire.ver = \"2.0.0\";\n  return OnFire;\n}();\n\nexports.default = OnFire;\n\n//# sourceURL=uni-app:///node_modules/onfire.js/lib/index.js?1502");
 
 /***/ }),
 
@@ -5906,6 +5916,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 
 /***/ }),
 
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js":
+/*!*************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n/**\n               * mini (~300 b) version for event-emitter.\n               */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true });\n\n/**\n                   * const ee = new OnFire();\n                   *\n                   * ee.on('click', () => {});\n                   *\n                   * ee.on('mouseover', () => {});\n                   *\n                   * ee.emit('click', 1, 2, 3);\n                   * ee.fire('mouseover', {}); // same with emit\n                   *\n                   * ee.off();\n                   */\n\nvar OnFire =\n/** @class */\nfunction () {\n  function OnFire() {\n    // 所有事件的监听器\n    this.es = {}; // cname of fire\n\n    this.emit = this.fire;\n  }\n\n  OnFire.prototype.on = function (eventName, cb, once) {\n    if (once === void 0) {\n      once = false;\n    }\n\n    if (!this.es[eventName]) {\n      this.es[eventName] = [];\n    }\n\n    this.es[eventName].push({\n      cb: cb,\n      once: once });\n\n  };\n\n  OnFire.prototype.once = function (eventName, cb) {\n    this.on(eventName, cb, true);\n  };\n\n  OnFire.prototype.fire = function (eventName) {\n    var params = [];\n\n    for (var _i = 1; _i < arguments.length; _i++) {\n      params[_i - 1] = arguments[_i];\n    }\n\n    var listeners = this.es[eventName] || [];\n\n    for (var i = 0; i < listeners.length; i++) {\n      var _a = listeners[i],\n      cb = _a.cb,\n      once = _a.once;\n      cb.apply(this, params);\n\n      if (once) {\n        listeners.splice(i, 1);\n        i--;\n      }\n    }\n  };\n\n  OnFire.prototype.off = function (eventName, cb) {\n    // clean all\n    if (eventName === undefined) {\n      this.es = {};\n    } else {\n      if (cb === undefined) {\n        // clean the eventName's listeners\n        delete this.es[eventName];\n      } else {\n        var listeners = this.es[eventName] || []; // clean the event and listener\n\n        for (var i = 0; i < listeners.length; i++) {\n          if (listeners[i].cb === cb) {\n            listeners.splice(i, 1);\n            i--;\n          }\n        }\n      }\n    }\n  };\n\n  OnFire.ver = \"2.0.0\";\n  return OnFire;\n}();\n\nexports.default = OnFire;\n\n//# sourceURL=uni-app:///node_modules/onfire.js/lib/index.js?1502");
+
+/***/ }),
+
 /***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages.json":
 /*!************************************************************************!*\
   !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages.json ***!
@@ -5938,7 +5960,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n  // 获取公告列表\n  getGgList: '/mobile/getOther.do?action=getTzList',\n  // 获取公告详情\n  getGgDetail: '/mobile/getOther.do?action=getOneTz',\n  // 获取新闻列表\n  getNewsList: '/mobile/getOther.do?action=getXwList',\n  // 获取积分排名\n  getPointList: '/mobile/getOther.do?action=getJfpmList',\n  // 获取积分统计\n  getPoints: '/mobile/getTrain.do?action=getJftj',\n\n  /*隐患相关*/\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n  // 选择完流转目标后继续流转\n  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',\n\n  /*检查相关*/\n  // 获取检查列表\n  getCheckList: '/mobile/getAqjc.do',\n  // 获取检查详情\n  getCheckDetail: '/mobile/getAqjc.do?action=getOneJc',\n  // 获取检查类型\n  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',\n  // 获取检查模板\n  getCheckModule: '/mobile/getAqjc.do?action=getMb',\n  // 根据检查模板查询检查项\n  getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',\n  // 保存检查\n  saveCheck: '/mobile/getAqjc.do?action=insertJc',\n\n  /*培训相关*/\n  // 获取培训列表\n  getClassList: '/mobile/getTrain.do?action=getPxzlList',\n  // 获取培训内容\n  getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',\n\n  /*考试相关*/\n  // 获取考试说明\n  getExamDesc: '/mobile/getExam.do?action=getMyKskm',\n  // 获取考试内容\n  getExamInfo: '/mobile/getExam.do?action=createGrsj',\n  // 提交考卷\n  submitExam: '/mobile/getExam.do?action=submitGrsj',\n\n  /*通用接口*/\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ',\n  // 获取人员\n  getPersonList: '/mobile/getUser.do?action=getUserList ',\n  // 上传照片\n  uploadImage: '/uploadImg',\n  // 删除照片\n  deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',\n  // 加载照片\n  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',\n  // 加载用户头像\n  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
+eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n  // 获取公告列表\n  getGgList: '/mobile/getOther.do?action=getTzList',\n  // 获取公告详情\n  getGgDetail: '/mobile/getOther.do?action=getOneTz',\n  // 获取新闻列表\n  getNewsList: '/mobile/getOther.do?action=getXwList',\n  // 获取积分排名\n  getPointList: '/mobile/getOther.do?action=getJfpmList',\n  // 获取积分统计\n  getPoints: '/mobile/getTrain.do?action=getJftj',\n\n  /*统计相关*/\n  // 获取隐患分类统计\n  getDangerTypeChart: '/mobile/getYhzg.do?action=getYhlxtj',\n  // 获取隐患原因统计\n  getDangerReasonChart: '/mobile/getYhzg.do?action=getYhyytj',\n\n  /*隐患相关*/\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n  // 选择完流转目标后继续流转\n  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',\n\n  /*检查相关*/\n  // 获取检查列表\n  getCheckList: '/mobile/getAqjc.do',\n  // 获取检查详情\n  getCheckDetail: '/mobile/getAqjc.do?action=getOneJc',\n  // 获取检查类型\n  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',\n  // 获取检查模板\n  getCheckModule: '/mobile/getAqjc.do?action=getMb',\n  // 根据检查模板查询检查项\n  getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',\n  // 保存检查\n  saveCheck: '/mobile/getAqjc.do?action=insertJc',\n\n  /*培训相关*/\n  // 获取培训列表\n  getClassList: '/mobile/getTrain.do?action=getPxzlList',\n  // 获取培训内容\n  getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',\n\n  /*考试相关*/\n  // 获取考试说明\n  getExamDesc: '/mobile/getExam.do?action=getMyKskm',\n  // 获取考试内容\n  getExamInfo: '/mobile/getExam.do?action=createGrsj',\n  // 提交考卷\n  submitExam: '/mobile/getExam.do?action=submitGrsj',\n\n  /*通用接口*/\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ',\n  // 获取人员\n  getPersonList: '/mobile/getUser.do?action=getUserList ',\n  // 上传照片\n  uploadImage: '/uploadImg',\n  // 删除照片\n  deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',\n  // 加载照片\n  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',\n  // 加载用户头像\n  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=' };\n\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
 
 /***/ }),
 
@@ -6295,106 +6317,6 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 }]);
 });
-define('pages/gonggao/gonggaoList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-"use strict";(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/gonggao/gonggaoList"], {
-
-  /***/"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fgonggao%2FgonggaoList\"}":
-  /*!**************************************************************************************************************!*\
-                                                                                                                                        !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{"page":"pages%2Fgonggao%2FgonggaoList"} ***!
-                                                                                                                                        \**************************************************************************************************************/
-  /*! no static exports found */
-  /***/function UsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCMainJsPagePages2Fgonggao2FgonggaoList(module, exports, __webpack_require__) {
-
-    "use strict";
-    eval("__webpack_require__(/*! uni-pages */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages.json\");\nvar _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js\"));\nvar _gonggaoList = _interopRequireDefault(__webpack_require__(/*! ./pages/gonggao/gonggaoList.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\nPage((0, _mpvuePageFactory.default)(_gonggaoList.default));\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?%7B%22page%22:%22pages%252Fgonggao%252FgonggaoList%22%7D");
-
-    /***/},
-
-  /***/"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue":
-  /*!*******************************************************************************************!*\
-                                                                                                                 !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue ***!
-                                                                                                                 \*******************************************************************************************/
-  /*! no static exports found */
-  /***/function UsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCPagesGonggaoGonggaoListVue(module, __webpack_exports__, __webpack_require__) {
-
-    "use strict";
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gonggaoList_vue_vue_type_template_id_28d3c786___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gonggaoList.vue?vue&type=template&id=28d3c786& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786&\");\n/* harmony import */ var _gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gonggaoList.vue?vue&type=script&lang=js& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _gonggaoList_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gonggaoList.vue?vue&type=style&index=0&lang=css& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(\n  _gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _gonggaoList_vue_vue_type_template_id_28d3c786___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _gonggaoList_vue_vue_type_template_id_28d3c786___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue");
-
-    /***/},
-
-  /***/"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=script&lang=js&":
-  /*!********************************************************************************************************************!*\
-                                                                                                                                          !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=script&lang=js& ***!
-                                                                                                                                          \********************************************************************************************************************/
-  /*! no static exports found */
-  /***/function UsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCPagesGonggaoGonggaoListVueVueTypeScriptLangJs(module, __webpack_exports__, __webpack_require__) {
-
-    "use strict";
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./gonggaoList.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=uni-app:///pages/gonggao/gonggaoList.vue?vue&type=script&lang=js&?5b9f");
-
-    /***/},
-
-  /***/"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css&":
-  /*!****************************************************************************************************************************!*\
-                                                                                                                                                  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css& ***!
-                                                                                                                                                  \****************************************************************************************************************************/
-  /*! no static exports found */
-  /***/function UsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCPagesGonggaoGonggaoListVueVueTypeStyleIndex0LangCss(module, __webpack_exports__, __webpack_require__) {
-
-    "use strict";
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--6-oneOf-1-2!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./gonggaoList.vue?vue&type=style&index=0&lang=css& */ \"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css&");
-
-    /***/},
-
-  /***/"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786&":
-  /*!**************************************************************************************************************************!*\
-                                                                                                                                                !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786& ***!
-                                                                                                                                                \**************************************************************************************************************************/
-  /*! exports provided: render, staticRenderFns */
-  /***/function UsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCPagesGonggaoGonggaoListVueVueTypeTemplateId28d3c786(module, __webpack_exports__, __webpack_require__) {
-
-    "use strict";
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_template_id_28d3c786___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./gonggaoList.vue?vue&type=template&id=28d3c786& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_template_id_28d3c786___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_gonggaoList_vue_vue_type_template_id_28d3c786___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786&");
-
-    /***/},
-
-  /***/"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=script&lang=js&":
-  /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                          !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=script&lang=js& ***!
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-  /*! no static exports found */
-  /***/function node_modulesBabelLoaderLibIndexJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesDcloudioWebpackUniMpLoaderLibScriptJsNode_modulesVueLoaderLibIndexJsUsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCPagesGonggaoGonggaoListVueVueTypeScriptLangJs(module, exports, __webpack_require__) {
-
-    "use strict";
-    eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      ggList: [] };\n\n  },\n  onLoad: function onLoad() {\n    this.getGgList();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  methods: {\n    // 获取公告列表\n    getGgList: function getGgList(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getGgList, param, '正在获取通知公告',\n      function (res) {\n        // that.ggList = res.data;\n        that.formatData(res.data);\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 获取公告详情\n    getDetail: function getDetail(item) {\n      uni.navigateTo({\n        url: '../common/webView?src=' + _config.default.host + item.src });\n\n    },\n    // 格式化接口数据，让数据变成组件需要的内容\n    formatData: function formatData(list) {\n      this.ggList = [];\n      for (var i = 0; i < list.length; i++) {\n        var obj = {};\n        var item = list[i];\n        obj['title'] = item.notesubject;\n        obj['source'] = item.createtime;\n        obj['datetime'] = '';\n        obj['instanceid'] = item.instanceid;\n        obj['recordid'] = item.recordid;\n        obj['article_type'] = 0;\n        obj['comment_count'] = '';\n        obj['src'] = item.src;\n        this.ggList.push(obj);\n      }\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/gonggao/gonggaoList.vue?vue&type=script&lang=js&?7233");
-
-    /***/},
-
-  /***/"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css&":
-  /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css& ***!
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-  /*! no static exports found */
-  /***/function node_modulesMiniCssExtractPluginDistLoaderJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesCssLoaderIndexJsNode_modulesVueLoaderLibLoadersStylePostLoaderJsNode_modulesPostcssLoaderSrcIndexJsNode_modulesVueLoaderLibIndexJsUsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCPagesGonggaoGonggaoListVueVueTypeStyleIndex0LangCss(module, exports, __webpack_require__) {
-
-    eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=style&index=0&lang=css&");
-
-    /***/},
-
-  /***/"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786&":
-  /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-                                                                                                                                                                                                                                                                                                                                                                                                         !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786& ***!
-                                                                                                                                                                                                                                                                                                                                                                                                         \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-  /*! exports provided: render, staticRenderFns */
-  /***/function node_modulesVueLoaderLibLoadersTemplateLoaderJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesDcloudioWebpackUniMpLoaderLibTemplateJsNode_modulesVueLoaderLibIndexJsUsersLijiabinDocumentsGitHubSBPCEHSUniAppSBPCPagesGonggaoGonggaoListVueVueTypeTemplateId28d3c786(module, __webpack_exports__, __webpack_require__) {
-
-    "use strict";
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"b8ab4c7c-1\" } },\n          _vm._l(_vm.ggList, function(item, index) {\n            return _c(\n              \"block\",\n              { key: index },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: item.title,\n                    note: item.source,\n                    \"show-arrow\": true,\n                    eventid: \"b8ab4c7c-0-\" + index,\n                    mpcomid: \"b8ab4c7c-0-\" + index\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.getDetail(item)\n                    }\n                  }\n                })\n              ],\n              1\n            )\n          })\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/gonggao/gonggaoList.vue?vue&type=template&id=28d3c786&");
-
-    /***/} },
-
-[["../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fgonggao%2FgonggaoList\"}", "common/runtime", "common/vendor"]]]);
-});
 
 define('app.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
 require('./common/runtime.js')
@@ -6500,7 +6422,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      {\n        staticClass: \"topView_pc\",\n        attrs: { eventid: \"00cb397a-0\" },\n        on: {\n          tap: function($event) {\n            _vm.jumpPage(\"../statistics/statistics\")\n          }\n        }\n      },\n      [\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"积分排名\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.jfpm))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"获固定积分\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.gdjf))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"获主动积分\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.zdjf))\n          ])\n        ])\n      ]\n    ),\n    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-1\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../check/checkList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/jc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(0)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../danger/dangerList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/yh.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(1)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-3\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/tj.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(2)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-4\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../peixun/peixunList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/pxkc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(3)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-5\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/gonggaoList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/gg.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(4)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-6\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/newsList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/xw.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(5)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-7\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/pointRank\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/cn.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(6)\n        ]\n      ),\n      _c(\"view\", { staticClass: \"dangerView\" }),\n      _c(\"view\", { staticClass: \"dangerView\" })\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"检查\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"隐患\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"统计\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"培训\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"通知公告\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"公司新闻\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"积分排名\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/main/main.vue?vue&type=template&id=7f19db84&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      {\n        staticClass: \"topView_pc\",\n        attrs: { eventid: \"00cb397a-0\" },\n        on: {\n          tap: function($event) {\n            _vm.jumpPage(\"../statistics/statistics\")\n          }\n        }\n      },\n      [\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"积分排名\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.jfpm))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"获固定积分\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.gdjf))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"获主动积分\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.zdjf))\n          ])\n        ])\n      ]\n    ),\n    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-1\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../check/checkList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/jc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(0)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../danger/dangerList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/yh.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(1)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-3\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/charts\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/tj.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(2)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-4\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../peixun/peixunList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/pxkc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(3)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-5\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/gonggaoList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/gg.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(4)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-6\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/newsList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/xw.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(5)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-7\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/pointRank\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/cn.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(6)\n        ]\n      ),\n      _c(\"view\", { staticClass: \"dangerView\" }),\n      _c(\"view\", { staticClass: \"dangerView\" })\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"检查\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"隐患\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"统计\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"培训\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"通知公告\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"公司新闻\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"积分排名\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/main/main.vue?vue&type=template&id=7f19db84&");
 
 /***/ })
 
@@ -8478,6 +8400,121 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 },[["../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fother%2FpointRank\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/other/pointRank.js');
+__wxRoute = 'pages/other/charts';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/other/charts.js';
+
+define('pages/other/charts.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/other/charts"],{
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/wx-charts/wxcharts.js":
+/*!**********************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/wx-charts/wxcharts.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function(uni) {/*\r\n * charts for WeChat small app v1.0\r\n *\r\n * https://github.com/xiaolin3303/wx-charts\r\n * 2016-11-28\r\n *\r\n * Designed and built with all the love of Web\r\n * \r\n * 【秋云科技】修改为uni-app跨全端图表\r\n * https://github.com/16cheng/uni-wx-charts\r\n * 插件市场地址：\r\n * http://ext.dcloud.net.cn/plugin?id=271\r\n * \r\n * 2019-04-01\r\n * 修改为兼容uni-wx-charts\r\n * 2019-04-14\r\n * 支持支付宝/百度/头条小程序实现跨全端\r\n * 2019-04-15\r\n * 支持横屏模式，新增rotate参数，默认flase\r\n * 2019-04-16\r\n * 新增圆弧进度图，图表类型gauge\r\n * 2019-04-22\r\n * 修改图表拖拽功能夸端支持，增加拖拽时显示滚动条\r\n * \r\n * \r\n * \r\n */\n\n\n\nvar config = {\n  yAxisWidth: 15,\n  yAxisSplit: 5,\n  xAxisHeight: 15,\n  xAxisLineHeight: 15,\n  legendHeight: 15,\n  yAxisTitleWidth: 15,\n  padding: 12,\n  pixelRatio: 1, //适配H5高分屏\n  rotate: false, //横屏模式\n  columePadding: 3,\n  fontSize: 13,\n  //dataPointShape: ['diamond', 'circle', 'triangle', 'rect'],\n  dataPointShape: ['circle', 'circle', 'circle', 'circle'], //仿F2图例样式改为圆点\n  colors: ['#1890ff', '#2fc25b', '#facc14', '#f04864', '#8543e0', '#90ed7d'],\n  pieChartLinePadding: 15,\n  pieChartTextPadding: 5,\n  xAxisTextPadding: 3,\n  titleColor: '#333333',\n  titleFontSize: 20,\n  subtitleColor: '#999999',\n  subtitleFontSize: 15,\n  toolTipPadding: 3,\n  toolTipBackground: '#000000',\n  toolTipOpacity: 0.7,\n  toolTipLineHeight: 20,\n  radarGridCount: 3,\n  radarLabelTextMargin: 15 };\n\n\n// Object.assign polyfill\n// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign\nfunction assign(target, varArgs) {\n  if (target == null) {\n    // TypeError if undefined or null\n    throw new TypeError('Cannot convert undefined or null to object');\n  }\n\n  var to = Object(target);\n\n  for (var index = 1; index < arguments.length; index++) {\n    var nextSource = arguments[index];\n\n    if (nextSource != null) {\n      // Skip over if undefined or null\n      for (var nextKey in nextSource) {\n        // Avoid bugs when hasOwnProperty is shadowed\n        if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {\n          to[nextKey] = nextSource[nextKey];\n        }\n      }\n    }\n  }\n  return to;\n}\n\nvar util = {\n  toFixed: function toFixed(num, limit) {\n    limit = limit || 2;\n    if (this.isFloat(num)) {\n      num = num.toFixed(limit);\n    }\n    return num;\n  },\n  isFloat: function isFloat(num) {\n    return num % 1 !== 0;\n  },\n  approximatelyEqual: function approximatelyEqual(num1, num2) {\n    return Math.abs(num1 - num2) < 1e-10;\n  },\n  isSameSign: function isSameSign(num1, num2) {\n    return Math.abs(num1) === num1 && Math.abs(num2) === num2 || Math.abs(num1) !== num1 && Math.abs(num2) !== num2;\n  },\n  isSameXCoordinateArea: function isSameXCoordinateArea(p1, p2) {\n    return this.isSameSign(p1.x, p2.x);\n  },\n  isCollision: function isCollision(obj1, obj2) {\n    obj1.end = {};\n    obj1.end.x = obj1.start.x + obj1.width;\n    obj1.end.y = obj1.start.y - obj1.height;\n    obj2.end = {};\n    obj2.end.x = obj2.start.x + obj2.width;\n    obj2.end.y = obj2.start.y - obj2.height;\n    var flag = obj2.start.x > obj1.end.x || obj2.end.x < obj1.start.x || obj2.end.y > obj1.start.y || obj2.start.y < obj1.end.y;\n\n    return !flag;\n  } };\n\n\nfunction findRange(num, type, limit) {\n  if (isNaN(num)) {\n    throw new Error('[wxCharts] unvalid series data!');\n  }\n  limit = limit || 10;\n  type = type ? type : 'upper';\n  var multiple = 1;\n  while (limit < 1) {\n    limit *= 10;\n    multiple *= 10;\n  }\n  if (type === 'upper') {\n    num = Math.ceil(num * multiple);\n  } else {\n    num = Math.floor(num * multiple);\n  }\n  while (num % limit !== 0) {\n    if (type === 'upper') {\n      num++;\n    } else {\n      num--;\n    }\n  }\n\n  return num / multiple;\n}\n\nfunction calValidDistance(distance, chartData, config, opts) {\n\n  var dataChartAreaWidth = opts.width - config.padding - chartData.xAxisPoints[0];\n  var dataChartWidth = chartData.eachSpacing * opts.categories.length;\n  var validDistance = distance;\n  if (distance >= 0) {\n    validDistance = 0;\n  } else if (Math.abs(distance) >= dataChartWidth - dataChartAreaWidth) {\n    validDistance = dataChartAreaWidth - dataChartWidth;\n  }\n  return validDistance;\n}\n\nfunction isInAngleRange(angle, startAngle, endAngle) {\n  function adjust(angle) {\n    while (angle < 0) {\n      angle += 2 * Math.PI;\n    }\n    while (angle > 2 * Math.PI) {\n      angle -= 2 * Math.PI;\n    }\n\n    return angle;\n  }\n\n  angle = adjust(angle);\n  startAngle = adjust(startAngle);\n  endAngle = adjust(endAngle);\n  if (startAngle > endAngle) {\n    endAngle += 2 * Math.PI;\n    if (angle < startAngle) {\n      angle += 2 * Math.PI;\n    }\n  }\n\n  return angle >= startAngle && angle <= endAngle;\n}\n\nfunction calRotateTranslate(x, y, h) {\n  var xv = x;\n  var yv = h - y;\n\n  var transX = xv + (h - yv - xv) / Math.sqrt(2);\n  transX *= -1;\n\n  var transY = (h - yv) * (Math.sqrt(2) - 1) - (h - yv - xv) / Math.sqrt(2);\n\n  return {\n    transX: transX,\n    transY: transY };\n\n}\n\nfunction createCurveControlPoints(points, i) {\n\n  function isNotMiddlePoint(points, i) {\n    if (points[i - 1] && points[i + 1]) {\n      return points[i].y >= Math.max(points[i - 1].y, points[i + 1].y) || points[i].y <= Math.min(points[i - 1].y, points[i + 1].y);\n    } else {\n      return false;\n    }\n  }\n\n  var a = 0.2;\n  var b = 0.2;\n  var pAx = null;\n  var pAy = null;\n  var pBx = null;\n  var pBy = null;\n  if (i < 1) {\n    pAx = points[0].x + (points[1].x - points[0].x) * a;\n    pAy = points[0].y + (points[1].y - points[0].y) * a;\n  } else {\n    pAx = points[i].x + (points[i + 1].x - points[i - 1].x) * a;\n    pAy = points[i].y + (points[i + 1].y - points[i - 1].y) * a;\n  }\n\n  if (i > points.length - 3) {\n    var last = points.length - 1;\n    pBx = points[last].x - (points[last].x - points[last - 1].x) * b;\n    pBy = points[last].y - (points[last].y - points[last - 1].y) * b;\n  } else {\n    pBx = points[i + 1].x - (points[i + 2].x - points[i].x) * b;\n    pBy = points[i + 1].y - (points[i + 2].y - points[i].y) * b;\n  }\n\n  // fix issue https://github.com/xiaolin3303/wx-charts/issues/79\n  if (isNotMiddlePoint(points, i + 1)) {\n    pBy = points[i + 1].y;\n  }\n  if (isNotMiddlePoint(points, i)) {\n    pAy = points[i].y;\n  }\n\n  return {\n    ctrA: { x: pAx, y: pAy },\n    ctrB: { x: pBx, y: pBy } };\n\n}\n\nfunction convertCoordinateOrigin(x, y, center) {\n  return {\n    x: center.x + x,\n    y: center.y - y };\n\n}\n\nfunction avoidCollision(obj, target) {\n  if (target) {\n    // is collision test\n    while (util.isCollision(obj, target)) {\n      if (obj.start.x > 0) {\n        obj.start.y--;\n      } else if (obj.start.x < 0) {\n        obj.start.y++;\n      } else {\n        if (obj.start.y > 0) {\n          obj.start.y++;\n        } else {\n          obj.start.y--;\n        }\n      }\n    }\n  }\n  return obj;\n}\n\nfunction fillSeriesColor(series, config) {\n  var index = 0;\n  return series.map(function (item) {\n    if (!item.color) {\n      item.color = config.colors[index];\n      index = (index + 1) % config.colors.length;\n    }\n    return item;\n  });\n}\n\nfunction getDataRange(minData, maxData) {\n  var limit = 0;\n  var range = maxData - minData;\n  if (range >= 10000) {\n    limit = 1000;\n  } else if (range >= 1000) {\n    limit = 100;\n  } else if (range >= 100) {\n    limit = 10;\n  } else if (range >= 10) {\n    limit = 5;\n  } else if (range >= 1) {\n    limit = 1;\n  } else if (range >= 0.1) {\n    limit = 0.1;\n  } else {\n    limit = 0.01;\n  }\n  return {\n    minRange: findRange(minData, 'lower', limit),\n    maxRange: findRange(maxData, 'upper', limit) };\n\n}\n\nfunction measureText(text) {\n  var fontSize = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : config.fontSize;\n\n  // wx canvas 未实现measureText方法, 此处自行实现\n  // 适配修改初始字体10px为其他大小的方法\n  text = String(text);\n  var text = text.split('');\n  var width = 0;\n  text.forEach(function (item) {\n    if (/[a-zA-Z]/.test(item)) {\n      width += 7;\n    } else if (/[0-9]/.test(item)) {\n      width += 5.5;\n    } else if (/\\./.test(item)) {\n      width += 2.7;\n    } else if (/-/.test(item)) {\n      width += 3.25;\n    } else if (/[\\u4e00-\\u9fa5]/.test(item)) {\n      width += 10;\n    } else if (/\\(|\\)/.test(item)) {\n      width += 3.73;\n    } else if (/\\s/.test(item)) {\n      width += 2.5;\n    } else if (/%/.test(item)) {\n      width += 8;\n    } else {\n      width += 10;\n    }\n  });\n  return width * fontSize / 10;\n}\n\nfunction dataCombine(series) {\n  return series.reduce(function (a, b) {\n    return (a.data ? a.data : a).concat(b.data);\n  }, []);\n}\n\nfunction getSeriesDataItem(series, index) {\n  var data = [];\n  series.forEach(function (item) {\n    if (item.data[index] !== null && typeof item.data[index] !== 'undefined') {\n      var seriesItem = {};\n      seriesItem.color = item.color;\n      seriesItem.name = item.name;\n      seriesItem.data = item.format ? item.format(item.data[index]) : item.data[index];\n      data.push(seriesItem);\n    }\n  });\n\n  return data;\n}\n\nfunction getMaxTextListLength(list) {\n  var lengthList = list.map(function (item) {\n    return measureText(item);\n  });\n  return Math.max.apply(null, lengthList);\n}\n\nfunction getRadarCoordinateSeries(length) {\n  var eachAngle = 2 * Math.PI / length;\n  var CoordinateSeries = [];\n  for (var i = 0; i < length; i++) {\n    CoordinateSeries.push(eachAngle * i);\n  }\n\n  return CoordinateSeries.map(function (item) {\n    return -1 * item + Math.PI / 2;\n  });\n}\n\nfunction getToolTipData(seriesData, calPoints, index, categories) {\n  var option = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {};\n\n  var textList = seriesData.map(function (item) {\n    return {\n      text: option.format ? option.format(item, categories[index]) : item.name + ': ' + item.data,\n      color: item.color };\n\n  });\n  var validCalPoints = [];\n  var offset = {\n    x: 0,\n    y: 0 };\n\n  calPoints.forEach(function (points) {\n    if (typeof points[index] !== 'undefined' && points[index] !== null) {\n      validCalPoints.push(points[index]);\n    }\n  });\n  validCalPoints.forEach(function (item) {\n    offset.x = Math.round(item.x);\n    offset.y += item.y;\n  });\n\n  offset.y /= validCalPoints.length;\n  return { textList: textList, offset: offset };\n}\n\nfunction findCurrentIndex(currentPoints, xAxisPoints, opts, config) {\n  var offset = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;\n  var currentIndex = -1;\n  if (isInExactChartArea(currentPoints, opts, config)) {\n    xAxisPoints.forEach(function (item, index) {\n      if (currentPoints.x + offset > item) {\n        currentIndex = index;\n      }\n    });\n  }\n\n  return currentIndex;\n}\n\nfunction isInExactChartArea(currentPoints, opts, config) {\n  return currentPoints.x < opts.width - config.padding && currentPoints.x > config.padding + config.yAxisWidth + config.yAxisTitleWidth && currentPoints.y > config.padding && currentPoints.y < opts.height - config.legendHeight - config.xAxisHeight - config.padding;\n}\n\nfunction findRadarChartCurrentIndex(currentPoints, radarData, count) {\n  var eachAngleArea = 2 * Math.PI / count;\n  var currentIndex = -1;\n  if (isInExactPieChartArea(currentPoints, radarData.center, radarData.radius)) {\n    var fixAngle = function fixAngle(angle) {\n      if (angle < 0) {\n        angle += 2 * Math.PI;\n      }\n      if (angle > 2 * Math.PI) {\n        angle -= 2 * Math.PI;\n      }\n      return angle;\n    };\n\n    var angle = Math.atan2(radarData.center.y - currentPoints.y, currentPoints.x - radarData.center.x);\n    angle = -1 * angle;\n    if (angle < 0) {\n      angle += 2 * Math.PI;\n    }\n\n    var angleList = radarData.angleList.map(function (item) {\n      item = fixAngle(-1 * item);\n\n      return item;\n    });\n\n    angleList.forEach(function (item, index) {\n      var rangeStart = fixAngle(item - eachAngleArea / 2);\n      var rangeEnd = fixAngle(item + eachAngleArea / 2);\n      if (rangeEnd < rangeStart) {\n        rangeEnd += 2 * Math.PI;\n      }\n      if (angle >= rangeStart && angle <= rangeEnd || angle + 2 * Math.PI >= rangeStart && angle + 2 * Math.PI <= rangeEnd) {\n        currentIndex = index;\n      }\n    });\n  }\n\n  return currentIndex;\n}\n\nfunction findPieChartCurrentIndex(currentPoints, pieData) {\n  var currentIndex = -1;\n  if (isInExactPieChartArea(currentPoints, pieData.center, pieData.radius)) {\n    var angle = Math.atan2(pieData.center.y - currentPoints.y, currentPoints.x - pieData.center.x);\n    angle = -angle;\n    for (var i = 0, len = pieData.series.length; i < len; i++) {\n      var item = pieData.series[i];\n      if (isInAngleRange(angle, item._start_, item._start_ + item._proportion_ * 2 * Math.PI)) {\n        currentIndex = i;\n        break;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\nfunction isInExactPieChartArea(currentPoints, center, radius) {\n  return Math.pow(currentPoints.x - center.x, 2) + Math.pow(currentPoints.y - center.y, 2) <= Math.pow(radius, 2);\n}\n\nfunction splitPoints(points) {\n  var newPoints = [];\n  var items = [];\n  points.forEach(function (item, index) {\n    if (item !== null) {\n      items.push(item);\n    } else {\n      if (items.length) {\n        newPoints.push(items);\n      }\n      items = [];\n    }\n  });\n  if (items.length) {\n    newPoints.push(items);\n  }\n\n  return newPoints;\n}\n\nfunction calLegendData(series, opts, config) {\n  if (opts.legend === false) {\n    return {\n      legendList: [],\n      legendHeight: 0 };\n\n  }\n  //适配H5高分屏\n  var padding = 5 * opts.pixelRatio;\n  var marginTop = 8 * opts.pixelRatio;\n  var shapeWidth = 15 * opts.pixelRatio;\n  var legendList = [];\n  var widthCount = 0;\n  var currentRow = [];\n  series.forEach(function (item) {\n    var itemWidth = 3 * padding + shapeWidth + measureText(item.name || 'undefined');\n    if (widthCount + itemWidth > opts.width) {\n      legendList.push(currentRow);\n      widthCount = itemWidth;\n      currentRow = [item];\n    } else {\n      widthCount += itemWidth;\n      currentRow.push(item);\n    }\n  });\n  if (currentRow.length) {\n    legendList.push(currentRow);\n  }\n\n  return {\n    legendList: legendList,\n    legendHeight: legendList.length * (config.fontSize + marginTop) + padding };\n\n}\n\nfunction calCategoriesData(categories, opts, config) {\n  var result = {\n    angle: 0,\n    xAxisHeight: config.xAxisHeight };\n\n\n  var _getXAxisPoints = getXAxisPoints(categories, opts, config),\n  eachSpacing = _getXAxisPoints.eachSpacing;\n\n  // get max length of categories text\n\n\n  var categoriesTextLenth = categories.map(function (item) {\n    return measureText(item);\n  });\n\n  var maxTextLength = Math.max.apply(this, categoriesTextLenth);\n\n  if (maxTextLength + 2 * config.xAxisTextPadding > eachSpacing) {\n    result.angle = 45 * Math.PI / 180;\n    result.xAxisHeight = 2 * config.xAxisTextPadding + maxTextLength * Math.sin(result.angle);\n  }\n\n  return result;\n}\n\nfunction getRadarDataPoints(angleList, center, radius, series, opts) {\n  var process = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 1;\n\n  var radarOption = opts.extra.radar || {};\n  radarOption.max = radarOption.max || 0;\n  var maxData = Math.max(radarOption.max, Math.max.apply(null, dataCombine(series)));\n\n  var data = [];\n  series.forEach(function (each) {\n    var listItem = {};\n    listItem.color = each.color;\n    listItem.data = [];\n    each.data.forEach(function (item, index) {\n      var tmp = {};\n      tmp.angle = angleList[index];\n\n      tmp.proportion = item / maxData;\n      tmp.position = convertCoordinateOrigin(radius * tmp.proportion * process * Math.cos(tmp.angle), radius * tmp.proportion * process * Math.sin(tmp.angle), center);\n      listItem.data.push(tmp);\n    });\n\n    data.push(listItem);\n  });\n\n  return data;\n}\n\nfunction getPieDataPoints(series) {\n  var process = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;\n\n  var count = 0;\n  var _start_ = 0;\n  series.forEach(function (item) {\n    item.data = item.data === null ? 0 : item.data;\n    count += item.data;\n  });\n  series.forEach(function (item) {\n    item.data = item.data === null ? 0 : item.data;\n    item._proportion_ = item.data / count * process;\n  });\n  series.forEach(function (item) {\n    item._start_ = _start_;\n    _start_ += 2 * item._proportion_ * Math.PI;\n  });\n\n  return series;\n}\n\nfunction getGaugeDataPoints(series) {\n  var process = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;\n  series.forEach(function (item) {\n    item.data = item.data === null ? 0 : item.data;\n    item._proportion_ = 1.5 * item.data * process + 0.75;\n    if (item._proportion_ >= 2) {\n      item._proportion_ = item._proportion_ % 2;\n    }\n  });\n  return series;\n}\n\nfunction getPieTextMaxLength(series) {\n  series = getPieDataPoints(series);\n  var maxLength = 0;\n  series.forEach(function (item) {\n    var text = item.format ? item.format(+item._proportion_.toFixed(2)) : util.toFixed(item._proportion_ * 100) + '%';\n    maxLength = Math.max(maxLength, measureText(text));\n  });\n\n  return maxLength;\n}\n\nfunction fixColumeData(points, eachSpacing, columnLen, index, config, opts) {\n  return points.map(function (item) {\n    if (item === null) {\n      return null;\n    }\n    item.width = (eachSpacing - 2 * config.columePadding) / columnLen;\n\n    if (opts.extra.column && opts.extra.column.width && +opts.extra.column.width > 0) {\n      // customer column width\n      item.width = Math.min(item.width, +opts.extra.column.width);\n    } else {\n      // default width should less tran 25px\n      // don't ask me why, I don't know\n      item.width = Math.min(item.width, 25);\n    }\n    item.x += (index + 0.5 - columnLen / 2) * item.width;\n\n    return item;\n  });\n}\n\nfunction getXAxisPoints(categories, opts, config) {\n  var yAxisTotalWidth = config.yAxisWidth + config.yAxisTitleWidth;\n  var spacingValid = opts.width - 2 * config.padding - yAxisTotalWidth;\n  var dataCount = opts.enableScroll ? Math.min(opts.xAxis.itemCount, categories.length) : categories.length;\n  var eachSpacing = spacingValid / dataCount;\n\n  var xAxisPoints = [];\n  var startX = config.padding + yAxisTotalWidth;\n  var endX = opts.width - config.padding;\n  categories.forEach(function (item, index) {\n    xAxisPoints.push(startX + index * eachSpacing);\n  });\n  if (opts.enableScroll === true) {\n    xAxisPoints.push(startX + categories.length * eachSpacing);\n  } else {\n    xAxisPoints.push(endX);\n  }\n\n  return { xAxisPoints: xAxisPoints, startX: startX, endX: endX, eachSpacing: eachSpacing };\n}\n\nfunction getDataPoints(data, minRange, maxRange, xAxisPoints, eachSpacing, opts, config) {\n  var process = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : 1;\n\n  var points = [];\n  var validHeight = opts.height - 2 * config.padding - config.xAxisHeight - config.legendHeight;\n  data.forEach(function (item, index) {\n    if (item === null) {\n      points.push(null);\n    } else {\n      var point = {};\n      point.x = xAxisPoints[index] + Math.round(eachSpacing / 2);\n      var height = validHeight * (item - minRange) / (maxRange - minRange);\n      height *= process;\n      point.y = opts.height - config.xAxisHeight - config.legendHeight - Math.round(height) - config.padding;\n      points.push(point);\n    }\n  });\n\n  return points;\n}\n\nfunction getYAxisTextList(series, opts, config) {\n  var data = dataCombine(series);\n  // remove null from data\n  data = data.filter(function (item) {\n    return item !== null;\n  });\n  var minData = Math.min.apply(this, data);\n  var maxData = Math.max.apply(this, data);\n  if (typeof opts.yAxis.min === 'number') {\n    minData = Math.min(opts.yAxis.min, minData);\n  }\n  if (typeof opts.yAxis.max === 'number') {\n    maxData = Math.max(opts.yAxis.max, maxData);\n  }\n\n  // fix issue https://github.com/xiaolin3303/wx-charts/issues/9\n  if (minData === maxData) {\n    var rangeSpan = maxData || 1;\n    minData -= rangeSpan;\n    maxData += rangeSpan;\n  }\n\n  var dataRange = getDataRange(minData, maxData);\n  var minRange = dataRange.minRange;\n  var maxRange = dataRange.maxRange;\n\n  var range = [];\n  var eachRange = (maxRange - minRange) / config.yAxisSplit;\n\n  for (var i = 0; i <= config.yAxisSplit; i++) {\n    range.push(minRange + eachRange * i);\n  }\n  return range.reverse();\n}\n\nfunction calYAxisData(series, opts, config) {\n\n  var ranges = getYAxisTextList(series, opts, config);\n  var yAxisWidth = config.yAxisWidth;\n  var rangesFormat = ranges.map(function (item) {\n    item = util.toFixed(item, 2);\n    item = opts.yAxis.format ? opts.yAxis.format(Number(item)) : item;\n    yAxisWidth = Math.max(yAxisWidth, measureText(item) + 5);\n    return item;\n  });\n  if (opts.yAxis.disabled === true) {\n    yAxisWidth = 0;\n  }\n\n  return { rangesFormat: rangesFormat, ranges: ranges, yAxisWidth: yAxisWidth };\n}\n\nfunction drawPointShape(points, color, shape, context, opts) {\n  context.beginPath();\n  context.setStrokeStyle(\"#ffffff\");\n  context.setLineWidth(1 * opts.pixelRatio);\n  context.setFillStyle(color);\n  if (shape === 'diamond') {\n    points.forEach(function (item, index) {\n      if (item !== null) {\n        context.moveTo(item.x, item.y - 4.5);\n        context.lineTo(item.x - 4.5, item.y);\n        context.lineTo(item.x, item.y + 4.5);\n        context.lineTo(item.x + 4.5, item.y);\n        context.lineTo(item.x, item.y - 4.5);\n      }\n    });\n  } else if (shape === 'circle') {\n    points.forEach(function (item, index) {\n      if (item !== null) {\n        context.moveTo(item.x + 3.5 * opts.pixelRatio, item.y);\n        context.arc(item.x, item.y, 4 * opts.pixelRatio, 0, 2 * Math.PI, false);\n      }\n    });\n  } else if (shape === 'rect') {\n    points.forEach(function (item, index) {\n      if (item !== null) {\n        context.moveTo(item.x - 3.5, item.y - 3.5);\n        context.rect(item.x - 3.5, item.y - 3.5, 7, 7);\n      }\n    });\n  } else if (shape === 'triangle') {\n    points.forEach(function (item, index) {\n      if (item !== null) {\n        context.moveTo(item.x, item.y - 4.5);\n        context.lineTo(item.x - 4.5, item.y + 4.5);\n        context.lineTo(item.x + 4.5, item.y + 4.5);\n        context.lineTo(item.x, item.y - 4.5);\n      }\n    });\n  }\n\n\n  context.closePath();\n  context.fill();\n  context.stroke();\n}\n\nfunction drawRingTitle(opts, config, context) {\n  var titlefontSize = opts.title.fontSize || config.titleFontSize;\n  var subtitlefontSize = opts.subtitle.fontSize || config.subtitleFontSize;\n  var title = opts.title.name || '';\n  var subtitle = opts.subtitle.name || '';\n  var titleFontColor = opts.title.color || config.titleColor;\n  var subtitleFontColor = opts.subtitle.color || config.subtitleColor;\n  var titleHeight = title ? titlefontSize : 0;\n  var subtitleHeight = subtitle ? subtitlefontSize : 0;\n  var margin = 5;\n  if (subtitle) {\n    var textWidth = measureText(subtitle, subtitlefontSize);\n    var startX = (opts.width - textWidth) / 2 + (opts.subtitle.offsetX || 0);\n    var startY = (opts.height - config.legendHeight + subtitlefontSize) / 2;\n    if (title) {\n      startY -= (titleHeight + margin) / 2;\n    }\n    context.beginPath();\n    context.setFontSize(subtitlefontSize);\n    context.setFillStyle(subtitleFontColor);\n    context.fillText(subtitle, startX, startY);\n    context.stroke();\n    context.closePath();\n  }\n  if (title) {\n    var _textWidth = measureText(title, titlefontSize);\n    var _startX = (opts.width - _textWidth) / 2 + (opts.title.offsetX || 0);\n    var _startY = (opts.height - config.legendHeight + titlefontSize) / 2;\n    if (subtitle) {\n      _startY += (subtitleHeight + margin) / 2;\n    }\n    context.beginPath();\n    context.setFontSize(titlefontSize);\n    context.setFillStyle(titleFontColor);\n    context.fillText(title, _startX, _startY);\n    context.stroke();\n    context.closePath();\n  }\n}\n\nfunction drawPointText(points, series, config, context) {\n  // 绘制数据文案\n  var data = series.data;\n\n  context.beginPath();\n  context.setFontSize(config.fontSize);\n  context.setFillStyle('#666666');\n  points.forEach(function (item, index) {\n    if (item !== null) {\n      var formatVal = series.format ? series.format(data[index]) : data[index];\n      context.fillText(formatVal, item.x - measureText(formatVal) / 2, item.y - 2);\n    }\n  });\n  context.closePath();\n  context.stroke();\n}\n\nfunction drawRadarLabel(angleList, radius, centerPosition, opts, config, context) {\n  var radarOption = opts.extra.radar || {};\n  radius += config.radarLabelTextMargin;\n  context.beginPath();\n  context.setFontSize(config.fontSize);\n  context.setFillStyle(radarOption.labelColor || '#666666');\n  angleList.forEach(function (angle, index) {\n    var pos = {\n      x: radius * Math.cos(angle),\n      y: radius * Math.sin(angle) };\n\n    var posRelativeCanvas = convertCoordinateOrigin(pos.x, pos.y, centerPosition);\n    var startX = posRelativeCanvas.x;\n    var startY = posRelativeCanvas.y;\n    if (util.approximatelyEqual(pos.x, 0)) {\n      startX -= measureText(opts.categories[index] || '') / 2;\n    } else if (pos.x < 0) {\n      startX -= measureText(opts.categories[index] || '');\n    }\n    context.fillText(opts.categories[index] || '', startX, startY + config.fontSize / 2);\n  });\n  context.stroke();\n  context.closePath();\n}\n\nfunction drawPieText(series, opts, config, context, radius, center) {\n  var lineRadius = radius + config.pieChartLinePadding;\n  var textObjectCollection = [];\n  var lastTextObject = null;\n\n  var seriesConvert = series.map(function (item) {\n    var arc = 2 * Math.PI - (item._start_ + 2 * Math.PI * item._proportion_ / 2);\n    var text = item.format ? item.format(+item._proportion_.toFixed(2)) : util.toFixed(item._proportion_ * 100) + '%';\n    var color = item.color;\n    return { arc: arc, text: text, color: color };\n  });\n  seriesConvert.forEach(function (item) {\n    // line end\n    var orginX1 = Math.cos(item.arc) * lineRadius;\n    var orginY1 = Math.sin(item.arc) * lineRadius;\n\n    // line start\n    var orginX2 = Math.cos(item.arc) * radius;\n    var orginY2 = Math.sin(item.arc) * radius;\n\n    // text start\n    var orginX3 = orginX1 >= 0 ? orginX1 + config.pieChartTextPadding : orginX1 - config.pieChartTextPadding;\n    var orginY3 = orginY1;\n\n    var textWidth = measureText(item.text);\n    var startY = orginY3;\n\n    if (lastTextObject && util.isSameXCoordinateArea(lastTextObject.start, { x: orginX3 })) {\n      if (orginX3 > 0) {\n        startY = Math.min(orginY3, lastTextObject.start.y);\n      } else if (orginX1 < 0) {\n        startY = Math.max(orginY3, lastTextObject.start.y);\n      } else {\n        if (orginY3 > 0) {\n          startY = Math.max(orginY3, lastTextObject.start.y);\n        } else {\n          startY = Math.min(orginY3, lastTextObject.start.y);\n        }\n      }\n    }\n\n    if (orginX3 < 0) {\n      orginX3 -= textWidth;\n    }\n\n    var textObject = {\n      lineStart: {\n        x: orginX2,\n        y: orginY2 },\n\n      lineEnd: {\n        x: orginX1,\n        y: orginY1 },\n\n      start: {\n        x: orginX3,\n        y: startY },\n\n      width: textWidth,\n      height: config.fontSize,\n      text: item.text,\n      color: item.color };\n\n\n    lastTextObject = avoidCollision(textObject, lastTextObject);\n    textObjectCollection.push(lastTextObject);\n  });\n\n  textObjectCollection.forEach(function (item) {\n    var lineStartPoistion = convertCoordinateOrigin(item.lineStart.x, item.lineStart.y, center);\n    var lineEndPoistion = convertCoordinateOrigin(item.lineEnd.x, item.lineEnd.y, center);\n    var textPosition = convertCoordinateOrigin(item.start.x, item.start.y, center);\n    context.setLineWidth(1 * opts.pixelRatio);\n    context.setFontSize(config.fontSize);\n    context.beginPath();\n    context.setStrokeStyle(item.color);\n    context.setFillStyle(item.color);\n    context.moveTo(lineStartPoistion.x, lineStartPoistion.y);\n    var curveStartX = item.start.x < 0 ? textPosition.x + item.width : textPosition.x;\n    var textStartX = item.start.x < 0 ? textPosition.x - 5 : textPosition.x + 5;\n    context.quadraticCurveTo(lineEndPoistion.x, lineEndPoistion.y, curveStartX, textPosition.y);\n    context.moveTo(lineStartPoistion.x, lineStartPoistion.y);\n    context.stroke();\n    context.closePath();\n    context.beginPath();\n    context.moveTo(textPosition.x + item.width, textPosition.y);\n    context.arc(curveStartX, textPosition.y, 2, 0, 2 * Math.PI);\n    context.closePath();\n    context.fill();\n    context.beginPath();\n    context.setFillStyle('#666666');\n    context.fillText(item.text, textStartX, textPosition.y + 3);\n    context.closePath();\n    context.stroke();\n\n    context.closePath();\n  });\n}\n\nfunction drawToolTipSplitLine(offsetX, opts, config, context) {\n  var startY = config.padding;\n  var endY = opts.height - config.padding - config.xAxisHeight - config.legendHeight;\n  context.beginPath();\n  context.setStrokeStyle('#cccccc');\n  context.setLineWidth(1 * opts.pixelRatio);\n  context.moveTo(offsetX, startY);\n  context.lineTo(offsetX, endY);\n  context.stroke();\n  context.closePath();\n}\n\nfunction drawToolTip(textList, offset, opts, config, context) {\n  var legendWidth = 4 * opts.pixelRatio;\n  var legendMarginRight = 5 * opts.pixelRatio;\n  var arrowWidth = 8 * opts.pixelRatio;\n  var isOverRightBorder = false;\n  offset = assign({\n    x: 0,\n    y: 0 },\n  offset);\n  offset.y -= 8 * opts.pixelRatio;\n  var textWidth = textList.map(function (item) {\n    return measureText(item.text);\n  });\n\n  var toolTipWidth = legendWidth + legendMarginRight + 4 * config.toolTipPadding + Math.max.apply(null, textWidth);\n  var toolTipHeight = 2 * config.toolTipPadding + textList.length * config.toolTipLineHeight;\n\n  // if beyond the right border\n  if (offset.x - Math.abs(opts._scrollDistance_) + arrowWidth + toolTipWidth > opts.width) {\n    isOverRightBorder = true;\n  }\n\n  // draw background rect\n  context.beginPath();\n  context.setFillStyle(opts.tooltip.option.background || config.toolTipBackground);\n  context.setGlobalAlpha(config.toolTipOpacity);\n  if (isOverRightBorder) {\n    context.moveTo(offset.x, offset.y + 10 * opts.pixelRatio);\n    context.lineTo(offset.x - arrowWidth, offset.y + 10 * opts.pixelRatio - 5 * opts.pixelRatio);\n    context.lineTo(offset.x - arrowWidth, offset.y + 10 * opts.pixelRatio + 5 * opts.pixelRatio);\n    context.moveTo(offset.x, offset.y + 10 * opts.pixelRatio);\n    context.fillRect(offset.x - toolTipWidth - arrowWidth, offset.y, toolTipWidth, toolTipHeight);\n  } else {\n    context.moveTo(offset.x, offset.y + 10 * opts.pixelRatio);\n    context.lineTo(offset.x + arrowWidth, offset.y + 10 * opts.pixelRatio - 5 * opts.pixelRatio);\n    context.lineTo(offset.x + arrowWidth, offset.y + 10 * opts.pixelRatio + 5 * opts.pixelRatio);\n    context.moveTo(offset.x, offset.y + 10 * opts.pixelRatio);\n    context.fillRect(offset.x + arrowWidth, offset.y, toolTipWidth, toolTipHeight);\n  }\n\n  context.closePath();\n  context.fill();\n  context.setGlobalAlpha(1);\n\n  // draw legend\n  textList.forEach(function (item, index) {\n    context.beginPath();\n    context.setFillStyle(item.color);\n    var startX = offset.x + arrowWidth + 2 * config.toolTipPadding;\n    var startY = offset.y + (config.toolTipLineHeight - config.fontSize) / 2 + config.toolTipLineHeight * index + config.toolTipPadding;\n    if (isOverRightBorder) {\n      startX = offset.x - toolTipWidth - arrowWidth + 2 * config.toolTipPadding;\n    }\n    context.fillRect(startX, startY, legendWidth, config.fontSize);\n    context.closePath();\n  });\n\n  // draw text list\n  context.beginPath();\n  context.setFontSize(config.fontSize);\n  context.setFillStyle('#ffffff');\n  textList.forEach(function (item, index) {\n    var startX = offset.x + arrowWidth + 2 * config.toolTipPadding + legendWidth + legendMarginRight;\n    if (isOverRightBorder) {\n      startX = offset.x - toolTipWidth - arrowWidth + 2 * config.toolTipPadding + +legendWidth + legendMarginRight;\n    }\n    var startY = offset.y + (config.toolTipLineHeight - config.fontSize) / 2 + config.toolTipLineHeight * index + config.toolTipPadding;\n    context.fillText(item.text, startX, startY + config.fontSize);\n  });\n  context.stroke();\n  context.closePath();\n}\n\nfunction drawYAxisTitle(title, opts, config, context) {\n  var startX = config.xAxisHeight + (opts.height - config.xAxisHeight - measureText(title)) / 2;\n  context.save();\n  context.beginPath();\n  context.setFontSize(config.fontSize);\n  context.setFillStyle(opts.yAxis.titleFontColor || '#333333');\n  context.translate(0, opts.height);\n  context.rotate(-90 * Math.PI / 180);\n  context.fillText(title, startX, config.padding + 0.5 * config.fontSize);\n  context.stroke();\n  context.closePath();\n  context.restore();\n}\n\nfunction drawColumnDataPoints(series, opts, config, context) {\n  var process = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 1;\n\n  var _calYAxisData = calYAxisData(series, opts, config),\n  ranges = _calYAxisData.ranges;\n\n  var _getXAxisPoints = getXAxisPoints(opts.categories, opts, config),\n  xAxisPoints = _getXAxisPoints.xAxisPoints,\n  eachSpacing = _getXAxisPoints.eachSpacing;\n\n  var minRange = ranges.pop();\n  var maxRange = ranges.shift();\n  context.save();\n  if (opts._scrollDistance_ && opts._scrollDistance_ !== 0 && opts.enableScroll === true) {\n    context.translate(opts._scrollDistance_, 0);\n  }\n\n  series.forEach(function (eachSeries, seriesIndex) {\n    var data = eachSeries.data;\n    var points = getDataPoints(data, minRange, maxRange, xAxisPoints, eachSpacing, opts, config, process);\n    points = fixColumeData(points, eachSpacing, series.length, seriesIndex, config, opts);\n\n    // 绘制柱状数据图\n    context.beginPath();\n    context.setFillStyle(eachSeries.color);\n    points.forEach(function (item, index) {\n      if (item !== null) {\n        var startX = item.x - item.width / 2 + 1;\n        var height = opts.height - item.y - config.padding - config.xAxisHeight - config.legendHeight;\n        context.moveTo(startX, item.y);\n        context.rect(startX, item.y, item.width - 2, height);\n      }\n    });\n    context.closePath();\n    context.fill();\n  });\n  series.forEach(function (eachSeries, seriesIndex) {\n    var data = eachSeries.data;\n    var points = getDataPoints(data, minRange, maxRange, xAxisPoints, eachSpacing, opts, config, process);\n    points = fixColumeData(points, eachSpacing, series.length, seriesIndex, config, opts);\n    if (opts.dataLabel !== false && process === 1) {\n      drawPointText(points, eachSeries, config, context);\n    }\n  });\n  context.restore();\n  return {\n    xAxisPoints: xAxisPoints,\n    eachSpacing: eachSpacing };\n\n}\n\nfunction drawAreaDataPoints(series, opts, config, context) {\n  var process = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 1;\n\n  var _calYAxisData2 = calYAxisData(series, opts, config),\n  ranges = _calYAxisData2.ranges;\n\n  var _getXAxisPoints2 = getXAxisPoints(opts.categories, opts, config),\n  xAxisPoints = _getXAxisPoints2.xAxisPoints,\n  eachSpacing = _getXAxisPoints2.eachSpacing;\n\n  var minRange = ranges.pop();\n  var maxRange = ranges.shift();\n  var endY = opts.height - config.padding - config.xAxisHeight - config.legendHeight;\n  var calPoints = [];\n\n  context.save();\n  if (opts._scrollDistance_ && opts._scrollDistance_ !== 0 && opts.enableScroll === true) {\n    context.translate(opts._scrollDistance_, 0);\n  }\n\n  if (opts.tooltip && opts.tooltip.textList && opts.tooltip.textList.length && process === 1) {\n    drawToolTipSplitLine(opts.tooltip.offset.x, opts, config, context);\n  }\n\n\n  series.forEach(function (eachSeries, seriesIndex) {\n    var data = eachSeries.data;\n    var points = getDataPoints(data, minRange, maxRange, xAxisPoints, eachSpacing, opts, config, process);\n    calPoints.push(points);\n\n    var splitPointList = splitPoints(points);\n\n    splitPointList.forEach(function (points) {\n      // 绘制区域数据\n      context.beginPath();\n      context.setStrokeStyle(eachSeries.color);\n      context.setFillStyle(eachSeries.color);\n      context.setGlobalAlpha(0.2);\n      context.setLineWidth(2 * opts.pixelRatio);\n      if (points.length > 1) {\n        var firstPoint = points[0];\n        var lastPoint = points[points.length - 1];\n\n        context.moveTo(firstPoint.x, firstPoint.y);\n        if (opts.extra.lineStyle === 'curve') {\n          points.forEach(function (item, index) {\n            if (index > 0) {\n              var ctrlPoint = createCurveControlPoints(points, index - 1);\n              context.bezierCurveTo(ctrlPoint.ctrA.x, ctrlPoint.ctrA.y, ctrlPoint.ctrB.x, ctrlPoint.ctrB.y, item.x, item.y);\n            }\n          });\n        } else {\n          points.forEach(function (item, index) {\n            if (index > 0) {\n              context.lineTo(item.x, item.y);\n            }\n          });\n        }\n\n        context.lineTo(lastPoint.x, endY);\n        context.lineTo(firstPoint.x, endY);\n        context.lineTo(firstPoint.x, firstPoint.y);\n      } else {\n        var item = points[0];\n        context.moveTo(item.x - eachSpacing / 2, item.y);\n        context.lineTo(item.x + eachSpacing / 2, item.y);\n        context.lineTo(item.x + eachSpacing / 2, endY);\n        context.lineTo(item.x - eachSpacing / 2, endY);\n        context.moveTo(item.x - eachSpacing / 2, item.y);\n      }\n      context.closePath();\n      context.fill();\n      context.setGlobalAlpha(1);\n\n\n      //画连线\n      context.beginPath();\n      context.setStrokeStyle(eachSeries.color);\n      context.setLineWidth(2 * opts.pixelRatio);\n      if (points.length === 1) {\n        context.moveTo(points[0].x, points[0].y);\n        context.arc(points[0].x, points[0].y, 1, 0, 2 * Math.PI);\n      } else {\n        context.moveTo(points[0].x, points[0].y);\n        points.forEach(function (item, index) {\n          if (index > 0) {\n            context.lineTo(item.x, item.y);\n          }\n        });\n        context.moveTo(points[0].x, points[0].y);\n      }\n      context.closePath();\n      context.stroke();\n    });\n\n    //画点\n    if (opts.dataPointShape !== false) {\n      var shape = config.dataPointShape[seriesIndex % config.dataPointShape.length];\n      drawPointShape(points, eachSeries.color, shape, context, opts);\n    }\n\n  });\n  if (opts.dataLabel !== false && process === 1) {\n    series.forEach(function (eachSeries, seriesIndex) {\n      var data = eachSeries.data;\n      var points = getDataPoints(data, minRange, maxRange, xAxisPoints, eachSpacing, opts, config, process);\n      drawPointText(points, eachSeries, config, context);\n    });\n  }\n\n  context.restore();\n\n  return {\n    xAxisPoints: xAxisPoints,\n    calPoints: calPoints,\n    eachSpacing: eachSpacing };\n\n}\n\nfunction drawLineDataPoints(series, opts, config, context) {\n  var process = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 1;\n\n  var _calYAxisData3 = calYAxisData(series, opts, config),\n  ranges = _calYAxisData3.ranges;\n\n  var _getXAxisPoints3 = getXAxisPoints(opts.categories, opts, config),\n  xAxisPoints = _getXAxisPoints3.xAxisPoints,\n  eachSpacing = _getXAxisPoints3.eachSpacing;\n\n  var minRange = ranges.pop();\n  var maxRange = ranges.shift();\n  var calPoints = [];\n\n  context.save();\n  if (opts._scrollDistance_ && opts._scrollDistance_ !== 0 && opts.enableScroll === true) {\n    context.translate(opts._scrollDistance_, 0);\n  }\n\n  if (opts.tooltip && opts.tooltip.textList && opts.tooltip.textList.length && process === 1) {\n    drawToolTipSplitLine(opts.tooltip.offset.x, opts, config, context);\n  }\n\n  series.forEach(function (eachSeries, seriesIndex) {\n    var data = eachSeries.data;\n    var points = getDataPoints(data, minRange, maxRange, xAxisPoints, eachSpacing, opts, config, process);\n    calPoints.push(points);\n    var splitPointList = splitPoints(points);\n\n    splitPointList.forEach(function (points, index) {\n      context.beginPath();\n      context.setStrokeStyle(eachSeries.color);\n      context.setLineWidth(2 * opts.pixelRatio);\n      if (points.length === 1) {\n        context.moveTo(points[0].x, points[0].y);\n        context.arc(points[0].x, points[0].y, 1, 0, 2 * Math.PI);\n      } else {\n        context.moveTo(points[0].x, points[0].y);\n        if (opts.extra.lineStyle === 'curve') {\n          points.forEach(function (item, index) {\n            if (index > 0) {\n              var ctrlPoint = createCurveControlPoints(points, index - 1);\n              context.bezierCurveTo(ctrlPoint.ctrA.x, ctrlPoint.ctrA.y, ctrlPoint.ctrB.x, ctrlPoint.ctrB.y, item.x, item.y);\n            }\n          });\n        } else {\n          points.forEach(function (item, index) {\n            if (index > 0) {\n              context.lineTo(item.x, item.y);\n            }\n          });\n        }\n        context.moveTo(points[0].x, points[0].y);\n      }\n      context.closePath();\n      context.stroke();\n    });\n\n    if (opts.dataPointShape !== false) {\n      var shape = config.dataPointShape[seriesIndex % config.dataPointShape.length];\n      drawPointShape(points, eachSeries.color, shape, context, opts);\n    }\n  });\n  if (opts.dataLabel !== false && process === 1) {\n    series.forEach(function (eachSeries, seriesIndex) {\n      var data = eachSeries.data;\n      var points = getDataPoints(data, minRange, maxRange, xAxisPoints, eachSpacing, opts, config, process);\n      drawPointText(points, eachSeries, config, context);\n    });\n  }\n\n  context.restore();\n\n  return {\n    xAxisPoints: xAxisPoints,\n    calPoints: calPoints,\n    eachSpacing: eachSpacing };\n\n}\n\nfunction drawToolTipBridge(opts, config, context, process) {\n  context.save();\n  if (opts._scrollDistance_ && opts._scrollDistance_ !== 0 && opts.enableScroll === true) {\n    context.translate(opts._scrollDistance_, 0);\n  }\n  if (opts.tooltip && opts.tooltip.textList && opts.tooltip.textList.length && process === 1) {\n    drawToolTip(opts.tooltip.textList, opts.tooltip.offset, opts, config, context);\n  }\n  context.restore();\n}\n\nfunction drawXAxis(categories, opts, config, context) {\n  var _getXAxisPoints4 = getXAxisPoints(categories, opts, config),\n  xAxisPoints = _getXAxisPoints4.xAxisPoints,\n  startX = _getXAxisPoints4.startX,\n  endX = _getXAxisPoints4.endX,\n  eachSpacing = _getXAxisPoints4.eachSpacing;\n\n  var startY = opts.height - config.padding - config.xAxisHeight - config.legendHeight;\n  var endY = startY + config.xAxisLineHeight;\n\n\n  //绘制滚动条\n  if (opts.enableScroll && opts.xAxis.scrollShow) {\n    var scrollStartX = startX + 3 * opts.pixelRatio;\n    var scrollendX = endX - 3 * opts.pixelRatio;\n    var scrollY = endY + 8 * opts.pixelRatio;\n    var scrollScreenWidth = scrollendX - scrollStartX;\n    var scrollTotalWidth = eachSpacing * (xAxisPoints.length - 1);\n    var scrollWidth = scrollScreenWidth * scrollScreenWidth / scrollTotalWidth;\n    var scrollLeft = 0;\n    if (opts._scrollDistance_) {\n      scrollLeft = -opts._scrollDistance_ * scrollScreenWidth / scrollTotalWidth;\n    }\n    context.beginPath();\n    context.setLineCap('round');\n    context.setLineWidth(6 * opts.pixelRatio);\n    context.setStrokeStyle(opts.xAxis.scrollBackgroundColor || \"#EFEBEF\");\n    context.moveTo(scrollStartX, scrollY);\n    context.lineTo(scrollendX, scrollY);\n    context.stroke();\n    context.closePath();\n    context.beginPath();\n    context.setLineCap('round');\n    context.setLineWidth(6 * opts.pixelRatio);\n    context.setStrokeStyle(opts.xAxis.scrollColor || \"#A6A6A6\");\n    context.moveTo(scrollStartX + scrollLeft, scrollY);\n    context.lineTo(scrollStartX + scrollLeft + scrollWidth, scrollY);\n    context.stroke();\n    context.closePath();\n  }\n\n  context.save();\n\n  if (opts._scrollDistance_ && opts._scrollDistance_ !== 0) {\n    context.translate(opts._scrollDistance_, 0);\n  }\n\n  context.beginPath();\n  context.setStrokeStyle(opts.xAxis.gridColor || \"#cccccc\");\n\n  if (opts.xAxis.disableGrid !== true) {\n    if (opts.xAxis.type === 'calibration') {\n      xAxisPoints.forEach(function (item, index) {\n        if (index > 0) {\n          context.moveTo(item - eachSpacing / 2, startY);\n          context.lineTo(item - eachSpacing / 2, startY + 4);\n        }\n      });\n    } else {\n      xAxisPoints.forEach(function (item, index) {\n        context.moveTo(item, startY);\n        context.lineTo(item, endY);\n      });\n    }\n  }\n  context.closePath();\n  context.stroke();\n\n  // 对X轴列表做抽稀处理\n  var validWidth = opts.width - 2 * config.padding - config.yAxisWidth - config.yAxisTitleWidth;\n  var maxXAxisListLength = Math.min(categories.length, Math.ceil(validWidth / config.fontSize / 1.5));\n  var ratio = Math.ceil(categories.length / maxXAxisListLength);\n\n  categories = categories.map(function (item, index) {\n    return index % ratio !== 0 ? '' : item;\n  });\n\n  if (config._xAxisTextAngle_ === 0) {\n    context.beginPath();\n    context.setFontSize(config.fontSize);\n    context.setFillStyle(opts.xAxis.fontColor || '#666666');\n    categories.forEach(function (item, index) {\n      var offset = eachSpacing / 2 - measureText(item) / 2;\n      context.fillText(item, xAxisPoints[index] + offset, startY + config.fontSize + 5);\n    });\n    context.closePath();\n    context.stroke();\n  } else {\n    categories.forEach(function (item, index) {\n      context.save();\n      context.beginPath();\n      context.setFontSize(config.fontSize);\n      context.setFillStyle(opts.xAxis.fontColor || '#666666');\n      var textWidth = measureText(item);\n      var offset = eachSpacing / 2 - textWidth;\n\n      var _calRotateTranslate = calRotateTranslate(xAxisPoints[index] + eachSpacing / 2, startY + config.fontSize / 2 + 5, opts.height),\n      transX = _calRotateTranslate.transX,\n      transY = _calRotateTranslate.transY;\n\n      context.rotate(-1 * config._xAxisTextAngle_);\n      context.translate(transX, transY);\n      context.fillText(item, xAxisPoints[index] + offset, startY + config.fontSize + 5);\n      context.closePath();\n      context.stroke();\n      context.restore();\n    });\n  }\n\n  context.restore();\n\n}\n\nfunction drawYAxisGrid(opts, config, context) {\n  var spacingValid = opts.height - 2 * config.padding - config.xAxisHeight - config.legendHeight;\n  var eachSpacing = Math.floor(spacingValid / config.yAxisSplit);\n  var yAxisTotalWidth = config.yAxisWidth + config.yAxisTitleWidth;\n  var startX = config.padding + yAxisTotalWidth;\n  var endX = opts.width - config.padding;\n\n  var points = [];\n  for (var i = 0; i < config.yAxisSplit; i++) {\n    points.push(config.padding + eachSpacing * i);\n  }\n  points.push(config.padding + eachSpacing * config.yAxisSplit + 2);\n\n  context.beginPath();\n  context.setStrokeStyle(opts.yAxis.gridColor || \"#cccccc\");\n  context.setLineWidth(1 * opts.pixelRatio);\n  points.forEach(function (item, index) {\n    context.moveTo(startX, item);\n    context.lineTo(endX, item);\n  });\n  context.closePath();\n  context.stroke();\n}\n\nfunction drawYAxis(series, opts, config, context) {\n  if (opts.yAxis.disabled === true) {\n    return;\n  }\n\n  var _calYAxisData4 = calYAxisData(series, opts, config),\n  rangesFormat = _calYAxisData4.rangesFormat;\n\n  var yAxisTotalWidth = config.yAxisWidth + config.yAxisTitleWidth;\n\n  var spacingValid = opts.height - 2 * config.padding - config.xAxisHeight - config.legendHeight;\n  var eachSpacing = Math.floor(spacingValid / config.yAxisSplit);\n  var startX = config.padding + yAxisTotalWidth;\n  var endX = opts.width - config.padding;\n  var endY = opts.height - config.padding - config.xAxisHeight - config.legendHeight;\n\n  // set YAxis background\n  context.setFillStyle(opts.background || '#ffffff');\n  if (opts._scrollDistance_ < 0) {\n    context.fillRect(0, 0, startX, endY + config.xAxisHeight + 5);\n  }\n  context.fillRect(endX, 0, opts.width, endY + config.xAxisHeight + 5);\n\n  var points = [];\n  for (var i = 0; i <= config.yAxisSplit; i++) {\n    points.push(config.padding + eachSpacing * i);\n  }\n\n  context.stroke();\n  context.beginPath();\n  context.setFontSize(config.fontSize);\n  context.setFillStyle(opts.yAxis.fontColor || '#666666');\n  rangesFormat.forEach(function (item, index) {\n    var pos = points[index] ? points[index] : endY;\n    context.fillText(item, config.padding + config.yAxisTitleWidth, pos + config.fontSize / 2);\n  });\n  context.closePath();\n  context.stroke();\n\n  if (opts.yAxis.title) {\n    drawYAxisTitle(opts.yAxis.title, opts, config, context);\n  }\n}\n\nfunction drawLegend(series, opts, config, context) {\n  if (!opts.legend) {\n    return;\n  }\n  // each legend shape width 15px\n  // the spacing between shape and text in each legend is the `padding`\n  // each legend spacing is the `padding`\n  // legend margin top `config.padding`\n\n  var _calLegendData = calLegendData(series, opts, config),\n  legendList = _calLegendData.legendList;\n\n  var padding = 5 * opts.pixelRatio;\n  var marginTop = 10 * opts.pixelRatio;\n  var shapeWidth = 15 * opts.pixelRatio;\n  legendList.forEach(function (itemList, listIndex) {\n    var width = 0;\n    itemList.forEach(function (item) {\n      item.name = item.name || 'undefined';\n      width += 3 * padding + measureText(item.name) + shapeWidth;\n    });\n    var startX = (opts.width - width) / 2 + padding;\n    var startY = opts.height - config.padding - config.legendHeight + listIndex * (config.fontSize + marginTop) + padding + marginTop;\n\n    context.setFontSize(config.fontSize);\n    itemList.forEach(function (item) {\n      switch (opts.type) {\n        case 'line':\n          context.beginPath();\n          /*\r\n                                              context.setLineWidth(1*opts.pixelRatio);\r\n                                              context.setStrokeStyle(item.color);\r\n                                              context.moveTo(startX - 2, startY + 5);\r\n                                              context.lineTo(startX + 17, startY + 5);\r\n                                              context.stroke();\r\n                                              context.closePath();\r\n                                              context.beginPath();\r\n                               */\n          context.setLineWidth(1 * opts.pixelRatio);\n          context.setStrokeStyle(item.color);\n          context.setFillStyle(item.color);\n          context.moveTo(startX + 7.5 * opts.pixelRatio, startY + 5 * opts.pixelRatio);\n          context.arc(startX + 7.5 * opts.pixelRatio, startY + 5 * opts.pixelRatio, 6 * opts.pixelRatio, 0, 2 * Math.PI);\n          context.fill();\n          context.stroke();\n          context.closePath();\n          break;\n        case 'pie':\n          context.beginPath();\n          context.setLineWidth(1 * opts.pixelRatio);\n          context.setStrokeStyle(item.color);\n          context.setFillStyle(item.color);\n          context.moveTo(startX + 7.5 * opts.pixelRatio, startY + 5 * opts.pixelRatio);\n          context.arc(startX + 7.5 * opts.pixelRatio, startY + 5 * opts.pixelRatio, 6 * opts.pixelRatio, 0, 2 * Math.PI);\n          context.fill();\n          context.stroke();\n          context.closePath();\n          break;\n        case 'ring':\n          context.beginPath();\n          context.setLineWidth(1 * opts.pixelRatio);\n          context.setStrokeStyle(item.color);\n          context.setFillStyle(item.color);\n          context.moveTo(startX + 7.5 * opts.pixelRatio, startY + 5 * opts.pixelRatio);\n          context.arc(startX + 7.5 * opts.pixelRatio, startY + 5 * opts.pixelRatio, 6 * opts.pixelRatio, 0, 2 * Math.PI);\n          context.fill();\n          context.stroke();\n          context.closePath();\n          break;\n        //圆弧进度图不显示图例\n        case 'gauge':\n          break;\n        default:\n          context.beginPath();\n          context.setFillStyle(item.color);\n          context.moveTo(startX, startY);\n          context.rect(startX, startY, 15 * opts.pixelRatio, 10 * opts.pixelRatio);\n          context.closePath();\n          context.fill();}\n\n      startX += padding + shapeWidth;\n      context.beginPath();\n      context.setFillStyle(opts.extra.legendTextColor || '#333333');\n      context.fillText(item.name, startX, startY + 6 * opts.pixelRatio + 3 * opts.pixelRatio);\n      context.closePath();\n      context.stroke();\n      startX += measureText(item.name) + 2 * padding;\n    });\n  });\n}\n\nfunction drawPieDataPoints(series, opts, config, context) {\n  var process = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 1;\n\n  var pieOption = opts.extra.pie || {};\n  series = getPieDataPoints(series, process);\n  var centerPosition = {\n    x: opts.width / 2,\n    y: (opts.height - config.legendHeight) / 2 };\n\n  var radius = Math.min(centerPosition.x - config.pieChartLinePadding - config.pieChartTextPadding - config._pieTextMaxLength_, centerPosition.y - config.pieChartLinePadding - config.pieChartTextPadding);\n  if (opts.dataLabel) {\n    radius -= 10;\n  } else {\n    radius -= 2 * config.padding;\n  }\n  series = series.map(function (eachSeries) {\n    eachSeries._start_ += (pieOption.offsetAngle || 0) * Math.PI / 180;\n    return eachSeries;\n  });\n  series.forEach(function (eachSeries) {\n    context.beginPath();\n    context.setLineWidth(2 * opts.pixelRatio);\n    context.setStrokeStyle('#ffffff');\n    context.setFillStyle(eachSeries.color);\n    context.moveTo(centerPosition.x, centerPosition.y);\n    context.arc(centerPosition.x, centerPosition.y, radius, eachSeries._start_, eachSeries._start_ + 2 * eachSeries._proportion_ * Math.PI);\n    context.closePath();\n    context.fill();\n    if (opts.disablePieStroke !== true) {\n      context.stroke();\n    }\n  });\n\n  if (opts.type === 'ring') {\n    var innerPieWidth = radius * 0.6;\n    if (typeof opts.extra.ringWidth === 'number' && opts.extra.ringWidth > 0) {\n      innerPieWidth = Math.max(0, radius - opts.extra.ringWidth);\n    }\n    context.beginPath();\n    context.setFillStyle(opts.background || '#ffffff');\n    context.moveTo(centerPosition.x, centerPosition.y);\n    context.arc(centerPosition.x, centerPosition.y, innerPieWidth, 0, 2 * Math.PI);\n    context.closePath();\n    context.fill();\n  }\n\n  if (opts.dataLabel !== false && process === 1) {\n    // fix https://github.com/xiaolin3303/wx-charts/issues/132\n    var valid = false;\n    for (var i = 0, len = series.length; i < len; i++) {\n      if (series[i].data > 0) {\n        valid = true;\n        break;\n      }\n    }\n\n    if (valid) {\n      drawPieText(series, opts, config, context, radius, centerPosition);\n    }\n  }\n\n  if (process === 1 && opts.type === 'ring') {\n    drawRingTitle(opts, config, context);\n  }\n\n  return {\n    center: centerPosition,\n    radius: radius,\n    series: series };\n\n}\n\nfunction drawGaugeDataPoints(series, opts, config, context) {\n  var process = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 1;\n\n  var pieOption = opts.extra.pie || {};\n  series = getGaugeDataPoints(series, process);\n  var centerPosition = {\n    x: opts.width / 2,\n    y: opts.height / 2 };\n\n  var radius = Math.min(centerPosition.x, centerPosition.y);\n\n  if (typeof opts.extra.gaugeWidth === 'number' && opts.extra.gaugeWidth > 0) {\n    opts.extra.gaugeWidth = opts.extra.gaugeWidth;\n  } else {\n    opts.extra.gaugeWidth = 12 * opts.pixelRatio;\n  }\n\n  radius -= config.padding + opts.extra.gaugeWidth / 2;\n\n  var innerPieWidth = radius - opts.extra.gaugeWidth;\n\n\n  //背景颜色\n  context.setLineWidth(opts.extra.gaugeWidth); // 设置圆环的宽度\n  context.setStrokeStyle('#E9E9E9'); // 设置圆环的颜色\n  context.setLineCap('round'); // 设置圆环端点的形状\n  context.beginPath(); //开始一个新的路径\n  context.arc(centerPosition.x, centerPosition.y, radius, 0.75 * Math.PI, 0.25 * Math.PI, false);\n  context.stroke(); //对当前路径进行描边\n\n\n  series.forEach(function (eachSeries) {\n    context.setLineWidth(opts.extra.gaugeWidth);\n    context.setStrokeStyle(eachSeries.color);\n    context.setLineCap('round');\n    context.beginPath();\n    context.arc(centerPosition.x, centerPosition.y, radius, 0.75 * Math.PI, eachSeries._proportion_ * Math.PI, false);\n    context.stroke();\n\n  });\n  drawRingTitle(opts, config, context);\n  return {\n    center: centerPosition,\n    radius: radius,\n    series: series };\n\n}\n\nfunction drawRadarDataPoints(series, opts, config, context) {\n  var process = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 1;\n\n  var radarOption = opts.extra.radar || {};\n  var coordinateAngle = getRadarCoordinateSeries(opts.categories.length);\n  var centerPosition = {\n    x: opts.width / 2,\n    y: (opts.height - config.legendHeight) / 2 };\n\n\n  var radius = Math.min(centerPosition.x - (getMaxTextListLength(opts.categories) + config.radarLabelTextMargin), centerPosition.y - config.radarLabelTextMargin);\n\n  radius -= config.padding;\n\n  // draw grid\n  context.beginPath();\n  context.setLineWidth(1 * opts.pixelRatio);\n  context.setStrokeStyle(radarOption.gridColor || \"#cccccc\");\n  coordinateAngle.forEach(function (angle) {\n    var pos = convertCoordinateOrigin(radius * Math.cos(angle), radius * Math.sin(angle), centerPosition);\n    context.moveTo(centerPosition.x, centerPosition.y);\n    context.lineTo(pos.x, pos.y);\n  });\n  context.stroke();\n  context.closePath();\n\n  // draw split line grid\n\n  var _loop = function _loop(i) {\n    var startPos = {};\n    context.beginPath();\n    context.setLineWidth(1 * opts.pixelRatio);\n    context.setStrokeStyle(radarOption.gridColor || \"#cccccc\");\n    coordinateAngle.forEach(function (angle, index) {\n      var pos = convertCoordinateOrigin(radius / config.radarGridCount * i * Math.cos(angle), radius / config.radarGridCount * i * Math.sin(angle), centerPosition);\n      if (index === 0) {\n        startPos = pos;\n        context.moveTo(pos.x, pos.y);\n      } else {\n        context.lineTo(pos.x, pos.y);\n      }\n    });\n    context.lineTo(startPos.x, startPos.y);\n    context.stroke();\n    context.closePath();\n  };\n\n  for (var i = 1; i <= config.radarGridCount; i++) {\n    _loop(i);\n  }\n\n  var radarDataPoints = getRadarDataPoints(coordinateAngle, centerPosition, radius, series, opts, process);\n\n  radarDataPoints.forEach(function (eachSeries, seriesIndex) {\n    // 绘制区域数据\n    context.beginPath();\n    context.setFillStyle(eachSeries.color);\n    context.setGlobalAlpha(0.3);\n    eachSeries.data.forEach(function (item, index) {\n      if (index === 0) {\n        context.moveTo(item.position.x, item.position.y);\n      } else {\n        context.lineTo(item.position.x, item.position.y);\n      }\n    });\n    context.closePath();\n    context.fill();\n    context.setGlobalAlpha(1);\n\n    if (opts.dataPointShape !== false) {\n      var shape = config.dataPointShape[seriesIndex % config.dataPointShape.length];\n      var points = eachSeries.data.map(function (item) {\n        return item.position;\n      });\n      drawPointShape(points, eachSeries.color, shape, context, opts);\n    }\n  });\n  // draw label text\n  drawRadarLabel(coordinateAngle, radius, centerPosition, opts, config, context);\n\n  return {\n    center: centerPosition,\n    radius: radius,\n    angleList: coordinateAngle };\n\n}\n\nfunction drawCanvas(opts, context) {\n  context.draw();\n}\n\nvar Timing = {\n  easeIn: function easeIn(pos) {\n    return Math.pow(pos, 3);\n  },\n\n  easeOut: function easeOut(pos) {\n    return Math.pow(pos - 1, 3) + 1;\n  },\n\n  easeInOut: function easeInOut(pos) {\n    if ((pos /= 0.5) < 1) {\n      return 0.5 * Math.pow(pos, 3);\n    } else {\n      return 0.5 * (Math.pow(pos - 2, 3) + 2);\n    }\n  },\n\n  linear: function linear(pos) {\n    return pos;\n  } };\n\n\nfunction Animation(opts) {\n  this.isStop = false;\n  opts.duration = typeof opts.duration === 'undefined' ? 1000 : opts.duration;\n  opts.timing = opts.timing || 'linear';\n\n  var delay = 17;\n\n  var createAnimationFrame = function createAnimationFrame() {\n\n    if (typeof requestAnimationFrame !== 'undefined') {\n      return requestAnimationFrame;\n    } else if (typeof setTimeout !== 'undefined') {\n\n      return function (step, delay) {\n        setTimeout(function () {\n          var timeStamp = +new Date();\n          step(timeStamp);\n        }, delay);\n      };\n    } else {\n\n      return function (step) {\n        step(null);\n      };\n    }\n  };\n  var animationFrame = createAnimationFrame();\n  var startTimeStamp = null;\n\n  var _step = function step(timestamp) {\n\n    if (timestamp === null || this.isStop === true) {\n      opts.onProcess && opts.onProcess(1);\n      opts.onAnimationFinish && opts.onAnimationFinish();\n      return;\n    }\n    if (startTimeStamp === null) {\n      startTimeStamp = timestamp;\n    }\n    if (timestamp - startTimeStamp < opts.duration) {\n      var process = (timestamp - startTimeStamp) / opts.duration;\n      var timingFunction = Timing[opts.timing];\n      process = timingFunction(process);\n\n      opts.onProcess && opts.onProcess(process);\n      animationFrame(_step, delay);\n    } else {\n      opts.onProcess && opts.onProcess(1);\n      opts.onAnimationFinish && opts.onAnimationFinish();\n    }\n  };\n  _step = _step.bind(this);\n  animationFrame(_step, delay);\n}\n\n// stop animation immediately\n// and tigger onAnimationFinish\nAnimation.prototype.stop = function () {\n  this.isStop = true;\n};\n\nfunction drawCharts(type, opts, config, context) {\n  var _this = this;\n\n  var series = opts.series;\n  var categories = opts.categories;\n  series = fillSeriesColor(series, config);\n\n  var _calLegendData = calLegendData(series, opts, config),\n  legendHeight = _calLegendData.legendHeight;\n\n  config.legendHeight = legendHeight;\n\n  var _calYAxisData = calYAxisData(series, opts, config),\n  yAxisWidth = _calYAxisData.yAxisWidth;\n\n  config.yAxisWidth = yAxisWidth;\n  if (categories && categories.length) {\n    var _calCategoriesData = calCategoriesData(categories, opts, config),\n    xAxisHeight = _calCategoriesData.xAxisHeight,\n    angle = _calCategoriesData.angle;\n\n    config.xAxisHeight = xAxisHeight;\n    config._xAxisTextAngle_ = angle;\n  }\n  if (type === 'pie' || type === 'ring') {\n    config._pieTextMaxLength_ = opts.dataLabel === false ? 0 : getPieTextMaxLength(series);\n  }\n\n  var duration = opts.animation ? 1000 : 0;\n  this.animationInstance && this.animationInstance.stop();\n  switch (type) {\n    case 'line':\n      this.animationInstance = new Animation({\n        timing: 'easeIn',\n        duration: duration,\n        onProcess: function onProcess(process) {\n          if (opts.rotate) {\n            context.translate(opts.height, 0);\n            context.rotate(90 * Math.PI / 180);\n          }\n          drawYAxisGrid(opts, config, context);\n          var _drawLineDataPoints = drawLineDataPoints(series, opts, config, context, process),\n          xAxisPoints = _drawLineDataPoints.xAxisPoints,\n          calPoints = _drawLineDataPoints.calPoints,\n          eachSpacing = _drawLineDataPoints.eachSpacing;\n\n          _this.chartData.xAxisPoints = xAxisPoints;\n          _this.chartData.calPoints = calPoints;\n          _this.chartData.eachSpacing = eachSpacing;\n          drawXAxis(categories, opts, config, context);\n          drawLegend(opts.series, opts, config, context);\n          drawYAxis(series, opts, config, context);\n          drawToolTipBridge(opts, config, context, process);\n          drawCanvas(opts, context);\n        },\n        onAnimationFinish: function onAnimationFinish() {\n          _this.event.trigger('renderComplete');\n        } });\n\n\n      break;\n    case 'column':\n      this.animationInstance = new Animation({\n        timing: 'easeIn',\n        duration: duration,\n        onProcess: function onProcess(process) {\n          if (opts.rotate) {\n            context.translate(opts.height, 0);\n            context.rotate(90 * Math.PI / 180);\n          }\n          drawYAxisGrid(opts, config, context);\n          var _drawColumnDataPoints = drawColumnDataPoints(series, opts, config, context, process),\n          xAxisPoints = _drawColumnDataPoints.xAxisPoints,\n          eachSpacing = _drawColumnDataPoints.eachSpacing;\n\n          _this.chartData.xAxisPoints = xAxisPoints;\n          _this.chartData.eachSpacing = eachSpacing;\n          drawXAxis(categories, opts, config, context);\n          drawLegend(opts.series, opts, config, context);\n          drawYAxis(series, opts, config, context);\n          drawCanvas(opts, context);\n        },\n        onAnimationFinish: function onAnimationFinish() {\n          _this.event.trigger('renderComplete');\n        } });\n\n      break;\n    case 'area':\n      this.animationInstance = new Animation({\n        timing: 'easeIn',\n        duration: duration,\n        onProcess: function onProcess(process) {\n          if (opts.rotate) {\n            context.translate(opts.height, 0);\n            context.rotate(90 * Math.PI / 180);\n          }\n          drawYAxisGrid(opts, config, context);\n          var _drawAreaDataPoints = drawAreaDataPoints(series, opts, config, context, process),\n          xAxisPoints = _drawAreaDataPoints.xAxisPoints,\n          calPoints = _drawAreaDataPoints.calPoints,\n          eachSpacing = _drawAreaDataPoints.eachSpacing;\n\n          _this.chartData.xAxisPoints = xAxisPoints;\n          _this.chartData.calPoints = calPoints;\n          _this.chartData.eachSpacing = eachSpacing;\n          drawXAxis(categories, opts, config, context);\n          drawLegend(opts.series, opts, config, context);\n          drawYAxis(series, opts, config, context);\n          drawToolTipBridge(opts, config, context, process);\n          drawCanvas(opts, context);\n        },\n        onAnimationFinish: function onAnimationFinish() {\n          _this.event.trigger('renderComplete');\n        } });\n\n      break;\n    case 'ring':\n    case 'pie':\n      this.animationInstance = new Animation({\n        timing: 'easeInOut',\n        duration: duration,\n        onProcess: function onProcess(process) {\n          if (opts.rotate) {\n            context.translate(opts.height, 0);\n            context.rotate(90 * Math.PI / 180);\n          }\n          _this.chartData.pieData = drawPieDataPoints(series, opts, config, context, process);\n          drawLegend(opts.series, opts, config, context);\n          drawCanvas(opts, context);\n        },\n        onAnimationFinish: function onAnimationFinish() {\n          _this.event.trigger('renderComplete');\n        } });\n\n      break;\n    case 'radar':\n      this.animationInstance = new Animation({\n        timing: 'easeInOut',\n        duration: duration,\n        onProcess: function onProcess(process) {\n          if (opts.rotate) {\n            context.translate(opts.height, 0);\n            context.rotate(90 * Math.PI / 180);\n          }\n          _this.chartData.radarData = drawRadarDataPoints(series, opts, config, context, process);\n          drawLegend(opts.series, opts, config, context);\n          drawCanvas(opts, context);\n        },\n        onAnimationFinish: function onAnimationFinish() {\n          _this.event.trigger('renderComplete');\n        } });\n\n      break;\n    case 'gauge':\n      this.animationInstance = new Animation({\n        timing: 'easeInOut',\n        duration: duration,\n        onProcess: function onProcess(process) {\n          if (opts.rotate) {\n            context.translate(opts.height, 0);\n            context.rotate(90 * Math.PI / 180);\n          }\n          _this.chartData.pieData = drawGaugeDataPoints(series, opts, config, context, process);\n          drawCanvas(opts, context);\n        },\n        onAnimationFinish: function onAnimationFinish() {\n          _this.event.trigger('renderComplete');\n        } });\n\n      break;}\n\n}\n\n// simple event implement\n\nfunction Event() {\n  this.events = {};\n}\n\nEvent.prototype.addEventListener = function (type, listener) {\n  this.events[type] = this.events[type] || [];\n  this.events[type].push(listener);\n};\n\nEvent.prototype.trigger = function () {\n  for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n    args[_key] = arguments[_key];\n  }\n\n  var type = args[0];\n  var params = args.slice(1);\n  if (!!this.events[type]) {\n    this.events[type].forEach(function (listener) {\n      try {\n        listener.apply(null, params);\n      } catch (e) {\n        console.error(e);\n      }\n    });\n  }\n};\n\nvar Charts = function Charts(opts) {\n  opts.fontSize = opts.fontSize ? opts.fontSize * opts.pixelRatio : 13 * opts.pixelRatio;\n  opts.title = opts.title || {};\n  opts.subtitle = opts.subtitle || {};\n  opts.yAxis = opts.yAxis || {};\n  opts.xAxis = opts.xAxis || {};\n  opts.xAxis.itemCount = opts.xAxis.itemCount ? opts.xAxis.itemCount : 5;\n  opts.extra = opts.extra || {};\n  opts.legend = opts.legend === false ? false : true;\n  opts.rotate = opts.rotate ? true : false;\n  opts.animation = opts.animation === false ? false : true;\n  var config$$1 = assign({}, config);\n  config$$1.yAxisTitleWidth = opts.yAxis.disabled !== true && opts.yAxis.title ? config$$1.yAxisTitleWidth : 0;\n  config$$1.pieChartLinePadding = opts.dataLabel === false ? 0 : config$$1.pieChartLinePadding * opts.pixelRatio;\n  config$$1.pieChartTextPadding = opts.dataLabel === false ? 0 : config$$1.pieChartTextPadding * opts.pixelRatio;\n\n  //屏幕旋转\n  config$$1.rotate = opts.rotate;\n  if (opts.rotate) {\n    var tempWidth = opts.width;\n    var tempHeight = opts.height;\n    opts.width = tempHeight;\n    opts.height = tempWidth;\n  }\n\n  //适配H5高分屏\n  config$$1.yAxisWidth = config.yAxisWidth * opts.pixelRatio;\n  config$$1.xAxisHeight = config.xAxisHeight * opts.pixelRatio;\n  if (opts.enableScroll && opts.xAxis.scrollShow) {\n    config$$1.xAxisHeight += 4 * opts.pixelRatio;\n  }\n  config$$1.xAxisLineHeight = config.xAxisLineHeight * opts.pixelRatio;\n  config$$1.legendHeight = config.legendHeight * opts.pixelRatio;\n  //config$$1.yAxisTitleWidth=config.yAxisTitleWidth*opts.pixelRatio;\n  config$$1.padding = config.padding * opts.pixelRatio;\n  config$$1.fontSize = opts.fontSize;\n  config$$1.titleFontSize = config.titleFontSize * opts.pixelRatio;\n  config$$1.subtitleFontSize = config.subtitleFontSize * opts.pixelRatio;\n  //config$$1.toolTipPadding=config.toolTipPadding*opts.pixelRatio;\n  config$$1.toolTipLineHeight = config.toolTipLineHeight * opts.pixelRatio;\n  config$$1.columePadding = config.columePadding * opts.pixelRatio;\n  //config$$1.xAxisTextPadding=config.xAxisTextPadding*opts.pixelRatio;\n\n  //向配置中传入当前pixelRatio及字体大小\n  config.pixelRatio = opts.pixelRatio;\n  config.fontSize = opts.fontSize;\n  config.rotate = opts.rotate;\n\n  this.opts = opts;\n  this.config = config$$1;\n  this.context = uni.createCanvasContext(opts.canvasId);\n  // store calcuated chart data\n  // such as chart point coordinate\n  this.chartData = {};\n  this.event = new Event();\n  this.scrollOption = {\n    currentOffset: 0,\n    startTouchX: 0,\n    distance: 0 };\n\n\n  drawCharts.call(this, opts.type, opts, config$$1, this.context);\n};\n\nCharts.prototype.updateData = function () {\n  var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};\n  this.opts.series = data.series || this.opts.series;\n  this.opts.categories = data.categories || this.opts.categories;\n\n  this.opts.title = assign({}, this.opts.title, data.title || {});\n  this.opts.subtitle = assign({}, this.opts.subtitle, data.subtitle || {});\n\n  drawCharts.call(this, this.opts.type, this.opts, this.config, this.context);\n};\n\nCharts.prototype.stopAnimation = function () {\n  this.animationInstance && this.animationInstance.stop();\n};\n\nCharts.prototype.addEventListener = function (type, listener) {\n  this.event.addEventListener(type, listener);\n};\n\nCharts.prototype.getCurrentDataIndex = function (e) {\n  var touches = e.mp.changedTouches[0];\n  if (touches) {\n\n    var _touches$ = touches,x,y;\n    //适配H5高分屏\n    if (_touches$.clientX) {\n      if (this.opts.rotate) {//适配横屏\n        y = _touches$.clientX * this.opts.pixelRatio;\n        x = (_touches$.pageY - e.mp.currentTarget.offsetTop - this.opts.height / this.opts.pixelRatio / 2 * (this.opts.pixelRatio - 1)) * this.opts.pixelRatio;\n      } else {\n        x = _touches$.clientX * this.opts.pixelRatio;\n        y = (_touches$.pageY - e.mp.currentTarget.offsetTop - this.opts.height / this.opts.pixelRatio / 2 * (this.opts.pixelRatio - 1)) * this.opts.pixelRatio;\n      }\n    } else {\n      if (this.opts.rotate) {//适配横屏\n        y = _touches$.x * this.opts.pixelRatio;\n        x = _touches$.y * this.opts.pixelRatio;\n      } else {\n        x = _touches$.x * this.opts.pixelRatio;\n        y = _touches$.y * this.opts.pixelRatio;\n      }\n    }\n    if (this.opts.type === 'pie' || this.opts.type === 'ring' || this.opts.type === 'gauge') {\n      return findPieChartCurrentIndex({ x: x, y: y }, this.chartData.pieData);\n    } else if (this.opts.type === 'radar') {\n      return findRadarChartCurrentIndex({ x: x, y: y }, this.chartData.radarData, this.opts.categories.length);\n    } else {\n      return findCurrentIndex({ x: x, y: y }, this.chartData.xAxisPoints, this.opts, this.config, Math.abs(this.scrollOption.currentOffset));\n    }\n  }\n  return -1;\n};\n\nCharts.prototype.showToolTip = function (e) {\n  var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};\n\n  if (this.opts.type === 'line' || this.opts.type === 'area') {\n    var index = this.getCurrentDataIndex(e);\n    var currentOffset = this.scrollOption.currentOffset;\n\n    var opts = assign({}, this.opts, {\n      _scrollDistance_: currentOffset,\n      animation: false });\n\n    if (index > -1) {\n      var seriesData = getSeriesDataItem(this.opts.series, index);\n      if (seriesData.length !== 0) {\n        var _getToolTipData = getToolTipData(seriesData, this.chartData.calPoints, index, this.opts.categories, option),\n        textList = _getToolTipData.textList,\n        offset = _getToolTipData.offset;\n\n        opts.tooltip = {\n          textList: textList,\n          offset: offset,\n          option: option };\n\n      }\n    }\n    drawCharts.call(this, opts.type, opts, this.config, this.context);\n  }\n};\n\nCharts.prototype.scrollStart = function (e) {\n  var touches = e.mp.changedTouches[0];\n  if (touches && this.opts.enableScroll === true) {\n    if (touches.x) {\n      this.scrollOption.startTouchX = touches.x;\n    } else {\n      this.scrollOption.startTouchX = touches.clientX;\n    }\n  }\n};\n\nCharts.prototype.scroll = function (e) {\n  // TODO throtting...\n  var touches = e.mp.changedTouches[0];\n  if (touches && this.opts.enableScroll === true) {\n    var _distance;\n    if (touches.x) {\n      _distance = touches.x - this.scrollOption.startTouchX;\n    } else {\n      _distance = touches.clientX - this.scrollOption.startTouchX;\n    }\n    var currentOffset = this.scrollOption.currentOffset;\n\n    var validDistance = calValidDistance(currentOffset + _distance, this.chartData, this.config, this.opts);\n\n    this.scrollOption.distance = _distance = validDistance - currentOffset;\n    var opts = assign({}, this.opts, {\n      _scrollDistance_: currentOffset + _distance,\n      animation: false });\n\n\n    drawCharts.call(this, opts.type, opts, this.config, this.context);\n  }\n};\n\nCharts.prototype.scrollEnd = function (e) {\n  if (this.opts.enableScroll === true) {\n    var _scrollOption = this.scrollOption,\n    currentOffset = _scrollOption.currentOffset,\n    distance = _scrollOption.distance;\n\n    this.scrollOption.currentOffset = currentOffset + distance;\n    this.scrollOption.distance = 0;\n  }\n};\n\nmodule.exports = Charts;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///components/wx-charts/wxcharts.js?440b");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fother%2Fcharts\"}":
+/*!*******************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{"page":"pages%2Fother%2Fcharts"} ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__(/*! uni-pages */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages.json\");\nvar _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js\"));\nvar _charts = _interopRequireDefault(__webpack_require__(/*! ./pages/other/charts.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\nPage((0, _mpvuePageFactory.default)(_charts.default));\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?%7B%22page%22:%22pages%252Fother%252Fcharts%22%7D");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue":
+/*!************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _charts_vue_vue_type_template_id_771f72d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./charts.vue?vue&type=template&id=771f72d6& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6&\");\n/* harmony import */ var _charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./charts.vue?vue&type=script&lang=js& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _charts_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./charts.vue?vue&type=style&index=0&lang=css& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(\n  _charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _charts_vue_vue_type_template_id_771f72d6___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _charts_vue_vue_type_template_id_771f72d6___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./charts.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=uni-app:///pages/other/charts.vue?vue&type=script&lang=js&?7d39");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css&":
+/*!*********************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css& ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--6-oneOf-1-2!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./charts.vue?vue&type=style&index=0&lang=css& */ \"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css&");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6&":
+/*!*******************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6& ***!
+  \*******************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_template_id_771f72d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./charts.vue?vue&type=template&id=771f72d6& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_template_id_771f72d6___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_charts_vue_vue_type_template_id_771f72d6___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6&");
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _wxcharts = _interopRequireDefault(__webpack_require__(/*! @/components/wx-charts/wxcharts.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/wx-charts/wxcharts.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _onfire = _interopRequireDefault(__webpack_require__(/*! onfire.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js\"));\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\n\n\n\nvar _self;\nvar canvaColumn = null;\nvar pie = null;\nvar Data = {\n  Column: { categories: ['2012', '2013', '2014', '2015', '2016', '2017'], series: [{ name: '成交量1', data: [15, 20, 45, 37, 43, 34] }, { name: '成交量2', data: [30, 40, 25, 14, 34, 18] }] },\n  Pie: { series: [] } };var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 统计类型\n      typeData: [\"隐患原因\", \"隐患类型\"],\n      currentType: \"隐患原因\",\n\n      cWidth: '',\n      cHeight: '',\n      pixelRatio: 1 };\n\n  },\n  onLoad: function onLoad() {\n    _self = this;\n    this.getCharts();\n\n\n\n\n\n\n\n\n\n\n\n    this.cWidth = uni.upx2px(750);\n    this.cHeight = uni.upx2px(500);\n  },\n  onReady: function onReady() {\n    this.showPie(\"canvasPie\", Data.Pie);\n  },\n  methods: {\n    showPie: function showPie(canvasId, chartData) {\n      pie = new _wxcharts.default({\n        canvasId: canvasId,\n        type: 'pie',\n        fontSize: 11,\n        legend: true,\n        background: '#FFFFFF',\n        pixelRatio: _self.pixelRatio,\n        series: chartData.series,\n        animation: false,\n        width: _self.cWidth * _self.pixelRatio,\n        height: _self.cHeight * _self.pixelRatio,\n        dataLabel: true });\n\n    },\n    changeData: function changeData() {\n      //这里只做了柱状图数据动态更新，其他图表同理。\n      pie.updateData({\n        series: Data.Pie.series });\n\n    },\n    // 获取统计\n    getCharts: function getCharts() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getDangerReasonChart, param, '正在获取统计信息',\n      function (res) {\n        var data = res.data;\n        Data.Pie = that.formatData(data);\n        // that.changeData();\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 格式化数据\n    formatData: function formatData(data) {\n      var pie = [];\n      for (var i = 0; i < data.length; i++) {\n        var item = data[i];\n        var newItem = {\n          name: item.name,\n          data: parseInt(item.value) };\n\n        pie.push(newItem);\n      }\n      console.log('统计结果：' + JSON.stringify(pie));\n      return { \"series\": pie };\n    },\n    // 选择位置\n    pickerChange: function pickerChange(id, data, e) {\n      this[id] = data[e.target.value];\n      this.getCharts();\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/other/charts.vue?vue&type=script&lang=js&?1b39");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=style&index=0&lang=css&");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"qiun-columns\" },\n    [\n      _c(\"scroll-view\", { attrs: { \"scroll-y\": \"true\" } }, [\n        _c(\n          \"view\",\n          { staticClass: \"cellInfoView\" },\n          [\n            _c(\n              \"uni-list\",\n              { attrs: { mpcomid: \"92b6b9ae-1\" } },\n              [\n                _c(\n                  \"picker\",\n                  {\n                    attrs: { range: _vm.typeData, eventid: \"92b6b9ae-0\" },\n                    on: {\n                      change: function($event) {\n                        _vm.pickerChange(\"currentType\", _vm.typeData, $event)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"uni-list-item\", {\n                      attrs: {\n                        title: \"统计类型\",\n                        subnote: _vm.currentType,\n                        \"show-arrow\": true,\n                        mpcomid: \"92b6b9ae-0\"\n                      }\n                    })\n                  ],\n                  1\n                )\n              ],\n              1\n            )\n          ],\n          1\n        )\n      ]),\n      _c(\n        \"view\",\n        { staticClass: \"qiun-bg-white qiun-title-bar qiun-common-mt\" },\n        [\n          _c(\"view\", { staticClass: \"qiun-title-dot-light\" }, [\n            _vm._v(_vm._s(_vm.currentType))\n          ])\n        ]\n      ),\n      _c(\n        \"view\",\n        { staticClass: \"qiun-charts\" },\n        [\n          _vm.currentType == \"隐患原因\"\n            ? _c(\"block\", [\n                _c(\"canvas\", {\n                  staticClass: \"charts\",\n                  attrs: { \"canvas-id\": \"canvasPie\", id: \"canvasPie\" }\n                })\n              ])\n            : _vm._e(),\n          _vm.currentType == \"隐患类型\"\n            ? _c(\"block\", [\n                _c(\"canvas\", {\n                  staticClass: \"charts\",\n                  staticStyle: { \"background-color\": \"#E5FDC3\" },\n                  attrs: { \"canvas-id\": \"canvasColumn\", id: \"canvasColumn\" }\n                })\n              ])\n            : _vm._e()\n        ],\n        1\n      )\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/other/charts.vue?vue&type=template&id=771f72d6&");
+
+/***/ })
+
+},[["../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/main.js?{\"page\":\"pages%2Fother%2Fcharts\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/other/charts.js');
 __wxRoute = 'pages/common/webView';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/common/webView.js';
 
 define('pages/common/webView.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){

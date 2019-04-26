@@ -20,6 +20,7 @@
     "pages/other/gonggaoList",
     "pages/other/newsList",
     "pages/other/pointRank",
+    "pages/other/charts",
     "pages/common/webView"
   ],
   "subPackages": [],

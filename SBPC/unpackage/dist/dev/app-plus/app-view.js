@@ -1062,250 +1062,211 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'4508b5aa-default-4508b5aa-1'])
+Z([3,'idx'])
+Z([3,'logItem'])
+Z([[7],[3,'logList']])
+Z(z[1])
+Z([[7],[3,'idx']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'30c48a99'])
 Z([3,'5c0aa864-default-5c0aa864-8'])
 Z([3,'handleProxy'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[7],[3,'$k']])
 Z([1,'5c0aa864-0'])
-Z([3,'30c48a99'])
+Z(z[7])
 Z([3,'隐患描述'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-1'])
-Z(z[5])
+Z(z[7])
 Z([3,'隐患等级'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-2'])
-Z(z[5])
+Z(z[7])
 Z([3,'隐患后果'])
-Z(z[1])
+Z(z[9])
 Z([3,'_picker 5c0aa864'])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-3'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
 Z([3,'yhlx'])
 Z([[7],[3,'dangerType']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'隐患类型'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[9])
+Z(z[28])
+Z(z[11])
 Z([1,'5c0aa864-4'])
-Z(z[23])
+Z(z[31])
 Z([3,'date'])
 Z([[6],[[7],[3,'model']],[3,'zgqx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'整改期限'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[9])
+Z(z[28])
+Z(z[11])
 Z([1,'5c0aa864-5'])
-Z(z[23])
+Z(z[31])
 Z([3,'yhly'])
 Z([[7],[3,'dangerSource']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'隐患来源'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-6'])
-Z(z[5])
+Z(z[7])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'false'])
 Z([3,'发起人'])
 Z([3,'5c0aa864-default-5c0aa864-14'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-10'])
-Z(z[5])
+Z(z[7])
 Z([3,'隐患因素'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-11'])
-Z(z[5])
+Z(z[7])
 Z([3,'原因分析'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-12'])
-Z(z[5])
+Z(z[7])
 Z([3,'整改情况'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[9])
+Z(z[28])
+Z(z[11])
 Z([1,'5c0aa864-13'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
-Z(z[34])
+Z(z[42])
 Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'完成日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
+Z(z[7])
+Z(z[65])
 Z([3,'整改人'])
 Z([3,'5c0aa864-default-5c0aa864-18'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-17'])
-Z(z[5])
+Z(z[7])
 Z([3,'完成情况'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
+Z(z[7])
+Z(z[65])
 Z([3,'确认人'])
-Z(z[1])
-Z(z[20])
-Z(z[3])
+Z(z[9])
+Z(z[28])
+Z(z[11])
 Z([1,'5c0aa864-18'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
-Z(z[34])
+Z(z[42])
 Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'填报日期'])
 Z([3,'5c0aa864-default-5c0aa864-20'])
 Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'5c0aa864-22'])
-Z(z[5])
+Z(z[7])
 Z([3,'审批意见'])
-Z([3,'4508b5aa-default-4508b5aa-1'])
-Z([3,'idx'])
-Z([3,'logItem'])
-Z([[7],[3,'logList']])
-Z(z[122])
-Z([[7],[3,'idx']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
 Z([3,'609973d6-default-609973d6-5'])
-Z(z[1])
+Z(z[9])
 Z([3,'_picker 609973d6'])
-Z(z[3])
+Z(z[11])
 Z([1,'609973d6-0'])
 Z([[2,'!'],[[7],[3,'editable']]])
 Z([3,'jclx'])
 Z([[7],[3,'checkTypes']])
 Z([3,'dictvalue'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'检查类型'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
+Z(z[7])
+Z(z[65])
 Z([3,'检查人'])
-Z(z[1])
+Z(z[9])
 Z(z[131])
-Z(z[3])
+Z(z[11])
 Z([1,'609973d6-1'])
 Z(z[134])
-Z(z[34])
+Z(z[42])
 Z([[6],[[7],[3,'model']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'检查日期'])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([1,'609973d6-2'])
-Z(z[5])
+Z(z[7])
 Z([3,'检查组成员'])
-Z(z[1])
+Z(z[9])
 Z(z[131])
-Z(z[3])
+Z(z[11])
 Z([1,'609973d6-3'])
 Z(z[134])
 Z([3,'mb'])
 Z([[7],[3,'selectedModule']])
 Z([3,'mbmc'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
 Z([3,'检查模板'])
 Z([3,'609973d6-default-609973d6-10'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'model']],[3,'jcjlList']])
 Z(z[173])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
-Z(z[5])
+Z(z[7])
 Z([3,'true'])
-Z([3,'b8ab4c7c-default-b8ab4c7c-1'])
+Z([3,'f40cc204-default-f40cc204-1'])
 Z(z[173])
 Z(z[174])
 Z([[7],[3,'ggList']])
 Z(z[173])
 Z([[7],[3,'index']])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'b8ab4c7c-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'b8ab4c7c-0-'],[[7],[3,'index']]])
-Z(z[5])
-Z([3,'77ae7fa4-default-77ae7fa4-3'])
-Z(z[1])
-Z([3,'_picker 77ae7fa4'])
-Z(z[3])
-Z([1,'77ae7fa4-0'])
-Z([3,'ifwt'])
-Z([[7],[3,'typeArray']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'检查结论'])
-Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'77ae7fa4-1'])
-Z([3,'wtms'])
-Z(z[5])
-Z([3,'问题描述'])
-Z(z[204])
-Z(z[1])
-Z(z[196])
-Z(z[3])
-Z([1,'77ae7fa4-2'])
-Z([3,'zgqk'])
-Z([[7],[3,'rectifyTypes']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'检查方式'])
-Z([3,'f40cc204-default-f40cc204-1'])
-Z(z[173])
-Z(z[174])
-Z(z[186])
-Z(z[173])
-Z(z[188])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
-Z(z[5])
+Z(z[7])
 Z([3,'c4edb036-default-c4edb036-1'])
 Z(z[173])
 Z(z[174])
 Z(z[186])
 Z(z[173])
 Z(z[188])
-Z(z[1])
+Z(z[9])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[11])
 Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
-Z(z[5])
+Z(z[7])
 Z([3,'5ff9ee88-default-5ff9ee88-1'])
 Z(z[173])
 Z(z[174])
@@ -1313,7 +1274,44 @@ Z(z[186])
 Z(z[173])
 Z(z[188])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[7])
+Z([3,'92b6b9ae-default-92b6b9ae-1'])
+Z(z[9])
+Z([3,'_picker 92b6b9ae'])
+Z(z[11])
+Z([1,'92b6b9ae-0'])
+Z([[7],[3,'typeData']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'92b6b9ae-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'统计类型'])
+Z([3,'77ae7fa4-default-77ae7fa4-3'])
+Z(z[9])
+Z([3,'_picker 77ae7fa4'])
+Z(z[11])
+Z([1,'77ae7fa4-0'])
+Z([3,'ifwt'])
+Z([[7],[3,'typeArray']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'检查结论'])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
+Z(z[9])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[11])
+Z([1,'77ae7fa4-1'])
+Z([3,'wtms'])
+Z(z[7])
+Z([3,'问题描述'])
+Z(z[232])
+Z(z[9])
+Z(z[224])
+Z(z[11])
+Z([1,'77ae7fa4-2'])
+Z([3,'zgqk'])
+Z([[7],[3,'rectifyTypes']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z([3,'检查方式'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -2306,25 +2304,6 @@ function gz$gwx_30(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_30)return __WXML_GLOBAL__.ops_cached.$gwx_30
 __WXML_GLOBAL__.ops_cached.$gwx_30=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'b8ab4c7c'])
-Z([3,'_view b8ab4c7c baseView'])
-Z([3,'_view b8ab4c7c cellInfoView'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'b8ab4c7c-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'b8ab4c7c-default-b8ab4c7c-1']]])
-Z([3,'3b6bb3ad'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_30);return __WXML_GLOBAL__.ops_cached.$gwx_30
-}
-function gz$gwx_31(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_31)return __WXML_GLOBAL__.ops_cached.$gwx_31
-__WXML_GLOBAL__.ops_cached.$gwx_31=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'b8ab4c7c'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_31);return __WXML_GLOBAL__.ops_cached.$gwx_31
-}
-function gz$gwx_32(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_32)return __WXML_GLOBAL__.ops_cached.$gwx_32
-__WXML_GLOBAL__.ops_cached.$gwx_32=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'4ef7e761'])
 Z([3,'_view 4ef7e761 content'])
 Z([3,'_view 4ef7e761 input-group'])
@@ -2346,19 +2325,19 @@ Z(z[8])
 Z([1,'4ef7e761-1'])
 Z([3,'primary'])
 Z([3,'确认地址'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_32);return __WXML_GLOBAL__.ops_cached.$gwx_32
+})(__WXML_GLOBAL__.ops_cached.$gwx_30);return __WXML_GLOBAL__.ops_cached.$gwx_30
 }
-function gz$gwx_33(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_33)return __WXML_GLOBAL__.ops_cached.$gwx_33
-__WXML_GLOBAL__.ops_cached.$gwx_33=[];
+function gz$gwx_31(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_31)return __WXML_GLOBAL__.ops_cached.$gwx_31
+__WXML_GLOBAL__.ops_cached.$gwx_31=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'4ef7e761'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_33);return __WXML_GLOBAL__.ops_cached.$gwx_33
+})(__WXML_GLOBAL__.ops_cached.$gwx_31);return __WXML_GLOBAL__.ops_cached.$gwx_31
 }
-function gz$gwx_34(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_34)return __WXML_GLOBAL__.ops_cached.$gwx_34
-__WXML_GLOBAL__.ops_cached.$gwx_34=[];
+function gz$gwx_32(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_32)return __WXML_GLOBAL__.ops_cached.$gwx_32
+__WXML_GLOBAL__.ops_cached.$gwx_32=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'2d8d4fae'])
 Z([3,'_view 2d8d4fae content'])
@@ -2396,19 +2375,19 @@ Z([3,'_view 2d8d4fae action-row'])
 Z([3,'_navigator 2d8d4fae'])
 Z([3,'diyHost'])
 Z([3,'自定义域'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_34);return __WXML_GLOBAL__.ops_cached.$gwx_34
+})(__WXML_GLOBAL__.ops_cached.$gwx_32);return __WXML_GLOBAL__.ops_cached.$gwx_32
 }
-function gz$gwx_35(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_35)return __WXML_GLOBAL__.ops_cached.$gwx_35
-__WXML_GLOBAL__.ops_cached.$gwx_35=[];
+function gz$gwx_33(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_33)return __WXML_GLOBAL__.ops_cached.$gwx_33
+__WXML_GLOBAL__.ops_cached.$gwx_33=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'2d8d4fae'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_35);return __WXML_GLOBAL__.ops_cached.$gwx_35
+})(__WXML_GLOBAL__.ops_cached.$gwx_33);return __WXML_GLOBAL__.ops_cached.$gwx_33
 }
-function gz$gwx_36(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_36)return __WXML_GLOBAL__.ops_cached.$gwx_36
-__WXML_GLOBAL__.ops_cached.$gwx_36=[];
+function gz$gwx_34(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_34)return __WXML_GLOBAL__.ops_cached.$gwx_34
+__WXML_GLOBAL__.ops_cached.$gwx_34=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'00cb397a'])
 Z([3,'_view 00cb397a baseView'])
@@ -2504,6 +2483,40 @@ Z(z[30])
 Z(z[8])
 Z(z[23])
 Z(z[23])
+})(__WXML_GLOBAL__.ops_cached.$gwx_34);return __WXML_GLOBAL__.ops_cached.$gwx_34
+}
+function gz$gwx_35(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_35)return __WXML_GLOBAL__.ops_cached.$gwx_35
+__WXML_GLOBAL__.ops_cached.$gwx_35=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'00cb397a'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_35);return __WXML_GLOBAL__.ops_cached.$gwx_35
+}
+function gz$gwx_36(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_36)return __WXML_GLOBAL__.ops_cached.$gwx_36
+__WXML_GLOBAL__.ops_cached.$gwx_36=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'92b6b9ae'])
+Z([3,'_view 92b6b9ae qiun-columns'])
+Z([3,'_scroll-view 92b6b9ae'])
+Z([3,'true'])
+Z([3,'_view 92b6b9ae cellInfoView'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'92b6b9ae-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'92b6b9ae-default-92b6b9ae-1']]])
+Z([3,'3b6bb3ad'])
+Z([3,'_view 92b6b9ae qiun-bg-white qiun-title-bar qiun-common-mt'])
+Z([3,'_view 92b6b9ae qiun-title-dot-light'])
+Z([a,[[7],[3,'currentType']]])
+Z([3,'_view 92b6b9ae qiun-charts'])
+Z([[2,'=='],[[7],[3,'currentType']],[1,'隐患原因']])
+Z([3,'canvasPie'])
+Z([3,'_canvas 92b6b9ae charts'])
+Z(z[12])
+Z([[2,'=='],[[7],[3,'currentType']],[1,'隐患类型']])
+Z([3,'canvasColumn'])
+Z(z[13])
+Z(z[16])
+Z([3,'background-color: #E5FDC3;'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_36);return __WXML_GLOBAL__.ops_cached.$gwx_36
 }
 function gz$gwx_37(){
@@ -2511,7 +2524,7 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_37)return __WXML_GLOBAL__.ops_cached.$gwx_37
 __WXML_GLOBAL__.ops_cached.$gwx_37=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'00cb397a'])
+Z([3,'92b6b9ae'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_37);return __WXML_GLOBAL__.ops_cached.$gwx_37
 }
 function gz$gwx_38(){
@@ -2788,7 +2801,47 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/gonggao/gonggaoList.vue.wxml','./pages/gonggao/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/charts.vue.wxml','./pages/other/charts.wxml','./charts.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':4508b5aa-default-4508b5aa-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:block:6:47")
+var xC=function(fE,oD,cF,gg){
+cs.push("./common/slots.wxml:block:6:47")
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:6:143")
+var cI=_oz(z,7,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,6,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],6,219)
+cs.pop()
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,3,xC,e,s,gg,oB,'logItem','idx','idx')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':5c0aa864-default-5c0aa864-8'
@@ -2799,127 +2852,127 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:6:47")
-var xC=_oz(z,5,e,s,gg)
+cs.push("./common/slots.wxml:template:8:47")
+var xC=_oz(z,13,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+var fE=_1z(z,10,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],6,214)
+else _w(xC,x[0],8,214)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:6:237")
-var hG=_oz(z,11,e,s,gg)
+cs.push("./common/slots.wxml:template:8:237")
+var hG=_oz(z,19,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,8,e,s,gg) || {}
+var cI=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],6,404)
+else _w(hG,x[0],8,404)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:6:427")
-var lK=_oz(z,17,e,s,gg)
+cs.push("./common/slots.wxml:template:8:427")
+var lK=_oz(z,25,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,14,e,s,gg) || {}
+var tM=_1z(z,22,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],6,594)
+else _w(lK,x[0],8,594)
 cs.pop()
-cs.push("./common/slots.wxml:picker:6:617")
-var eN=_mz(z,'picker',['bindchange',19,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:617")
+var eN=_mz(z,'picker',['bindchange',27,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:6:806")
-var oP=_oz(z,27,e,s,gg)
+cs.push("./common/slots.wxml:template:8:806")
+var oP=_oz(z,35,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,26,e,s,gg) || {}
+var oR=_1z(z,34,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],6,898)
+else _w(oP,x[0],8,898)
 cs.pop()
 cs.pop()
 _(r,eN)
-cs.push("./common/slots.wxml:picker:6:930")
-var fS=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:930")
+var fS=_mz(z,'picker',['bindchange',37,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:6:1121")
-var hU=_oz(z,37,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1121")
+var hU=_oz(z,45,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
-var cW=_1z(z,36,e,s,gg) || {}
+var cW=_1z(z,44,e,s,gg) || {}
 var cur_globalf=gg.f
 cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],6,1213)
+else _w(hU,x[0],8,1213)
 cs.pop()
 cs.pop()
 _(r,fS)
-cs.push("./common/slots.wxml:picker:6:1245")
-var oX=_mz(z,'picker',['bindchange',39,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:1245")
+var oX=_mz(z,'picker',['bindchange',47,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:6:1436")
-var aZ=_oz(z,47,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1436")
+var aZ=_oz(z,55,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
-var e2=_1z(z,46,e,s,gg) || {}
+var e2=_1z(z,54,e,s,gg) || {}
 var cur_globalf=gg.f
 lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],6,1528)
+else _w(aZ,x[0],8,1528)
 cs.pop()
 cs.pop()
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:6:1560")
-var o4=_oz(z,53,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1560")
+var o4=_oz(z,61,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
-var o6=_1z(z,50,e,s,gg) || {}
+var o6=_1z(z,58,e,s,gg) || {}
 var cur_globalf=gg.f
 b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],6,1727)
+else _w(o4,x[0],8,1727)
 cs.pop()
 var f7=_v()
 _(r,f7)
-cs.push("./common/slots.wxml:template:6:1750")
-var c8=_oz(z,56,e,s,gg)
+cs.push("./common/slots.wxml:template:8:1750")
+var c8=_oz(z,64,e,s,gg)
 var h9=_gd(x[0],c8,e_,d_)
 if(h9){
-var o0=_1z(z,55,e,s,gg) || {}
+var o0=_1z(z,63,e,s,gg) || {}
 var cur_globalf=gg.f
 f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[0],6,1858)
+else _w(c8,x[0],8,1858)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2938,77 +2991,77 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:8:48")
-var xC=_oz(z,64,e,s,gg)
+cs.push("./common/slots.wxml:template:10:48")
+var xC=_oz(z,72,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,61,e,s,gg) || {}
+var fE=_1z(z,69,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],8,216)
+else _w(xC,x[0],10,216)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:8:239")
-var hG=_oz(z,70,e,s,gg)
+cs.push("./common/slots.wxml:template:10:239")
+var hG=_oz(z,78,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,67,e,s,gg) || {}
+var cI=_1z(z,75,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],8,408)
+else _w(hG,x[0],10,408)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:8:431")
-var lK=_oz(z,76,e,s,gg)
+cs.push("./common/slots.wxml:template:10:431")
+var lK=_oz(z,84,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,73,e,s,gg) || {}
+var tM=_1z(z,81,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],8,600)
+else _w(lK,x[0],10,600)
 cs.pop()
-cs.push("./common/slots.wxml:picker:8:623")
-var eN=_mz(z,'picker',['bindchange',78,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:10:623")
+var eN=_mz(z,'picker',['bindchange',86,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:8:817")
-var oP=_oz(z,86,e,s,gg)
+cs.push("./common/slots.wxml:template:10:817")
+var oP=_oz(z,94,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,85,e,s,gg) || {}
+var oR=_1z(z,93,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],8,910)
+else _w(oP,x[0],10,910)
 cs.pop()
 cs.pop()
 _(r,eN)
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:8:942")
-var cT=_oz(z,89,e,s,gg)
+cs.push("./common/slots.wxml:template:10:942")
+var cT=_oz(z,97,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,88,e,s,gg) || {}
+var oV=_1z(z,96,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],8,1051)
+else _w(cT,x[0],10,1051)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3027,47 +3080,47 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:10:48")
-var xC=_oz(z,97,e,s,gg)
+cs.push("./common/slots.wxml:template:12:48")
+var xC=_oz(z,105,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,94,e,s,gg) || {}
+var fE=_1z(z,102,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],10,217)
+else _w(xC,x[0],12,217)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:10:240")
-var hG=_oz(z,100,e,s,gg)
+cs.push("./common/slots.wxml:template:12:240")
+var hG=_oz(z,108,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,99,e,s,gg) || {}
+var cI=_1z(z,107,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],10,349)
+else _w(hG,x[0],12,349)
 cs.pop()
-cs.push("./common/slots.wxml:picker:10:372")
-var oJ=_mz(z,'picker',['bindchange',103,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:12:372")
+var oJ=_mz(z,'picker',['bindchange',111,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:10:567")
-var aL=_oz(z,111,e,s,gg)
+cs.push("./common/slots.wxml:template:12:567")
+var aL=_oz(z,119,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,110,e,s,gg) || {}
+var eN=_1z(z,118,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],10,660)
+else _w(aL,x[0],12,660)
 cs.pop()
 cs.pop()
 _(r,oJ)
@@ -3088,65 +3141,25 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-if(_oz(z,114,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:12:48")
+if(_oz(z,122,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:14:48")
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:12:48")
-var oD=_oz(z,119,e,s,gg)
+cs.push("./common/slots.wxml:template:14:48")
+var oD=_oz(z,127,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,116,e,s,gg) || {}
+var cF=_1z(z,124,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],12,278)
+else _w(oD,x[0],14,278)
 cs.pop()
 cs.pop()
 }
 oB.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':4508b5aa-default-4508b5aa-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:14:47")
-var xC=function(fE,oD,cF,gg){
-cs.push("./common/slots.wxml:block:14:47")
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:14:143")
-var cI=_oz(z,128,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,127,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],14,219)
-cs.pop()
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,124,xC,e,s,gg,oB,'logItem','idx','idx')
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -3289,9 +3302,9 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["b8ab4c7c-default-b8ab4c7c-1"]=function(e,s,r,gg){
+d_[x[0]]["f40cc204-default-f40cc204-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':b8ab4c7c-default-b8ab4c7c-1'
+var b=x[0]+':f40cc204-default-f40cc204-1'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -3329,125 +3342,6 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-cs.push("./common/slots.wxml:picker:22:47")
-var oD=_mz(z,'picker',['bindchange',195,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var fE=_v()
-_(oD,fE)
-cs.push("./common/slots.wxml:template:22:190")
-var cF=_oz(z,202,e,s,gg)
-var hG=_gd(x[0],cF,e_,d_)
-if(hG){
-var oH=_1z(z,201,e,s,gg) || {}
-var cur_globalf=gg.f
-fE.wxXCkey=3
-hG(oH,oH,fE,gg)
-gg.f=cur_globalf
-}
-else _w(cF,x[0],22,282)
-cs.pop()
-cs.pop()
-_(r,oD)
-var oB=_v()
-_(r,oB)
-if(_oz(z,204,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:22:314")
-var cI=_v()
-_(oB,cI)
-cs.push("./common/slots.wxml:template:22:314")
-var oJ=_oz(z,210,e,s,gg)
-var lK=_gd(x[0],oJ,e_,d_)
-if(lK){
-var aL=_1z(z,206,e,s,gg) || {}
-var cur_globalf=gg.f
-cI.wxXCkey=3
-lK(aL,aL,cI,gg)
-gg.f=cur_globalf
-}
-else _w(oJ,x[0],22,520)
-cs.pop()
-cs.pop()
-}
-var xC=_v()
-_(r,xC)
-if(_oz(z,212,e,s,gg)){xC.wxVkey=1
-cs.push("./common/slots.wxml:picker:22:543")
-cs.push("./common/slots.wxml:picker:22:543")
-var tM=_mz(z,'picker',['bindchange',213,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var eN=_v()
-_(tM,eN)
-cs.push("./common/slots.wxml:template:22:718")
-var bO=_oz(z,220,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,219,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],22,810)
-cs.pop()
-cs.pop()
-_(xC,tM)
-cs.pop()
-}
-oB.wxXCkey=1
-xC.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["f40cc204-default-f40cc204-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':f40cc204-default-f40cc204-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:24:47")
-var xC=function(fE,oD,cF,gg){
-cs.push("./common/slots.wxml:block:24:47")
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:24:145")
-var cI=_oz(z,232,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,229,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],24,305)
-cs.pop()
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,225,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
 d_[x[0]]["c4edb036-default-c4edb036-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':c4edb036-default-c4edb036-1'
@@ -3458,28 +3352,28 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:block:26:47")
+cs.push("./common/slots.wxml:block:22:47")
 var xC=function(fE,oD,cF,gg){
-cs.push("./common/slots.wxml:block:26:47")
+cs.push("./common/slots.wxml:block:22:47")
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:26:145")
-var cI=_oz(z,243,fE,oD,gg)
+cs.push("./common/slots.wxml:template:22:145")
+var cI=_oz(z,204,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,240,fE,oD,gg) || {}
+var lK=_1z(z,201,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],26,305)
+else _w(cI,x[0],22,305)
 cs.pop()
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,236,xC,e,s,gg,oB,'item','index','index')
+_2z(z,197,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3498,29 +3392,141 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:block:28:47")
+cs.push("./common/slots.wxml:block:24:47")
 var xC=function(fE,oD,cF,gg){
-cs.push("./common/slots.wxml:block:28:47")
+cs.push("./common/slots.wxml:block:24:47")
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:28:145")
-var cI=_oz(z,251,fE,oD,gg)
+cs.push("./common/slots.wxml:template:24:145")
+var cI=_oz(z,212,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,250,fE,oD,gg) || {}
+var lK=_1z(z,211,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],28,223)
+else _w(cI,x[0],24,223)
 cs.pop()
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,247,xC,e,s,gg,oB,'item','index','index')
+_2z(z,208,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["92b6b9ae-default-92b6b9ae-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':92b6b9ae-default-92b6b9ae-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:26:47")
+var oB=_mz(z,'picker',['bindchange',214,'class',1,'data-comkey',2,'data-eventid',3,'range',4],[],e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./common/slots.wxml:template:26:179")
+var oD=_oz(z,220,e,s,gg)
+var fE=_gd(x[0],oD,e_,d_)
+if(fE){
+var cF=_1z(z,219,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
+}
+else _w(oD,x[0],26,271)
+cs.pop()
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:28:47")
+var oD=_mz(z,'picker',['bindchange',223,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var fE=_v()
+_(oD,fE)
+cs.push("./common/slots.wxml:template:28:190")
+var cF=_oz(z,230,e,s,gg)
+var hG=_gd(x[0],cF,e_,d_)
+if(hG){
+var oH=_1z(z,229,e,s,gg) || {}
+var cur_globalf=gg.f
+fE.wxXCkey=3
+hG(oH,oH,fE,gg)
+gg.f=cur_globalf
+}
+else _w(cF,x[0],28,282)
+cs.pop()
+cs.pop()
+_(r,oD)
+var oB=_v()
+_(r,oB)
+if(_oz(z,232,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:28:314")
+var cI=_v()
+_(oB,cI)
+cs.push("./common/slots.wxml:template:28:314")
+var oJ=_oz(z,238,e,s,gg)
+var lK=_gd(x[0],oJ,e_,d_)
+if(lK){
+var aL=_1z(z,234,e,s,gg) || {}
+var cur_globalf=gg.f
+cI.wxXCkey=3
+lK(aL,aL,cI,gg)
+gg.f=cur_globalf
+}
+else _w(oJ,x[0],28,520)
+cs.pop()
+cs.pop()
+}
+var xC=_v()
+_(r,xC)
+if(_oz(z,240,e,s,gg)){xC.wxVkey=1
+cs.push("./common/slots.wxml:picker:28:543")
+cs.push("./common/slots.wxml:picker:28:543")
+var tM=_mz(z,'picker',['bindchange',241,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var eN=_v()
+_(tM,eN)
+cs.push("./common/slots.wxml:template:28:718")
+var bO=_oz(z,248,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,247,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],28,810)
+cs.pop()
+cs.pop()
+_(xC,tM)
+cs.pop()
+}
+oB.wxXCkey=1
+xC.wxXCkey=1
 }catch(err){
 p_[b]=false
 throw err
@@ -6451,85 +6457,12 @@ return r
 }
 e_[x[45]]={f:m28,j:[],i:[],ti:[x[46]],ic:[]}
 d_[x[47]]={}
-d_[x[47]]["b8ab4c7c"]=function(e,s,r,gg){
+d_[x[47]]["4ef7e761"]=function(e,s,r,gg){
 var z=gz$gwx_30()
-var b=x[47]+':b8ab4c7c'
-r.wxVkey=b
-gg.f=$gdc(f_["./pages/gonggao/gonggaoList.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[47]);return}
-p_[b]=true
-try{
-cs.push("./pages/gonggao/gonggaoList.vue.wxml:view:1:157")
-var oB=_n('view')
-_rz(z,oB,'class',1,e,s,gg)
-cs.push("./pages/gonggao/gonggaoList.vue.wxml:view:1:195")
-var xC=_n('view')
-_rz(z,xC,'class',2,e,s,gg)
-var oD=_v()
-_(xC,oD)
-cs.push("./pages/gonggao/gonggaoList.vue.wxml:template:1:237")
-var fE=_oz(z,4,e,s,gg)
-var cF=_gd(x[47],fE,e_,d_)
-if(cF){
-var hG=_1z(z,3,e,s,gg) || {}
-var cur_globalf=gg.f
-oD.wxXCkey=3
-cF(hG,hG,oD,gg)
-gg.f=cur_globalf
-}
-else _w(fE,x[47],1,352)
-cs.pop()
-cs.pop()
-_(oB,xC)
-cs.pop()
-_(r,oB)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-var m29=function(e,s,r,gg){
-var z=gz$gwx_30()
-var hSC=e_[x[47]].i
-_ai(hSC,x[1],e_,x[47],1,1)
-_ai(hSC,x[2],e_,x[47],1,61)
-hSC.pop()
-hSC.pop()
-return r
-}
-e_[x[47]]={f:m29,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[48]]={}
-var m30=function(e,s,r,gg){
-var z=gz$gwx_31()
-var cUC=e_[x[48]].i
-_ai(cUC,x[49],e_,x[48],1,1)
-var oVC=_v()
-_(r,oVC)
-cs.push("./pages/gonggao/gonggaoList.wxml:template:2:6")
-var lWC=_oz(z,1,e,s,gg)
-var aXC=_gd(x[48],lWC,e_,d_)
-if(aXC){
-var tYC=_1z(z,0,e,s,gg) || {}
-var cur_globalf=gg.f
-oVC.wxXCkey=3
-aXC(tYC,tYC,oVC,gg)
-gg.f=cur_globalf
-}
-else _w(lWC,x[48],2,18)
-cs.pop()
-cUC.pop()
-return r
-}
-e_[x[48]]={f:m30,j:[],i:[],ti:[x[49]],ic:[]}
-d_[x[50]]={}
-d_[x[50]]["4ef7e761"]=function(e,s,r,gg){
-var z=gz$gwx_32()
-var b=x[50]+':4ef7e761'
+var b=x[47]+':4ef7e761'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/diyHost.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[50]);return}
+if(p_[b]){_wl(b,x[47]);return}
 p_[b]=true
 try{
 cs.push("./pages/login/diyHost.vue.wxml:view:1:72")
@@ -6552,7 +6485,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/login/diyHost.vue.wxml:template:1:247")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[50],oH,e_,d_)
+var cI=_gd(x[47],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -6560,7 +6493,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[50],1,471)
+else _w(oH,x[47],1,471)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -6586,44 +6519,44 @@ throw err
 p_[b]=false
 return r
 }
-var m31=function(e,s,r,gg){
-var z=gz$gwx_32()
-var b1C=e_[x[50]].i
-_ai(b1C,x[51],e_,x[50],1,1)
-b1C.pop()
+var m29=function(e,s,r,gg){
+var z=gz$gwx_30()
+var hSC=e_[x[47]].i
+_ai(hSC,x[48],e_,x[47],1,1)
+hSC.pop()
 return r
 }
-e_[x[50]]={f:m31,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[52]]={}
-var m32=function(e,s,r,gg){
-var z=gz$gwx_33()
-var x3C=e_[x[52]].i
-_ai(x3C,x[53],e_,x[52],1,1)
-var o4C=_v()
-_(r,o4C)
+e_[x[47]]={f:m29,j:[],i:[],ti:[x[48]],ic:[]}
+d_[x[49]]={}
+var m30=function(e,s,r,gg){
+var z=gz$gwx_31()
+var cUC=e_[x[49]].i
+_ai(cUC,x[50],e_,x[49],1,1)
+var oVC=_v()
+_(r,oVC)
 cs.push("./pages/login/diyHost.wxml:template:2:6")
-var f5C=_oz(z,1,e,s,gg)
-var c6C=_gd(x[52],f5C,e_,d_)
-if(c6C){
-var h7C=_1z(z,0,e,s,gg) || {}
+var lWC=_oz(z,1,e,s,gg)
+var aXC=_gd(x[49],lWC,e_,d_)
+if(aXC){
+var tYC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-o4C.wxXCkey=3
-c6C(h7C,h7C,o4C,gg)
+oVC.wxXCkey=3
+aXC(tYC,tYC,oVC,gg)
 gg.f=cur_globalf
 }
-else _w(f5C,x[52],2,18)
+else _w(lWC,x[49],2,18)
 cs.pop()
-x3C.pop()
+cUC.pop()
 return r
 }
-e_[x[52]]={f:m32,j:[],i:[],ti:[x[53]],ic:[]}
-d_[x[54]]={}
-d_[x[54]]["2d8d4fae"]=function(e,s,r,gg){
-var z=gz$gwx_34()
-var b=x[54]+':2d8d4fae'
+e_[x[49]]={f:m30,j:[],i:[],ti:[x[50]],ic:[]}
+d_[x[51]]={}
+d_[x[51]]["2d8d4fae"]=function(e,s,r,gg){
+var z=gz$gwx_32()
+var b=x[51]+':2d8d4fae'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[54]);return}
+if(p_[b]){_wl(b,x[51]);return}
 p_[b]=true
 try{
 cs.push("./pages/login/login.vue.wxml:view:1:72")
@@ -6646,7 +6579,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/login/login.vue.wxml:template:1:247")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[54],oH,e_,d_)
+var cI=_gd(x[51],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -6654,7 +6587,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[54],1,474)
+else _w(oH,x[51],1,474)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -6672,7 +6605,7 @@ var eN=_v()
 _(lK,eN)
 cs.push("./pages/login/login.vue.wxml:template:1:594")
 var bO=_oz(z,21,e,s,gg)
-var oP=_gd(x[54],bO,e_,d_)
+var oP=_gd(x[51],bO,e_,d_)
 if(oP){
 var xQ=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -6680,7 +6613,7 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[54],1,822)
+else _w(bO,x[51],1,822)
 cs.pop()
 cs.pop()
 _(xC,lK)
@@ -6717,44 +6650,44 @@ throw err
 p_[b]=false
 return r
 }
-var m33=function(e,s,r,gg){
-var z=gz$gwx_34()
-var c9C=e_[x[54]].i
-_ai(c9C,x[51],e_,x[54],1,1)
-c9C.pop()
+var m31=function(e,s,r,gg){
+var z=gz$gwx_32()
+var b1C=e_[x[51]].i
+_ai(b1C,x[48],e_,x[51],1,1)
+b1C.pop()
 return r
 }
-e_[x[54]]={f:m33,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[55]]={}
-var m34=function(e,s,r,gg){
-var z=gz$gwx_35()
-var lAD=e_[x[55]].i
-_ai(lAD,x[56],e_,x[55],1,1)
-var aBD=_v()
-_(r,aBD)
+e_[x[51]]={f:m31,j:[],i:[],ti:[x[48]],ic:[]}
+d_[x[52]]={}
+var m32=function(e,s,r,gg){
+var z=gz$gwx_33()
+var x3C=e_[x[52]].i
+_ai(x3C,x[53],e_,x[52],1,1)
+var o4C=_v()
+_(r,o4C)
 cs.push("./pages/login/login.wxml:template:2:6")
-var tCD=_oz(z,1,e,s,gg)
-var eDD=_gd(x[55],tCD,e_,d_)
-if(eDD){
-var bED=_1z(z,0,e,s,gg) || {}
+var f5C=_oz(z,1,e,s,gg)
+var c6C=_gd(x[52],f5C,e_,d_)
+if(c6C){
+var h7C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-aBD.wxXCkey=3
-eDD(bED,bED,aBD,gg)
+o4C.wxXCkey=3
+c6C(h7C,h7C,o4C,gg)
 gg.f=cur_globalf
 }
-else _w(tCD,x[55],2,18)
+else _w(f5C,x[52],2,18)
 cs.pop()
-lAD.pop()
+x3C.pop()
 return r
 }
-e_[x[55]]={f:m34,j:[],i:[],ti:[x[56]],ic:[]}
-d_[x[57]]={}
-d_[x[57]]["00cb397a"]=function(e,s,r,gg){
-var z=gz$gwx_36()
-var b=x[57]+':00cb397a'
+e_[x[52]]={f:m32,j:[],i:[],ti:[x[53]],ic:[]}
+d_[x[54]]={}
+d_[x[54]]["00cb397a"]=function(e,s,r,gg){
+var z=gz$gwx_34()
+var b=x[54]+':00cb397a'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[57]);return}
+if(p_[b]){_wl(b,x[54]);return}
 p_[b]=true
 try{
 cs.push("./pages/main/main.vue.wxml:view:1:27")
@@ -6985,11 +6918,127 @@ throw err
 p_[b]=false
 return r
 }
-var m35=function(e,s,r,gg){
-var z=gz$gwx_36()
+var m33=function(e,s,r,gg){
+var z=gz$gwx_34()
 return r
 }
-e_[x[57]]={f:m35,j:[],i:[],ti:[],ic:[]}
+e_[x[54]]={f:m33,j:[],i:[],ti:[],ic:[]}
+d_[x[55]]={}
+var m34=function(e,s,r,gg){
+var z=gz$gwx_35()
+var o0C=e_[x[55]].i
+_ai(o0C,x[56],e_,x[55],1,1)
+var lAD=_v()
+_(r,lAD)
+cs.push("./pages/main/main.wxml:template:2:6")
+var aBD=_oz(z,1,e,s,gg)
+var tCD=_gd(x[55],aBD,e_,d_)
+if(tCD){
+var eDD=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+lAD.wxXCkey=3
+tCD(eDD,eDD,lAD,gg)
+gg.f=cur_globalf
+}
+else _w(aBD,x[55],2,18)
+cs.pop()
+o0C.pop()
+return r
+}
+e_[x[55]]={f:m34,j:[],i:[],ti:[x[56]],ic:[]}
+d_[x[57]]={}
+d_[x[57]]["92b6b9ae"]=function(e,s,r,gg){
+var z=gz$gwx_36()
+var b=x[57]+':92b6b9ae'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/other/charts.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[57]);return}
+p_[b]=true
+try{
+cs.push("./pages/other/charts.vue.wxml:view:1:157")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+cs.push("./pages/other/charts.vue.wxml:scroll-view:1:199")
+var xC=_mz(z,'scroll-view',['class',2,'scrollY',1],[],e,s,gg)
+cs.push("./pages/other/charts.vue.wxml:view:1:258")
+var oD=_n('view')
+_rz(z,oD,'class',4,e,s,gg)
+var fE=_v()
+_(oD,fE)
+cs.push("./pages/other/charts.vue.wxml:template:1:300")
+var cF=_oz(z,6,e,s,gg)
+var hG=_gd(x[57],cF,e_,d_)
+if(hG){
+var oH=_1z(z,5,e,s,gg) || {}
+var cur_globalf=gg.f
+fE.wxXCkey=3
+hG(oH,oH,fE,gg)
+gg.f=cur_globalf
+}
+else _w(cF,x[57],1,415)
+cs.pop()
+cs.pop()
+_(xC,oD)
+cs.pop()
+_(oB,xC)
+cs.push("./pages/other/charts.vue.wxml:view:1:459")
+var cI=_n('view')
+_rz(z,cI,'class',7,e,s,gg)
+cs.push("./pages/other/charts.vue.wxml:view:1:532")
+var oJ=_n('view')
+_rz(z,oJ,'class',8,e,s,gg)
+var lK=_oz(z,9,e,s,gg)
+_(oJ,lK)
+cs.pop()
+_(cI,oJ)
+cs.pop()
+_(oB,cI)
+cs.push("./pages/other/charts.vue.wxml:view:1:611")
+var aL=_n('view')
+_rz(z,aL,'class',10,e,s,gg)
+var tM=_v()
+_(aL,tM)
+if(_oz(z,11,e,s,gg)){tM.wxVkey=1
+cs.push("./pages/other/charts.vue.wxml:block:1:652")
+cs.push("./pages/other/charts.vue.wxml:canvas:1:701")
+var bO=_mz(z,'canvas',['canvasId',12,'class',1,'id',2],[],e,s,gg)
+cs.pop()
+_(tM,bO)
+cs.pop()
+}
+var eN=_v()
+_(aL,eN)
+if(_oz(z,15,e,s,gg)){eN.wxVkey=1
+cs.push("./pages/other/charts.vue.wxml:block:1:795")
+cs.push("./pages/other/charts.vue.wxml:canvas:1:844")
+var oP=_mz(z,'canvas',['canvasId',16,'class',1,'id',2,'style',3],[],e,s,gg)
+cs.pop()
+_(eN,oP)
+cs.pop()
+}
+tM.wxXCkey=1
+eN.wxXCkey=1
+cs.pop()
+_(oB,aL)
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m35=function(e,s,r,gg){
+var z=gz$gwx_36()
+var oFD=e_[x[57]].i
+_ai(oFD,x[1],e_,x[57],1,1)
+_ai(oFD,x[2],e_,x[57],1,61)
+oFD.pop()
+oFD.pop()
+return r
+}
+e_[x[57]]={f:m35,j:[],i:[],ti:[x[1],x[2]],ic:[]}
 d_[x[58]]={}
 var m36=function(e,s,r,gg){
 var z=gz$gwx_37()
@@ -6997,7 +7046,7 @@ var oHD=e_[x[58]].i
 _ai(oHD,x[59],e_,x[58],1,1)
 var fID=_v()
 _(r,fID)
-cs.push("./pages/main/main.wxml:template:2:6")
+cs.push("./pages/other/charts.wxml:template:2:6")
 var cJD=_oz(z,1,e,s,gg)
 var hKD=_gd(x[58],cJD,e_,d_)
 if(hKD){
@@ -7067,7 +7116,7 @@ d_[x[61]]={}
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
 var aPD=e_[x[61]].i
-_ai(aPD,x[49],e_,x[61],1,1)
+_ai(aPD,x[62],e_,x[61],1,1)
 var tQD=_v()
 _(r,tQD)
 cs.push("./pages/other/gonggaoList.wxml:template:2:6")
@@ -7085,14 +7134,14 @@ cs.pop()
 aPD.pop()
 return r
 }
-e_[x[61]]={f:m38,j:[],i:[],ti:[x[49]],ic:[]}
-d_[x[62]]={}
-d_[x[62]]["c4edb036"]=function(e,s,r,gg){
+e_[x[61]]={f:m38,j:[],i:[],ti:[x[62]],ic:[]}
+d_[x[63]]={}
+d_[x[63]]["c4edb036"]=function(e,s,r,gg){
 var z=gz$gwx_40()
-var b=x[62]+':c4edb036'
+var b=x[63]+':c4edb036'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/other/newsList.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[62]);return}
+if(p_[b]){_wl(b,x[63]);return}
 p_[b]=true
 try{
 cs.push("./pages/other/newsList.vue.wxml:view:1:157")
@@ -7105,7 +7154,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./pages/other/newsList.vue.wxml:template:1:237")
 var fE=_oz(z,4,e,s,gg)
-var cF=_gd(x[62],fE,e_,d_)
+var cF=_gd(x[63],fE,e_,d_)
 if(cF){
 var hG=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7113,7 +7162,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[62],1,352)
+else _w(fE,x[63],1,352)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -7128,24 +7177,24 @@ return r
 }
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
-var oVD=e_[x[62]].i
-_ai(oVD,x[1],e_,x[62],1,1)
-_ai(oVD,x[2],e_,x[62],1,61)
+var oVD=e_[x[63]].i
+_ai(oVD,x[1],e_,x[63],1,1)
+_ai(oVD,x[2],e_,x[63],1,61)
 oVD.pop()
 oVD.pop()
 return r
 }
-e_[x[62]]={f:m39,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[63]]={}
+e_[x[63]]={f:m39,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[64]]={}
 var m40=function(e,s,r,gg){
 var z=gz$gwx_41()
-var cXD=e_[x[63]].i
-_ai(cXD,x[64],e_,x[63],1,1)
+var cXD=e_[x[64]].i
+_ai(cXD,x[65],e_,x[64],1,1)
 var hYD=_v()
 _(r,hYD)
 cs.push("./pages/other/newsList.wxml:template:2:6")
 var oZD=_oz(z,1,e,s,gg)
-var c1D=_gd(x[63],oZD,e_,d_)
+var c1D=_gd(x[64],oZD,e_,d_)
 if(c1D){
 var o2D=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7153,19 +7202,19 @@ hYD.wxXCkey=3
 c1D(o2D,o2D,hYD,gg)
 gg.f=cur_globalf
 }
-else _w(oZD,x[63],2,18)
+else _w(oZD,x[64],2,18)
 cs.pop()
 cXD.pop()
 return r
 }
-e_[x[63]]={f:m40,j:[],i:[],ti:[x[64]],ic:[]}
-d_[x[65]]={}
-d_[x[65]]["5ff9ee88"]=function(e,s,r,gg){
+e_[x[64]]={f:m40,j:[],i:[],ti:[x[65]],ic:[]}
+d_[x[66]]={}
+d_[x[66]]["5ff9ee88"]=function(e,s,r,gg){
 var z=gz$gwx_42()
-var b=x[65]+':5ff9ee88'
+var b=x[66]+':5ff9ee88'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/other/pointRank.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[65]);return}
+if(p_[b]){_wl(b,x[66]);return}
 p_[b]=true
 try{
 cs.push("./pages/other/pointRank.vue.wxml:view:1:157")
@@ -7178,7 +7227,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./pages/other/pointRank.vue.wxml:template:1:237")
 var fE=_oz(z,4,e,s,gg)
-var cF=_gd(x[65],fE,e_,d_)
+var cF=_gd(x[66],fE,e_,d_)
 if(cF){
 var hG=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7186,7 +7235,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[65],1,352)
+else _w(fE,x[66],1,352)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -7201,24 +7250,24 @@ return r
 }
 var m41=function(e,s,r,gg){
 var z=gz$gwx_42()
-var a4D=e_[x[65]].i
-_ai(a4D,x[1],e_,x[65],1,1)
-_ai(a4D,x[2],e_,x[65],1,61)
+var a4D=e_[x[66]].i
+_ai(a4D,x[1],e_,x[66],1,1)
+_ai(a4D,x[2],e_,x[66],1,61)
 a4D.pop()
 a4D.pop()
 return r
 }
-e_[x[65]]={f:m41,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[66]]={}
+e_[x[66]]={f:m41,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[67]]={}
 var m42=function(e,s,r,gg){
 var z=gz$gwx_43()
-var e6D=e_[x[66]].i
-_ai(e6D,x[67],e_,x[66],1,1)
+var e6D=e_[x[67]].i
+_ai(e6D,x[68],e_,x[67],1,1)
 var b7D=_v()
 _(r,b7D)
 cs.push("./pages/other/pointRank.wxml:template:2:6")
 var o8D=_oz(z,1,e,s,gg)
-var x9D=_gd(x[66],o8D,e_,d_)
+var x9D=_gd(x[67],o8D,e_,d_)
 if(x9D){
 var o0D=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7226,19 +7275,19 @@ b7D.wxXCkey=3
 x9D(o0D,o0D,b7D,gg)
 gg.f=cur_globalf
 }
-else _w(o8D,x[66],2,18)
+else _w(o8D,x[67],2,18)
 cs.pop()
 e6D.pop()
 return r
 }
-e_[x[66]]={f:m42,j:[],i:[],ti:[x[67]],ic:[]}
-d_[x[68]]={}
-d_[x[68]]["289ecc0c"]=function(e,s,r,gg){
+e_[x[67]]={f:m42,j:[],i:[],ti:[x[68]],ic:[]}
+d_[x[69]]={}
+d_[x[69]]["289ecc0c"]=function(e,s,r,gg){
 var z=gz$gwx_44()
-var b=x[68]+':289ecc0c'
+var b=x[69]+':289ecc0c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/peixun/peixun.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[68]);return}
+if(p_[b]){_wl(b,x[69]);return}
 p_[b]=true
 try{
 cs.push("./pages/peixun/peixun.vue.wxml:view:1:27")
@@ -7304,17 +7353,17 @@ var m43=function(e,s,r,gg){
 var z=gz$gwx_44()
 return r
 }
-e_[x[68]]={f:m43,j:[],i:[],ti:[],ic:[]}
-d_[x[69]]={}
+e_[x[69]]={f:m43,j:[],i:[],ti:[],ic:[]}
+d_[x[70]]={}
 var m44=function(e,s,r,gg){
 var z=gz$gwx_45()
-var hCE=e_[x[69]].i
-_ai(hCE,x[70],e_,x[69],1,1)
+var hCE=e_[x[70]].i
+_ai(hCE,x[71],e_,x[70],1,1)
 var oDE=_v()
 _(r,oDE)
 cs.push("./pages/peixun/peixun.wxml:template:2:6")
 var cEE=_oz(z,1,e,s,gg)
-var oFE=_gd(x[69],cEE,e_,d_)
+var oFE=_gd(x[70],cEE,e_,d_)
 if(oFE){
 var lGE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7322,19 +7371,19 @@ oDE.wxXCkey=3
 oFE(lGE,lGE,oDE,gg)
 gg.f=cur_globalf
 }
-else _w(cEE,x[69],2,18)
+else _w(cEE,x[70],2,18)
 cs.pop()
 hCE.pop()
 return r
 }
-e_[x[69]]={f:m44,j:[],i:[],ti:[x[70]],ic:[]}
-d_[x[71]]={}
-d_[x[71]]["6cbf6956"]=function(e,s,r,gg){
+e_[x[70]]={f:m44,j:[],i:[],ti:[x[71]],ic:[]}
+d_[x[72]]={}
+d_[x[72]]["6cbf6956"]=function(e,s,r,gg){
 var z=gz$gwx_46()
-var b=x[71]+':6cbf6956'
+var b=x[72]+':6cbf6956'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[71]);return}
+if(p_[b]){_wl(b,x[72]);return}
 p_[b]=true
 try{
 cs.push("./pages/pwd/pwd.vue.wxml:view:1:72")
@@ -7357,7 +7406,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[71],oH,e_,d_)
+var cI=_gd(x[72],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7365,7 +7414,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[71],1,465)
+else _w(oH,x[72],1,465)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -7393,22 +7442,22 @@ return r
 }
 var m45=function(e,s,r,gg){
 var z=gz$gwx_46()
-var tIE=e_[x[71]].i
-_ai(tIE,x[51],e_,x[71],1,1)
+var tIE=e_[x[72]].i
+_ai(tIE,x[48],e_,x[72],1,1)
 tIE.pop()
 return r
 }
-e_[x[71]]={f:m45,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[72]]={}
+e_[x[72]]={f:m45,j:[],i:[],ti:[x[48]],ic:[]}
+d_[x[73]]={}
 var m46=function(e,s,r,gg){
 var z=gz$gwx_47()
-var bKE=e_[x[72]].i
-_ai(bKE,x[73],e_,x[72],1,1)
+var bKE=e_[x[73]].i
+_ai(bKE,x[74],e_,x[73],1,1)
 var oLE=_v()
 _(r,oLE)
 cs.push("./pages/pwd/pwd.wxml:template:2:6")
 var xME=_oz(z,1,e,s,gg)
-var oNE=_gd(x[72],xME,e_,d_)
+var oNE=_gd(x[73],xME,e_,d_)
 if(oNE){
 var fOE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7416,19 +7465,19 @@ oLE.wxXCkey=3
 oNE(fOE,fOE,oLE,gg)
 gg.f=cur_globalf
 }
-else _w(xME,x[72],2,18)
+else _w(xME,x[73],2,18)
 cs.pop()
 bKE.pop()
 return r
 }
-e_[x[72]]={f:m46,j:[],i:[],ti:[x[73]],ic:[]}
-d_[x[74]]={}
-d_[x[74]]["90021ef8"]=function(e,s,r,gg){
+e_[x[73]]={f:m46,j:[],i:[],ti:[x[74]],ic:[]}
+d_[x[75]]={}
+d_[x[75]]["90021ef8"]=function(e,s,r,gg){
 var z=gz$gwx_48()
-var b=x[74]+':90021ef8'
+var b=x[75]+':90021ef8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[74]);return}
+if(p_[b]){_wl(b,x[75]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:1:72")
@@ -7451,7 +7500,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./pages/reg/reg.vue.wxml:template:1:247")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[74],oH,e_,d_)
+var cI=_gd(x[75],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7459,7 +7508,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[74],1,474)
+else _w(oH,x[75],1,474)
 cs.pop()
 cs.pop()
 _(xC,oD)
@@ -7477,7 +7526,7 @@ var eN=_v()
 _(lK,eN)
 cs.push("./pages/reg/reg.vue.wxml:template:1:601")
 var bO=_oz(z,21,e,s,gg)
-var oP=_gd(x[74],bO,e_,d_)
+var oP=_gd(x[75],bO,e_,d_)
 if(oP){
 var xQ=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7485,7 +7534,7 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[74],1,829)
+else _w(bO,x[75],1,829)
 cs.pop()
 cs.pop()
 _(xC,lK)
@@ -7503,7 +7552,7 @@ var hU=_v()
 _(oR,hU)
 cs.push("./pages/reg/reg.vue.wxml:template:1:949")
 var oV=_oz(z,32,e,s,gg)
-var cW=_gd(x[74],oV,e_,d_)
+var cW=_gd(x[75],oV,e_,d_)
 if(cW){
 var oX=_1z(z,29,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7511,7 +7560,7 @@ hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[74],1,1168)
+else _w(oV,x[75],1,1168)
 cs.pop()
 cs.pop()
 _(xC,oR)
@@ -7539,22 +7588,22 @@ return r
 }
 var m47=function(e,s,r,gg){
 var z=gz$gwx_48()
-var hQE=e_[x[74]].i
-_ai(hQE,x[51],e_,x[74],1,1)
+var hQE=e_[x[75]].i
+_ai(hQE,x[48],e_,x[75],1,1)
 hQE.pop()
 return r
 }
-e_[x[74]]={f:m47,j:[],i:[],ti:[x[51]],ic:[]}
-d_[x[75]]={}
+e_[x[75]]={f:m47,j:[],i:[],ti:[x[48]],ic:[]}
+d_[x[76]]={}
 var m48=function(e,s,r,gg){
 var z=gz$gwx_49()
-var cSE=e_[x[75]].i
-_ai(cSE,x[76],e_,x[75],1,1)
+var cSE=e_[x[76]].i
+_ai(cSE,x[77],e_,x[76],1,1)
 var oTE=_v()
 _(r,oTE)
 cs.push("./pages/reg/reg.wxml:template:2:6")
 var lUE=_oz(z,1,e,s,gg)
-var aVE=_gd(x[75],lUE,e_,d_)
+var aVE=_gd(x[76],lUE,e_,d_)
 if(aVE){
 var tWE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7562,19 +7611,19 @@ oTE.wxXCkey=3
 aVE(tWE,tWE,oTE,gg)
 gg.f=cur_globalf
 }
-else _w(lUE,x[75],2,18)
+else _w(lUE,x[76],2,18)
 cs.pop()
 cSE.pop()
 return r
 }
-e_[x[75]]={f:m48,j:[],i:[],ti:[x[76]],ic:[]}
-d_[x[77]]={}
-d_[x[77]]["d573abf0"]=function(e,s,r,gg){
+e_[x[76]]={f:m48,j:[],i:[],ti:[x[77]],ic:[]}
+d_[x[78]]={}
+d_[x[78]]["d573abf0"]=function(e,s,r,gg){
 var z=gz$gwx_50()
-var b=x[77]+':d573abf0'
+var b=x[78]+':d573abf0'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/accountEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[77]);return}
+if(p_[b]){_wl(b,x[78]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/accountEdit.vue.wxml:view:1:27")
@@ -7635,17 +7684,17 @@ var m49=function(e,s,r,gg){
 var z=gz$gwx_50()
 return r
 }
-e_[x[77]]={f:m49,j:[],i:[],ti:[],ic:[]}
-d_[x[78]]={}
+e_[x[78]]={f:m49,j:[],i:[],ti:[],ic:[]}
+d_[x[79]]={}
 var m50=function(e,s,r,gg){
 var z=gz$gwx_51()
-var oZE=e_[x[78]].i
-_ai(oZE,x[79],e_,x[78],1,1)
+var oZE=e_[x[79]].i
+_ai(oZE,x[80],e_,x[79],1,1)
 var x1E=_v()
 _(r,x1E)
 cs.push("./pages/user/accountEdit.wxml:template:2:6")
 var o2E=_oz(z,1,e,s,gg)
-var f3E=_gd(x[78],o2E,e_,d_)
+var f3E=_gd(x[79],o2E,e_,d_)
 if(f3E){
 var c4E=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7653,19 +7702,19 @@ x1E.wxXCkey=3
 f3E(c4E,c4E,x1E,gg)
 gg.f=cur_globalf
 }
-else _w(o2E,x[78],2,18)
+else _w(o2E,x[79],2,18)
 cs.pop()
 oZE.pop()
 return r
 }
-e_[x[78]]={f:m50,j:[],i:[],ti:[x[79]],ic:[]}
-d_[x[80]]={}
-d_[x[80]]["240234ba"]=function(e,s,r,gg){
+e_[x[79]]={f:m50,j:[],i:[],ti:[x[80]],ic:[]}
+d_[x[81]]={}
+d_[x[81]]["240234ba"]=function(e,s,r,gg){
 var z=gz$gwx_52()
-var b=x[80]+':240234ba'
+var b=x[81]+':240234ba'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[80]);return}
+if(p_[b]){_wl(b,x[81]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/user.vue.wxml:view:1:27")
@@ -7768,17 +7817,17 @@ var m51=function(e,s,r,gg){
 var z=gz$gwx_52()
 return r
 }
-e_[x[80]]={f:m51,j:[],i:[],ti:[],ic:[]}
-d_[x[81]]={}
+e_[x[81]]={f:m51,j:[],i:[],ti:[],ic:[]}
+d_[x[82]]={}
 var m52=function(e,s,r,gg){
 var z=gz$gwx_53()
-var c7E=e_[x[81]].i
-_ai(c7E,x[82],e_,x[81],1,1)
+var c7E=e_[x[82]].i
+_ai(c7E,x[83],e_,x[82],1,1)
 var o8E=_v()
 _(r,o8E)
 cs.push("./pages/user/user.wxml:template:2:6")
 var l9E=_oz(z,1,e,s,gg)
-var a0E=_gd(x[81],l9E,e_,d_)
+var a0E=_gd(x[82],l9E,e_,d_)
 if(a0E){
 var tAF=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -7786,12 +7835,12 @@ o8E.wxXCkey=3
 a0E(tAF,tAF,o8E,gg)
 gg.f=cur_globalf
 }
-else _w(l9E,x[81],2,18)
+else _w(l9E,x[82],2,18)
 cs.pop()
 c7E.pop()
 return r
 }
-e_[x[81]]={f:m52,j:[],i:[],ti:[x[82]],ic:[]}
+e_[x[82]]={f:m52,j:[],i:[],ti:[x[83]],ic:[]}
 if(path&&e_[path]){
 window.__wxml_comp_version__=0.02
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
@@ -7949,9 +7998,6 @@ __wxAppCode__['pages/danger/dangerEdit.wxml']=$gwx('./pages/danger/dangerEdit.wx
 __wxAppCode__['pages/danger/dangerLog.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n",],undefined,{path:"./pages/danger/dangerLog.wxss"});    
 __wxAppCode__['pages/danger/dangerLog.wxml']=$gwx('./pages/danger/dangerLog.wxml');
 
-__wxAppCode__['pages/gonggao/gonggaoList.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"scrollView { width: 100%; margin-bottom: ",[0,110],"; }\n.",[1],"bottomView { width: 100%; height: ",[0,110],"; background: #FFFFFF; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"addCheck { background-color: #FFFFFF; width: 100%; height: ",[0,80],"; padding-top: ",[0,20],"; padding-bottom: ",[0,20],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n",],undefined,{path:"./pages/gonggao/gonggaoList.wxss"});    
-__wxAppCode__['pages/gonggao/gonggaoList.wxml']=$gwx('./pages/gonggao/gonggaoList.wxml');
-
 __wxAppCode__['pages/login/diyHost.wxss']=undefined;    
 __wxAppCode__['pages/login/diyHost.wxml']=$gwx('./pages/login/diyHost.wxml');
 
@@ -7960,6 +8006,9 @@ __wxAppCode__['pages/login/login.wxml']=$gwx('./pages/login/login.wxml');
 
 __wxAppCode__['pages/main/main.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"menuBlockView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; padding-bottom: ",[0,30],"; }\n.",[1],"dangerView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 30%; margin-top: 50px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerIcon { width: ",[0,80],"; height: ",[0,80],"; }\n.",[1],"subView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; margin-top: 10px; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"dangerText { width: 100%; font-size: 16; color: #898989; text-align: center; }\n.",[1],"titleView_pc { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: ",[0,20],"; width: 100%; height: ",[0,80],"; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #F1F1F1; }\n.",[1],"titleText_pc { margin-left: ",[0,30],"; color: #666666; width: 100%; text-align: left; font-size: ",[0,32],"; }\n.",[1],"topView_pc { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; background-color: #2D68AA; }\n.",[1],"topItemView { width: 30%; height: ",[0,240],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"topTextTitle { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,30],"; }\n.",[1],"topTextNum { width: 100%; text-align: center; color: #FFFFFF; font-size: ",[0,40],"; }\n.",[1],"arrow { width: ",[0,15],"; height: ",[0,240],"; margin-right: ",[0,10],"; }\n",],undefined,{path:"./pages/main/main.wxss"});    
 __wxAppCode__['pages/main/main.wxml']=$gwx('./pages/main/main.wxml');
+
+__wxAppCode__['pages/other/charts.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\nbody{background:#F2F2F2;}\n.",[1],"qiun-padding{padding:2%; width:96%;}\n.",[1],"qiun-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap; flex-wrap:wrap;}\n.",[1],"qiun-rows{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-orient:horizontal !important; -webkit-box-direction:normal !important; -webkit-flex-direction:row !important; -ms-flex-direction:row !important; flex-direction:row !important;}\n.",[1],"qiun-columns{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical !important; -webkit-box-direction:normal !important; -webkit-flex-direction:column !important; -ms-flex-direction:column !important; flex-direction:column !important;}\n.",[1],"qiun-common-mt{margin-top:",[0,10],";}\n.",[1],"qiun-bg-white{background:#FFFFFF;}\n.",[1],"qiun-title-bar{width:96%; padding:",[0,10]," 2%; -webkit-flex-wrap:nowrap; -ms-flex-wrap:nowrap; flex-wrap:nowrap;}\n.",[1],"qiun-title-dot-light{border-left: ",[0,10]," solid #0ea391; padding-left: ",[0,10],"; font-size: ",[0,32],";color: #000000}\n.",[1],"qiun-charts{width: ",[0,750],"; height:",[0,500],";background-color: #FFFFFF;}\n.",[1],"charts{width: ",[0,750],"; height:",[0,500],";background-color: #FFFFFF;}\n.",[1],"qiun-charts-rotate{width: ",[0,700],"; height:",[0,1100],";background-color: #FFFFFF;padding: ",[0,25],";}\n.",[1],"charts-rotate{width: ",[0,700],"; height:",[0,1100],";background-color: #FFFFFF;}\n.",[1],"qiun-charts3{width: ",[0,750],"; height:",[0,250],";background-color: #FFFFFF;position:relative;}\n.",[1],"charts3{position: absolute;width: ",[0,250],"; height:",[0,250],";background-color: #FFFFFF;}\n.",[1],"qiun-tip {display:block; width:auto; overflow:hidden; padding:",[0,15],"; height:",[0,30],"; line-height:",[0,30],"; margin:",[0,10],"; background:#ff9933; font-size:",[0,30],"; border-radius:",[0,8],";-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center; text-align:center;border: 1px solid #dc7004;color: #FFFFFF;}\n",],undefined,{path:"./pages/other/charts.wxss"});    
+__wxAppCode__['pages/other/charts.wxml']=$gwx('./pages/other/charts.wxml');
 
 __wxAppCode__['pages/other/gonggaoList.wxss']=setCssToHead([".",[1],"baseView{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #F1F1F1; }\n.",[1],"cellTitleView { width: 100%; height: ",[0,100],"; background-color: #F3F3F3; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"cellTitle { margin-left: ",[0,20],"; margin-right: ",[0,20],"; color: #6F6F6F; font-size: ",[0,30],"; }\n.",[1],"cellInfoView { width: 100%; background-color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"cellBaseView_Row { background-color: #FFFFFF; width: 100%; height: ",[0,120],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"selectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"unSelectedImg { margin-left: ",[0,20],"; width: ",[0,40],"; height: ",[0,40],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n.",[1],"cellLine { height: ",[0,1],"; margin-left: ",[0,30],"; margin-right: ",[0,0],"; background-color: #DDDDDD; }\n.",[1],"coverBottomView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"buttonStyle { width: 100%; height: ",[0,80],"; line-height: ",[0,80],"; background-color: #3296FA; margin-left: ",[0,20],"; margin-right: ",[0,20],"; border-radius: ",[0,5],"; }\n.",[1],"TopTabView { width: 100%; height: ",[0,110],"; background: #3296FA; position: fixed; top: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; }\n.",[1],"cellImageBaseView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; width: 100%; background-color: white; border-bottom: ",[0,0.5]," solid #E2E2E2; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center; }\n.",[1],"cellImageTitleView { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"leftTextRow { width: 100%; margin-left: ",[0,30],"; font-size: ",[0,28],"; color: #333333; }\n.",[1],"rightTextRow { margin-top: ",[0,20],"; margin-bottom: ",[0,20],"; margin-right: ",[0,50],"; text-align: right; font-size: ",[0,28],"; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: normal; color: inherit; line-height: 1.5; overflow: hidden; color: #BBBBBB; }\n.",[1],"imageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; width: 100%; background-color: white; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: ",[0,10],"; }\n.",[1],"littleImageView { display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; -ms-flex-direction:row; flex-direction:row; margin: 20px 5px 5px 20px; }\n.",[1],"littleImageDelete { position: relative; margin-left: ",[0,-50],"; margin-top: ",[0,-15],"; width: ",[0,60],"; height: ",[0,60],"; }\n.",[1],"littleImage { width: 100%; height: 100%; }\n.",[1],"scrollView { width: 100%; margin-bottom: ",[0,110],"; }\n.",[1],"bottomView { width: 100%; height: ",[0,110],"; background: #FFFFFF; position: fixed; bottom: ",[0,0],"; overflow: hidden; text-align: center; line-height: ",[0,110],"; color: #FFFFFF; font-size: ",[0,32],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"addCheck { background-color: #FFFFFF; width: 100%; height: ",[0,80],"; padding-top: ",[0,20],"; padding-bottom: ",[0,20],"; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }\n",],undefined,{path:"./pages/other/gonggaoList.wxss"});    
 __wxAppCode__['pages/other/gonggaoList.wxml']=$gwx('./pages/other/gonggaoList.wxml');

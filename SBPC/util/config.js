@@ -23,6 +23,12 @@ var config = {
 	getPointList: '/mobile/getOther.do?action=getJfpmList',
 	// 获取积分统计
 	getPoints: '/mobile/getTrain.do?action=getJftj',
+	
+	/*统计相关*/
+	// 获取隐患分类统计
+	getDangerTypeChart: '/mobile/getYhzg.do?action=getYhlxtj',
+	// 获取隐患原因统计
+	getDangerReasonChart: '/mobile/getYhzg.do?action=getYhyytj',
 
 	/*隐患相关*/
 	// 获取隐患列表
