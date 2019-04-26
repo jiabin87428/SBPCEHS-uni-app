@@ -42,5 +42,5 @@ function mergeObject(to, source) {
 module.exports = {
   mergeObject: mergeObject,
   formatTime: formatTime,
-  formatDate: formatDate
+  formatDate: formatDate,
 }

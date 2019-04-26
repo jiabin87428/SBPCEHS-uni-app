@@ -1,77 +1,55 @@
 <template>
 	<view class="qiun-columns">
-		<scroll-view scroll-y="true">
-			<view class="cellInfoView">
-				<uni-list>
-					<picker @change="pickerChange('currentType', typeData, $event)" v-bind:range="typeData">
-						<uni-list-item title="统计类型" :subnote="currentType" :show-arrow="true"></uni-list-item>
-					</picker>
-				</uni-list>
-			</view>
-		</scroll-view>
-		
 		<view class="qiun-bg-white qiun-title-bar qiun-common-mt" >
-			<view class="qiun-title-dot-light">{{currentType}}</view>
+			<view class="qiun-title-dot-light">{{title}}</view>
 		</view>
 		<view class="qiun-charts">
-			<block v-if="currentType == '隐患原因'">
-				<!--#ifdef H5 || MP-ALIPAY || MP-BAIDU || MP-TOUTIAO-->
-				<canvas canvas-id="canvasPie" id="canvasPie" class="charts" :style="{'width':cWidth*pixelRatio+'px','height':cHeight*pixelRatio+'px', 'transform': 'scale('+(1/pixelRatio)+')','margin-left':-cWidth*(pixelRatio-1)/2+'px','margin-top':-cHeight*(pixelRatio-1)/2+'px'}"></canvas>
-				<!--#endif-->
-				<!--#ifdef MP-WEIXIN || APP-PLUS -->
-				<canvas canvas-id="canvasPie" id="canvasPie" class="charts"></canvas>
-				<!--#endif-->
-			</block>
-			<block v-if="currentType == '隐患类型'">
-				<!--#ifdef H5 || MP-ALIPAY || MP-BAIDU || MP-TOUTIAO -->
-				<canvas canvas-id="canvasColumn" id="canvasColumn" class="charts" style="background-color: #E5FDC3;" :style="{'width':cWidth*pixelRatio+'px','height':cHeight*pixelRatio+'px', 'transform': 'scale('+(1/pixelRatio)+')','margin-left':-cWidth*(pixelRatio-1)/2+'px','margin-top':-cHeight*(pixelRatio-1)/2+'px'}"></canvas>
-				<!--#endif-->
-				<!--#ifdef MP-WEIXIN || APP-PLUS -->
-				<canvas canvas-id="canvasColumn" id="canvasColumn" class="charts" style="background-color: #E5FDC3;"></canvas>
-				<!--#endif-->
-			</block>
+			<!--#ifdef H5 || MP-ALIPAY || MP-BAIDU || MP-TOUTIAO-->
+			<canvas canvas-id="canvasPie" id="canvasPie" class="charts" :style="{'width':cWidth*pixelRatio+'px','height':cHeight*pixelRatio+'px', 'transform': 'scale('+(1/pixelRatio)+')','margin-left':-cWidth*(pixelRatio-1)/2+'px','margin-top':-cHeight*(pixelRatio-1)/2+'px'}"></canvas>
+			<!--#endif-->
+			<!--#ifdef MP-WEIXIN || APP-PLUS -->
+			<canvas canvas-id="canvasPie" id="canvasPie" class="charts"></canvas>
+			<!--#endif-->
 		</view>
 	</view>
 </template>
 
 <script>
-	import wxCharts from '@/components/wx-charts/wxcharts.js';
-	import service from '../../service.js';
+	import wxCharts from '../../components/wx-charts/wxcharts.js';
 	import config from '../../util/config.js';
+	import service from '../../service.js';
 	import request from '../../util/request.js';
-	import onfire from 'onfire.js';
-	import uniList from '@/components/list/uni-list/uni-list.vue'
-	import uniIcon from '@/components/list/uni-icon/uni-icon.vue'
-	import uniListItem from '@/components/list/uni-list-item/uni-list-item.vue'
-	import { 
+	import {
 	    mapState
 	} from 'vuex'
-	
 	var _self;
-	var canvaColumn=null;
-	var pie = null;
 	var Data={
-		Column:{categories:['2012', '2013', '2014', '2015', '2016', '2017'],series:[{name: '成交量1',data:[15, 20, 45, 37, 43, 34]},{name: '成交量2',data:[30, 40, 25, 14, 34, 18]}]},
-		Pie:{series:[]},
-	}
+		Pie:{series:[{ name: '一班', data: 50 }, { name: '二班', data: 30 }, { name: '三班', data: 20 }, { name: '四班', data: 18 }, { name: '五班', data: 8 }]},
+		}
 	
 	export default {
-		computed: mapState(['userInfo']),
-		components: {uniList,uniListItem,uniIcon},
+		computed: {
+		    ...mapState(['userInfo'])
+		},
+		components: {},
 		data() {
 			return {
-				// 统计类型
-				typeData: ["隐患原因", "隐患类型"],
-				currentType: "隐患原因",
-				
 				cWidth:'',
 				cHeight:'',
-				pixelRatio:1
+				pixelRatio:1,
+				
+				// 接口
+				url: '',
+				// 标题
+				title: '',
 			}
 		},
-		onLoad() {
+		onLoad(option) {
 			_self = this;
-			this.getCharts();
+			_self.url = config[option.url];
+			_self.title = option.title;
+			_self.getCharts();
+			
 			//#ifdef H5 || MP-ALIPAY || MP-BAIDU || MP-TOUTIAO
 			uni.getSystemInfo({
 				success: function (res) {
@@ -91,7 +69,7 @@
 		},
 		methods: {
 			showPie(canvasId,chartData){
-				pie = new wxCharts({
+				new wxCharts({
 					canvasId: canvasId,
 					type: 'pie',
 					fontSize:11,
@@ -105,23 +83,17 @@
 					dataLabel: true,
 				   });
 			},
-			changeData(){
-				//这里只做了柱状图数据动态更新，其他图表同理。
-				pie.updateData({
-					series: Data.Pie.series
-				});
-			},
 			// 获取统计
 			getCharts: function() {
 				var that = this;
 				let param = {
 					userid: that.userInfo.userid
 				}
-				request.requestLoading(config.getDangerReasonChart, param, '正在获取统计信息', 
+				request.requestLoading(that.url, param, '正在获取统计信息', 
 					function(res){
 						let data = res.data;
 						Data.Pie = that.formatData(data);
-						// that.changeData();
+						that.showPie("canvasPie",Data.Pie);
 					},function(){
 						uni.showToast({
 							icon: 'none',
@@ -143,20 +115,13 @@
 					}
 					pie.push(newItem);
 				}
-				console.log('统计结果：' + JSON.stringify(pie));
 				return {"series": pie};
-			},
-			// 选择位置
-			pickerChange: function(id, data, e) {
-				this[id] = data[e.target.value];
-				this.getCharts();
 			},
 		}
 	}
 </script>
 
 <style>
-	@import url("../../css/common.css");
 page{background:#F2F2F2;}
 .qiun-padding{padding:2%; width:96%;}
 .qiun-wrap{display:flex; flex-wrap:wrap;}

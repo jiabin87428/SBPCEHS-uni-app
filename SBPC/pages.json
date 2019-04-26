@@ -163,14 +163,24 @@
 				"navigationBarTitleText": "积分排名"
 			}
 		}, {
-			"path": "pages/other/charts",
-			"style": {
-				"navigationBarTitleText": "统计"
-			}
-		}, {
 			"path": "pages/common/webView",
 			"style": {
 				"navigationBarTitleText": "网页"
+			}
+		}, {
+			"path": "pages/charts/chartsTypeList",
+			"style": {
+				"navigationBarTitleText": "统计类型"
+			}
+		}, {
+			"path": "pages/charts/pieCharts",
+			"style": {
+				"navigationBarTitleText": "饼图"
+			}
+		}, {
+			"path": "pages/charts/listCharts",
+			"style": {
+				"navigationBarTitleText": "列表统计"
 			}
 		}
     ],

@@ -1,0 +1,2 @@
+<import src="./pointRank.vue.wxml" />
+    <template is="5ff9ee88" data="{{ ...$root['0'], $root }}"/>

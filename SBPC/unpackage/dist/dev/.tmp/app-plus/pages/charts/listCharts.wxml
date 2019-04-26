@@ -1,0 +1,2 @@
+<import src="./listCharts.vue.wxml" />
+    <template is="1d214ab8" data="{{ ...$root['0'], $root }}"/>

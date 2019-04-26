@@ -58,7 +58,8 @@ var config = {
 	
 	/*培训相关*/
 	// 获取培训列表
-	getClassList: '/mobile/getTrain.do?action=getPxzlList',
+	// getClassList: '/mobile/getTrain.do?action=getPxzlList',
+	getClassList: '/mobile/getOther.do?action=getPxzlList',
 	// 获取培训内容
 	getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',
 	

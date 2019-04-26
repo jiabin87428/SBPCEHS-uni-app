@@ -20,8 +20,10 @@
     "pages/other/gonggaoList",
     "pages/other/newsList",
     "pages/other/pointRank",
-    "pages/other/charts",
-    "pages/common/webView"
+    "pages/common/webView",
+    "pages/charts/chartsTypeList",
+    "pages/charts/pieCharts",
+    "pages/charts/listCharts"
   ],
   "subPackages": [],
   "window": {

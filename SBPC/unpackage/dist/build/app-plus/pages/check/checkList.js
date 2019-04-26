@@ -449,17 +449,30 @@ var removeUser = function removeUser() {
   uni.removeStorageSync('userInfo');
 };
 
+// 拷贝对象
 var copyObj = function copyObj(a) {
   var c = {};
   c = JSON.parse(JSON.stringify(a));
   return c;
+};
+
+// 获取当前日期
+var getCurrentDate = function getCurrentDate(timeStamp) {
+  var year = new Date(timeStamp).getFullYear();
+  var month = new Date(timeStamp).getMonth() + 1 < 10 ? "0" + (new Date(timeStamp).getMonth() + 1) : new Date(timeStamp).getMonth() + 1;
+  var date = new Date(timeStamp).getDate() < 10 ? "0" + new Date(timeStamp).getDate() : new Date(timeStamp).getDate();
+  var hh = new Date(timeStamp).getHours() < 10 ? "0" + new Date(timeStamp).getHours() : new Date(timeStamp).getHours();
+  var mm = new Date(timeStamp).getMinutes() < 10 ? "0" + new Date(timeStamp).getMinutes() : new Date(timeStamp).getMinutes();
+  // this.nowTime = year + "年" + month + "月" + date +"日"+" "+hh+":"+mm ;
+  return year + "-" + month + "-" + date;
 };var _default =
 
 {
   getUsers: getUsers,
   addUser: addUser,
   removeUser: removeUser,
-  copyObj: copyObj };exports.default = _default;
+  copyObj: copyObj,
+  getCurrentDate: getCurrentDate };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -487,6 +500,22 @@ var config = {
   host: host,
   // 登录
   login: '/mobile/system/login.do',
+  // 获取公告列表
+  getGgList: '/mobile/getOther.do?action=getTzList',
+  // 获取公告详情
+  getGgDetail: '/mobile/getOther.do?action=getOneTz',
+  // 获取新闻列表
+  getNewsList: '/mobile/getOther.do?action=getXwList',
+  // 获取积分排名
+  getPointList: '/mobile/getOther.do?action=getJfpmList',
+  // 获取积分统计
+  getPoints: '/mobile/getTrain.do?action=getJftj',
+
+  /*统计相关*/
+  // 获取隐患分类统计
+  getDangerTypeChart: '/mobile/getYhzg.do?action=getYhlxtj',
+  // 获取隐患原因统计
+  getDangerReasonChart: '/mobile/getYhzg.do?action=getYhyytj',
 
   /*隐患相关*/
   // 获取隐患列表
@@ -503,6 +532,8 @@ var config = {
   /*检查相关*/
   // 获取检查列表
   getCheckList: '/mobile/getAqjc.do',
+  // 获取检查详情
+  getCheckDetail: '/mobile/getAqjc.do?action=getOneJc',
   // 获取检查类型
   getCheckTypes: '/mobile/getAqjc.do?action=getJclx',
   // 获取检查模板
@@ -511,6 +542,21 @@ var config = {
   getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',
   // 保存检查
   saveCheck: '/mobile/getAqjc.do?action=insertJc',
+
+  /*培训相关*/
+  // 获取培训列表
+  // getClassList: '/mobile/getTrain.do?action=getPxzlList',
+  getClassList: '/mobile/getOther.do?action=getPxzlList',
+  // 获取培训内容
+  getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',
+
+  /*考试相关*/
+  // 获取考试说明
+  getExamDesc: '/mobile/getExam.do?action=getMyKskm',
+  // 获取考试内容
+  getExamInfo: '/mobile/getExam.do?action=createGrsj',
+  // 提交考卷
+  submitExam: '/mobile/getExam.do?action=submitGrsj',
 
   /*通用接口*/
   // 获取部门
@@ -522,7 +568,9 @@ var config = {
   // 删除照片
   deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',
   // 加载照片
-  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto' };
+  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',
+  // 加载用户头像
+  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=' };
 
 
 //对外把对象config返回
@@ -771,11 +819,15 @@ var callbacks = {};
 
 var WEBVIEW_ID = '';
 
-storage && storage.getItem && storage.getItem(UNIAPP_LAUNCH_WEBVIEW_ID, function (evt) {
-  if (evt.result === 'success' && evt.data) {
-    WEBVIEW_ID = evt.data;
-  }
-});
+if (weex.config.plus_appid) {
+  WEBVIEW_ID = weex.config.plus_appid;
+} else {
+  storage && storage.getItem && storage.getItem(UNIAPP_LAUNCH_WEBVIEW_ID, function (evt) {
+    if (evt.result === 'success' && evt.data) {
+      WEBVIEW_ID = evt.data;
+    }
+  });
+}
 
 globalEvent.addEventListener('plusMessage', function (e) {
   if (e.data.type === 'UniAppJsApi') {
@@ -2493,7 +2545,7 @@ var _default =
       var that = this;
       //跳转到详情页面
       uni.navigateTo({
-        url: 'checkEdit?instanceid=' + item.instanceid + '&recordid=' + item.recordid });
+        url: 'checkEdit?recordid=' + item.recordid });
 
     },
     close: function close(index1, index2) {var _this = this;
