@@ -427,52 +427,63 @@ new Vue(module.exports)
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 管理账号信息
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+// 管理账号信息
 var USERS_KEY = 'USERS_KEY';
 var STATE_KEY = 'STATE_KEY';
 
 var getUsers = function getUsers() {
   var ret = '';
   ret = uni.getStorageSync(USERS_KEY);
+
   if (!ret) {
     ret = '[]';
   }
+
   return JSON.parse(ret);
 };
 
 var addUser = function addUser(userInfo) {
   uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
 };
-var removeUser = function removeUser() {
-  uni.removeStorageSync(USERS_KEY);
-  //把给nvue文件用的另一份userInfo也清空
-  uni.removeStorageSync('userInfo');
-};
 
-// 拷贝对象
+var removeUser = function removeUser() {
+  uni.removeStorageSync(USERS_KEY); //把给nvue文件用的另一份userInfo也清空
+
+  uni.removeStorageSync('userInfo');
+}; // 拷贝对象
+
+
 var copyObj = function copyObj(a) {
   var c = {};
   c = JSON.parse(JSON.stringify(a));
   return c;
-};
+}; // 获取当前日期
 
-// 获取当前日期
+
 var getCurrentDate = function getCurrentDate(timeStamp) {
   var year = new Date(timeStamp).getFullYear();
   var month = new Date(timeStamp).getMonth() + 1 < 10 ? "0" + (new Date(timeStamp).getMonth() + 1) : new Date(timeStamp).getMonth() + 1;
   var date = new Date(timeStamp).getDate() < 10 ? "0" + new Date(timeStamp).getDate() : new Date(timeStamp).getDate();
   var hh = new Date(timeStamp).getHours() < 10 ? "0" + new Date(timeStamp).getHours() : new Date(timeStamp).getHours();
-  var mm = new Date(timeStamp).getMinutes() < 10 ? "0" + new Date(timeStamp).getMinutes() : new Date(timeStamp).getMinutes();
-  // this.nowTime = year + "年" + month + "月" + date +"日"+" "+hh+":"+mm ;
-  return year + "-" + month + "-" + date;
-};var _default =
+  var mm = new Date(timeStamp).getMinutes() < 10 ? "0" + new Date(timeStamp).getMinutes() : new Date(timeStamp).getMinutes(); // this.nowTime = year + "年" + month + "月" + date +"日"+" "+hh+":"+mm ;
 
-{
+  return year + "-" + month + "-" + date;
+};
+
+var _default = {
   getUsers: getUsers,
   addUser: addUser,
   removeUser: removeUser,
   copyObj: copyObj,
-  getCurrentDate: getCurrentDate };exports.default = _default;
+  getCurrentDate: getCurrentDate
+};
+exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -485,7 +496,10 @@ var getCurrentDate = function getCurrentDate(timeStamp) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
- // config.js
+
+
+// config.js
+
 /**
   * 接口配置文件
   * 登录名和密码: root GelureM1
@@ -493,9 +507,7 @@ var getCurrentDate = function getCurrentDate(timeStamp) {
   */
 var host = "http://112.124.14.5/sbpc"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
-
 var config = {
-
   // 下面的地址配合 Server 工作
   host: host,
   // 登录
@@ -570,10 +582,11 @@ var config = {
   // 加载照片
   loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',
   // 加载用户头像
-  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=' };
+  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=',
+  // 下载文件
+  downloadFile: '/getfile?fileid='
+}; //对外把对象config返回
 
-
-//对外把对象config返回
 module.exports = config;
 
 /***/ }),
@@ -586,25 +599,37 @@ module.exports = config;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _service = _interopRequireDefault(__webpack_require__(/*! ../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-var config = __webpack_require__(/*! ./config */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js");
+/* WEBPACK VAR INJECTION */(function(uni) {
 
-// 展示进度条的网络请求
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _service = _interopRequireDefault(__webpack_require__(/*! ../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var config = __webpack_require__(/*! ./config */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js"); // 展示进度条的网络请求
 // url:网络请求的url
 // params:请求参数
 // message:进度条的提示信息
 // success:成功的回调函数
 // fail：失败的回调
+
+
 var requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {
   // 	wx.showNavigationBarLoading()
   if (message != "") {
     uni.showLoading({
-      title: message });
+      title: message
+    });
+  } // 将参数克隆一份，不影响传过来的参数，不然转jsonString会影响UI显示，界面可能会卡住
 
-  }
-  // 将参数克隆一份，不影响传过来的参数，不然转jsonString会影响UI显示，界面可能会卡住
-  var copyParam = _service.default.copyObj(params);
-  // 格式化参数，Form表单形式，需要将type为对象的值转为jsonString
+
+  var copyParam = _service.default.copyObj(params); // 格式化参数，Form表单形式，需要将type为对象的值转为jsonString
+
+
   copyParam = formatParam(copyParam);
   console.log('request.js :' + config.host + url);
   uni.request({
@@ -612,21 +637,22 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     data: copyParam,
     header: {
       // 'Content-Type': 'application/json;charset=utf-8'
-      'Content-type': 'application/x-www-form-urlencoded' },
-
+      'Content-type': 'application/x-www-form-urlencoded'
+    },
     method: 'POST',
     success: function success(res) {
       // 					wx.hideNavigationBarLoading()
       if (message != "") {
         uni.hideLoading();
-      }
-
-      // 				uni.showToast({
+      } // 				uni.showToast({
       // 					icon: 'none',
       // 					title: res.data.repMsg
       // 				});
+
+
       if (res.data.repCode == '200') {
         console.log("200");
+
         _success(res.data);
       } else {
         _fail();
@@ -636,40 +662,42 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       if (message != "") {
         uni.hideLoading();
       }
+
       _fail();
     },
     complete: function complete() {
       if (message != "") {
         uni.hideLoading();
       }
+
       _complete();
-    } });
-
-};
-
-
-
-// 展示进度条的网络请求(新版)
+    }
+  });
+}; // 展示进度条的网络请求(新版)
 // url:网络请求的url
 // params:请求参数
 // message:进度条的提示信息 
 // success:成功的回调函数
 // fail：失败的回调
+
+
 var requestLoadingNew = function requestLoadingNew(url, params, message, _success2, _fail2, _complete2) {
   if (message != "") {
     uni.showLoading({
-      title: message });
-
+      title: message
+    });
   }
+
   uni.request({
     url: config.host + url,
     data: params,
     header: {
-      'Content-type': 'application/x-www-form-urlencoded' },
-
+      'Content-type': 'application/x-www-form-urlencoded'
+    },
     method: 'POST',
     success: function success(res) {
       uni.hideLoading();
+
       if (res.statusCode == '200') {
         _success2(res.data);
       } else {
@@ -678,23 +706,24 @@ var requestLoadingNew = function requestLoadingNew(url, params, message, _succes
     },
     fail: function fail(res) {
       uni.hideLoading();
+
       _fail2();
     },
     complete: function complete() {
       uni.hideLoading();
+
       _complete2();
-    } });
-
+    }
+  });
 };
-
 
 var request = function request(url, message, _success3, _fail3) {
   uni.request({
     url: url,
     header: {
       // 'Content-Type': 'application/json'
-      'Content-type': 'application/x-www-form-urlencoded' },
-
+      'Content-type': 'application/x-www-form-urlencoded'
+    },
     method: 'GET',
     success: function success(res) {
       if (res.success == 'true') {
@@ -705,26 +734,63 @@ var request = function request(url, message, _success3, _fail3) {
     },
     fail: function fail(res) {
       _fail3();
-    } });
-
+    }
+  });
 };
 
-// 复杂对象中的对象数组需要转成jsonString
+var download = function download(url, _success4, _fail4, _complete3) {
+  var downloadTask = uni.downloadFile({
+    url: config.host + url,
+    success: function success(res) {
+      console.log('success:' + JSON.stringify(res));
+
+      if (res.statusCode === 200) {
+        _success4(res);
+      }
+    },
+    fail: function fail(res) {
+      console.log('fail:' + JSON.stringify(res));
+
+      _fail4(res);
+    },
+    complete: function complete() {
+      _complete3();
+    }
+  });
+
+  if (downloadTask == null) {
+    return;
+  }
+
+  downloadTask.onProgressUpdate(function (res) {
+    console.log('下载进度' + res.progress);
+    console.log('已经下载的数据长度' + res.totalBytesWritten);
+    console.log('预期需要下载的数据总长度' + res.totalBytesExpectedToWrite); // 测试条件，取消下载任务。
+    // if (res.progress > 50) {
+    // 	downloadTask.abort();
+    // }
+  });
+}; // 复杂对象中的对象数组需要转成jsonString
+
+
 var formatParam = function formatParam(param) {
-  console.log("formatParam");
-  // console.log(Object.keys(param));
+  console.log("formatParam"); // console.log(Object.keys(param));
+
   Object.keys(param).forEach(function (key) {
     if (typeof param[key] == "object") {
       param[key] = JSON.stringify(param[key]);
     }
   });
   return param;
-};var _default =
+};
 
-{
+var _default = {
   request: request,
   requestLoading: requestLoading,
-  requestLoadingNew: requestLoadingNew };exports.default = _default;
+  requestLoadingNew: requestLoadingNew,
+  download: download
+};
+exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -2154,7 +2220,12 @@ if (hadRuntime) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 //
 //
 //
@@ -2182,16 +2253,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-var _default2 =
-{
+//
+var _default2 = {
   props: {
     data: {
       type: Object,
       default: function _default(e) {
         return {};
-      } } },
-
-
+      }
+    }
+  },
   computed: {
     isImgRight: function isImgRight() {
       return this.data.article_type === 2;
@@ -2201,8 +2272,8 @@ var _default2 =
     },
     showImg: function showImg() {
       return this.data.image_list || this.data.image_url;
-    } },
-
+    }
+  },
   methods: {
     close: function close(e) {
       this.$emit('close');
@@ -2210,7 +2281,10 @@ var _default2 =
     },
     bindClick: function bindClick() {
       this.$emit('click');
-    } } };exports.default = _default2;
+    }
+  }
+};
+exports.default = _default2;
 
 /***/ }),
 
@@ -2222,95 +2296,142 @@ var _default2 =
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-var dom = weex.requireModule('dom');var _default2 =
 
-{
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var dom = weex.requireModule('dom');
+var _default2 = {
   props: {
     drag: {
       type: Boolean,
-      default: true },
-
+      default: true
+    },
     tabBars: {
       type: Array,
       default: function _default(e) {
         return [];
-      } },
-
+      }
+    },
     tabIndex: {
       type: Number,
-      default: 0 } },
-
-
+      default: 0
+    }
+  },
   watch: {
-    tabIndex: function tabIndex(newVal) {
-      //监听属性不需要调用change，上面的div已经注册了Click=change，这里再调用会引起调用两次
+    tabIndex: function tabIndex(newVal) {//监听属性不需要调用change，上面的div已经注册了Click=change，这里再调用会引起调用两次
       // this.change(newVal)
-    } },
-
+    }
+  },
   methods: {
-    change: function () {var _change = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(index, e) {var ret, el, elSize, idx, newEl;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+    change: function () {
+      var _change = _asyncToGenerator(
+      /*#__PURE__*/
+      _regenerator.default.mark(function _callee(index, e) {
+        var ret, el, elSize, idx, newEl;
+        return _regenerator.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
                 ret = {
-                  index: index };
-
-                // 			if (e.type === 'click') {
+                  index: index
+                }; // 			if (e.type === 'click') {
                 // 				let target = e.target;
                 // 				ret.index = target.parentNode.children.findIndex(node => node === target);
                 // 			}
+
                 this.$emit('_tabBarClick', ret);
-                el = this.$refs[this.tabBars[index].id + index][0];_context.next = 5;return (
-                  this.getElSize(el));case 5:elSize = _context.sent;if (!(
-                elSize.left + elSize.width > 750)) {_context.next = 11;break;}
+                el = this.$refs[this.tabBars[index].id + index][0];
+                _context.next = 5;
+                return this.getElSize(el);
+
+              case 5:
+                elSize = _context.sent;
+
+                if (!(elSize.left + elSize.width > 750)) {
+                  _context.next = 11;
+                  break;
+                }
+
                 idx = index - 4;
                 newEl = this.$refs[this.tabBars[idx].id + idx][0];
-                dom.scrollToElement(newEl, {});return _context.abrupt("return");case 11:
+                dom.scrollToElement(newEl, {});
+                return _context.abrupt("return");
 
-
+              case 11:
                 if (elSize.left < 0) {
                   dom.scrollToElement(el, {});
-                }case 12:case "end":return _context.stop();}}}, _callee, this);}));function change(_x, _x2) {return _change.apply(this, arguments);}return change;}(),
+                }
 
+              case 12:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
 
-    getElSize: function getElSize(el) {//得到元素的size
+      function change(_x, _x2) {
+        return _change.apply(this, arguments);
+      }
+
+      return change;
+    }(),
+    getElSize: function getElSize(el) {
+      //得到元素的size
       return new Promise(function (res, rej) {
         var result = dom.getComponentRect(el, function (option) {
           res(option.size);
         });
       });
-    } } };exports.default = _default2;
+    }
+  }
+};
+exports.default = _default2;
 
 /***/ }),
 
@@ -2322,19 +2443,26 @@ var dom = weex.requireModule('dom');var _default2 =
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
-{
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
   render: function render(createElement) {
     return createElement('slider', {
       style: {
-        flex: 1 },
-
+        flex: 1
+      },
       attrs: {
         index: 0,
-        infinite: false } },
-
-    this.$slots.default);
-  } };exports.default = _default;
+        infinite: false
+      }
+    }, this.$slots.default);
+  }
+};
+exports.default = _default;
 
 /***/ }),
 
@@ -2346,74 +2474,93 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/nvueComponents/uni-tab-content/uni-tab-content.nvue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
-{
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/nvueComponents/uni-tab-content/uni-tab-content.nvue"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = {
   props: {
     index: {
       type: Number,
-      default: 0 } },
-
-
+      default: 0
+    }
+  },
   data: function data() {
     return {
-      tabIndex: this.index };
-
+      tabIndex: this.index
+    };
   },
   components: {
-    uniTabContent: _uniTabContent.default },
-
+    uniTabContent: _uniTabContent.default
+  },
   render: function render(createElement) {
     var vnodes = this.$slots.default;
     var newVNodes = [];
+
     if (vnodes && vnodes.length) {
       for (var i = 0; i < vnodes.length; i++) {
         var vnode = vnodes[i];
+
         if (!vnode || !vnode.componentOptions) {
           continue;
         }
-        if (vnode.componentOptions.tag === 'uni-tab-content') {
 
+        if (vnode.componentOptions.tag === 'uni-tab-content') {
           var newVNode = createElement('uni-tab-content', {
             staticClass: vnode.data.staticClass,
             'class': vnode.data['class'],
-            style: vnode.data.style },
-          vnode.componentOptions.children);
+            style: vnode.data.style
+          }, vnode.componentOptions.children);
 
           if (!newVNode.data) {
             newVNode.data = Object.create(null);
           }
+
           if (!newVNode.data.attrs) {
             newVNode.data.attrs = Object.create(null);
           }
+
           if (!newVNode.data.props) {
             newVNode.data.props = Object.create(null);
           }
+
           if (!newVNode.data.on) {
             newVNode.data.on = Object.create(null);
           }
+
           newVNode.data.attrs.index = this.index;
           newVNode.data.on.change = this._change;
           newVNodes.push(newVNode);
         }
+
         if (vnode.componentOptions.tag === 'uni-tab-bar') {
-          if (!vnode.componentOptions.listeners) {//监听子元素传递过来的事件
+          if (!vnode.componentOptions.listeners) {
+            //监听子元素传递过来的事件
             vnode.componentOptions.listeners = Object.create(null);
           }
+
           vnode.componentOptions.listeners._tabBarClick = this._tabBarClick;
           newVNodes.push(vnode);
         }
       }
     }
+
     var newNode = createElement('div', {
       style: {
         flex: 1,
-        flexDirection: 'column' },
-
+        flexDirection: 'column'
+      },
       on: {
-        change2: this._change2 } },
-
-    newVNodes);
+        change2: this._change2
+      }
+    }, newVNodes);
     return newNode;
   },
   methods: {
@@ -2425,11 +2572,15 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
       if (this.tabIndex === e.index) {
         return;
       }
+
       this.tabIndex = e.index;
       this.$emit('change', {
-        index: e.index });
-
-    } } };exports.default = _default;
+        index: e.index
+      });
+    }
+  }
+};
+exports.default = _default;
 
 /***/ }),
 
@@ -2441,48 +2592,47 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js"));
+/* WEBPACK VAR INJECTION */(function(uni) {
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js"));
 
 var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/nvueComponents/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/nvueComponents/uni-tab-content/uni-tab-content.nvue"));
+
 var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/nvueComponents/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/nvueComponents/uni-tab-bar/uni-tab-bar.nvue"));
+
 var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/nvueComponents/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/nvueComponents/uni-tabs/uni-tabs.nvue"));
+
 var _uniMediaList = _interopRequireDefault(__webpack_require__(/*! @/components/nvueComponents/uni-media-list/uni-media-list.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/nvueComponents/uni-media-list/uni-media-list.nvue"));
+
 var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js"));
+
 var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js"));
+
 var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js"));
-var _onfire = _interopRequireDefault(__webpack_require__(/*! onfire.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+
+var _onfire = _interopRequireDefault(__webpack_require__(/*! onfire.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/node_modules/onfire.js/lib/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 var dom = weex.requireModule('dom');
-var globalEvent = weex.requireModule('globalEvent');
-// const animation = weex.requireModule('animation')
-var _default =
-{
+var globalEvent = weex.requireModule('globalEvent'); // const animation = weex.requireModule('animation')
+
+var _default = {
   components: {
     uniTabContent: _uniTabContent.default,
     uniTabBar: _uniTabBar.default,
     uniTabs: _uniTabs.default,
-    uniMediaList: _uniMediaList.default },
-
+    uniMediaList: _uniMediaList.default
+  },
   data: function data() {
     return {
       userid: "",
@@ -2493,15 +2643,15 @@ var _default =
       newsitems: [],
       tabBars: [{
         name: '待处理',
-        action: 'getMyYhList' },
-      {
+        action: 'getMyYhList'
+      }, {
         name: '整改中',
-        action: 'getZgzyhList' },
-      {
+        action: 'getZgzyhList'
+      }, {
         name: '已整改',
-        action: 'getYzgyhList' }] };
-
-
+        action: 'getYzgyhList'
+      }]
+    };
   },
   created: function created() {
     var that = this;
@@ -2510,31 +2660,27 @@ var _default =
       success: function success(res) {
         that.userid = JSON.parse(res.data).userid;
       },
-      complete: function complete() {
-
-      } });
-
+      complete: function complete() {}
+    });
     var host = _config.default.host;
     uni.getStorage({
       key: "LOCAL_URL",
       success: function success(res) {
         host = res.data;
         _config.default.host = host;
-      } });
-
+      }
+    });
     setTimeout(function () {
       that.newsitems = that.randomfn();
       that.onrefresh(that.tabIndex);
     }, 50);
     uni.onNavigationBarButtonTap(function (e) {
       uni.navigateTo({
-        url: 'dangerEdit' });
-
+        url: 'dangerEdit'
+      });
     });
-
     globalEvent.addEventListener("plusMessage", function (e) {
-      if (e.data.refreshCode) {
-        // 处理完隐患返回列表页刷新暂时遇到问题，刷新完成后，上拉加载更多没反应，先搁置
+      if (e.data.refreshCode) {// 处理完隐患返回列表页刷新暂时遇到问题，刷新完成后，上拉加载更多没反应，先搁置
         // 					setTimeout(() => {
         // 					    that.newsitems = that.randomfn();
         // 						that.onrefresh(that.tabIndex);
@@ -2545,23 +2691,27 @@ var _default =
   methods: {
     // 获取隐患详情
     goDetail: function goDetail(item) {
-      var that = this;
-      //跳转到详情页面
-      uni.navigateTo({
-        url: 'dangerEdit?instanceid=' + item.instanceid + '&recordid=' + item.recordid });
+      var that = this; //跳转到详情页面
 
+      uni.navigateTo({
+        url: 'dangerEdit?instanceid=' + item.instanceid + '&recordid=' + item.recordid
+      });
     },
-    close: function close(index1, index2) {var _this = this;
+    close: function close(index1, index2) {
+      var _this = this;
+
       uni.showModal({
         content: '是否删除本条信息？',
         success: function success(res) {
           if (res.confirm) {
             _this.newsitems[index1].data.splice(index2, 1);
           }
-        } });
-
+        }
+      });
     },
-    loadMore: function loadMore(index) {var _this2 = this;
+    loadMore: function loadMore(index) {
+      var _this2 = this;
+
       setTimeout(function () {
         _this2.addData(index);
       }, 50);
@@ -2570,11 +2720,33 @@ var _default =
       var that = this;
       that.getListData(index, false);
     },
-    changeTab: function () {var _changeTab = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+    changeTab: function () {
+      var _changeTab = _asyncToGenerator(
+      /*#__PURE__*/
+      _regenerator.default.mark(function _callee(e) {
+        return _regenerator.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
                 this.tabIndex = e.index;
-                this.onrefresh(this.tabIndex);case 2:case "end":return _context.stop();}}}, _callee, this);}));function changeTab(_x) {return _changeTab.apply(this, arguments);}return changeTab;}(),
+                this.onrefresh(this.tabIndex);
 
-    getElSize: function getElSize(el) {//得到元素的size
+              case 2:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function changeTab(_x) {
+        return _changeTab.apply(this, arguments);
+      }
+
+      return changeTab;
+    }(),
+    getElSize: function getElSize(el) {
+      //得到元素的size
       return new Promise(function (res, rej) {
         var result = dom.getComponentRect(el, function (option) {
           res(option.size);
@@ -2584,15 +2756,16 @@ var _default =
     // 首先生成3个Tab页对应的空模型
     randomfn: function randomfn() {
       var ary = [];
+
       for (var i = 0, length = this.tabBars.length; i < length; i++) {
         var aryItem = {
           loadingText: "加载更多...",
           data: [],
-          pageNum: 0 };
-
-
+          pageNum: 0
+        };
         ary.push(aryItem);
       }
+
       return ary;
     },
     // 格式化接口数据，让数据变成组件需要的内容
@@ -2600,6 +2773,7 @@ var _default =
       if (isRefresh) {
         this.newsitems[index].data = [];
       }
+
       for (var i = 0; i < list.length; i++) {
         var obj = {};
         var item = list[i];
@@ -2612,20 +2786,22 @@ var _default =
         obj['comment_count'] = '';
         this.newsitems[index].data.push(obj);
       }
-      if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
+
+      if (!isRefresh) {
+        // 上拉加载更多结束后改回加载更多，增加体验
         this.newsitems[index].loadingText = '加载更多...';
       }
+
       if (this.newsitems[index].data.length <= 0) {
         uni.showToast({
           icon: 'none',
-          title: '暂无数据' });
-
+          title: '暂无数据'
+        });
       }
     },
     onrefresh: function onrefresh(index) {
       var that = this;
       that.newsitems[index].pageNum = 0;
-
       that.refreshText = "正在刷新...";
       that.refreshing = true;
       that.getListData(index, true);
@@ -2637,11 +2813,14 @@ var _default =
         pageNum: that.newsitems[index].pageNum,
         pageRows: that.pageRows,
         userid: that.userid,
-        action: that.tabBars[index].action };
+        action: that.tabBars[index].action
+      };
 
-      if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
+      if (!isRefresh) {
+        // 上拉加载更多，改变文字，增加体验
         that.newsitems[index].loadingText = '正在加载...';
       }
+
       _request.default.requestLoading(_config.default.getDangerList, data, '正在加载', function (res) {
         // 						uni.showToast({
         // 							icon: 'success',
@@ -2650,27 +2829,30 @@ var _default =
         that.refreshing = false;
         that.newsitems[index].pageNum++;
         that.formatData(res.data, index, isRefresh);
-      }, function () {//fail function
+      }, function () {
+        //fail function
         that.refreshing = false;
         uni.showToast({
           icon: 'none',
-          title: '网络异常，请重试' });
-
+          title: '网络异常，请重试'
+        });
       }, function () {//complete function
-
       });
-
     },
     onpullingdown: function onpullingdown(event) {
       if (this.refreshing) {
         return;
       }
+
       if (Math.abs(event.pullingDistance) > Math.abs(event.viewHeight)) {
         this.refreshText = "释放立即刷新";
       } else {
         this.refreshText = "下拉可以刷新";
       }
-    } } };exports.default = _default;
+    }
+  }
+};
+exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),

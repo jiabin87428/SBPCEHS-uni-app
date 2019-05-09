@@ -1191,6 +1191,60 @@ Z(z[122])
 Z([[7],[3,'idx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
+Z([3,'609973d6-default-609973d6-5'])
+Z(z[1])
+Z([3,'_picker 609973d6'])
+Z(z[3])
+Z([1,'609973d6-0'])
+Z([[2,'!'],[[7],[3,'editable']]])
+Z([3,'jclx'])
+Z([[7],[3,'checkTypes']])
+Z([3,'dictvalue'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'检查类型'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z(z[57])
+Z([3,'检查人'])
+Z(z[1])
+Z(z[131])
+Z(z[3])
+Z([1,'609973d6-1'])
+Z(z[134])
+Z(z[34])
+Z([[6],[[7],[3,'model']],[3,'jcrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'检查日期'])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([1,'609973d6-2'])
+Z(z[5])
+Z([3,'检查组成员'])
+Z(z[1])
+Z(z[131])
+Z(z[3])
+Z([1,'609973d6-3'])
+Z(z[134])
+Z([3,'mb'])
+Z([[7],[3,'selectedModule']])
+Z([3,'mbmc'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'检查模板'])
+Z([3,'609973d6-default-609973d6-10'])
+Z([3,'index'])
+Z([3,'item'])
+Z([[6],[[7],[3,'model']],[3,'jcjlList']])
+Z(z[173])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
+Z(z[5])
+Z([3,'true'])
 Z([3,'77ae7fa4-default-77ae7fa4-3'])
 Z(z[1])
 Z([3,'_picker 77ae7fa4'])
@@ -1209,9 +1263,9 @@ Z([1,'77ae7fa4-1'])
 Z([3,'wtms'])
 Z(z[5])
 Z([3,'问题描述'])
-Z(z[139])
+Z(z[193])
 Z(z[1])
-Z(z[131])
+Z(z[185])
 Z(z[3])
 Z([1,'77ae7fa4-2'])
 Z([3,'zgqk'])
@@ -1219,65 +1273,11 @@ Z([[7],[3,'rectifyTypes']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
 Z([3,'检查方式'])
-Z([3,'609973d6-default-609973d6-5'])
-Z(z[1])
-Z([3,'_picker 609973d6'])
-Z(z[3])
-Z([1,'609973d6-0'])
-Z([[2,'!'],[[7],[3,'editable']]])
-Z([3,'jclx'])
-Z([[7],[3,'checkTypes']])
-Z([3,'dictvalue'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'检查类型'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[57])
-Z([3,'检查人'])
-Z(z[1])
-Z(z[159])
-Z(z[3])
-Z([1,'609973d6-1'])
-Z(z[162])
-Z(z[34])
-Z([[6],[[7],[3,'model']],[3,'jcrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'检查日期'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'609973d6-2'])
-Z(z[5])
-Z([3,'检查组成员'])
-Z(z[1])
-Z(z[159])
-Z(z[3])
-Z([1,'609973d6-3'])
-Z(z[162])
-Z([3,'mb'])
-Z([[7],[3,'selectedModule']])
-Z([3,'mbmc'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'检查模板'])
-Z([3,'609973d6-default-609973d6-10'])
-Z([3,'index'])
-Z([3,'item'])
-Z([[6],[[7],[3,'model']],[3,'jcjlList']])
-Z(z[201])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
-Z(z[5])
-Z([3,'true'])
 Z([3,'f40cc204-default-f40cc204-1'])
-Z(z[201])
-Z(z[202])
+Z(z[173])
+Z(z[174])
 Z([[7],[3,'ggList']])
-Z(z[201])
+Z(z[173])
 Z([[7],[3,'index']])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
@@ -1285,10 +1285,10 @@ Z(z[3])
 Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
 Z(z[5])
 Z([3,'c4edb036-default-c4edb036-1'])
-Z(z[201])
-Z(z[202])
+Z(z[173])
+Z(z[174])
 Z(z[214])
-Z(z[201])
+Z(z[173])
 Z(z[216])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
@@ -1296,10 +1296,10 @@ Z(z[3])
 Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
 Z(z[5])
 Z([3,'5ff9ee88-default-5ff9ee88-1'])
-Z(z[201])
-Z(z[202])
+Z(z[173])
+Z(z[174])
 Z(z[214])
-Z(z[201])
+Z(z[173])
 Z(z[216])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
@@ -1317,10 +1317,10 @@ Z([1,'735e4812-1'])
 Z(z[5])
 Z(z[28])
 Z([3,'1d214ab8-default-1d214ab8-1'])
-Z(z[201])
-Z(z[202])
+Z(z[173])
+Z(z[174])
 Z([[7],[3,'datas']])
-Z(z[201])
+Z(z[173])
 Z(z[216])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1d214ab8-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
@@ -3208,85 +3208,6 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-cs.push("./common/slots.wxml:picker:21:47")
-var oD=_mz(z,'picker',['bindchange',130,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var fE=_v()
-_(oD,fE)
-cs.push("./common/slots.wxml:template:21:190")
-var cF=_oz(z,137,e,s,gg)
-var hG=_gd(x[0],cF,e_,d_)
-if(hG){
-var oH=_1z(z,136,e,s,gg) || {}
-var cur_globalf=gg.f
-fE.wxXCkey=3
-hG(oH,oH,fE,gg)
-gg.f=cur_globalf
-}
-else _w(cF,x[0],21,282)
-cs.pop()
-cs.pop()
-_(r,oD)
-var oB=_v()
-_(r,oB)
-if(_oz(z,139,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:21:314")
-var cI=_v()
-_(oB,cI)
-cs.push("./common/slots.wxml:template:21:314")
-var oJ=_oz(z,145,e,s,gg)
-var lK=_gd(x[0],oJ,e_,d_)
-if(lK){
-var aL=_1z(z,141,e,s,gg) || {}
-var cur_globalf=gg.f
-cI.wxXCkey=3
-lK(aL,aL,cI,gg)
-gg.f=cur_globalf
-}
-else _w(oJ,x[0],21,520)
-cs.pop()
-cs.pop()
-}
-var xC=_v()
-_(r,xC)
-if(_oz(z,147,e,s,gg)){xC.wxVkey=1
-cs.push("./common/slots.wxml:picker:21:543")
-cs.push("./common/slots.wxml:picker:21:543")
-var tM=_mz(z,'picker',['bindchange',148,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var eN=_v()
-_(tM,eN)
-cs.push("./common/slots.wxml:template:21:718")
-var bO=_oz(z,155,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,154,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],21,810)
-cs.pop()
-cs.pop()
-_(xC,tM)
-cs.pop()
-}
-oB.wxXCkey=1
-xC.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
 d_[x[0]]["609973d6-default-609973d6-5"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':609973d6-default-609973d6-5'
@@ -3295,85 +3216,85 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-cs.push("./common/slots.wxml:picker:23:47")
-var oB=_mz(z,'picker',['bindchange',158,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:21:47")
+var oB=_mz(z,'picker',['bindchange',130,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:23:238")
-var oD=_oz(z,167,e,s,gg)
+cs.push("./common/slots.wxml:template:21:238")
+var oD=_oz(z,139,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,166,e,s,gg) || {}
+var cF=_1z(z,138,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],23,330)
+else _w(oD,x[0],21,330)
 cs.pop()
 cs.pop()
 _(r,oB)
 var hG=_v()
 _(r,hG)
-cs.push("./common/slots.wxml:template:23:362")
-var oH=_oz(z,170,e,s,gg)
+cs.push("./common/slots.wxml:template:21:362")
+var oH=_oz(z,142,e,s,gg)
 var cI=_gd(x[0],oH,e_,d_)
 if(cI){
-var oJ=_1z(z,169,e,s,gg) || {}
+var oJ=_1z(z,141,e,s,gg) || {}
 var cur_globalf=gg.f
 hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],23,470)
+else _w(oH,x[0],21,470)
 cs.pop()
-cs.push("./common/slots.wxml:picker:23:493")
-var lK=_mz(z,'picker',['bindchange',173,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:21:493")
+var lK=_mz(z,'picker',['bindchange',145,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var aL=_v()
 _(lK,aL)
-cs.push("./common/slots.wxml:template:23:664")
-var tM=_oz(z,181,e,s,gg)
+cs.push("./common/slots.wxml:template:21:664")
+var tM=_oz(z,153,e,s,gg)
 var eN=_gd(x[0],tM,e_,d_)
 if(eN){
-var bO=_1z(z,180,e,s,gg) || {}
+var bO=_1z(z,152,e,s,gg) || {}
 var cur_globalf=gg.f
 aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],23,756)
+else _w(tM,x[0],21,756)
 cs.pop()
 cs.pop()
 _(r,lK)
 var oP=_v()
 _(r,oP)
-cs.push("./common/slots.wxml:template:23:788")
-var xQ=_oz(z,187,e,s,gg)
+cs.push("./common/slots.wxml:template:21:788")
+var xQ=_oz(z,159,e,s,gg)
 var oR=_gd(x[0],xQ,e_,d_)
 if(oR){
-var fS=_1z(z,184,e,s,gg) || {}
+var fS=_1z(z,156,e,s,gg) || {}
 var cur_globalf=gg.f
 oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[0],23,958)
+else _w(xQ,x[0],21,958)
 cs.pop()
-cs.push("./common/slots.wxml:picker:23:981")
-var cT=_mz(z,'picker',['bindchange',189,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:21:981")
+var cT=_mz(z,'picker',['bindchange',161,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var hU=_v()
 _(cT,hU)
-cs.push("./common/slots.wxml:template:23:1169")
-var oV=_oz(z,198,e,s,gg)
+cs.push("./common/slots.wxml:template:21:1169")
+var oV=_oz(z,170,e,s,gg)
 var cW=_gd(x[0],oV,e_,d_)
 if(cW){
-var oX=_1z(z,197,e,s,gg) || {}
+var oX=_1z(z,169,e,s,gg) || {}
 var cur_globalf=gg.f
 hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[0],23,1261)
+else _w(oV,x[0],21,1261)
 cs.pop()
 cs.pop()
 _(r,cT)
@@ -3394,27 +3315,106 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:25:48")
+cs.push("./common/slots.wxml:template:23:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:25:48")
-var cI=_oz(z,209,fE,oD,gg)
+cs.push("./common/slots.wxml:template:23:48")
+var cI=_oz(z,181,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,206,fE,oD,gg) || {}
+var lK=_1z(z,178,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],25,246)
+else _w(cI,x[0],23,246)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,203,xC,e,s,gg,oB,'item','index','index')
+_2z(z,175,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77ae7fa4-default-77ae7fa4-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+cs.push("./common/slots.wxml:picker:25:47")
+var oD=_mz(z,'picker',['bindchange',184,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var fE=_v()
+_(oD,fE)
+cs.push("./common/slots.wxml:template:25:190")
+var cF=_oz(z,191,e,s,gg)
+var hG=_gd(x[0],cF,e_,d_)
+if(hG){
+var oH=_1z(z,190,e,s,gg) || {}
+var cur_globalf=gg.f
+fE.wxXCkey=3
+hG(oH,oH,fE,gg)
+gg.f=cur_globalf
+}
+else _w(cF,x[0],25,282)
+cs.pop()
+cs.pop()
+_(r,oD)
+var oB=_v()
+_(r,oB)
+if(_oz(z,193,e,s,gg)){oB.wxVkey=1
+cs.push("./common/slots.wxml:template:25:314")
+var cI=_v()
+_(oB,cI)
+cs.push("./common/slots.wxml:template:25:314")
+var oJ=_oz(z,199,e,s,gg)
+var lK=_gd(x[0],oJ,e_,d_)
+if(lK){
+var aL=_1z(z,195,e,s,gg) || {}
+var cur_globalf=gg.f
+cI.wxXCkey=3
+lK(aL,aL,cI,gg)
+gg.f=cur_globalf
+}
+else _w(oJ,x[0],25,520)
+cs.pop()
+cs.pop()
+}
+var xC=_v()
+_(r,xC)
+if(_oz(z,201,e,s,gg)){xC.wxVkey=1
+cs.push("./common/slots.wxml:picker:25:543")
+cs.push("./common/slots.wxml:picker:25:543")
+var tM=_mz(z,'picker',['bindchange',202,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var eN=_v()
+_(tM,eN)
+cs.push("./common/slots.wxml:template:25:718")
+var bO=_oz(z,209,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,208,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],25,810)
+cs.pop()
+cs.pop()
+_(xC,tM)
+cs.pop()
+}
+oB.wxXCkey=1
+xC.wxXCkey=1
 }catch(err){
 p_[b]=false
 throw err

@@ -2580,7 +2580,7 @@ var globalEvent = weex.requireModule('globalEvent');var _default =
     // 获取检查详情
     goDetail: function goDetail(item) {
       var that = this;
-      _request.default.download(_config.default.downloadFile + item.recordid, function (res) {
+      _request.default.download(_config.default.downloadFile + item.recordid + '&isphone=true', function (res) {
         var filePath = res.tempFilePath;
         uni.openDocument({
           filePath: filePath,
@@ -2651,7 +2651,7 @@ var globalEvent = weex.requireModule('globalEvent');var _default =
         var obj = {};
         var item = list[i];
         obj['title'] = item.notesubject;
-        obj['source'] = '检查时间：' + item.createtime;
+        obj['source'] = '创建时间：' + item.createtime;
         obj['datetime'] = '';
         // obj['instanceid'] = item.instanceid;
         obj['moduleid'] = item.moduleid;

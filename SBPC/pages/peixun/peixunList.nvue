@@ -96,7 +96,7 @@
 			// 获取检查详情
             goDetail(item) {
 				var that = this;
-				request.download(config.downloadFile + item.recordid, function(res){
+				request.download(config.downloadFile + item.recordid + '&isphone=true', function(res){
 						var filePath = res.tempFilePath;
 						uni.openDocument({
 						  filePath: filePath,
@@ -167,7 +167,7 @@
 					var obj = {};
 					var item = list[i];
 					obj['title'] = item.notesubject;
-					obj['source'] = '检查时间：' + item.createtime;
+					obj['source'] = '创建时间：' + item.createtime;
 					obj['datetime'] = '';
 					// obj['instanceid'] = item.instanceid;
 					obj['moduleid'] = item.moduleid;
