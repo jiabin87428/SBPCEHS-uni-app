@@ -24,9 +24,9 @@
 
 <template name="77ae7fa4-default-77ae7fa4-3"><picker id="ifwt" bindchange="handleProxy" range="{{typeArray}}" data-eventid="{{'77ae7fa4-0'}}" data-comkey="{{$k}}" class="_picker 77ae7fa4"><template title="检查结论" data="{{...$root['0'], ...$root[$kk+'77ae7fa4-0'],$root}}" is="30c48a99"></template></picker><template id="wtms" title="问题描述" bindtap="handleProxy" wx:if="{{item.ifwt != '1'}}" data-eventid="{{'77ae7fa4-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'77ae7fa4-1'],$root}}" is="30c48a99"></template><picker id="zgqk" bindchange="handleProxy" range="{{rectifyTypes}}" wx:if="{{item.ifwt != '1'}}" data-eventid="{{'77ae7fa4-2'}}" data-comkey="{{$k}}" class="_picker 77ae7fa4"><template title="检查方式" data="{{...$root['0'], ...$root[$kk+'77ae7fa4-2'],$root}}" is="30c48a99"></template></picker></template>
 
-<template name="f40cc204-default-f40cc204-1"><block wx:key="index" key="{{index}}" wx:for="{{ggList}}" wx:for-index="index" wx:for-item="item"><template bindtap="handleProxy" data-eventid="{{'f40cc204-0-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'f40cc204-0-'+index],$root}}" is="30c48a99"></template></block></template>
-
 <template name="c4edb036-default-c4edb036-1"><block wx:key="index" key="{{index}}" wx:for="{{ggList}}" wx:for-index="index" wx:for-item="item"><template bindtap="handleProxy" data-eventid="{{'c4edb036-0-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'c4edb036-0-'+index],$root}}" is="30c48a99"></template></block></template>
+
+<template name="f40cc204-default-f40cc204-1"><block wx:key="index" key="{{index}}" wx:for="{{ggList}}" wx:for-index="index" wx:for-item="item"><template bindtap="handleProxy" data-eventid="{{'f40cc204-0-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'f40cc204-0-'+index],$root}}" is="30c48a99"></template></block></template>
 
 <template name="5ff9ee88-default-5ff9ee88-1"><block wx:key="index" key="{{index}}" wx:for="{{ggList}}" wx:for-index="index" wx:for-item="item"><template data="{{...$root['0'], ...$root[$kk+'5ff9ee88-0-'+index],$root}}" is="30c48a99"></template></block></template>
 

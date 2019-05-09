@@ -2577,10 +2577,22 @@ var globalEvent = weex.requireModule('globalEvent');var _default =
         url: 'checkEdit' });
 
     },
-    // 获取检查详情
+    // 获取培训详情
     goDetail: function goDetail(item) {
       var that = this;
-      _request.default.download(_config.default.downloadFile + item.recordid + '&isphone=true', function (res) {
+      var url = _config.default.downloadFile + item.recordid;
+      var systemInfo = uni.getSystemInfo({
+        success: function success(res) {
+          if (res.platform == 'ios') {// iOS平台url后面加isphone=true
+            url = url + '&isphone=true';
+          }
+          that.downloadFun(url);
+        } });
+
+    },
+    // 下载文件
+    downloadFun: function downloadFun(url) {
+      _request.default.download(url, function (res) {
         var filePath = res.tempFilePath;
         uni.openDocument({
           filePath: filePath,
@@ -2589,9 +2601,16 @@ var globalEvent = weex.requireModule('globalEvent');var _default =
           },
           fail: function fail(res) {
             console.log('打开文档失败:' + JSON.stringify(res));
+            uni.showToast({
+              icon: 'none',
+              title: res.errMsg });
+
           } });
 
       }, function () {//fail function
+        uni.showToast({
+          icon: 'none',
+          title: '下载失败' });
 
       }, function () {//complete function
 

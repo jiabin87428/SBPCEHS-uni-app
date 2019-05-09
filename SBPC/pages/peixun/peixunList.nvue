@@ -93,10 +93,22 @@
 					url:'checkEdit'
 				});
 			},
-			// 获取检查详情
+			// 获取培训详情
             goDetail(item) {
 				var that = this;
-				request.download(config.downloadFile + item.recordid + '&isphone=true', function(res){
+				var url = config.downloadFile + item.recordid
+				let systemInfo = uni.getSystemInfo({
+					success: function (res) {
+						if (res.platform == 'ios') {// iOS平台url后面加isphone=true
+							url = url + '&isphone=true'
+						}
+						that.downloadFun(url);
+					}
+				})
+            },
+			// 下载文件
+			downloadFun: function(url) {
+				request.download(url, function(res){
 						var filePath = res.tempFilePath;
 						uni.openDocument({
 						  filePath: filePath,
@@ -105,15 +117,22 @@
 						  },
 						  fail: function(res) {
 						  	console.log('打开文档失败:' + JSON.stringify(res));
+							uni.showToast({
+								icon:'none',
+								title: res.errMsg
+							})
 						  }
 						});
 					}, function(){//fail function
-						
+						uni.showToast({
+							icon:'none',
+							title: '下载失败'
+						})
 					}, function(){//complete function
 					
 					}
 				);
-            },
+			},
             close(index1, index2) {
                 uni.showModal({
                     content: '是否删除本条信息？',
