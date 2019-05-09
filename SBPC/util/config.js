@@ -84,7 +84,8 @@ var config = {
 	loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',
 	// 加载用户头像
 	loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=',
-	
+	// 下载文件
+	downloadFile: '/getfile?fileid=',
 };
 //对外把对象config返回
 module.exports = config

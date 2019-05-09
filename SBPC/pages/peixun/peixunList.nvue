@@ -96,10 +96,23 @@
 			// 获取检查详情
             goDetail(item) {
 				var that = this;
-				//跳转到详情页面
-				uni.navigateTo({
-					url:'peixun?recordid=' + item.recordid
-				});
+				request.download(config.downloadFile + item.recordid, function(res){
+						var filePath = res.tempFilePath;
+						uni.openDocument({
+						  filePath: filePath,
+						  success: function (res) {
+							console.log('打开文档成功');
+						  },
+						  fail: function(res) {
+						  	console.log('打开文档失败:' + JSON.stringify(res));
+						  }
+						});
+					}, function(){//fail function
+						
+					}, function(){//complete function
+					
+					}
+				);
             },
             close(index1, index2) {
                 uni.showModal({

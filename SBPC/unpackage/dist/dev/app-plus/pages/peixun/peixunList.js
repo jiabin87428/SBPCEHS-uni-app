@@ -575,8 +575,9 @@ var config = {
   // 加载照片
   loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',
   // 加载用户头像
-  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=' };
-
+  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=',
+  // 下载文件
+  downloadFile: '/getfile?fileid=' };
 
 //对外把对象config返回
 module.exports = config;
@@ -714,6 +715,40 @@ var request = function request(url, message, _success3, _fail3) {
 
 };
 
+var download = function download(url, _success4, _fail4, _complete3) {
+  var downloadTask = uni.downloadFile({
+    url: config.host + url,
+    success: function success(res) {
+      console.log('success:' + JSON.stringify(res));
+      if (res.statusCode === 200) {
+        _success4(res);
+      }
+    },
+    fail: function fail(res) {
+      console.log('fail:' + JSON.stringify(res));
+      _fail4(res);
+    },
+    complete: function complete() {
+      _complete3();
+    } });
+
+
+  if (downloadTask == null) {
+    return;
+  }
+
+  downloadTask.onProgressUpdate(function (res) {
+    console.log('下载进度' + res.progress);
+    console.log('已经下载的数据长度' + res.totalBytesWritten);
+    console.log('预期需要下载的数据总长度' + res.totalBytesExpectedToWrite);
+
+    // 测试条件，取消下载任务。
+    // if (res.progress > 50) {
+    // 	downloadTask.abort();
+    // }
+  });
+};
+
 // 复杂对象中的对象数组需要转成jsonString
 var formatParam = function formatParam(param) {
   console.log("formatParam");
@@ -729,7 +764,8 @@ var formatParam = function formatParam(param) {
 {
   request: request,
   requestLoading: requestLoading,
-  requestLoadingNew: requestLoadingNew };exports.default = _default;
+  requestLoadingNew: requestLoadingNew,
+  download: download };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -2544,9 +2580,22 @@ var globalEvent = weex.requireModule('globalEvent');var _default =
     // 获取检查详情
     goDetail: function goDetail(item) {
       var that = this;
-      //跳转到详情页面
-      uni.navigateTo({
-        url: 'peixun?recordid=' + item.recordid });
+      _request.default.download(_config.default.downloadFile + item.recordid, function (res) {
+        var filePath = res.tempFilePath;
+        uni.openDocument({
+          filePath: filePath,
+          success: function success(res) {
+            console.log('打开文档成功');
+          },
+          fail: function fail(res) {
+            console.log('打开文档失败:' + JSON.stringify(res));
+          } });
+
+      }, function () {//fail function
+
+      }, function () {//complete function
+
+      });
 
     },
     close: function close(index1, index2) {var _this = this;

@@ -121,6 +121,40 @@ const request = function(url, message, success, fail) {
 	});
 }
 
+const download = function(url, success, fail, complete) {
+	var downloadTask = uni.downloadFile({
+		url: config.host + url,
+		success: (res) => {
+			console.log('success:' + JSON.stringify(res));
+			if (res.statusCode === 200) {
+				success(res);
+			}
+		},
+		fail: (res) => {
+			console.log('fail:' + JSON.stringify(res));
+			fail(res);
+		},
+		complete: ()=> {
+			complete()
+		}
+	});
+	
+	if (downloadTask == null) {
+		return;
+	}
+
+	downloadTask.onProgressUpdate((res) => {
+		console.log('下载进度' + res.progress);
+		console.log('已经下载的数据长度' + res.totalBytesWritten);
+		console.log('预期需要下载的数据总长度' + res.totalBytesExpectedToWrite);
+
+		// 测试条件，取消下载任务。
+		// if (res.progress > 50) {
+		// 	downloadTask.abort();
+		// }
+	});
+}
+
 // 复杂对象中的对象数组需要转成jsonString
 const formatParam = function(param) {
 	console.log("formatParam");
@@ -136,5 +170,6 @@ const formatParam = function(param) {
 export default {
     request,
     requestLoading,
-	requestLoadingNew
+	requestLoadingNew,
+	download
 }
