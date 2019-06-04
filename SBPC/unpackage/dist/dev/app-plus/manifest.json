@@ -7,7 +7,7 @@
   "id": "__UNI__98629FB",
   "name": "SBPC-EHS",
   "version": {
-    "name": "1.0.3",
+    "name": "1.0.4",
     "code": "1"
   },
   "description": "",
@@ -127,7 +127,7 @@
       }
     },
     "uni-app": {
-      "compilerVersion": "1.9.4",
+      "compilerVersion": "1.9.9",
       "control": "webview"
     }
   }
