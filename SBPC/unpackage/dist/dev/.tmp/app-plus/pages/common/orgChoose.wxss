@@ -110,7 +110,8 @@
 	background-color: #3296FA;
 	margin-left: 20rpx;
 	margin-right: 20rpx;
-	border-radius: 5rpx;
+	-webkit-border-radius: 5rpx;
+	        border-radius: 5rpx;
 }
 /*vue顶部Tab页css样式*/
 .TopTabView {

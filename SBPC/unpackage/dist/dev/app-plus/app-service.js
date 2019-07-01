@@ -13,7 +13,7 @@ if(typeof __WXML_GLOBAL__ !== 'undefined'){
 // var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/global.__wcc_version__='v0.5vv_20181221_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -653,34 +653,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1054,7 +1052,6 @@ if(typeof(global.defines)==='undefined')global.defines={};d_=global.defines;
 var f_={}
 if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules || {};
 var p_={}
-var cs
 __WXML_GLOBAL__.ops_cached = __WXML_GLOBAL__.ops_cached || {}
 __WXML_GLOBAL__.ops_set = __WXML_GLOBAL__.ops_set || {};
 __WXML_GLOBAL__.ops_init = __WXML_GLOBAL__.ops_init || {};
@@ -1069,18 +1066,21 @@ Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],
 Z([[7],[3,'$k']])
 Z([1,'5c0aa864-0'])
 Z([3,'30c48a99'])
+Z([3,'true'])
 Z([3,'隐患描述'])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([1,'5c0aa864-1'])
 Z(z[5])
+Z(z[6])
 Z([3,'隐患等级'])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([1,'5c0aa864-2'])
 Z(z[5])
+Z(z[6])
 Z([3,'隐患后果'])
 Z(z[1])
 Z([3,'_picker M5c0aa864'])
@@ -1091,35 +1091,40 @@ Z([3,'yhlx'])
 Z([[7],[3,'dangerType']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
+Z(z[6])
 Z([3,'隐患类型'])
 Z(z[1])
-Z(z[20])
+Z(z[23])
 Z(z[3])
 Z([1,'5c0aa864-4'])
-Z(z[23])
+Z(z[26])
 Z([3,'date'])
 Z([[6],[[7],[3,'model']],[3,'zgqx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
+Z(z[6])
 Z([3,'整改期限'])
 Z(z[1])
-Z(z[20])
+Z(z[23])
 Z(z[3])
 Z([1,'5c0aa864-5'])
-Z(z[23])
+Z(z[26])
 Z([3,'yhly'])
 Z([[7],[3,'dangerSource']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
+Z(z[6])
 Z([3,'隐患来源'])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([1,'5c0aa864-6'])
 Z(z[5])
+Z(z[6])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
+Z(z[6])
 Z([3,'false'])
 Z([3,'发起人'])
 Z([3,'M5c0aa864-default-5c0aa864-14'])
@@ -1128,32 +1133,37 @@ Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],
 Z(z[3])
 Z([1,'5c0aa864-10'])
 Z(z[5])
+Z(z[6])
 Z([3,'隐患因素'])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([1,'5c0aa864-11'])
 Z(z[5])
+Z(z[6])
 Z([3,'原因分析'])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([1,'5c0aa864-12'])
 Z(z[5])
+Z(z[6])
 Z([3,'整改情况'])
 Z(z[1])
-Z(z[20])
+Z(z[23])
 Z(z[3])
 Z([1,'5c0aa864-13'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
-Z(z[34])
+Z(z[38])
 Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
+Z(z[6])
 Z([3,'完成日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
-Z(z[57])
+Z(z[6])
+Z(z[65])
 Z([3,'整改人'])
 Z([3,'M5c0aa864-default-5c0aa864-18'])
 Z(z[1])
@@ -1161,20 +1171,23 @@ Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],
 Z(z[3])
 Z([1,'5c0aa864-17'])
 Z(z[5])
+Z(z[6])
 Z([3,'完成情况'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
-Z(z[57])
+Z(z[6])
+Z(z[65])
 Z([3,'确认人'])
 Z(z[1])
-Z(z[20])
+Z(z[23])
 Z(z[3])
 Z([1,'5c0aa864-18'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
-Z(z[34])
+Z(z[38])
 Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
+Z(z[6])
 Z([3,'填报日期'])
 Z([3,'M5c0aa864-default-5c0aa864-20'])
 Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
@@ -1188,7 +1201,7 @@ Z([3,'M4508b5aa-default-4508b5aa-1'])
 Z([3,'idx'])
 Z([3,'logItem'])
 Z([[7],[3,'logList']])
-Z(z[122])
+Z(z[138])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
 Z([3,'M609973d6-default-609973d6-5'])
@@ -1205,14 +1218,14 @@ Z(z[5])
 Z([3,'检查类型'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
-Z(z[57])
+Z(z[65])
 Z([3,'检查人'])
 Z(z[1])
-Z(z[130])
+Z(z[146])
 Z(z[3])
 Z([1,'609973d6-1'])
-Z(z[133])
-Z(z[34])
+Z(z[149])
+Z(z[38])
 Z([[6],[[7],[3,'model']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
@@ -1224,10 +1237,10 @@ Z([1,'609973d6-2'])
 Z(z[5])
 Z([3,'检查组成员'])
 Z(z[1])
-Z(z[130])
+Z(z[146])
 Z(z[3])
 Z([1,'609973d6-3'])
-Z(z[133])
+Z(z[149])
 Z([3,'mb'])
 Z([[7],[3,'selectedModule']])
 Z([3,'mbmc'])
@@ -1238,13 +1251,13 @@ Z([3,'M609973d6-default-609973d6-10'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'model']],[3,'jcjlList']])
-Z(z[172])
+Z(z[188])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
 Z(z[5])
-Z([3,'true'])
+Z(z[6])
 Z([3,'M77ae7fa4-default-77ae7fa4-3'])
 Z(z[1])
 Z([3,'_picker M77ae7fa4'])
@@ -1263,9 +1276,9 @@ Z([1,'77ae7fa4-1'])
 Z([3,'wtms'])
 Z(z[5])
 Z([3,'问题描述'])
-Z(z[192])
+Z(z[208])
 Z(z[1])
-Z(z[184])
+Z(z[200])
 Z(z[3])
 Z([1,'77ae7fa4-2'])
 Z([3,'zgqk'])
@@ -1273,39 +1286,25 @@ Z([[7],[3,'rectifyTypes']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[5])
 Z([3,'检查方式'])
-Z([3,'Mc4edb036-default-c4edb036-1'])
-Z(z[172])
-Z(z[173])
-Z([[7],[3,'ggList']])
-Z(z[172])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
-Z(z[5])
 Z([3,'Mf40cc204-default-f40cc204-1'])
-Z(z[172])
-Z(z[173])
-Z(z[213])
-Z(z[172])
+Z(z[188])
+Z(z[189])
+Z([[7],[3,'ggList']])
+Z(z[188])
 Z(z[1])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
 Z(z[5])
-Z([3,'M1d214ab8-default-1d214ab8-1'])
-Z(z[172])
-Z(z[173])
-Z([[7],[3,'datas']])
-Z(z[172])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1d214ab8-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'M5ff9ee88-default-5ff9ee88-1'])
-Z(z[172])
-Z(z[173])
-Z(z[213])
-Z(z[172])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'Mc4edb036-default-c4edb036-1'])
+Z(z[188])
+Z(z[189])
+Z(z[229])
+Z(z[188])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
 Z(z[5])
 Z([3,'M735e4812-default-735e4812-2'])
 Z(z[1])
@@ -1319,7 +1318,21 @@ Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],
 Z(z[3])
 Z([1,'735e4812-1'])
 Z(z[5])
-Z(z[28])
+Z(z[32])
+Z([3,'M5ff9ee88-default-5ff9ee88-1'])
+Z(z[188])
+Z(z[189])
+Z(z[229])
+Z(z[188])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
+Z([3,'M1d214ab8-default-1d214ab8-1'])
+Z(z[188])
+Z(z[189])
+Z([[7],[3,'datas']])
+Z(z[188])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1d214ab8-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[5])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1363,6 +1376,8 @@ Z([[7],[3,'thumb']])
 Z([[2,'||'],[[2,'==='],[[7],[3,'showExtraIcon']],[1,true]],[[2,'==='],[[7],[3,'showExtraIcon']],[1,'true']]])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'30c48a99-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'346bda0d'])
+Z([3,'_view M30c48a99 uni-list-cell__content'])
+Z([[2,'||'],[[2,'==='],[[7],[3,'mustInput']],[1,true]],[[2,'==='],[[7],[3,'mustInput']],[1,'true']]])
 Z([[7],[3,'note']])
 Z([[2,'||'],[[2,'||'],[[2,'||'],[[2,'||'],[[2,'||'],[[2,'||'],[[7],[3,'subnote']],[[2,'==='],[[7],[3,'showBadge']],[1,true]]],[[2,'==='],[[7],[3,'showBadge']],[1,'true']]],[[2,'==='],[[7],[3,'showArrow']],[1,true]]],[[2,'==='],[[7],[3,'showArrow']],[1,'true']]],[[2,'==='],[[7],[3,'showSwitch']],[1,true]]],[[2,'==='],[[7],[3,'showSwitch']],[1,'true']]])
 Z([3,'_view M30c48a99 uni-list-cell__extra'])
@@ -2068,7 +2083,7 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','/components/m-input.vue.wxml','/components/countDown/uni-countdown.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/charts/chartsTypeList.vue.wxml','./pages/charts/chartsTypeList.wxml','./chartsTypeList.vue.wxml','./pages/charts/listCharts.vue.wxml','./pages/charts/listCharts.wxml','./listCharts.vue.wxml','./pages/charts/pieCharts.vue.wxml','./pages/charts/pieCharts.wxml','./pieCharts.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/charts/chartsTypeList.vue.wxml','./pages/charts/chartsTypeList.wxml','./chartsTypeList.vue.wxml','./pages/charts/listCharts.vue.wxml','./pages/charts/listCharts.wxml','./listCharts.vue.wxml','./pages/charts/pieCharts.vue.wxml','./pages/charts/pieCharts.wxml','./pieCharts.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["M5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':M5c0aa864-default-5c0aa864-8'
@@ -2079,7 +2094,6 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:11:48")
 var xC=_oz(z,5,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -2089,118 +2103,97 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],11,215)
-cs.pop()
+else _w(xC,x[0],6,232)
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:11:238")
-var hG=_oz(z,11,e,s,gg)
+var hG=_oz(z,12,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,8,e,s,gg) || {}
+var cI=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],11,405)
-cs.pop()
+else _w(hG,x[0],6,439)
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:11:428")
-var lK=_oz(z,17,e,s,gg)
+var lK=_oz(z,19,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,14,e,s,gg) || {}
+var tM=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],11,595)
-cs.pop()
-cs.push("./common/slots.wxml:picker:11:618")
-var eN=_mz(z,'picker',['bindchange',19,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+else _w(lK,x[0],6,646)
+var eN=_mz(z,'picker',['bindchange',22,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:11:808")
-var oP=_oz(z,27,e,s,gg)
+var oP=_oz(z,30,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,26,e,s,gg) || {}
+var oR=_1z(z,29,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],11,900)
-cs.pop()
-cs.pop()
+else _w(oP,x[0],6,968)
 _(r,eN)
-cs.push("./common/slots.wxml:picker:11:932")
-var fS=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var fS=_mz(z,'picker',['bindchange',33,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var cT=_v()
 _(fS,cT)
-cs.push("./common/slots.wxml:template:11:1124")
-var hU=_oz(z,37,e,s,gg)
+var hU=_oz(z,41,e,s,gg)
 var oV=_gd(x[0],hU,e_,d_)
 if(oV){
-var cW=_1z(z,36,e,s,gg) || {}
+var cW=_1z(z,40,e,s,gg) || {}
 var cur_globalf=gg.f
 cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[0],11,1216)
-cs.pop()
-cs.pop()
+else _w(hU,x[0],6,1301)
 _(r,fS)
-cs.push("./common/slots.wxml:picker:11:1248")
-var oX=_mz(z,'picker',['bindchange',39,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+var oX=_mz(z,'picker',['bindchange',44,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
 var lY=_v()
 _(oX,lY)
-cs.push("./common/slots.wxml:template:11:1440")
-var aZ=_oz(z,47,e,s,gg)
+var aZ=_oz(z,52,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
-var e2=_1z(z,46,e,s,gg) || {}
+var e2=_1z(z,51,e,s,gg) || {}
 var cur_globalf=gg.f
 lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],11,1532)
-cs.pop()
-cs.pop()
+else _w(aZ,x[0],6,1634)
 _(r,oX)
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:11:1564")
-var o4=_oz(z,53,e,s,gg)
+var o4=_oz(z,59,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
-var o6=_1z(z,50,e,s,gg) || {}
+var o6=_1z(z,56,e,s,gg) || {}
 var cur_globalf=gg.f
 b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],11,1731)
-cs.pop()
+else _w(o4,x[0],6,1850)
 var f7=_v()
 _(r,f7)
-cs.push("./common/slots.wxml:template:11:1754")
-var c8=_oz(z,56,e,s,gg)
+var c8=_oz(z,63,e,s,gg)
 var h9=_gd(x[0],c8,e_,d_)
 if(h9){
-var o0=_1z(z,55,e,s,gg) || {}
+var o0=_1z(z,62,e,s,gg) || {}
 var cur_globalf=gg.f
 f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[0],11,1862)
-cs.pop()
+else _w(c8,x[0],6,1998)
 }catch(err){
 p_[b]=false
 throw err
@@ -2218,78 +2211,66 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:13:49")
-var xC=_oz(z,64,e,s,gg)
+var xC=_oz(z,72,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,61,e,s,gg) || {}
+var fE=_1z(z,69,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],13,217)
-cs.pop()
+else _w(xC,x[0],8,234)
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:13:240")
-var hG=_oz(z,70,e,s,gg)
+var hG=_oz(z,79,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,67,e,s,gg) || {}
+var cI=_1z(z,76,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],13,409)
-cs.pop()
+else _w(hG,x[0],8,443)
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:13:432")
-var lK=_oz(z,76,e,s,gg)
+var lK=_oz(z,86,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,73,e,s,gg) || {}
+var tM=_1z(z,83,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],13,601)
-cs.pop()
-cs.push("./common/slots.wxml:picker:13:624")
-var eN=_mz(z,'picker',['bindchange',78,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+else _w(lK,x[0],8,652)
+var eN=_mz(z,'picker',['bindchange',89,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var bO=_v()
 _(eN,bO)
-cs.push("./common/slots.wxml:template:13:819")
-var oP=_oz(z,86,e,s,gg)
+var oP=_oz(z,97,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,85,e,s,gg) || {}
+var oR=_1z(z,96,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],13,912)
-cs.pop()
-cs.pop()
+else _w(oP,x[0],8,980)
 _(r,eN)
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:13:944")
-var cT=_oz(z,89,e,s,gg)
+var cT=_oz(z,101,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,88,e,s,gg) || {}
+var oV=_1z(z,100,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],13,1053)
-cs.pop()
+else _w(cT,x[0],8,1138)
 }catch(err){
 p_[b]=false
 throw err
@@ -2307,49 +2288,41 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:15:49")
-var xC=_oz(z,97,e,s,gg)
+var xC=_oz(z,110,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,94,e,s,gg) || {}
+var fE=_1z(z,107,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],15,218)
-cs.pop()
+else _w(xC,x[0],10,235)
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:15:241")
-var hG=_oz(z,100,e,s,gg)
+var hG=_oz(z,114,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,99,e,s,gg) || {}
+var cI=_1z(z,113,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],15,350)
-cs.pop()
-cs.push("./common/slots.wxml:picker:15:373")
-var oJ=_mz(z,'picker',['bindchange',103,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+else _w(hG,x[0],10,384)
+var oJ=_mz(z,'picker',['bindchange',118,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:15:569")
-var aL=_oz(z,111,e,s,gg)
+var aL=_oz(z,126,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,110,e,s,gg) || {}
+var eN=_1z(z,125,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],15,662)
-cs.pop()
-cs.pop()
+else _w(aL,x[0],10,713)
 _(r,oJ)
 }catch(err){
 p_[b]=false
@@ -2368,23 +2341,19 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-if(_oz(z,114,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:17:49")
+if(_oz(z,130,e,s,gg)){oB.wxVkey=1
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:17:49")
-var oD=_oz(z,119,e,s,gg)
+var oD=_oz(z,135,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,116,e,s,gg) || {}
+var cF=_1z(z,132,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],17,279)
-cs.pop()
-cs.pop()
+else _w(oD,x[0],12,279)
 }
 oB.wxXCkey=1
 }catch(err){
@@ -2404,27 +2373,23 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:block:19:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:19:144")
-var cI=_oz(z,127,fE,oD,gg)
+var cI=_oz(z,143,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,126,fE,oD,gg) || {}
+var lK=_1z(z,142,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],19,220)
-cs.pop()
+else _w(cI,x[0],14,220)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,124,xC,e,s,gg,oB,'logItem','idx','idx')
-cs.pop()
+_2z(z,140,xC,e,s,gg,oB,'logItem','idx','idx')
 }catch(err){
 p_[b]=false
 throw err
@@ -2440,87 +2405,71 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-cs.push("./common/slots.wxml:picker:21:48")
-var oB=_mz(z,'picker',['bindchange',129,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+var oB=_mz(z,'picker',['bindchange',145,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:21:240")
-var oD=_oz(z,138,e,s,gg)
+var oD=_oz(z,154,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,137,e,s,gg) || {}
+var cF=_1z(z,153,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],21,332)
-cs.pop()
-cs.pop()
+else _w(oD,x[0],16,332)
 _(r,oB)
 var hG=_v()
 _(r,hG)
-cs.push("./common/slots.wxml:template:21:364")
-var oH=_oz(z,141,e,s,gg)
+var oH=_oz(z,157,e,s,gg)
 var cI=_gd(x[0],oH,e_,d_)
 if(cI){
-var oJ=_1z(z,140,e,s,gg) || {}
+var oJ=_1z(z,156,e,s,gg) || {}
 var cur_globalf=gg.f
 hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],21,472)
-cs.pop()
-cs.push("./common/slots.wxml:picker:21:495")
-var lK=_mz(z,'picker',['bindchange',144,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+else _w(oH,x[0],16,472)
+var lK=_mz(z,'picker',['bindchange',160,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var aL=_v()
 _(lK,aL)
-cs.push("./common/slots.wxml:template:21:667")
-var tM=_oz(z,152,e,s,gg)
+var tM=_oz(z,168,e,s,gg)
 var eN=_gd(x[0],tM,e_,d_)
 if(eN){
-var bO=_1z(z,151,e,s,gg) || {}
+var bO=_1z(z,167,e,s,gg) || {}
 var cur_globalf=gg.f
 aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],21,759)
-cs.pop()
-cs.pop()
+else _w(tM,x[0],16,759)
 _(r,lK)
 var oP=_v()
 _(r,oP)
-cs.push("./common/slots.wxml:template:21:791")
-var xQ=_oz(z,158,e,s,gg)
+var xQ=_oz(z,174,e,s,gg)
 var oR=_gd(x[0],xQ,e_,d_)
 if(oR){
-var fS=_1z(z,155,e,s,gg) || {}
+var fS=_1z(z,171,e,s,gg) || {}
 var cur_globalf=gg.f
 oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[0],21,961)
-cs.pop()
-cs.push("./common/slots.wxml:picker:21:984")
-var cT=_mz(z,'picker',['bindchange',160,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+else _w(xQ,x[0],16,961)
+var cT=_mz(z,'picker',['bindchange',176,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var hU=_v()
 _(cT,hU)
-cs.push("./common/slots.wxml:template:21:1173")
-var oV=_oz(z,169,e,s,gg)
+var oV=_oz(z,185,e,s,gg)
 var cW=_gd(x[0],oV,e_,d_)
 if(cW){
-var oX=_1z(z,168,e,s,gg) || {}
+var oX=_1z(z,184,e,s,gg) || {}
 var cur_globalf=gg.f
 hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[0],21,1265)
-cs.pop()
-cs.pop()
+else _w(oV,x[0],16,1265)
 _(r,cT)
 }catch(err){
 p_[b]=false
@@ -2539,27 +2488,23 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:23:49")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:23:49")
-var cI=_oz(z,180,fE,oD,gg)
+var cI=_oz(z,196,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,177,fE,oD,gg) || {}
+var lK=_1z(z,193,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],23,247)
-cs.pop()
+else _w(cI,x[0],18,247)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,174,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
+_2z(z,190,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2575,108 +2520,56 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-cs.push("./common/slots.wxml:picker:25:48")
-var oD=_mz(z,'picker',['bindchange',183,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var oD=_mz(z,'picker',['bindchange',199,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var fE=_v()
 _(oD,fE)
-cs.push("./common/slots.wxml:template:25:192")
-var cF=_oz(z,190,e,s,gg)
+var cF=_oz(z,206,e,s,gg)
 var hG=_gd(x[0],cF,e_,d_)
 if(hG){
-var oH=_1z(z,189,e,s,gg) || {}
+var oH=_1z(z,205,e,s,gg) || {}
 var cur_globalf=gg.f
 fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[0],25,284)
-cs.pop()
-cs.pop()
+else _w(cF,x[0],20,284)
 _(r,oD)
 var oB=_v()
 _(r,oB)
-if(_oz(z,192,e,s,gg)){oB.wxVkey=1
-cs.push("./common/slots.wxml:template:25:316")
+if(_oz(z,208,e,s,gg)){oB.wxVkey=1
 var cI=_v()
 _(oB,cI)
-cs.push("./common/slots.wxml:template:25:316")
-var oJ=_oz(z,198,e,s,gg)
+var oJ=_oz(z,214,e,s,gg)
 var lK=_gd(x[0],oJ,e_,d_)
 if(lK){
-var aL=_1z(z,194,e,s,gg) || {}
+var aL=_1z(z,210,e,s,gg) || {}
 var cur_globalf=gg.f
 cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[0],25,522)
-cs.pop()
-cs.pop()
+else _w(oJ,x[0],20,522)
 }
 var xC=_v()
 _(r,xC)
-if(_oz(z,200,e,s,gg)){xC.wxVkey=1
-cs.push("./common/slots.wxml:picker:25:545")
-cs.push("./common/slots.wxml:picker:25:545")
-var tM=_mz(z,'picker',['bindchange',201,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+if(_oz(z,216,e,s,gg)){xC.wxVkey=1
+var tM=_mz(z,'picker',['bindchange',217,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var eN=_v()
 _(tM,eN)
-cs.push("./common/slots.wxml:template:25:721")
-var bO=_oz(z,208,e,s,gg)
+var bO=_oz(z,224,e,s,gg)
 var oP=_gd(x[0],bO,e_,d_)
 if(oP){
-var xQ=_1z(z,207,e,s,gg) || {}
+var xQ=_1z(z,223,e,s,gg) || {}
 var cur_globalf=gg.f
 eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[0],25,813)
-cs.pop()
-cs.pop()
+else _w(bO,x[0],20,813)
 _(xC,tM)
-cs.pop()
 }
 oB.wxXCkey=1
 xC.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["Mc4edb036-default-c4edb036-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':Mc4edb036-default-c4edb036-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:27:48")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:27:146")
-var cI=_oz(z,219,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,216,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],27,306)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,213,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -2694,27 +2587,23 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:block:29:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:29:146")
-var cI=_oz(z,229,fE,oD,gg)
+var cI=_oz(z,235,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,226,fE,oD,gg) || {}
+var lK=_1z(z,232,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],29,306)
-cs.pop()
+else _w(cI,x[0],22,306)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,223,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
+_2z(z,229,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2722,9 +2611,9 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["M1d214ab8-default-1d214ab8-1"]=function(e,s,r,gg){
+d_[x[0]]["Mc4edb036-default-c4edb036-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':M1d214ab8-default-1d214ab8-1'
+var b=x[0]+':Mc4edb036-default-c4edb036-1'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -2732,50 +2621,10 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:block:31:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:31:145")
-var cI=_oz(z,236,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,235,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],31,223)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,233,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5ff9ee88-default-5ff9ee88-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5ff9ee88-default-5ff9ee88-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:block:33:48")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:33:146")
-var cI=_oz(z,243,fE,oD,gg)
+var cI=_oz(z,245,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
 var lK=_1z(z,242,fE,oD,gg) || {}
@@ -2784,13 +2633,11 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],33,224)
-cs.pop()
+else _w(cI,x[0],24,306)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,240,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
+_2z(z,239,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2808,32 +2655,96 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:35:48")
-var xC=_oz(z,249,e,s,gg)
+var xC=_oz(z,251,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,246,e,s,gg) || {}
+var fE=_1z(z,248,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],35,215)
-cs.pop()
+else _w(xC,x[0],26,215)
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:35:238")
-var hG=_oz(z,255,e,s,gg)
+var hG=_oz(z,257,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,252,e,s,gg) || {}
+var cI=_1z(z,254,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],35,405)
-cs.pop()
+else _w(hG,x[0],26,405)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5ff9ee88-default-5ff9ee88-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5ff9ee88-default-5ff9ee88-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+var cI=_oz(z,265,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,264,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],28,224)
+return cF
+}
+oB.wxXCkey=2
+_2z(z,262,xC,e,s,gg,oB,'item','index','index')
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M1d214ab8-default-1d214ab8-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M1d214ab8-default-1d214ab8-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+var cI=_oz(z,272,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,271,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],30,223)
+return cF
+}
+oB.wxXCkey=2
+_2z(z,269,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2848,57 +2759,39 @@ _ai(oB,x[1],e_,x[0],1,1)
 _ai(oB,x[2],e_,x[0],2,2)
 _ai(oB,x[3],e_,x[0],3,2)
 _ai(oB,x[4],e_,x[0],4,2)
-_ai(oB,x[5],e_,x[0],5,2)
-_ai(oB,x[6],e_,x[0],6,2)
-_ai(oB,x[7],e_,x[0],7,2)
-_ai(oB,x[8],e_,x[0],8,2)
-_ai(oB,x[9],e_,x[0],9,2)
-oB.pop()
-oB.pop()
-oB.pop()
-oB.pop()
-oB.pop()
 oB.pop()
 oB.pop()
 oB.pop()
 oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8],x[9]],ic:[]}
-d_[x[10]]={}
-d_[x[10]]["7bd1b4e7"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4]],ic:[]}
+d_[x[5]]={}
+d_[x[5]]["7bd1b4e7"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[10]+':7bd1b4e7'
+var b=x[5]+':7bd1b4e7'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/countDown/uni-countdown.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[10]);return}
+if(p_[b]){_wl(b,x[5]);return}
 p_[b]=true
 try{
-cs.push("./components/countDown/uni-countdown.vue.wxml:view:1:27")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var xC=_v()
 _(oB,xC)
 if(_oz(z,2,e,s,gg)){xC.wxVkey=1
-cs.push("./components/countDown/uni-countdown.vue.wxml:view:1:71")
-cs.pop()
 }
 var oD=_v()
 _(oB,oD)
 if(_oz(z,3,e,s,gg)){oD.wxVkey=1
-cs.push("./components/countDown/uni-countdown.vue.wxml:view:1:281")
-cs.pop()
 }
 var fE=_v()
 _(oB,fE)
 if(_oz(z,4,e,s,gg)){fE.wxVkey=1
-cs.push("./components/countDown/uni-countdown.vue.wxml:view:1:1243")
-cs.pop()
 }
 xC.wxXCkey=1
 oD.wxXCkey=1
 fE.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -2911,21 +2804,19 @@ var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 return r
 }
-e_[x[10]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[11]]={}
-d_[x[11]]["68dcfa4a"]=function(e,s,r,gg){
+e_[x[5]]={f:m1,j:[],i:[],ti:[],ic:[]}
+d_[x[6]]={}
+d_[x[6]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[11]+':68dcfa4a'
+var b=x[6]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[6]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 if(_oz(z,1,e,s,gg)){oB.wxVkey=1
-cs.push("./components/list/uni-badge/uni-badge.vue.wxml:text:1:27")
-cs.pop()
 }
 oB.wxXCkey=1
 }catch(err){
@@ -2939,14 +2830,14 @@ var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 return r
 }
-e_[x[11]]={f:m2,j:[],i:[],ti:[],ic:[]}
-d_[x[12]]={}
-d_[x[12]]["346bda0d"]=function(e,s,r,gg){
+e_[x[6]]={f:m2,j:[],i:[],ti:[],ic:[]}
+d_[x[7]]={}
+d_[x[7]]["346bda0d"]=function(e,s,r,gg){
 var z=gz$gwx_4()
-var b=x[12]+':346bda0d'
+var b=x[7]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[7]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2960,124 +2851,104 @@ var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
 return r
 }
-e_[x[12]]={f:m3,j:[],i:[],ti:[],ic:[]}
-d_[x[13]]={}
-d_[x[13]]["30c48a99"]=function(e,s,r,gg){
+e_[x[7]]={f:m3,j:[],i:[],ti:[],ic:[]}
+d_[x[8]]={}
+d_[x[8]]["30c48a99"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[13]+':30c48a99'
+var b=x[8]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[13]);return}
+if(p_[b]){_wl(b,x[8]);return}
 p_[b]=true
 try{
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
 var oB=_mz(z,'view',['bindtap',1,'class',1,'data-comkey',2,'data-eventid',3,'hoverClass',4],[],e,s,gg)
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:485")
 var xC=_n('view')
 _rz(z,xC,'class',6,e,s,gg)
 var oD=_v()
 _(xC,oD)
 if(_oz(z,7,e,s,gg)){oD.wxVkey=1
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:540")
-cs.pop()
 }
 else if(_oz(z,8,e,s,gg)){oD.wxVkey=2
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:695")
-var hG=_v()
-_(oD,hG)
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:810")
-var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[13],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,9,e,s,gg) || {}
+var cF=_v()
+_(oD,cF)
+var hG=_oz(z,10,e,s,gg)
+var oH=_gd(x[8],hG,e_,d_)
+if(oH){
+var cI=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[13],1,881)
-cs.pop()
-cs.pop()
+else _w(hG,x[8],1,881)
 }
+var oJ=_n('view')
+_rz(z,oJ,'class',11,e,s,gg)
+var lK=_v()
+_(oJ,lK)
+if(_oz(z,12,e,s,gg)){lK.wxVkey=1
+}
+var aL=_v()
+_(oJ,aL)
+if(_oz(z,13,e,s,gg)){aL.wxVkey=1
+}
+lK.wxXCkey=1
+aL.wxXCkey=1
+_(xC,oJ)
 var fE=_v()
 _(xC,fE)
-if(_oz(z,11,e,s,gg)){fE.wxVkey=1
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:1039")
-cs.pop()
-}
-var cF=_v()
-_(xC,cF)
-if(_oz(z,12,e,s,gg)){cF.wxVkey=1
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:1136")
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:1136")
-var lK=_n('view')
-_rz(z,lK,'class',13,e,s,gg)
-var aL=_v()
-_(lK,aL)
-if(_oz(z,14,e,s,gg)){aL.wxVkey=1
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:1345")
-cs.pop()
-}
-var tM=_v()
-_(lK,tM)
-if(_oz(z,15,e,s,gg)){tM.wxVkey=1
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1441")
-var oP=_v()
-_(tM,oP)
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1441")
-var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[13],xQ,e_,d_)
-if(oR){
-var fS=_1z(z,16,e,s,gg) || {}
-var cur_globalf=gg.f
-oP.wxXCkey=3
-oR(fS,fS,oP,gg)
-gg.f=cur_globalf
-}
-else _w(xQ,x[13],1,1567)
-cs.pop()
-cs.pop()
-}
+if(_oz(z,14,e,s,gg)){fE.wxVkey=1
+var tM=_n('view')
+_rz(z,tM,'class',15,e,s,gg)
 var eN=_v()
-_(lK,eN)
-if(_oz(z,18,e,s,gg)){eN.wxVkey=1
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:switch:1:1590")
-cs.pop()
+_(tM,eN)
+if(_oz(z,16,e,s,gg)){eN.wxVkey=1
 }
 var bO=_v()
-_(lK,bO)
-if(_oz(z,19,e,s,gg)){bO.wxVkey=1
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1813")
-var cT=_v()
-_(bO,cT)
-cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1813")
-var hU=_oz(z,22,e,s,gg)
-var oV=_gd(x[13],hU,e_,d_)
-if(oV){
-var cW=_1z(z,21,e,s,gg) || {}
+_(tM,bO)
+if(_oz(z,17,e,s,gg)){bO.wxVkey=1
+var oR=_v()
+_(bO,oR)
+var fS=_oz(z,19,e,s,gg)
+var cT=_gd(x[8],fS,e_,d_)
+if(cT){
+var hU=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
-cT.wxXCkey=3
-oV(cW,cW,cT,gg)
+oR.wxXCkey=3
+cT(hU,hU,oR,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[13],1,1980)
-cs.pop()
-cs.pop()
+else _w(fS,x[8],1,1714)
 }
-aL.wxXCkey=1
-tM.wxXCkey=1
+var oP=_v()
+_(tM,oP)
+if(_oz(z,20,e,s,gg)){oP.wxVkey=1
+}
+var xQ=_v()
+_(tM,xQ)
+if(_oz(z,21,e,s,gg)){xQ.wxVkey=1
+var oV=_v()
+_(xQ,oV)
+var cW=_oz(z,24,e,s,gg)
+var oX=_gd(x[8],cW,e_,d_)
+if(oX){
+var lY=_1z(z,23,e,s,gg) || {}
+var cur_globalf=gg.f
+oV.wxXCkey=3
+oX(lY,lY,oV,gg)
+gg.f=cur_globalf
+}
+else _w(cW,x[8],1,2127)
+}
 eN.wxXCkey=1
 bO.wxXCkey=1
-cs.pop()
-_(cF,lK)
-cs.pop()
+oP.wxXCkey=1
+xQ.wxXCkey=1
+_(fE,tM)
 }
 oD.wxXCkey=1
 fE.wxXCkey=1
-cF.wxXCkey=1
-cs.pop()
 _(oB,xC)
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -3088,31 +2959,29 @@ return r
 }
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var hG=e_[x[13]].i
-_ai(hG,x[3],e_,x[13],1,1)
-_ai(hG,x[9],e_,x[13],1,61)
+var hG=e_[x[8]].i
+_ai(hG,x[3],e_,x[8],1,1)
+_ai(hG,x[9],e_,x[8],1,61)
 hG.pop()
 hG.pop()
 return r
 }
-e_[x[13]]={f:m4,j:[],i:[],ti:[x[3],x[9]],ic:[]}
-d_[x[14]]={}
-d_[x[14]]["3b6bb3ad"]=function(e,s,r,gg){
+e_[x[8]]={f:m4,j:[],i:[],ti:[x[3],x[9]],ic:[]}
+d_[x[10]]={}
+d_[x[10]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_6()
-var b=x[14]+':3b6bb3ad'
+var b=x[10]+':3b6bb3ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[14]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
-cs.push("./components/list/uni-list/uni-list.vue.wxml:view:1:62")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./components/list/uni-list/uni-list.vue.wxml:template:1:137")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[14],oD,e_,d_)
+var fE=_gd(x[10],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3120,9 +2989,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[14],1,195)
-cs.pop()
-cs.pop()
+else _w(oD,x[10],1,195)
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -3131,12 +2998,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[14]]["default"]=function(e,s,r,gg){
+d_[x[10]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_6()
-var b=x[14]+':default'
+var b=x[10]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[14]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3148,19 +3015,19 @@ return r
 }
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var cI=e_[x[14]].i
-_ai(cI,x[8],e_,x[14],1,1)
+var cI=e_[x[10]].i
+_ai(cI,x[11],e_,x[10],1,1)
 cI.pop()
 return r
 }
-e_[x[14]]={f:m5,j:[],i:[],ti:[x[8]],ic:[]}
-d_[x[15]]={}
-d_[x[15]]["2241d2a0"]=function(e,s,r,gg){
+e_[x[10]]={f:m5,j:[],i:[],ti:[x[11]],ic:[]}
+d_[x[12]]={}
+d_[x[12]]["2241d2a0"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[15]+':2241d2a0'
+var b=x[12]+':2241d2a0'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[15]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3174,28 +3041,25 @@ var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
 return r
 }
-e_[x[15]]={f:m6,j:[],i:[],ti:[],ic:[]}
-d_[x[16]]={}
-d_[x[16]]["7dcb1efb"]=function(e,s,r,gg){
+e_[x[12]]={f:m6,j:[],i:[],ti:[],ic:[]}
+d_[x[13]]={}
+d_[x[13]]["7dcb1efb"]=function(e,s,r,gg){
 var z=gz$gwx_8()
-var b=x[16]+':7dcb1efb'
+var b=x[13]+':7dcb1efb'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-input.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
+if(p_[b]){_wl(b,x[13]);return}
 p_[b]=true
 try{
-cs.push("./components/m-input.vue.wxml:view:1:78")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var xC=_v()
 _(oB,xC)
 if(_oz(z,2,e,s,gg)){xC.wxVkey=1
-cs.push("./components/m-input.vue.wxml:view:1:429")
 var fE=_v()
 _(xC,fE)
-cs.push("./components/m-input.vue.wxml:template:1:524")
 var cF=_oz(z,8,e,s,gg)
-var hG=_gd(x[16],cF,e_,d_)
+var hG=_gd(x[13],cF,e_,d_)
 if(hG){
 var oH=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3203,19 +3067,15 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[16],1,709)
-cs.pop()
-cs.pop()
+else _w(cF,x[13],1,709)
 }
 var oD=_v()
 _(oB,oD)
 if(_oz(z,11,e,s,gg)){oD.wxVkey=1
-cs.push("./components/m-input.vue.wxml:view:1:739")
 var cI=_v()
 _(oD,cI)
-cs.push("./components/m-input.vue.wxml:template:1:807")
 var oJ=_oz(z,16,e,s,gg)
-var lK=_gd(x[16],oJ,e_,d_)
+var lK=_gd(x[13],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,13,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3223,13 +3083,10 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[16],1,974)
-cs.pop()
-cs.pop()
+else _w(oJ,x[13],1,974)
 }
 xC.wxXCkey=1
 oD.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -3240,32 +3097,29 @@ return r
 }
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var aL=e_[x[16]].i
-_ai(aL,x[7],e_,x[16],1,1)
+var aL=e_[x[13]].i
+_ai(aL,x[14],e_,x[13],1,1)
 aL.pop()
 return r
 }
-e_[x[16]]={f:m7,j:[],i:[],ti:[x[7]],ic:[]}
-d_[x[17]]={}
-d_[x[17]]["15605040"]=function(e,s,r,gg){
+e_[x[13]]={f:m7,j:[],i:[],ti:[x[14]],ic:[]}
+d_[x[15]]={}
+d_[x[15]]["15605040"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[17]+':15605040'
+var b=x[15]+':15605040'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/prompt/prompt.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[17]);return}
+if(p_[b]){_wl(b,x[15]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 if(_oz(z,1,e,s,gg)){oB.wxVkey=1
-cs.push("./components/prompt/prompt.vue.wxml:view:1:62")
-cs.push("./components/prompt/prompt.vue.wxml:view:1:62")
 var xC=_mz(z,'view',['bindtouchmove',2,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
 var oD=_v()
 _(xC,oD)
-cs.push("./components/prompt/prompt.vue.wxml:template:1:599")
 var fE=_oz(z,8,e,s,gg)
-var cF=_gd(x[17],fE,e_,d_)
+var cF=_gd(x[15],fE,e_,d_)
 if(cF){
 var hG=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3273,11 +3127,8 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[17],1,657)
-cs.pop()
-cs.pop()
+else _w(fE,x[15],1,657)
 _(oB,xC)
-cs.pop()
 }
 oB.wxXCkey=1
 }catch(err){
@@ -3287,12 +3138,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[17]]["default"]=function(e,s,r,gg){
+d_[x[15]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[17]+':default'
+var b=x[15]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/prompt/prompt.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[17]);return}
+if(p_[b]){_wl(b,x[15]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3304,344 +3155,247 @@ return r
 }
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var eN=e_[x[17]].i
-_ai(eN,x[8],e_,x[17],1,1)
+var eN=e_[x[15]].i
+_ai(eN,x[11],e_,x[15],1,1)
 eN.pop()
 return r
 }
-e_[x[17]]={f:m8,j:[],i:[],ti:[x[8]],ic:[]}
-d_[x[18]]={}
-d_[x[18]]["2e136f80"]=function(e,s,r,gg){
+e_[x[15]]={f:m8,j:[],i:[],ti:[x[11]],ic:[]}
+d_[x[16]]={}
+d_[x[16]]["2e136f80"]=function(e,s,r,gg){
 var z=gz$gwx_10()
-var b=x[18]+':2e136f80'
+var b=x[16]+':2e136f80'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/ceshi/ceshi.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[18]);return}
+if(p_[b]){_wl(b,x[16]);return}
 p_[b]=true
 try{
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:88")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
-cs.push("./pages/ceshi/ceshi.vue.wxml:scroll-view:1:127")
 var fE=_n('scroll-view')
 _rz(z,fE,'class',2,e,s,gg)
 var cF=_v()
 _(fE,cF)
 if(_oz(z,3,e,s,gg)){cF.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:block:1:508")
 var cI=_v()
 _(cF,cI)
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:764")
 var oJ=function(aL,lK,tM,gg){
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:1100")
 var bO=_n('view')
 _rz(z,bO,'class',8,aL,lK,gg)
 var oR=_v()
 _(bO,oR)
-cs.push("./pages/ceshi/ceshi.vue.wxml:block:1:1305")
 var fS=function(hU,cT,oV,gg){
-cs.push("./pages/ceshi/ceshi.vue.wxml:radio-group:1:1438")
 var oX=_mz(z,'radio-group',['bindchange',13,'class',1,'data-comkey',2,'data-eventid',3],[],hU,cT,gg)
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:1583")
 var lY=_mz(z,'view',['bindtap',17,'class',1,'data-comkey',2,'data-eventid',3],[],hU,cT,gg)
 var aZ=_v()
 _(lY,aZ)
 if(_oz(z,21,hU,cT,gg)){aZ.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:radio:1:1792")
-cs.pop()
 }
 aZ.wxXCkey=1
-cs.pop()
 _(oX,lY)
-cs.pop()
 _(oV,oX)
 return oV
 }
 oR.wxXCkey=2
 _2z(z,11,fS,aL,lK,gg,oR,'selectItem','selectIndex','selectIndex')
-cs.pop()
 var oP=_v()
 _(bO,oP)
 if(_oz(z,22,aL,lK,gg)){oP.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:2110")
-cs.pop()
 }
 var xQ=_v()
 _(bO,xQ)
 if(_oz(z,23,aL,lK,gg)){xQ.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:2224")
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:2224")
 var t1=_n('view')
 _rz(z,t1,'class',24,aL,lK,gg)
 var e2=_v()
 _(t1,e2)
 if(_oz(z,25,aL,lK,gg)){e2.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:2433")
-cs.pop()
 }
 var b3=_v()
 _(t1,b3)
 if(_oz(z,26,aL,lK,gg)){b3.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:2534")
-cs.pop()
 }
 var o4=_v()
 _(t1,o4)
 if(_oz(z,27,aL,lK,gg)){o4.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:2663")
-cs.pop()
 }
 var x5=_v()
 _(t1,x5)
 if(_oz(z,28,aL,lK,gg)){x5.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:2798")
-cs.pop()
 }
 var o6=_v()
 _(t1,o6)
 if(_oz(z,29,aL,lK,gg)){o6.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:2922")
-cs.pop()
 }
 e2.wxXCkey=1
 b3.wxXCkey=1
 o4.wxXCkey=1
 x5.wxXCkey=1
 o6.wxXCkey=1
-cs.pop()
 _(xQ,t1)
-cs.pop()
 }
 oP.wxXCkey=1
 xQ.wxXCkey=1
-cs.pop()
 _(tM,bO)
 return tM
 }
 cI.wxXCkey=2
 _2z(z,6,oJ,e,s,gg,cI,'item','index','index')
-cs.pop()
-cs.pop()
 }
 var hG=_v()
 _(fE,hG)
 if(_oz(z,30,e,s,gg)){hG.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:block:1:3080")
 var f7=_v()
 _(hG,f7)
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:3336")
 var c8=function(o0,h9,cAB,gg){
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:3672")
 var lCB=_n('view')
 _rz(z,lCB,'class',35,o0,h9,gg)
 var eFB=_v()
 _(lCB,eFB)
-cs.push("./pages/ceshi/ceshi.vue.wxml:block:1:3877")
 var bGB=function(xIB,oHB,oJB,gg){
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:4060")
 var cLB=_mz(z,'view',['bindtap',40,'class',1,'data-comkey',2,'data-eventid',3],[],xIB,oHB,gg)
 var hMB=_v()
 _(cLB,hMB)
 if(_oz(z,44,xIB,oHB,gg)){hMB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:checkbox:1:4269")
-cs.pop()
 }
 hMB.wxXCkey=1
-cs.pop()
 _(oJB,cLB)
 return oJB
 }
 eFB.wxXCkey=2
 _2z(z,38,bGB,o0,h9,gg,eFB,'selectItem','selectIndex','selectIndex')
-cs.pop()
 var aDB=_v()
 _(lCB,aDB)
 if(_oz(z,45,o0,h9,gg)){aDB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:4605")
-cs.pop()
 }
 var tEB=_v()
 _(lCB,tEB)
 if(_oz(z,46,o0,h9,gg)){tEB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:4719")
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:4719")
 var oNB=_n('view')
 _rz(z,oNB,'class',47,o0,h9,gg)
 var cOB=_v()
 _(oNB,cOB)
 if(_oz(z,48,o0,h9,gg)){cOB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:4928")
-cs.pop()
 }
 var oPB=_v()
 _(oNB,oPB)
 if(_oz(z,49,o0,h9,gg)){oPB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:5029")
-cs.pop()
 }
 var lQB=_v()
 _(oNB,lQB)
 if(_oz(z,50,o0,h9,gg)){lQB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:5158")
-cs.pop()
 }
 var aRB=_v()
 _(oNB,aRB)
 if(_oz(z,51,o0,h9,gg)){aRB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:5293")
-cs.pop()
 }
 var tSB=_v()
 _(oNB,tSB)
 if(_oz(z,52,o0,h9,gg)){tSB.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:5417")
-cs.pop()
 }
 cOB.wxXCkey=1
 oPB.wxXCkey=1
 lQB.wxXCkey=1
 aRB.wxXCkey=1
 tSB.wxXCkey=1
-cs.pop()
 _(tEB,oNB)
-cs.pop()
 }
 aDB.wxXCkey=1
 tEB.wxXCkey=1
-cs.pop()
 _(cAB,lCB)
 return cAB
 }
 f7.wxXCkey=2
 _2z(z,33,c8,e,s,gg,f7,'item','index','index')
-cs.pop()
-cs.pop()
 }
 var oH=_v()
 _(fE,oH)
 if(_oz(z,53,e,s,gg)){oH.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:block:1:5575")
 var eTB=_v()
 _(oH,eTB)
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:5831")
 var bUB=function(xWB,oVB,oXB,gg){
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:6167")
 var cZB=_n('view')
 _rz(z,cZB,'class',58,xWB,oVB,gg)
 var c3B=_v()
 _(cZB,c3B)
-cs.push("./pages/ceshi/ceshi.vue.wxml:block:1:6372")
 var o4B=function(a6B,l5B,t7B,gg){
-cs.push("./pages/ceshi/ceshi.vue.wxml:radio-group:1:6505")
 var b9B=_mz(z,'radio-group',['bindchange',63,'class',1,'data-comkey',2,'data-eventid',3],[],a6B,l5B,gg)
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:6650")
 var o0B=_mz(z,'view',['bindtap',67,'class',1,'data-comkey',2,'data-eventid',3],[],a6B,l5B,gg)
 var xAC=_v()
 _(o0B,xAC)
 if(_oz(z,71,a6B,l5B,gg)){xAC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:radio:1:6859")
-cs.pop()
 }
 xAC.wxXCkey=1
-cs.pop()
 _(b9B,o0B)
-cs.pop()
 _(t7B,b9B)
 return t7B
 }
 c3B.wxXCkey=2
 _2z(z,61,o4B,xWB,oVB,gg,c3B,'selectItem','selectIndex','selectIndex')
-cs.pop()
 var h1B=_v()
 _(cZB,h1B)
 if(_oz(z,72,xWB,oVB,gg)){h1B.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:7177")
-cs.pop()
 }
 var o2B=_v()
 _(cZB,o2B)
 if(_oz(z,73,xWB,oVB,gg)){o2B.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:7291")
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:7291")
 var oBC=_n('view')
 _rz(z,oBC,'class',74,xWB,oVB,gg)
 var fCC=_v()
 _(oBC,fCC)
 if(_oz(z,75,xWB,oVB,gg)){fCC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:7500")
-cs.pop()
 }
 var cDC=_v()
 _(oBC,cDC)
 if(_oz(z,76,xWB,oVB,gg)){cDC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:7601")
-cs.pop()
 }
 var hEC=_v()
 _(oBC,hEC)
 if(_oz(z,77,xWB,oVB,gg)){hEC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:7730")
-cs.pop()
 }
 var oFC=_v()
 _(oBC,oFC)
 if(_oz(z,78,xWB,oVB,gg)){oFC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:7865")
-cs.pop()
 }
 var cGC=_v()
 _(oBC,cGC)
 if(_oz(z,79,xWB,oVB,gg)){cGC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:7989")
-cs.pop()
 }
 fCC.wxXCkey=1
 cDC.wxXCkey=1
 hEC.wxXCkey=1
 oFC.wxXCkey=1
 cGC.wxXCkey=1
-cs.pop()
 _(o2B,oBC)
-cs.pop()
 }
 h1B.wxXCkey=1
 o2B.wxXCkey=1
-cs.pop()
 _(oXB,cZB)
 return oXB
 }
 eTB.wxXCkey=2
 _2z(z,56,bUB,e,s,gg,eTB,'item','index','index')
-cs.pop()
-cs.pop()
 }
 cF.wxXCkey=1
 hG.wxXCkey=1
 oH.wxXCkey=1
-cs.pop()
 _(oB,fE)
 var xC=_v()
 _(oB,xC)
 if(_oz(z,80,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:8161")
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:8161")
 var oHC=_n('view')
 _rz(z,oHC,'class',81,e,s,gg)
 var lIC=_v()
 _(oHC,lIC)
 if(_oz(z,82,e,s,gg)){lIC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:label:1:8309")
-cs.pop()
 }
 var aJC=_v()
 _(oHC,aJC)
 if(_oz(z,83,e,s,gg)){aJC.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:template:1:8395")
 var tKC=_v()
 _(aJC,tKC)
-cs.push("./pages/ceshi/ceshi.vue.wxml:template:1:8395")
 var eLC=_oz(z,88,e,s,gg)
-var bMC=_gd(x[18],eLC,e_,d_)
+var bMC=_gd(x[16],eLC,e_,d_)
 if(bMC){
 var oNC=_1z(z,85,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3649,25 +3403,18 @@ tKC.wxXCkey=3
 bMC(oNC,oNC,tKC,gg)
 gg.f=cur_globalf
 }
-else _w(eLC,x[18],1,8571)
-cs.pop()
-cs.pop()
+else _w(eLC,x[16],1,8571)
 }
 lIC.wxXCkey=1
 aJC.wxXCkey=1
-cs.pop()
 _(xC,oHC)
-cs.pop()
 }
 var oD=_v()
 _(oB,oD)
 if(_oz(z,89,e,s,gg)){oD.wxVkey=1
-cs.push("./pages/ceshi/ceshi.vue.wxml:view:1:8748")
-cs.pop()
 }
 xC.wxXCkey=1
 oD.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -3678,22 +3425,21 @@ return r
 }
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var oP=e_[x[18]].i
-_ai(oP,x[6],e_,x[18],1,1)
+var oP=e_[x[16]].i
+_ai(oP,x[17],e_,x[16],1,1)
 oP.pop()
 return r
 }
-e_[x[18]]={f:m9,j:[],i:[],ti:[x[6]],ic:[]}
-d_[x[19]]={}
+e_[x[16]]={f:m9,j:[],i:[],ti:[x[17]],ic:[]}
+d_[x[18]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var oR=e_[x[19]].i
-_ai(oR,x[20],e_,x[19],1,1)
+var oR=e_[x[18]].i
+_ai(oR,x[19],e_,x[18],1,1)
 var fS=_v()
 _(r,fS)
-cs.push("./pages/ceshi/ceshi.wxml:template:2:6")
 var cT=_oz(z,1,e,s,gg)
-var hU=_gd(x[19],cT,e_,d_)
+var hU=_gd(x[18],cT,e_,d_)
 if(hU){
 var oV=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3701,26 +3447,24 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[19],2,18)
-cs.pop()
+else _w(cT,x[18],2,18)
 oR.pop()
 return r
 }
-e_[x[19]]={f:m10,j:[],i:[],ti:[x[20]],ic:[]}
-d_[x[21]]={}
-d_[x[21]]["735e4812"]=function(e,s,r,gg){
+e_[x[18]]={f:m10,j:[],i:[],ti:[x[19]],ic:[]}
+d_[x[20]]={}
+d_[x[20]]["735e4812"]=function(e,s,r,gg){
 var z=gz$gwx_12()
-var b=x[21]+':735e4812'
+var b=x[20]+':735e4812'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/charts/chartsTypeList.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[21]);return}
+if(p_[b]){_wl(b,x[20]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/charts/chartsTypeList.vue.wxml:template:1:196")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[21],xC,e_,d_)
+var oD=_gd(x[20],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3728,8 +3472,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[21],1,312)
-cs.pop()
+else _w(xC,x[20],1,312)
 }catch(err){
 p_[b]=false
 throw err
@@ -3739,24 +3482,23 @@ return r
 }
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var oX=e_[x[21]].i
-_ai(oX,x[1],e_,x[21],1,1)
-_ai(oX,x[2],e_,x[21],1,61)
+var oX=e_[x[20]].i
+_ai(oX,x[1],e_,x[20],1,1)
+_ai(oX,x[2],e_,x[20],1,61)
 oX.pop()
 oX.pop()
 return r
 }
-e_[x[21]]={f:m11,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[22]]={}
+e_[x[20]]={f:m11,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[21]]={}
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var aZ=e_[x[22]].i
-_ai(aZ,x[23],e_,x[22],1,1)
+var aZ=e_[x[21]].i
+_ai(aZ,x[22],e_,x[21],1,1)
 var t1=_v()
 _(r,t1)
-cs.push("./pages/charts/chartsTypeList.wxml:template:2:6")
 var e2=_oz(z,1,e,s,gg)
-var b3=_gd(x[22],e2,e_,d_)
+var b3=_gd(x[21],e2,e_,d_)
 if(b3){
 var o4=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3764,26 +3506,24 @@ t1.wxXCkey=3
 b3(o4,o4,t1,gg)
 gg.f=cur_globalf
 }
-else _w(e2,x[22],2,18)
-cs.pop()
+else _w(e2,x[21],2,18)
 aZ.pop()
 return r
 }
-e_[x[22]]={f:m12,j:[],i:[],ti:[x[23]],ic:[]}
-d_[x[24]]={}
-d_[x[24]]["1d214ab8"]=function(e,s,r,gg){
+e_[x[21]]={f:m12,j:[],i:[],ti:[x[22]],ic:[]}
+d_[x[23]]={}
+d_[x[23]]["1d214ab8"]=function(e,s,r,gg){
 var z=gz$gwx_14()
-var b=x[24]+':1d214ab8'
+var b=x[23]+':1d214ab8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/charts/listCharts.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[24]);return}
+if(p_[b]){_wl(b,x[23]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/charts/listCharts.vue.wxml:template:1:390")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[24],xC,e_,d_)
+var oD=_gd(x[23],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3791,8 +3531,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[24],1,506)
-cs.pop()
+else _w(xC,x[23],1,506)
 }catch(err){
 p_[b]=false
 throw err
@@ -3802,24 +3541,23 @@ return r
 }
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var o6=e_[x[24]].i
-_ai(o6,x[1],e_,x[24],1,1)
-_ai(o6,x[2],e_,x[24],1,61)
+var o6=e_[x[23]].i
+_ai(o6,x[1],e_,x[23],1,1)
+_ai(o6,x[2],e_,x[23],1,61)
 o6.pop()
 o6.pop()
 return r
 }
-e_[x[24]]={f:m13,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[25]]={}
+e_[x[23]]={f:m13,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[24]]={}
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
-var c8=e_[x[25]].i
-_ai(c8,x[26],e_,x[25],1,1)
+var c8=e_[x[24]].i
+_ai(c8,x[25],e_,x[24],1,1)
 var h9=_v()
 _(r,h9)
-cs.push("./pages/charts/listCharts.wxml:template:2:6")
 var o0=_oz(z,1,e,s,gg)
-var cAB=_gd(x[25],o0,e_,d_)
+var cAB=_gd(x[24],o0,e_,d_)
 if(cAB){
 var oBB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3827,19 +3565,18 @@ h9.wxXCkey=3
 cAB(oBB,oBB,h9,gg)
 gg.f=cur_globalf
 }
-else _w(o0,x[25],2,18)
-cs.pop()
+else _w(o0,x[24],2,18)
 c8.pop()
 return r
 }
-e_[x[25]]={f:m14,j:[],i:[],ti:[x[26]],ic:[]}
-d_[x[27]]={}
-d_[x[27]]["7e054f88"]=function(e,s,r,gg){
+e_[x[24]]={f:m14,j:[],i:[],ti:[x[25]],ic:[]}
+d_[x[26]]={}
+d_[x[26]]["7e054f88"]=function(e,s,r,gg){
 var z=gz$gwx_16()
-var b=x[27]+':7e054f88'
+var b=x[26]+':7e054f88'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/charts/pieCharts.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[27]);return}
+if(p_[b]){_wl(b,x[26]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3853,17 +3590,16 @@ var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
 return r
 }
-e_[x[27]]={f:m15,j:[],i:[],ti:[],ic:[]}
-d_[x[28]]={}
+e_[x[26]]={f:m15,j:[],i:[],ti:[],ic:[]}
+d_[x[27]]={}
 var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
-var tEB=e_[x[28]].i
-_ai(tEB,x[29],e_,x[28],1,1)
+var tEB=e_[x[27]].i
+_ai(tEB,x[28],e_,x[27],1,1)
 var eFB=_v()
 _(r,eFB)
-cs.push("./pages/charts/pieCharts.wxml:template:2:6")
 var bGB=_oz(z,1,e,s,gg)
-var oHB=_gd(x[28],bGB,e_,d_)
+var oHB=_gd(x[27],bGB,e_,d_)
 if(oHB){
 var xIB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3871,31 +3607,27 @@ eFB.wxXCkey=3
 oHB(xIB,xIB,eFB,gg)
 gg.f=cur_globalf
 }
-else _w(bGB,x[28],2,18)
-cs.pop()
+else _w(bGB,x[27],2,18)
 tEB.pop()
 return r
 }
-e_[x[28]]={f:m16,j:[],i:[],ti:[x[29]],ic:[]}
-d_[x[30]]={}
-d_[x[30]]["609973d6"]=function(e,s,r,gg){
+e_[x[27]]={f:m16,j:[],i:[],ti:[x[28]],ic:[]}
+d_[x[29]]={}
+d_[x[29]]["609973d6"]=function(e,s,r,gg){
 var z=gz$gwx_18()
-var b=x[30]+':609973d6'
+var b=x[29]+':609973d6'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/check/checkEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[30]);return}
+if(p_[b]){_wl(b,x[29]);return}
 p_[b]=true
 try{
-cs.push("./pages/check/checkEdit.vue.wxml:view:1:268")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
-cs.push("./pages/check/checkEdit.vue.wxml:scroll-view:1:307")
 var oD=_mz(z,'scroll-view',['class',2,'scrollY',1],[],e,s,gg)
 var cF=_v()
 _(oD,cF)
-cs.push("./pages/check/checkEdit.vue.wxml:template:1:531")
 var hG=_oz(z,5,e,s,gg)
-var oH=_gd(x[30],hG,e_,d_)
+var oH=_gd(x[29],hG,e_,d_)
 if(oH){
 var cI=_1z(z,4,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3903,20 +3635,16 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[30],1,647)
-cs.pop()
+else _w(hG,x[29],1,647)
 var fE=_v()
 _(oD,fE)
 if(_oz(z,6,e,s,gg)){fE.wxVkey=1
-cs.push("./pages/check/checkEdit.vue.wxml:block:1:677")
-cs.push("./pages/check/checkEdit.vue.wxml:view:1:722")
 var oJ=_n('view')
 _rz(z,oJ,'class',7,e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./pages/check/checkEdit.vue.wxml:template:1:879")
 var aL=_oz(z,10,e,s,gg)
-var tM=_gd(x[30],aL,e_,d_)
+var tM=_gd(x[29],aL,e_,d_)
 if(tM){
 var eN=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3924,13 +3652,11 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[30],1,999)
-cs.pop()
+else _w(aL,x[29],1,999)
 var bO=_v()
 _(oJ,bO)
-cs.push("./pages/check/checkEdit.vue.wxml:template:1:1076")
 var oP=_oz(z,15,e,s,gg)
-var xQ=_gd(x[30],oP,e_,d_)
+var xQ=_gd(x[29],oP,e_,d_)
 if(xQ){
 var oR=_1z(z,14,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3938,13 +3664,11 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[30],1,1192)
-cs.pop()
+else _w(oP,x[29],1,1192)
 var fS=_v()
 _(oJ,fS)
-cs.push("./pages/check/checkEdit.vue.wxml:template:1:1269")
 var cT=_oz(z,20,e,s,gg)
-var hU=_gd(x[30],cT,e_,d_)
+var hU=_gd(x[29],cT,e_,d_)
 if(hU){
 var oV=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3952,15 +3676,12 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[30],1,1379)
-cs.pop()
-cs.pop()
+else _w(cT,x[29],1,1379)
 _(fE,oJ)
 var cW=_v()
 _(fE,cW)
-cs.push("./pages/check/checkEdit.vue.wxml:template:1:1452")
 var oX=_oz(z,24,e,s,gg)
-var lY=_gd(x[30],oX,e_,d_)
+var lY=_gd(x[29],oX,e_,d_)
 if(lY){
 var aZ=_1z(z,23,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3968,22 +3689,17 @@ cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[30],1,1570)
-cs.pop()
-cs.pop()
+else _w(oX,x[29],1,1570)
 }
 fE.wxXCkey=1
-cs.pop()
 _(oB,oD)
 var xC=_v()
 _(oB,xC)
 if(_oz(z,25,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/check/checkEdit.vue.wxml:template:1:2116")
 var t1=_v()
 _(xC,t1)
-cs.push("./pages/check/checkEdit.vue.wxml:template:1:2116")
 var e2=_oz(z,31,e,s,gg)
-var b3=_gd(x[30],e2,e_,d_)
+var b3=_gd(x[29],e2,e_,d_)
 if(b3){
 var o4=_1z(z,28,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3991,12 +3707,9 @@ t1.wxXCkey=3
 b3(o4,o4,t1,gg)
 gg.f=cur_globalf
 }
-else _w(e2,x[30],1,2414)
-cs.pop()
-cs.pop()
+else _w(e2,x[29],1,2414)
 }
 xC.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -4007,28 +3720,27 @@ return r
 }
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
-var fKB=e_[x[30]].i
-_ai(fKB,x[1],e_,x[30],1,1)
-_ai(fKB,x[2],e_,x[30],1,61)
-_ai(fKB,x[3],e_,x[30],1,131)
-_ai(fKB,x[4],e_,x[30],1,191)
+var fKB=e_[x[29]].i
+_ai(fKB,x[1],e_,x[29],1,1)
+_ai(fKB,x[2],e_,x[29],1,61)
+_ai(fKB,x[3],e_,x[29],1,131)
+_ai(fKB,x[4],e_,x[29],1,191)
 fKB.pop()
 fKB.pop()
 fKB.pop()
 fKB.pop()
 return r
 }
-e_[x[30]]={f:m17,j:[],i:[],ti:[x[1],x[2],x[3],x[4]],ic:[]}
-d_[x[31]]={}
+e_[x[29]]={f:m17,j:[],i:[],ti:[x[1],x[2],x[3],x[4]],ic:[]}
+d_[x[30]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
-var hMB=e_[x[31]].i
-_ai(hMB,x[32],e_,x[31],1,1)
+var hMB=e_[x[30]].i
+_ai(hMB,x[31],e_,x[30],1,1)
 var oNB=_v()
 _(r,oNB)
-cs.push("./pages/check/checkEdit.wxml:template:2:6")
 var cOB=_oz(z,1,e,s,gg)
-var oPB=_gd(x[31],cOB,e_,d_)
+var oPB=_gd(x[30],cOB,e_,d_)
 if(oPB){
 var lQB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4036,29 +3748,26 @@ oNB.wxXCkey=3
 oPB(lQB,lQB,oNB,gg)
 gg.f=cur_globalf
 }
-else _w(cOB,x[31],2,18)
-cs.pop()
+else _w(cOB,x[30],2,18)
 hMB.pop()
 return r
 }
-e_[x[31]]={f:m18,j:[],i:[],ti:[x[32]],ic:[]}
-d_[x[33]]={}
-d_[x[33]]["77ae7fa4"]=function(e,s,r,gg){
+e_[x[30]]={f:m18,j:[],i:[],ti:[x[31]],ic:[]}
+d_[x[32]]={}
+d_[x[32]]["77ae7fa4"]=function(e,s,r,gg){
 var z=gz$gwx_20()
-var b=x[33]+':77ae7fa4'
+var b=x[32]+':77ae7fa4'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/check/checkInfoEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[33]);return}
+if(p_[b]){_wl(b,x[32]);return}
 p_[b]=true
 try{
-cs.push("./pages/check/checkInfoEdit.vue.wxml:view:1:307")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var oD=_v()
 _(oB,oD)
-cs.push("./pages/check/checkInfoEdit.vue.wxml:template:1:350")
 var fE=_oz(z,3,e,s,gg)
-var cF=_gd(x[33],fE,e_,d_)
+var cF=_gd(x[32],fE,e_,d_)
 if(cF){
 var hG=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4066,16 +3775,12 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[33],1,466)
-cs.pop()
+else _w(fE,x[32],1,466)
 var xC=_v()
 _(oB,xC)
 if(_oz(z,4,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/check/checkInfoEdit.vue.wxml:view:1:489")
-cs.pop()
 }
 xC.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -4086,24 +3791,23 @@ return r
 }
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var tSB=e_[x[33]].i
-_ai(tSB,x[1],e_,x[33],1,1)
-_ai(tSB,x[2],e_,x[33],1,61)
+var tSB=e_[x[32]].i
+_ai(tSB,x[1],e_,x[32],1,1)
+_ai(tSB,x[2],e_,x[32],1,61)
 tSB.pop()
 tSB.pop()
 return r
 }
-e_[x[33]]={f:m19,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[34]]={}
+e_[x[32]]={f:m19,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[33]]={}
 var m20=function(e,s,r,gg){
 var z=gz$gwx_21()
-var bUB=e_[x[34]].i
-_ai(bUB,x[35],e_,x[34],1,1)
+var bUB=e_[x[33]].i
+_ai(bUB,x[34],e_,x[33],1,1)
 var oVB=_v()
 _(r,oVB)
-cs.push("./pages/check/checkInfoEdit.wxml:template:2:6")
 var xWB=_oz(z,1,e,s,gg)
-var oXB=_gd(x[34],xWB,e_,d_)
+var oXB=_gd(x[33],xWB,e_,d_)
 if(oXB){
 var fYB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4111,19 +3815,18 @@ oVB.wxXCkey=3
 oXB(fYB,fYB,oVB,gg)
 gg.f=cur_globalf
 }
-else _w(xWB,x[34],2,18)
-cs.pop()
+else _w(xWB,x[33],2,18)
 bUB.pop()
 return r
 }
-e_[x[34]]={f:m20,j:[],i:[],ti:[x[35]],ic:[]}
-d_[x[36]]={}
-d_[x[36]]["ab7aaa6c"]=function(e,s,r,gg){
+e_[x[33]]={f:m20,j:[],i:[],ti:[x[34]],ic:[]}
+d_[x[35]]={}
+d_[x[35]]["ab7aaa6c"]=function(e,s,r,gg){
 var z=gz$gwx_22()
-var b=x[36]+':ab7aaa6c'
+var b=x[35]+':ab7aaa6c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/inputPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[36]);return}
+if(p_[b]){_wl(b,x[35]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -4137,17 +3840,16 @@ var m21=function(e,s,r,gg){
 var z=gz$gwx_22()
 return r
 }
-e_[x[36]]={f:m21,j:[],i:[],ti:[],ic:[]}
-d_[x[37]]={}
+e_[x[35]]={f:m21,j:[],i:[],ti:[],ic:[]}
+d_[x[36]]={}
 var m22=function(e,s,r,gg){
 var z=gz$gwx_23()
-var o2B=e_[x[37]].i
-_ai(o2B,x[38],e_,x[37],1,1)
+var o2B=e_[x[36]].i
+_ai(o2B,x[37],e_,x[36],1,1)
 var c3B=_v()
 _(r,c3B)
-cs.push("./pages/common/inputPage.wxml:template:2:6")
 var o4B=_oz(z,1,e,s,gg)
-var l5B=_gd(x[37],o4B,e_,d_)
+var l5B=_gd(x[36],o4B,e_,d_)
 if(l5B){
 var a6B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4155,73 +3857,56 @@ c3B.wxXCkey=3
 l5B(a6B,a6B,c3B,gg)
 gg.f=cur_globalf
 }
-else _w(o4B,x[37],2,18)
-cs.pop()
+else _w(o4B,x[36],2,18)
 o2B.pop()
 return r
 }
-e_[x[37]]={f:m22,j:[],i:[],ti:[x[38]],ic:[]}
-d_[x[39]]={}
-d_[x[39]]["dd467128"]=function(e,s,r,gg){
+e_[x[36]]={f:m22,j:[],i:[],ti:[x[37]],ic:[]}
+d_[x[38]]={}
+d_[x[38]]["dd467128"]=function(e,s,r,gg){
 var z=gz$gwx_24()
-var b=x[39]+':dd467128'
+var b=x[38]+':dd467128'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/orgChoose.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[39]);return}
+if(p_[b]){_wl(b,x[38]);return}
 p_[b]=true
 try{
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:27")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var oD=_v()
 _(oB,oD)
-cs.push("./pages/common/orgChoose.vue.wxml:block:1:66")
 var fE=function(hG,cF,oH,gg){
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:350")
 var oJ=_mz(z,'view',['bindtap',6,'class',1,'data-comkey',2,'data-eventid',3],[],hG,cF,gg)
 var lK=_v()
 _(oJ,lK)
 if(_oz(z,10,hG,cF,gg)){lK.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:image:1:524")
-cs.pop()
 }
 var aL=_v()
 _(oJ,aL)
 if(_oz(z,11,hG,cF,gg)){aL.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:658")
-cs.pop()
 }
 var tM=_v()
 _(oJ,tM)
 if(_oz(z,12,hG,cF,gg)){tM.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:image:1:743")
-cs.pop()
 }
 var eN=_v()
 _(oJ,eN)
 if(_oz(z,13,hG,cF,gg)){eN.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:885")
-cs.pop()
 }
 lK.wxXCkey=1
 aL.wxXCkey=1
 tM.wxXCkey=1
 eN.wxXCkey=1
-cs.pop()
 _(oH,oJ)
 return oH
 }
 oD.wxXCkey=2
 _2z(z,4,fE,e,s,gg,oD,'org','index','index')
-cs.pop()
 var xC=_v()
 _(oB,xC)
 if(_oz(z,14,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/common/orgChoose.vue.wxml:view:1:1046")
-cs.pop()
 }
 xC.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -4234,17 +3919,16 @@ var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
 return r
 }
-e_[x[39]]={f:m23,j:[],i:[],ti:[],ic:[]}
-d_[x[40]]={}
+e_[x[38]]={f:m23,j:[],i:[],ti:[],ic:[]}
+d_[x[39]]={}
 var m24=function(e,s,r,gg){
 var z=gz$gwx_25()
-var b9B=e_[x[40]].i
-_ai(b9B,x[41],e_,x[40],1,1)
+var b9B=e_[x[39]].i
+_ai(b9B,x[40],e_,x[39],1,1)
 var o0B=_v()
 _(r,o0B)
-cs.push("./pages/common/orgChoose.wxml:template:2:6")
 var xAC=_oz(z,1,e,s,gg)
-var oBC=_gd(x[40],xAC,e_,d_)
+var oBC=_gd(x[39],xAC,e_,d_)
 if(oBC){
 var fCC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4252,81 +3936,62 @@ o0B.wxXCkey=3
 oBC(fCC,fCC,o0B,gg)
 gg.f=cur_globalf
 }
-else _w(xAC,x[40],2,18)
-cs.pop()
+else _w(xAC,x[39],2,18)
 b9B.pop()
 return r
 }
-e_[x[40]]={f:m24,j:[],i:[],ti:[x[41]],ic:[]}
-d_[x[42]]={}
-d_[x[42]]["16742adb"]=function(e,s,r,gg){
+e_[x[39]]={f:m24,j:[],i:[],ti:[x[40]],ic:[]}
+d_[x[41]]={}
+d_[x[41]]["16742adb"]=function(e,s,r,gg){
 var z=gz$gwx_26()
-var b=x[42]+':16742adb'
+var b=x[41]+':16742adb'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/personChoose.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[42]);return}
+if(p_[b]){_wl(b,x[41]);return}
 p_[b]=true
 try{
-cs.push("./pages/common/personChoose.vue.wxml:view:1:27")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var oD=_v()
 _(oB,oD)
-cs.push("./pages/common/personChoose.vue.wxml:block:1:143")
 var fE=function(hG,cF,oH,gg){
-cs.push("./pages/common/personChoose.vue.wxml:view:1:244")
 var oJ=_n('view')
 _rz(z,oJ,'class',6,hG,cF,gg)
 var lK=_v()
 _(oJ,lK)
 if(_oz(z,7,hG,cF,gg)){lK.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:image:1:291")
-cs.pop()
 }
 var aL=_v()
 _(oJ,aL)
 if(_oz(z,8,hG,cF,gg)){aL.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:image:1:455")
-cs.pop()
 }
 var tM=_v()
 _(oJ,tM)
 if(_oz(z,9,hG,cF,gg)){tM.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:view:1:650")
-cs.pop()
 }
 var eN=_v()
 _(oJ,eN)
 if(_oz(z,10,hG,cF,gg)){eN.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:view:1:818")
-cs.pop()
 }
 var bO=_v()
 _(oJ,bO)
 if(_oz(z,11,hG,cF,gg)){bO.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:view:1:985")
-cs.pop()
 }
 lK.wxXCkey=1
 aL.wxXCkey=1
 tM.wxXCkey=1
 eN.wxXCkey=1
 bO.wxXCkey=1
-cs.pop()
 _(oH,oJ)
 return oH
 }
 oD.wxXCkey=2
 _2z(z,4,fE,e,s,gg,oD,'obj','index','index')
-cs.pop()
 var xC=_v()
 _(oB,xC)
 if(_oz(z,12,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/common/personChoose.vue.wxml:view:1:1426")
-cs.pop()
 }
 xC.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -4339,17 +4004,16 @@ var m25=function(e,s,r,gg){
 var z=gz$gwx_26()
 return r
 }
-e_[x[42]]={f:m25,j:[],i:[],ti:[],ic:[]}
-d_[x[43]]={}
+e_[x[41]]={f:m25,j:[],i:[],ti:[],ic:[]}
+d_[x[42]]={}
 var m26=function(e,s,r,gg){
 var z=gz$gwx_27()
-var oFC=e_[x[43]].i
-_ai(oFC,x[44],e_,x[43],1,1)
+var oFC=e_[x[42]].i
+_ai(oFC,x[43],e_,x[42],1,1)
 var cGC=_v()
 _(r,cGC)
-cs.push("./pages/common/personChoose.wxml:template:2:6")
 var oHC=_oz(z,1,e,s,gg)
-var lIC=_gd(x[43],oHC,e_,d_)
+var lIC=_gd(x[42],oHC,e_,d_)
 if(lIC){
 var aJC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4357,19 +4021,18 @@ cGC.wxXCkey=3
 lIC(aJC,aJC,cGC,gg)
 gg.f=cur_globalf
 }
-else _w(oHC,x[43],2,18)
-cs.pop()
+else _w(oHC,x[42],2,18)
 oFC.pop()
 return r
 }
-e_[x[43]]={f:m26,j:[],i:[],ti:[x[44]],ic:[]}
-d_[x[45]]={}
-d_[x[45]]["23e0c24e"]=function(e,s,r,gg){
+e_[x[42]]={f:m26,j:[],i:[],ti:[x[43]],ic:[]}
+d_[x[44]]={}
+d_[x[44]]["23e0c24e"]=function(e,s,r,gg){
 var z=gz$gwx_28()
-var b=x[45]+':23e0c24e'
+var b=x[44]+':23e0c24e'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/selectedPersonPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[45]);return}
+if(p_[b]){_wl(b,x[44]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -4383,17 +4046,16 @@ var m27=function(e,s,r,gg){
 var z=gz$gwx_28()
 return r
 }
-e_[x[45]]={f:m27,j:[],i:[],ti:[],ic:[]}
-d_[x[46]]={}
+e_[x[44]]={f:m27,j:[],i:[],ti:[],ic:[]}
+d_[x[45]]={}
 var m28=function(e,s,r,gg){
 var z=gz$gwx_29()
-var bMC=e_[x[46]].i
-_ai(bMC,x[47],e_,x[46],1,1)
+var bMC=e_[x[45]].i
+_ai(bMC,x[46],e_,x[45],1,1)
 var oNC=_v()
 _(r,oNC)
-cs.push("./pages/common/selectedPersonPage.wxml:template:2:6")
 var xOC=_oz(z,1,e,s,gg)
-var oPC=_gd(x[46],xOC,e_,d_)
+var oPC=_gd(x[45],xOC,e_,d_)
 if(oPC){
 var fQC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4401,19 +4063,18 @@ oNC.wxXCkey=3
 oPC(fQC,fQC,oNC,gg)
 gg.f=cur_globalf
 }
-else _w(xOC,x[46],2,18)
-cs.pop()
+else _w(xOC,x[45],2,18)
 bMC.pop()
 return r
 }
-e_[x[46]]={f:m28,j:[],i:[],ti:[x[47]],ic:[]}
-d_[x[48]]={}
-d_[x[48]]["575d7cac"]=function(e,s,r,gg){
+e_[x[45]]={f:m28,j:[],i:[],ti:[x[46]],ic:[]}
+d_[x[47]]={}
+d_[x[47]]["575d7cac"]=function(e,s,r,gg){
 var z=gz$gwx_30()
-var b=x[48]+':575d7cac'
+var b=x[47]+':575d7cac'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/webView.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[48]);return}
+if(p_[b]){_wl(b,x[47]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -4427,17 +4088,16 @@ var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
 return r
 }
-e_[x[48]]={f:m29,j:[],i:[],ti:[],ic:[]}
-d_[x[49]]={}
+e_[x[47]]={f:m29,j:[],i:[],ti:[],ic:[]}
+d_[x[48]]={}
 var m30=function(e,s,r,gg){
 var z=gz$gwx_31()
-var oTC=e_[x[49]].i
-_ai(oTC,x[50],e_,x[49],1,1)
+var oTC=e_[x[48]].i
+_ai(oTC,x[49],e_,x[48],1,1)
 var cUC=_v()
 _(r,cUC)
-cs.push("./pages/common/webView.wxml:template:2:6")
 var oVC=_oz(z,1,e,s,gg)
-var lWC=_gd(x[49],oVC,e_,d_)
+var lWC=_gd(x[48],oVC,e_,d_)
 if(lWC){
 var aXC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4445,50 +4105,40 @@ cUC.wxXCkey=3
 lWC(aXC,aXC,cUC,gg)
 gg.f=cur_globalf
 }
-else _w(oVC,x[49],2,18)
-cs.pop()
+else _w(oVC,x[48],2,18)
 oTC.pop()
 return r
 }
-e_[x[49]]={f:m30,j:[],i:[],ti:[x[50]],ic:[]}
-d_[x[51]]={}
-d_[x[51]]["5c0aa864"]=function(e,s,r,gg){
+e_[x[48]]={f:m30,j:[],i:[],ti:[x[49]],ic:[]}
+d_[x[50]]={}
+d_[x[50]]["5c0aa864"]=function(e,s,r,gg){
 var z=gz$gwx_32()
-var b=x[51]+':5c0aa864'
+var b=x[50]+':5c0aa864'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[51]);return}
+if(p_[b]){_wl(b,x[50]);return}
 p_[b]=true
 try{
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:157")
 var oB=_mz(z,'view',['class',1,'id',1],[],e,s,gg)
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:210")
 var oD=_n('view')
 _rz(z,oD,'class',3,e,s,gg)
 var fE=_v()
 _(oD,fE)
 if(_oz(z,4,e,s,gg)){fE.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:text:1:254")
-cs.pop()
 }
 var cF=_v()
 _(oD,cF)
 if(_oz(z,5,e,s,gg)){cF.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:text:1:374")
-cs.pop()
 }
 fE.wxXCkey=1
 cF.wxXCkey=1
-cs.pop()
 _(oB,oD)
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:541")
 var hG=_n('view')
 _rz(z,hG,'class',6,e,s,gg)
 var oH=_v()
 _(hG,oH)
-cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:584")
 var cI=_oz(z,8,e,s,gg)
-var oJ=_gd(x[51],cI,e_,d_)
+var oJ=_gd(x[50],cI,e_,d_)
 if(oJ){
 var lK=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4496,45 +4146,33 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[51],1,700)
-cs.pop()
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:962")
+else _w(cI,x[50],1,700)
 var aL=_mz(z,'view',['class',9,'id',1],[],e,s,gg)
 var eN=_v()
 _(aL,eN)
-cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:1017")
 var bO=function(xQ,oP,oR,gg){
 var cT=_v()
 _(oR,cT)
 if(_oz(z,15,xQ,oP,gg)){cT.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:1458")
-cs.pop()
 }
 cT.wxXCkey=1
 return oR
 }
 eN.wxXCkey=2
 _2z(z,13,bO,e,s,gg,eN,'imgObj','idx','idx')
-cs.pop()
 var tM=_v()
 _(aL,tM)
 if(_oz(z,16,e,s,gg)){tM.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:1705")
-cs.pop()
 }
 tM.wxXCkey=1
-cs.pop()
 _(hG,aL)
-cs.pop()
 _(oB,hG)
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:2200")
 var hU=_n('view')
 _rz(z,hU,'class',17,e,s,gg)
 var oV=_v()
 _(hU,oV)
-cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:2243")
 var cW=_oz(z,19,e,s,gg)
-var oX=_gd(x[51],cW,e_,d_)
+var oX=_gd(x[50],cW,e_,d_)
 if(oX){
 var lY=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4542,45 +4180,33 @@ oV.wxXCkey=3
 oX(lY,lY,oV,gg)
 gg.f=cur_globalf
 }
-else _w(cW,x[51],1,2361)
-cs.pop()
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:2623")
+else _w(cW,x[50],1,2361)
 var aZ=_mz(z,'view',['class',20,'id',1],[],e,s,gg)
 var e2=_v()
 _(aZ,e2)
-cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:2678")
 var b3=function(x5,o4,o6,gg){
 var c8=_v()
 _(o6,c8)
 if(_oz(z,26,x5,o4,gg)){c8.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:3120")
-cs.pop()
 }
 c8.wxXCkey=1
 return o6
 }
 e2.wxXCkey=2
 _2z(z,24,b3,e,s,gg,e2,'imgObj','idx','idx')
-cs.pop()
 var t1=_v()
 _(aZ,t1)
 if(_oz(z,27,e,s,gg)){t1.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:3368")
-cs.pop()
 }
 t1.wxXCkey=1
-cs.pop()
 _(hU,aZ)
-cs.pop()
 _(oB,hU)
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:3872")
 var h9=_n('view')
 _rz(z,h9,'class',28,e,s,gg)
 var o0=_v()
 _(h9,o0)
-cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:3915")
 var cAB=_oz(z,30,e,s,gg)
-var oBB=_gd(x[51],cAB,e_,d_)
+var oBB=_gd(x[50],cAB,e_,d_)
 if(oBB){
 var lCB=_1z(z,29,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4588,42 +4214,31 @@ o0.wxXCkey=3
 oBB(lCB,lCB,o0,gg)
 gg.f=cur_globalf
 }
-else _w(cAB,x[51],1,4033)
-cs.pop()
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:4296")
+else _w(cAB,x[50],1,4033)
 var aDB=_mz(z,'view',['class',31,'id',1],[],e,s,gg)
 var eFB=_v()
 _(aDB,eFB)
-cs.push("./pages/danger/dangerEdit.vue.wxml:block:1:4351")
 var bGB=function(xIB,oHB,oJB,gg){
 var cLB=_v()
 _(oJB,cLB)
 if(_oz(z,37,xIB,oHB,gg)){cLB.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:image:1:4794")
-cs.pop()
 }
 cLB.wxXCkey=1
 return oJB
 }
 eFB.wxXCkey=2
 _2z(z,35,bGB,e,s,gg,eFB,'imgObj','idx','idx')
-cs.pop()
 var tEB=_v()
 _(aDB,tEB)
 if(_oz(z,38,e,s,gg)){tEB.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:5042")
-cs.pop()
 }
 tEB.wxXCkey=1
-cs.pop()
 _(h9,aDB)
-cs.pop()
 _(oB,h9)
 var hMB=_v()
 _(oB,hMB)
-cs.push("./pages/danger/dangerEdit.vue.wxml:template:1:5472")
 var oNB=_oz(z,40,e,s,gg)
-var cOB=_gd(x[51],oNB,e_,d_)
+var cOB=_gd(x[50],oNB,e_,d_)
 if(cOB){
 var oPB=_1z(z,39,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4631,16 +4246,12 @@ hMB.wxXCkey=3
 cOB(oPB,oPB,hMB,gg)
 gg.f=cur_globalf
 }
-else _w(oNB,x[51],1,5590)
-cs.pop()
+else _w(oNB,x[50],1,5590)
 var xC=_v()
 _(oB,xC)
 if(_oz(z,41,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/danger/dangerEdit.vue.wxml:view:1:5620")
-cs.pop()
 }
 xC.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -4651,24 +4262,23 @@ return r
 }
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
-var eZC=e_[x[51]].i
-_ai(eZC,x[1],e_,x[51],1,1)
-_ai(eZC,x[2],e_,x[51],1,61)
+var eZC=e_[x[50]].i
+_ai(eZC,x[1],e_,x[50],1,1)
+_ai(eZC,x[2],e_,x[50],1,61)
 eZC.pop()
 eZC.pop()
 return r
 }
-e_[x[51]]={f:m31,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[52]]={}
+e_[x[50]]={f:m31,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[51]]={}
 var m32=function(e,s,r,gg){
 var z=gz$gwx_33()
-var o2C=e_[x[52]].i
-_ai(o2C,x[53],e_,x[52],1,1)
+var o2C=e_[x[51]].i
+_ai(o2C,x[52],e_,x[51],1,1)
 var x3C=_v()
 _(r,x3C)
-cs.push("./pages/danger/dangerEdit.wxml:template:2:6")
 var o4C=_oz(z,1,e,s,gg)
-var f5C=_gd(x[52],o4C,e_,d_)
+var f5C=_gd(x[51],o4C,e_,d_)
 if(f5C){
 var c6C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4676,26 +4286,24 @@ x3C.wxXCkey=3
 f5C(c6C,c6C,x3C,gg)
 gg.f=cur_globalf
 }
-else _w(o4C,x[52],2,18)
-cs.pop()
+else _w(o4C,x[51],2,18)
 o2C.pop()
 return r
 }
-e_[x[52]]={f:m32,j:[],i:[],ti:[x[53]],ic:[]}
-d_[x[54]]={}
-d_[x[54]]["4508b5aa"]=function(e,s,r,gg){
+e_[x[51]]={f:m32,j:[],i:[],ti:[x[52]],ic:[]}
+d_[x[53]]={}
+d_[x[53]]["4508b5aa"]=function(e,s,r,gg){
 var z=gz$gwx_34()
-var b=x[54]+':4508b5aa'
+var b=x[53]+':4508b5aa'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/dangerLog.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[54]);return}
+if(p_[b]){_wl(b,x[53]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/danger/dangerLog.vue.wxml:template:1:253")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[54],xC,e_,d_)
+var oD=_gd(x[53],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4703,8 +4311,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[54],1,369)
-cs.pop()
+else _w(xC,x[53],1,369)
 }catch(err){
 p_[b]=false
 throw err
@@ -4714,24 +4321,23 @@ return r
 }
 var m33=function(e,s,r,gg){
 var z=gz$gwx_34()
-var o8C=e_[x[54]].i
-_ai(o8C,x[1],e_,x[54],1,1)
-_ai(o8C,x[2],e_,x[54],1,61)
+var o8C=e_[x[53]].i
+_ai(o8C,x[1],e_,x[53],1,1)
+_ai(o8C,x[2],e_,x[53],1,61)
 o8C.pop()
 o8C.pop()
 return r
 }
-e_[x[54]]={f:m33,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[55]]={}
+e_[x[53]]={f:m33,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[54]]={}
 var m34=function(e,s,r,gg){
 var z=gz$gwx_35()
-var o0C=e_[x[55]].i
-_ai(o0C,x[56],e_,x[55],1,1)
+var o0C=e_[x[54]].i
+_ai(o0C,x[55],e_,x[54],1,1)
 var lAD=_v()
 _(r,lAD)
-cs.push("./pages/danger/dangerLog.wxml:template:2:6")
 var aBD=_oz(z,1,e,s,gg)
-var tCD=_gd(x[55],aBD,e_,d_)
+var tCD=_gd(x[54],aBD,e_,d_)
 if(tCD){
 var eDD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4739,26 +4345,24 @@ lAD.wxXCkey=3
 tCD(eDD,eDD,lAD,gg)
 gg.f=cur_globalf
 }
-else _w(aBD,x[55],2,18)
-cs.pop()
+else _w(aBD,x[54],2,18)
 o0C.pop()
 return r
 }
-e_[x[55]]={f:m34,j:[],i:[],ti:[x[56]],ic:[]}
-d_[x[57]]={}
-d_[x[57]]["4ef7e761"]=function(e,s,r,gg){
+e_[x[54]]={f:m34,j:[],i:[],ti:[x[55]],ic:[]}
+d_[x[56]]={}
+d_[x[56]]["4ef7e761"]=function(e,s,r,gg){
 var z=gz$gwx_36()
-var b=x[57]+':4ef7e761'
+var b=x[56]+':4ef7e761'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/diyHost.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[57]);return}
+if(p_[b]){_wl(b,x[56]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/login/diyHost.vue.wxml:template:1:251")
 var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[57],xC,e_,d_)
+var oD=_gd(x[56],xC,e_,d_)
 if(oD){
 var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4766,8 +4370,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[57],1,475)
-cs.pop()
+else _w(xC,x[56],1,475)
 }catch(err){
 p_[b]=false
 throw err
@@ -4777,12 +4380,12 @@ return r
 }
 var m35=function(e,s,r,gg){
 var z=gz$gwx_36()
-var oFD=e_[x[57]].i
-_ai(oFD,x[5],e_,x[57],1,1)
+var oFD=e_[x[56]].i
+_ai(oFD,x[57],e_,x[56],1,1)
 oFD.pop()
 return r
 }
-e_[x[57]]={f:m35,j:[],i:[],ti:[x[5]],ic:[]}
+e_[x[56]]={f:m35,j:[],i:[],ti:[x[57]],ic:[]}
 d_[x[58]]={}
 var m36=function(e,s,r,gg){
 var z=gz$gwx_37()
@@ -4790,7 +4393,6 @@ var oHD=e_[x[58]].i
 _ai(oHD,x[59],e_,x[58],1,1)
 var fID=_v()
 _(r,fID)
-cs.push("./pages/login/diyHost.wxml:template:2:6")
 var cJD=_oz(z,1,e,s,gg)
 var hKD=_gd(x[58],cJD,e_,d_)
 if(hKD){
@@ -4801,7 +4403,6 @@ hKD(oLD,oLD,fID,gg)
 gg.f=cur_globalf
 }
 else _w(cJD,x[58],2,18)
-cs.pop()
 oHD.pop()
 return r
 }
@@ -4815,12 +4416,10 @@ gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[60]);return}
 p_[b]=true
 try{
-cs.push("./pages/login/login.vue.wxml:view:1:110")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./pages/login/login.vue.wxml:template:1:251")
 var oD=_oz(z,6,e,s,gg)
 var fE=_gd(x[60],oD,e_,d_)
 if(fE){
@@ -4831,10 +4430,8 @@ fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
 else _w(oD,x[60],1,478)
-cs.pop()
 var hG=_v()
 _(oB,hG)
-cs.push("./pages/login/login.vue.wxml:template:1:600")
 var oH=_oz(z,14,e,s,gg)
 var cI=_gd(x[60],oH,e_,d_)
 if(cI){
@@ -4845,8 +4442,6 @@ cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
 else _w(oH,x[60],1,828)
-cs.pop()
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -4858,11 +4453,11 @@ return r
 var m37=function(e,s,r,gg){
 var z=gz$gwx_38()
 var oND=e_[x[60]].i
-_ai(oND,x[5],e_,x[60],1,1)
+_ai(oND,x[57],e_,x[60],1,1)
 oND.pop()
 return r
 }
-e_[x[60]]={f:m37,j:[],i:[],ti:[x[5]],ic:[]}
+e_[x[60]]={f:m37,j:[],i:[],ti:[x[57]],ic:[]}
 d_[x[61]]={}
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
@@ -4870,7 +4465,6 @@ var aPD=e_[x[61]].i
 _ai(aPD,x[62],e_,x[61],1,1)
 var tQD=_v()
 _(r,tQD)
-cs.push("./pages/login/login.wxml:template:2:6")
 var eRD=_oz(z,1,e,s,gg)
 var bSD=_gd(x[61],eRD,e_,d_)
 if(bSD){
@@ -4881,7 +4475,6 @@ bSD(oTD,oTD,tQD,gg)
 gg.f=cur_globalf
 }
 else _w(eRD,x[61],2,18)
-cs.pop()
 aPD.pop()
 return r
 }
@@ -4914,7 +4507,6 @@ var fWD=e_[x[64]].i
 _ai(fWD,x[65],e_,x[64],1,1)
 var cXD=_v()
 _(r,cXD)
-cs.push("./pages/main/main.wxml:template:2:6")
 var hYD=_oz(z,1,e,s,gg)
 var oZD=_gd(x[64],hYD,e_,d_)
 if(oZD){
@@ -4925,7 +4517,6 @@ oZD(c1D,c1D,cXD,gg)
 gg.f=cur_globalf
 }
 else _w(hYD,x[64],2,18)
-cs.pop()
 fWD.pop()
 return r
 }
@@ -4941,7 +4532,6 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/other/gonggaoList.vue.wxml:template:1:239")
 var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[66],xC,e_,d_)
 if(oD){
@@ -4952,7 +4542,6 @@ oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
 else _w(xC,x[66],1,355)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -4977,7 +4566,6 @@ var t5D=e_[x[67]].i
 _ai(t5D,x[68],e_,x[67],1,1)
 var e6D=_v()
 _(r,e6D)
-cs.push("./pages/other/gonggaoList.wxml:template:2:6")
 var b7D=_oz(z,1,e,s,gg)
 var o8D=_gd(x[67],b7D,e_,d_)
 if(o8D){
@@ -4988,7 +4576,6 @@ o8D(x9D,x9D,e6D,gg)
 gg.f=cur_globalf
 }
 else _w(b7D,x[67],2,18)
-cs.pop()
 t5D.pop()
 return r
 }
@@ -5004,7 +4591,6 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/other/newsList.vue.wxml:template:1:239")
 var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[69],xC,e_,d_)
 if(oD){
@@ -5015,7 +4601,6 @@ oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
 else _w(xC,x[69],1,355)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -5040,7 +4625,6 @@ var hCE=e_[x[70]].i
 _ai(hCE,x[71],e_,x[70],1,1)
 var oDE=_v()
 _(r,oDE)
-cs.push("./pages/other/newsList.wxml:template:2:6")
 var cEE=_oz(z,1,e,s,gg)
 var oFE=_gd(x[70],cEE,e_,d_)
 if(oFE){
@@ -5051,7 +4635,6 @@ oFE(lGE,lGE,oDE,gg)
 gg.f=cur_globalf
 }
 else _w(cEE,x[70],2,18)
-cs.pop()
 hCE.pop()
 return r
 }
@@ -5067,7 +4650,6 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/other/pointRank.vue.wxml:template:1:239")
 var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[72],xC,e_,d_)
 if(oD){
@@ -5078,7 +4660,6 @@ oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
 else _w(xC,x[72],1,355)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -5103,7 +4684,6 @@ var bKE=e_[x[73]].i
 _ai(bKE,x[74],e_,x[73],1,1)
 var oLE=_v()
 _(r,oLE)
-cs.push("./pages/other/pointRank.wxml:template:2:6")
 var xME=_oz(z,1,e,s,gg)
 var oNE=_gd(x[73],xME,e_,d_)
 if(oNE){
@@ -5114,7 +4694,6 @@ oNE(fOE,fOE,oLE,gg)
 gg.f=cur_globalf
 }
 else _w(xME,x[73],2,18)
-cs.pop()
 bKE.pop()
 return r
 }
@@ -5147,7 +4726,6 @@ var oRE=e_[x[76]].i
 _ai(oRE,x[77],e_,x[76],1,1)
 var cSE=_v()
 _(r,cSE)
-cs.push("./pages/peixun/peixun.wxml:template:2:6")
 var oTE=_oz(z,1,e,s,gg)
 var lUE=_gd(x[76],oTE,e_,d_)
 if(lUE){
@@ -5158,7 +4736,6 @@ lUE(aVE,aVE,cSE,gg)
 gg.f=cur_globalf
 }
 else _w(oTE,x[76],2,18)
-cs.pop()
 oRE.pop()
 return r
 }
@@ -5174,7 +4751,6 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/pwd/pwd.vue.wxml:template:1:244")
 var xC=_oz(z,5,e,s,gg)
 var oD=_gd(x[78],xC,e_,d_)
 if(oD){
@@ -5185,7 +4761,6 @@ oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
 else _w(xC,x[78],1,469)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -5196,11 +4771,11 @@ return r
 var m49=function(e,s,r,gg){
 var z=gz$gwx_50()
 var eXE=e_[x[78]].i
-_ai(eXE,x[5],e_,x[78],1,1)
+_ai(eXE,x[57],e_,x[78],1,1)
 eXE.pop()
 return r
 }
-e_[x[78]]={f:m49,j:[],i:[],ti:[x[5]],ic:[]}
+e_[x[78]]={f:m49,j:[],i:[],ti:[x[57]],ic:[]}
 d_[x[79]]={}
 var m50=function(e,s,r,gg){
 var z=gz$gwx_51()
@@ -5208,7 +4783,6 @@ var oZE=e_[x[79]].i
 _ai(oZE,x[80],e_,x[79],1,1)
 var x1E=_v()
 _(r,x1E)
-cs.push("./pages/pwd/pwd.wxml:template:2:6")
 var o2E=_oz(z,1,e,s,gg)
 var f3E=_gd(x[79],o2E,e_,d_)
 if(f3E){
@@ -5219,7 +4793,6 @@ f3E(c4E,c4E,x1E,gg)
 gg.f=cur_globalf
 }
 else _w(o2E,x[79],2,18)
-cs.pop()
 oZE.pop()
 return r
 }
@@ -5233,12 +4806,10 @@ gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[81]);return}
 p_[b]=true
 try{
-cs.push("./pages/reg/reg.vue.wxml:view:1:110")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./pages/reg/reg.vue.wxml:template:1:251")
 var oD=_oz(z,6,e,s,gg)
 var fE=_gd(x[81],oD,e_,d_)
 if(fE){
@@ -5249,10 +4820,8 @@ fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
 else _w(oD,x[81],1,478)
-cs.pop()
 var hG=_v()
 _(oB,hG)
-cs.push("./pages/reg/reg.vue.wxml:template:1:607")
 var oH=_oz(z,14,e,s,gg)
 var cI=_gd(x[81],oH,e_,d_)
 if(cI){
@@ -5263,10 +4832,8 @@ cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
 else _w(oH,x[81],1,835)
-cs.pop()
 var lK=_v()
 _(oB,lK)
-cs.push("./pages/reg/reg.vue.wxml:template:1:957")
 var aL=_oz(z,22,e,s,gg)
 var tM=_gd(x[81],aL,e_,d_)
 if(tM){
@@ -5277,8 +4844,6 @@ tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
 else _w(aL,x[81],1,1176)
-cs.pop()
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -5290,11 +4855,11 @@ return r
 var m51=function(e,s,r,gg){
 var z=gz$gwx_52()
 var o6E=e_[x[81]].i
-_ai(o6E,x[5],e_,x[81],1,1)
+_ai(o6E,x[57],e_,x[81],1,1)
 o6E.pop()
 return r
 }
-e_[x[81]]={f:m51,j:[],i:[],ti:[x[5]],ic:[]}
+e_[x[81]]={f:m51,j:[],i:[],ti:[x[57]],ic:[]}
 d_[x[82]]={}
 var m52=function(e,s,r,gg){
 var z=gz$gwx_53()
@@ -5302,7 +4867,6 @@ var o8E=e_[x[82]].i
 _ai(o8E,x[83],e_,x[82],1,1)
 var l9E=_v()
 _(r,l9E)
-cs.push("./pages/reg/reg.wxml:template:2:6")
 var a0E=_oz(z,1,e,s,gg)
 var tAF=_gd(x[82],a0E,e_,d_)
 if(tAF){
@@ -5313,7 +4877,6 @@ tAF(eBF,eBF,l9E,gg)
 gg.f=cur_globalf
 }
 else _w(a0E,x[82],2,18)
-cs.pop()
 o8E.pop()
 return r
 }
@@ -5346,7 +4909,6 @@ var xEF=e_[x[85]].i
 _ai(xEF,x[86],e_,x[85],1,1)
 var oFF=_v()
 _(r,oFF)
-cs.push("./pages/user/accountEdit.wxml:template:2:6")
 var fGF=_oz(z,1,e,s,gg)
 var cHF=_gd(x[85],fGF,e_,d_)
 if(cHF){
@@ -5357,7 +4919,6 @@ cHF(hIF,hIF,oFF,gg)
 gg.f=cur_globalf
 }
 else _w(fGF,x[85],2,18)
-cs.pop()
 xEF.pop()
 return r
 }
@@ -5371,24 +4932,18 @@ gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[87]);return}
 p_[b]=true
 try{
-cs.push("./pages/user/user.vue.wxml:view:1:272")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var xC=_v()
 _(oB,xC)
 if(_oz(z,2,e,s,gg)){xC.wxVkey=1
-cs.push("./pages/user/user.vue.wxml:view:1:313")
-cs.pop()
 }
 var oD=_v()
 _(oB,oD)
 if(_oz(z,3,e,s,gg)){oD.wxVkey=1
-cs.push("./pages/user/user.vue.wxml:button:1:647")
-cs.pop()
 }
 xC.wxXCkey=1
 oD.wxXCkey=1
-cs.pop()
 _(r,oB)
 }catch(err){
 p_[b]=false
@@ -5409,7 +4964,6 @@ var oLF=e_[x[88]].i
 _ai(oLF,x[89],e_,x[88],1,1)
 var lMF=_v()
 _(r,lMF)
-cs.push("./pages/user/user.wxml:template:2:6")
 var aNF=_oz(z,1,e,s,gg)
 var tOF=_gd(x[88],aNF,e_,d_)
 if(tOF){
@@ -5420,7 +4974,6 @@ tOF(ePF,ePF,lMF,gg)
 gg.f=cur_globalf
 }
 else _w(aNF,x[88],2,18)
-cs.pop()
 oLF.pop()
 return r
 }
@@ -5428,15 +4981,12 @@ e_[x[88]]={f:m56,j:[],i:[],ti:[x[89]],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
-cs=[]
 if (typeof global==="undefined")global={};global.f=$gdc(f_[path],"",1);
 try{
 main(env,{},root,global);
 _tsd(root)
 }catch(err){
-console.log(cs, env);
 console.log(err)
-throw err
 }
 return root;
 }
@@ -5445,7 +4995,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/danger/dangerEdit","pages/common/inputPage","pages/common/orgChoose","pages/common/personChoose","pages/danger/dangerLog","pages/check/checkEdit","pages/check/checkInfoEdit","pages/common/selectedPersonPage","pages/peixun/peixun","pages/ceshi/ceshi","pages/other/gonggaoList","pages/other/newsList","pages/other/pointRank","pages/common/webView","pages/charts/chartsTypeList","pages/charts/pieCharts","pages/charts/listCharts"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/peixun/peixunList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"培训列表"}},"pages/check/checkList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"检查列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}},"pages/danger/dangerList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"隐患列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"SBPC-EHS","compilerVersion":"1.9.9"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/danger/dangerEdit","pages/common/inputPage","pages/common/orgChoose","pages/common/personChoose","pages/danger/dangerLog","pages/check/checkEdit","pages/check/checkInfoEdit","pages/common/selectedPersonPage","pages/peixun/peixun","pages/ceshi/ceshi","pages/other/gonggaoList","pages/other/newsList","pages/other/pointRank","pages/common/webView","pages/charts/chartsTypeList","pages/charts/pieCharts","pages/charts/listCharts"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/peixun/peixunList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"培训列表"}},"pages/check/checkList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"检查列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}},"pages/danger/dangerList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"隐患列表","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"SBPC-EHS","compilerVersion":"2.0.1"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['pages/ceshi/ceshi.json']={"usingComponents":{},"navigationBarTitleText":"考试"};
@@ -6148,7 +5698,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n  // 获取公告列表\n  getGgList: '/mobile/getOther.do?action=getTzList',\n  // 获取公告详情\n  getGgDetail: '/mobile/getOther.do?action=getOneTz',\n  // 获取新闻列表\n  getNewsList: '/mobile/getOther.do?action=getXwList',\n  // 获取积分排名\n  getPointList: '/mobile/getOther.do?action=getJfpmList',\n  // 获取积分统计\n  getPoints: '/mobile/getTrain.do?action=getJftj',\n\n  /*统计相关*/\n  // 获取隐患分类统计\n  getDangerTypeChart: '/mobile/getYhzg.do?action=getYhlxtj',\n  // 获取隐患原因统计\n  getDangerReasonChart: '/mobile/getYhzg.do?action=getYhyytj',\n\n  /*隐患相关*/\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n  // 选择完流转目标后继续流转\n  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',\n\n  /*检查相关*/\n  // 获取检查列表\n  getCheckList: '/mobile/getAqjc.do',\n  // 获取检查详情\n  getCheckDetail: '/mobile/getAqjc.do?action=getOneJc',\n  // 获取检查类型\n  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',\n  // 获取检查模板\n  getCheckModule: '/mobile/getAqjc.do?action=getMb',\n  // 根据检查模板查询检查项\n  getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',\n  // 保存检查\n  saveCheck: '/mobile/getAqjc.do?action=insertJc',\n\n  /*培训相关*/\n  // 获取培训列表\n  // getClassList: '/mobile/getTrain.do?action=getPxzlList',\n  getClassList: '/mobile/getOther.do?action=getPxzlList',\n  // 获取培训内容\n  getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',\n\n  /*考试相关*/\n  // 获取考试说明\n  getExamDesc: '/mobile/getExam.do?action=getMyKskm',\n  // 获取考试内容\n  getExamInfo: '/mobile/getExam.do?action=createGrsj',\n  // 提交考卷\n  submitExam: '/mobile/getExam.do?action=submitGrsj',\n\n  /*通用接口*/\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ',\n  // 获取人员\n  getPersonList: '/mobile/getUser.do?action=getUserList ',\n  // 上传照片\n  uploadImage: '/uploadImg',\n  // 删除照片\n  deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',\n  // 加载照片\n  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',\n  // 加载用户头像\n  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=',\n  // 下载文件\n  downloadFile: '/getfile?fileid=' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
+eval(" // config.js\n/**\n  * 接口配置文件\n  * 登录名和密码: root GelureM1\n  * \n  */\nvar host = \"http://112.124.14.5/sbpc\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n  // 获取公告列表\n  getGgList: '/mobile/getOther.do?action=getTzList',\n  // 获取公告详情\n  getGgDetail: '/mobile/getOther.do?action=getOneTz',\n  // 获取新闻列表\n  getNewsList: '/mobile/getOther.do?action=getXwList',\n  // 获取积分排名\n  getPointList: '/mobile/getOther.do?action=getJfpmList',\n  // 获取积分统计\n  getPoints: '/mobile/getOther.do?action=getAllTj',\n\n  /*统计相关*/\n  // 获取隐患分类统计\n  getDangerTypeChart: '/mobile/getYhzg.do?action=getYhlxtj',\n  // 获取隐患原因统计\n  getDangerReasonChart: '/mobile/getYhzg.do?action=getYhyytj',\n\n  /*隐患相关*/\n  // 获取隐患列表\n  getDangerList: '/mobile/getYhzg.do',\n  // 获取隐患详情\n  getDangerDetail: '/mobile/getYhzg.do?action=getOneYh',\n  // 添加隐患\n  addDanger: '/mobile/getYhzg.do?action=insertYh',\n  // 隐患流转\n  flowDanger: '/mobile/getYhzg.do?action=flowYh',\n  // 选择完流转目标后继续流转\n  flowDangerAfterChooseTarget: '/mobile/getYhzg.do?action=flowSelectUserYh',\n\n  /*检查相关*/\n  // 获取检查列表\n  getCheckList: '/mobile/getAqjc.do',\n  // 获取检查详情\n  getCheckDetail: '/mobile/getAqjc.do?action=getOneJc',\n  // 获取检查类型\n  getCheckTypes: '/mobile/getAqjc.do?action=getJclx',\n  // 获取检查模板\n  getCheckModule: '/mobile/getAqjc.do?action=getMb',\n  // 根据检查模板查询检查项\n  getCheckInfo: '/mobile/getAqjc.do?action=getJcjlForMb',\n  // 保存检查\n  saveCheck: '/mobile/getAqjc.do?action=insertJc',\n\n  /*培训相关*/\n  // 获取培训列表\n  // getClassList: '/mobile/getTrain.do?action=getPxzlList',\n  getClassList: '/mobile/getOther.do?action=getPxzlList',\n  // 获取培训内容\n  getClassDetail: '/mobile/getTrain.do?action=getOnePxzl',\n\n  /*考试相关*/\n  // 获取考试说明\n  getExamDesc: '/mobile/getExam.do?action=getMyKskm',\n  // 获取考试内容\n  getExamInfo: '/mobile/getExam.do?action=createGrsj',\n  // 提交考卷\n  submitExam: '/mobile/getExam.do?action=submitGrsj',\n\n  /*通用接口*/\n  // 获取部门\n  getOrgList: '/mobile/getUser.do?action=getOrgList ',\n  // 获取人员\n  getPersonList: '/mobile/getUser.do?action=getUserList ',\n  // 上传照片\n  uploadImage: '/uploadImg',\n  // 删除照片\n  deleteImage: '/mobile/getYhzg.do?action=delYhPhoto',\n  // 加载照片\n  loadImage: '/mobile/getYhzg.do?action=loadYhPhoto',\n  // 加载用户头像\n  loadUserPhoto: '/mobile/getUser.do?action=loadPhoto&userid=',\n  // 下载文件\n  downloadFile: '/getfile?fileid=' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?80c2");
 
 /***/ }),
 
@@ -6196,7 +5746,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.createApp = createApp;exports.createPage = createPage;exports.createComponent = createComponent;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}\n\nvar _toString = Object.prototype.toString;\nvar hasOwnProperty = Object.prototype.hasOwnProperty;\n\nfunction isFn(fn) {\n  return typeof fn === 'function';\n}\n\nfunction isStr(str) {\n  return typeof str === 'string';\n}\n\nfunction isPlainObject(obj) {\n  return _toString.call(obj) === '[object Object]';\n}\n\nfunction hasOwn(obj, key) {\n  return hasOwnProperty.call(obj, key);\n}\n\nfunction noop() {}\n\n/**\n                    * Create a cached version of a pure function.\n                    */\nfunction cached(fn) {\n  var cache = Object.create(null);\n  return function cachedFn(str) {\n    var hit = cache[str];\n    return hit || (cache[str] = fn(str));\n  };\n}\n\n/**\n   * Camelize a hyphen-delimited string.\n   */\nvar camelizeRE = /-(\\w)/g;\nvar camelize = cached(function (str) {\n  return str.replace(camelizeRE, function (_, c) {return c ? c.toUpperCase() : '';});\n});\n\nvar SYNC_API_RE = /subNVue|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$/;\n\nvar CONTEXT_API_RE = /^create|Manager$/;\n\nvar CALLBACK_API_RE = /^on/;\n\nfunction isContextApi(name) {\n  return CONTEXT_API_RE.test(name);\n}\nfunction isSyncApi(name) {\n  return SYNC_API_RE.test(name);\n}\n\nfunction isCallbackApi(name) {\n  return CALLBACK_API_RE.test(name);\n}\n\nfunction handlePromise(promise) {\n  return promise.then(function (data) {\n    return [null, data];\n  }).\n  catch(function (err) {return [err];});\n}\n\nfunction shouldPromise(name) {\n  if (\n  isContextApi(name) ||\n  isSyncApi(name) ||\n  isCallbackApi(name))\n  {\n    return false;\n  }\n  return true;\n}\n\nfunction promisify(name, api) {\n  if (!shouldPromise(name)) {\n    return api;\n  }\n  return function promiseApi() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};for (var _len = arguments.length, params = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {params[_key - 1] = arguments[_key];}\n    if (isFn(options.success) || isFn(options.fail) || isFn(options.complete)) {\n      return api.apply(void 0, [options].concat(params));\n    }\n    return handlePromise(new Promise(function (resolve, reject) {\n      api.apply(void 0, [Object.assign({}, options, {\n        success: resolve,\n        fail: reject })].concat(\n      params));\n      /* eslint-disable no-extend-native */\n      Promise.prototype.finally = function (callback) {\n        var promise = this.constructor;\n        return this.then(\n        function (value) {return promise.resolve(callback()).then(function () {return value;});},\n        function (reason) {return promise.resolve(callback()).then(function () {\n            throw reason;\n          });});\n\n      };\n    }));\n  };\n}\n\nvar EPS = 1e-4;\nvar BASE_DEVICE_WIDTH = 750;\nvar isIOS = false;\nvar deviceWidth = 0;\nvar deviceDPR = 0;\n\nfunction checkDeviceWidth() {var _wx$getSystemInfoSync =\n\n\n\n\n  wx.getSystemInfoSync(),platform = _wx$getSystemInfoSync.platform,pixelRatio = _wx$getSystemInfoSync.pixelRatio,windowWidth = _wx$getSystemInfoSync.windowWidth; // uni=>wx runtime 编译目标是 uni 对象，内部不允许直接使用 uni\n\n  deviceWidth = windowWidth;\n  deviceDPR = pixelRatio;\n  isIOS = platform === 'ios';\n}\n\nfunction upx2px(number, newDeviceWidth) {\n  if (deviceWidth === 0) {\n    checkDeviceWidth();\n  }\n\n  number = Number(number);\n  if (number === 0) {\n    return 0;\n  }\n  var result = number / BASE_DEVICE_WIDTH * (newDeviceWidth || deviceWidth);\n  if (result < 0) {\n    result = -result;\n  }\n  result = Math.floor(result + EPS);\n  if (result === 0) {\n    if (deviceDPR === 1 || !isIOS) {\n      return 1;\n    } else {\n      return 0.5;\n    }\n  }\n  return number < 0 ? -result : result;\n}\n\nvar protocols = {};\nvar todos = [];\nvar canIUses = [];\n\nvar CALLBACKS = ['success', 'fail', 'cancel', 'complete'];\n\nfunction processCallback(methodName, method, returnValue) {\n  return function (res) {\n    return method(processReturnValue(methodName, res, returnValue));\n  };\n}\n\nfunction processArgs(methodName, fromArgs) {var argsOption = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};var returnValue = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};var keepFromArgs = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;\n  if (isPlainObject(fromArgs)) {// 一般 api 的参数解析\n    var toArgs = keepFromArgs === true ? fromArgs : {}; // returnValue 为 false 时，说明是格式化返回值，直接在返回值对象上修改赋值\n    if (isFn(argsOption)) {\n      argsOption = argsOption(fromArgs, toArgs) || {};\n    }\n    for (var key in fromArgs) {\n      if (hasOwn(argsOption, key)) {\n        var keyOption = argsOption[key];\n        if (isFn(keyOption)) {\n          keyOption = keyOption(fromArgs[key], fromArgs, toArgs);\n        }\n        if (!keyOption) {// 不支持的参数\n          console.warn(\"app-plus \".concat(methodName, \"\\u6682\\u4E0D\\u652F\\u6301\").concat(key));\n        } else if (isStr(keyOption)) {// 重写参数 key\n          toArgs[keyOption] = fromArgs[key];\n        } else if (isPlainObject(keyOption)) {// {name:newName,value:value}可重新指定参数 key:value\n          toArgs[keyOption.name ? keyOption.name : key] = keyOption.value;\n        }\n      } else if (CALLBACKS.indexOf(key) !== -1) {\n        toArgs[key] = processCallback(methodName, fromArgs[key], returnValue);\n      } else {\n        if (!keepFromArgs) {\n          toArgs[key] = fromArgs[key];\n        }\n      }\n    }\n    return toArgs;\n  } else if (isFn(fromArgs)) {\n    fromArgs = processCallback(methodName, fromArgs, returnValue);\n  }\n  return fromArgs;\n}\n\nfunction processReturnValue(methodName, res, returnValue) {var keepReturnValue = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;\n  if (isFn(protocols.returnValue)) {// 处理通用 returnValue\n    res = protocols.returnValue(methodName, res);\n  }\n  return processArgs(methodName, res, returnValue, {}, keepReturnValue);\n}\n\nfunction wrapper(methodName, method) {\n  if (hasOwn(protocols, methodName)) {\n    var protocol = protocols[methodName];\n    if (!protocol) {// 暂不支持的 api\n      return function () {\n        console.error(\"app-plus \\u6682\\u4E0D\\u652F\\u6301\".concat(methodName));\n      };\n    }\n    return function (arg1, arg2) {// 目前 api 最多两个参数\n      var options = protocol;\n      if (isFn(protocol)) {\n        options = protocol(arg1);\n      }\n\n      arg1 = processArgs(methodName, arg1, options.args, options.returnValue);\n\n      var returnValue = wx[options.name || methodName](arg1, arg2);\n      if (isSyncApi(methodName)) {// 同步 api\n        return processReturnValue(methodName, returnValue, options.returnValue, isContextApi(methodName));\n      }\n      return returnValue;\n    };\n  }\n  return method;\n}\n\nvar todoApis = Object.create(null);\n\nvar TODOS = [\n'subscribePush',\n'unsubscribePush',\n'onPush',\n'offPush',\n'share'];\n\n\nfunction createTodoApi(name) {\n  return function todoApi(_ref)\n\n\n  {var fail = _ref.fail,complete = _ref.complete;\n    var res = {\n      errMsg: \"\".concat(name, \":fail:\\u6682\\u4E0D\\u652F\\u6301 \").concat(name, \" \\u65B9\\u6CD5\") };\n\n    isFn(fail) && fail(res);\n    isFn(complete) && complete(res);\n  };\n}\n\nTODOS.forEach(function (name) {\n  todoApis[name] = createTodoApi(name);\n});\n\nfunction wrapper$1(webview) {\n  webview.$processed = true;\n  if (!webview.__uniapp_mask_id) {\n    return;\n  }\n  var maskColor = webview.__uniapp_mask;\n  var maskWebview = plus.webview.getWebviewById(webview.__uniapp_mask_id);\n  var oldShow = webview.show;\n  var oldHide = webview.hide;\n  var oldClose = webview.close;\n\n  var showMask = function showMask() {\n    maskWebview.setStyle({\n      mask: maskColor });\n\n  };\n  var closeMask = function closeMask() {\n    maskWebview.setStyle({\n      mask: 'none' });\n\n  };\n  webview.show = function () {\n    showMask();for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {args[_key2] = arguments[_key2];}\n    return oldShow.apply(webview, args);\n  };\n  webview.hide = function () {\n    closeMask();for (var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {args[_key3] = arguments[_key3];}\n    return oldHide.apply(webview, args);\n  };\n  webview.close = function () {\n    closeMask();\n    callbacks = [];for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {args[_key4] = arguments[_key4];}\n    return oldClose.apply(webview, args);\n  };\n  webview.postMessage = function (data) {\n    plus.webview.postMessageToUniNView({\n      type: 'UniAppSubNVue',\n      data: data,\n      options: {\n        id: webview.id } },\n\n    webview.id);\n  };\n  var callbacks = [];\n  webview.onMessage = function (callback) {\n    callbacks.push(callback);\n  };\n  webview.$consumeMessage = function (e) {\n    callbacks.forEach(function (callback) {return callback(e);});\n  };\n}\n\nvar subNVue = {\n  getSubNVueById: function getSubNVueById(id) {\n    var webview = plus.webview.getWebviewById(id);\n    if (webview && !webview.$processed) {\n      wrapper$1(webview);\n    }\n    return webview;\n  } };\n\n\nfunction requireNativePlugin(pluginName) {\n  /* eslint-disable no-undef */\n  if (typeof weex !== 'undefined') {\n    return weex.requireModule(pluginName);\n  }\n  /* eslint-disable no-undef */\n  return __requireNativePlugin__(pluginName);\n}\n\nvar api = /*#__PURE__*/Object.freeze({\n  requireNativePlugin: requireNativePlugin,\n  subNVue: subNVue });\n\n\nvar MPPage = Page;\nvar MPComponent = Component;\n\nvar customizeRE = /:/g;\n\nvar customize = cached(function (str) {\n  return camelize(str.replace(customizeRE, '-'));\n});\n\nfunction initTriggerEvent(mpInstance) {\n  {\n    if (!wx.canIUse('nextTick')) {\n      return;\n    }\n  }\n  var oldTriggerEvent = mpInstance.triggerEvent;\n  mpInstance.triggerEvent = function (event) {for (var _len5 = arguments.length, args = new Array(_len5 > 1 ? _len5 - 1 : 0), _key5 = 1; _key5 < _len5; _key5++) {args[_key5 - 1] = arguments[_key5];}\n    return oldTriggerEvent.apply(mpInstance, [customize(event)].concat(args));\n  };\n}\n\nfunction initHook(name, options) {\n  var oldHook = options[name];\n  if (!oldHook) {\n    options[name] = function () {\n      initTriggerEvent(this);\n    };\n  } else {\n    options[name] = function () {\n      initTriggerEvent(this);for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {args[_key6] = arguments[_key6];}\n      return oldHook.apply(this, args);\n    };\n  }\n}\n\nPage = function Page() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};\n  initHook('onLoad', options);\n  return MPPage(options);\n};\n\nComponent = function Component() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};\n  initHook('created', options);\n  return MPComponent(options);\n};\n\nvar mocks = ['__route__', '__wxExparserNodeId__', '__wxWebviewId__'];\n\nfunction initBehavior(options) {\n  return Behavior(options);\n}\nfunction initRefs(vm) {\n  var mpInstance = vm.$scope;\n  Object.defineProperty(vm, '$refs', {\n    get: function get() {\n      var $refs = {};\n      var components = mpInstance.selectAllComponents('.vue-ref');\n      components.forEach(function (component) {\n        var ref = component.dataset.ref;\n        $refs[ref] = component.$vm || component;\n      });\n      var forComponents = mpInstance.selectAllComponents('.vue-ref-in-for');\n      forComponents.forEach(function (component) {\n        var ref = component.dataset.ref;\n        if (!$refs[ref]) {\n          $refs[ref] = [];\n        }\n        $refs[ref].push(component.$vm || component);\n      });\n      return $refs;\n    } });\n\n}\nfunction triggerLink(mpInstance, vueOptions) {\n  mpInstance.triggerEvent('__l', mpInstance.$vm || vueOptions, {\n    bubbles: true,\n    composed: true });\n\n}\n\nfunction handleLink(event) {\n  if (event.detail.$mp) {// vm\n    if (!event.detail.$parent) {\n      event.detail.$parent = this.$vm;\n      event.detail.$parent.$children.push(event.detail);\n\n      event.detail.$root = this.$vm.$root;\n    }\n  } else {// vueOptions\n    if (!event.detail.parent) {\n      event.detail.parent = this.$vm;\n    }\n  }\n}\n\nfunction initPage$1(pageOptions) {\n  return initComponent$1(pageOptions);\n}\n\nfunction initComponent$1(componentOptions) {\n  componentOptions.methods.$getAppWebview = function () {\n    return plus.webview.getWebviewById(\"\".concat(this.__wxWebviewId__));\n  };\n  return Component(componentOptions);\n}\n\nfunction initMocks(vm, mocks$$1) {\n  var mpInstance = vm.$mp[vm.mpType];\n  mocks$$1.forEach(function (mock) {\n    if (hasOwn(mpInstance, mock)) {\n      vm[mock] = mpInstance[mock];\n    }\n  });\n}\n\nfunction initHooks(mpOptions, hooks) {\n  hooks.forEach(function (hook) {\n    mpOptions[hook] = function (args) {\n      return this.$vm.__call_hook(hook, args);\n    };\n  });\n}\n\nfunction getData(vueOptions, context) {\n  var data = vueOptions.data || {};\n  var methods = vueOptions.methods || {};\n\n  if (typeof data === 'function') {\n    try {\n      data = data.call(context); // 支持 Vue.prototype 上挂的数据\n    } catch (e) {\n      if (Object({\"NODE_ENV\":\"development\",\"VUE_APP_PLATFORM\":\"app-plus\",\"BASE_URL\":\"/\"}).VUE_APP_DEBUG) {\n        console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);\n      }\n    }\n  } else {\n    try {\n      // 对 data 格式化\n      data = JSON.parse(JSON.stringify(data));\n    } catch (e) {}\n  }\n\n  if (!isPlainObject(data)) {\n    data = {};\n  }\n\n  Object.keys(methods).forEach(function (methodName) {\n    if (context.__lifecycle_hooks__.indexOf(methodName) === -1 && !hasOwn(data, methodName)) {\n      data[methodName] = methods[methodName];\n    }\n  });\n\n  return data;\n}\n\nvar PROP_TYPES = [String, Number, Boolean, Object, Array, null];\n\nfunction createObserver(name) {\n  return function observer(newVal, oldVal) {\n    if (this.$vm) {\n      this.$vm[name] = newVal; // 为了触发其他非 render watcher\n    }\n  };\n}\n\nfunction getBehaviors(vueOptions) {\n  var vueBehaviors = vueOptions['behaviors'];\n  var vueExtends = vueOptions['extends'];\n  var vueMixins = vueOptions['mixins'];\n\n  var vueProps = vueOptions['props'];\n\n  if (!vueProps) {\n    vueOptions['props'] = vueProps = [];\n  }\n\n  var behaviors = [];\n  if (Array.isArray(vueBehaviors)) {\n    vueBehaviors.forEach(function (behavior) {\n      behaviors.push(behavior.replace('uni://', \"wx\".concat(\"://\")));\n      if (behavior === 'uni://form-field') {\n        if (Array.isArray(vueProps)) {\n          vueProps.push('name');\n          vueProps.push('value');\n        } else {\n          vueProps['name'] = String;\n          vueProps['value'] = null;\n        }\n      }\n    });\n  }\n  if (isPlainObject(vueExtends) && vueExtends.props) {\n    behaviors.push(\n    initBehavior({\n      properties: getProperties(vueExtends.props, true) }));\n\n\n  }\n  if (Array.isArray(vueMixins)) {\n    vueMixins.forEach(function (vueMixin) {\n      if (isPlainObject(vueMixin) && vueMixin.props) {\n        behaviors.push(\n        initBehavior({\n          properties: getProperties(vueMixin.props, true) }));\n\n\n      }\n    });\n  }\n  return behaviors;\n}\n\nfunction parsePropType(key, type, defaultValue, file) {\n  // [String]=>String\n  if (Array.isArray(type) && type.length === 1) {\n    return type[0];\n  }\n  return type;\n}\n\nfunction getProperties(props) {var isBehavior = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;var file = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';\n  var properties = {};\n  if (!isBehavior) {\n    properties.vueSlots = { // 小程序不能直接定义 $slots 的 props，所以通过 vueSlots 转换到 $slots\n      type: null,\n      value: [],\n      observer: function observer(newVal, oldVal) {\n        var $slots = Object.create(null);\n        newVal.forEach(function (slotName) {\n          $slots[slotName] = true;\n        });\n        this.setData({\n          $slots: $slots });\n\n      } };\n\n  }\n  if (Array.isArray(props)) {// ['title']\n    props.forEach(function (key) {\n      properties[key] = {\n        type: null,\n        observer: createObserver(key) };\n\n    });\n  } else if (isPlainObject(props)) {// {title:{type:String,default:''},content:String}\n    Object.keys(props).forEach(function (key) {\n      var opts = props[key];\n      if (isPlainObject(opts)) {// title:{type:String,default:''}\n        var value = opts['default'];\n        if (isFn(value)) {\n          value = value();\n        }\n\n        opts.type = parsePropType(key, opts.type, value, file);\n\n        properties[key] = {\n          type: PROP_TYPES.indexOf(opts.type) !== -1 ? opts.type : null,\n          value: value,\n          observer: createObserver(key) };\n\n      } else {// content:String\n        var type = parsePropType(key, opts, null, file);\n        properties[key] = {\n          type: PROP_TYPES.indexOf(type) !== -1 ? type : null,\n          observer: createObserver(key) };\n\n      }\n    });\n  }\n  return properties;\n}\n\nfunction wrapper$2(event) {\n  // TODO 又得兼容 mpvue 的 mp 对象\n  try {\n    event.mp = JSON.parse(JSON.stringify(event));\n  } catch (e) {}\n\n  event.stopPropagation = noop;\n  event.preventDefault = noop;\n\n  event.target = event.target || {};\n\n  if (!hasOwn(event, 'detail')) {\n    event.detail = {};\n  }\n\n  if (isPlainObject(event.detail)) {\n    event.target = Object.assign({}, event.target, event.detail);\n  }\n\n  return event;\n}\n\nfunction getExtraValue(vm, dataPathsArray) {\n  var context = vm;\n  dataPathsArray.forEach(function (dataPathArray) {\n    var dataPath = dataPathArray[0];\n    var value = dataPathArray[2];\n    if (dataPath || typeof value !== 'undefined') {// ['','',index,'disable']\n      var propPath = dataPathArray[1];\n      var valuePath = dataPathArray[3];\n\n      var vFor = dataPath ? vm.__get_value(dataPath, context) : context;\n\n      if (Number.isInteger(vFor)) {\n        context = value;\n      } else if (!propPath) {\n        context = vFor[value];\n      } else {\n        if (Array.isArray(vFor)) {\n          context = vFor.find(function (vForItem) {\n            return vm.__get_value(propPath, vForItem) === value;\n          });\n        } else if (isPlainObject(vFor)) {\n          context = Object.keys(vFor).find(function (vForKey) {\n            return vm.__get_value(propPath, vFor[vForKey]) === value;\n          });\n        } else {\n          console.error('v-for 暂不支持循环数据：', vFor);\n        }\n      }\n\n      if (valuePath) {\n        context = vm.__get_value(valuePath, context);\n      }\n    }\n  });\n  return context;\n}\n\nfunction processEventExtra(vm, extra, event) {\n  var extraObj = {};\n\n  if (Array.isArray(extra) && extra.length) {\n    /**\n                                                  *[\n                                                  *    ['data.items', 'data.id', item.data.id],\n                                                  *    ['metas', 'id', meta.id]\n                                                  *],\n                                                  *[\n                                                  *    ['data.items', 'data.id', item.data.id],\n                                                  *    ['metas', 'id', meta.id]\n                                                  *],\n                                                  *'test'\n                                                  */\n    extra.forEach(function (dataPath, index) {\n      if (typeof dataPath === 'string') {\n        if (!dataPath) {// model,prop.sync\n          extraObj['$' + index] = vm;\n        } else {\n          if (dataPath === '$event') {// $event\n            extraObj['$' + index] = event;\n          } else if (dataPath.indexOf('$event.') === 0) {// $event.target.value\n            extraObj['$' + index] = vm.__get_value(dataPath.replace('$event.', ''), event);\n          } else {\n            extraObj['$' + index] = vm.__get_value(dataPath);\n          }\n        }\n      } else {\n        extraObj['$' + index] = getExtraValue(vm, dataPath);\n      }\n    });\n  }\n\n  return extraObj;\n}\n\nfunction getObjByArray(arr) {\n  var obj = {};\n  for (var i = 1; i < arr.length; i++) {\n    var element = arr[i];\n    obj[element[0]] = element[1];\n  }\n  return obj;\n}\n\nfunction processEventArgs(vm, event) {var args = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];var extra = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : [];var isCustom = arguments.length > 4 ? arguments[4] : undefined;var methodName = arguments.length > 5 ? arguments[5] : undefined;\n  var isCustomMPEvent = false; // wxcomponent 组件，传递原始 event 对象\n  if (isCustom) {// 自定义事件\n    isCustomMPEvent = event.currentTarget &&\n    event.currentTarget.dataset &&\n    event.currentTarget.dataset.comType === 'wx';\n    if (!args.length) {// 无参数，直接传入 event 或 detail 数组\n      if (isCustomMPEvent) {\n        return [event];\n      }\n      return event.detail.__args__ || event.detail;\n    }\n  }\n\n  var extraObj = processEventExtra(vm, extra, event);\n\n  var ret = [];\n  args.forEach(function (arg) {\n    if (arg === '$event') {\n      if (methodName === '__set_model' && !isCustom) {// input v-model value\n        ret.push(event.target.value);\n      } else {\n        if (isCustom && !isCustomMPEvent) {\n          ret.push(event.detail.__args__[0]);\n        } else {// wxcomponent 组件或内置组件\n          ret.push(event);\n        }\n      }\n    } else {\n      if (Array.isArray(arg) && arg[0] === 'o') {\n        ret.push(getObjByArray(arg));\n      } else if (typeof arg === 'string' && hasOwn(extraObj, arg)) {\n        ret.push(extraObj[arg]);\n      } else {\n        ret.push(arg);\n      }\n    }\n  });\n\n  return ret;\n}\n\nvar ONCE = '~';\nvar CUSTOM = '^';\n\nfunction handleEvent(event) {var _this = this;\n  event = wrapper$2(event);\n\n  // [['tap',[['handle',[1,2,a]],['handle1',[1,2,a]]]]]\n  var eventOpts = (event.currentTarget || event.target).dataset.eventOpts;\n  if (!eventOpts) {\n    return console.warn(\"\\u4E8B\\u4EF6\\u4FE1\\u606F\\u4E0D\\u5B58\\u5728\");\n  }\n\n  // [['handle',[1,2,a]],['handle1',[1,2,a]]]\n  var eventType = event.type;\n  eventOpts.forEach(function (eventOpt) {\n    var type = eventOpt[0];\n    var eventsArray = eventOpt[1];\n\n    var isCustom = type.charAt(0) === CUSTOM;\n    type = isCustom ? type.slice(1) : type;\n    var isOnce = type.charAt(0) === ONCE;\n    type = isOnce ? type.slice(1) : type;\n\n    if (eventsArray && eventType === type) {\n      eventsArray.forEach(function (eventArray) {\n        var methodName = eventArray[0];\n        if (methodName) {\n          var handler = _this.$vm[methodName];\n          if (!isFn(handler)) {\n            throw new Error(\" _vm.\".concat(methodName, \" is not a function\"));\n          }\n          if (isOnce) {\n            if (handler.once) {\n              return;\n            }\n            handler.once = true;\n          }\n          handler.apply(_this.$vm, processEventArgs(\n          _this.$vm,\n          event,\n          eventArray[1],\n          eventArray[2],\n          isCustom,\n          methodName));\n\n        }\n      });\n    }\n  });\n}\n\nvar hooks = [\n'onHide',\n'onError',\n'onPageNotFound',\n'onUniNViewMessage'];\n\n\nfunction initVm(vm) {\n  if (this.$vm) {// 百度竟然 onShow 在 onLaunch 之前？\n    return;\n  }\n\n  this.$vm = vm;\n\n  this.$vm.$mp = {\n    app: this };\n\n}\n\nfunction createApp(vm) {\n\n  _vue.default.mixin({\n    beforeCreate: function beforeCreate() {\n      if (!this.$options.mpType) {\n        return;\n      }\n\n      this.mpType = this.$options.mpType;\n\n      this.$mp = _defineProperty({\n        data: {} },\n      this.mpType, this.$options.mpInstance);\n\n\n      this.$scope = this.$options.mpInstance;\n\n      delete this.$options.mpType;\n      delete this.$options.mpInstance;\n\n      if (this.mpType !== 'app') {\n        initRefs(this);\n        initMocks(this, mocks);\n      }\n    },\n    created: function created() {// 处理 injections\n      this.__init_injections(this);\n      this.__init_provide(this);\n    } });\n\n\n  var appOptions = {\n    onLaunch: function onLaunch(args) {\n      initVm.call(this, vm);\n\n      this.$vm._isMounted = true;\n      this.$vm.__call_hook('mounted');\n\n      this.$vm.__call_hook('onLaunch', args);\n    },\n    onShow: function onShow(args) {\n      initVm.call(this, vm);\n\n      this.$vm.__call_hook('onShow', args);\n    } };\n\n\n  // 兼容旧版本 globalData\n  appOptions.globalData = vm.$options.globalData || {};\n\n  initHooks(appOptions, hooks); // 延迟执行，因为 App 的注册在 main.js 之前，可能导致生命周期内 Vue 原型上开发者注册的属性无法访问\n\n  App(appOptions);\n\n  return vm;\n}\n\nvar hooks$1 = [\n'onShow',\n'onHide',\n'onPullDownRefresh',\n'onReachBottom',\n'onShareAppMessage',\n'onPageScroll',\n'onResize',\n'onTabItemTap',\n'onBackPress',\n'onNavigationBarButtonTap',\n'onNavigationBarSearchInputChanged',\n'onNavigationBarSearchInputConfirmed',\n'onNavigationBarSearchInputClicked'];\n\n\nfunction initVm$1(VueComponent) {// 百度的 onLoad 触发在 attached 之前\n  if (this.$vm) {\n    return;\n  }\n\n  this.$vm = new VueComponent({\n    mpType: 'page',\n    mpInstance: this });\n\n\n  this.$vm.__call_hook('created');\n  this.$vm.$mount();\n}\n\nfunction createPage(vueOptions) {\n  vueOptions = vueOptions.default || vueOptions;\n  var VueComponent;\n  if (isFn(vueOptions)) {\n    VueComponent = vueOptions;\n    vueOptions = VueComponent.extendOptions;\n  } else {\n    VueComponent = _vue.default.extend(vueOptions);\n  }\n  var pageOptions = {\n    options: {\n      multipleSlots: true,\n      addGlobalClass: true },\n\n    data: getData(vueOptions, _vue.default.prototype),\n    lifetimes: { // 当页面作为组件时\n      attached: function attached() {\n        initVm$1.call(this, VueComponent);\n      },\n      ready: function ready() {\n        this.$vm.__call_hook('beforeMount');\n        this.$vm._isMounted = true;\n        this.$vm.__call_hook('mounted');\n        this.$vm.__call_hook('onReady');\n      },\n      detached: function detached() {\n        this.$vm.$destroy();\n      } },\n\n    methods: { // 作为页面时\n      onLoad: function onLoad(args) {\n        initVm$1.call(this, VueComponent);\n        this.$vm.$mp.query = args; // 又要兼容 mpvue\n        this.$vm.__call_hook('onLoad', args); // 开发者可能会在 onLoad 时赋值，提前到 mount 之前\n      },\n      onUnload: function onUnload() {\n        this.$vm.__call_hook('onUnload');\n      },\n      __e: handleEvent,\n      __l: handleLink } };\n\n\n\n  initHooks(pageOptions.methods, hooks$1);\n\n  return initPage$1(pageOptions, vueOptions);\n}\n\nfunction initVm$2(VueComponent) {\n  if (this.$vm) {\n    return;\n  }\n\n  var properties = this.properties;\n\n  var options = {\n    mpType: 'component',\n    mpInstance: this,\n    propsData: properties };\n\n  // 初始化 vue 实例\n  this.$vm = new VueComponent(options);\n\n  // 处理$slots,$scopedSlots（暂不支持动态变化$slots）\n  var vueSlots = properties.vueSlots;\n  if (Array.isArray(vueSlots) && vueSlots.length) {\n    var $slots = Object.create(null);\n    vueSlots.forEach(function (slotName) {\n      $slots[slotName] = true;\n    });\n    this.$vm.$scopedSlots = this.$vm.$slots = $slots;\n  }\n  // 性能优先，mount 提前到 attached 中，保证组件首次渲染数据被合并\n  // 导致与标准 Vue 的差异，data 和 computed 中不能使用$parent，provide等组件属性\n  this.$vm.$mount();\n}\n\nfunction createComponent(vueOptions) {\n  vueOptions = vueOptions.default || vueOptions;\n\n  var VueComponent;\n  if (isFn(vueOptions)) {\n    VueComponent = vueOptions; // TODO form-field props.name,props.value\n    vueOptions = VueComponent.extendOptions;\n  } else {\n    VueComponent = _vue.default.extend(vueOptions);\n  }\n\n  var behaviors = getBehaviors(vueOptions);\n\n  var properties = getProperties(vueOptions.props, false, vueOptions.__file);\n\n  var componentOptions = {\n    options: {\n      multipleSlots: true,\n      addGlobalClass: true },\n\n    data: getData(vueOptions, _vue.default.prototype),\n    behaviors: behaviors,\n    properties: properties,\n    lifetimes: {\n      attached: function attached() {\n        initVm$2.call(this, VueComponent);\n      },\n      ready: function ready() {\n        initVm$2.call(this, VueComponent); // 目前发现部分情况小程序 attached 不触发\n        triggerLink(this); // 处理 parent,children\n\n        // 补充生命周期\n        this.$vm.__call_hook('created');\n        this.$vm.__call_hook('beforeMount');\n        this.$vm._isMounted = true;\n        this.$vm.__call_hook('mounted');\n        this.$vm.__call_hook('onReady');\n      },\n      detached: function detached() {\n        this.$vm.$destroy();\n      } },\n\n    pageLifetimes: {\n      show: function show(args) {\n        this.$vm.__call_hook('onPageShow', args);\n      },\n      hide: function hide() {\n        this.$vm && this.$vm.__call_hook('onPageHide');\n      },\n      resize: function resize(size) {\n        this.$vm && this.$vm.__call_hook('onPageResize', size);\n      } },\n\n    methods: {\n      __e: handleEvent,\n      __l: handleLink } };\n\n\n\n  return initComponent$1(componentOptions, vueOptions);\n}\n\ntodos.forEach(function (todoApi) {\n  protocols[todoApi] = false;\n});\n\ncanIUses.forEach(function (canIUseApi) {\n  var apiName = protocols[canIUseApi] && protocols[canIUseApi].name ? protocols[canIUseApi].name : canIUseApi;\n  if (!wx.canIUse(apiName)) {\n    protocols[canIUseApi] = false;\n  }\n});\n\nvar uni = {};\n\nif (typeof Proxy !== 'undefined') {\n  uni = new Proxy({}, {\n    get: function get(target, name) {\n      if (name === 'upx2px') {\n        return upx2px;\n      }\n      if (api[name]) {\n        return promisify(name, api[name]);\n      }\n      if (!hasOwn(wx, name) && !hasOwn(protocols, name)) {\n        return;\n      }\n      return promisify(name, wrapper(name, wx[name]));\n    } });\n\n} else {\n  uni.upx2px = upx2px;\n\n  Object.keys(api).forEach(function (name) {\n    uni[name] = promisify(name, api[name]);\n  });\n\n  Object.keys(wx).forEach(function (name) {\n    if (hasOwn(wx, name) || hasOwn(protocols, name)) {\n      uni[name] = promisify(name, wrapper(name, wx[name]));\n    }\n  });\n}\n\nvar uni$1 = uni;var _default =\n\nuni$1;exports.default = _default;\n\n//# sourceURL=Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/uni-app-plus/dist/index.js");
+eval("/* WEBPACK VAR INJECTION */(function(global) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.createApp = createApp;exports.createPage = createPage;exports.createComponent = createComponent;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError(\"Invalid attempt to destructure non-iterable instance\");}function _iterableToArrayLimit(arr, i) {var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i[\"return\"] != null) _i[\"return\"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}\n\nvar _toString = Object.prototype.toString;\nvar hasOwnProperty = Object.prototype.hasOwnProperty;\n\nfunction isFn(fn) {\n  return typeof fn === 'function';\n}\n\nfunction isStr(str) {\n  return typeof str === 'string';\n}\n\nfunction isPlainObject(obj) {\n  return _toString.call(obj) === '[object Object]';\n}\n\nfunction hasOwn(obj, key) {\n  return hasOwnProperty.call(obj, key);\n}\n\nfunction noop() {}\n\n/**\n                    * Create a cached version of a pure function.\n                    */\nfunction cached(fn) {\n  var cache = Object.create(null);\n  return function cachedFn(str) {\n    var hit = cache[str];\n    return hit || (cache[str] = fn(str));\n  };\n}\n\n/**\n   * Camelize a hyphen-delimited string.\n   */\nvar camelizeRE = /-(\\w)/g;\nvar camelize = cached(function (str) {\n  return str.replace(camelizeRE, function (_, c) {return c ? c.toUpperCase() : '';});\n});\n\nvar SYNC_API_RE = /^\\$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;\n\nvar CONTEXT_API_RE = /^create|Manager$/;\n\nvar CALLBACK_API_RE = /^on/;\n\nfunction isContextApi(name) {\n  return CONTEXT_API_RE.test(name);\n}\nfunction isSyncApi(name) {\n  return SYNC_API_RE.test(name);\n}\n\nfunction isCallbackApi(name) {\n  return CALLBACK_API_RE.test(name);\n}\n\nfunction handlePromise(promise) {\n  return promise.then(function (data) {\n    return [null, data];\n  }).\n  catch(function (err) {return [err];});\n}\n\nfunction shouldPromise(name) {\n  if (\n  isContextApi(name) ||\n  isSyncApi(name) ||\n  isCallbackApi(name))\n  {\n    return false;\n  }\n  return true;\n}\n\nfunction promisify(name, api) {\n  if (!shouldPromise(name)) {\n    return api;\n  }\n  return function promiseApi() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};for (var _len = arguments.length, params = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {params[_key - 1] = arguments[_key];}\n    if (isFn(options.success) || isFn(options.fail) || isFn(options.complete)) {\n      return api.apply(void 0, [options].concat(params));\n    }\n    return handlePromise(new Promise(function (resolve, reject) {\n      api.apply(void 0, [Object.assign({}, options, {\n        success: resolve,\n        fail: reject })].concat(\n      params));\n      /* eslint-disable no-extend-native */\n      if (!Promise.prototype.finally) {\n        Promise.prototype.finally = function (callback) {\n          var promise = this.constructor;\n          return this.then(\n          function (value) {return promise.resolve(callback()).then(function () {return value;});},\n          function (reason) {return promise.resolve(callback()).then(function () {\n              throw reason;\n            });});\n\n        };\n      }\n    }));\n  };\n}\n\nvar EPS = 1e-4;\nvar BASE_DEVICE_WIDTH = 750;\nvar isIOS = false;\nvar deviceWidth = 0;\nvar deviceDPR = 0;\n\nfunction checkDeviceWidth() {var _wx$getSystemInfoSync =\n\n\n\n\n  wx.getSystemInfoSync(),platform = _wx$getSystemInfoSync.platform,pixelRatio = _wx$getSystemInfoSync.pixelRatio,windowWidth = _wx$getSystemInfoSync.windowWidth; // uni=>wx runtime 编译目标是 uni 对象，内部不允许直接使用 uni\n\n  deviceWidth = windowWidth;\n  deviceDPR = pixelRatio;\n  isIOS = platform === 'ios';\n}\n\nfunction upx2px(number, newDeviceWidth) {\n  if (deviceWidth === 0) {\n    checkDeviceWidth();\n  }\n\n  number = Number(number);\n  if (number === 0) {\n    return 0;\n  }\n  var result = number / BASE_DEVICE_WIDTH * (newDeviceWidth || deviceWidth);\n  if (result < 0) {\n    result = -result;\n  }\n  result = Math.floor(result + EPS);\n  if (result === 0) {\n    if (deviceDPR === 1 || !isIOS) {\n      return 1;\n    } else {\n      return 0.5;\n    }\n  }\n  return number < 0 ? -result : result;\n}\n\nvar protocols = {};\nvar todos = [];\nvar canIUses = [];\n\nvar CALLBACKS = ['success', 'fail', 'cancel', 'complete'];\n\nfunction processCallback(methodName, method, returnValue) {\n  return function (res) {\n    return method(processReturnValue(methodName, res, returnValue));\n  };\n}\n\nfunction processArgs(methodName, fromArgs) {var argsOption = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};var returnValue = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};var keepFromArgs = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;\n  if (isPlainObject(fromArgs)) {// 一般 api 的参数解析\n    var toArgs = keepFromArgs === true ? fromArgs : {}; // returnValue 为 false 时，说明是格式化返回值，直接在返回值对象上修改赋值\n    if (isFn(argsOption)) {\n      argsOption = argsOption(fromArgs, toArgs) || {};\n    }\n    for (var key in fromArgs) {\n      if (hasOwn(argsOption, key)) {\n        var keyOption = argsOption[key];\n        if (isFn(keyOption)) {\n          keyOption = keyOption(fromArgs[key], fromArgs, toArgs);\n        }\n        if (!keyOption) {// 不支持的参数\n          console.warn(\"app-plus \".concat(methodName, \"\\u6682\\u4E0D\\u652F\\u6301\").concat(key));\n        } else if (isStr(keyOption)) {// 重写参数 key\n          toArgs[keyOption] = fromArgs[key];\n        } else if (isPlainObject(keyOption)) {// {name:newName,value:value}可重新指定参数 key:value\n          toArgs[keyOption.name ? keyOption.name : key] = keyOption.value;\n        }\n      } else if (CALLBACKS.indexOf(key) !== -1) {\n        toArgs[key] = processCallback(methodName, fromArgs[key], returnValue);\n      } else {\n        if (!keepFromArgs) {\n          toArgs[key] = fromArgs[key];\n        }\n      }\n    }\n    return toArgs;\n  } else if (isFn(fromArgs)) {\n    fromArgs = processCallback(methodName, fromArgs, returnValue);\n  }\n  return fromArgs;\n}\n\nfunction processReturnValue(methodName, res, returnValue) {var keepReturnValue = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;\n  if (isFn(protocols.returnValue)) {// 处理通用 returnValue\n    res = protocols.returnValue(methodName, res);\n  }\n  return processArgs(methodName, res, returnValue, {}, keepReturnValue);\n}\n\nfunction wrapper(methodName, method) {\n  if (hasOwn(protocols, methodName)) {\n    var protocol = protocols[methodName];\n    if (!protocol) {// 暂不支持的 api\n      return function () {\n        console.error(\"app-plus \\u6682\\u4E0D\\u652F\\u6301\".concat(methodName));\n      };\n    }\n    return function (arg1, arg2) {// 目前 api 最多两个参数\n      var options = protocol;\n      if (isFn(protocol)) {\n        options = protocol(arg1);\n      }\n\n      arg1 = processArgs(methodName, arg1, options.args, options.returnValue);\n\n      var args = [arg1];\n      if (typeof arg2 !== 'undefined') {\n        args.push(arg2);\n      }\n      var returnValue = wx[options.name || methodName].apply(wx, args);\n      if (isSyncApi(methodName)) {// 同步 api\n        return processReturnValue(methodName, returnValue, options.returnValue, isContextApi(methodName));\n      }\n      return returnValue;\n    };\n  }\n  return method;\n}\n\nvar todoApis = Object.create(null);\n\nvar TODOS = [\n'subscribePush',\n'unsubscribePush',\n'onPush',\n'offPush',\n'share'];\n\n\nfunction createTodoApi(name) {\n  return function todoApi(_ref)\n\n\n  {var fail = _ref.fail,complete = _ref.complete;\n    var res = {\n      errMsg: \"\".concat(name, \":fail:\\u6682\\u4E0D\\u652F\\u6301 \").concat(name, \" \\u65B9\\u6CD5\") };\n\n    isFn(fail) && fail(res);\n    isFn(complete) && complete(res);\n  };\n}\n\nTODOS.forEach(function (name) {\n  todoApis[name] = createTodoApi(name);\n});\n\nvar getEmitter = function () {\n  if (typeof getUniEmitter === 'function') {\n    /* eslint-disable no-undef */\n    return getUniEmitter;\n  }\n  var Emitter;\n  return function getUniEmitter() {\n    if (!Emitter) {\n      Emitter = new _vue.default();\n    }\n    return Emitter;\n  };\n}();\n\nfunction apply(ctx, method, args) {\n  return ctx[method].apply(ctx, args);\n}\n\nfunction $on() {\n  return apply(getEmitter(), '$on', Array.prototype.slice.call(arguments));\n}\nfunction $off() {\n  return apply(getEmitter(), '$off', Array.prototype.slice.call(arguments));\n}\nfunction $once() {\n  return apply(getEmitter(), '$once', Array.prototype.slice.call(arguments));\n}\nfunction $emit() {\n  return apply(getEmitter(), '$emit', Array.prototype.slice.call(arguments));\n}\n\n\n\nvar eventApi = /*#__PURE__*/Object.freeze({\n  $on: $on,\n  $off: $off,\n  $once: $once,\n  $emit: $emit });\n\n\nfunction wrapper$1(webview) {\n  webview.$processed = true;\n\n  webview.postMessage = function (data) {\n    plus.webview.postMessageToUniNView({\n      type: 'UniAppSubNVue',\n      data: data },\n    webview.id);\n  };\n  var callbacks = [];\n  webview.onMessage = function (callback) {\n    callbacks.push(callback);\n  };\n  webview.$consumeMessage = function (e) {\n    callbacks.forEach(function (callback) {return callback(e);});\n  };\n\n  if (!webview.__uniapp_mask_id) {\n    return;\n  }\n  var maskColor = webview.__uniapp_mask;\n  var maskWebview = plus.webview.getWebviewById(webview.__uniapp_mask_id);\n  maskWebview = maskWebview.parent() || maskWebview; // 再次检测父\n  var oldShow = webview.show;\n  var oldHide = webview.hide;\n  var oldClose = webview.close;\n\n  var showMask = function showMask() {\n    maskWebview.setStyle({\n      mask: maskColor });\n\n  };\n  var closeMask = function closeMask() {\n    maskWebview.setStyle({\n      mask: 'none' });\n\n  };\n  webview.show = function () {\n    showMask();for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {args[_key2] = arguments[_key2];}\n    return oldShow.apply(webview, args);\n  };\n  webview.hide = function () {\n    closeMask();for (var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {args[_key3] = arguments[_key3];}\n    return oldHide.apply(webview, args);\n  };\n  webview.close = function () {\n    closeMask();\n    callbacks = [];for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {args[_key4] = arguments[_key4];}\n    return oldClose.apply(webview, args);\n  };\n}\n\nfunction getSubNVueById(id) {\n  var webview = plus.webview.getWebviewById(id);\n  if (webview && !webview.$processed) {\n    wrapper$1(webview);\n  }\n  return webview;\n}\n\nfunction requireNativePlugin(pluginName) {\n  /* eslint-disable no-undef */\n  if (typeof weex !== 'undefined') {\n    return weex.requireModule(pluginName);\n  }\n  /* eslint-disable no-undef */\n  return __requireNativePlugin__(pluginName);\n}\n\nvar api = /*#__PURE__*/Object.freeze({\n  requireNativePlugin: requireNativePlugin,\n  getSubNVueById: getSubNVueById });\n\n\nvar MPPage = Page;\nvar MPComponent = Component;\n\nvar customizeRE = /:/g;\n\nvar customize = cached(function (str) {\n  return camelize(str.replace(customizeRE, '-'));\n});\n\nfunction initTriggerEvent(mpInstance) {\n  {\n    if (!wx.canIUse('nextTick')) {\n      return;\n    }\n  }\n  var oldTriggerEvent = mpInstance.triggerEvent;\n  mpInstance.triggerEvent = function (event) {for (var _len5 = arguments.length, args = new Array(_len5 > 1 ? _len5 - 1 : 0), _key5 = 1; _key5 < _len5; _key5++) {args[_key5 - 1] = arguments[_key5];}\n    return oldTriggerEvent.apply(mpInstance, [customize(event)].concat(args));\n  };\n}\n\nfunction initHook(name, options) {\n  var oldHook = options[name];\n  if (!oldHook) {\n    options[name] = function () {\n      initTriggerEvent(this);\n    };\n  } else {\n    options[name] = function () {\n      initTriggerEvent(this);for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {args[_key6] = arguments[_key6];}\n      return oldHook.apply(this, args);\n    };\n  }\n}\n\nPage = function Page() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};\n  initHook('onLoad', options);\n  return MPPage(options);\n};\n\nComponent = function Component() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};\n  initHook('created', options);\n  return MPComponent(options);\n};\n\nvar PAGE_EVENT_HOOKS = [\n'onPullDownRefresh',\n'onReachBottom',\n'onShareAppMessage',\n'onPageScroll',\n'onResize',\n'onTabItemTap'];\n\n\nfunction initMocks(vm, mocks) {\n  var mpInstance = vm.$mp[vm.mpType];\n  mocks.forEach(function (mock) {\n    if (hasOwn(mpInstance, mock)) {\n      vm[mock] = mpInstance[mock];\n    }\n  });\n}\n\nfunction initHooks(mpOptions, hooks) {\n  hooks.forEach(function (hook) {\n    mpOptions[hook] = function (args) {\n      return this.$vm && this.$vm.__call_hook(hook, args);\n    };\n  });\n}\n\nfunction initVueComponent(Vue$$1, vueOptions) {\n  vueOptions = vueOptions.default || vueOptions;\n  var VueComponent;\n  if (isFn(vueOptions)) {\n    VueComponent = vueOptions;\n    vueOptions = VueComponent.extendOptions;\n  } else {\n    VueComponent = Vue$$1.extend(vueOptions);\n  }\n  return [VueComponent, vueOptions];\n}\n\nfunction initSlots(vm, vueSlots) {\n  if (Array.isArray(vueSlots) && vueSlots.length) {\n    var $slots = Object.create(null);\n    vueSlots.forEach(function (slotName) {\n      $slots[slotName] = true;\n    });\n    vm.$scopedSlots = vm.$slots = $slots;\n  }\n}\n\nfunction initVueIds(vueIds, mpInstance) {\n  vueIds = (vueIds || '').split(',');\n  var len = vueIds.length;\n\n  if (len === 1) {\n    mpInstance._$vueId = vueIds[0];\n  } else if (len === 2) {\n    mpInstance._$vueId = vueIds[0];\n    mpInstance._$vuePid = vueIds[1];\n  }\n}\n\nfunction initData(vueOptions, context) {\n  var data = vueOptions.data || {};\n  var methods = vueOptions.methods || {};\n\n  if (typeof data === 'function') {\n    try {\n      data = data.call(context); // 支持 Vue.prototype 上挂的数据\n    } catch (e) {\n      if (Object({\"NODE_ENV\":\"development\",\"VUE_APP_PLATFORM\":\"app-plus\",\"BASE_URL\":\"/\"}).VUE_APP_DEBUG) {\n        console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);\n      }\n    }\n  } else {\n    try {\n      // 对 data 格式化\n      data = JSON.parse(JSON.stringify(data));\n    } catch (e) {}\n  }\n\n  if (!isPlainObject(data)) {\n    data = {};\n  }\n\n  Object.keys(methods).forEach(function (methodName) {\n    if (context.__lifecycle_hooks__.indexOf(methodName) === -1 && !hasOwn(data, methodName)) {\n      data[methodName] = methods[methodName];\n    }\n  });\n\n  return data;\n}\n\nvar PROP_TYPES = [String, Number, Boolean, Object, Array, null];\n\nfunction createObserver(name) {\n  return function observer(newVal, oldVal) {\n    if (this.$vm) {\n      this.$vm[name] = newVal; // 为了触发其他非 render watcher\n    }\n  };\n}\n\nfunction initBehaviors(vueOptions, initBehavior) {\n  var vueBehaviors = vueOptions['behaviors'];\n  var vueExtends = vueOptions['extends'];\n  var vueMixins = vueOptions['mixins'];\n\n  var vueProps = vueOptions['props'];\n\n  if (!vueProps) {\n    vueOptions['props'] = vueProps = [];\n  }\n\n  var behaviors = [];\n  if (Array.isArray(vueBehaviors)) {\n    vueBehaviors.forEach(function (behavior) {\n      behaviors.push(behavior.replace('uni://', \"wx\".concat(\"://\")));\n      if (behavior === 'uni://form-field') {\n        if (Array.isArray(vueProps)) {\n          vueProps.push('name');\n          vueProps.push('value');\n        } else {\n          vueProps['name'] = String;\n          vueProps['value'] = null;\n        }\n      }\n    });\n  }\n  if (isPlainObject(vueExtends) && vueExtends.props) {\n    behaviors.push(\n    initBehavior({\n      properties: initProperties(vueExtends.props, true) }));\n\n\n  }\n  if (Array.isArray(vueMixins)) {\n    vueMixins.forEach(function (vueMixin) {\n      if (isPlainObject(vueMixin) && vueMixin.props) {\n        behaviors.push(\n        initBehavior({\n          properties: initProperties(vueMixin.props, true) }));\n\n\n      }\n    });\n  }\n  return behaviors;\n}\n\nfunction parsePropType(key, type, defaultValue, file) {\n  // [String]=>String\n  if (Array.isArray(type) && type.length === 1) {\n    return type[0];\n  }\n  return type;\n}\n\nfunction initProperties(props) {var isBehavior = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;var file = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';\n  var properties = {};\n  if (!isBehavior) {\n    properties.vueId = {\n      type: String,\n      value: '' };\n\n    properties.vueSlots = { // 小程序不能直接定义 $slots 的 props，所以通过 vueSlots 转换到 $slots\n      type: null,\n      value: [],\n      observer: function observer(newVal, oldVal) {\n        var $slots = Object.create(null);\n        newVal.forEach(function (slotName) {\n          $slots[slotName] = true;\n        });\n        this.setData({\n          $slots: $slots });\n\n      } };\n\n  }\n  if (Array.isArray(props)) {// ['title']\n    props.forEach(function (key) {\n      properties[key] = {\n        type: null,\n        observer: createObserver(key) };\n\n    });\n  } else if (isPlainObject(props)) {// {title:{type:String,default:''},content:String}\n    Object.keys(props).forEach(function (key) {\n      var opts = props[key];\n      if (isPlainObject(opts)) {// title:{type:String,default:''}\n        var value = opts['default'];\n        if (isFn(value)) {\n          value = value();\n        }\n\n        opts.type = parsePropType(key, opts.type, value, file);\n\n        properties[key] = {\n          type: PROP_TYPES.indexOf(opts.type) !== -1 ? opts.type : null,\n          value: value,\n          observer: createObserver(key) };\n\n      } else {// content:String\n        var type = parsePropType(key, opts, null, file);\n        properties[key] = {\n          type: PROP_TYPES.indexOf(type) !== -1 ? type : null,\n          observer: createObserver(key) };\n\n      }\n    });\n  }\n  return properties;\n}\n\nfunction wrapper$2(event) {\n  // TODO 又得兼容 mpvue 的 mp 对象\n  try {\n    event.mp = JSON.parse(JSON.stringify(event));\n  } catch (e) {}\n\n  event.stopPropagation = noop;\n  event.preventDefault = noop;\n\n  event.target = event.target || {};\n\n  if (!hasOwn(event, 'detail')) {\n    event.detail = {};\n  }\n\n  if (isPlainObject(event.detail)) {\n    event.target = Object.assign({}, event.target, event.detail);\n  }\n\n  return event;\n}\n\nfunction getExtraValue(vm, dataPathsArray) {\n  var context = vm;\n  dataPathsArray.forEach(function (dataPathArray) {\n    var dataPath = dataPathArray[0];\n    var value = dataPathArray[2];\n    if (dataPath || typeof value !== 'undefined') {// ['','',index,'disable']\n      var propPath = dataPathArray[1];\n      var valuePath = dataPathArray[3];\n\n      var vFor = dataPath ? vm.__get_value(dataPath, context) : context;\n\n      if (Number.isInteger(vFor)) {\n        context = value;\n      } else if (!propPath) {\n        context = vFor[value];\n      } else {\n        if (Array.isArray(vFor)) {\n          context = vFor.find(function (vForItem) {\n            return vm.__get_value(propPath, vForItem) === value;\n          });\n        } else if (isPlainObject(vFor)) {\n          context = Object.keys(vFor).find(function (vForKey) {\n            return vm.__get_value(propPath, vFor[vForKey]) === value;\n          });\n        } else {\n          console.error('v-for 暂不支持循环数据：', vFor);\n        }\n      }\n\n      if (valuePath) {\n        context = vm.__get_value(valuePath, context);\n      }\n    }\n  });\n  return context;\n}\n\nfunction processEventExtra(vm, extra, event) {\n  var extraObj = {};\n\n  if (Array.isArray(extra) && extra.length) {\n    /**\n                                                  *[\n                                                  *    ['data.items', 'data.id', item.data.id],\n                                                  *    ['metas', 'id', meta.id]\n                                                  *],\n                                                  *[\n                                                  *    ['data.items', 'data.id', item.data.id],\n                                                  *    ['metas', 'id', meta.id]\n                                                  *],\n                                                  *'test'\n                                                  */\n    extra.forEach(function (dataPath, index) {\n      if (typeof dataPath === 'string') {\n        if (!dataPath) {// model,prop.sync\n          extraObj['$' + index] = vm;\n        } else {\n          if (dataPath === '$event') {// $event\n            extraObj['$' + index] = event;\n          } else if (dataPath.indexOf('$event.') === 0) {// $event.target.value\n            extraObj['$' + index] = vm.__get_value(dataPath.replace('$event.', ''), event);\n          } else {\n            extraObj['$' + index] = vm.__get_value(dataPath);\n          }\n        }\n      } else {\n        extraObj['$' + index] = getExtraValue(vm, dataPath);\n      }\n    });\n  }\n\n  return extraObj;\n}\n\nfunction getObjByArray(arr) {\n  var obj = {};\n  for (var i = 1; i < arr.length; i++) {\n    var element = arr[i];\n    obj[element[0]] = element[1];\n  }\n  return obj;\n}\n\nfunction processEventArgs(vm, event) {var args = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];var extra = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : [];var isCustom = arguments.length > 4 ? arguments[4] : undefined;var methodName = arguments.length > 5 ? arguments[5] : undefined;\n  var isCustomMPEvent = false; // wxcomponent 组件，传递原始 event 对象\n  if (isCustom) {// 自定义事件\n    isCustomMPEvent = event.currentTarget &&\n    event.currentTarget.dataset &&\n    event.currentTarget.dataset.comType === 'wx';\n    if (!args.length) {// 无参数，直接传入 event 或 detail 数组\n      if (isCustomMPEvent) {\n        return [event];\n      }\n      return event.detail.__args__ || event.detail;\n    }\n  }\n\n  var extraObj = processEventExtra(vm, extra, event);\n\n  var ret = [];\n  args.forEach(function (arg) {\n    if (arg === '$event') {\n      if (methodName === '__set_model' && !isCustom) {// input v-model value\n        ret.push(event.target.value);\n      } else {\n        if (isCustom && !isCustomMPEvent) {\n          ret.push(event.detail.__args__[0]);\n        } else {// wxcomponent 组件或内置组件\n          ret.push(event);\n        }\n      }\n    } else {\n      if (Array.isArray(arg) && arg[0] === 'o') {\n        ret.push(getObjByArray(arg));\n      } else if (typeof arg === 'string' && hasOwn(extraObj, arg)) {\n        ret.push(extraObj[arg]);\n      } else {\n        ret.push(arg);\n      }\n    }\n  });\n\n  return ret;\n}\n\nvar ONCE = '~';\nvar CUSTOM = '^';\n\nfunction isMatchEventType(eventType, optType) {\n  return eventType === optType ||\n\n  optType === 'regionchange' && (\n\n  eventType === 'begin' ||\n  eventType === 'end');\n\n\n}\n\nfunction handleEvent(event) {var _this = this;\n  event = wrapper$2(event);\n\n  // [['tap',[['handle',[1,2,a]],['handle1',[1,2,a]]]]]\n  var eventOpts = (event.currentTarget || event.target).dataset.eventOpts;\n  if (!eventOpts) {\n    return console.warn(\"\\u4E8B\\u4EF6\\u4FE1\\u606F\\u4E0D\\u5B58\\u5728\");\n  }\n\n  // [['handle',[1,2,a]],['handle1',[1,2,a]]]\n  var eventType = event.type;\n  eventOpts.forEach(function (eventOpt) {\n    var type = eventOpt[0];\n    var eventsArray = eventOpt[1];\n\n    var isCustom = type.charAt(0) === CUSTOM;\n    type = isCustom ? type.slice(1) : type;\n    var isOnce = type.charAt(0) === ONCE;\n    type = isOnce ? type.slice(1) : type;\n\n    if (eventsArray && isMatchEventType(eventType, type)) {\n      eventsArray.forEach(function (eventArray) {\n        var methodName = eventArray[0];\n        if (methodName) {\n          var handlerCtx = _this.$vm;\n          if (\n          handlerCtx.$options.generic &&\n          handlerCtx.$parent &&\n          handlerCtx.$parent.$parent)\n          {// mp-weixin,mp-toutiao 抽象节点模拟 scoped slots\n            handlerCtx = handlerCtx.$parent.$parent;\n          }\n          var handler = handlerCtx[methodName];\n          if (!isFn(handler)) {\n            throw new Error(\" _vm.\".concat(methodName, \" is not a function\"));\n          }\n          if (isOnce) {\n            if (handler.once) {\n              return;\n            }\n            handler.once = true;\n          }\n          handler.apply(handlerCtx, processEventArgs(\n          _this.$vm,\n          event,\n          eventArray[1],\n          eventArray[2],\n          isCustom,\n          methodName));\n\n        }\n      });\n    }\n  });\n}\n\nvar hooks = [\n'onShow',\n'onHide',\n'onError',\n'onPageNotFound'];\n\n\nfunction parseBaseApp(vm, _ref2)\n\n\n{var mocks = _ref2.mocks,initRefs = _ref2.initRefs;\n  _vue.default.prototype.mpHost = \"app-plus\";\n\n  _vue.default.mixin({\n    beforeCreate: function beforeCreate() {\n      if (!this.$options.mpType) {\n        return;\n      }\n\n      this.mpType = this.$options.mpType;\n\n      this.$mp = _defineProperty({\n        data: {} },\n      this.mpType, this.$options.mpInstance);\n\n\n      this.$scope = this.$options.mpInstance;\n\n      delete this.$options.mpType;\n      delete this.$options.mpInstance;\n\n      if (this.mpType !== 'app') {\n        initRefs(this);\n        initMocks(this, mocks);\n      }\n    } });\n\n\n  var appOptions = {\n    onLaunch: function onLaunch(args) {\n\n      this.$vm = vm;\n\n      this.$vm.$mp = {\n        app: this };\n\n\n      this.$vm.$scope = this;\n\n      this.$vm._isMounted = true;\n      this.$vm.__call_hook('mounted', args);\n\n      this.$vm.__call_hook('onLaunch', args);\n    } };\n\n\n  // 兼容旧版本 globalData\n  appOptions.globalData = vm.$options.globalData || {};\n\n  initHooks(appOptions, hooks);\n\n  return appOptions;\n}\n\nvar mocks = ['__route__', '__wxExparserNodeId__', '__wxWebviewId__'];\n\nfunction findVmByVueId(vm, vuePid) {\n  var $children = vm.$children;\n  // 优先查找直属\n  var parentVm = $children.find(function (childVm) {return childVm.$scope._$vueId === vuePid;});\n  if (parentVm) {\n    return parentVm;\n  }\n  // 反向递归查找\n  for (var i = $children.length - 1; i >= 0; i--) {\n    parentVm = findVmByVueId($children[i], vuePid);\n    if (parentVm) {\n      return parentVm;\n    }\n  }\n}\n\nfunction initBehavior(options) {\n  return Behavior(options);\n}\n\nfunction isPage() {\n  return !!this.route;\n}\n\nfunction initRelation(detail) {\n  this.triggerEvent('__l', detail);\n}\n\nfunction initRefs(vm) {\n  var mpInstance = vm.$scope;\n  Object.defineProperty(vm, '$refs', {\n    get: function get() {\n      var $refs = {};\n      var components = mpInstance.selectAllComponents('.vue-ref');\n      components.forEach(function (component) {\n        var ref = component.dataset.ref;\n        $refs[ref] = component.$vm || component;\n      });\n      var forComponents = mpInstance.selectAllComponents('.vue-ref-in-for');\n      forComponents.forEach(function (component) {\n        var ref = component.dataset.ref;\n        if (!$refs[ref]) {\n          $refs[ref] = [];\n        }\n        $refs[ref].push(component.$vm || component);\n      });\n      return $refs;\n    } });\n\n}\n\nfunction handleLink(event) {var _ref3 =\n\n\n\n  event.detail || event.value,vuePid = _ref3.vuePid,vueOptions = _ref3.vueOptions; // detail 是微信,value 是百度(dipatch)\n\n  var parentVm;\n\n  if (vuePid) {\n    parentVm = findVmByVueId(this.$vm, vuePid);\n  }\n\n  if (!parentVm) {\n    parentVm = this.$vm;\n  }\n\n  vueOptions.parent = parentVm;\n}\n\nfunction parseApp(vm) {\n  return parseBaseApp(vm, {\n    mocks: mocks,\n    initRefs: initRefs });\n\n}\n\nvar hooks$1 = [\n'onUniNViewMessage'];\n\n\nfunction parseApp$1(vm) {\n  var appOptions = parseApp(vm);\n\n  initHooks(appOptions, hooks$1);\n\n  return appOptions;\n}\n\nfunction createApp(vm) {\n  App(parseApp$1(vm));\n  return vm;\n}\n\nfunction parseBaseComponent(vueComponentOptions)\n\n\n{var _ref4 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},isPage$$1 = _ref4.isPage,initRelation$$1 = _ref4.initRelation;var _initVueComponent =\n  initVueComponent(_vue.default, vueComponentOptions),_initVueComponent2 = _slicedToArray(_initVueComponent, 2),VueComponent = _initVueComponent2[0],vueOptions = _initVueComponent2[1];\n\n  var componentOptions = {\n    options: {\n      multipleSlots: true,\n      addGlobalClass: true },\n\n    data: initData(vueOptions, _vue.default.prototype),\n    behaviors: initBehaviors(vueOptions, initBehavior),\n    properties: initProperties(vueOptions.props, false, vueOptions.__file),\n    lifetimes: {\n      attached: function attached() {\n        var properties = this.properties;\n\n        var options = {\n          mpType: isPage$$1.call(this) ? 'page' : 'component',\n          mpInstance: this,\n          propsData: properties };\n\n\n        initVueIds(properties.vueId, this);\n\n        // 处理父子关系\n        initRelation$$1.call(this, {\n          vuePid: this._$vuePid,\n          vueOptions: options });\n\n\n        // 初始化 vue 实例\n        this.$vm = new VueComponent(options);\n\n        // 处理$slots,$scopedSlots（暂不支持动态变化$slots）\n        initSlots(this.$vm, properties.vueSlots);\n\n        // 触发首次 setData\n        this.$vm.$mount();\n      },\n      ready: function ready() {\n        // 当组件 props 默认值为 true，初始化时传入 false 会导致 created,ready 触发, 但 attached 不触发\n        // https://developers.weixin.qq.com/community/develop/doc/00066ae2844cc0f8eb883e2a557800\n        if (this.$vm) {\n          this.$vm._isMounted = true;\n          this.$vm.__call_hook('mounted');\n          this.$vm.__call_hook('onReady');\n        }\n      },\n      detached: function detached() {\n        this.$vm.$destroy();\n      } },\n\n    pageLifetimes: {\n      show: function show(args) {\n        this.$vm && this.$vm.__call_hook('onPageShow', args);\n      },\n      hide: function hide() {\n        this.$vm && this.$vm.__call_hook('onPageHide');\n      },\n      resize: function resize(size) {\n        this.$vm && this.$vm.__call_hook('onPageResize', size);\n      } },\n\n    methods: {\n      __l: handleLink,\n      __e: handleEvent } };\n\n\n\n  if (isPage$$1) {\n    return componentOptions;\n  }\n  return [componentOptions, VueComponent];\n}\n\nfunction parseComponent(vueComponentOptions) {\n  return parseBaseComponent(vueComponentOptions, {\n    isPage: isPage,\n    initRelation: initRelation });\n\n}\n\nfunction parseComponent$1(vueComponentOptions) {\n  var componentOptions = parseComponent(vueComponentOptions);\n\n  componentOptions.methods.$getAppWebview = function () {\n    return plus.webview.getWebviewById(\"\".concat(this.__wxWebviewId__));\n  };\n  return componentOptions;\n}\n\nvar hooks$2 = [\n'onShow',\n'onHide',\n'onUnload'];\n\n\nhooks$2.push.apply(hooks$2, PAGE_EVENT_HOOKS);\n\nfunction parseBasePage(vuePageOptions, _ref5)\n\n\n{var isPage = _ref5.isPage,initRelation = _ref5.initRelation;\n  var pageOptions = parseComponent$1(vuePageOptions, {\n    isPage: isPage,\n    initRelation: initRelation });\n\n\n  initHooks(pageOptions.methods, hooks$2);\n\n  pageOptions.methods.onLoad = function (args) {\n    this.$vm.$mp.query = args; // 兼容 mpvue\n    this.$vm.__call_hook('onLoad', args);\n  };\n\n  return pageOptions;\n}\n\nfunction parsePage(vuePageOptions) {\n  return parseBasePage(vuePageOptions, {\n    isPage: isPage,\n    initRelation: initRelation });\n\n}\n\nvar hooks$3 = [\n'onBackPress',\n'onNavigationBarButtonTap',\n'onNavigationBarSearchInputChanged',\n'onNavigationBarSearchInputConfirmed',\n'onNavigationBarSearchInputClicked'];\n\n\nfunction parsePage$1(vuePageOptions) {\n  var pageOptions = parsePage(vuePageOptions);\n\n  initHooks(pageOptions.methods, hooks$3);\n\n  return pageOptions;\n}\n\nfunction createPage(vuePageOptions) {\n  {\n    return Component(parsePage$1(vuePageOptions));\n  }\n}\n\nfunction createComponent(vueOptions) {\n  {\n    return Component(parseComponent$1(vueOptions));\n  }\n}\n\ntodos.forEach(function (todoApi) {\n  protocols[todoApi] = false;\n});\n\ncanIUses.forEach(function (canIUseApi) {\n  var apiName = protocols[canIUseApi] && protocols[canIUseApi].name ? protocols[canIUseApi].name :\n  canIUseApi;\n  if (!wx.canIUse(apiName)) {\n    protocols[canIUseApi] = false;\n  }\n});\n\nvar uni = {};\n\nif (typeof Proxy !== 'undefined') {\n  uni = new Proxy({}, {\n    get: function get(target, name) {\n      if (name === 'upx2px') {\n        return upx2px;\n      }\n      if (api[name]) {\n        return promisify(name, api[name]);\n      }\n      if (eventApi[name]) {\n        return eventApi[name];\n      }\n      if (!hasOwn(wx, name) && !hasOwn(protocols, name)) {\n        return;\n      }\n      return promisify(name, wrapper(name, wx[name]));\n    } });\n\n} else {\n  uni.upx2px = upx2px;\n\n  Object.keys(eventApi).forEach(function (name) {\n    uni[name] = eventApi[name];\n  });\n\n  Object.keys(api).forEach(function (name) {\n    uni[name] = promisify(name, api[name]);\n  });\n\n  Object.keys(wx).forEach(function (name) {\n    if (hasOwn(wx, name) || hasOwn(protocols, name)) {\n      uni[name] = promisify(name, wrapper(name, wx[name]));\n    }\n  });\n}\n\n{\n  if (typeof global !== 'undefined') {\n    global.UniEmitter = eventApi;\n  }\n}\n\nwx.createApp = createApp;\nwx.createPage = createPage;\nwx.createComponent = createComponent;\n\nvar uni$1 = uni;var _default =\n\nuni$1;exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/uni-app-plus/dist/index.js");
 
 /***/ }),
 
@@ -6255,7 +5805,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! ../uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniBadge = _interopRequireDefault(__webpack_require__(/*! ../uni-badge/uni-badge.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-badge/uni-badge.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default2 =\n{\n  name: 'uni-list-item',\n  components: {\n    uniIcon: _uniIcon.default,\n    uniBadge: _uniBadge.default },\n\n  data: function data() {\n    return {};\n\n\n  },\n  props: {\n    title: String, //列表标题\n    note: String, //列表描述\n    subnote: String, //列表右侧描述\n    disabled: { //是否禁用\n      type: [Boolean, String],\n      default: false },\n\n    showArrow: { //是否显示箭头\n      type: [Boolean, String],\n      default: true },\n\n    showBadge: { //是否显示数字角标\n      type: [Boolean, String],\n      default: false },\n\n    showSwitch: { //是否显示Switch\n      type: [Boolean, String],\n      default: false },\n\n    switchChecked: { //Switch是否被选中\n      type: [Boolean, String],\n      default: false },\n\n    badgeText: String, //badge内容\n    badgeType: { //badge类型\n      type: String,\n      default: 'success' },\n\n    thumb: String, //缩略图\n    showExtraIcon: { //是否显示扩展图标\n      type: [Boolean, String],\n      default: false },\n\n    extraIcon: {\n      type: Object,\n      default: function _default() {\n        return {\n          type: \"contact\",\n          color: \"#000000\",\n          size: \"20\" };\n\n      } } },\n\n\n\n  methods: {\n    onClick: function onClick() {\n      this.$emit('click');\n    },\n    onSwitchChange: function onSwitchChange(e) {\n      this.$emit('switchChange', e.detail);\n    } } };exports.default = _default2;\n\n//# sourceURL=uni-app:///components/list/uni-list-item/uni-list-item.vue?vue&type=script&lang=js&?0d5e");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! ../uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniBadge = _interopRequireDefault(__webpack_require__(/*! ../uni-badge/uni-badge.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-badge/uni-badge.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default2 =\n{\n  name: 'uni-list-item',\n  components: {\n    uniIcon: _uniIcon.default,\n    uniBadge: _uniBadge.default },\n\n  data: function data() {\n    return {};\n\n\n  },\n  props: {\n    title: String, //列表标题\n    note: String, //列表描述\n    subnote: String, //列表右侧描述\n    mustInput: { //是否必填\n      type: [Boolean, String],\n      default: false },\n\n    disabled: { //是否禁用\n      type: [Boolean, String],\n      default: false },\n\n    showArrow: { //是否显示箭头\n      type: [Boolean, String],\n      default: true },\n\n    showBadge: { //是否显示数字角标\n      type: [Boolean, String],\n      default: false },\n\n    showSwitch: { //是否显示Switch\n      type: [Boolean, String],\n      default: false },\n\n    switchChecked: { //Switch是否被选中\n      type: [Boolean, String],\n      default: false },\n\n    badgeText: String, //badge内容\n    badgeType: { //badge类型\n      type: String,\n      default: 'success' },\n\n    thumb: String, //缩略图\n    showExtraIcon: { //是否显示扩展图标\n      type: [Boolean, String],\n      default: false },\n\n    extraIcon: {\n      type: Object,\n      default: function _default() {\n        return {\n          type: \"contact\",\n          color: \"#000000\",\n          size: \"20\" };\n\n      } } },\n\n\n\n  methods: {\n    onClick: function onClick() {\n      this.$emit('click');\n    },\n    onSwitchChange: function onSwitchChange(e) {\n      this.$emit('switchChange', e.detail);\n    } } };exports.default = _default2;\n\n//# sourceURL=uni-app:///components/list/uni-list-item/uni-list-item.vue?vue&type=script&lang=js&?0d5e");
 
 /***/ }),
 
@@ -6416,7 +5966,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    {\n      staticClass: \"uni-list-cell\",\n      class: [\n        _vm.disabled === true || _vm.disabled === \"true\"\n          ? \"uni-list-cell--disabled\"\n          : \"\"\n      ],\n      attrs: {\n        \"hover-class\":\n          _vm.disabled === true ||\n          _vm.disabled === \"true\" ||\n          _vm.showSwitch === true ||\n          _vm.showSwitch === \"true\"\n            ? \"\"\n            : \"uni-list-cell--hover\",\n        eventid: \"30c48a99-1\"\n      },\n      on: { click: _vm.onClick }\n    },\n    [\n      _c(\"view\", { staticClass: \"uni-list-cell__container\" }, [\n        _vm.thumb\n          ? _c(\"view\", { staticClass: \"uni-list-cell__icon\" }, [\n              _c(\"image\", {\n                staticClass: \"uni-list-cell__icon-img\",\n                attrs: { src: _vm.thumb }\n              })\n            ])\n          : _vm.showExtraIcon === true || _vm.showExtraIcon === \"true\"\n          ? _c(\n              \"view\",\n              { staticClass: \"uni-list-cell__icon\" },\n              [\n                _c(\"uni-icon\", {\n                  attrs: {\n                    color: _vm.extraIcon.color,\n                    size: _vm.extraIcon.size,\n                    type: _vm.extraIcon.type,\n                    mpcomid: \"30c48a99-0\"\n                  }\n                })\n              ],\n              1\n            )\n          : _vm._e(),\n        _c(\"view\", { staticClass: \"uni-list-cell__content\" }, [\n          _c(\"view\", { staticClass: \"uni-list-cell__content-title\" }, [\n            _vm._v(_vm._s(_vm.title))\n          ]),\n          _vm.note\n            ? _c(\"view\", { staticClass: \"uni-list-cell__content-note\" }, [\n                _vm._v(_vm._s(_vm.note))\n              ])\n            : _vm._e()\n        ]),\n        _vm.subnote ||\n        _vm.showBadge === true ||\n        _vm.showBadge === \"true\" ||\n        _vm.showArrow === true ||\n        _vm.showArrow === \"true\" ||\n        _vm.showSwitch === true ||\n        _vm.showSwitch === \"true\"\n          ? _c(\n              \"view\",\n              { staticClass: \"uni-list-cell__extra\" },\n              [\n                _vm.subnote\n                  ? _c(\"view\", { staticClass: \"uni-list-cell__content-note\" }, [\n                      _vm._v(_vm._s(_vm.subnote))\n                    ])\n                  : _vm._e(),\n                _vm.showBadge === true || _vm.showBadge === \"true\"\n                  ? _c(\"uni-badge\", {\n                      attrs: {\n                        type: _vm.badgeType,\n                        text: _vm.badgeText,\n                        mpcomid: \"30c48a99-1\"\n                      }\n                    })\n                  : _vm._e(),\n                _vm.showSwitch === true || _vm.showSwitch === \"true\"\n                  ? _c(\"switch\", {\n                      attrs: {\n                        disabled: _vm.disabled,\n                        checked: _vm.switchChecked,\n                        eventid: \"30c48a99-0\"\n                      },\n                      on: { change: _vm.onSwitchChange }\n                    })\n                  : _vm._e(),\n                _vm.showArrow === true || _vm.showArrow === \"true\"\n                  ? _c(\"uni-icon\", {\n                      attrs: {\n                        color: \"#bbb\",\n                        size: \"20\",\n                        type: \"arrowright\",\n                        mpcomid: \"30c48a99-2\"\n                      }\n                    })\n                  : _vm._e()\n              ],\n              1\n            )\n          : _vm._e()\n      ])\n    ]\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue?vue&type=template&id=077181dd&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    {\n      staticClass: \"uni-list-cell\",\n      class: [\n        _vm.disabled === true || _vm.disabled === \"true\"\n          ? \"uni-list-cell--disabled\"\n          : \"\"\n      ],\n      attrs: {\n        \"hover-class\":\n          _vm.disabled === true ||\n          _vm.disabled === \"true\" ||\n          _vm.showSwitch === true ||\n          _vm.showSwitch === \"true\"\n            ? \"\"\n            : \"uni-list-cell--hover\",\n        eventid: \"30c48a99-1\"\n      },\n      on: { click: _vm.onClick }\n    },\n    [\n      _c(\"view\", { staticClass: \"uni-list-cell__container\" }, [\n        _vm.thumb\n          ? _c(\"view\", { staticClass: \"uni-list-cell__icon\" }, [\n              _c(\"image\", {\n                staticClass: \"uni-list-cell__icon-img\",\n                attrs: { src: _vm.thumb }\n              })\n            ])\n          : _vm.showExtraIcon === true || _vm.showExtraIcon === \"true\"\n          ? _c(\n              \"view\",\n              { staticClass: \"uni-list-cell__icon\" },\n              [\n                _c(\"uni-icon\", {\n                  attrs: {\n                    color: _vm.extraIcon.color,\n                    size: _vm.extraIcon.size,\n                    type: _vm.extraIcon.type,\n                    mpcomid: \"30c48a99-0\"\n                  }\n                })\n              ],\n              1\n            )\n          : _vm._e(),\n        _c(\"view\", { staticClass: \"uni-list-cell__content\" }, [\n          _c(\"view\", { staticClass: \"rowView\" }, [\n            _c(\"view\", { staticClass: \"uni-list-cell__content-title\" }, [\n              _vm._v(_vm._s(_vm.title))\n            ]),\n            _vm.mustInput === true || _vm.mustInput === \"true\"\n              ? _c(\"view\", { staticClass: \"mustView\" }, [_vm._v(\"*\")])\n              : _vm._e()\n          ]),\n          _vm.note\n            ? _c(\"view\", { staticClass: \"uni-list-cell__content-note\" }, [\n                _vm._v(_vm._s(_vm.note))\n              ])\n            : _vm._e()\n        ]),\n        _vm.subnote ||\n        _vm.showBadge === true ||\n        _vm.showBadge === \"true\" ||\n        _vm.showArrow === true ||\n        _vm.showArrow === \"true\" ||\n        _vm.showSwitch === true ||\n        _vm.showSwitch === \"true\"\n          ? _c(\n              \"view\",\n              { staticClass: \"uni-list-cell__extra\" },\n              [\n                _vm.subnote\n                  ? _c(\"view\", { staticClass: \"uni-list-cell__content-note\" }, [\n                      _vm._v(_vm._s(_vm.subnote))\n                    ])\n                  : _vm._e(),\n                _vm.showBadge === true || _vm.showBadge === \"true\"\n                  ? _c(\"uni-badge\", {\n                      attrs: {\n                        type: _vm.badgeType,\n                        text: _vm.badgeText,\n                        mpcomid: \"30c48a99-1\"\n                      }\n                    })\n                  : _vm._e(),\n                _vm.showSwitch === true || _vm.showSwitch === \"true\"\n                  ? _c(\"switch\", {\n                      attrs: {\n                        disabled: _vm.disabled,\n                        checked: _vm.switchChecked,\n                        eventid: \"30c48a99-0\"\n                      },\n                      on: { change: _vm.onSwitchChange }\n                    })\n                  : _vm._e(),\n                _vm.showArrow === true || _vm.showArrow === \"true\"\n                  ? _c(\"uni-icon\", {\n                      attrs: {\n                        color: \"#bbb\",\n                        size: \"20\",\n                        type: \"arrowright\",\n                        mpcomid: \"30c48a99-2\"\n                      }\n                    })\n                  : _vm._e()\n              ],\n              1\n            )\n          : _vm._e()\n      ])\n    ]\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue?vue&type=template&id=077181dd&");
 
 /***/ }),
 
@@ -6507,6 +6057,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 });
 
 define('app.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+
 require('./common/runtime.js')
 require('./common/vendor.js')
 require('./common/main.js')
@@ -6610,7 +6161,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      {\n        staticClass: \"topView_pc\",\n        attrs: { eventid: \"00cb397a-0\" },\n        on: {\n          tap: function($event) {\n            _vm.jumpPage(\"../statistics/statistics\")\n          }\n        }\n      },\n      [\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"积分排名\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.jfpm))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"获固定积分\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.gdjf))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"获主动积分\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.zdjf))\n          ])\n        ])\n      ]\n    ),\n    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-1\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../check/checkList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/jc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(0)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../danger/dangerList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/yh.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(1)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-3\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../charts/chartsTypeList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/tj.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(2)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-4\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../peixun/peixunList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/pxkc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(3)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-5\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/gonggaoList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/gg.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(4)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-6\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/newsList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/xw.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(5)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-7\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/pointRank\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/cn.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(6)\n        ]\n      ),\n      _c(\"view\", { staticClass: \"dangerView\" }),\n      _c(\"view\", { staticClass: \"dangerView\" })\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"检查\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"隐患\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"统计\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"培训\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"通知公告\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"公司新闻\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"积分排名\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/main/main.vue?vue&type=template&id=7f19db84&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      {\n        staticClass: \"topView_pc\",\n        attrs: { eventid: \"00cb397a-0\" },\n        on: {\n          tap: function($event) {\n            _vm.getPoints()\n          }\n        }\n      },\n      [\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"隐患总数\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.yhzsl))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"整改中\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.zgzyhsl))\n          ])\n        ]),\n        _c(\"view\", { staticClass: \"topItemView\" }, [\n          _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"超期未整改\")]),\n          _c(\"text\", { staticClass: \"topTextNum\" }, [\n            _vm._v(_vm._s(_vm.pointModel.cqwgz))\n          ])\n        ])\n      ]\n    ),\n    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-1\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../check/checkList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/jc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(0)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../danger/dangerList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/yh.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(1)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-3\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../charts/chartsTypeList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/tj.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(2)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-4\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../peixun/peixunList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/pxkc.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(3)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-5\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/gonggaoList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/gg.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(4)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-6\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/newsList\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/xw.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(5)\n        ]\n      ),\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"00cb397a-7\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpPage(\"../other/pointRank\")\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/assets/cn.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(6)\n        ]\n      ),\n      _c(\"view\", { staticClass: \"dangerView\" }),\n      _c(\"view\", { staticClass: \"dangerView\" })\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"检查\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"隐患\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"统计\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"培训\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"通知公告\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"公司新闻\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"积分排名\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/main/main.vue?vue&type=template&id=7f19db84&");
 
 /***/ })
 
@@ -7159,7 +6710,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"center\" }, [\n    _c(\n      \"view\",\n      { staticClass: \"logo\", attrs: { \"hover-class\": _vm.logo - _vm.hover } },\n      [\n        _c(\"image\", {\n          staticClass: \"logo-img\",\n          attrs: { src: _vm.avatarUrl, eventid: \"240234ba-0\" },\n          on: { click: _vm.changeUserPhoto }\n        }),\n        _c(\n          \"view\",\n          { staticClass: \"logo-title\" },\n          [\n            _vm.hasLogin\n              ? _c(\"view\", { staticClass: \"infoView\" }, [\n                  _c(\"text\", { staticClass: \"uer-name\" }, [\n                    _vm._v(\"你好，\" + _vm._s(_vm.userInfo.username))\n                  ]),\n                  _c(\"text\", { staticClass: \"uer-code\" }, [\n                    _vm._v(\"工号：\" + _vm._s(_vm.userInfo.usercode))\n                  ]),\n                  _c(\"text\", { staticClass: \"uer-code\" }, [\n                    _vm._v(\n                      _vm._s(\n                        \"积分：\" +\n                          _vm.pointModel.zf +\n                          \"分 | 排名：\" +\n                          _vm.pointModel.jfpm\n                      )\n                    )\n                  ])\n                ])\n              : _vm._e(),\n            !_vm.hasLogin\n              ? _c(\n                  \"button\",\n                  {\n                    staticClass: \"primary\",\n                    attrs: { type: \"primary\", eventid: \"240234ba-1\" },\n                    on: { tap: _vm.bindLogin }\n                  },\n                  [_vm._v(\"点击登录\")]\n                )\n              : _vm._e()\n          ],\n          1\n        )\n      ]\n    ),\n    _c(\"view\", { staticClass: \"userinfo\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"240234ba-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpAccountEdit()\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/img/setting.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(0)\n        ]\n      )\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"设置\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/user/user.vue?vue&type=template&id=2d3a6d7e&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"center\" }, [\n    _c(\n      \"view\",\n      { staticClass: \"logo\", attrs: { \"hover-class\": _vm.logo - _vm.hover } },\n      [\n        _c(\"image\", {\n          staticClass: \"logo-img\",\n          attrs: { src: _vm.avatarUrl, eventid: \"240234ba-0\" },\n          on: { click: _vm.changeUserPhoto }\n        }),\n        _c(\n          \"view\",\n          { staticClass: \"logo-title\" },\n          [\n            _vm.hasLogin\n              ? _c(\"view\", { staticClass: \"infoView\" }, [\n                  _c(\"text\", { staticClass: \"uer-name\" }, [\n                    _vm._v(\"你好，\" + _vm._s(_vm.userInfo.username))\n                  ]),\n                  _c(\"text\", { staticClass: \"uer-code\" }, [\n                    _vm._v(\"工号：\" + _vm._s(_vm.userInfo.usercode))\n                  ])\n                ])\n              : _vm._e(),\n            !_vm.hasLogin\n              ? _c(\n                  \"button\",\n                  {\n                    staticClass: \"primary\",\n                    attrs: { type: \"primary\", eventid: \"240234ba-1\" },\n                    on: { tap: _vm.bindLogin }\n                  },\n                  [_vm._v(\"点击登录\")]\n                )\n              : _vm._e()\n          ],\n          1\n        )\n      ]\n    ),\n    _c(\"view\", { staticClass: \"userinfo\" }, [\n      _c(\n        \"view\",\n        {\n          staticClass: \"dangerView\",\n          attrs: { eventid: \"240234ba-2\" },\n          on: {\n            tap: function($event) {\n              _vm.jumpAccountEdit()\n            }\n          }\n        },\n        [\n          _c(\"image\", {\n            staticClass: \"dangerIcon\",\n            attrs: { src: \"../../static/img/setting.png\", mode: \"widthFix\" }\n          }),\n          _vm._m(0)\n        ]\n      )\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"设置\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/user/user.vue?vue&type=template&id=2d3a6d7e&");
 
 /***/ })
 
@@ -7239,7 +6790,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _photoUtil = _interopRequireDefault(__webpack_require__(/*! ../../util/photoUtil.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/photoUtil.js\"));\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 模型对象\n      model: {\n        instanceid: '',\n        recordid: '',\n        // 隐患描述\n        yhms: '',\n        // 隐患等级\n        yhdj: '',\n        // 隐患后果\n        yhhg: '',\n        // 隐患类型\n        yhlx: '',\n        // 整改期限\n        zgqx: '',\n        // 隐患来源\n        yhly: '',\n        // 责任部门\n        zrbm: null },\n\n\n      // 照片相关\n      littleImageWidth: 0,\n      createImgList: [], // 新建隐患照片列表\n      changeImgList: [], // 整改隐患照片列表\n      confirmImgList: [], // 确认整改照片列表\n\n      // 状态：1、隐患信息可编辑，2、整改情况可编辑，3、整改确认可编辑，0，已整改，三个都不能编辑\n      // 包含start：只能填写隐患信息，包含zzzg：只能填写整改情况，包含zzyz：只能填写整改确认\n      pageState: 1,\n\n      // 数据源\n      dangerLevel: _dataConfig.default.dangerLevel,\n      dangerResult: _dataConfig.default.dangerResult,\n      dangerType: _dataConfig.default.dangerType,\n      dangerSource: _dataConfig.default.dangerSource,\n      changeOpinion: _dataConfig.default.changeOpinion,\n\n      dangerReason: _dataConfig.default.dangerReason,\n\n      // 页面UI相关\n      viewTop: null };\n\n  },\n  onLoad: function onLoad(option) {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    this.model.instanceid = option.instanceid == null ? \"\" : option.instanceid;\n    this.model.recordid = option.recordid == null ? \"\" : option.recordid;\n    if (this.model.instanceid != \"\" || this.model.recordid != \"\") {// 非新建\n      this.getDangerDetail();\n    } else {// 新建，发起人名称为当前userid\n      this.model.fqrid = this.userInfo.userid;\n      this.model.fqrmc = this.userInfo.username;\n    }\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    if (this.model.logList != null) {\n      uni.navigateTo({\n        url: \"dangerLog?logList=\" + JSON.stringify(this.model.logList) });\n\n    } else {\n      uni.showToast({\n        icon: 'none',\n        title: '暂无日志' });\n\n    }\n  },\n  onUnload: function onUnload() {\n    var pages = getCurrentPages();\n    var page = pages[pages.length - 2];\n    var currentWebview = page.$getAppWebview();\n    plus.webview.postMessageToUniNView({\n      refreshCode: \"REFRESH\" },\n    currentWebview.id);\n  },\n  methods: {\n    /*新建隐患相关*/\n    // 保存隐患\n    saveClick: function saveClick(e) {\n      var that = this;\n      that.model.userid = that.userInfo.userid;\n      // \t\t\t\tthat.model.fqrid = that.userInfo.userid;\n      // \t\t\t\tthat.model.fqrmc = that.userInfo.username;\n      that.model.zrbmid = that.model.zrbm == null ? \"\" : that.model.zrbm.id;\n      that.model.zrbmmc = that.model.zrbm == null ? \"\" : that.model.zrbm.name;\n\n      _request.default.requestLoading(_config.default.addDanger, that.model, '保存隐患',\n      function (res) {\n        that.model = res;\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功' });\n\n        that.uploadPhoto(false, function () {\n\n        });\n        // \t\t\t\t\t\tlet attachtype = that.getAttachtypeAndPhotoList().type;\n        // \t\t\t\t\t\tlet photoList = that.getAttachtypeAndPhotoList().photoList;\n        // \t\t\t\t\t\tphoto.uploadPhoto(that.userInfo.userid, res.recordid, attachtype, photoList, function(res){\n        // \t\t\t\t\t\t\tuni.showToast({\n        // \t\t\t\t\t\t\t\ticon: 'none',\n        // \t\t\t\t\t\t\t\ttitle: '保存成功'\n        // \t\t\t\t\t\t\t});\n        // \t\t\t\t\t\t});\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 流转隐患\n    roamClick: function roamClick(btnObj) {\n      var that = this;\n\n      that.model.userid = that.userInfo.userid;\n      that.model.operationname = btnObj.operationname;\n      that.model.nextstatusname = btnObj.nextstatusname;\n      that.model.prestatusname = btnObj.prestatusname;\n      that.model.flowtype = btnObj.flowtype;\n\n      _request.default.requestLoading(_config.default.flowDanger, that.model, '正在流转',\n      function (res) {\n        if (res.data == null && res.repCode == \"200\") {\n          that.uploadPhoto(true, function () {\n            uni.showToast({\n              icon: 'none',\n              title: res.repMsg });\n\n\n            setTimeout(function () {\n              uni.navigateBack({\n                delta: 1 });\n\n            }, 1000);\n          });\n\n          return;\n        }\n        var condition = res.data;\n        var key = \"DANGER_TRANSFER\";\n        uni.navigateTo({\n          url: \"../common/personChoose?key=\" + key + \"&condition=\" + condition + \"&mltiple=false\" });\n\n        that.$fire.once(key, function (person) {\n          that.flowDanger(person, btnObj);\n        });\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '流转失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 选完人后流转\n    flowDanger: function flowDanger(person, btnObj) {\n      var that = this;\n      that.model.receiverid = person.id;\n      _request.default.requestLoading(_config.default.flowDangerAfterChooseTarget, that.model, '正在流转',\n      function (res) {\n        that.uploadPhoto(true, function () {\n          uni.showToast({\n            icon: 'none',\n            title: res.repMsg });\n\n          setTimeout(function () {\n            uni.navigateBack({\n              delta: 1 });\n\n          }, 1000);\n        });\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '流转失败' });\n\n      }, function () {\n\n      });\n\n    },\n    /*隐患详情相关*/\n    getDangerDetail: function getDangerDetail() {\n      var that = this;\n      _request.default.requestLoading(_config.default.getDangerDetail, that.model, '正在加载',\n      function (res) {\n        // console.log('' + JSON.stringify(res));\n        that.model = res;\n        var zrbm = {\n          name: res.zrbmmc,\n          id: res.zrbmid };\n\n        that.model.zrbm = zrbm;\n        that.classifyPhotos(that.model.zplist);\n        if (that.model.controlcode == null) {\n          that.pageState = 0;\n          return;\n        }\n        if (that.model.controlcode.indexOf(\"start\") != -1) {// 包含start\n          that.pageState = 1;\n        } else if (that.model.controlcode.indexOf(\"zzzg\") != -1) {// 包含zzzg\n          that.pageState = 2;\n          that.model.zgrmc = that.userInfo.username;\n          that.model.zgrid = that.userInfo.userid;\n        } else if (that.model.controlcode.indexOf(\"yzfj\") != -1) {// 包含zzyz\n          that.pageState = 3;\n          that.model.yzrmc = that.userInfo.username;\n          that.model.yzrid = that.userInfo.userid;\n        }\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '加载失败' });\n\n      }, function () {\n\n      });\n\n    },\n\n    // 加载完隐患详情后把照片加到对应的List中\n    classifyPhotos: function classifyPhotos(photoList) {\n      if (photoList == null) {\n        return;\n      }\n      for (var i = 0; i < photoList.length; i++) {\n        var item = photoList[i];\n        var photoModel = {\n          fileid: item.attid,\n          src: _config.default.host + _config.default.loadImage + '&attid=' + item.attid,\n          type: 2,\n          yhid: item.zpsgrecordid,\n          attachtype: item.attachtype };\n\n\n        if (photoModel.attachtype == 'fxwt') {// 属于隐患信息的照片\n          this.createImgList.push(photoModel);\n        } else if (photoModel.attachtype == 'zzwt') {// 属于整改情况的照片\n          this.changeImgList.push(photoModel);\n        } else if (photoModel.attachtype == 'yzwt') {// 属于整改确认的照片\n          this.confirmImgList.push(photoModel);\n        }\n      }\n    },\n\n    /*通用方法相关*/\n    jumpInput: function jumpInput(key, placeholder, text, editableState) {var _this = this;\n      if (this.pageState != editableState) {\n        return;\n      }\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this.model[key] = result;\n        // console.log('' + JSON.stringify(this.model));\n      });\n    },\n    jumpOrgChoose: function jumpOrgChoose(key, editableState) {var _this2 = this;\n      if (this.pageState != editableState) {\n        return;\n      }\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify([]) + \"&key=\" + key + \"&mltiple=false\" });\n\n      this.$fire.once(key, function (result) {\n        console.log('' + JSON.stringify(result));\n        _this2.model[key] = result;\n      });\n    },\n    alertSheetShow: function alertSheetShow(key, list, editableState) {\n      var that = this;\n      if (that.pageState != editableState) {\n        return;\n      }\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          that.model[key] = list[res.tapIndex];\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n    pickerChange: function pickerChange(data, e, editableState) {\n      if (this.pageState != editableState) {\n        return;\n      }\n      this.model[e.target.id] = data[e.target.value];\n    },\n    dateChange: function dateChange(key, e, editableState) {\n      if (this.pageState != editableState) {\n        return;\n      }\n      console.log('key:' + key + \",value:\" + e.target.value);\n      this.model[key] = e.target.value;\n    },\n    // 特殊的pickerChange，审批意见的选择\n    opinionSheetShow: function opinionSheetShow(key, list) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          if (res.tapIndex != 3) {\n            that.model[key] = list[res.tapIndex];\n          } else {\n            that.jumpInput(key, \"请输入审批意见\", that.model[key], that.pageState);\n          }\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n\n    // 添加照片\n    addPhoto: function addPhoto(imgListName) {\n      var that = this;\n      _photoUtil.default.addPhoto(function (photoList) {\n        that[imgListName] = that[imgListName].concat(photoList);\n      });\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgListName, imgObj, index) {\n      var that = this;\n      _photoUtil.default.deletePhoto(that[imgListName], imgObj, index, function (photoList) {\n        that[imgListName] = photoList;\n      });\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto(imgListName) {\n      _photoUtil.default.viewPhoto(this[imgListName]);\n    },\n    // 上传照片\n    uploadPhoto: function uploadPhoto() {var needBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;var complete = arguments.length > 1 ? arguments[1] : undefined;\n      var that = this;\n      var attachtype = that.getAttachtypeAndPhotoList().type;\n      var photoList = that.getAttachtypeAndPhotoList().photoList;\n      _photoUtil.default.uploadPhoto(that.userInfo.userid, that.model.recordid, attachtype, photoList, function (photoListOnServer) {\n        if (photoListOnServer.length > 0) {\n          uni.showToast({\n            icon: 'none',\n            title: '照片上传成功' });\n\n          that.createImgList = [];\n          that.changeImgList = [];\n          that.confirmImgList = [];\n          that.classifyPhotos(photoListOnServer);\n        }\n        complete();\n      });\n    },\n    // 获取上传图片用的attachtype和照片列表\n    getAttachtypeAndPhotoList: function getAttachtypeAndPhotoList() {\n      var obj = {};\n      if (this.pageState == 1) {\n        obj.type = \"fxwt\";\n        obj.photoList = this.createImgList;\n      } else if (this.pageState == 2) {\n        obj.type = \"zzwt\";\n        obj.photoList = this.changeImgList;\n      } else if (this.pageState == 3) {\n        obj.type = \"yzwt\";\n        obj.photoList = this.confirmImgList;\n      } else {\n        obj.type = \"\";\n        obj.photoList = [];\n      }\n      return obj;\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/dangerEdit.vue?vue&type=script&lang=js&?5347");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _photoUtil = _interopRequireDefault(__webpack_require__(/*! ../../util/photoUtil.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/photoUtil.js\"));\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 模型对象\n      model: {\n        instanceid: '',\n        recordid: '',\n        // 隐患描述\n        yhms: '',\n        // 隐患等级\n        yhdj: '',\n        // 隐患后果\n        yhhg: '',\n        // 隐患类型\n        yhlx: '',\n        // 整改期限\n        zgqx: '',\n        // 隐患来源\n        yhly: '',\n        // 责任部门\n        zrbm: null },\n\n\n      // 照片相关\n      littleImageWidth: 0,\n      createImgList: [], // 新建隐患照片列表\n      changeImgList: [], // 整改隐患照片列表\n      confirmImgList: [], // 确认整改照片列表\n\n      // 状态：1、隐患信息可编辑，2、整改情况可编辑，3、整改确认可编辑，0，已整改，三个都不能编辑\n      // 包含start：只能填写隐患信息，包含zzzg：只能填写整改情况，包含zzyz：只能填写整改确认\n      pageState: 1,\n\n      // 数据源\n      dangerLevel: _dataConfig.default.dangerLevel,\n      dangerResult: _dataConfig.default.dangerResult,\n      dangerType: _dataConfig.default.dangerType,\n      dangerSource: _dataConfig.default.dangerSource,\n      changeOpinion: _dataConfig.default.changeOpinion,\n\n      dangerReason: _dataConfig.default.dangerReason,\n\n      // 页面UI相关\n      viewTop: null };\n\n  },\n  onLoad: function onLoad(option) {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    this.model.instanceid = option.instanceid == null ? \"\" : option.instanceid;\n    this.model.recordid = option.recordid == null ? \"\" : option.recordid;\n    if (this.model.instanceid != \"\" || this.model.recordid != \"\") {// 非新建\n      this.getDangerDetail();\n    } else {// 新建，发起人名称为当前userid\n      this.model.fqrid = this.userInfo.userid;\n      this.model.fqrmc = this.userInfo.username;\n    }\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    if (this.model.logList != null) {\n      uni.navigateTo({\n        url: \"dangerLog?logList=\" + JSON.stringify(this.model.logList) });\n\n    } else {\n      uni.showToast({\n        icon: 'none',\n        title: '暂无日志' });\n\n    }\n  },\n  onUnload: function onUnload() {\n    var pages = getCurrentPages();\n    var page = pages[pages.length - 2];\n    var currentWebview = page.$getAppWebview();\n    plus.webview.postMessageToUniNView({\n      refreshCode: \"REFRESH\" },\n    currentWebview.id);\n  },\n  methods: {\n    /*新建隐患相关*/\n    // 保存隐患\n    saveClick: function saveClick(e) {\n      var that = this;\n\n      if (that.checkInput() != true) {\n        return;\n      }\n\n      that.model.userid = that.userInfo.userid;\n      // \t\t\t\tthat.model.fqrid = that.userInfo.userid;\n      // \t\t\t\tthat.model.fqrmc = that.userInfo.username;\n      that.model.zrbmid = that.model.zrbm == null ? \"\" : that.model.zrbm.id;\n      that.model.zrbmmc = that.model.zrbm == null ? \"\" : that.model.zrbm.name;\n\n      _request.default.requestLoading(_config.default.addDanger, that.model, '保存隐患',\n      function (res) {\n        that.model = res;\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功' });\n\n        that.uploadPhoto(false, function () {\n\n        });\n        // \t\t\t\t\t\tlet attachtype = that.getAttachtypeAndPhotoList().type;\n        // \t\t\t\t\t\tlet photoList = that.getAttachtypeAndPhotoList().photoList;\n        // \t\t\t\t\t\tphoto.uploadPhoto(that.userInfo.userid, res.recordid, attachtype, photoList, function(res){\n        // \t\t\t\t\t\t\tuni.showToast({\n        // \t\t\t\t\t\t\t\ticon: 'none',\n        // \t\t\t\t\t\t\t\ttitle: '保存成功'\n        // \t\t\t\t\t\t\t});\n        // \t\t\t\t\t\t});\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 判断必填项是否填\n    checkInput: function checkInput(e) {\n      if (this.pageState == 1) {// 隐患基本信息\n        if (this.model.yhms == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写隐患描述' });\n\n          return false;\n        } else if (this.model.yhdj == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写隐患等级' });\n\n          return false;\n        } else if (this.model.yhhg == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写隐患后果' });\n\n          return false;\n        } else if (this.model.yhlx == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写隐患类型' });\n\n          return false;\n        } else if (this.model.zgqx == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写整改期限' });\n\n          return false;\n        } else if (this.model.yhly == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写隐患来源' });\n\n          return false;\n        } else if (this.model.zrbm == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写责任部门' });\n\n          return false;\n        } else if (this.model.fqrmc == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写发起人' });\n\n          return false;\n        } else {\n          return true;\n        }\n      } else if (this.pageState == 2) {// 整改情况\n        if (this.model.rwhg == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写隐患因素' });\n\n          return false;\n        } else if (this.model.yyfx == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写原因分析' });\n\n          return false;\n        } else if (this.model.yhzgqk == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写整改情况' });\n\n          return false;\n        } else if (this.model.zgwcrq == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写完成日期' });\n\n          return false;\n        } else if (this.model.zgrmc == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写整改人' });\n\n          return false;\n        } else {\n          return true;\n        }\n      } else if (this.pageState == 3) {// 整改确认\n        if (this.model.yzqk == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写完成情况' });\n\n          return false;\n        } else if (this.model.yzrmc == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写确认人' });\n\n          return false;\n        } else if (this.model.yzrtxrq == '') {\n          uni.showToast({\n            icon: 'none',\n            title: '请填写填报日期' });\n\n          return false;\n        } else {\n          return true;\n        }\n      } else {\n        return true;\n      }\n    },\n    // 流转隐患\n    roamClick: function roamClick(btnObj) {\n      var that = this;\n\n      that.model.userid = that.userInfo.userid;\n      that.model.operationname = btnObj.operationname;\n      that.model.nextstatusname = btnObj.nextstatusname;\n      that.model.prestatusname = btnObj.prestatusname;\n      that.model.flowtype = btnObj.flowtype;\n\n      _request.default.requestLoading(_config.default.flowDanger, that.model, '正在流转',\n      function (res) {\n        if (res.data == null && res.repCode == \"200\") {\n          that.uploadPhoto(true, function () {\n            uni.showToast({\n              icon: 'none',\n              title: res.repMsg });\n\n\n            setTimeout(function () {\n              uni.navigateBack({\n                delta: 1 });\n\n            }, 1000);\n          });\n\n          return;\n        }\n        var condition = res.data;\n        var key = \"DANGER_TRANSFER\";\n        uni.navigateTo({\n          url: \"../common/personChoose?key=\" + key + \"&condition=\" + condition + \"&mltiple=false\" });\n\n        that.$fire.once(key, function (person) {\n          that.flowDanger(person, btnObj);\n        });\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '流转失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 选完人后流转\n    flowDanger: function flowDanger(person, btnObj) {\n      var that = this;\n      that.model.receiverid = person.id;\n      _request.default.requestLoading(_config.default.flowDangerAfterChooseTarget, that.model, '正在流转',\n      function (res) {\n        that.uploadPhoto(true, function () {\n          uni.showToast({\n            icon: 'none',\n            title: res.repMsg });\n\n          setTimeout(function () {\n            uni.navigateBack({\n              delta: 1 });\n\n          }, 1000);\n        });\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '流转失败' });\n\n      }, function () {\n\n      });\n\n    },\n    /*隐患详情相关*/\n    getDangerDetail: function getDangerDetail() {\n      var that = this;\n      _request.default.requestLoading(_config.default.getDangerDetail, that.model, '正在加载',\n      function (res) {\n        // console.log('' + JSON.stringify(res));\n        that.model = res;\n        var zrbm = {\n          name: res.zrbmmc,\n          id: res.zrbmid };\n\n        that.model.zrbm = zrbm;\n        that.classifyPhotos(that.model.zplist);\n        if (that.model.controlcode == null) {\n          that.pageState = 0;\n          return;\n        }\n        if (that.model.controlcode.indexOf(\"start\") != -1) {// 包含start\n          that.pageState = 1;\n        } else if (that.model.controlcode.indexOf(\"zzzg\") != -1) {// 包含zzzg\n          that.pageState = 2;\n          that.model.zgrmc = that.userInfo.username;\n          that.model.zgrid = that.userInfo.userid;\n        } else if (that.model.controlcode.indexOf(\"yzfj\") != -1) {// 包含zzyz\n          that.pageState = 3;\n          that.model.yzrmc = that.userInfo.username;\n          that.model.yzrid = that.userInfo.userid;\n        }\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '加载失败' });\n\n      }, function () {\n\n      });\n\n    },\n\n    // 加载完隐患详情后把照片加到对应的List中\n    classifyPhotos: function classifyPhotos(photoList) {\n      if (photoList == null) {\n        return;\n      }\n      for (var i = 0; i < photoList.length; i++) {\n        var item = photoList[i];\n        var photoModel = {\n          fileid: item.attid,\n          src: _config.default.host + _config.default.loadImage + '&attid=' + item.attid,\n          type: 2,\n          yhid: item.zpsgrecordid,\n          attachtype: item.attachtype };\n\n\n        if (photoModel.attachtype == 'fxwt') {// 属于隐患信息的照片\n          this.createImgList.push(photoModel);\n        } else if (photoModel.attachtype == 'zzwt') {// 属于整改情况的照片\n          this.changeImgList.push(photoModel);\n        } else if (photoModel.attachtype == 'yzwt') {// 属于整改确认的照片\n          this.confirmImgList.push(photoModel);\n        }\n      }\n    },\n\n    /*通用方法相关*/\n    jumpInput: function jumpInput(key, placeholder, text, editableState) {var _this = this;\n      if (this.pageState != editableState) {\n        return;\n      }\n      uni.navigateTo({\n        url: \"../common/inputPage?key=\" + key + \"&placeholder=\" + placeholder + \"&text=\" + text });\n\n      this.$fire.once(key, function (result) {\n        _this.model[key] = result;\n        // console.log('' + JSON.stringify(this.model));\n      });\n    },\n    jumpOrgChoose: function jumpOrgChoose(key, editableState) {var _this2 = this;\n      if (this.pageState != editableState) {\n        return;\n      }\n      uni.navigateTo({\n        url: \"../common/orgChoose?selected=\" + JSON.stringify([]) + \"&key=\" + key + \"&mltiple=false\" });\n\n      this.$fire.once(key, function (result) {\n        console.log('' + JSON.stringify(result));\n        _this2.model[key] = result;\n      });\n    },\n    alertSheetShow: function alertSheetShow(key, list, editableState) {\n      var that = this;\n      if (that.pageState != editableState) {\n        return;\n      }\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          that.model[key] = list[res.tapIndex];\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n    pickerChange: function pickerChange(data, e, editableState) {\n      if (this.pageState != editableState) {\n        return;\n      }\n      this.model[e.target.id] = data[e.target.value];\n    },\n    dateChange: function dateChange(key, e, editableState) {\n      if (this.pageState != editableState) {\n        return;\n      }\n      console.log('key:' + key + \",value:\" + e.target.value);\n      this.model[key] = e.target.value;\n    },\n    // 特殊的pickerChange，审批意见的选择\n    opinionSheetShow: function opinionSheetShow(key, list) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: list,\n        success: function success(res) {\n          if (res.tapIndex != 3) {\n            that.model[key] = list[res.tapIndex];\n          } else {\n            that.jumpInput(key, \"请输入审批意见\", that.model[key], that.pageState);\n          }\n        },\n        fail: function fail(res) {\n          // console.log(res.errMsg);\n        } });\n\n    },\n\n    // 添加照片\n    addPhoto: function addPhoto(imgListName) {\n      var that = this;\n      _photoUtil.default.addPhoto(function (photoList) {\n        that[imgListName] = that[imgListName].concat(photoList);\n      });\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgListName, imgObj, index) {\n      var that = this;\n      _photoUtil.default.deletePhoto(that[imgListName], imgObj, index, function (photoList) {\n        that[imgListName] = photoList;\n      });\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto(imgListName) {\n      _photoUtil.default.viewPhoto(this[imgListName]);\n    },\n    // 上传照片\n    uploadPhoto: function uploadPhoto() {var needBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;var complete = arguments.length > 1 ? arguments[1] : undefined;\n      var that = this;\n      var attachtype = that.getAttachtypeAndPhotoList().type;\n      var photoList = that.getAttachtypeAndPhotoList().photoList;\n      _photoUtil.default.uploadPhoto(that.userInfo.userid, that.model.recordid, attachtype, photoList, function (photoListOnServer) {\n        if (photoListOnServer.length > 0) {\n          uni.showToast({\n            icon: 'none',\n            title: '照片上传成功' });\n\n          that.createImgList = [];\n          that.changeImgList = [];\n          that.confirmImgList = [];\n          that.classifyPhotos(photoListOnServer);\n        }\n        complete();\n      });\n    },\n    // 获取上传图片用的attachtype和照片列表\n    getAttachtypeAndPhotoList: function getAttachtypeAndPhotoList() {\n      var obj = {};\n      if (this.pageState == 1) {\n        obj.type = \"fxwt\";\n        obj.photoList = this.createImgList;\n      } else if (this.pageState == 2) {\n        obj.type = \"zzwt\";\n        obj.photoList = this.changeImgList;\n      } else if (this.pageState == 3) {\n        obj.type = \"yzwt\";\n        obj.photoList = this.confirmImgList;\n      } else {\n        obj.type = \"\";\n        obj.photoList = [];\n      }\n      return obj;\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/dangerEdit.vue?vue&type=script&lang=js&?5347");
 
 /***/ }),
 
@@ -7262,7 +6813,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\", attrs: { id: \"baseView\" } },\n    [\n      _c(\"view\", { staticClass: \"cellTitleView\" }, [\n        _vm.model.docstatus == null || _vm.model.docstatus == \"\"\n          ? _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"隐患信息\")])\n          : _vm._e(),\n        _vm.model.docstatus != null && _vm.model.docstatus != \"\"\n          ? _c(\"text\", { staticClass: \"cellTitle\" }, [\n              _vm._v(\n                \"隐患信息（当前状态：\" + _vm._s(_vm.model.docstatus) + \"）\"\n              )\n            ])\n          : _vm._e()\n      ]),\n      _c(\n        \"view\",\n        { staticClass: \"cellInfoView\" },\n        [\n          _c(\n            \"uni-list\",\n            { attrs: { mpcomid: \"5c0aa864-8\" } },\n            [\n              _c(\"uni-list-item\", {\n                attrs: {\n                  title: \"隐患描述\",\n                  note: _vm.model.yhms,\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-0\",\n                  mpcomid: \"5c0aa864-0\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.jumpInput(\"yhms\", \"请输入隐患描述\", _vm.model.yhms, 1)\n                  }\n                }\n              }),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  title: \"隐患等级\",\n                  subnote: _vm.model.yhdj,\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-1\",\n                  mpcomid: \"5c0aa864-1\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.alertSheetShow(\"yhdj\", _vm.dangerLevel, 1)\n                  }\n                }\n              }),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  title: \"隐患后果\",\n                  subnote: _vm.model.yhhg,\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-2\",\n                  mpcomid: \"5c0aa864-2\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.alertSheetShow(\"yhhg\", _vm.dangerResult, 1)\n                  }\n                }\n              }),\n              _c(\n                \"picker\",\n                {\n                  attrs: {\n                    id: \"yhlx\",\n                    range: _vm.dangerType,\n                    disabled: _vm.pageState == 1 ? false : true,\n                    eventid: \"5c0aa864-3\"\n                  },\n                  on: {\n                    change: function($event) {\n                      _vm.pickerChange(_vm.dangerType, $event, 1)\n                    }\n                  }\n                },\n                [\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"隐患类型\",\n                      subnote: _vm.model.yhlx,\n                      \"show-arrow\": _vm.pageState == 1 ? true : false,\n                      mpcomid: \"5c0aa864-3\"\n                    }\n                  })\n                ],\n                1\n              ),\n              _c(\n                \"picker\",\n                {\n                  attrs: {\n                    mode: \"date\",\n                    value: _vm.model.zgqx,\n                    disabled: _vm.pageState == 1 ? false : true,\n                    eventid: \"5c0aa864-4\"\n                  },\n                  on: {\n                    change: function($event) {\n                      _vm.dateChange(\"zgqx\", $event, 1)\n                    }\n                  }\n                },\n                [\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"整改期限\",\n                      subnote: _vm.model.zgqx,\n                      \"show-arrow\": _vm.pageState == 1 ? true : false,\n                      mpcomid: \"5c0aa864-4\"\n                    }\n                  })\n                ],\n                1\n              ),\n              _c(\n                \"picker\",\n                {\n                  attrs: {\n                    id: \"yhly\",\n                    range: _vm.dangerSource,\n                    disabled: _vm.pageState == 1 ? false : true,\n                    eventid: \"5c0aa864-5\"\n                  },\n                  on: {\n                    change: function($event) {\n                      _vm.pickerChange(_vm.dangerSource, $event, 1)\n                    }\n                  }\n                },\n                [\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"隐患来源\",\n                      subnote: _vm.model.yhly,\n                      \"show-arrow\": _vm.pageState == 1 ? true : false,\n                      mpcomid: \"5c0aa864-5\"\n                    }\n                  })\n                ],\n                1\n              ),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  title: \"责任部门\",\n                  subnote: _vm.model.zrbm ? _vm.model.zrbm.name : \"\",\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-6\",\n                  mpcomid: \"5c0aa864-6\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.jumpOrgChoose(\"zrbm\", 1)\n                  }\n                }\n              }),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  title: \"发起人\",\n                  subnote: _vm.model.fqrmc,\n                  \"show-arrow\": \"false\",\n                  mpcomid: \"5c0aa864-7\"\n                }\n              })\n            ],\n            1\n          ),\n          _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n            _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n              _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n              _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                _vm._v(_vm._s(_vm.createImgList.length))\n              ])\n            ]),\n            _c(\n              \"view\",\n              { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n              [\n                _vm._l(_vm.createImgList, function(imgObj, idx) {\n                  return _c(\"block\", { key: idx }, [\n                    _c(\n                      \"view\",\n                      {\n                        staticClass: \"littleImageView\",\n                        style: {\n                          width: _vm.littleImageWidth + \"px\",\n                          height: _vm.littleImageWidth + \"px\"\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"littleImage\",\n                          attrs: {\n                            id: idx,\n                            src: imgObj.src,\n                            mode: \"aspectFit\",\n                            eventid: \"5c0aa864-7-\" + idx\n                          },\n                          on: {\n                            click: function($event) {\n                              _vm.viewPhoto(\"createImgList\")\n                            }\n                          }\n                        }),\n                        _vm.pageState == 1\n                          ? _c(\"image\", {\n                              staticClass: \"littleImageDelete\",\n                              attrs: {\n                                src: \"../../static/assets/delete.png\",\n                                id: idx,\n                                mode: \"aspectFit\",\n                                eventid: \"5c0aa864-8-\" + idx\n                              },\n                              on: {\n                                click: function($event) {\n                                  _vm.deleteImage(\"createImgList\", imgObj, idx)\n                                }\n                              }\n                            })\n                          : _vm._e()\n                      ]\n                    )\n                  ])\n                }),\n                _vm.pageState == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"littleImageView\",\n                        style: {\n                          width: _vm.littleImageWidth + \"px\",\n                          height: _vm.littleImageWidth + \"px\"\n                        },\n                        attrs: { eventid: \"5c0aa864-9\" },\n                        on: {\n                          click: function($event) {\n                            _vm.addPhoto(\"createImgList\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"littleImage\",\n                          attrs: { src: \"../../static/assets/addImage.png\" }\n                        })\n                      ]\n                    )\n                  : _vm._e()\n              ],\n              2\n            )\n          ])\n        ],\n        1\n      ),\n      _c(\"block\", [\n        _c(\"view\", { staticClass: \"cellTitleView\" }, [\n          _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"整改情况\")])\n        ]),\n        _c(\n          \"view\",\n          { staticClass: \"cellInfoView\" },\n          [\n            _c(\n              \"uni-list\",\n              { attrs: { mpcomid: \"5c0aa864-14\" } },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"隐患因素\",\n                    subnote: _vm.model.rwhg,\n                    \"show-arrow\": _vm.pageState == 2 ? true : false,\n                    eventid: \"5c0aa864-10\",\n                    mpcomid: \"5c0aa864-9\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.alertSheetShow(\"rwhg\", _vm.dangerReason, 2)\n                    }\n                  }\n                }),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"原因分析\",\n                    note: _vm.model.yyfx,\n                    \"show-arrow\": _vm.pageState == 2 ? true : false,\n                    eventid: \"5c0aa864-11\",\n                    mpcomid: \"5c0aa864-10\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.jumpInput(\"yyfx\", \"请输入原因分析\", _vm.model.yyfx, 2)\n                    }\n                  }\n                }),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改情况\",\n                    note: _vm.model.yhzgqk,\n                    \"show-arrow\": _vm.pageState == 2 ? true : false,\n                    eventid: \"5c0aa864-12\",\n                    mpcomid: \"5c0aa864-11\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.jumpInput(\n                        \"yhzgqk\",\n                        \"请输入原因分析\",\n                        _vm.model.yhzgqk,\n                        2\n                      )\n                    }\n                  }\n                }),\n                _c(\n                  \"picker\",\n                  {\n                    attrs: {\n                      mode: \"date\",\n                      value: _vm.model.zgwcrq,\n                      disabled: _vm.pageState == 2 ? false : true,\n                      eventid: \"5c0aa864-13\"\n                    },\n                    on: {\n                      change: function($event) {\n                        _vm.dateChange(\"zgwcrq\", $event, 2)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"uni-list-item\", {\n                      attrs: {\n                        title: \"完成日期\",\n                        subnote: _vm.model.zgwcrq,\n                        \"show-arrow\": _vm.pageState == 2 ? true : false,\n                        mpcomid: \"5c0aa864-12\"\n                      }\n                    })\n                  ],\n                  1\n                ),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改人\",\n                    subnote: _vm.model.zgrmc,\n                    \"show-arrow\": \"false\",\n                    mpcomid: \"5c0aa864-13\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n              _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n                _c(\"text\", { staticClass: \"leftTextRow\" }, [\n                  _vm._v(\"整改照片\")\n                ]),\n                _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                  _vm._v(_vm._s(_vm.changeImgList.length))\n                ])\n              ]),\n              _c(\n                \"view\",\n                { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n                [\n                  _vm._l(_vm.changeImgList, function(imgObj, idx) {\n                    return _c(\"block\", { key: idx }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: {\n                              id: idx,\n                              src: imgObj.src,\n                              mode: \"aspectFit\",\n                              eventid: \"5c0aa864-14-\" + idx\n                            },\n                            on: {\n                              click: function($event) {\n                                _vm.viewPhoto(\"changeImgList\")\n                              }\n                            }\n                          }),\n                          _vm.pageState == 2\n                            ? _c(\"image\", {\n                                staticClass: \"littleImageDelete\",\n                                attrs: {\n                                  src: \"../../static/assets/delete.png\",\n                                  id: idx,\n                                  mode: \"aspectFit\",\n                                  eventid: \"5c0aa864-15-\" + idx\n                                },\n                                on: {\n                                  click: function($event) {\n                                    _vm.deleteImage(\n                                      \"changeImgList\",\n                                      imgObj,\n                                      idx\n                                    )\n                                  }\n                                }\n                              })\n                            : _vm._e()\n                        ]\n                      )\n                    ])\n                  }),\n                  _vm.pageState == 2\n                    ? _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          },\n                          attrs: { eventid: \"5c0aa864-16\" },\n                          on: {\n                            click: function($event) {\n                              _vm.addPhoto(\"changeImgList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: { src: \"../../static/assets/addImage.png\" }\n                          })\n                        ]\n                      )\n                    : _vm._e()\n                ],\n                2\n              )\n            ])\n          ],\n          1\n        )\n      ]),\n      _c(\"block\", [\n        _c(\"view\", { staticClass: \"cellTitleView\" }, [\n          _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"整改确认\")])\n        ]),\n        _c(\n          \"view\",\n          { staticClass: \"cellInfoView\" },\n          [\n            _c(\n              \"uni-list\",\n              { attrs: { mpcomid: \"5c0aa864-18\" } },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"完成情况\",\n                    note: _vm.model.yzqk,\n                    \"show-arrow\": _vm.pageState == 3 ? true : false,\n                    eventid: \"5c0aa864-17\",\n                    mpcomid: \"5c0aa864-15\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.jumpInput(\"yzqk\", \"请输入完成情况\", _vm.model.yzqk, 3)\n                    }\n                  }\n                }),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"确认人\",\n                    subnote: _vm.model.yzrmc,\n                    \"show-arrow\": \"false\",\n                    mpcomid: \"5c0aa864-16\"\n                  }\n                }),\n                _c(\n                  \"picker\",\n                  {\n                    attrs: {\n                      mode: \"date\",\n                      value: _vm.model.yzrtxrq,\n                      disabled: _vm.pageState == 3 ? false : true,\n                      eventid: \"5c0aa864-18\"\n                    },\n                    on: {\n                      change: function($event) {\n                        _vm.dateChange(\"yzrtxrq\", $event, 3)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"uni-list-item\", {\n                      attrs: {\n                        title: \"填报日期\",\n                        subnote: _vm.model.yzrtxrq,\n                        \"show-arrow\": _vm.pageState == 3 ? true : false,\n                        mpcomid: \"5c0aa864-17\"\n                      }\n                    })\n                  ],\n                  1\n                )\n              ],\n              1\n            ),\n            _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n              _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n                _c(\"text\", { staticClass: \"leftTextRow\" }, [\n                  _vm._v(\"验证照片\")\n                ]),\n                _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                  _vm._v(_vm._s(_vm.confirmImgList.length))\n                ])\n              ]),\n              _c(\n                \"view\",\n                { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n                [\n                  _vm._l(_vm.confirmImgList, function(imgObj, idx) {\n                    return _c(\"block\", { key: idx }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: {\n                              id: idx,\n                              src: imgObj.src,\n                              mode: \"aspectFit\",\n                              eventid: \"5c0aa864-19-\" + idx\n                            },\n                            on: {\n                              click: function($event) {\n                                _vm.viewPhoto(\"confirmImgList\")\n                              }\n                            }\n                          }),\n                          _vm.pageState == 3\n                            ? _c(\"image\", {\n                                staticClass: \"littleImageDelete\",\n                                attrs: {\n                                  src: \"../../static/assets/delete.png\",\n                                  id: idx,\n                                  mode: \"aspectFit\",\n                                  eventid: \"5c0aa864-20-\" + idx\n                                },\n                                on: {\n                                  click: function($event) {\n                                    _vm.deleteImage(\n                                      \"confirmImgList\",\n                                      imgObj,\n                                      idx\n                                    )\n                                  }\n                                }\n                              })\n                            : _vm._e()\n                        ]\n                      )\n                    ])\n                  }),\n                  _vm.pageState == 3\n                    ? _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          },\n                          attrs: { eventid: \"5c0aa864-21\" },\n                          on: {\n                            click: function($event) {\n                              _vm.addPhoto(\"confirmImgList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: { src: \"../../static/assets/addImage.png\" }\n                          })\n                        ]\n                      )\n                    : _vm._e()\n                ],\n                2\n              )\n            ])\n          ],\n          1\n        )\n      ]),\n      _c(\n        \"view\",\n        { staticClass: \"cellInfoView\" },\n        [\n          _c(\n            \"uni-list\",\n            { attrs: { mpcomid: \"5c0aa864-20\" } },\n            [\n              _vm.model.signclass != \"\" && _vm.model.signclass != null\n                ? _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"审批意见\",\n                      subnote: _vm.model.signature,\n                      \"show-arrow\": true,\n                      eventid: \"5c0aa864-22\",\n                      mpcomid: \"5c0aa864-19\"\n                    },\n                    on: {\n                      click: function($event) {\n                        _vm.opinionSheetShow(\"signature\", _vm.changeOpinion)\n                      }\n                    }\n                  })\n                : _vm._e()\n            ],\n            1\n          )\n        ],\n        1\n      ),\n      _vm.pageState != 0\n        ? _c(\n            \"view\",\n            { staticClass: \"btnView\" },\n            [\n              _c(\n                \"button\",\n                {\n                  staticClass: \"saveBtn\",\n                  attrs: { eventid: \"5c0aa864-23\" },\n                  on: { tap: _vm.saveClick }\n                },\n                [_vm._v(\"保存\")]\n              ),\n              _vm._l(_vm.model.flowbtnchooseflow, function(btnObj, index) {\n                return _c(\n                  \"block\",\n                  { key: index },\n                  [\n                    _c(\n                      \"button\",\n                      {\n                        staticClass: \"saveBtn\",\n                        attrs: { eventid: \"5c0aa864-24-\" + index },\n                        on: {\n                          tap: function($event) {\n                            _vm.roamClick(btnObj)\n                          }\n                        }\n                      },\n                      [_vm._v(_vm._s(btnObj.operationname))]\n                    )\n                  ],\n                  1\n                )\n              })\n            ],\n            2\n          )\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/danger/dangerEdit.vue?vue&type=template&id=8a65dfb0&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\", attrs: { id: \"baseView\" } },\n    [\n      _c(\"view\", { staticClass: \"cellTitleView\" }, [\n        _vm.model.docstatus == null || _vm.model.docstatus == \"\"\n          ? _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"隐患信息\")])\n          : _vm._e(),\n        _vm.model.docstatus != null && _vm.model.docstatus != \"\"\n          ? _c(\"text\", { staticClass: \"cellTitle\" }, [\n              _vm._v(\n                \"隐患信息（当前状态：\" + _vm._s(_vm.model.docstatus) + \"）\"\n              )\n            ])\n          : _vm._e()\n      ]),\n      _c(\n        \"view\",\n        { staticClass: \"cellInfoView\" },\n        [\n          _c(\n            \"uni-list\",\n            { attrs: { mpcomid: \"5c0aa864-8\" } },\n            [\n              _c(\"uni-list-item\", {\n                attrs: {\n                  mustInput: \"true\",\n                  title: \"隐患描述\",\n                  note: _vm.model.yhms,\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-0\",\n                  mpcomid: \"5c0aa864-0\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.jumpInput(\"yhms\", \"请输入隐患描述\", _vm.model.yhms, 1)\n                  }\n                }\n              }),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  mustInput: \"true\",\n                  title: \"隐患等级\",\n                  subnote: _vm.model.yhdj,\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-1\",\n                  mpcomid: \"5c0aa864-1\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.alertSheetShow(\"yhdj\", _vm.dangerLevel, 1)\n                  }\n                }\n              }),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  mustInput: \"true\",\n                  title: \"隐患后果\",\n                  subnote: _vm.model.yhhg,\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-2\",\n                  mpcomid: \"5c0aa864-2\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.alertSheetShow(\"yhhg\", _vm.dangerResult, 1)\n                  }\n                }\n              }),\n              _c(\n                \"picker\",\n                {\n                  attrs: {\n                    id: \"yhlx\",\n                    range: _vm.dangerType,\n                    disabled: _vm.pageState == 1 ? false : true,\n                    eventid: \"5c0aa864-3\"\n                  },\n                  on: {\n                    change: function($event) {\n                      _vm.pickerChange(_vm.dangerType, $event, 1)\n                    }\n                  }\n                },\n                [\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      mustInput: \"true\",\n                      title: \"隐患类型\",\n                      subnote: _vm.model.yhlx,\n                      \"show-arrow\": _vm.pageState == 1 ? true : false,\n                      mpcomid: \"5c0aa864-3\"\n                    }\n                  })\n                ],\n                1\n              ),\n              _c(\n                \"picker\",\n                {\n                  attrs: {\n                    mode: \"date\",\n                    value: _vm.model.zgqx,\n                    disabled: _vm.pageState == 1 ? false : true,\n                    eventid: \"5c0aa864-4\"\n                  },\n                  on: {\n                    change: function($event) {\n                      _vm.dateChange(\"zgqx\", $event, 1)\n                    }\n                  }\n                },\n                [\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      mustInput: \"true\",\n                      title: \"整改期限\",\n                      subnote: _vm.model.zgqx,\n                      \"show-arrow\": _vm.pageState == 1 ? true : false,\n                      mpcomid: \"5c0aa864-4\"\n                    }\n                  })\n                ],\n                1\n              ),\n              _c(\n                \"picker\",\n                {\n                  attrs: {\n                    id: \"yhly\",\n                    range: _vm.dangerSource,\n                    disabled: _vm.pageState == 1 ? false : true,\n                    eventid: \"5c0aa864-5\"\n                  },\n                  on: {\n                    change: function($event) {\n                      _vm.pickerChange(_vm.dangerSource, $event, 1)\n                    }\n                  }\n                },\n                [\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      mustInput: \"true\",\n                      title: \"隐患来源\",\n                      subnote: _vm.model.yhly,\n                      \"show-arrow\": _vm.pageState == 1 ? true : false,\n                      mpcomid: \"5c0aa864-5\"\n                    }\n                  })\n                ],\n                1\n              ),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  mustInput: \"true\",\n                  title: \"责任部门\",\n                  subnote: _vm.model.zrbm ? _vm.model.zrbm.name : \"\",\n                  \"show-arrow\": _vm.pageState == 1 ? true : false,\n                  eventid: \"5c0aa864-6\",\n                  mpcomid: \"5c0aa864-6\"\n                },\n                on: {\n                  click: function($event) {\n                    _vm.jumpOrgChoose(\"zrbm\", 1)\n                  }\n                }\n              }),\n              _c(\"uni-list-item\", {\n                attrs: {\n                  mustInput: \"true\",\n                  title: \"发起人\",\n                  subnote: _vm.model.fqrmc,\n                  \"show-arrow\": \"false\",\n                  mpcomid: \"5c0aa864-7\"\n                }\n              })\n            ],\n            1\n          ),\n          _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n            _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n              _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n              _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                _vm._v(_vm._s(_vm.createImgList.length))\n              ])\n            ]),\n            _c(\n              \"view\",\n              { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n              [\n                _vm._l(_vm.createImgList, function(imgObj, idx) {\n                  return _c(\"block\", { key: idx }, [\n                    _c(\n                      \"view\",\n                      {\n                        staticClass: \"littleImageView\",\n                        style: {\n                          width: _vm.littleImageWidth + \"px\",\n                          height: _vm.littleImageWidth + \"px\"\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"littleImage\",\n                          attrs: {\n                            id: idx,\n                            src: imgObj.src,\n                            mode: \"aspectFit\",\n                            eventid: \"5c0aa864-7-\" + idx\n                          },\n                          on: {\n                            click: function($event) {\n                              _vm.viewPhoto(\"createImgList\")\n                            }\n                          }\n                        }),\n                        _vm.pageState == 1\n                          ? _c(\"image\", {\n                              staticClass: \"littleImageDelete\",\n                              attrs: {\n                                src: \"../../static/assets/delete.png\",\n                                id: idx,\n                                mode: \"aspectFit\",\n                                eventid: \"5c0aa864-8-\" + idx\n                              },\n                              on: {\n                                click: function($event) {\n                                  _vm.deleteImage(\"createImgList\", imgObj, idx)\n                                }\n                              }\n                            })\n                          : _vm._e()\n                      ]\n                    )\n                  ])\n                }),\n                _vm.pageState == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"littleImageView\",\n                        style: {\n                          width: _vm.littleImageWidth + \"px\",\n                          height: _vm.littleImageWidth + \"px\"\n                        },\n                        attrs: { eventid: \"5c0aa864-9\" },\n                        on: {\n                          click: function($event) {\n                            _vm.addPhoto(\"createImgList\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"littleImage\",\n                          attrs: { src: \"../../static/assets/addImage.png\" }\n                        })\n                      ]\n                    )\n                  : _vm._e()\n              ],\n              2\n            )\n          ])\n        ],\n        1\n      ),\n      _c(\"block\", [\n        _c(\"view\", { staticClass: \"cellTitleView\" }, [\n          _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"整改情况\")])\n        ]),\n        _c(\n          \"view\",\n          { staticClass: \"cellInfoView\" },\n          [\n            _c(\n              \"uni-list\",\n              { attrs: { mpcomid: \"5c0aa864-14\" } },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    mustInput: \"true\",\n                    title: \"隐患因素\",\n                    subnote: _vm.model.rwhg,\n                    \"show-arrow\": _vm.pageState == 2 ? true : false,\n                    eventid: \"5c0aa864-10\",\n                    mpcomid: \"5c0aa864-9\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.alertSheetShow(\"rwhg\", _vm.dangerReason, 2)\n                    }\n                  }\n                }),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    mustInput: \"true\",\n                    title: \"原因分析\",\n                    note: _vm.model.yyfx,\n                    \"show-arrow\": _vm.pageState == 2 ? true : false,\n                    eventid: \"5c0aa864-11\",\n                    mpcomid: \"5c0aa864-10\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.jumpInput(\"yyfx\", \"请输入原因分析\", _vm.model.yyfx, 2)\n                    }\n                  }\n                }),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    mustInput: \"true\",\n                    title: \"整改情况\",\n                    note: _vm.model.yhzgqk,\n                    \"show-arrow\": _vm.pageState == 2 ? true : false,\n                    eventid: \"5c0aa864-12\",\n                    mpcomid: \"5c0aa864-11\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.jumpInput(\n                        \"yhzgqk\",\n                        \"请输入原因分析\",\n                        _vm.model.yhzgqk,\n                        2\n                      )\n                    }\n                  }\n                }),\n                _c(\n                  \"picker\",\n                  {\n                    attrs: {\n                      mode: \"date\",\n                      value: _vm.model.zgwcrq,\n                      disabled: _vm.pageState == 2 ? false : true,\n                      eventid: \"5c0aa864-13\"\n                    },\n                    on: {\n                      change: function($event) {\n                        _vm.dateChange(\"zgwcrq\", $event, 2)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"uni-list-item\", {\n                      attrs: {\n                        mustInput: \"true\",\n                        title: \"完成日期\",\n                        subnote: _vm.model.zgwcrq,\n                        \"show-arrow\": _vm.pageState == 2 ? true : false,\n                        mpcomid: \"5c0aa864-12\"\n                      }\n                    })\n                  ],\n                  1\n                ),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    mustInput: \"true\",\n                    title: \"整改人\",\n                    subnote: _vm.model.zgrmc,\n                    \"show-arrow\": \"false\",\n                    mpcomid: \"5c0aa864-13\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n              _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n                _c(\"text\", { staticClass: \"leftTextRow\" }, [\n                  _vm._v(\"整改照片\")\n                ]),\n                _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                  _vm._v(_vm._s(_vm.changeImgList.length))\n                ])\n              ]),\n              _c(\n                \"view\",\n                { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n                [\n                  _vm._l(_vm.changeImgList, function(imgObj, idx) {\n                    return _c(\"block\", { key: idx }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: {\n                              id: idx,\n                              src: imgObj.src,\n                              mode: \"aspectFit\",\n                              eventid: \"5c0aa864-14-\" + idx\n                            },\n                            on: {\n                              click: function($event) {\n                                _vm.viewPhoto(\"changeImgList\")\n                              }\n                            }\n                          }),\n                          _vm.pageState == 2\n                            ? _c(\"image\", {\n                                staticClass: \"littleImageDelete\",\n                                attrs: {\n                                  src: \"../../static/assets/delete.png\",\n                                  id: idx,\n                                  mode: \"aspectFit\",\n                                  eventid: \"5c0aa864-15-\" + idx\n                                },\n                                on: {\n                                  click: function($event) {\n                                    _vm.deleteImage(\n                                      \"changeImgList\",\n                                      imgObj,\n                                      idx\n                                    )\n                                  }\n                                }\n                              })\n                            : _vm._e()\n                        ]\n                      )\n                    ])\n                  }),\n                  _vm.pageState == 2\n                    ? _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          },\n                          attrs: { eventid: \"5c0aa864-16\" },\n                          on: {\n                            click: function($event) {\n                              _vm.addPhoto(\"changeImgList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: { src: \"../../static/assets/addImage.png\" }\n                          })\n                        ]\n                      )\n                    : _vm._e()\n                ],\n                2\n              )\n            ])\n          ],\n          1\n        )\n      ]),\n      _c(\"block\", [\n        _c(\"view\", { staticClass: \"cellTitleView\" }, [\n          _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"整改确认\")])\n        ]),\n        _c(\n          \"view\",\n          { staticClass: \"cellInfoView\" },\n          [\n            _c(\n              \"uni-list\",\n              { attrs: { mpcomid: \"5c0aa864-18\" } },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    mustInput: \"true\",\n                    title: \"完成情况\",\n                    note: _vm.model.yzqk,\n                    \"show-arrow\": _vm.pageState == 3 ? true : false,\n                    eventid: \"5c0aa864-17\",\n                    mpcomid: \"5c0aa864-15\"\n                  },\n                  on: {\n                    click: function($event) {\n                      _vm.jumpInput(\"yzqk\", \"请输入完成情况\", _vm.model.yzqk, 3)\n                    }\n                  }\n                }),\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    mustInput: \"true\",\n                    title: \"确认人\",\n                    subnote: _vm.model.yzrmc,\n                    \"show-arrow\": \"false\",\n                    mpcomid: \"5c0aa864-16\"\n                  }\n                }),\n                _c(\n                  \"picker\",\n                  {\n                    attrs: {\n                      mode: \"date\",\n                      value: _vm.model.yzrtxrq,\n                      disabled: _vm.pageState == 3 ? false : true,\n                      eventid: \"5c0aa864-18\"\n                    },\n                    on: {\n                      change: function($event) {\n                        _vm.dateChange(\"yzrtxrq\", $event, 3)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"uni-list-item\", {\n                      attrs: {\n                        mustInput: \"true\",\n                        title: \"填报日期\",\n                        subnote: _vm.model.yzrtxrq,\n                        \"show-arrow\": _vm.pageState == 3 ? true : false,\n                        mpcomid: \"5c0aa864-17\"\n                      }\n                    })\n                  ],\n                  1\n                )\n              ],\n              1\n            ),\n            _c(\"view\", { staticClass: \"cellImageBaseView\" }, [\n              _c(\"view\", { staticClass: \"cellImageTitleView\" }, [\n                _c(\"text\", { staticClass: \"leftTextRow\" }, [\n                  _vm._v(\"验证照片\")\n                ]),\n                _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                  _vm._v(_vm._s(_vm.confirmImgList.length))\n                ])\n              ]),\n              _c(\n                \"view\",\n                { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n                [\n                  _vm._l(_vm.confirmImgList, function(imgObj, idx) {\n                    return _c(\"block\", { key: idx }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: {\n                              id: idx,\n                              src: imgObj.src,\n                              mode: \"aspectFit\",\n                              eventid: \"5c0aa864-19-\" + idx\n                            },\n                            on: {\n                              click: function($event) {\n                                _vm.viewPhoto(\"confirmImgList\")\n                              }\n                            }\n                          }),\n                          _vm.pageState == 3\n                            ? _c(\"image\", {\n                                staticClass: \"littleImageDelete\",\n                                attrs: {\n                                  src: \"../../static/assets/delete.png\",\n                                  id: idx,\n                                  mode: \"aspectFit\",\n                                  eventid: \"5c0aa864-20-\" + idx\n                                },\n                                on: {\n                                  click: function($event) {\n                                    _vm.deleteImage(\n                                      \"confirmImgList\",\n                                      imgObj,\n                                      idx\n                                    )\n                                  }\n                                }\n                              })\n                            : _vm._e()\n                        ]\n                      )\n                    ])\n                  }),\n                  _vm.pageState == 3\n                    ? _c(\n                        \"view\",\n                        {\n                          staticClass: \"littleImageView\",\n                          style: {\n                            width: _vm.littleImageWidth + \"px\",\n                            height: _vm.littleImageWidth + \"px\"\n                          },\n                          attrs: { eventid: \"5c0aa864-21\" },\n                          on: {\n                            click: function($event) {\n                              _vm.addPhoto(\"confirmImgList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"littleImage\",\n                            attrs: { src: \"../../static/assets/addImage.png\" }\n                          })\n                        ]\n                      )\n                    : _vm._e()\n                ],\n                2\n              )\n            ])\n          ],\n          1\n        )\n      ]),\n      _c(\n        \"view\",\n        { staticClass: \"cellInfoView\" },\n        [\n          _c(\n            \"uni-list\",\n            { attrs: { mpcomid: \"5c0aa864-20\" } },\n            [\n              _vm.model.signclass != \"\" && _vm.model.signclass != null\n                ? _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"审批意见\",\n                      subnote: _vm.model.signature,\n                      \"show-arrow\": true,\n                      eventid: \"5c0aa864-22\",\n                      mpcomid: \"5c0aa864-19\"\n                    },\n                    on: {\n                      click: function($event) {\n                        _vm.opinionSheetShow(\"signature\", _vm.changeOpinion)\n                      }\n                    }\n                  })\n                : _vm._e()\n            ],\n            1\n          )\n        ],\n        1\n      ),\n      _vm.pageState != 0\n        ? _c(\n            \"view\",\n            { staticClass: \"btnView\" },\n            [\n              _c(\n                \"button\",\n                {\n                  staticClass: \"saveBtn\",\n                  attrs: { eventid: \"5c0aa864-23\" },\n                  on: { tap: _vm.saveClick }\n                },\n                [_vm._v(\"保存\")]\n              ),\n              _vm._l(_vm.model.flowbtnchooseflow, function(btnObj, index) {\n                return _c(\n                  \"block\",\n                  { key: index },\n                  [\n                    _c(\n                      \"button\",\n                      {\n                        staticClass: \"saveBtn\",\n                        attrs: { eventid: \"5c0aa864-24-\" + index },\n                        on: {\n                          tap: function($event) {\n                            _vm.roamClick(btnObj)\n                          }\n                        }\n                      },\n                      [_vm._v(_vm._s(btnObj.operationname))]\n                    )\n                  ],\n                  1\n                )\n              })\n            ],\n            2\n          )\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/danger/dangerEdit.vue?vue&type=template&id=8a65dfb0&");
 
 /***/ })
 
@@ -8994,7 +8545,12 @@ __wxRoute = 'pages/peixun/peixunList';__wxRouteBegin = true;__wxAppCurrentFile__
 define('pages/peixun/peixunList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
 
     Page({
-            onShow: function() {}
+            onShow: function() {
+              this.$vm && this.$vm.__call_hook('onShow')
+            },
+            onHide: function(){
+              this.$vm && this.$vm.__call_hook('onHide')
+            }
         })
     
 });
@@ -9004,7 +8560,12 @@ __wxRoute = 'pages/check/checkList';__wxRouteBegin = true;__wxAppCurrentFile__ =
 define('pages/check/checkList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
 
     Page({
-            onShow: function() {}
+            onShow: function() {
+              this.$vm && this.$vm.__call_hook('onShow')
+            },
+            onHide: function(){
+              this.$vm && this.$vm.__call_hook('onHide')
+            }
         })
     
 });
@@ -9014,7 +8575,12 @@ __wxRoute = 'pages/danger/dangerList';__wxRouteBegin = true;__wxAppCurrentFile__
 define('pages/danger/dangerList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
 
     Page({
-            onShow: function() {}
+            onShow: function() {
+              this.$vm && this.$vm.__call_hook('onShow')
+            },
+            onHide: function(){
+              this.$vm && this.$vm.__call_hook('onHide')
+            }
         })
     
 });

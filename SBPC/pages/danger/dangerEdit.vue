@@ -6,20 +6,20 @@
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item title="隐患描述" :note="model.yhms" :show-arrow="pageState == 1 ? true : false" @click="jumpInput('yhms', '请输入隐患描述', model.yhms, 1)"></uni-list-item>
-				<uni-list-item title="隐患等级" :subnote="model.yhdj" :show-arrow="pageState == 1 ? true : false" @click="alertSheetShow('yhdj', dangerLevel, 1)"></uni-list-item>
-				<uni-list-item title="隐患后果" :subnote="model.yhhg" :show-arrow="pageState == 1 ? true : false" @click="alertSheetShow('yhhg', dangerResult, 1)"></uni-list-item>
+				<uni-list-item mustInput="true" title="隐患描述" :note="model.yhms" :show-arrow="pageState == 1 ? true : false" @click="jumpInput('yhms', '请输入隐患描述', model.yhms, 1)"></uni-list-item>
+				<uni-list-item mustInput="true" title="隐患等级" :subnote="model.yhdj" :show-arrow="pageState == 1 ? true : false" @click="alertSheetShow('yhdj', dangerLevel, 1)"></uni-list-item>
+				<uni-list-item mustInput="true" title="隐患后果" :subnote="model.yhhg" :show-arrow="pageState == 1 ? true : false" @click="alertSheetShow('yhhg', dangerResult, 1)"></uni-list-item>
 				<picker id="yhlx" @change="pickerChange(dangerType, $event, 1)" v-bind:range="dangerType" :disabled="pageState == 1 ? false : true">
-					<uni-list-item title="隐患类型" :subnote="model.yhlx" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
+					<uni-list-item mustInput="true" title="隐患类型" :subnote="model.yhlx" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
 				</picker>
 				<picker mode="date" :value="model.zgqx" @change="dateChange('zgqx', $event, 1)" :disabled="pageState == 1 ? false : true">
-					<uni-list-item title="整改期限" :subnote="model.zgqx" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
+					<uni-list-item mustInput="true" title="整改期限" :subnote="model.zgqx" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
 				</picker>
 				<picker id="yhly" @change="pickerChange(dangerSource, $event, 1)" v-bind:range="dangerSource" :disabled="pageState == 1 ? false : true">
-					<uni-list-item title="隐患来源" :subnote="model.yhly" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
+					<uni-list-item mustInput="true" title="隐患来源" :subnote="model.yhly" :show-arrow="pageState == 1 ? true : false"></uni-list-item>
 				</picker>
-				<uni-list-item title="责任部门" :subnote="model.zrbm ? model.zrbm.name : ''" :show-arrow="pageState == 1 ? true : false" @click="jumpOrgChoose('zrbm', 1)"></uni-list-item>
-				<uni-list-item title="发起人" :subnote="model.fqrmc" show-arrow="false"></uni-list-item>
+				<uni-list-item mustInput="true" title="责任部门" :subnote="model.zrbm ? model.zrbm.name : ''" :show-arrow="pageState == 1 ? true : false" @click="jumpOrgChoose('zrbm', 1)"></uni-list-item>
+				<uni-list-item mustInput="true" title="发起人" :subnote="model.fqrmc" show-arrow="false"></uni-list-item>
 			</uni-list>
 			<view class='cellImageBaseView'> 
 				<view class='cellImageTitleView'> 
@@ -46,13 +46,13 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<uni-list-item title="隐患因素" :subnote="model.rwhg" :show-arrow="pageState == 2 ? true : false" @click="alertSheetShow('rwhg', dangerReason, 2)"></uni-list-item>
-					<uni-list-item title="原因分析" :note="model.yyfx" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yyfx', '请输入原因分析', model.yyfx, 2)"></uni-list-item>
-					<uni-list-item title="整改情况" :note="model.yhzgqk" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yhzgqk', '请输入原因分析', model.yhzgqk, 2)"></uni-list-item>
+					<uni-list-item mustInput="true" title="隐患因素" :subnote="model.rwhg" :show-arrow="pageState == 2 ? true : false" @click="alertSheetShow('rwhg', dangerReason, 2)"></uni-list-item>
+					<uni-list-item mustInput="true" title="原因分析" :note="model.yyfx" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yyfx', '请输入原因分析', model.yyfx, 2)"></uni-list-item>
+					<uni-list-item mustInput="true" title="整改情况" :note="model.yhzgqk" :show-arrow="pageState == 2 ? true : false" @click="jumpInput('yhzgqk', '请输入原因分析', model.yhzgqk, 2)"></uni-list-item>
 					<picker mode="date" :value="model.zgwcrq" @change="dateChange('zgwcrq', $event, 2)" :disabled="pageState == 2 ? false : true">
-						<uni-list-item title="完成日期" :subnote="model.zgwcrq" :show-arrow="pageState == 2 ? true : false"></uni-list-item>
+						<uni-list-item mustInput="true" title="完成日期" :subnote="model.zgwcrq" :show-arrow="pageState == 2 ? true : false"></uni-list-item>
 					</picker>
-					<uni-list-item title="整改人" :subnote="model.zgrmc" show-arrow="false"></uni-list-item>
+					<uni-list-item mustInput="true" title="整改人" :subnote="model.zgrmc" show-arrow="false"></uni-list-item>
 				</uni-list>
 				<view class='cellImageBaseView'> 
 					<view class='cellImageTitleView'> 
@@ -80,10 +80,10 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<uni-list-item title="完成情况" :note="model.yzqk" :show-arrow="pageState == 3 ? true : false" @click="jumpInput('yzqk', '请输入完成情况', model.yzqk, 3)"></uni-list-item>
-					<uni-list-item title="确认人" :subnote="model.yzrmc" show-arrow="false"></uni-list-item>
+					<uni-list-item mustInput="true" title="完成情况" :note="model.yzqk" :show-arrow="pageState == 3 ? true : false" @click="jumpInput('yzqk', '请输入完成情况', model.yzqk, 3)"></uni-list-item>
+					<uni-list-item mustInput="true" title="确认人" :subnote="model.yzrmc" show-arrow="false"></uni-list-item>
 					<picker mode="date" :value="model.yzrtxrq" @change="dateChange('yzrtxrq', $event, 3)" :disabled="pageState == 3 ? false : true">
-						<uni-list-item title="填报日期" :subnote="model.yzrtxrq" :show-arrow="pageState == 3 ? true : false"></uni-list-item>
+						<uni-list-item mustInput="true" title="填报日期" :subnote="model.yzrtxrq" :show-arrow="pageState == 3 ? true : false"></uni-list-item>
 					</picker>
 				</uni-list>
 				<view class='cellImageBaseView'> 
@@ -217,6 +217,11 @@
 			// 保存隐患
 			saveClick: function(e) {
 				var that = this;
+				
+				if (that.checkInput() != true) {
+					return;
+				}
+				
 				that.model.userid = that.userInfo.userid;
 // 				that.model.fqrid = that.userInfo.userid;
 // 				that.model.fqrmc = that.userInfo.username;
@@ -250,6 +255,120 @@
 						
 					}
 				);
+			},
+			// 判断必填项是否填
+			checkInput: function(e) {
+				if (this.pageState == 1) {// 隐患基本信息
+					if (this.model.yhms == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写隐患描述'
+						});
+						return false;
+					}else if (this.model.yhdj == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写隐患等级'
+						});
+						return false;
+					}else if (this.model.yhhg == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写隐患后果'
+						});
+						return false;
+					}else if (this.model.yhlx == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写隐患类型'
+						});
+						return false;
+					}else if (this.model.zgqx == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写整改期限'
+						});
+						return false;
+					}else if (this.model.yhly == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写隐患来源'
+						});
+						return false;
+					}else if (this.model.zrbm == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写责任部门'
+						});
+						return false;
+					}else if (this.model.fqrmc == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写发起人'
+						});
+						return false;
+					}else {
+						return true;
+					}
+				}else if (this.pageState == 2) {// 整改情况
+					if (this.model.rwhg == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写隐患因素'
+						});
+						return false;
+					}else if (this.model.yyfx == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写原因分析'
+						});
+						return false;
+					}else if (this.model.yhzgqk == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写整改情况'
+						});
+						return false;
+					}else if (this.model.zgwcrq == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写完成日期'
+						});
+						return false;
+					}else if (this.model.zgrmc == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写整改人'
+						});
+						return false;
+					}else {
+						return true;
+					}
+				}else if (this.pageState == 3) {// 整改确认
+					if (this.model.yzqk == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写完成情况'
+						});
+						return false;
+					}else if (this.model.yzrmc == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写确认人'
+						});
+						return false;
+					}else if (this.model.yzrtxrq == '') {
+						uni.showToast({
+							icon: 'none',
+							title: '请填写填报日期'
+						});
+						return false;
+					}else {
+						return true;
+					}
+				}else {
+					return true;
+				}
 			},
 			// 流转隐患
 			roamClick: function(btnObj) {

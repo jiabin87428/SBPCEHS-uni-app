@@ -9,7 +9,10 @@
 				<uni-icon :color="extraIcon.color" :size="extraIcon.size" :type="extraIcon.type"></uni-icon>
 			</view>
 			<view class="uni-list-cell__content">
-				<view class="uni-list-cell__content-title">{{title}}</view>
+				<view class="rowView">
+					<view class="uni-list-cell__content-title">{{title}}</view>
+					<view class="mustView" v-if="mustInput === true || mustInput === 'true'">*</view>
+				</view>
 				<view class="uni-list-cell__content-note" v-if="note">{{note}}</view>
 			</view>
 			<view class="uni-list-cell__extra" v-if="subnote || showBadge === true || showBadge === 'true' || showArrow === true || showArrow === 'true'||showSwitch === true || showSwitch === 'true'">
@@ -40,6 +43,10 @@
 			title: String, //列表标题
 			note: String, //列表描述
 			subnote: String, //列表右侧描述
+			mustInput: { //是否必填
+				type: [Boolean, String],
+				default: false
+			},
 			disabled: { //是否禁用
 				type: [Boolean, String],
 				default: false
@@ -197,5 +204,14 @@
 
 	.uni-list>.uni-list-cell:last-child .uni-list-cell-container:after {
 		height: 0px;
+	}
+	.rowView {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.mustView {
+		color: red;
+		font-size: 32upx;
 	}
 </style>

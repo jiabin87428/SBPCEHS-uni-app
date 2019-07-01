@@ -91,10 +91,11 @@
       }
     }
   },
+  "nvueCompiler": "weex",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
   "appname": "SBPC-EHS",
-  "compilerVersion": "1.9.9"
+  "compilerVersion": "2.0.1"
 }

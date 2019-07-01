@@ -41,7 +41,8 @@
     width: 100rpx;
     height: 100rpx;
     border: 1rpx solid #dddddd;
-    border-radius: 100rpx;
+    -webkit-border-radius: 100rpx;
+            border-radius: 100rpx;
     margin: 0 40rpx;
     background-color: #ffffff;
 }

@@ -6,7 +6,7 @@
 				<view class="infoView" v-if="hasLogin">
 					<text class="uer-name">你好，{{userInfo.username}}</text>
 					<text class="uer-code">工号：{{userInfo.usercode}}</text>
-					<text class="uer-code">{{'积分：' + pointModel.zf + '分 | 排名：' + pointModel.jfpm}}</text>
+					<!-- <text class="uer-code">{{'积分：' + pointModel.zf + '分 | 排名：' + pointModel.jfpm}}</text> -->
 				</view>
 				<button v-if="!hasLogin" type="primary" class="primary" @tap="bindLogin">点击登录</button>
 			</view>

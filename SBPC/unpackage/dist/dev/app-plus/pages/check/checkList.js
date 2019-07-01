@@ -514,7 +514,7 @@ var config = {
   // 获取积分排名
   getPointList: '/mobile/getOther.do?action=getJfpmList',
   // 获取积分统计
-  getPoints: '/mobile/getTrain.do?action=getJftj',
+  getPoints: '/mobile/getOther.do?action=getAllTj',
 
   /*统计相关*/
   // 获取隐患分类统计

@@ -1,17 +1,17 @@
 <template> 
 	<view class="baseView">  
-		<view class="topView_pc" @tap="jumpPage('../statistics/statistics')">
+		<view class="topView_pc" @tap="getPoints()">
 			<view class="topItemView">
-				<text class="topTextTitle">积分排名</text>
-				<text class="topTextNum">{{pointModel.jfpm}}</text>
+				<text class="topTextTitle">隐患总数</text>
+				<text class="topTextNum">{{pointModel.yhzsl}}</text>
 			</view>
 			<view class="topItemView">
-				<text class="topTextTitle">获固定积分</text>
-				<text class="topTextNum">{{pointModel.gdjf}}</text>
+				<text class="topTextTitle">整改中</text>
+				<text class="topTextNum">{{pointModel.zgzyhsl}}</text>
 			</view>
 			<view class="topItemView">
-				<text class="topTextTitle">获主动积分</text>
-				<text class="topTextNum">{{pointModel.zdjf}}</text>
+				<text class="topTextTitle">超期未整改</text>
+				<text class="topTextNum">{{pointModel.cqwgz}}</text>
 			</view>
 		</view>
 		

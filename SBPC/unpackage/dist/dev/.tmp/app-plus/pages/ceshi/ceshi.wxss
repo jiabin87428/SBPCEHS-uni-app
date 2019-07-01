@@ -27,7 +27,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     height: 44rpx;
-    border-radius: 6rpx;
+    -webkit-border-radius: 6rpx;
+            border-radius: 6rpx;
     margin: 0 5rpx;
     font-size: 28rpx;
     border: 1px solid #000000;
@@ -148,7 +149,8 @@
 	background-color: #3296FA;
 	margin-left: 20rpx;
 	margin-right: 20rpx;
-	border-radius: 5rpx;
+	-webkit-border-radius: 5rpx;
+	        border-radius: 5rpx;
 }
 /*vue顶部Tab页css样式*/
 .TopTabView {
@@ -440,7 +442,8 @@
   width: 30rpx;
   font-size: 20rpx;
   background-color: #EEEEEE;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
 }
 .subjectCount {
   font-size: 30rpx;
@@ -596,7 +599,8 @@
   background-color: #3296FA;
   margin-left: 20rpx;
   margin-right: 20rpx;
-  border-radius: 5rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
   color: #FFFFFF;
 }
 .answerView {
