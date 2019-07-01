@@ -664,7 +664,8 @@
   display: inline-block;
   padding: 3px 6px;
   color: #333;
-  border-radius: 100px;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
   background-color: #f1f1f1;
 }
 .uni-badge.uni-badge-inverted {
@@ -859,6 +860,25 @@
 .uni-list > .uni-list-cell:last-child .uni-list-cell-container:after {
   height: 0px;
 }
+.rowView {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mustView {
+  color: red;
+  font-size: 32rpx;
+}
 
 
 view.data-v-0850b3d4, button.data-v-0850b3d4, input.data-v-0850b3d4 {
@@ -910,7 +930,8 @@ view.data-v-0850b3d4, button.data-v-0850b3d4, input.data-v-0850b3d4 {
     width: 600rpx;
     min-height: 300rpx;
     background: white;
-    border-radius: 20rpx;
+    -webkit-border-radius: 20rpx;
+            border-radius: 20rpx;
     overflow: hidden;
 }
 .prompt-top.data-v-0850b3d4 {
@@ -938,7 +959,8 @@ view.data-v-0850b3d4, button.data-v-0850b3d4, input.data-v-0850b3d4 {
 		height: 60rpx;
     width: 520rpx;
     font-size: 28rpx;
-    border-radius: 8rpx;
+    -webkit-border-radius: 8rpx;
+            border-radius: 8rpx;
 }
 .prompt-buttons.data-v-0850b3d4 {
     display: -webkit-box;
@@ -951,7 +973,8 @@ view.data-v-0850b3d4, button.data-v-0850b3d4, input.data-v-0850b3d4 {
 }
 button.data-v-0850b3d4 {
     width: 50%;
-    border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
 }
 .prompt-cancle.data-v-0850b3d4 {
     background: white;
