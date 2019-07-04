@@ -1060,279 +1060,279 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'M5c0aa864-default-5c0aa864-8'])
-Z([3,'handleProxy'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z([[7],[3,'$k']])
-Z([1,'5c0aa864-0'])
-Z([3,'30c48a99'])
-Z([3,'true'])
-Z([3,'隐患描述'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-1'])
-Z(z[5])
-Z(z[6])
-Z([3,'隐患等级'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-2'])
-Z(z[5])
-Z(z[6])
-Z([3,'隐患后果'])
-Z(z[1])
-Z([3,'_picker M5c0aa864'])
-Z(z[3])
-Z([1,'5c0aa864-3'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
-Z([3,'yhlx'])
-Z([[7],[3,'dangerType']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z([3,'隐患类型'])
-Z(z[1])
-Z(z[23])
-Z(z[3])
-Z([1,'5c0aa864-4'])
-Z(z[26])
-Z([3,'date'])
-Z([[6],[[7],[3,'model']],[3,'zgqx']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z([3,'整改期限'])
-Z(z[1])
-Z(z[23])
-Z(z[3])
-Z([1,'5c0aa864-5'])
-Z(z[26])
-Z([3,'yhly'])
-Z([[7],[3,'dangerSource']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z([3,'隐患来源'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-6'])
-Z(z[5])
-Z(z[6])
-Z([3,'责任部门'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z([3,'false'])
-Z([3,'发起人'])
-Z([3,'M5c0aa864-default-5c0aa864-14'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-10'])
-Z(z[5])
-Z(z[6])
-Z([3,'隐患因素'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-11'])
-Z(z[5])
-Z(z[6])
-Z([3,'原因分析'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-12'])
-Z(z[5])
-Z(z[6])
-Z([3,'整改情况'])
-Z(z[1])
-Z(z[23])
-Z(z[3])
-Z([1,'5c0aa864-13'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
-Z(z[38])
-Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z([3,'完成日期'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z(z[65])
-Z([3,'整改人'])
-Z([3,'M5c0aa864-default-5c0aa864-18'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-17'])
-Z(z[5])
-Z(z[6])
-Z([3,'完成情况'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z(z[65])
-Z([3,'确认人'])
-Z(z[1])
-Z(z[23])
-Z(z[3])
-Z([1,'5c0aa864-18'])
-Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
-Z(z[38])
-Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[6])
-Z([3,'填报日期'])
-Z([3,'M5c0aa864-default-5c0aa864-20'])
-Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-22'])
-Z(z[5])
-Z([3,'审批意见'])
 Z([3,'M4508b5aa-default-4508b5aa-1'])
 Z([3,'idx'])
 Z([3,'logItem'])
 Z([[7],[3,'logList']])
-Z(z[138])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z([3,'M609973d6-default-609973d6-5'])
 Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'30c48a99'])
+Z([3,'M609973d6-default-609973d6-5'])
+Z([3,'handleProxy'])
 Z([3,'_picker M609973d6'])
-Z(z[3])
+Z([[7],[3,'$k']])
 Z([1,'609973d6-0'])
 Z([[2,'!'],[[7],[3,'editable']]])
 Z([3,'jclx'])
 Z([[7],[3,'checkTypes']])
-Z([3,'dictvalue'])
+Z([3,'dvalue'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查类型'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
-Z(z[65])
+Z(z[6])
+Z([3,'false'])
 Z([3,'检查人'])
-Z(z[1])
-Z(z[146])
-Z(z[3])
+Z(z[8])
+Z(z[9])
+Z(z[10])
 Z([1,'609973d6-1'])
-Z(z[149])
-Z(z[38])
+Z(z[12])
+Z([3,'date'])
 Z([[6],[[7],[3,'model']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查日期'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'609973d6-2'])
-Z(z[5])
+Z(z[6])
 Z([3,'检查组成员'])
-Z(z[1])
-Z(z[146])
-Z(z[3])
+Z(z[8])
+Z(z[9])
+Z(z[10])
 Z([1,'609973d6-3'])
-Z(z[149])
+Z(z[12])
 Z([3,'mb'])
 Z([[7],[3,'selectedModule']])
 Z([3,'mbmc'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查模板'])
 Z([3,'M609973d6-default-609973d6-10'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'model']],[3,'jcjlList']])
-Z(z[188])
-Z(z[1])
+Z(z[51])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
-Z(z[5])
 Z(z[6])
+Z([3,'true'])
 Z([3,'M77ae7fa4-default-77ae7fa4-3'])
-Z(z[1])
+Z(z[8])
 Z([3,'_picker M77ae7fa4'])
-Z(z[3])
+Z(z[10])
 Z([1,'77ae7fa4-0'])
 Z([3,'ifwt'])
 Z([[7],[3,'typeArray']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查结论'])
 Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'77ae7fa4-1'])
 Z([3,'wtms'])
-Z(z[5])
+Z(z[6])
 Z([3,'问题描述'])
-Z(z[208])
-Z(z[1])
-Z(z[200])
-Z(z[3])
+Z(z[71])
+Z(z[8])
+Z(z[63])
+Z(z[10])
 Z([1,'77ae7fa4-2'])
 Z([3,'zgqk'])
 Z([[7],[3,'rectifyTypes']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 Z([3,'检查方式'])
-Z([3,'Mf40cc204-default-f40cc204-1'])
-Z(z[188])
-Z(z[189])
-Z([[7],[3,'ggList']])
-Z(z[188])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
-Z(z[5])
-Z([3,'Mc4edb036-default-c4edb036-1'])
-Z(z[188])
-Z(z[189])
-Z(z[229])
-Z(z[188])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
-Z(z[5])
 Z([3,'M735e4812-default-735e4812-2'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'735e4812-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'735e4812-0'])
-Z(z[5])
+Z(z[6])
 Z([3,'隐患原因'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'735e4812-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'735e4812-1'])
-Z(z[5])
-Z(z[32])
+Z(z[6])
+Z([3,'隐患类型'])
+Z([3,'Mf40cc204-default-f40cc204-1'])
+Z(z[51])
+Z(z[52])
+Z([[7],[3,'ggList']])
+Z(z[51])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
+Z(z[6])
 Z([3,'M5ff9ee88-default-5ff9ee88-1'])
-Z(z[188])
-Z(z[189])
-Z(z[229])
-Z(z[188])
+Z(z[51])
+Z(z[52])
+Z(z[105])
+Z(z[51])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
+Z([3,'M5c0aa864-default-5c0aa864-8'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-0'])
+Z(z[6])
+Z(z[60])
+Z([3,'隐患描述'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-1'])
+Z(z[6])
+Z(z[60])
+Z([3,'隐患等级'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-2'])
+Z(z[6])
+Z(z[60])
+Z([3,'隐患后果'])
+Z(z[8])
+Z([3,'_picker M5c0aa864'])
+Z(z[10])
+Z([1,'5c0aa864-3'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
+Z([3,'yhlx'])
+Z([[7],[3,'dangerType']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z(z[101])
+Z(z[8])
+Z(z[142])
+Z(z[10])
+Z([1,'5c0aa864-4'])
+Z(z[145])
+Z(z[28])
+Z([[6],[[7],[3,'model']],[3,'zgqx']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z([3,'整改期限'])
+Z(z[8])
+Z(z[142])
+Z(z[10])
+Z([1,'5c0aa864-5'])
+Z(z[145])
+Z([3,'yhly'])
+Z([[7],[3,'dangerSource']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z([3,'隐患来源'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-6'])
+Z(z[6])
+Z(z[60])
+Z([3,'责任部门'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z(z[21])
+Z([3,'发起人'])
+Z([3,'M5c0aa864-default-5c0aa864-14'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-10'])
+Z(z[6])
+Z(z[60])
+Z([3,'隐患因素'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-11'])
+Z(z[6])
+Z(z[60])
+Z([3,'原因分析'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-12'])
+Z(z[6])
+Z(z[60])
+Z([3,'整改情况'])
+Z(z[8])
+Z(z[142])
+Z(z[10])
+Z([1,'5c0aa864-13'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
+Z(z[28])
+Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z([3,'完成日期'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z(z[21])
+Z([3,'整改人'])
+Z([3,'M5c0aa864-default-5c0aa864-18'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-17'])
+Z(z[6])
+Z(z[60])
+Z([3,'完成情况'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z(z[21])
+Z([3,'确认人'])
+Z(z[8])
+Z(z[142])
+Z(z[10])
+Z([1,'5c0aa864-18'])
+Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
+Z(z[28])
+Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[60])
+Z([3,'填报日期'])
+Z([3,'M5c0aa864-default-5c0aa864-20'])
+Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'5c0aa864-22'])
+Z(z[6])
+Z([3,'审批意见'])
+Z([3,'Mc4edb036-default-c4edb036-1'])
+Z(z[51])
+Z(z[52])
+Z(z[105])
+Z(z[51])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
+Z(z[6])
 Z([3,'M1d214ab8-default-1d214ab8-1'])
-Z(z[188])
-Z(z[189])
+Z(z[51])
+Z(z[52])
 Z([[7],[3,'datas']])
-Z(z[188])
+Z(z[51])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1d214ab8-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[5])
+Z(z[6])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -2084,285 +2084,6 @@ __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
 var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','/components/countDown/uni-countdown.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/charts/chartsTypeList.vue.wxml','./pages/charts/chartsTypeList.wxml','./chartsTypeList.vue.wxml','./pages/charts/listCharts.vue.wxml','./pages/charts/listCharts.wxml','./listCharts.vue.wxml','./pages/charts/pieCharts.vue.wxml','./pages/charts/pieCharts.wxml','./pieCharts.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["M5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-8'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],6,232)
-var cF=_v()
-_(r,cF)
-var hG=_oz(z,12,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,9,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],6,439)
-var oJ=_v()
-_(r,oJ)
-var lK=_oz(z,19,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,16,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],6,646)
-var eN=_mz(z,'picker',['bindchange',22,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
-var bO=_v()
-_(eN,bO)
-var oP=_oz(z,30,e,s,gg)
-var xQ=_gd(x[0],oP,e_,d_)
-if(xQ){
-var oR=_1z(z,29,e,s,gg) || {}
-var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
-gg.f=cur_globalf
-}
-else _w(oP,x[0],6,968)
-_(r,eN)
-var fS=_mz(z,'picker',['bindchange',33,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
-var cT=_v()
-_(fS,cT)
-var hU=_oz(z,41,e,s,gg)
-var oV=_gd(x[0],hU,e_,d_)
-if(oV){
-var cW=_1z(z,40,e,s,gg) || {}
-var cur_globalf=gg.f
-cT.wxXCkey=3
-oV(cW,cW,cT,gg)
-gg.f=cur_globalf
-}
-else _w(hU,x[0],6,1301)
-_(r,fS)
-var oX=_mz(z,'picker',['bindchange',44,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
-var lY=_v()
-_(oX,lY)
-var aZ=_oz(z,52,e,s,gg)
-var t1=_gd(x[0],aZ,e_,d_)
-if(t1){
-var e2=_1z(z,51,e,s,gg) || {}
-var cur_globalf=gg.f
-lY.wxXCkey=3
-t1(e2,e2,lY,gg)
-gg.f=cur_globalf
-}
-else _w(aZ,x[0],6,1634)
-_(r,oX)
-var b3=_v()
-_(r,b3)
-var o4=_oz(z,59,e,s,gg)
-var x5=_gd(x[0],o4,e_,d_)
-if(x5){
-var o6=_1z(z,56,e,s,gg) || {}
-var cur_globalf=gg.f
-b3.wxXCkey=3
-x5(o6,o6,b3,gg)
-gg.f=cur_globalf
-}
-else _w(o4,x[0],6,1850)
-var f7=_v()
-_(r,f7)
-var c8=_oz(z,63,e,s,gg)
-var h9=_gd(x[0],c8,e_,d_)
-if(h9){
-var o0=_1z(z,62,e,s,gg) || {}
-var cur_globalf=gg.f
-f7.wxXCkey=3
-h9(o0,o0,f7,gg)
-gg.f=cur_globalf
-}
-else _w(c8,x[0],6,1998)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5c0aa864-default-5c0aa864-14"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-14'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=_oz(z,72,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,69,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],8,234)
-var cF=_v()
-_(r,cF)
-var hG=_oz(z,79,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,76,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],8,443)
-var oJ=_v()
-_(r,oJ)
-var lK=_oz(z,86,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,83,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],8,652)
-var eN=_mz(z,'picker',['bindchange',89,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
-var bO=_v()
-_(eN,bO)
-var oP=_oz(z,97,e,s,gg)
-var xQ=_gd(x[0],oP,e_,d_)
-if(xQ){
-var oR=_1z(z,96,e,s,gg) || {}
-var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
-gg.f=cur_globalf
-}
-else _w(oP,x[0],8,980)
-_(r,eN)
-var fS=_v()
-_(r,fS)
-var cT=_oz(z,101,e,s,gg)
-var hU=_gd(x[0],cT,e_,d_)
-if(hU){
-var oV=_1z(z,100,e,s,gg) || {}
-var cur_globalf=gg.f
-fS.wxXCkey=3
-hU(oV,oV,fS,gg)
-gg.f=cur_globalf
-}
-else _w(cT,x[0],8,1138)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5c0aa864-default-5c0aa864-18"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-18'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=_oz(z,110,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,107,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],10,235)
-var cF=_v()
-_(r,cF)
-var hG=_oz(z,114,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,113,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],10,384)
-var oJ=_mz(z,'picker',['bindchange',118,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
-var lK=_v()
-_(oJ,lK)
-var aL=_oz(z,126,e,s,gg)
-var tM=_gd(x[0],aL,e_,d_)
-if(tM){
-var eN=_1z(z,125,e,s,gg) || {}
-var cur_globalf=gg.f
-lK.wxXCkey=3
-tM(eN,eN,lK,gg)
-gg.f=cur_globalf
-}
-else _w(aL,x[0],10,713)
-_(r,oJ)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5c0aa864-default-5c0aa864-20"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-20'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-if(_oz(z,130,e,s,gg)){oB.wxVkey=1
-var xC=_v()
-_(oB,xC)
-var oD=_oz(z,135,e,s,gg)
-var fE=_gd(x[0],oD,e_,d_)
-if(fE){
-var cF=_1z(z,132,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[0],12,279)
-}
-oB.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
 d_[x[0]]["M4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':M4508b5aa-default-4508b5aa-1'
@@ -2376,20 +2097,20 @@ _(r,oB)
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-var cI=_oz(z,143,fE,oD,gg)
+var cI=_oz(z,6,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,142,fE,oD,gg) || {}
+var lK=_1z(z,5,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],14,220)
+else _w(cI,x[0],6,220)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,140,xC,e,s,gg,oB,'logItem','idx','idx')
+_2z(z,3,xC,e,s,gg,oB,'logItem','idx','idx')
 }catch(err){
 p_[b]=false
 throw err
@@ -2405,71 +2126,71 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-var oB=_mz(z,'picker',['bindchange',145,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+var oB=_mz(z,'picker',['bindchange',8,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var xC=_v()
 _(oB,xC)
-var oD=_oz(z,154,e,s,gg)
+var oD=_oz(z,17,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,153,e,s,gg) || {}
+var cF=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],16,332)
+else _w(oD,x[0],8,329)
 _(r,oB)
 var hG=_v()
 _(r,hG)
-var oH=_oz(z,157,e,s,gg)
+var oH=_oz(z,20,e,s,gg)
 var cI=_gd(x[0],oH,e_,d_)
 if(cI){
-var oJ=_1z(z,156,e,s,gg) || {}
+var oJ=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
 hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],16,472)
-var lK=_mz(z,'picker',['bindchange',160,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+else _w(oH,x[0],8,469)
+var lK=_mz(z,'picker',['bindchange',23,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var aL=_v()
 _(lK,aL)
-var tM=_oz(z,168,e,s,gg)
+var tM=_oz(z,31,e,s,gg)
 var eN=_gd(x[0],tM,e_,d_)
 if(eN){
-var bO=_1z(z,167,e,s,gg) || {}
+var bO=_1z(z,30,e,s,gg) || {}
 var cur_globalf=gg.f
 aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],16,759)
+else _w(tM,x[0],8,756)
 _(r,lK)
 var oP=_v()
 _(r,oP)
-var xQ=_oz(z,174,e,s,gg)
+var xQ=_oz(z,37,e,s,gg)
 var oR=_gd(x[0],xQ,e_,d_)
 if(oR){
-var fS=_1z(z,171,e,s,gg) || {}
+var fS=_1z(z,34,e,s,gg) || {}
 var cur_globalf=gg.f
 oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[0],16,961)
-var cT=_mz(z,'picker',['bindchange',176,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+else _w(xQ,x[0],8,958)
+var cT=_mz(z,'picker',['bindchange',39,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var hU=_v()
 _(cT,hU)
-var oV=_oz(z,185,e,s,gg)
+var oV=_oz(z,48,e,s,gg)
 var cW=_gd(x[0],oV,e_,d_)
 if(cW){
-var oX=_1z(z,184,e,s,gg) || {}
+var oX=_1z(z,47,e,s,gg) || {}
 var cur_globalf=gg.f
 hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[0],16,1265)
+else _w(oV,x[0],8,1262)
 _(r,cT)
 }catch(err){
 p_[b]=false
@@ -2491,20 +2212,20 @@ _(r,oB)
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-var cI=_oz(z,196,fE,oD,gg)
+var cI=_oz(z,59,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,193,fE,oD,gg) || {}
+var lK=_1z(z,56,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],18,247)
+else _w(cI,x[0],10,247)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,190,xC,e,s,gg,oB,'item','index','index')
+_2z(z,53,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2520,56 +2241,95 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-var oD=_mz(z,'picker',['bindchange',199,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var oD=_mz(z,'picker',['bindchange',62,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var fE=_v()
 _(oD,fE)
-var cF=_oz(z,206,e,s,gg)
+var cF=_oz(z,69,e,s,gg)
 var hG=_gd(x[0],cF,e_,d_)
 if(hG){
-var oH=_1z(z,205,e,s,gg) || {}
+var oH=_1z(z,68,e,s,gg) || {}
 var cur_globalf=gg.f
 fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[0],20,284)
+else _w(cF,x[0],12,284)
 _(r,oD)
 var oB=_v()
 _(r,oB)
-if(_oz(z,208,e,s,gg)){oB.wxVkey=1
+if(_oz(z,71,e,s,gg)){oB.wxVkey=1
 var cI=_v()
 _(oB,cI)
-var oJ=_oz(z,214,e,s,gg)
+var oJ=_oz(z,77,e,s,gg)
 var lK=_gd(x[0],oJ,e_,d_)
 if(lK){
-var aL=_1z(z,210,e,s,gg) || {}
+var aL=_1z(z,73,e,s,gg) || {}
 var cur_globalf=gg.f
 cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[0],20,522)
+else _w(oJ,x[0],12,522)
 }
 var xC=_v()
 _(r,xC)
-if(_oz(z,216,e,s,gg)){xC.wxVkey=1
-var tM=_mz(z,'picker',['bindchange',217,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+if(_oz(z,79,e,s,gg)){xC.wxVkey=1
+var tM=_mz(z,'picker',['bindchange',80,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
 var eN=_v()
 _(tM,eN)
-var bO=_oz(z,224,e,s,gg)
+var bO=_oz(z,87,e,s,gg)
 var oP=_gd(x[0],bO,e_,d_)
 if(oP){
-var xQ=_1z(z,223,e,s,gg) || {}
+var xQ=_1z(z,86,e,s,gg) || {}
 var cur_globalf=gg.f
 eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[0],20,813)
+else _w(bO,x[0],12,813)
 _(xC,tM)
 }
 oB.wxXCkey=1
 xC.wxXCkey=1
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M735e4812-default-735e4812-2"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M735e4812-default-735e4812-2'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=_oz(z,94,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,91,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],14,215)
+var cF=_v()
+_(r,cF)
+var hG=_oz(z,100,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,97,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],14,405)
 }catch(err){
 p_[b]=false
 throw err
@@ -2590,93 +2350,20 @@ _(r,oB)
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-var cI=_oz(z,235,fE,oD,gg)
+var cI=_oz(z,111,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,232,fE,oD,gg) || {}
+var lK=_1z(z,108,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],22,306)
+else _w(cI,x[0],16,306)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,229,xC,e,s,gg,oB,'item','index','index')
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["Mc4edb036-default-c4edb036-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':Mc4edb036-default-c4edb036-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-var cI=_oz(z,245,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,242,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],24,306)
-return cF
-}
-oB.wxXCkey=2
-_2z(z,239,xC,e,s,gg,oB,'item','index','index')
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M735e4812-default-735e4812-2"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M735e4812-default-735e4812-2'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=_oz(z,251,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,248,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],26,215)
-var cF=_v()
-_(r,cF)
-var hG=_oz(z,257,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,254,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],26,405)
+_2z(z,105,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2697,20 +2384,333 @@ _(r,oB)
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-var cI=_oz(z,265,fE,oD,gg)
+var cI=_oz(z,118,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,264,fE,oD,gg) || {}
+var lK=_1z(z,117,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],28,224)
+else _w(cI,x[0],18,224)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,262,xC,e,s,gg,oB,'item','index','index')
+_2z(z,115,xC,e,s,gg,oB,'item','index','index')
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-8'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=_oz(z,124,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,121,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],20,232)
+var cF=_v()
+_(r,cF)
+var hG=_oz(z,131,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,128,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],20,439)
+var oJ=_v()
+_(r,oJ)
+var lK=_oz(z,138,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,135,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],20,646)
+var eN=_mz(z,'picker',['bindchange',141,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+var bO=_v()
+_(eN,bO)
+var oP=_oz(z,149,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,148,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],20,968)
+_(r,eN)
+var fS=_mz(z,'picker',['bindchange',152,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var cT=_v()
+_(fS,cT)
+var hU=_oz(z,160,e,s,gg)
+var oV=_gd(x[0],hU,e_,d_)
+if(oV){
+var cW=_1z(z,159,e,s,gg) || {}
+var cur_globalf=gg.f
+cT.wxXCkey=3
+oV(cW,cW,cT,gg)
+gg.f=cur_globalf
+}
+else _w(hU,x[0],20,1301)
+_(r,fS)
+var oX=_mz(z,'picker',['bindchange',163,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+var lY=_v()
+_(oX,lY)
+var aZ=_oz(z,171,e,s,gg)
+var t1=_gd(x[0],aZ,e_,d_)
+if(t1){
+var e2=_1z(z,170,e,s,gg) || {}
+var cur_globalf=gg.f
+lY.wxXCkey=3
+t1(e2,e2,lY,gg)
+gg.f=cur_globalf
+}
+else _w(aZ,x[0],20,1634)
+_(r,oX)
+var b3=_v()
+_(r,b3)
+var o4=_oz(z,178,e,s,gg)
+var x5=_gd(x[0],o4,e_,d_)
+if(x5){
+var o6=_1z(z,175,e,s,gg) || {}
+var cur_globalf=gg.f
+b3.wxXCkey=3
+x5(o6,o6,b3,gg)
+gg.f=cur_globalf
+}
+else _w(o4,x[0],20,1850)
+var f7=_v()
+_(r,f7)
+var c8=_oz(z,182,e,s,gg)
+var h9=_gd(x[0],c8,e_,d_)
+if(h9){
+var o0=_1z(z,181,e,s,gg) || {}
+var cur_globalf=gg.f
+f7.wxXCkey=3
+h9(o0,o0,f7,gg)
+gg.f=cur_globalf
+}
+else _w(c8,x[0],20,1998)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-14"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-14'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=_oz(z,191,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,188,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],22,234)
+var cF=_v()
+_(r,cF)
+var hG=_oz(z,198,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,195,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],22,443)
+var oJ=_v()
+_(r,oJ)
+var lK=_oz(z,205,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,202,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],22,652)
+var eN=_mz(z,'picker',['bindchange',208,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var bO=_v()
+_(eN,bO)
+var oP=_oz(z,216,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,215,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],22,980)
+_(r,eN)
+var fS=_v()
+_(r,fS)
+var cT=_oz(z,220,e,s,gg)
+var hU=_gd(x[0],cT,e_,d_)
+if(hU){
+var oV=_1z(z,219,e,s,gg) || {}
+var cur_globalf=gg.f
+fS.wxXCkey=3
+hU(oV,oV,fS,gg)
+gg.f=cur_globalf
+}
+else _w(cT,x[0],22,1138)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-18"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-18'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=_oz(z,229,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,226,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],24,235)
+var cF=_v()
+_(r,cF)
+var hG=_oz(z,233,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,232,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],24,384)
+var oJ=_mz(z,'picker',['bindchange',237,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var lK=_v()
+_(oJ,lK)
+var aL=_oz(z,245,e,s,gg)
+var tM=_gd(x[0],aL,e_,d_)
+if(tM){
+var eN=_1z(z,244,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[0],24,713)
+_(r,oJ)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-20"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-20'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+if(_oz(z,249,e,s,gg)){oB.wxVkey=1
+var xC=_v()
+_(oB,xC)
+var oD=_oz(z,254,e,s,gg)
+var fE=_gd(x[0],oD,e_,d_)
+if(fE){
+var cF=_1z(z,251,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
+}
+else _w(oD,x[0],26,279)
+}
+oB.wxXCkey=1
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["Mc4edb036-default-c4edb036-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':Mc4edb036-default-c4edb036-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+var cI=_oz(z,265,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,262,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],28,306)
+return cF
+}
+oB.wxXCkey=2
+_2z(z,259,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -7305,7 +7305,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _prompt = _interopRequireDefault(__webpack_require__(/*! @/components/prompt/prompt.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/prompt/prompt.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _photoUtil = _interopRequireDefault(__webpack_require__(/*! ../../util/photoUtil.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/photoUtil.js\"));\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default, prompt: _prompt.default },\n  data: function data() {\n    return {\n      model: {\n        recordid: '', // 主键，有值更新，没值插入\n        userid: '',\n        jcdzt: '1', // 状态：1-新建，5-完成，其他时候就按后台传的来\n        jclx: '',\n        llrid: '',\n        llrmc: '',\n        jcrq: '',\n        qtcyid: '',\n        qtcy: '',\n        mb: '',\n        jcjlList: [] },\n\n\n      // 选中的模板\n      currentModule: null,\n\n      // 数据源\n      checkTypes: [],\n      // 选中的成员对象集合\n      selectedPersons: [],\n      // 选择的模板内容\n      selectedModule: [],\n\n      // 是否可编辑\n      editable: true,\n\n      // 控制弹框输入框显示, 在需要的地方调用this.promptVisible = true\n      promptVisible: false,\n      // 图标\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' },\n\n\n      // 备用的照片List\n      zplists: [] };\n\n  },\n  onLoad: function onLoad(option) {\n    var recordid = option.recordid == null ? \"\" : option.recordid;\n\n    if (recordid == \"\") {// 新建\n      this.model.llrid = this.userInfo.userid;\n      this.model.llrmc = this.userInfo.username;\n    } else {// 获取详情\n      this.model.recordid = recordid;\n      this.getDetail();\n    }\n\n    // 获取检查类型\n    this.getCheckTypes();\n    // 获取检查模板\n    this.getCheckModule();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {var _this = this;\n    uni.showModal({\n      content: '选择[一键正常]将要清除所有问题描述、检查方式、检查照片，是否确认？',\n      success: function success(res) {\n        if (res.confirm) {\n          _this.setAllOk();\n        } else {\n          return;\n        }\n      } });\n\n  },\n  onUnload: function onUnload() {\n\n  },\n  methods: {\n    // 设置一键正常\n    setAllOk: function setAllOk(e) {\n      for (var i = 0; i < this.model.jcjlList.length; i++) {\n        this.model.jcjlList[i].wtms = \"\";\n        this.model.jcjlList[i].zgqk = \"\";\n        this.model.jcjlList[i].zplist = [];\n        this.model.jcjlList[i].ifwt = \"1\";\n      }\n    },\n    // 获取检查类型\n    getCheckTypes: function getCheckTypes(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckTypes, param, '正在获取检查类型',\n      function (res) {\n        that.checkTypes = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 获取检查模板\n    getCheckModule: function getCheckModule(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckModule, param, '正在获取检查模板',\n      function (res) {\n        that.selectedModule = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 获取检查详情\n    getDetail: function getDetail(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        recordid: that.model.recordid };\n\n      _request.default.requestLoading(_config.default.getCheckDetail, param, '正在获取检查详情',\n      function (res) {\n        that.model = res;\n        if (that.model.jcdzt == \"5\") {\n          editable = false;\n        }\n        // 处理照片\n        var zplists = [];\n        for (var i = 0; i < res.jcjlList.length; i++) {\n          zplists = zplists.concat(res.jcjlList[i].zplist);\n        }\n        // console.log('zplists' + JSON.stringify(zplists));\n        that.classifyPhotos(zplists);\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 保存\n    saveClick: function saveClick(e) {\n      this.doSave(1);\n    },\n    // 完成检查\n    completeClick: function completeClick(e) {\n      this.doSave(5);\n    },\n    // 保存接口,保存的时候state为1，完成检查的时候state为5\n    doSave: function doSave(state) {\n      var that = this;\n      // 先清除zplists\n      that.zplists = [];\n      that.model.userid = that.userInfo.userid;\n      that.model.jcdzt = state;\n      var param = that.model;\n      // 抽出模型jcjlList里的所有zplist备用，因为保存成功后替换模型会把zplist置空\n      for (var i = 0; i < that.model.jcjlList.length; i++) {\n        var item = that.model.jcjlList[i];\n        that.zplists.push(item.zplist);\n      }\n\n      _request.default.requestLoading(_config.default.saveCheck, param, '正在保存检查',\n      function (res) {\n        that.model = res;\n        // 把抽出的zplist放回去\n        for (var i = 0; i < that.model.jcjlList.length; i++) {\n          var _item = that.model.jcjlList[i];\n          _item.zplist = that.zplists[i];\n        }\n        that.uploadPhoto(false, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '保存成功' });\n\n        });\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 上传照片\n    uploadPhoto: function uploadPhoto() {var needBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;var complete = arguments.length > 1 ? arguments[1] : undefined;\n      var that = this;\n      for (var i = 0; i < that.model.jcjlList.length; i++) {\n        var item = that.model.jcjlList[i];\n        console.log('item:' + JSON.stringify(item));\n        var recordid = item.jcjlrecordid;\n        var photoList = item.zplist;\n        _photoUtil.default.uploadPhoto(that.userInfo.userid, recordid, \"\", photoList, function (photoListOnServer) {\n          if (photoListOnServer.length > 0) {\n            uni.showToast({\n              icon: 'none',\n              title: '照片上传成功' });\n\n            that.classifyPhotos(photoListOnServer);\n          }\n          complete();\n        });\n      }\n    },\n    // 加载完隐患详情后把照片加到对应的List中\n    classifyPhotos: function classifyPhotos(photoList) {\n      if (photoList == null) {\n        return;\n      }\n      // 1、先把模型里的zplist全部清空。。。\n      for (var i = 0; i < this.model.jcjlList.length; i++) {\n        this.model.jcjlList[i].zplist = [];\n      }\n\n      // 2、再循环返回的photoList，把zpsgrecordid对应jcjlrecordid的照片加入zplist。。。\n      for (var i = 0; i < photoList.length; i++) {\n        var item = photoList[i];\n\n        var photoModel = {\n          fileid: item.attid,\n          src: _config.default.host + _config.default.loadImage + '&attid=' + item.attid,\n          type: 2,\n          yhid: item.zpsgrecordid,\n          attachtype: item.attachtype };\n\n\n        for (var j = 0; j < this.model.jcjlList.length; j++) {\n          var mod = this.model.jcjlList[j];\n          if (mod.jcjlrecordid == item.zpsgrecordid) {\n            this.model.jcjlList[j].zplist.push(photoModel);\n          }\n        }\n      }\n\n      // console.log(\"jcjlList:\" + JSON.stringify(this.model.jcjlList))\n    },\n    typePickerChange: function typePickerChange(data, e) {// 目前只有检查类型用\n      this.model[e.target.id] = data[e.target.value].dictvalue;\n      this.model['jclxbm'] = data[e.target.value].dictvalue;\n    },\n    dateChange: function dateChange(key, e) {\n      this.model[key] = e.target.value;\n    },\n    // 多选成员\n    jumpPersonChoose: function jumpPersonChoose(e) {\n      var that = this;\n      var key = \"CHECK_PERSONS\";\n      uni.navigateTo({\n        url: \"../common/personChoose?key=\" + key + \"&mltiple=true\" + \"&selected=\" + JSON.stringify(this.selectedPersons) });\n\n      that.$fire.once(key, function (personList) {\n        that.selectedPersons = personList;\n        that.formatPersons();\n      });\n    },\n    // 选择模板\n    mbChange: function mbChange(data, e) {\n      this.currentModule = data[e.target.value];\n      this.model[e.target.id] = data[e.target.value].mbmc;\n      this.getCheckInfoByMb();\n    },\n    // 根据模板获取检查项\n    getCheckInfoByMb: function getCheckInfoByMb() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        mbid: that.currentModule.mbid };\n\n      _request.default.requestLoading(_config.default.getCheckInfo, param, '正在获取检查项',\n      function (res) {\n        that.model.jcjlList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 跳转检查项编辑\n    jumpEdit: function jumpEdit(item, index) {\n      var that = this;\n      if (that.editable == false) {\n        return;\n      }\n      // item太长，只能存本地，不能放入URL，到下个页面再取出来\n      uni.setStorage({\n        key: \"LOCAL_ITEM\",\n        data: item,\n        success: function success() {\n          var key = \"INFO_EDIT\";\n          uni.navigateTo({\n            url: 'checkInfoEdit?index=' + index + '&key=' + key });\n\n          that.$fire.once(key, function (result) {\n            // 替换personList中的元素为未选中\n            that.model.jcjlList.splice(result.index, 1, result.item);\n          });\n        } });\n\n    },\n    // 添加自定义检查项\n    addCheck: function addCheck(e) {\n      this.promptVisible = true;\n    },\n    // 点击弹出输入框确定\n    clickPromptConfirm: function clickPromptConfirm(val) {\n      // console.log(val)\n      if (val == \"\") {\n        uni.showToast({\n          icon: 'none',\n          title: '请输入检查标题内容' });\n\n        return;\n      }\n      var newItem = {\n        bzlx: '',\n        idx: '',\n        ifwt: '',\n        jcbz: val,\n        jcbzid: '',\n        jcjlrecordid: '',\n        precordid: '',\n        wtms: '',\n        xmhfl: '',\n        xmhflid: '',\n        zgqk: '',\n        zgtzdid: '',\n        zgtzdmoduleid: '',\n        zgzt: '',\n        zplist: [] };\n\n      this.model.jcjlList.push(newItem);\n      // 滚动到底部，效果不好\n      // \t\t\t  uni.pageScrollTo({\n      // \t\t\t\tscrollTop: 100,\n      // \t\t\t\tduration: 100\n      // \t\t\t});\n      this.promptVisible = false;\n    },\n    // 点击弹出输入框取消\n    clickCancel: function clickCancel(e) {\n      this.promptVisible = false;\n    },\n    // 格式化检查组成员，变成接口需要的用；隔开的字符串\n    formatPersons: function formatPersons() {\n      var qtcyid = \"\";\n      var qtcy = \"\";\n      for (var i = 0; i < this.selectedPersons.length; i++) {\n        var person = this.selectedPersons[i];\n        qtcyid = person.id + \";\" + qtcyid;\n        qtcy = person.name + \";\" + qtcy;\n      }\n      this.model.qtcy = qtcy;\n      this.model.qtcyid = qtcyid;\n    },\n    // 获取检查项状态图标\n    getIcon: function getIcon(item) {\n      if (item.ifwt == '1') {// 正常图标\n        return this.normal;\n      } else if (item.ifwt == '3') {// 异常图标\n        return this.abnormal;\n      } else {// 未检图标\n        return this.undetected;\n      }\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/check/checkEdit.vue?vue&type=script&lang=js&?d349");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/list/uni-list-item/uni-list-item.vue\"));\nvar _prompt = _interopRequireDefault(__webpack_require__(/*! @/components/prompt/prompt.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/components/prompt/prompt.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/config.js\"));\nvar _dataConfig = _interopRequireDefault(__webpack_require__(/*! ../../util/dataConfig.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/dataConfig.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/service.js\"));\nvar _photoUtil = _interopRequireDefault(__webpack_require__(/*! ../../util/photoUtil.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/util/photoUtil.js\"));\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default, prompt: _prompt.default },\n  data: function data() {\n    return {\n      model: {\n        recordid: '', // 主键，有值更新，没值插入\n        userid: '',\n        jcdzt: '1', // 状态：1-新建，5-完成，其他时候就按后台传的来\n        jclx: '',\n        llrid: '',\n        llrmc: '',\n        jcrq: '',\n        qtcyid: '',\n        qtcy: '',\n        mb: '',\n        jcjlList: [] },\n\n\n      // 选中的模板\n      currentModule: null,\n\n      // 数据源\n      checkTypes: [],\n      // 选中的成员对象集合\n      selectedPersons: [],\n      // 选择的模板内容\n      selectedModule: [],\n\n      // 是否可编辑\n      editable: true,\n\n      // 控制弹框输入框显示, 在需要的地方调用this.promptVisible = true\n      promptVisible: false,\n      // 图标\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' },\n\n\n      // 备用的照片List\n      zplists: [] };\n\n  },\n  onLoad: function onLoad(option) {\n    var recordid = option.recordid == null ? \"\" : option.recordid;\n\n    if (recordid == \"\") {// 新建\n      this.model.llrid = this.userInfo.userid;\n      this.model.llrmc = this.userInfo.username;\n    } else {// 获取详情\n      this.model.recordid = recordid;\n      this.getDetail();\n    }\n\n    // 获取检查类型\n    this.getCheckTypes();\n    // 获取检查模板\n    this.getCheckModule();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {var _this = this;\n    uni.showModal({\n      content: '选择[一键正常]将要清除所有问题描述、检查方式、检查照片，是否确认？',\n      success: function success(res) {\n        if (res.confirm) {\n          _this.setAllOk();\n        } else {\n          return;\n        }\n      } });\n\n  },\n  onUnload: function onUnload() {\n\n  },\n  methods: {\n    // 设置一键正常\n    setAllOk: function setAllOk(e) {\n      for (var i = 0; i < this.model.jcjlList.length; i++) {\n        this.model.jcjlList[i].wtms = \"\";\n        this.model.jcjlList[i].zgqk = \"\";\n        this.model.jcjlList[i].zplist = [];\n        this.model.jcjlList[i].ifwt = \"1\";\n      }\n    },\n    // 获取检查类型\n    getCheckTypes: function getCheckTypes(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckTypes, param, '正在获取检查类型',\n      function (res) {\n        that.checkTypes = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 获取检查模板\n    getCheckModule: function getCheckModule(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.getCheckModule, param, '正在获取检查模板',\n      function (res) {\n        that.selectedModule = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 获取检查详情\n    getDetail: function getDetail(e) {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        recordid: that.model.recordid };\n\n      _request.default.requestLoading(_config.default.getCheckDetail, param, '正在获取检查详情',\n      function (res) {\n        that.model = res;\n        if (that.model.jcdzt == \"5\") {\n          editable = false;\n        }\n        // 处理照片\n        var zplists = [];\n        for (var i = 0; i < res.jcjlList.length; i++) {\n          zplists = zplists.concat(res.jcjlList[i].zplist);\n        }\n        // console.log('zplists' + JSON.stringify(zplists));\n        that.classifyPhotos(zplists);\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 保存\n    saveClick: function saveClick(e) {\n      this.doSave(1);\n    },\n    // 完成检查\n    completeClick: function completeClick(e) {\n      this.doSave(5);\n    },\n    // 保存接口,保存的时候state为1，完成检查的时候state为5\n    doSave: function doSave(state) {\n      var that = this;\n      // 先清除zplists\n      that.zplists = [];\n      that.model.userid = that.userInfo.userid;\n      that.model.jcdzt = state;\n      var param = that.model;\n      // 抽出模型jcjlList里的所有zplist备用，因为保存成功后替换模型会把zplist置空\n      for (var i = 0; i < that.model.jcjlList.length; i++) {\n        var item = that.model.jcjlList[i];\n        that.zplists.push(item.zplist);\n      }\n\n      _request.default.requestLoading(_config.default.saveCheck, param, '正在保存检查',\n      function (res) {\n        that.model = res;\n        // 把抽出的zplist放回去\n        for (var i = 0; i < that.model.jcjlList.length; i++) {\n          var _item = that.model.jcjlList[i];\n          _item.zplist = that.zplists[i];\n        }\n        that.uploadPhoto(false, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '保存成功' });\n\n        });\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 上传照片\n    uploadPhoto: function uploadPhoto() {var needBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;var complete = arguments.length > 1 ? arguments[1] : undefined;\n      var that = this;\n      for (var i = 0; i < that.model.jcjlList.length; i++) {\n        var item = that.model.jcjlList[i];\n        console.log('item:' + JSON.stringify(item));\n        var recordid = item.jcjlrecordid;\n        var photoList = item.zplist;\n        _photoUtil.default.uploadPhoto(that.userInfo.userid, recordid, \"\", photoList, function (photoListOnServer) {\n          if (photoListOnServer.length > 0) {\n            uni.showToast({\n              icon: 'none',\n              title: '照片上传成功' });\n\n            that.classifyPhotos(photoListOnServer);\n          }\n          complete();\n        });\n      }\n    },\n    // 加载完隐患详情后把照片加到对应的List中\n    classifyPhotos: function classifyPhotos(photoList) {\n      if (photoList == null) {\n        return;\n      }\n      // 1、先把模型里的zplist全部清空。。。\n      for (var i = 0; i < this.model.jcjlList.length; i++) {\n        this.model.jcjlList[i].zplist = [];\n      }\n\n      // 2、再循环返回的photoList，把zpsgrecordid对应jcjlrecordid的照片加入zplist。。。\n      for (var i = 0; i < photoList.length; i++) {\n        var item = photoList[i];\n\n        var photoModel = {\n          fileid: item.attid,\n          src: _config.default.host + _config.default.loadImage + '&attid=' + item.attid,\n          type: 2,\n          yhid: item.zpsgrecordid,\n          attachtype: item.attachtype };\n\n\n        for (var j = 0; j < this.model.jcjlList.length; j++) {\n          var mod = this.model.jcjlList[j];\n          if (mod.jcjlrecordid == item.zpsgrecordid) {\n            this.model.jcjlList[j].zplist.push(photoModel);\n          }\n        }\n      }\n\n      // console.log(\"jcjlList:\" + JSON.stringify(this.model.jcjlList))\n    },\n    typePickerChange: function typePickerChange(data, e) {// 目前只有检查类型用\n      this.model[e.target.id] = data[e.target.value].dvalue;\n      this.model['jclxbm'] = data[e.target.value].dvalue;\n    },\n    dateChange: function dateChange(key, e) {\n      this.model[key] = e.target.value;\n    },\n    // 多选成员\n    jumpPersonChoose: function jumpPersonChoose(e) {\n      var that = this;\n      var key = \"CHECK_PERSONS\";\n      uni.navigateTo({\n        url: \"../common/personChoose?key=\" + key + \"&mltiple=true\" + \"&selected=\" + JSON.stringify(this.selectedPersons) });\n\n      that.$fire.once(key, function (personList) {\n        that.selectedPersons = personList;\n        that.formatPersons();\n      });\n    },\n    // 选择模板\n    mbChange: function mbChange(data, e) {\n      this.currentModule = data[e.target.value];\n      this.model[e.target.id] = data[e.target.value].mbmc;\n      this.getCheckInfoByMb();\n    },\n    // 根据模板获取检查项\n    getCheckInfoByMb: function getCheckInfoByMb() {\n      var that = this;\n      var param = {\n        userid: that.userInfo.userid,\n        mbid: that.currentModule.mbid };\n\n      _request.default.requestLoading(_config.default.getCheckInfo, param, '正在获取检查项',\n      function (res) {\n        that.model.jcjlList = res.data;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '获取失败' });\n\n      }, function () {\n\n      });\n\n    },\n    // 跳转检查项编辑\n    jumpEdit: function jumpEdit(item, index) {\n      var that = this;\n      if (that.editable == false) {\n        return;\n      }\n      // item太长，只能存本地，不能放入URL，到下个页面再取出来\n      uni.setStorage({\n        key: \"LOCAL_ITEM\",\n        data: item,\n        success: function success() {\n          var key = \"INFO_EDIT\";\n          uni.navigateTo({\n            url: 'checkInfoEdit?index=' + index + '&key=' + key });\n\n          that.$fire.once(key, function (result) {\n            // 替换personList中的元素为未选中\n            that.model.jcjlList.splice(result.index, 1, result.item);\n          });\n        } });\n\n    },\n    // 添加自定义检查项\n    addCheck: function addCheck(e) {\n      this.promptVisible = true;\n    },\n    // 点击弹出输入框确定\n    clickPromptConfirm: function clickPromptConfirm(val) {\n      // console.log(val)\n      if (val == \"\") {\n        uni.showToast({\n          icon: 'none',\n          title: '请输入检查标题内容' });\n\n        return;\n      }\n      var newItem = {\n        bzlx: '',\n        idx: '',\n        ifwt: '',\n        jcbz: val,\n        jcbzid: '',\n        jcjlrecordid: '',\n        precordid: '',\n        wtms: '',\n        xmhfl: '',\n        xmhflid: '',\n        zgqk: '',\n        zgtzdid: '',\n        zgtzdmoduleid: '',\n        zgzt: '',\n        zplist: [] };\n\n      this.model.jcjlList.push(newItem);\n      // 滚动到底部，效果不好\n      // \t\t\t  uni.pageScrollTo({\n      // \t\t\t\tscrollTop: 100,\n      // \t\t\t\tduration: 100\n      // \t\t\t});\n      this.promptVisible = false;\n    },\n    // 点击弹出输入框取消\n    clickCancel: function clickCancel(e) {\n      this.promptVisible = false;\n    },\n    // 格式化检查组成员，变成接口需要的用；隔开的字符串\n    formatPersons: function formatPersons() {\n      var qtcyid = \"\";\n      var qtcy = \"\";\n      for (var i = 0; i < this.selectedPersons.length; i++) {\n        var person = this.selectedPersons[i];\n        qtcyid = person.id + \";\" + qtcyid;\n        qtcy = person.name + \";\" + qtcy;\n      }\n      this.model.qtcy = qtcy;\n      this.model.qtcyid = qtcyid;\n    },\n    // 获取检查项状态图标\n    getIcon: function getIcon(item) {\n      if (item.ifwt == '1') {// 正常图标\n        return this.normal;\n      } else if (item.ifwt == '3') {// 异常图标\n        return this.abnormal;\n      } else {// 未检图标\n        return this.undetected;\n      }\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/check/checkEdit.vue?vue&type=script&lang=js&?d349");
 
 /***/ }),
 
@@ -7328,7 +7328,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _c(\n        \"scroll-view\",\n        { staticClass: \"scrollView\", attrs: { \"scroll-y\": \"true\" } },\n        [\n          _c(\"view\", { staticClass: \"cellTitleView\" }, [\n            _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"cellInfoView\" },\n            [\n              _c(\n                \"uni-list\",\n                { attrs: { mpcomid: \"609973d6-5\" } },\n                [\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"jclx\",\n                        range: _vm.checkTypes,\n                        \"range-key\": \"dictvalue\",\n                        disabled: !_vm.editable,\n                        eventid: \"609973d6-0\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.typePickerChange(_vm.checkTypes, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查类型\",\n                          subnote: _vm.model.jclx,\n                          \"show-arrow\": _vm.editable,\n                          mpcomid: \"609973d6-0\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查人\",\n                      subnote: _vm.model.llrmc,\n                      \"show-arrow\": \"false\",\n                      mpcomid: \"609973d6-1\"\n                    }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        mode: \"date\",\n                        value: _vm.model.jcrq,\n                        disabled: !_vm.editable,\n                        eventid: \"609973d6-1\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.dateChange(\"jcrq\", $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查日期\",\n                          subnote: _vm.model.jcrq,\n                          \"show-arrow\": _vm.editable,\n                          mpcomid: \"609973d6-2\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查组成员\",\n                      subnote: _vm.model.qtcy,\n                      \"show-arrow\": _vm.editable,\n                      eventid: \"609973d6-2\",\n                      mpcomid: \"609973d6-3\"\n                    },\n                    on: { click: _vm.jumpPersonChoose }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"mb\",\n                        range: _vm.selectedModule,\n                        \"range-key\": \"mbmc\",\n                        disabled: !_vm.editable,\n                        eventid: \"609973d6-3\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.mbChange(_vm.selectedModule, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查模板\",\n                          subnote: _vm.model.mb,\n                          \"show-arrow\": _vm.editable,\n                          mpcomid: \"609973d6-4\"\n                        }\n                      })\n                    ],\n                    1\n                  )\n                ],\n                1\n              )\n            ],\n            1\n          ),\n          _vm.model.jcjlList.length > 0\n            ? _c(\"block\", [\n                _c(\n                  \"view\",\n                  { staticClass: \"cellTitleView\" },\n                  [\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [\n                      _vm._v(\"检查内容\")\n                    ]),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"checkbox-filled\",\n                        size: \"22\",\n                        color: \"#24BE41\",\n                        mpcomid: \"609973d6-6\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"info-filled\",\n                        size: \"22\",\n                        color: \"#FFDE52\",\n                        mpcomid: \"609973d6-7\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"clear\",\n                        size: \"22\",\n                        color: \"#C11E1E\",\n                        mpcomid: \"609973d6-8\"\n                      }\n                    })\n                  ],\n                  1\n                ),\n                _c(\n                  \"view\",\n                  { staticClass: \"cellInfoView\" },\n                  [\n                    _c(\n                      \"uni-list\",\n                      { attrs: { mpcomid: \"609973d6-10\" } },\n                      _vm._l(_vm.model.jcjlList, function(item, index) {\n                        return _c(\"uni-list-item\", {\n                          key: index,\n                          attrs: {\n                            title: item.jcbz,\n                            note: item.wtms,\n                            \"show-extra-icon\": \"true\",\n                            \"show-arrow\": _vm.editable,\n                            \"extra-icon\": _vm.getIcon(item),\n                            eventid: \"609973d6-4-\" + index,\n                            mpcomid: \"609973d6-9-\" + index\n                          },\n                          on: {\n                            click: function($event) {\n                              _vm.jumpEdit(item, index)\n                            }\n                          }\n                        })\n                      })\n                    )\n                  ],\n                  1\n                ),\n                _c(\"image\", {\n                  staticClass: \"addCheck\",\n                  attrs: {\n                    mode: \"aspectFit\",\n                    src: \"../../static/assets/addCheck.png\",\n                    eventid: \"609973d6-5\"\n                  },\n                  on: { click: _vm.addCheck }\n                })\n              ])\n            : _vm._e()\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"bottomView\" }, [\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-6\" },\n            on: { click: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-7\" },\n            on: { click: _vm.completeClick }\n          },\n          [_vm._v(\"完成检查\")]\n        )\n      ]),\n      _vm.promptVisible\n        ? _c(\"prompt\", {\n            attrs: {\n              title: \"添加检查内容\",\n              placeholder: \"请输入检查标题\",\n              defaultValue: \"\",\n              mainColor: \"#3296FA\",\n              eventid: \"609973d6-8\",\n              mpcomid: \"609973d6-11\"\n            },\n            on: { cancel: _vm.clickCancel, confirm: _vm.clickPromptConfirm }\n          })\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/check/checkEdit.vue?vue&type=template&id=1556a4cc&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"baseView\" },\n    [\n      _c(\n        \"scroll-view\",\n        { staticClass: \"scrollView\", attrs: { \"scroll-y\": \"true\" } },\n        [\n          _c(\"view\", { staticClass: \"cellTitleView\" }, [\n            _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"cellInfoView\" },\n            [\n              _c(\n                \"uni-list\",\n                { attrs: { mpcomid: \"609973d6-5\" } },\n                [\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"jclx\",\n                        range: _vm.checkTypes,\n                        \"range-key\": \"dvalue\",\n                        disabled: !_vm.editable,\n                        eventid: \"609973d6-0\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.typePickerChange(_vm.checkTypes, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查类型\",\n                          subnote: _vm.model.jclx,\n                          \"show-arrow\": _vm.editable,\n                          mpcomid: \"609973d6-0\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查人\",\n                      subnote: _vm.model.llrmc,\n                      \"show-arrow\": \"false\",\n                      mpcomid: \"609973d6-1\"\n                    }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        mode: \"date\",\n                        value: _vm.model.jcrq,\n                        disabled: !_vm.editable,\n                        eventid: \"609973d6-1\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.dateChange(\"jcrq\", $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查日期\",\n                          subnote: _vm.model.jcrq,\n                          \"show-arrow\": _vm.editable,\n                          mpcomid: \"609973d6-2\"\n                        }\n                      })\n                    ],\n                    1\n                  ),\n                  _c(\"uni-list-item\", {\n                    attrs: {\n                      title: \"检查组成员\",\n                      subnote: _vm.model.qtcy,\n                      \"show-arrow\": _vm.editable,\n                      eventid: \"609973d6-2\",\n                      mpcomid: \"609973d6-3\"\n                    },\n                    on: { click: _vm.jumpPersonChoose }\n                  }),\n                  _c(\n                    \"picker\",\n                    {\n                      attrs: {\n                        id: \"mb\",\n                        range: _vm.selectedModule,\n                        \"range-key\": \"mbmc\",\n                        disabled: !_vm.editable,\n                        eventid: \"609973d6-3\"\n                      },\n                      on: {\n                        change: function($event) {\n                          _vm.mbChange(_vm.selectedModule, $event)\n                        }\n                      }\n                    },\n                    [\n                      _c(\"uni-list-item\", {\n                        attrs: {\n                          title: \"检查模板\",\n                          subnote: _vm.model.mb,\n                          \"show-arrow\": _vm.editable,\n                          mpcomid: \"609973d6-4\"\n                        }\n                      })\n                    ],\n                    1\n                  )\n                ],\n                1\n              )\n            ],\n            1\n          ),\n          _vm.model.jcjlList.length > 0\n            ? _c(\"block\", [\n                _c(\n                  \"view\",\n                  { staticClass: \"cellTitleView\" },\n                  [\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [\n                      _vm._v(\"检查内容\")\n                    ]),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"checkbox-filled\",\n                        size: \"22\",\n                        color: \"#24BE41\",\n                        mpcomid: \"609973d6-6\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"info-filled\",\n                        size: \"22\",\n                        color: \"#FFDE52\",\n                        mpcomid: \"609973d6-7\"\n                      }\n                    }),\n                    _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n                    _c(\"uni-icon\", {\n                      attrs: {\n                        type: \"clear\",\n                        size: \"22\",\n                        color: \"#C11E1E\",\n                        mpcomid: \"609973d6-8\"\n                      }\n                    })\n                  ],\n                  1\n                ),\n                _c(\n                  \"view\",\n                  { staticClass: \"cellInfoView\" },\n                  [\n                    _c(\n                      \"uni-list\",\n                      { attrs: { mpcomid: \"609973d6-10\" } },\n                      _vm._l(_vm.model.jcjlList, function(item, index) {\n                        return _c(\"uni-list-item\", {\n                          key: index,\n                          attrs: {\n                            title: item.jcbz,\n                            note: item.wtms,\n                            \"show-extra-icon\": \"true\",\n                            \"show-arrow\": _vm.editable,\n                            \"extra-icon\": _vm.getIcon(item),\n                            eventid: \"609973d6-4-\" + index,\n                            mpcomid: \"609973d6-9-\" + index\n                          },\n                          on: {\n                            click: function($event) {\n                              _vm.jumpEdit(item, index)\n                            }\n                          }\n                        })\n                      })\n                    )\n                  ],\n                  1\n                ),\n                _c(\"image\", {\n                  staticClass: \"addCheck\",\n                  attrs: {\n                    mode: \"aspectFit\",\n                    src: \"../../static/assets/addCheck.png\",\n                    eventid: \"609973d6-5\"\n                  },\n                  on: { click: _vm.addCheck }\n                })\n              ])\n            : _vm._e()\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"bottomView\" }, [\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-6\" },\n            on: { click: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"buttonStyle\",\n            attrs: { eventid: \"609973d6-7\" },\n            on: { click: _vm.completeClick }\n          },\n          [_vm._v(\"完成检查\")]\n        )\n      ]),\n      _vm.promptVisible\n        ? _c(\"prompt\", {\n            attrs: {\n              title: \"添加检查内容\",\n              placeholder: \"请输入检查标题\",\n              defaultValue: \"\",\n              mainColor: \"#3296FA\",\n              eventid: \"609973d6-8\",\n              mpcomid: \"609973d6-11\"\n            },\n            on: { cancel: _vm.clickCancel, confirm: _vm.clickPromptConfirm }\n          })\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SBPCEHS-uni-app/SBPC/pages/check/checkEdit.vue?vue&type=template&id=1556a4cc&");
 
 /***/ })
 

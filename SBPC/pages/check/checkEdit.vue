@@ -6,7 +6,7 @@
 			</view>
 			<view class="cellInfoView">
 				<uni-list>
-					<picker id="jclx" @change="typePickerChange(checkTypes, $event)" v-bind:range="checkTypes" range-key="dictvalue" :disabled="!editable">
+					<picker id="jclx" @change="typePickerChange(checkTypes, $event)" v-bind:range="checkTypes" range-key="dvalue" :disabled="!editable">
 						<uni-list-item title="检查类型" :subnote="model.jclx" :show-arrow="editable"></uni-list-item>
 					</picker>
 					<uni-list-item title="检查人" :subnote="model.llrmc" show-arrow="false"></uni-list-item>
@@ -334,8 +334,8 @@
 				// console.log("jcjlList:" + JSON.stringify(this.model.jcjlList))
 			},
 			typePickerChange: function(data, e) {// 目前只有检查类型用
-				this.model[e.target.id] = data[e.target.value].dictvalue;
-				this.model['jclxbm'] = data[e.target.value].dictvalue;
+				this.model[e.target.id] = data[e.target.value].dvalue;
+				this.model['jclxbm'] = data[e.target.value].dvalue;
 			},
 			dateChange: function(key, e) {
 				this.model[key] = e.target.value

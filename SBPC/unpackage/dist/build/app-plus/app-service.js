@@ -1060,279 +1060,279 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'M609973d6-default-609973d6-5'])
-Z([3,'handleProxy'])
-Z([3,'_picker M609973d6'])
-Z([[7],[3,'$k']])
-Z([1,'609973d6-0'])
-Z([[2,'!'],[[7],[3,'editable']]])
-Z([3,'jclx'])
-Z([[7],[3,'checkTypes']])
-Z([3,'dictvalue'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'M4508b5aa-default-4508b5aa-1'])
+Z([3,'idx'])
+Z([3,'logItem'])
+Z([[7],[3,'logList']])
+Z(z[1])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
-Z([3,'检查类型'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z([3,'false'])
-Z([3,'检查人'])
-Z(z[1])
-Z(z[2])
-Z(z[3])
-Z([1,'609973d6-1'])
-Z(z[5])
-Z([3,'date'])
-Z([[6],[[7],[3,'model']],[3,'jcrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z([3,'检查日期'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'609973d6-2'])
-Z(z[10])
-Z([3,'检查组成员'])
-Z(z[1])
-Z(z[2])
-Z(z[3])
-Z([1,'609973d6-3'])
-Z(z[5])
-Z([3,'mb'])
-Z([[7],[3,'selectedModule']])
-Z([3,'mbmc'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z([3,'检查模板'])
-Z([3,'M609973d6-default-609973d6-10'])
-Z([3,'index'])
-Z([3,'item'])
-Z([[6],[[7],[3,'model']],[3,'jcjlList']])
-Z(z[44])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
-Z(z[10])
-Z([3,'true'])
-Z([3,'M77ae7fa4-default-77ae7fa4-3'])
-Z(z[1])
-Z([3,'_picker M77ae7fa4'])
-Z(z[3])
-Z([1,'77ae7fa4-0'])
-Z([3,'ifwt'])
-Z([[7],[3,'typeArray']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z([3,'检查结论'])
-Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'77ae7fa4-1'])
-Z([3,'wtms'])
-Z(z[10])
-Z([3,'问题描述'])
-Z(z[64])
-Z(z[1])
-Z(z[56])
-Z(z[3])
-Z([1,'77ae7fa4-2'])
-Z([3,'zgqk'])
-Z([[7],[3,'rectifyTypes']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z([3,'检查方式'])
-Z([3,'Mf40cc204-default-f40cc204-1'])
-Z(z[44])
-Z(z[45])
-Z([[7],[3,'ggList']])
-Z(z[44])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
-Z(z[10])
-Z([3,'M5ff9ee88-default-5ff9ee88-1'])
-Z(z[44])
-Z(z[45])
-Z(z[85])
-Z(z[44])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z([3,'Mc4edb036-default-c4edb036-1'])
-Z(z[44])
-Z(z[45])
-Z(z[85])
-Z(z[44])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
-Z(z[10])
 Z([3,'M5c0aa864-default-5c0aa864-8'])
-Z(z[1])
+Z([3,'handleProxy'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z([[7],[3,'$k']])
 Z([1,'5c0aa864-0'])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z([3,'true'])
 Z([3,'隐患描述'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-1'])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'隐患等级'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-2'])
 Z(z[10])
-Z(z[53])
+Z([1,'5c0aa864-2'])
+Z(z[6])
+Z(z[13])
 Z([3,'隐患后果'])
-Z(z[1])
+Z(z[8])
 Z([3,'_picker M5c0aa864'])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-3'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,1]],[1,false],[1,true]])
 Z([3,'yhlx'])
 Z([[7],[3,'dangerType']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'隐患类型'])
-Z(z[1])
-Z(z[132])
-Z(z[3])
+Z(z[8])
+Z(z[30])
+Z(z[10])
 Z([1,'5c0aa864-4'])
-Z(z[135])
-Z(z[21])
+Z(z[33])
+Z([3,'date'])
 Z([[6],[[7],[3,'model']],[3,'zgqx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'整改期限'])
-Z(z[1])
-Z(z[132])
-Z(z[3])
+Z(z[8])
+Z(z[30])
+Z(z[10])
 Z([1,'5c0aa864-5'])
-Z(z[135])
+Z(z[33])
 Z([3,'yhly'])
 Z([[7],[3,'dangerSource']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'隐患来源'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-6'])
 Z(z[10])
-Z(z[53])
+Z([1,'5c0aa864-6'])
+Z(z[6])
+Z(z[13])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
-Z(z[14])
+Z(z[6])
+Z(z[13])
+Z([3,'false'])
 Z([3,'发起人'])
 Z([3,'M5c0aa864-default-5c0aa864-14'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-10'])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'隐患因素'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-11'])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'原因分析'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-12'])
 Z(z[10])
-Z(z[53])
+Z([1,'5c0aa864-12'])
+Z(z[6])
+Z(z[13])
 Z([3,'整改情况'])
-Z(z[1])
-Z(z[132])
-Z(z[3])
+Z(z[8])
+Z(z[30])
+Z(z[10])
 Z([1,'5c0aa864-13'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,2]],[1,false],[1,true]])
-Z(z[21])
+Z(z[45])
 Z([[6],[[7],[3,'model']],[3,'zgwcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'完成日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
-Z(z[14])
+Z(z[6])
+Z(z[13])
+Z(z[72])
 Z([3,'整改人'])
 Z([3,'M5c0aa864-default-5c0aa864-18'])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'5c0aa864-17'])
 Z(z[10])
-Z(z[53])
+Z([1,'5c0aa864-17'])
+Z(z[6])
+Z(z[13])
 Z([3,'完成情况'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
-Z(z[14])
+Z(z[6])
+Z(z[13])
+Z(z[72])
 Z([3,'确认人'])
-Z(z[1])
-Z(z[132])
-Z(z[3])
+Z(z[8])
+Z(z[30])
+Z(z[10])
 Z([1,'5c0aa864-18'])
 Z([[2,'?:'],[[2,'=='],[[7],[3,'pageState']],[1,3]],[1,false],[1,true]])
-Z(z[21])
+Z(z[45])
 Z([[6],[[7],[3,'model']],[3,'yzrtxrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[10])
-Z(z[53])
+Z(z[6])
+Z(z[13])
 Z([3,'填报日期'])
 Z([3,'M5c0aa864-default-5c0aa864-20'])
 Z([[2,'&&'],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,'']],[[2,'!='],[[6],[[7],[3,'model']],[3,'signclass']],[1,null]]])
-Z(z[1])
+Z(z[8])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'5c0aa864-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[10])
 Z([1,'5c0aa864-22'])
-Z(z[10])
+Z(z[6])
 Z([3,'审批意见'])
-Z([3,'M4508b5aa-default-4508b5aa-1'])
-Z([3,'idx'])
-Z([3,'logItem'])
-Z([[7],[3,'logList']])
-Z(z[247])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'4508b5aa-0-']],[[7],[3,'idx']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'M77ae7fa4-default-77ae7fa4-3'])
+Z(z[8])
+Z([3,'_picker M77ae7fa4'])
 Z(z[10])
-Z([3,'M735e4812-default-735e4812-2'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'735e4812-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'735e4812-0'])
+Z([1,'77ae7fa4-0'])
+Z([3,'ifwt'])
+Z([[7],[3,'typeArray']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'检查结论'])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'ifwt']],[1,'1']])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[10])
-Z([3,'隐患原因'])
-Z(z[1])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'735e4812-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z([1,'735e4812-1'])
+Z([1,'77ae7fa4-1'])
+Z([3,'wtms'])
+Z(z[6])
+Z([3,'问题描述'])
+Z(z[154])
+Z(z[8])
+Z(z[146])
 Z(z[10])
-Z(z[141])
-Z([3,'M1d214ab8-default-1d214ab8-1'])
-Z(z[44])
+Z([1,'77ae7fa4-2'])
+Z([3,'zgqk'])
+Z([[7],[3,'rectifyTypes']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77ae7fa4-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'检查方式'])
+Z([3,'M609973d6-default-609973d6-5'])
+Z(z[8])
+Z([3,'_picker M609973d6'])
+Z(z[10])
+Z([1,'609973d6-0'])
+Z([[2,'!'],[[7],[3,'editable']]])
+Z([3,'jclx'])
+Z([[7],[3,'checkTypes']])
+Z([3,'dvalue'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'检查类型'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z(z[72])
+Z([3,'检查人'])
+Z(z[8])
+Z(z[174])
+Z(z[10])
+Z([1,'609973d6-1'])
+Z(z[177])
 Z(z[45])
-Z([[7],[3,'datas']])
-Z(z[44])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1d214ab8-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[6],[[7],[3,'model']],[3,'jcrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'检查日期'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[10])
+Z([1,'609973d6-2'])
+Z(z[6])
+Z([3,'检查组成员'])
+Z(z[8])
+Z(z[174])
+Z(z[10])
+Z([1,'609973d6-3'])
+Z(z[177])
+Z([3,'mb'])
+Z([[7],[3,'selectedModule']])
+Z([3,'mbmc'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'检查模板'])
+Z([3,'M609973d6-default-609973d6-10'])
+Z([3,'index'])
+Z([3,'item'])
+Z([[6],[[7],[3,'model']],[3,'jcjlList']])
+Z(z[216])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'609973d6-9-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([[2,'+'],[1,'609973d6-4-'],[[7],[3,'index']]])
+Z(z[6])
+Z(z[13])
+Z([3,'Mf40cc204-default-f40cc204-1'])
+Z(z[216])
+Z(z[217])
+Z([[7],[3,'ggList']])
+Z(z[216])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'f40cc204-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([[2,'+'],[1,'f40cc204-0-'],[[7],[3,'index']]])
+Z(z[6])
+Z([3,'Mc4edb036-default-c4edb036-1'])
+Z(z[216])
+Z(z[217])
+Z(z[229])
+Z(z[216])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'c4edb036-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([[2,'+'],[1,'c4edb036-0-'],[[7],[3,'index']]])
+Z(z[6])
+Z([3,'M5ff9ee88-default-5ff9ee88-1'])
+Z(z[216])
+Z(z[217])
+Z(z[229])
+Z(z[216])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'5ff9ee88-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
+Z([3,'M735e4812-default-735e4812-2'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'735e4812-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'735e4812-0'])
+Z(z[6])
+Z([3,'隐患原因'])
+Z(z[8])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'735e4812-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[10])
+Z([1,'735e4812-1'])
+Z(z[6])
+Z(z[39])
+Z([3,'M1d214ab8-default-1d214ab8-1'])
+Z(z[216])
+Z(z[217])
+Z([[7],[3,'datas']])
+Z(z[216])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1d214ab8-0-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[6])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -2084,6 +2084,384 @@ __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
 var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/prompt/prompt.vue.wxml','/components/m-input.vue.wxml','/components/countDown/uni-countdown.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/countDown/uni-countdown.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/prompt/prompt.vue.wxml','./pages/ceshi/ceshi.vue.wxml','./pages/ceshi/ceshi.wxml','./ceshi.vue.wxml','./pages/charts/chartsTypeList.vue.wxml','./pages/charts/chartsTypeList.wxml','./chartsTypeList.vue.wxml','./pages/charts/listCharts.vue.wxml','./pages/charts/listCharts.wxml','./listCharts.vue.wxml','./pages/charts/pieCharts.vue.wxml','./pages/charts/pieCharts.wxml','./pieCharts.vue.wxml','./pages/check/checkEdit.vue.wxml','./pages/check/checkEdit.wxml','./checkEdit.vue.wxml','./pages/check/checkInfoEdit.vue.wxml','./pages/check/checkInfoEdit.wxml','./checkInfoEdit.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/common/orgChoose.vue.wxml','./pages/common/orgChoose.wxml','./orgChoose.vue.wxml','./pages/common/personChoose.vue.wxml','./pages/common/personChoose.wxml','./personChoose.vue.wxml','./pages/common/selectedPersonPage.vue.wxml','./pages/common/selectedPersonPage.wxml','./selectedPersonPage.vue.wxml','./pages/common/webView.vue.wxml','./pages/common/webView.wxml','./webView.vue.wxml','./pages/danger/dangerEdit.vue.wxml','./pages/danger/dangerEdit.wxml','./dangerEdit.vue.wxml','./pages/danger/dangerLog.vue.wxml','./pages/danger/dangerLog.wxml','./dangerLog.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/other/gonggaoList.vue.wxml','./pages/other/gonggaoList.wxml','./gonggaoList.vue.wxml','./pages/other/newsList.vue.wxml','./pages/other/newsList.wxml','./newsList.vue.wxml','./pages/other/pointRank.vue.wxml','./pages/other/pointRank.wxml','./pointRank.vue.wxml','./pages/peixun/peixun.vue.wxml','./pages/peixun/peixun.wxml','./peixun.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["M4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M4508b5aa-default-4508b5aa-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+var cI=_oz(z,6,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,5,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],11,220)
+return cF
+}
+oB.wxXCkey=2
+_2z(z,3,xC,e,s,gg,oB,'logItem','idx','idx')
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-8'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=_oz(z,12,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,9,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],13,232)
+var cF=_v()
+_(r,cF)
+var hG=_oz(z,19,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,16,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],13,439)
+var oJ=_v()
+_(r,oJ)
+var lK=_oz(z,26,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,23,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],13,646)
+var eN=_mz(z,'picker',['bindchange',29,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+var bO=_v()
+_(eN,bO)
+var oP=_oz(z,37,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,36,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],13,968)
+_(r,eN)
+var fS=_mz(z,'picker',['bindchange',40,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var cT=_v()
+_(fS,cT)
+var hU=_oz(z,48,e,s,gg)
+var oV=_gd(x[0],hU,e_,d_)
+if(oV){
+var cW=_1z(z,47,e,s,gg) || {}
+var cur_globalf=gg.f
+cT.wxXCkey=3
+oV(cW,cW,cT,gg)
+gg.f=cur_globalf
+}
+else _w(hU,x[0],13,1301)
+_(r,fS)
+var oX=_mz(z,'picker',['bindchange',51,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
+var lY=_v()
+_(oX,lY)
+var aZ=_oz(z,59,e,s,gg)
+var t1=_gd(x[0],aZ,e_,d_)
+if(t1){
+var e2=_1z(z,58,e,s,gg) || {}
+var cur_globalf=gg.f
+lY.wxXCkey=3
+t1(e2,e2,lY,gg)
+gg.f=cur_globalf
+}
+else _w(aZ,x[0],13,1634)
+_(r,oX)
+var b3=_v()
+_(r,b3)
+var o4=_oz(z,66,e,s,gg)
+var x5=_gd(x[0],o4,e_,d_)
+if(x5){
+var o6=_1z(z,63,e,s,gg) || {}
+var cur_globalf=gg.f
+b3.wxXCkey=3
+x5(o6,o6,b3,gg)
+gg.f=cur_globalf
+}
+else _w(o4,x[0],13,1850)
+var f7=_v()
+_(r,f7)
+var c8=_oz(z,70,e,s,gg)
+var h9=_gd(x[0],c8,e_,d_)
+if(h9){
+var o0=_1z(z,69,e,s,gg) || {}
+var cur_globalf=gg.f
+f7.wxXCkey=3
+h9(o0,o0,f7,gg)
+gg.f=cur_globalf
+}
+else _w(c8,x[0],13,1998)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-14"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-14'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=_oz(z,79,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,76,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],15,234)
+var cF=_v()
+_(r,cF)
+var hG=_oz(z,86,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,83,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],15,443)
+var oJ=_v()
+_(r,oJ)
+var lK=_oz(z,93,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,90,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],15,652)
+var eN=_mz(z,'picker',['bindchange',96,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var bO=_v()
+_(eN,bO)
+var oP=_oz(z,104,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,103,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],15,980)
+_(r,eN)
+var fS=_v()
+_(r,fS)
+var cT=_oz(z,108,e,s,gg)
+var hU=_gd(x[0],cT,e_,d_)
+if(hU){
+var oV=_1z(z,107,e,s,gg) || {}
+var cur_globalf=gg.f
+fS.wxXCkey=3
+hU(oV,oV,fS,gg)
+gg.f=cur_globalf
+}
+else _w(cT,x[0],15,1138)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-18"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-18'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+var xC=_oz(z,117,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,114,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],17,235)
+var cF=_v()
+_(r,cF)
+var hG=_oz(z,121,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,120,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],17,384)
+var oJ=_mz(z,'picker',['bindchange',125,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+var lK=_v()
+_(oJ,lK)
+var aL=_oz(z,133,e,s,gg)
+var tM=_gd(x[0],aL,e_,d_)
+if(tM){
+var eN=_1z(z,132,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[0],17,713)
+_(r,oJ)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M5c0aa864-default-5c0aa864-20"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M5c0aa864-default-5c0aa864-20'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+if(_oz(z,137,e,s,gg)){oB.wxVkey=1
+var xC=_v()
+_(oB,xC)
+var oD=_oz(z,142,e,s,gg)
+var fE=_gd(x[0],oD,e_,d_)
+if(fE){
+var cF=_1z(z,139,e,s,gg) || {}
+var cur_globalf=gg.f
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
+gg.f=cur_globalf
+}
+else _w(oD,x[0],19,279)
+}
+oB.wxXCkey=1
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["M77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':M77ae7fa4-default-77ae7fa4-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oD=_mz(z,'picker',['bindchange',145,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var fE=_v()
+_(oD,fE)
+var cF=_oz(z,152,e,s,gg)
+var hG=_gd(x[0],cF,e_,d_)
+if(hG){
+var oH=_1z(z,151,e,s,gg) || {}
+var cur_globalf=gg.f
+fE.wxXCkey=3
+hG(oH,oH,fE,gg)
+gg.f=cur_globalf
+}
+else _w(cF,x[0],21,284)
+_(r,oD)
+var oB=_v()
+_(r,oB)
+if(_oz(z,154,e,s,gg)){oB.wxVkey=1
+var cI=_v()
+_(oB,cI)
+var oJ=_oz(z,160,e,s,gg)
+var lK=_gd(x[0],oJ,e_,d_)
+if(lK){
+var aL=_1z(z,156,e,s,gg) || {}
+var cur_globalf=gg.f
+cI.wxXCkey=3
+lK(aL,aL,cI,gg)
+gg.f=cur_globalf
+}
+else _w(oJ,x[0],21,522)
+}
+var xC=_v()
+_(r,xC)
+if(_oz(z,162,e,s,gg)){xC.wxVkey=1
+var tM=_mz(z,'picker',['bindchange',163,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
+var eN=_v()
+_(tM,eN)
+var bO=_oz(z,170,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,169,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],21,813)
+_(xC,tM)
+}
+oB.wxXCkey=1
+xC.wxXCkey=1
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["M609973d6-default-609973d6-5"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':M609973d6-default-609973d6-5'
@@ -2092,71 +2470,71 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-var oB=_mz(z,'picker',['bindchange',1,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+var oB=_mz(z,'picker',['bindchange',173,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var xC=_v()
 _(oB,xC)
-var oD=_oz(z,10,e,s,gg)
+var oD=_oz(z,182,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
-var cF=_1z(z,9,e,s,gg) || {}
+var cF=_1z(z,181,e,s,gg) || {}
 var cur_globalf=gg.f
 xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],11,332)
+else _w(oD,x[0],23,329)
 _(r,oB)
 var hG=_v()
 _(r,hG)
-var oH=_oz(z,13,e,s,gg)
+var oH=_oz(z,185,e,s,gg)
 var cI=_gd(x[0],oH,e_,d_)
 if(cI){
-var oJ=_1z(z,12,e,s,gg) || {}
+var oJ=_1z(z,184,e,s,gg) || {}
 var cur_globalf=gg.f
 hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],11,472)
-var lK=_mz(z,'picker',['bindchange',16,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
+else _w(oH,x[0],23,469)
+var lK=_mz(z,'picker',['bindchange',188,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
 var aL=_v()
 _(lK,aL)
-var tM=_oz(z,24,e,s,gg)
+var tM=_oz(z,196,e,s,gg)
 var eN=_gd(x[0],tM,e_,d_)
 if(eN){
-var bO=_1z(z,23,e,s,gg) || {}
+var bO=_1z(z,195,e,s,gg) || {}
 var cur_globalf=gg.f
 aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],11,759)
+else _w(tM,x[0],23,756)
 _(r,lK)
 var oP=_v()
 _(r,oP)
-var xQ=_oz(z,30,e,s,gg)
+var xQ=_oz(z,202,e,s,gg)
 var oR=_gd(x[0],xQ,e_,d_)
 if(oR){
-var fS=_1z(z,27,e,s,gg) || {}
+var fS=_1z(z,199,e,s,gg) || {}
 var cur_globalf=gg.f
 oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[0],11,961)
-var cT=_mz(z,'picker',['bindchange',32,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
+else _w(xQ,x[0],23,958)
+var cT=_mz(z,'picker',['bindchange',204,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6,'rangeKey',7],[],e,s,gg)
 var hU=_v()
 _(cT,hU)
-var oV=_oz(z,41,e,s,gg)
+var oV=_oz(z,213,e,s,gg)
 var cW=_gd(x[0],oV,e_,d_)
 if(cW){
-var oX=_1z(z,40,e,s,gg) || {}
+var oX=_1z(z,212,e,s,gg) || {}
 var cur_globalf=gg.f
 hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[0],11,1265)
+else _w(oV,x[0],23,1262)
 _(r,cT)
 }catch(err){
 p_[b]=false
@@ -2178,85 +2556,20 @@ _(r,oB)
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-var cI=_oz(z,52,fE,oD,gg)
+var cI=_oz(z,224,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,49,fE,oD,gg) || {}
+var lK=_1z(z,221,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],13,247)
+else _w(cI,x[0],25,247)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,46,xC,e,s,gg,oB,'item','index','index')
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M77ae7fa4-default-77ae7fa4-3"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M77ae7fa4-default-77ae7fa4-3'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oD=_mz(z,'picker',['bindchange',55,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var fE=_v()
-_(oD,fE)
-var cF=_oz(z,62,e,s,gg)
-var hG=_gd(x[0],cF,e_,d_)
-if(hG){
-var oH=_1z(z,61,e,s,gg) || {}
-var cur_globalf=gg.f
-fE.wxXCkey=3
-hG(oH,oH,fE,gg)
-gg.f=cur_globalf
-}
-else _w(cF,x[0],15,284)
-_(r,oD)
-var oB=_v()
-_(r,oB)
-if(_oz(z,64,e,s,gg)){oB.wxVkey=1
-var cI=_v()
-_(oB,cI)
-var oJ=_oz(z,70,e,s,gg)
-var lK=_gd(x[0],oJ,e_,d_)
-if(lK){
-var aL=_1z(z,66,e,s,gg) || {}
-var cur_globalf=gg.f
-cI.wxXCkey=3
-lK(aL,aL,cI,gg)
-gg.f=cur_globalf
-}
-else _w(oJ,x[0],15,522)
-}
-var xC=_v()
-_(r,xC)
-if(_oz(z,72,e,s,gg)){xC.wxVkey=1
-var tM=_mz(z,'picker',['bindchange',73,'class',1,'data-comkey',2,'data-eventid',3,'id',4,'range',5],[],e,s,gg)
-var eN=_v()
-_(tM,eN)
-var bO=_oz(z,80,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,79,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],15,813)
-_(xC,tM)
-}
-oB.wxXCkey=1
-xC.wxXCkey=1
+_2z(z,218,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2277,54 +2590,20 @@ _(r,oB)
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-var cI=_oz(z,91,fE,oD,gg)
+var cI=_oz(z,235,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,88,fE,oD,gg) || {}
+var lK=_1z(z,232,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],17,306)
+else _w(cI,x[0],27,306)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,85,xC,e,s,gg,oB,'item','index','index')
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5ff9ee88-default-5ff9ee88-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5ff9ee88-default-5ff9ee88-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-var cI=_oz(z,98,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,97,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],19,224)
-return cF
-}
-oB.wxXCkey=2
-_2z(z,95,xC,e,s,gg,oB,'item','index','index')
+_2z(z,229,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2345,20 +2624,20 @@ _(r,oB)
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-var cI=_oz(z,108,fE,oD,gg)
+var cI=_oz(z,245,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,105,fE,oD,gg) || {}
+var lK=_1z(z,242,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],21,306)
+else _w(cI,x[0],29,306)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,102,xC,e,s,gg,oB,'item','index','index')
+_2z(z,239,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -2366,288 +2645,9 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["M5c0aa864-default-5c0aa864-8"]=function(e,s,r,gg){
+d_[x[0]]["M5ff9ee88-default-5ff9ee88-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-8'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=_oz(z,114,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,111,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],23,232)
-var cF=_v()
-_(r,cF)
-var hG=_oz(z,121,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,118,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],23,439)
-var oJ=_v()
-_(r,oJ)
-var lK=_oz(z,128,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,125,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],23,646)
-var eN=_mz(z,'picker',['bindchange',131,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
-var bO=_v()
-_(eN,bO)
-var oP=_oz(z,139,e,s,gg)
-var xQ=_gd(x[0],oP,e_,d_)
-if(xQ){
-var oR=_1z(z,138,e,s,gg) || {}
-var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
-gg.f=cur_globalf
-}
-else _w(oP,x[0],23,968)
-_(r,eN)
-var fS=_mz(z,'picker',['bindchange',142,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
-var cT=_v()
-_(fS,cT)
-var hU=_oz(z,150,e,s,gg)
-var oV=_gd(x[0],hU,e_,d_)
-if(oV){
-var cW=_1z(z,149,e,s,gg) || {}
-var cur_globalf=gg.f
-cT.wxXCkey=3
-oV(cW,cW,cT,gg)
-gg.f=cur_globalf
-}
-else _w(hU,x[0],23,1301)
-_(r,fS)
-var oX=_mz(z,'picker',['bindchange',153,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'id',5,'range',6],[],e,s,gg)
-var lY=_v()
-_(oX,lY)
-var aZ=_oz(z,161,e,s,gg)
-var t1=_gd(x[0],aZ,e_,d_)
-if(t1){
-var e2=_1z(z,160,e,s,gg) || {}
-var cur_globalf=gg.f
-lY.wxXCkey=3
-t1(e2,e2,lY,gg)
-gg.f=cur_globalf
-}
-else _w(aZ,x[0],23,1634)
-_(r,oX)
-var b3=_v()
-_(r,b3)
-var o4=_oz(z,168,e,s,gg)
-var x5=_gd(x[0],o4,e_,d_)
-if(x5){
-var o6=_1z(z,165,e,s,gg) || {}
-var cur_globalf=gg.f
-b3.wxXCkey=3
-x5(o6,o6,b3,gg)
-gg.f=cur_globalf
-}
-else _w(o4,x[0],23,1850)
-var f7=_v()
-_(r,f7)
-var c8=_oz(z,172,e,s,gg)
-var h9=_gd(x[0],c8,e_,d_)
-if(h9){
-var o0=_1z(z,171,e,s,gg) || {}
-var cur_globalf=gg.f
-f7.wxXCkey=3
-h9(o0,o0,f7,gg)
-gg.f=cur_globalf
-}
-else _w(c8,x[0],23,1998)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5c0aa864-default-5c0aa864-14"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-14'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=_oz(z,181,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,178,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],25,234)
-var cF=_v()
-_(r,cF)
-var hG=_oz(z,188,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,185,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],25,443)
-var oJ=_v()
-_(r,oJ)
-var lK=_oz(z,195,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,192,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],25,652)
-var eN=_mz(z,'picker',['bindchange',198,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
-var bO=_v()
-_(eN,bO)
-var oP=_oz(z,206,e,s,gg)
-var xQ=_gd(x[0],oP,e_,d_)
-if(xQ){
-var oR=_1z(z,205,e,s,gg) || {}
-var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
-gg.f=cur_globalf
-}
-else _w(oP,x[0],25,980)
-_(r,eN)
-var fS=_v()
-_(r,fS)
-var cT=_oz(z,210,e,s,gg)
-var hU=_gd(x[0],cT,e_,d_)
-if(hU){
-var oV=_1z(z,209,e,s,gg) || {}
-var cur_globalf=gg.f
-fS.wxXCkey=3
-hU(oV,oV,fS,gg)
-gg.f=cur_globalf
-}
-else _w(cT,x[0],25,1138)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5c0aa864-default-5c0aa864-18"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-18'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-var xC=_oz(z,219,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,216,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],27,235)
-var cF=_v()
-_(r,cF)
-var hG=_oz(z,223,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,222,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],27,384)
-var oJ=_mz(z,'picker',['bindchange',227,'class',1,'data-comkey',2,'data-eventid',3,'disabled',4,'mode',5,'value',6],[],e,s,gg)
-var lK=_v()
-_(oJ,lK)
-var aL=_oz(z,235,e,s,gg)
-var tM=_gd(x[0],aL,e_,d_)
-if(tM){
-var eN=_1z(z,234,e,s,gg) || {}
-var cur_globalf=gg.f
-lK.wxXCkey=3
-tM(eN,eN,lK,gg)
-gg.f=cur_globalf
-}
-else _w(aL,x[0],27,713)
-_(r,oJ)
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M5c0aa864-default-5c0aa864-20"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M5c0aa864-default-5c0aa864-20'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-if(_oz(z,239,e,s,gg)){oB.wxVkey=1
-var xC=_v()
-_(oB,xC)
-var oD=_oz(z,244,e,s,gg)
-var fE=_gd(x[0],oD,e_,d_)
-if(fE){
-var cF=_1z(z,241,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[0],29,279)
-}
-oB.wxXCkey=1
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["M4508b5aa-default-4508b5aa-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':M4508b5aa-default-4508b5aa-1'
+var b=x[0]+':M5ff9ee88-default-5ff9ee88-1'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -2667,11 +2667,11 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],31,220)
+else _w(cI,x[0],31,224)
 return cF
 }
 oB.wxXCkey=2
-_2z(z,249,xC,e,s,gg,oB,'logItem','idx','idx')
+_2z(z,249,xC,e,s,gg,oB,'item','index','index')
 }catch(err){
 p_[b]=false
 throw err
@@ -5276,7 +5276,7 @@ require('pages/danger/dangerLog.js');
 __wxRoute = 'pages/check/checkEdit';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/check/checkEdit.js';
 
 define('pages/check/checkEdit.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/check/checkEdit"],{"5d63":function(t,e,i){"use strict";i.r(e);var o=i("9f1b"),l=i.n(o);for(var s in o)"default"!==s&&function(t){i.d(e,t,function(){return o[t]})}(s);e["default"]=l.a},"633a":function(t,e,i){"use strict";var o=function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"baseView"},[i("scroll-view",{staticClass:"scrollView",attrs:{"scroll-y":"true"}},[i("view",{staticClass:"cellTitleView"},[i("text",{staticClass:"cellTitle"},[t._v("基础信息")])]),i("view",{staticClass:"cellInfoView"},[i("uni-list",{attrs:{mpcomid:"609973d6-5"}},[i("picker",{attrs:{id:"jclx",range:t.checkTypes,"range-key":"dictvalue",disabled:!t.editable,eventid:"609973d6-0"},on:{change:function(e){t.typePickerChange(t.checkTypes,e)}}},[i("uni-list-item",{attrs:{title:"检查类型",subnote:t.model.jclx,"show-arrow":t.editable,mpcomid:"609973d6-0"}})],1),i("uni-list-item",{attrs:{title:"检查人",subnote:t.model.llrmc,"show-arrow":"false",mpcomid:"609973d6-1"}}),i("picker",{attrs:{mode:"date",value:t.model.jcrq,disabled:!t.editable,eventid:"609973d6-1"},on:{change:function(e){t.dateChange("jcrq",e)}}},[i("uni-list-item",{attrs:{title:"检查日期",subnote:t.model.jcrq,"show-arrow":t.editable,mpcomid:"609973d6-2"}})],1),i("uni-list-item",{attrs:{title:"检查组成员",subnote:t.model.qtcy,"show-arrow":t.editable,eventid:"609973d6-2",mpcomid:"609973d6-3"},on:{click:t.jumpPersonChoose}}),i("picker",{attrs:{id:"mb",range:t.selectedModule,"range-key":"mbmc",disabled:!t.editable,eventid:"609973d6-3"},on:{change:function(e){t.mbChange(t.selectedModule,e)}}},[i("uni-list-item",{attrs:{title:"检查模板",subnote:t.model.mb,"show-arrow":t.editable,mpcomid:"609973d6-4"}})],1)],1)],1),t.model.jcjlList.length>0?i("block",[i("view",{staticClass:"cellTitleView"},[i("text",{staticClass:"cellTitle"},[t._v("检查内容")]),i("text",{staticClass:"cellTitle"},[t._v("正常-")]),i("uni-icon",{attrs:{type:"checkbox-filled",size:"22",color:"#24BE41",mpcomid:"609973d6-6"}}),i("text",{staticClass:"cellTitle"},[t._v("未检-")]),i("uni-icon",{attrs:{type:"info-filled",size:"22",color:"#FFDE52",mpcomid:"609973d6-7"}}),i("text",{staticClass:"cellTitle"},[t._v("异常-")]),i("uni-icon",{attrs:{type:"clear",size:"22",color:"#C11E1E",mpcomid:"609973d6-8"}})],1),i("view",{staticClass:"cellInfoView"},[i("uni-list",{attrs:{mpcomid:"609973d6-10"}},t._l(t.model.jcjlList,function(e,o){return i("uni-list-item",{key:o,attrs:{title:e.jcbz,note:e.wtms,"show-extra-icon":"true","show-arrow":t.editable,"extra-icon":t.getIcon(e),eventid:"609973d6-4-"+o,mpcomid:"609973d6-9-"+o},on:{click:function(i){t.jumpEdit(e,o)}}})}))],1),i("image",{staticClass:"addCheck",attrs:{mode:"aspectFit",src:"../../static/assets/addCheck.png",eventid:"609973d6-5"},on:{click:t.addCheck}})]):t._e()],1),i("view",{staticClass:"bottomView"},[i("view",{staticClass:"buttonStyle",attrs:{eventid:"609973d6-6"},on:{click:t.saveClick}},[t._v("保存")]),i("view",{staticClass:"buttonStyle",attrs:{eventid:"609973d6-7"},on:{click:t.completeClick}},[t._v("完成检查")])]),t.promptVisible?i("prompt",{attrs:{title:"添加检查内容",placeholder:"请输入检查标题",defaultValue:"",mainColor:"#3296FA",eventid:"609973d6-8",mpcomid:"609973d6-11"},on:{cancel:t.clickCancel,confirm:t.clickPromptConfirm}}):t._e()],1)},l=[];i.d(e,"a",function(){return o}),i.d(e,"b",function(){return l})},"9f1b":function(t,e,i){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var o=u(i("8959")),l=u(i("09d6")),s=u(i("d36e")),c=u(i("d869")),n=u(i("9fbc")),d=(u(i("40bc")),u(i("736d"))),a=(u(i("fa28")),u(i("bc96"))),r=i("2f62");function u(t){return t&&t.__esModule?t:{default:t}}var f={computed:(0,r.mapState)(["userInfo"]),components:{uniList:o.default,uniListItem:s.default,uniIcon:l.default,prompt:c.default},data:function(){return{model:{recordid:"",userid:"",jcdzt:"1",jclx:"",llrid:"",llrmc:"",jcrq:"",qtcyid:"",qtcy:"",mb:"",jcjlList:[]},currentModule:null,checkTypes:[],selectedPersons:[],selectedModule:[],editable:!0,promptVisible:!1,normal:{color:"#24BE41",size:"22",type:"checkbox-filled"},undetected:{color:"#FFDE52",size:"22",type:"info-filled"},abnormal:{color:"#C11E1E",size:"22",type:"clear"},zplists:[]}},onLoad:function(t){var e=null==t.recordid?"":t.recordid;""==e?(this.model.llrid=this.userInfo.userid,this.model.llrmc=this.userInfo.username):(this.model.recordid=e,this.getDetail()),this.getCheckTypes(),this.getCheckModule()},onNavigationBarButtonTap:function(){var e=this;t.showModal({content:"选择[一键正常]将要清除所有问题描述、检查方式、检查照片，是否确认？",success:function(t){t.confirm&&e.setAllOk()}})},onUnload:function(){},methods:{setAllOk:function(t){for(var e=0;e<this.model.jcjlList.length;e++)this.model.jcjlList[e].wtms="",this.model.jcjlList[e].zgqk="",this.model.jcjlList[e].zplist=[],this.model.jcjlList[e].ifwt="1"},getCheckTypes:function(e){var i=this,o={userid:i.userInfo.userid};d.default.requestLoading(n.default.getCheckTypes,o,"正在获取检查类型",function(t){i.checkTypes=t.data},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},getCheckModule:function(e){var i=this,o={userid:i.userInfo.userid};d.default.requestLoading(n.default.getCheckModule,o,"正在获取检查模板",function(t){i.selectedModule=t.data},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},getDetail:function(e){var i=this,o={userid:i.userInfo.userid,recordid:i.model.recordid};d.default.requestLoading(n.default.getCheckDetail,o,"正在获取检查详情",function(t){i.model=t,"5"==i.model.jcdzt&&(editable=!1);for(var e=[],o=0;o<t.jcjlList.length;o++)e=e.concat(t.jcjlList[o].zplist);i.classifyPhotos(e)},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},saveClick:function(t){this.doSave(1)},completeClick:function(t){this.doSave(5)},doSave:function(e){var i=this;i.zplists=[],i.model.userid=i.userInfo.userid,i.model.jcdzt=e;for(var o=i.model,l=0;l<i.model.jcjlList.length;l++){var s=i.model.jcjlList[l];i.zplists.push(s.zplist)}d.default.requestLoading(n.default.saveCheck,o,"正在保存检查",function(e){i.model=e;for(var o=0;o<i.model.jcjlList.length;o++){var l=i.model.jcjlList[o];l.zplist=i.zplists[o]}i.uploadPhoto(!1,function(){t.showToast({icon:"none",title:"保存成功"})})},function(){t.showToast({icon:"none",title:"保存失败"})},function(){})},uploadPhoto:function(){arguments.length>0&&void 0!==arguments[0]&&arguments[0];for(var e=arguments.length>1?arguments[1]:void 0,i=this,o=0;o<i.model.jcjlList.length;o++){var l=i.model.jcjlList[o];console.log("item:"+JSON.stringify(l));var s=l.jcjlrecordid,c=l.zplist;a.default.uploadPhoto(i.userInfo.userid,s,"",c,function(o){o.length>0&&(t.showToast({icon:"none",title:"照片上传成功"}),i.classifyPhotos(o)),e()})}},classifyPhotos:function(t){if(null!=t){for(var e=0;e<this.model.jcjlList.length;e++)this.model.jcjlList[e].zplist=[];for(e=0;e<t.length;e++)for(var i=t[e],o={fileid:i.attid,src:n.default.host+n.default.loadImage+"&attid="+i.attid,type:2,yhid:i.zpsgrecordid,attachtype:i.attachtype},l=0;l<this.model.jcjlList.length;l++){var s=this.model.jcjlList[l];s.jcjlrecordid==i.zpsgrecordid&&this.model.jcjlList[l].zplist.push(o)}}},typePickerChange:function(t,e){this.model[e.target.id]=t[e.target.value].dictvalue,this.model["jclxbm"]=t[e.target.value].dictvalue},dateChange:function(t,e){this.model[t]=e.target.value},jumpPersonChoose:function(e){var i=this,o="CHECK_PERSONS";t.navigateTo({url:"../common/personChoose?key="+o+"&mltiple=true&selected="+JSON.stringify(this.selectedPersons)}),i.$fire.once(o,function(t){i.selectedPersons=t,i.formatPersons()})},mbChange:function(t,e){this.currentModule=t[e.target.value],this.model[e.target.id]=t[e.target.value].mbmc,this.getCheckInfoByMb()},getCheckInfoByMb:function(){var e=this,i={userid:e.userInfo.userid,mbid:e.currentModule.mbid};d.default.requestLoading(n.default.getCheckInfo,i,"正在获取检查项",function(t){e.model.jcjlList=t.data},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},jumpEdit:function(e,i){var o=this;0!=o.editable&&t.setStorage({key:"LOCAL_ITEM",data:e,success:function(){var e="INFO_EDIT";t.navigateTo({url:"checkInfoEdit?index="+i+"&key="+e}),o.$fire.once(e,function(t){o.model.jcjlList.splice(t.index,1,t.item)})}})},addCheck:function(t){this.promptVisible=!0},clickPromptConfirm:function(e){if(""!=e){var i={bzlx:"",idx:"",ifwt:"",jcbz:e,jcbzid:"",jcjlrecordid:"",precordid:"",wtms:"",xmhfl:"",xmhflid:"",zgqk:"",zgtzdid:"",zgtzdmoduleid:"",zgzt:"",zplist:[]};this.model.jcjlList.push(i),this.promptVisible=!1}else t.showToast({icon:"none",title:"请输入检查标题内容"})},clickCancel:function(t){this.promptVisible=!1},formatPersons:function(){for(var t="",e="",i=0;i<this.selectedPersons.length;i++){var o=this.selectedPersons[i];t=o.id+";"+t,e=o.name+";"+e}this.model.qtcy=e,this.model.qtcyid=t},getIcon:function(t){return"1"==t.ifwt?this.normal:"3"==t.ifwt?this.abnormal:this.undetected}}};e.default=f}).call(this,i("6e42")["default"])},ad76:function(t,e,i){"use strict";i("c6c1");var o=s(i("b0ce")),l=s(i("cd38"));function s(t){return t&&t.__esModule?t:{default:t}}Page((0,o.default)(l.default))},c5fc:function(t,e,i){},cd38:function(t,e,i){"use strict";i.r(e);var o=i("633a"),l=i("5d63");for(var s in l)"default"!==s&&function(t){i.d(e,t,function(){return l[t]})}(s);i("d490");var c=i("2877"),n=Object(c["a"])(l["default"],o["a"],o["b"],!1,null,null,null);e["default"]=n.exports},d490:function(t,e,i){"use strict";var o=i("c5fc"),l=i.n(o);l.a}},[["ad76","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/check/checkEdit"],{"5d63":function(t,e,i){"use strict";i.r(e);var o=i("9f1b"),l=i.n(o);for(var s in o)"default"!==s&&function(t){i.d(e,t,function(){return o[t]})}(s);e["default"]=l.a},"9f1b":function(t,e,i){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var o=u(i("8959")),l=u(i("09d6")),s=u(i("d36e")),n=u(i("d869")),c=u(i("9fbc")),d=(u(i("40bc")),u(i("736d"))),a=(u(i("fa28")),u(i("bc96"))),r=i("2f62");function u(t){return t&&t.__esModule?t:{default:t}}var f={computed:(0,r.mapState)(["userInfo"]),components:{uniList:o.default,uniListItem:s.default,uniIcon:l.default,prompt:n.default},data:function(){return{model:{recordid:"",userid:"",jcdzt:"1",jclx:"",llrid:"",llrmc:"",jcrq:"",qtcyid:"",qtcy:"",mb:"",jcjlList:[]},currentModule:null,checkTypes:[],selectedPersons:[],selectedModule:[],editable:!0,promptVisible:!1,normal:{color:"#24BE41",size:"22",type:"checkbox-filled"},undetected:{color:"#FFDE52",size:"22",type:"info-filled"},abnormal:{color:"#C11E1E",size:"22",type:"clear"},zplists:[]}},onLoad:function(t){var e=null==t.recordid?"":t.recordid;""==e?(this.model.llrid=this.userInfo.userid,this.model.llrmc=this.userInfo.username):(this.model.recordid=e,this.getDetail()),this.getCheckTypes(),this.getCheckModule()},onNavigationBarButtonTap:function(){var e=this;t.showModal({content:"选择[一键正常]将要清除所有问题描述、检查方式、检查照片，是否确认？",success:function(t){t.confirm&&e.setAllOk()}})},onUnload:function(){},methods:{setAllOk:function(t){for(var e=0;e<this.model.jcjlList.length;e++)this.model.jcjlList[e].wtms="",this.model.jcjlList[e].zgqk="",this.model.jcjlList[e].zplist=[],this.model.jcjlList[e].ifwt="1"},getCheckTypes:function(e){var i=this,o={userid:i.userInfo.userid};d.default.requestLoading(c.default.getCheckTypes,o,"正在获取检查类型",function(t){i.checkTypes=t.data},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},getCheckModule:function(e){var i=this,o={userid:i.userInfo.userid};d.default.requestLoading(c.default.getCheckModule,o,"正在获取检查模板",function(t){i.selectedModule=t.data},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},getDetail:function(e){var i=this,o={userid:i.userInfo.userid,recordid:i.model.recordid};d.default.requestLoading(c.default.getCheckDetail,o,"正在获取检查详情",function(t){i.model=t,"5"==i.model.jcdzt&&(editable=!1);for(var e=[],o=0;o<t.jcjlList.length;o++)e=e.concat(t.jcjlList[o].zplist);i.classifyPhotos(e)},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},saveClick:function(t){this.doSave(1)},completeClick:function(t){this.doSave(5)},doSave:function(e){var i=this;i.zplists=[],i.model.userid=i.userInfo.userid,i.model.jcdzt=e;for(var o=i.model,l=0;l<i.model.jcjlList.length;l++){var s=i.model.jcjlList[l];i.zplists.push(s.zplist)}d.default.requestLoading(c.default.saveCheck,o,"正在保存检查",function(e){i.model=e;for(var o=0;o<i.model.jcjlList.length;o++){var l=i.model.jcjlList[o];l.zplist=i.zplists[o]}i.uploadPhoto(!1,function(){t.showToast({icon:"none",title:"保存成功"})})},function(){t.showToast({icon:"none",title:"保存失败"})},function(){})},uploadPhoto:function(){arguments.length>0&&void 0!==arguments[0]&&arguments[0];for(var e=arguments.length>1?arguments[1]:void 0,i=this,o=0;o<i.model.jcjlList.length;o++){var l=i.model.jcjlList[o];console.log("item:"+JSON.stringify(l));var s=l.jcjlrecordid,n=l.zplist;a.default.uploadPhoto(i.userInfo.userid,s,"",n,function(o){o.length>0&&(t.showToast({icon:"none",title:"照片上传成功"}),i.classifyPhotos(o)),e()})}},classifyPhotos:function(t){if(null!=t){for(var e=0;e<this.model.jcjlList.length;e++)this.model.jcjlList[e].zplist=[];for(e=0;e<t.length;e++)for(var i=t[e],o={fileid:i.attid,src:c.default.host+c.default.loadImage+"&attid="+i.attid,type:2,yhid:i.zpsgrecordid,attachtype:i.attachtype},l=0;l<this.model.jcjlList.length;l++){var s=this.model.jcjlList[l];s.jcjlrecordid==i.zpsgrecordid&&this.model.jcjlList[l].zplist.push(o)}}},typePickerChange:function(t,e){this.model[e.target.id]=t[e.target.value].dvalue,this.model["jclxbm"]=t[e.target.value].dvalue},dateChange:function(t,e){this.model[t]=e.target.value},jumpPersonChoose:function(e){var i=this,o="CHECK_PERSONS";t.navigateTo({url:"../common/personChoose?key="+o+"&mltiple=true&selected="+JSON.stringify(this.selectedPersons)}),i.$fire.once(o,function(t){i.selectedPersons=t,i.formatPersons()})},mbChange:function(t,e){this.currentModule=t[e.target.value],this.model[e.target.id]=t[e.target.value].mbmc,this.getCheckInfoByMb()},getCheckInfoByMb:function(){var e=this,i={userid:e.userInfo.userid,mbid:e.currentModule.mbid};d.default.requestLoading(c.default.getCheckInfo,i,"正在获取检查项",function(t){e.model.jcjlList=t.data},function(){t.showToast({icon:"none",title:"获取失败"})},function(){})},jumpEdit:function(e,i){var o=this;0!=o.editable&&t.setStorage({key:"LOCAL_ITEM",data:e,success:function(){var e="INFO_EDIT";t.navigateTo({url:"checkInfoEdit?index="+i+"&key="+e}),o.$fire.once(e,function(t){o.model.jcjlList.splice(t.index,1,t.item)})}})},addCheck:function(t){this.promptVisible=!0},clickPromptConfirm:function(e){if(""!=e){var i={bzlx:"",idx:"",ifwt:"",jcbz:e,jcbzid:"",jcjlrecordid:"",precordid:"",wtms:"",xmhfl:"",xmhflid:"",zgqk:"",zgtzdid:"",zgtzdmoduleid:"",zgzt:"",zplist:[]};this.model.jcjlList.push(i),this.promptVisible=!1}else t.showToast({icon:"none",title:"请输入检查标题内容"})},clickCancel:function(t){this.promptVisible=!1},formatPersons:function(){for(var t="",e="",i=0;i<this.selectedPersons.length;i++){var o=this.selectedPersons[i];t=o.id+";"+t,e=o.name+";"+e}this.model.qtcy=e,this.model.qtcyid=t},getIcon:function(t){return"1"==t.ifwt?this.normal:"3"==t.ifwt?this.abnormal:this.undetected}}};e.default=f}).call(this,i("6e42")["default"])},ad76:function(t,e,i){"use strict";i("c6c1");var o=s(i("b0ce")),l=s(i("cd38"));function s(t){return t&&t.__esModule?t:{default:t}}Page((0,o.default)(l.default))},b6e5:function(t,e,i){"use strict";var o=function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"baseView"},[i("scroll-view",{staticClass:"scrollView",attrs:{"scroll-y":"true"}},[i("view",{staticClass:"cellTitleView"},[i("text",{staticClass:"cellTitle"},[t._v("基础信息")])]),i("view",{staticClass:"cellInfoView"},[i("uni-list",{attrs:{mpcomid:"609973d6-5"}},[i("picker",{attrs:{id:"jclx",range:t.checkTypes,"range-key":"dvalue",disabled:!t.editable,eventid:"609973d6-0"},on:{change:function(e){t.typePickerChange(t.checkTypes,e)}}},[i("uni-list-item",{attrs:{title:"检查类型",subnote:t.model.jclx,"show-arrow":t.editable,mpcomid:"609973d6-0"}})],1),i("uni-list-item",{attrs:{title:"检查人",subnote:t.model.llrmc,"show-arrow":"false",mpcomid:"609973d6-1"}}),i("picker",{attrs:{mode:"date",value:t.model.jcrq,disabled:!t.editable,eventid:"609973d6-1"},on:{change:function(e){t.dateChange("jcrq",e)}}},[i("uni-list-item",{attrs:{title:"检查日期",subnote:t.model.jcrq,"show-arrow":t.editable,mpcomid:"609973d6-2"}})],1),i("uni-list-item",{attrs:{title:"检查组成员",subnote:t.model.qtcy,"show-arrow":t.editable,eventid:"609973d6-2",mpcomid:"609973d6-3"},on:{click:t.jumpPersonChoose}}),i("picker",{attrs:{id:"mb",range:t.selectedModule,"range-key":"mbmc",disabled:!t.editable,eventid:"609973d6-3"},on:{change:function(e){t.mbChange(t.selectedModule,e)}}},[i("uni-list-item",{attrs:{title:"检查模板",subnote:t.model.mb,"show-arrow":t.editable,mpcomid:"609973d6-4"}})],1)],1)],1),t.model.jcjlList.length>0?i("block",[i("view",{staticClass:"cellTitleView"},[i("text",{staticClass:"cellTitle"},[t._v("检查内容")]),i("text",{staticClass:"cellTitle"},[t._v("正常-")]),i("uni-icon",{attrs:{type:"checkbox-filled",size:"22",color:"#24BE41",mpcomid:"609973d6-6"}}),i("text",{staticClass:"cellTitle"},[t._v("未检-")]),i("uni-icon",{attrs:{type:"info-filled",size:"22",color:"#FFDE52",mpcomid:"609973d6-7"}}),i("text",{staticClass:"cellTitle"},[t._v("异常-")]),i("uni-icon",{attrs:{type:"clear",size:"22",color:"#C11E1E",mpcomid:"609973d6-8"}})],1),i("view",{staticClass:"cellInfoView"},[i("uni-list",{attrs:{mpcomid:"609973d6-10"}},t._l(t.model.jcjlList,function(e,o){return i("uni-list-item",{key:o,attrs:{title:e.jcbz,note:e.wtms,"show-extra-icon":"true","show-arrow":t.editable,"extra-icon":t.getIcon(e),eventid:"609973d6-4-"+o,mpcomid:"609973d6-9-"+o},on:{click:function(i){t.jumpEdit(e,o)}}})}))],1),i("image",{staticClass:"addCheck",attrs:{mode:"aspectFit",src:"../../static/assets/addCheck.png",eventid:"609973d6-5"},on:{click:t.addCheck}})]):t._e()],1),i("view",{staticClass:"bottomView"},[i("view",{staticClass:"buttonStyle",attrs:{eventid:"609973d6-6"},on:{click:t.saveClick}},[t._v("保存")]),i("view",{staticClass:"buttonStyle",attrs:{eventid:"609973d6-7"},on:{click:t.completeClick}},[t._v("完成检查")])]),t.promptVisible?i("prompt",{attrs:{title:"添加检查内容",placeholder:"请输入检查标题",defaultValue:"",mainColor:"#3296FA",eventid:"609973d6-8",mpcomid:"609973d6-11"},on:{cancel:t.clickCancel,confirm:t.clickPromptConfirm}}):t._e()],1)},l=[];i.d(e,"a",function(){return o}),i.d(e,"b",function(){return l})},c5fc:function(t,e,i){},cd38:function(t,e,i){"use strict";i.r(e);var o=i("b6e5"),l=i("5d63");for(var s in l)"default"!==s&&function(t){i.d(e,t,function(){return l[t]})}(s);i("d490");var n=i("2877"),c=Object(n["a"])(l["default"],o["a"],o["b"],!1,null,null,null);e["default"]=c.exports},d490:function(t,e,i){"use strict";var o=i("c5fc"),l=i.n(o);l.a}},[["ad76","common/runtime","common/vendor"]]]);
 });
 require('pages/check/checkEdit.js');
 __wxRoute = 'pages/check/checkInfoEdit';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/check/checkInfoEdit.js';
