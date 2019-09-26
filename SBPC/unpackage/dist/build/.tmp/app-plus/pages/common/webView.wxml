@@ -1,2 +1,1 @@
-<import src="./webView.vue.wxml" />
-    <template is="575d7cac" data="{{ ...$root['0'], $root }}"/>
+<view><web-view webview-styles="{{webviewStyles}}" src="{{src}}"></web-view></view>

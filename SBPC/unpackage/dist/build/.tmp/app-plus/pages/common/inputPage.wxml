@@ -1,2 +1,1 @@
-<import src="./inputPage.vue.wxml" />
-    <template is="ab7aaa6c" data="{{ ...$root['0'], $root }}"/>
+<view class="baseView"><textarea class="myText" placeholder="{{placeholder}}" data-event-opts="{{[['input',[['descInput',['$event']]]]]}}" value="{{text}}" bindinput="__e"></textarea><view class="btn-row"><button class="primary" type="primary" data-event-opts="{{[['tap',[['saveText',['$event']]]]]}}" bindtap="__e">确定</button></view></view>

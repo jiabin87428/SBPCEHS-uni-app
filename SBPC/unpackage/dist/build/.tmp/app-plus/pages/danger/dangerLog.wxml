@@ -1,2 +1,1 @@
-<import src="./dangerLog.vue.wxml" />
-    <template is="4508b5aa" data="{{ ...$root['0'], $root }}"/>
+<view class="baseView" id="baseView"><view class="cellInfoView"><uni-list vue-id="1" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{logList}}" wx:for-item="logItem" wx:for-index="idx" wx:key="idx"><block><uni-list-item vue-id="{{('2-'+idx)+','+('1')}}" title="{{logItem.nextstatusname+'（接收人：'+logItem.receivername+'，'+'发送者：'+logItem.sendername+'）'}}" note="{{logItem.date}}" show-arrow="{{false}}" bind:__l="__l"></uni-list-item></block></block></uni-list></view></view>

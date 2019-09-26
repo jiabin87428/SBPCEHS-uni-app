@@ -1,2 +1,1 @@
-<import src="./accountEdit.vue.wxml" />
-    <template is="d573abf0" data="{{ ...$root['0'], $root }}"/>
+<view class="center"><view class="center-list"><view class="center-list-item border-bottom"><text class="list-icon"></text><text class="list-text">修改密码</text><text class="navigat-arrow"></text></view></view><view class="btnView"><button class="btn" type="primary" data-event-opts="{{[['tap',[['bindLogout',['$event']]]]]}}" bindtap="__e">退出登录</button></view></view>

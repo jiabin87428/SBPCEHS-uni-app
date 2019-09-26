@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "自定义域名"
+  "navigationBarTitleText": "自定义域名",
+  "usingComponents": {
+    "m-input": "/components/m-input"
+  }
 }

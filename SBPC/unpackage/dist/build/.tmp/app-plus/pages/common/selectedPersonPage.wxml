@@ -1,2 +1,1 @@
-<import src="./selectedPersonPage.vue.wxml" />
-    <template is="23e0c24e" data="{{ ...$root['0'], $root }}"/>
+<view class="baseView"><block wx:for="{{selectedList}}" wx:for-item="obj" wx:for-index="index" wx:key="index"><block><view class="cellBaseView_Row"><view class="cellTextView"><text class="titleLabel">{{obj.name}}</text><text class="subTitleLabel">{{obj.orgName}}</text></view><image class="deleteImg" mode="aspectFit" src="../../static/assets/delete_gray.png" data-event-opts="{{[['tap',[['deletePerson',[index]]]]]}}" bindtap="__e"></image></view><view class="cellLine"></view></block></block></view>

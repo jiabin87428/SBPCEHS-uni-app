@@ -1,2 +1,1 @@
-<import src="./newsList.vue.wxml" />
-    <template is="c4edb036" data="{{ ...$root['0'], $root }}"/>
+<view class="baseView"><view class="cellInfoView"><uni-list vue-id="1" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{ggList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><uni-list-item vue-id="{{('2-'+index)+','+('1')}}" title="{{item.title}}" note="{{item.source}}" show-arrow="{{true}}" data-event-opts="{{[['^click',[['getDetail',['$0'],[[['ggList','',index]]]]]]]}}" bind:click="__e" bind:__l="__l"></uni-list-item></block></block></uni-list></view></view>

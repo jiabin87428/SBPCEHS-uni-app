@@ -1,2 +1,1 @@
-<import src="./pieCharts.vue.wxml" />
-    <template is="7e054f88" data="{{ ...$root['0'], $root }}"/>
+<view class="qiun-columns"><view class="qiun-bg-white qiun-title-bar qiun-common-mt"><view class="qiun-title-dot-light">{{title}}</view></view><view class="qiun-charts"><canvas class="charts" canvas-id="canvasPie" id="canvasPie"></canvas></view></view>

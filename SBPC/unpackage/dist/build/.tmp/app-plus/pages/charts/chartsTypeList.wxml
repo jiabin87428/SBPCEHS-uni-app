@@ -1,2 +1,1 @@
-<import src="./chartsTypeList.vue.wxml" />
-    <template is="735e4812" data="{{ ...$root['0'], $root }}"/>
+<view class="baseView"><uni-list vue-id="1" bind:__l="__l" vue-slots="{{['default']}}"><uni-list-item vue-id="{{('2')+','+('1')}}" title="隐患原因" show-arrow="{{true}}" data-event-opts="{{[['^click',[['jumpPage',['pieCharts?url=getDangerReasonChart&title=隐患原因']]]]]}}" bind:click="__e" bind:__l="__l"></uni-list-item><uni-list-item vue-id="{{('3')+','+('1')}}" title="隐患类型" show-arrow="{{true}}" data-event-opts="{{[['^click',[['jumpPage',['listCharts?url=getDangerTypeChart&title=隐患类型']]]]]}}" bind:click="__e" bind:__l="__l"></uni-list-item></uni-list></view>

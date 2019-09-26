@@ -1,5 +1,4 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "已选成员",
   "titleNView": {
     "buttons": [
@@ -9,5 +8,6 @@
         "fontSize": "22px"
       }
     ]
-  }
+  },
+  "usingComponents": {}
 }

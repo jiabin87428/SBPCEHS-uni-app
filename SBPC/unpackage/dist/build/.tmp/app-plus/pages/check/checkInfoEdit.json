@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "检查结论"
+  "navigationBarTitleText": "检查结论",
+  "usingComponents": {
+    "uni-list": "/components/list/uni-list/uni-list",
+    "uni-list-item": "/components/list/uni-list-item/uni-list-item"
+  }
 }

@@ -1,2 +1,1 @@
-<import src="./diyHost.vue.wxml" />
-    <template is="4ef7e761" data="{{ ...$root['0'], $root }}"/>
+<view class="content"><view class="input-group"><view class="input-row border"><text class="title">域名：</text><m-input bind:input="__e" vue-id="1" type="text" focus clearable placeholder="请输入域名" value="{{host}}" data-event-opts="{{[['^input',[['__set_model',['','host','$event',[]]]]]]}}" bind:__l="__l"></m-input></view></view><view class="btn-row"><button class="primary" type="primary" data-event-opts="{{[['tap',[['testConnect',['$event']]]]]}}" bindtap="__e">确认地址</button></view></view>

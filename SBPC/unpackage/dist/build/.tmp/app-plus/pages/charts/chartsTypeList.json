@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "统计类型"
+  "navigationBarTitleText": "统计类型",
+  "usingComponents": {
+    "uni-list": "/components/list/uni-list/uni-list",
+    "uni-list-item": "/components/list/uni-list-item/uni-list-item",
+    "uni-icon": "/components/list/uni-icon/uni-icon"
+  }
 }

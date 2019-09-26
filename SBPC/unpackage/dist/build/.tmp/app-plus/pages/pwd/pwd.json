@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "找回密码"
+  "navigationBarTitleText": "找回密码",
+  "usingComponents": {
+    "m-input": "/components/m-input"
+  }
 }

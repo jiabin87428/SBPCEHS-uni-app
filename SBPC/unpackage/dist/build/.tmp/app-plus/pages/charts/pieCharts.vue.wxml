@@ -1,1 +1,0 @@
-<template name="7e054f88"><view class="_view M7e054f88 qiun-columns"><view class="_view M7e054f88 qiun-bg-white qiun-title-bar qiun-common-mt"><view class="_view M7e054f88 qiun-title-dot-light">{{title}}</view></view><view class="_view M7e054f88 qiun-charts"><canvas canvas-id="canvasPie" id="canvasPie" class="_canvas M7e054f88 charts"></canvas></view></view></template>

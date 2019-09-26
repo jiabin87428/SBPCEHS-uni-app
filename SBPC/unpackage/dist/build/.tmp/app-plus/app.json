@@ -25,13 +25,11 @@
     "pages/charts/pieCharts",
     "pages/charts/listCharts"
   ],
-  "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#2D68AA",
     "backgroundColor": "#fbf9fe"
   },
-  "usingComponents": {},
   "tabBar": {
     "color": "#7a7e83",
     "selectedColor": "#0faeff",
@@ -53,11 +51,21 @@
   },
   "nvue": {
     "pages": {
-      "pages/peixun/peixunList.html": {
+      "pages/danger/dangerList.html": {
         "window": {
           "usingComponents": {},
-          "navigationBarTitleText": "培训列表"
-        }
+          "navigationBarTitleText": "隐患列表",
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "",
+                "fontSrc": "/static/aliIcon/iconfont.ttf",
+                "fontSize": "22px"
+              }
+            ]
+          }
+        },
+        "nvue": true
       },
       "pages/check/checkList.html": {
         "window": {
@@ -72,30 +80,25 @@
               }
             ]
           }
-        }
+        },
+        "nvue": true
       },
-      "pages/danger/dangerList.html": {
+      "pages/peixun/peixunList.html": {
         "window": {
           "usingComponents": {},
-          "navigationBarTitleText": "隐患列表",
-          "titleNView": {
-            "buttons": [
-              {
-                "text": "",
-                "fontSrc": "/static/aliIcon/iconfont.ttf",
-                "fontSize": "22px"
-              }
-            ]
-          }
-        }
+          "navigationBarTitleText": "培训列表"
+        },
+        "nvue": true
       }
     }
   },
   "nvueCompiler": "weex",
+  "renderer": "auto",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
   "appname": "SBPC-EHS",
-  "compilerVersion": "2.0.1"
+  "compilerVersion": "2.3.3",
+  "usingComponents": {}
 }
